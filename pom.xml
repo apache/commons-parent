@@ -7,7 +7,7 @@
      <version>3</version>
   </parent>
   <groupId>org.apache.commons</groupId>
-  <artifactId>commons</artifactId>
+  <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
   <!-- TODO: dummy version. In Maven 2.1, this will be auto-versioned being a generic parent -->
   <version>1-SNAPSHOT</version>
