@@ -14,6 +14,7 @@
   <name>Jakarta Commons</name>
   <url>http://jakarta.apache.org/commons/proper/</url>
   <inceptionYear>2001</inceptionYear>
+
   <ciManagement>
     <system>continuum</system>
     <notifiers>
@@ -25,13 +26,30 @@
     </notifiers>
   </ciManagement>
   <distributionManagement>
-   <!-- Null out inherited apache distribution repo by default -->
+
+   <!--
+     This POM's parent POM (the Apache root POM) provides repositories. Unfortunately,
+     this allows for accidental deployments. So we disable them here by providing
+     a dummy repository. Use "mvn -Prc deploy" (Apache snapshot repository) or
+     "mvn -Prelease deploy" (Apache release repository), if you really want to deploy.
+   -->
    <repository>
      <id>dummy</id>
      <name>Dummy to avoid accidental deploys</name>
      <url></url>
    </repository>
   </distributionManagement>
+
+  <!--
+    This section *must* be overwritten by subprojects. It is only to allow
+    a release of the commons-parent POM.
+  -->
+  <scm>
+    <connection>scm:svn:http://svn.apache.org/repos/asf/jakarta/commons/proper</connection>
+    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/jakarta/commons/proper</developerConnection>
+    <url>http://svn.apache.org/repos/asf/jakarta/commons/proper</url>
+  </scm>
+
   <mailingLists>
     <mailingList>
       <name>Commons Dev List</name>
@@ -93,6 +111,7 @@
       </plugin>
     </plugins>
   </build>
+
   <profiles>
     <profile>
       <id>release</id>
