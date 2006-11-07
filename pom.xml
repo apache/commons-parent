@@ -79,6 +79,10 @@
       <unsubscribe>commons-dev-unsubscribe@jakarta.apache.org</unsubscribe>
       <post>commons-dev@jakarta.apache.org</post>
       <archive>http://mail-archives.apache.org/mod_mbox/jakarta-commons-dev</archive>
+      <otherArchives>
+        <otherArchive>http://www.mail-archive.com/commons-dev@jakarta.apache.org/</otherArchive>
+        <otherArchive>http://www.nabble.com/Commons---Dev-f317.html</otherArchive>
+      </otherArchives>
     </mailingList>
     <mailingList>
       <name>Commons User List</name>
@@ -86,6 +90,10 @@
       <unsubscribe>commons-user-unsubscribe@jakarta.apache.org</unsubscribe>
       <post>commons-user@jakarta.apache.org</post>
       <archive>http://mail-archives.apache.org/mod_mbox/jakarta-commons-user</archive>
+      <otherArchives>
+        <otherArchive>http://www.mail-archive.com/commons-user@jakarta.apache.org/</otherArchive>
+        <otherArchive>http://www.nabble.com/Commons---User-f319.html</otherArchive>
+      </otherArchives>
     </mailingList>
   </mailingLists>
   <build>
