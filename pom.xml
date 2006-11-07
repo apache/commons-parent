@@ -47,7 +47,7 @@
   <scm>
     <connection>scm:svn:http://svn.apache.org/repos/asf/jakarta/commons/proper/commons-parent/trunk</connection>
     <developerConnection>scm:svn:https://svn.apache.org/repos/asf/jakarta/commons/proper/commons-parent/trunk</developerConnection>
-    <url>http://svn.apache.org/repos/asf/jakarta/commons/proper/commons-parent/trunk</url>
+    <url>http://svn.apache.org/viewvc/jakarta/commons/proper/commons-parent/trunk</url>
   </scm>
 
   <mailingLists>
