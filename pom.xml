@@ -128,12 +128,12 @@
         </configuration>
       </plugin>
       <plugin>
-		<!-- This should possibly better be done by using a resource
-		     definition. However, if we declare a resource with
-		     ${basedir} as the base directory, then the
-		     maven-source-plugin will add the whole directory to
-		     its contents.
-		-->
+            <!-- This should possibly better be done by using a resource
+                 definition. However, if we declare a resource with
+                 ${basedir} as the base directory, then the
+                 maven-source-plugin will add the whole directory to
+                 its contents.
+            -->
         <artifactId>maven-antrun-plugin</artifactId>
         <executions>
           <execution>
