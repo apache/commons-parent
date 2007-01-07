@@ -19,7 +19,9 @@
   </skin>
   <body>
     <links>
-      <item name="Jakarta Commons" href="http://jakarta.apache.org/commons/" />
+      <item name="Apache"  href="http://www.apache.org"/>
+      <item name="Jakarta" href="http://jakarta.apache.org"/>
+      <item name="Commons" href="http://jakarta.apache.org/commons/" />
     </links>
     <menu ref="reports" inherit="bottom" />
     <menu name="Commons" inherit="bottom">
