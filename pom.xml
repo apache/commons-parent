@@ -96,6 +96,21 @@
     </mailingList>
   </mailingLists>
   <build>
+    <resources>
+      <!--
+       N.B. If dependant poms specify resources the following entry will
+            need to be added as maven only inherits if no resources are
+            specified in the dependant pom.
+       -->
+      <resource>
+        <directory>${basedir}</directory>
+        <targetPath>META-INF</targetPath>
+        <includes>
+          <include>LICENSE.txt</include>
+          <include>NOTICE.txt</include>
+        </includes>
+      </resource>
+    </resources>
     <plugins>
       <!-- TODO: later use toolchain support to do compilation on an external JDK 1.3+ compiler -->
       <plugin>
@@ -128,33 +143,6 @@
         <configuration>
           <jdkLevel>${maven.compile.source}</jdkLevel>
         </configuration>
-      </plugin>
-      <plugin>
-            <!-- This should possibly better be done by using a resource
-                 definition. However, if we declare a resource with
-                 ${basedir} as the base directory, then the
-                 maven-source-plugin will add the whole directory to
-                 its contents.
-            -->
-        <artifactId>maven-antrun-plugin</artifactId>
-        <executions>
-          <execution>
-            <phase>generate-resources</phase>
-            <configuration>
-              <tasks>
-                <copy todir="${project.build.outputDirectory}/META-INF">
-                  <fileset dir="${basedir}">
-                    <include name="LICENSE.txt" />
-                    <include name="NOTICE.txt" />
-                  </fileset>
-                </copy>
-              </tasks>
-            </configuration>
-            <goals>
-              <goal>run</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
