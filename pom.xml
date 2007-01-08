@@ -176,10 +176,11 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
         <configuration>
-          <!-- Exclude the navigation file for Maven 1 sites, as it interferes
-               with the site generation. -->
+          <!-- Exclude the navigation file for Maven 1 sites
+               and the changes file used by the changes-plugin,
+               as they interfere with the site generation. -->
           <moduleExcludes>
-            <xdoc>navigation.xml</xdoc>
+            <xdoc>navigation.xml,changes.xml</xdoc>
           </moduleExcludes>
         </configuration>
       </plugin>
