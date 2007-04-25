@@ -96,6 +96,16 @@
     </mailingList>
   </mailingLists>
   <build>
+    <resources>
+      <resource>
+        <directory>${basedir}</directory>
+        <targetPath>META-INF</targetPath>
+        <includes>
+          <include>NOTICE.txt</include>
+          <include>LICENSE.txt</include>
+        </includes>
+      </resource>
+    </resources>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -107,6 +117,11 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
           <version>2.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>2.0.3</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -142,35 +157,6 @@
         <configuration>
           <jdkLevel>${maven.compile.source}</jdkLevel>
         </configuration>
-      </plugin>
-      <plugin>
-            <!-- This should possibly better be done by using a resource
-                 definition. However, if we declare a resource with
-                 ${basedir} as the base directory, then the
-                 maven-source-plugin will add the whole directory to
-                 its contents when generating a "sources" jar.
-
-                 see http://jira.codehaus.org/browse/MSOURCES-6
-            -->
-        <artifactId>maven-antrun-plugin</artifactId>
-        <executions>
-          <execution>
-            <phase>generate-resources</phase>
-            <configuration>
-              <tasks>
-                <copy todir="${project.build.outputDirectory}/META-INF">
-                  <fileset dir="${basedir}">
-                    <include name="LICENSE.txt" />
-                    <include name="NOTICE.txt" />
-                  </fileset>
-                </copy>
-              </tasks>
-            </configuration>
-            <goals>
-              <goal>run</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
@@ -230,6 +216,15 @@
         </repository>
       </distributionManagement>
       <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-source-plugin</artifactId>
+              <version>2.0.3</version>
+            </plugin>
+          </plugins>
+        </pluginManagement>
         <plugins>
           <!-- We want to sign the artifact, the POM, and all attached artifacts -->
           <plugin>
@@ -290,6 +285,15 @@
         </snapshotRepository>
       </distributionManagement>
       <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-source-plugin</artifactId>
+              <version>2.0.3</version>
+            </plugin>
+          </plugins>
+        </pluginManagement>
         <plugins>
           <!-- We want to sign the artifact, the POM, and all attached artifacts -->
           <plugin>
