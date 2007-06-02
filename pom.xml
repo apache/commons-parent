@@ -9,7 +9,7 @@
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
   <!-- TODO: dummy version. In Maven 2.1, this will be auto-versioned being a generic parent -->
-  <version>3</version>
+  <version>4-SNAPSHOT</version>
   <name>Jakarta Commons</name>
   <url>http://jakarta.apache.org/commons/</url>
   <inceptionYear>2001</inceptionYear>
@@ -48,9 +48,9 @@
     a release of the commons-parent POM.
   -->
   <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/jakarta/commons/proper/commons-parent/tags/commons-parent-3</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/jakarta/commons/proper/commons-parent/tags/commons-parent-3</developerConnection>
-    <url>http://svn.apache.org/viewvc/jakarta/commons/proper/commons-parent/tags/commons-parent-3</url>
+    <connection>scm:svn:http://svn.apache.org/repos/asf/jakarta/commons/proper/commons-parent/trunk</connection>
+    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/jakarta/commons/proper/commons-parent/trunk</developerConnection>
+    <url>http://svn.apache.org/viewvc/jakarta/commons/proper/commons-parent/trunk</url>
   </scm>
 
   <mailingLists>
