@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<project name="Jakarta Commons">
+<project name="Apache Commons">
   <bannerLeft>
-    <name>The Jakarta Project</name>
-    <src>http://jakarta.apache.org/images/original-jakarta-logo.gif</src>
-    <href>http://jakarta.apache.org/</href>
+    <name>Apache Commons</name>
+    <src>http://commons.apache.org/images/logo.png</src>
+    <href>http://commons.apache.org/</href>
   </bannerLeft>
-  <bannerRight>
-    <name>Jakarta Commons</name>
-    <src>http://jakarta.apache.org/commons/images/logo.png</src>
-    <href>http://jakarta.apache.org/commons/</href>
-  </bannerRight>
   <publishDate format="dd MMMM yyyy" position="left" />
   <version position="left" />
   <skin>
@@ -20,26 +15,25 @@
   <body>
     <links>
       <item name="Apache"  href="http://www.apache.org"/>
-      <item name="Jakarta" href="http://jakarta.apache.org"/>
-      <item name="Commons" href="http://jakarta.apache.org/commons/" />
+      <item name="Commons" href="http://commons.apache.org/" />
     </links>
     <menu ref="reports" inherit="bottom" />
     <menu name="Commons" inherit="bottom">
-      <item name="Home"                  href="http://jakarta.apache.org/commons/" />
-      <item name="Components"            href="http://jakarta.apache.org/commons/components.html" collapse="true">
-        <item name="Full list..."        href="http://jakarta.apache.org/commons/components.html" />
+      <item name="Home"                  href="http://commons.apache.org/" />
+      <item name="Components"            href="http://commons.apache.org/components.html" collapse="true">
+        <item name="Full list..."        href="http://commons.apache.org/components.html" />
       </item> 
-      <item name="Sandbox"               href="http://jakarta.apache.org/commons/sandbox/index.html" collapse="true">
-        <item name="Full list..."        href="http://jakarta.apache.org/commons/sandbox/index.html" />
+      <item name="Sandbox"               href="http://commons.apache.org/sandbox/index.html" collapse="true">
+        <item name="Full list..."        href="http://commons.apache.org/sandbox/index.html" />
       </item>
-      <item name="Dormant"               href="http://jakarta.apache.org/commons/dormant/index.html" collapse="true">
-        <item name="Full list..."        href="http://jakarta.apache.org/commons/dormant/index.html" />
+      <item name="Dormant"               href="http://commons.apache.org/dormant/index.html" collapse="true">
+        <item name="Full list..."        href="http://commons.apache.org/dormant/index.html" />
       </item>
-      <item name="Volunteering"          href="http://jakarta.apache.org/commons/volunteering.html" />
-      <item name="Contributing Patches"  href="http://jakarta.apache.org/commons/patches.html" />
-      <item name="Building Components"   href="http://jakarta.apache.org/commons/building.html" />
-      <item name="Releasing Components"  href="http://jakarta.apache.org/commons/releases/index.html" />
-      <item name="Wiki"                  href="http://wiki.apache.org/jakarta-commons/FrontPage" />
+      <item name="Volunteering"          href="http://commons.apache.org/volunteering.html" />
+      <item name="Contributing Patches"  href="http://commons.apache.org/patches.html" />
+      <item name="Building Components"   href="http://commons.apache.org/building.html" />
+      <item name="Releasing Components"  href="http://commons.apache.org/releases/index.html" />
+      <item name="Wiki"                  href="http://wiki.apache.org/commons/FrontPage" />
     </menu>
   </body>
 </project>
