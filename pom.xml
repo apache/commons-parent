@@ -79,7 +79,7 @@
       <post>dev@commons.apache.org</post>
       <archive>http://mail-archives.apache.org/mod_mbox/commons-dev/</archive>
       <otherArchives>
-        <otherArchive>http://www.mail-archive.com/commons-dev@jakarta.apache.org/</otherArchive>
+        <otherArchive>http://www.mail-archive.com/dev@commons.apache.org/</otherArchive>
         <otherArchive>http://www.nabble.com/Commons---Dev-f317.html</otherArchive>
       </otherArchives>
     </mailingList>
@@ -90,7 +90,7 @@
       <post>user@commons.apache.org</post>
       <archive>http://mail-archives.apache.org/mod_mbox/commons-user/</archive>
       <otherArchives>
-        <otherArchive>http://www.mail-archive.com/commons-user@jakarta.apache.org/</otherArchive>
+        <otherArchive>http://www.mail-archive.com/user@commons.apache.org/</otherArchive>
         <otherArchive>http://www.nabble.com/Commons---User-f319.html</otherArchive>
       </otherArchives>
     </mailingList>
