@@ -28,8 +28,8 @@
   <packaging>pom</packaging>
   <!-- TODO: dummy version. In Maven 2.1, this will be auto-versioned being a generic parent -->
   <version>4-SNAPSHOT</version>
-  <name>Jakarta Commons</name>
-  <url>http://jakarta.apache.org/commons/</url>
+  <name>Apache Commons</name>
+  <url>http://commons.apache.org/</url>
   <inceptionYear>2001</inceptionYear>
 
   <!-- We don't use Continuum yet -->
@@ -39,7 +39,7 @@
     <notifiers>
       <notifier>
         <configuration>
-          <address>commons-dev@jakarta.apache.org</address>
+          <address>dev@commons.apache.org</address>
         </configuration>
       </notifier>
     </notifiers>
@@ -66,18 +66,18 @@
     a release of the commons-parent POM.
   -->
   <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/jakarta/commons/proper/commons-parent/trunk</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/jakarta/commons/proper/commons-parent/trunk</developerConnection>
-    <url>http://svn.apache.org/viewvc/jakarta/commons/proper/commons-parent/trunk</url>
+    <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk</connection>
+    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk</developerConnection>
+    <url>http://svn.apache.org/viewvc/commons/proper/commons-parent/trunk</url>
   </scm>
 
   <mailingLists>
     <mailingList>
       <name>Commons Dev List</name>
-      <subscribe>commons-dev-subscribe@jakarta.apache.org</subscribe>
-      <unsubscribe>commons-dev-unsubscribe@jakarta.apache.org</unsubscribe>
-      <post>commons-dev@jakarta.apache.org</post>
-      <archive>http://mail-archives.apache.org/mod_mbox/jakarta-commons-dev</archive>
+      <subscribe>dev-subscribe@commons.apache.org</subscribe>
+      <unsubscribe>dev-unsubscribe@commons.apache.org</unsubscribe>
+      <post>dev@commons.apache.org</post>
+      <archive>http://mail-archives.apache.org/mod_mbox/commons-dev/</archive>
       <otherArchives>
         <otherArchive>http://www.mail-archive.com/commons-dev@jakarta.apache.org/</otherArchive>
         <otherArchive>http://www.nabble.com/Commons---Dev-f317.html</otherArchive>
@@ -85,10 +85,10 @@
     </mailingList>
     <mailingList>
       <name>Commons User List</name>
-      <subscribe>commons-user-subscribe@jakarta.apache.org</subscribe>
-      <unsubscribe>commons-user-unsubscribe@jakarta.apache.org</unsubscribe>
-      <post>commons-user@jakarta.apache.org</post>
-      <archive>http://mail-archives.apache.org/mod_mbox/jakarta-commons-user</archive>
+      <subscribe>user-subscribe@commons.apache.org</subscribe>
+      <unsubscribe>user-unsubscribe@commons.apache.org</unsubscribe>
+      <post>user@commons.apache.org</post>
+      <archive>http://mail-archives.apache.org/mod_mbox/commons-user/</archive>
       <otherArchives>
         <otherArchive>http://www.mail-archive.com/commons-user@jakarta.apache.org/</otherArchive>
         <otherArchive>http://www.nabble.com/Commons---User-f319.html</otherArchive>
@@ -122,6 +122,11 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
           <version>2.0.3</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.3</version>
         </plugin>
       </plugins>
     </pluginManagement>
