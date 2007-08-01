@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
 
    Licensed to the Apache Software Foundation (ASF) under one or more
@@ -20,8 +21,8 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.apache</groupId>
-     <artifactId>apache</artifactId>
-     <version>4</version>
+    <artifactId>apache</artifactId>
+    <version>4</version>
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
@@ -47,18 +48,17 @@
   -->
 
   <distributionManagement>
-
-   <!--
-     This POM's parent POM (the Apache root POM) provides repositories. Unfortunately,
-     this allows for accidental deployments. So we disable them here by providing
-     a dummy repository. Use "mvn -Prc deploy" (Apache snapshot repository) or
-     "mvn -Prelease deploy" (Apache release repository), if you really want to deploy.
-   -->
-   <repository>
-     <id>dummy</id>
-     <name>Dummy to avoid accidental deploys</name>
-     <url />
-   </repository>
+    <!--
+      This POM's parent POM (the Apache root POM) provides repositories. Unfortunately,
+      this allows for accidental deployments. So we disable them here by providing
+      a dummy repository. Use "mvn -Prc deploy" (Apache snapshot repository) or
+      "mvn -Prelease deploy" (Apache release repository), if you really want to deploy.
+    -->
+    <repository>
+      <id>dummy</id>
+      <name>Dummy to avoid accidental deploys</name>
+      <url />
+    </repository>
   </distributionManagement>
 
   <!--
