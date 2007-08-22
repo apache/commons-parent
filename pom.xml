@@ -29,7 +29,7 @@
   <packaging>pom</packaging>
   <!-- TODO: dummy version. In Maven 2.1, this will be auto-versioned being a generic parent -->
   <version>5-SNAPSHOT</version>
-  <name>Apache Commons</name>
+  <name>Commons Parent</name>
   <url>http://commons.apache.org/</url>
   <inceptionYear>2001</inceptionYear>
 
