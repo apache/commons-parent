@@ -215,8 +215,23 @@
 
   <profiles>
     <profile>
-      <id>release</id>
+      <id>ci</id>
+      <distributionManagement>
+        <repository>
+          <id>apache.snapshots</id>
+          <name>Apache Development Snapshot Repository</name>
+          <url>${commons.deployment.protocol}://people.apache.org/www/people.apache.org/repo/m2-snapshot-repository</url>
+        </repository>
+        <snapshotRepository>
+          <id>apache.snapshots</id>
+          <name>Apache Development Snapshot Repository</name>
+          <url>${commons.deployment.protocol}://people.apache.org/www/people.apache.org/repo/m2-snapshot-repository</url>
+        </snapshotRepository>
+      </distributionManagement>
+    </profile>
 
+    <profile>
+      <id>release</id>
       <distributionManagement>
         <repository>
           <id>apache.releases</id>
@@ -270,6 +285,7 @@
         </plugins>
       </build>
     </profile>
+
     <profile>
       <id>rc</id>
       <distributionManagement>
