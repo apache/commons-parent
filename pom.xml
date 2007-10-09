@@ -33,19 +33,18 @@
   <url>http://commons.apache.org/</url>
   <inceptionYear>2001</inceptionYear>
 
-  <!-- We don't use Continuum yet -->
-  <!--
   <ciManagement>
     <system>continuum</system>
+    <url>http://vmbuild.apache.org/continuum/</url>
     <notifiers>
       <notifier>
+        <type>mail</type>
         <configuration>
           <address>dev@commons.apache.org</address>
         </configuration>
       </notifier>
     </notifiers>
   </ciManagement>
-  -->
 
   <distributionManagement>
     <!--
