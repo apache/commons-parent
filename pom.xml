@@ -72,6 +72,16 @@
 
   <mailingLists>
     <mailingList>
+      <name>Commons Commits List</name>
+      <subscribe>commits-subscribe@commons.apache.org</subscribe>
+      <unsubscribe>commits-unsubscribe@commons.apache.org</unsubscribe>
+      <post>commits@commons.apache.org</post>
+      <archive>http://mail-archives.apache.org/mod_mbox/commons-commits/</archive>
+      <otherArchives>
+        <otherArchive>http://www.mail-archive.com/commits@commons.apache.org/</otherArchive>
+      </otherArchives>
+    </mailingList>
+    <mailingList>
       <name>Commons Dev List</name>
       <subscribe>dev-subscribe@commons.apache.org</subscribe>
       <unsubscribe>dev-unsubscribe@commons.apache.org</unsubscribe>
@@ -80,6 +90,17 @@
       <otherArchives>
         <otherArchive>http://www.mail-archive.com/dev@commons.apache.org/</otherArchive>
         <otherArchive>http://www.nabble.com/Commons---Dev-f317.html</otherArchive>
+      </otherArchives>
+    </mailingList>
+    <mailingList>
+      <name>Commons Issues List</name>
+      <subscribe>issues-subscribe@commons.apache.org</subscribe>
+      <unsubscribe>issues-unsubscribe@commons.apache.org</unsubscribe>
+      <post>issues@commons.apache.org</post>
+      <archive>http://mail-archives.apache.org/mod_mbox/commons-issues/</archive>
+      <otherArchives>
+        <otherArchive>http://www.mail-archive.com/issues@commons.apache.org/</otherArchive>
+        <otherArchive>http://www.nabble.com/Commons---Issues-f25499.html</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
@@ -203,7 +224,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>rat-maven-plugin</artifactId>
-        <version>1.0-alpha-2</version>
+        <version>1.0-alpha-3</version>
       </plugin>
     </plugins>
   </reporting>
