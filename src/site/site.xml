@@ -35,5 +35,9 @@
       <item name="Releasing Components"  href="http://commons.apache.org/releases/index.html" />
       <item name="Wiki"                  href="http://wiki.apache.org/commons/FrontPage" />
     </menu>
+    <menu name="ASF" inherit="bottom">
+      <item name="Sponsorship"           href="http://www.apache.org/foundation/sponsorship.html" />
+      <item name="Thanks"                href="http://www.apache.org/foundation/thanks.html" />
+    </menu>
   </body>
 </project>
