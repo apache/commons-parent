@@ -194,6 +194,7 @@
         <version>2.2</version>
         <configuration> 
           <aggregate>true</aggregate>
+          <source>${maven.compile.source}</source>
         </configuration> 
       </plugin>
       <plugin>
