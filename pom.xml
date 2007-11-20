@@ -79,6 +79,7 @@
       <archive>http://mail-archives.apache.org/mod_mbox/commons-commits/</archive>
       <otherArchives>
         <otherArchive>http://www.mail-archive.com/commits@commons.apache.org/</otherArchive>
+        <otherArchive>http://commons.markmail.org/search/list:org.apache.commons.commits</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
@@ -90,6 +91,8 @@
       <otherArchives>
         <otherArchive>http://www.mail-archive.com/dev@commons.apache.org/</otherArchive>
         <otherArchive>http://www.nabble.com/Commons---Dev-f317.html</otherArchive>
+        <otherArchive>http://news.gmane.org/gmane.comp.jakarta.commons.devel</otherArchive>
+        <otherArchive>http://commons.markmail.org/search/list:org.apache.commons.dev</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
@@ -101,6 +104,7 @@
       <otherArchives>
         <otherArchive>http://www.mail-archive.com/issues@commons.apache.org/</otherArchive>
         <otherArchive>http://www.nabble.com/Commons---Issues-f25499.html</otherArchive>
+        <otherArchive>http://commons.markmail.org/search/list:org.apache.commons.issues</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
@@ -112,6 +116,8 @@
       <otherArchives>
         <otherArchive>http://www.mail-archive.com/user@commons.apache.org/</otherArchive>
         <otherArchive>http://www.nabble.com/Commons---User-f319.html</otherArchive>
+        <otherArchive>http://news.gmane.org/gmane.comp.jakarta.commons.user</otherArchive>
+        <otherArchive>http://commons.markmail.org/search/list:org.apache.commons.user</otherArchive>
       </otherArchives>
     </mailingList>
   </mailingLists>
