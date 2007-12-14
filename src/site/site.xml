@@ -10,7 +10,7 @@
   <skin>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-skin</artifactId>
-    <version>2-SNAPSHOT</version>
+    <version>2</version>
   </skin>
   <body>
     <links>
