@@ -169,6 +169,26 @@
           <artifactId>cobertura-maven-plugin</artifactId>
           <version>2.2</version>
         </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>2.3</version>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>clirr-maven-plugin</artifactId>
+          <version>2.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>1.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>2.0-beta-6</version>
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
@@ -204,6 +224,33 @@
           <jdkLevel>${maven.compile.source}</jdkLevel>
         </configuration>
       </plugin>
+      <plugin>
+        <!--
+          - Copy LICENSE.txt and NOTICE.txt so that they are included
+          - commons-io-X.Y-javadoc.jar.
+          -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>javadoc.resources</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <tasks>
+                <copy todir="${project.build.directory}/apidocs/META-INF">
+                  <fileset dir="${basedir}">
+                    <include name="LICENSE.txt" />
+                    <include name="NOTICE.txt" />
+                  </fileset>
+                </copy>
+              </tasks>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 
@@ -212,7 +259,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.2</version>
         <configuration> 
           <aggregate>true</aggregate>
           <source>${maven.compile.source}</source>
