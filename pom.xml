@@ -168,6 +168,20 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>2.3</version>
+          <configuration>
+            <encoding>${commons.encoding}</encoding>
+            <docEncoding>${commons.docEncoding}</docEncoding>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>2.0.2</version>
+          <configuration>
+            <source>${maven.compile.source}</source>
+            <target>${maven.compile.target}</target>
+            <encoding>${commons.encoding}</encoding>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -180,10 +194,6 @@
       <!-- TODO: later use toolchain support to do compilation on an external JDK 1.3+ compiler -->
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>${maven.compile.source}</source>
-          <target>${maven.compile.target}</target>
-        </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
@@ -248,6 +258,8 @@
         <configuration> 
           <aggregate>true</aggregate>
           <source>${maven.compile.source}</source>
+          <encoding>${commons.encoding}</encoding>
+          <docEncoding>${commons.docEncoding}</docEncoding>
         </configuration> 
       </plugin>
       <plugin>
@@ -449,6 +461,14 @@
       other protocols like scpexe, which some users prefer over scp.
     -->
     <commons.deployment.protocol>scp</commons.deployment.protocol>
+
+    <!--
+      Encoding of Java source files: Make sure, that the compiler and
+      the javadoc generator use the right encoding. Subprojects may
+      overwrite this, if they are using another encoding.
+    -->
+    <commons.encoding>iso-8859-1</commons.encoding>
+    <commons.docEncoding>${commons.encoding}</commons.docEncoding>
 
   </properties>
 
