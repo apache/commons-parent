@@ -199,6 +199,11 @@
           <version>1.2.1</version>
           <inherited>true</inherited>
         </plugin>
+        <plugin>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-build-plugin</artifactId>
+          <version>1.0</version>
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
@@ -270,6 +275,10 @@
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-build-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
