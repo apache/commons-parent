@@ -203,6 +203,10 @@
           <groupId>org.apache.commons</groupId>
           <artifactId>commons-build-plugin</artifactId>
           <version>1.0</version>
+          <configuration>
+            <commons.release.name>commons-${commons.componentid}-${commons.release.version}</commons.release.name>
+            <commons.binary.suffix>-bin</commons.binary.suffix>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
