@@ -480,6 +480,17 @@
             </configuration>
           </plugin>
           <plugin>
+            <artifactId>maven-site-plugin</artifactId>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>site</goal>
+                </goals>
+                <phase>package</phase>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
             <artifactId>maven-source-plugin</artifactId>
             <executions>
               <execution>
@@ -510,6 +521,17 @@
                 <configuration>
                   <source>${maven.compile.source}</source>
                 </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>attached</goal>
+                </goals>
+                <phase>package</phase>
               </execution>
             </executions>
           </plugin>
