@@ -242,8 +242,12 @@
           <instructions>
             <!-- stops the "uses" clauses being added to "Export-Package" manifest entry -->
             <_nouses>true</_nouses>
-            <Bundle-SymbolicName>${commons.osgibundle}</Bundle-SymbolicName>
-            <Export-Package>org.apache.commons.*;version=${pom.version}</Export-Package>
+            <Bundle-SymbolicName>${commons.osgi.symbolicName}</Bundle-SymbolicName>
+            <Export-Package>${commons.osgi.export}</Export-Package>
+            <Private-Package>${commons.osgi.private}</Private-Package>
+            <Import-Package>${commons.osgi.import}</Import-Package>
+            <DynamicImport-Package>${commons.osgi.dynamicImport}</DynamicImport-Package>
+            <Bundle-DocURL>${project.url}</Bundle-DocURL>
           </instructions>
         </configuration>
       </plugin>
@@ -513,8 +517,12 @@
     <!-- Commons Component Id -->
     <commons.componentid>${project.artifactId}</commons.componentid>
 
-    <!-- OSGi Bundle Symbolic Name -->
-    <commons.osgibundle>org.apache.commons.${commons.componentid}</commons.osgibundle>
+    <!-- Configuration properties for the OSGi maven-bundle-plugin -->
+    <commons.osgi.symbolicName>org.apache.commons.${commons.componentid}</commons.osgi.symbolicName>
+    <commons.osgi.export>org.apache.commons.*;version=${pom.version}</commons.osgi.export>
+    <commons.osgi.import>*</commons.osgi.import>
+    <commons.osgi.dynamicImport></commons.osgi.dynamicImport>
+    <commons.osgi.private></commons.osgi.private>
 
     <!--
       Make the deployment protocol pluggable. This allows to switch to
