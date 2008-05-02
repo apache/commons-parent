@@ -36,14 +36,6 @@
   <ciManagement>
     <system>continuum</system>
     <url>http://vmbuild.apache.org/continuum/</url>
-    <notifiers>
-      <notifier>
-        <type>mail</type>
-        <configuration>
-          <address>dev@commons.apache.org</address>
-        </configuration>
-      </notifier>
-    </notifiers>
   </ciManagement>
 
   <distributionManagement>
