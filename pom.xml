@@ -149,7 +149,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.4.2</version>
+          <version>2.4.3</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -164,7 +164,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>2.3</version>
+          <version>2.4</version>
           <configuration>
             <encoding>${commons.encoding}</encoding>
             <docEncoding>${commons.docEncoding}</docEncoding>
@@ -302,12 +302,16 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.3</version>
+        <version>2.4</version>
         <configuration> 
           <aggregate>true</aggregate>
           <source>${maven.compile.source}</source>
           <encoding>${commons.encoding}</encoding>
           <docEncoding>${commons.docEncoding}</docEncoding>
+          <linksource>true</linksource>
+          <links>
+            <link>http://java.sun.com/javase/6/docs/api/</link>
+          </links>
         </configuration> 
       </plugin>
       <plugin>
@@ -334,7 +338,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
-        <version>2.4.2</version>
+        <version>2.4.3</version>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
