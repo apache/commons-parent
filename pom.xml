@@ -542,7 +542,7 @@
     <!--
       Profile to build all Commons "proper" components.
 
-      The trunks of all "proper components can be checked out using:
+      The trunks of all "proper" components can be checked out using:
           https://svn.apache.org/repos/asf/commons/trunks-proper/
 
       This profile is a convience which can be used, for example, to build all the component sites:
