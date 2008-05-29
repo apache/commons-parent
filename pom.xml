@@ -304,7 +304,7 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>2.4</version>
         <configuration> 
-          <aggregate>true</aggregate>
+          <aggregate>false</aggregate>
           <source>${maven.compile.source}</source>
           <encoding>${commons.encoding}</encoding>
           <docEncoding>${commons.docEncoding}</docEncoding>
@@ -319,7 +319,7 @@
         <artifactId>maven-jxr-plugin</artifactId>
         <version>2.1</version>
         <configuration> 
-          <aggregate>true</aggregate>
+          <aggregate>false</aggregate>
         </configuration> 
       </plugin>
       <plugin>
@@ -537,6 +537,58 @@
           </plugin>
         </plugins>
       </build>
+    </profile>
+
+    <!--
+      Profile to build all Commons "proper" components.
+
+      The trunks of all "proper components can be checked out using:
+          https://svn.apache.org/repos/asf/commons/trunks-proper/
+
+      This profile is a convience which can be used, for example, to build all the component sites:
+          mvn -Ptrunks-proper site
+
+      or, to clean up:
+          mvn -Ptrunks-proper clean
+
+      see http://issues.apache.org/jira/browse/COMMONSSITE-30
+      -->
+    <profile>
+      <id>trunks-proper</id>
+      <modules>
+        <module>../beanutils</module>
+        <module>../betwixt</module>
+        <module>../chain</module>
+        <module>../cli</module>
+        <module>../codec</module>
+        <module>../collections</module>
+        <module>../configuration</module>
+        <module>../daemon</module>
+        <module>../dbcp</module>
+        <module>../dbutils</module>
+        <module>../digester</module>
+        <module>../discovery</module>
+        <module>../el</module>
+        <module>../email</module>
+        <module>../fileupload</module>
+        <module>../io</module>
+        <module>../jci</module>
+        <module>../jexl</module>
+        <module>../jxpath</module>
+        <module>../lang</module>
+        <module>../launcher</module>
+        <module>../logging</module>
+        <module>../math</module>
+        <module>../modeler</module>
+        <module>../net</module>
+        <module>../pool</module>
+        <module>../primitives</module>
+        <module>../proxy</module>
+        <module>../scxml</module>
+        <module>../transaction</module>
+        <module>../validator</module>
+        <module>../vfs</module>
+      </modules>
     </profile>
   </profiles>
 
