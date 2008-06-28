@@ -570,6 +570,7 @@
         <module>../discovery</module>
         <module>../el</module>
         <module>../email</module>
+        <module>../exec</module>
         <module>../fileupload</module>
         <module>../io</module>
         <module>../jci</module>
