@@ -194,7 +194,7 @@
         <plugin>
           <groupId>org.apache.commons</groupId>
           <artifactId>commons-build-plugin</artifactId>
-          <version>1.0</version>
+          <version>1.1</version>
           <configuration>
             <commons.release.name>${commons.release.name}</commons.release.name>
           </configuration>
