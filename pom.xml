@@ -568,6 +568,7 @@
         <module>../cli</module>
         <module>../codec</module>
         <module>../collections</module>
+        <module>../compress</module>
         <module>../configuration</module>
         <module>../daemon</module>
         <module>../dbcp</module>
