@@ -592,6 +592,7 @@
         <module>../pool</module>
         <module>../primitives</module>
         <module>../proxy</module>
+        <module>../sanselan</module>
         <module>../scxml</module>
         <module>../transaction</module>
         <module>../validator</module>
