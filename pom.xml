@@ -299,6 +299,8 @@
   </build>
 
   <reporting>
+    <!-- N.B. plugins defined here in the <reporting> section ignore what's defined in <pluginManagement>
+         in the <build> section above, so we have to define the versions here. -->
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
