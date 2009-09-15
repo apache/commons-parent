@@ -671,6 +671,9 @@
     -->
     <commons.encoding>iso-8859-1</commons.encoding>
     <commons.docEncoding>${commons.encoding}</commons.docEncoding>
+    <!-- Define encoding for filtering -->
+    <project.build.sourceEncoding>${commons.encoding}</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>${commons.encoding}</project.reporting.outputEncoding>
 
   </properties>
 
