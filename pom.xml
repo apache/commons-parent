@@ -166,12 +166,6 @@
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>2.5</version>
           <configuration>
-            <archive>
-              <manifest>
-                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-              </manifest>
-            </archive>
             <encoding>${commons.encoding}</encoding>
             <docEncoding>${commons.docEncoding}</docEncoding>
           </configuration>
@@ -313,12 +307,6 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>2.5</version>
         <configuration> 
-          <archive>
-            <manifest>
-              <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-              <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-            </manifest>
-          </archive>
           <aggregate>false</aggregate>
           <source>${maven.compile.source}</source>
           <encoding>${commons.encoding}</encoding>
