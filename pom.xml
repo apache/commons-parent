@@ -557,6 +557,12 @@
                 <phase>package</phase>
                 <configuration>
                   <source>${maven.compile.source}</source>
+                  <archive>
+                    <manifest>
+                      <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                      <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                    </manifest>
+                  </archive>
                 </configuration>
               </execution>
             </executions>
