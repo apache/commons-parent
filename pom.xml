@@ -28,7 +28,7 @@
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
   <!-- TODO: dummy version. In Maven 2.1, this will be auto-versioned being a generic parent -->
-  <version>12</version>
+  <version>13-SNAPSHOT</version>
   <name>Commons Parent</name>
   <url>http://commons.apache.org/</url>
 
@@ -56,9 +56,9 @@
     a release of the commons-parent POM.
   -->
   <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-12</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-12</developerConnection>
-    <url>http://svn.apache.org/viewvc/commons/proper/commons-parent/tags/commons-parent-12</url>
+    <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk</connection>
+    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk</developerConnection>
+    <url>http://svn.apache.org/viewvc/commons/proper/commons-parent/trunk</url>
   </scm>
 
   <mailingLists>
