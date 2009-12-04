@@ -459,6 +459,7 @@
               <execution>
                 <id>create-javadoc-jar</id>
                 <goals>
+                  <goal>javadoc</goal>
                   <goal>jar</goal>
                 </goals>
                 <phase>package</phase>
@@ -517,17 +518,6 @@
             </configuration>
           </plugin>
           <plugin>
-            <artifactId>maven-site-plugin</artifactId>
-            <executions>
-              <execution>
-                <goals>
-                  <goal>site</goal>
-                </goals>
-                <phase>package</phase>
-              </execution>
-            </executions>
-          </plugin>
-          <plugin>
             <artifactId>maven-source-plugin</artifactId>
             <executions>
               <execution>
@@ -560,6 +550,7 @@
               <execution>
                 <id>create-javadoc-jar</id>
                 <goals>
+                  <goal>javadoc</goal>
                   <goal>jar</goal>
                 </goals>
                 <phase>package</phase>
