@@ -658,7 +658,7 @@
 
     <!-- Configuration properties for the OSGi maven-bundle-plugin -->
     <commons.osgi.symbolicName>org.apache.commons.${commons.componentid}</commons.osgi.symbolicName>
-    <commons.osgi.export>org.apache.commons.*;version=${pom.version}</commons.osgi.export>
+    <commons.osgi.export>org.apache.commons.*;version=${project.version}</commons.osgi.export>
     <commons.osgi.import>!org.apache.commons.${commons.componentid}*,*</commons.osgi.import>
     <commons.osgi.dynamicImport />
     <commons.osgi.private />
