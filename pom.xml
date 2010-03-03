@@ -178,6 +178,13 @@
           <configuration>
             <encoding>${commons.encoding}</encoding>
             <docEncoding>${commons.docEncoding}</docEncoding>
+            <source>${maven.compile.source}</source>
+            <archive>
+              <manifest>
+                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+              </manifest>
+            </archive>
           </configuration>
         </plugin>
         <plugin>
@@ -199,6 +206,14 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
           <version>2.1.1</version>
+          <configuration>
+            <archive>
+              <manifest>
+                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+              </manifest>
+            </archive>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -327,7 +342,6 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>2.6.1</version>
         <configuration> 
-          <aggregate>false</aggregate>
           <source>${maven.compile.source}</source>
           <encoding>${commons.encoding}</encoding>
           <docEncoding>${commons.docEncoding}</docEncoding>
@@ -437,14 +451,6 @@
                 <phase>package</phase>
               </execution>
             </executions>
-            <configuration>
-              <archive>
-                <manifest>
-                  <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                  <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                </manifest>
-              </archive>
-            </configuration>
           </plugin>
           <plugin>
             <artifactId>maven-release-plugin</artifactId>
@@ -463,15 +469,6 @@
                   <goal>jar</goal>
                 </goals>
                 <phase>package</phase>
-                <configuration>
-                  <source>${maven.compile.source}</source>
-                  <archive>
-                    <manifest>
-                      <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                      <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                    </manifest>
-                  </archive>
-                </configuration>
               </execution>
             </executions>
           </plugin>
@@ -528,14 +525,6 @@
                 <phase>package</phase>
               </execution>
             </executions>
-            <configuration>
-              <archive>
-                <manifest>
-                  <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                  <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                </manifest>
-              </archive>
-            </configuration>
           </plugin>
           <plugin>
             <artifactId>maven-release-plugin</artifactId>
@@ -554,15 +543,6 @@
                   <goal>jar</goal>
                 </goals>
                 <phase>package</phase>
-                <configuration>
-                  <source>${maven.compile.source}</source>
-                  <archive>
-                    <manifest>
-                      <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                      <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                    </manifest>
-                  </archive>
-                </configuration>
               </execution>
             </executions>
           </plugin>
