@@ -625,8 +625,8 @@
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
-    <commons.release.desc/>
-    <commons.release.2.desc/>
+    <commons.release.desc />
+    <commons.release.2.desc />
     <commons.binary.suffix>-bin</commons.binary.suffix>
     <commons.release.2.binary.suffix>-bin</commons.release.2.binary.suffix>
 
