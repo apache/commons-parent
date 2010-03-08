@@ -178,7 +178,6 @@
           <configuration>
             <encoding>${commons.encoding}</encoding>
             <docEncoding>${commons.docEncoding}</docEncoding>
-            <source>${maven.compile.source}</source>
             <archive>
               <manifest>
                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
@@ -471,6 +470,9 @@
                 <phase>package</phase>
               </execution>
             </executions>
+            <configuration>
+              <source>${maven.compile.source}</source>
+            </configuration>
           </plugin>
         </plugins>
       </build>
@@ -545,6 +547,9 @@
                 <phase>package</phase>
               </execution>
             </executions>
+            <configuration>
+              <source>${maven.compile.source}</source>
+            </configuration>
           </plugin>
           <plugin>
             <artifactId>maven-assembly-plugin</artifactId>
