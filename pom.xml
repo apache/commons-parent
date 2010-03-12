@@ -583,7 +583,7 @@
 
     <!--
        Profile for running the build using JDK 1.3
-       (JAVA_1_3_HOME needs to be configured in settings.xml)
+       (JAVA_1_3_HOME needs to be defined, e.g. in settings.xml or an environment variable)
       -->
     <profile>
       <id>java-1.3</id>
@@ -598,7 +598,7 @@
 
     <!--
        Profile for running the build using JDK 1.4
-       (JAVA_1_4_HOME needs to be configured in settings.xml)
+       (JAVA_1_4_HOME needs to be defined, e.g. in settings.xml or an environment variable)
       -->
     <profile>
       <id>java-1.4</id>
@@ -612,7 +612,7 @@
 
     <!--
        Profile for running the build using JDK 1.5
-       (JAVA_1_5_HOME needs to be configured in settings.xml)
+       (JAVA_1_5_HOME needs to be defined, e.g. in settings.xml or an environment variable)
       -->
     <profile>
       <id>java-1.5</id>
@@ -626,7 +626,7 @@
 
     <!--
        Profile for running the build using JDK 1.6
-       (JAVA_1_6_HOME needs to be configured in settings.xml)
+       (JAVA_1_6_HOME needs to be defined, e.g. in settings.xml or an environment variable)
       -->
     <profile>
       <id>java-1.6</id>
