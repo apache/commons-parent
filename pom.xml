@@ -71,7 +71,7 @@
       <archive>http://mail-archives.apache.org/mod_mbox/commons-user/</archive>
       <otherArchives>
         <otherArchive>http://markmail.org/list/org.apache.commons.users/</otherArchive>
-        <otherArchive>http://www.nabble.com/Commons---User-f319.html</otherArchive>
+        <otherArchive>http://old.nabble.com/Commons---User-f319.html</otherArchive>
         <otherArchive>http://www.mail-archive.com/user@commons.apache.org/</otherArchive>
         <otherArchive>http://news.gmane.org/gmane.comp.jakarta.commons.user</otherArchive>
       </otherArchives>
@@ -84,7 +84,7 @@
       <archive>http://mail-archives.apache.org/mod_mbox/commons-dev/</archive>
       <otherArchives>
         <otherArchive>http://markmail.org/list/org.apache.commons.dev/</otherArchive>
-        <otherArchive>http://www.nabble.com/Commons---Dev-f317.html</otherArchive>
+        <otherArchive>http://old.nabble.com/Commons---Dev-f317.html</otherArchive>
         <otherArchive>http://www.mail-archive.com/dev@commons.apache.org/</otherArchive>
         <otherArchive>http://news.gmane.org/gmane.comp.jakarta.commons.devel</otherArchive>
       </otherArchives>
@@ -96,7 +96,7 @@
       <archive>http://mail-archives.apache.org/mod_mbox/commons-issues/</archive>
       <otherArchives>
         <otherArchive>http://markmail.org/list/org.apache.commons.issues/</otherArchive>
-        <otherArchive>http://www.nabble.com/Commons---Issues-f25499.html</otherArchive>
+        <otherArchive>http://old.nabble.com/Commons---Issues-f25499.html</otherArchive>
         <otherArchive>http://www.mail-archive.com/issues@commons.apache.org/</otherArchive>
       </otherArchives>
     </mailingList>
