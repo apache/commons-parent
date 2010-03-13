@@ -298,6 +298,8 @@
           <instructions>
             <!-- stops the "uses" clauses being added to "Export-Package" manifest entry -->
             <_nouses>true</_nouses>
+            <!-- Stop the JAVA_1_n_HOME variables from being treated as headers by Bnd -->
+            <_removeheaders>JAVA_1_3_HOME,JAVA_1_4_HOME,JAVA_1_5_HOME,JAVA_1_6_HOME</_removeheaders>
             <Bundle-SymbolicName>${commons.osgi.symbolicName}</Bundle-SymbolicName>
             <Export-Package>${commons.osgi.export}</Export-Package>
             <Private-Package>${commons.osgi.private}</Private-Package>
@@ -651,6 +653,9 @@
         <commons.surefire.java>${JAVA_1_6_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
+
+    <!-- N.B. when adding new java profiles, be sure to update 
+         the _removeheaders list in the maven_bundle_plugin configuration -->
 
     <!--
       Profile to build all Commons "proper" components.
