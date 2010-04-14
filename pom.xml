@@ -328,6 +328,10 @@
       </plugin>
       <plugin>
         <artifactId>maven-idea-plugin</artifactId>
+        <!--
+         | N.B. The version is deliberately not provided - see COMMONSSITE-56
+         |      This may result in some warnings, e.g. from the Maven 2 Eclipse plugin.
+         -->
         <configuration>
           <jdkLevel>${maven.compile.source}</jdkLevel>
         </configuration>
