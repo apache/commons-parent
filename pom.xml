@@ -720,7 +720,6 @@
         <module>../proxy</module>
         <module>../sanselan</module>
         <module>../scxml</module>
-        <module>../transaction</module>
         <module>../validator</module>
         <module>../vfs</module>
       </modules>
