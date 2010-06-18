@@ -635,6 +635,18 @@
     <!-- N.B. when adding new java profiles, be sure to update 
          the _removeheaders list in the maven_bundle_plugin configuration -->
 
+    <!-- 
+     | Profile to allow testing of deploy phase
+     | e.g.
+     | mvn deploy -Ptest-deploy -Prelease -Dgpg.skip
+     -->
+    <profile>
+      <id>test-deploy</id>
+      <properties>
+        <altDeploymentRepository>id::default::file:target/deploy</altDeploymentRepository>
+      </properties>
+    </profile>
+   
     <!--
       Profile to build all Commons "proper" components.
 
