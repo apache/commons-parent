@@ -100,7 +100,7 @@
       <name>Apache Announce List</name>
       <subscribe>announce-subscribe@apache.org</subscribe>
       <unsubscribe>announce-unsubscribe@apache.org</unsubscribe>
-      <archive>http://mail-archives.apache.org/mod_mbox/announce/</archive>
+      <archive>http://mail-archives.apache.org/mod_mbox/www-announce/</archive>
       <otherArchives>
         <otherArchive>http://markmail.org/list/org.apache.announce/</otherArchive>
         <otherArchive>http://old.nabble.com/Apache-News-and-Announce-f109.html</otherArchive>
