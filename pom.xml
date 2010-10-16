@@ -183,6 +183,9 @@
             <quiet>true</quiet>
             <encoding>${commons.encoding}</encoding>
             <docEncoding>${commons.docEncoding}</docEncoding>
+            <links>
+              <link>${commons.javadoc.java.link}</link>
+            </links>
             <archive>
               <manifest>
                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
@@ -780,6 +783,8 @@
     <project.build.sourceEncoding>${commons.encoding}</project.build.sourceEncoding>
     <project.reporting.outputEncoding>${commons.encoding}</project.reporting.outputEncoding>
 
+    <!-- Javadoc link to Java API.  Default is Java 1.6; components can override to other versions -->
+    <commons.javadoc.java.link>http://download.oracle.com/javase/6/docs/api/</commons.javadoc.java.link>
   </properties>
 
 </project>
