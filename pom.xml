@@ -28,7 +28,7 @@
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
   <!-- TODO: dummy version. In Maven 2.1, this will be auto-versioned being a generic parent -->
-  <version>18</version>
+  <version>18-SNAPSHOT</version>
   <name>Commons Parent</name>
   <url>http://commons.apache.org/</url>
 
