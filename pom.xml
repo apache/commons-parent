@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
-    <version>7</version>
+    <version>8</version>
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
@@ -174,7 +174,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>2.5</version>
+          <version>${commons.javadoc.version}</version>
           <configuration>
             <!-- keep only errors and warnings -->
             <quiet>true</quiet>
@@ -204,7 +204,7 @@
           <configuration>
             <!--
                 apache parent pom automatically adds "LICENSE" and "NOTICE" files
-                to jars - duplciating the "LICENSE.txt" and "NOTICE.txt"
+                to jars - duplicating the "LICENSE.txt" and "NOTICE.txt"
                 files that components already have.
              -->
             <skip>true</skip>
@@ -370,7 +370,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.5</version>
+        <version>${commons.javadoc.version}</version>
         <configuration> 
           <!-- keep only errors and warnings -->
           <quiet>true</quiet>
@@ -394,6 +394,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
+        <!-- TODO why is this different from the version in pluginManagement? -->
         <version>2.0.1</version>
         <configuration>
           <!-- Exclude the navigation file for Maven 1 sites
@@ -807,7 +808,8 @@
     <commons.compiler.compilerVersion />
     <commons.compiler.javac />
     <commons.surefire.java />
-    <commons.surefire.version>2.7.1</commons.surefire.version>
+    <commons.surefire.version>2.7.2</commons.surefire.version>
+    <commons.javadoc.version>2.7</commons.javadoc.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
