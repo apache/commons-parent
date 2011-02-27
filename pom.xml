@@ -339,14 +339,14 @@
               <goal>run</goal>
             </goals>
             <configuration>
-              <tasks>
+              <target>
                 <copy todir="${project.build.directory}/apidocs/META-INF">
                   <fileset dir="${basedir}">
                     <include name="LICENSE.txt" />
                     <include name="NOTICE.txt" />
                   </fileset>
                 </copy>
-              </tasks>
+              </target>
             </configuration>
           </execution>
         </executions>
@@ -394,8 +394,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
-        <!-- TODO why is this different from the version in pluginManagement? -->
-        <version>2.0.1</version>
+        <version>2.2</version>
         <configuration>
           <!-- Exclude the navigation file for Maven 1 sites
                and the changes file used by the changes-plugin,
