@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <project name="Apache Commons">
+
+<!-- N.B. all non-body elements are automatically inherited -->
+
   <bannerLeft>
     <name>Apache Commons</name>
     <src>http://commons.apache.org/images/logo.png</src>
     <href>http://commons.apache.org/</href>
   </bannerLeft>
+
   <publishDate format="dd MMMM yyyy" position="left" />
+
   <version position="left" />
+
   <skin>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-skin</artifactId>
-    <version>2</version>
+    <version>3-SNAPSHOT</version>
   </skin>
+
   <body>
+    <!-- N.B. body links are automatically inherited -->
     <links>
       <item name="ApacheCon" href="http://www.apachecon.com/"/>
       <item name="Apache"  href="http://www.apache.org"/>
       <item name="Commons" href="http://commons.apache.org/" />
     </links>
+
     <menu ref="reports" inherit="bottom" />
+
     <menu name="Commons" inherit="bottom">
       <item name="Home"                  href="http://commons.apache.org/" />
+      <item name="License"               href="http://www.apache.org/licenses/"/>
       <item name="Components"            href="http://commons.apache.org/components.html" collapse="true">
         <item name="Full list..."        href="http://commons.apache.org/components.html" />
       </item> 
@@ -30,15 +41,45 @@
       <item name="Dormant"               href="http://commons.apache.org/dormant/index.html" collapse="true">
         <item name="Full list..."        href="http://commons.apache.org/dormant/index.html" />
       </item>
+    </menu>
+
+    <!-- Should agree with commons-site -->
+    <menu name="General Information" inherit="bottom">
       <item name="Volunteering"          href="http://commons.apache.org/volunteering.html" />
       <item name="Contributing Patches"  href="http://commons.apache.org/patches.html" />
       <item name="Building Components"   href="http://commons.apache.org/building.html" />
       <item name="Releasing Components"  href="http://commons.apache.org/releases/index.html" />
       <item name="Wiki"                  href="http://wiki.apache.org/commons/FrontPage" />
     </menu>
+
+    <!-- Should agree with commons-site -->
     <menu name="ASF" inherit="bottom">
+      <item name="How the ASF works"     href="http://www.apache.org/foundation/how-it-works.html" />
+      <item name="Get Involved"          href="http://www.apache.org/foundation/getinvolved.html" />
+      <item name="Developer Resources"   href="http://www.apache.org/dev/" />
       <item name="Sponsorship"           href="http://www.apache.org/foundation/sponsorship.html" />
       <item name="Thanks"                href="http://www.apache.org/foundation/thanks.html" />
     </menu>
   </body>
+
+  <!-- inherited -->
+  <poweredBy>
+    <!-- Add ApacheCon logo -->
+    <logo name="ApacheCon" href="http://www.apache.org/events/current-event.html"
+          img="http://www.apache.org/events/current-event-125x125.png"/>
+    <!-- Keep the default logo as well -->
+    <logo name="Maven" href="http://maven.apache.org/"
+          img="http://maven.apache.org/images/logos/maven-feather.png"/>
+  </poweredBy>
+
+  <!-- inherited -->
+  <custom>
+    <!-- @project.name@ will be replaced by the template; if we used ${project.name} it would pick up Commons Parent -->
+    <footer>
+      <div class="xleft">Apache Commons, Commons, Apache @project.name@, @project.name@, Apache, the Apache feather logo, and the Apache Commons project logos are trademarks of The Apache Software Foundation.</div>
+      <br/>
+      <div class="xleft">All other marks mentioned may be trademarks or registered trademarks of their respective owners.</div>
+    </footer>
+  </custom>
+
 </project>
