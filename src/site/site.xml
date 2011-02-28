@@ -27,6 +27,17 @@
       <item name="Commons" href="http://commons.apache.org/" />
     </links>
 
+    <head>
+    <!-- Better display of <source> code sections -->
+    <link rel="stylesheet" href="./css/prettify.css" type="text/css" media="all" />
+    <script type="text/javascript" src="./js/prettify.js"></script>
+    <script type="text/javascript">
+        window.onload=function() {
+            prettyPrint();
+        }
+    </script>
+    </head>
+    
     <menu ref="reports" inherit="bottom" />
 
     <menu name="Commons" inherit="bottom">
