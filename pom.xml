@@ -756,6 +756,18 @@
       </modules>
     </profile>
 
+    <!-- 
+     !  Profile to allow build of a single module
+     !  e.g. mvn site -Dcommons.module.path=../commons-net
+    -->
+    <profile>
+      <id>build-module</id>
+      <activation><property><name>commons.module.path</name></property></activation>
+      <modules>
+        <module>${commons.module.path}</module>
+      </modules>
+    </profile>
+
 	<!-- 
 	  Use maven-site-plugin 2.x with Maven 2.x and maven-site-plugin 3.x with Maven 3.x  
 	  See http://maven.apache.org/plugins/maven-site-plugin-3.0-beta-3/maven-3.html 
