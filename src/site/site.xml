@@ -24,8 +24,23 @@
 
   <bannerLeft>
     <name>Apache Commons</name>
-    <src>http://commons.apache.org/images/logo.png</src>
-    <href>http://commons.apache.org/</href>
+    <!--
+     ! Even though the default site.vm template contains code to convert relative links, this is
+     ! actually done before the content is passed to the template.
+     ! Unfortunately, this means that the conversion is done in the context of commons-parent, which
+     ! contains the site.xml, rather than in the context of the project being built.
+     ! This means that relative URLs are created with an additional ../ prefix.
+     ! The work-round is to use a dummy absolute URL that can never be used, and then remove this
+     ! as part of the template processing.
+     -->
+    <src>http://dummy.invalid/$relativePath/images/commons-logo.png</src>
+    <alt>Apache Commons logo</alt>
+    <!--
+     ! Similarly href entries are converted before they are passed to the template.
+     ! In this case, we want the URL to remain absolute.
+     ! The work-round is to use a dummy suffix that is removed by the template. 
+     -->
+    <href>http://commons.apache.org.remove.invalid/</href>
   </bannerLeft>
 
   <publishDate format="dd MMMM yyyy" position="left" />
@@ -111,6 +126,14 @@
       All other marks mentioned may be trademarks or registered trademarks of their respective owners.
       </div>
     </footer>
+    <!--
+     ! We cannot pass in any extra info in the <bannerxx> sections
+     ! so we have to do it here
+     -->
+    <!-- Apache Commons on LHS -->
+    <bannerLeft><tradePos>left: 0px</tradePos></bannerLeft>
+    <!-- Component logo on RHS -->
+    <bannerRight><tradePos>right: 0px</tradePos></bannerRight>
   </custom>
 
 </project>
