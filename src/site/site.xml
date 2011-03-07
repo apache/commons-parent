@@ -26,19 +26,22 @@
     <name>Apache Commons</name>
     <!--
      ! Even though the default site.vm template contains code to convert relative links, this is
-     ! actually done before the content is passed to the template.
+     ! actually done before the content is passed to the template, for both site:site and site:stage.
      ! Unfortunately, this means that the conversion is done in the context of commons-parent, which
      ! contains the site.xml, rather than in the context of the project being built.
      ! This means that relative URLs are created with an additional ../ prefix.
      ! The work-round is to use a dummy absolute URL that can never be used, and then remove this
      ! as part of the template processing.
+     ! See MSITE-559
      -->
     <src>http://dummy.invalid/$relativePath/images/commons-logo.png</src>
     <alt>Apache Commons logo</alt>
     <!--
      ! Similarly href entries are converted before they are passed to the template.
      ! In this case, we want the URL to remain absolute.
-     ! The work-round is to use a dummy suffix that is removed by the template. 
+     ! The work-round is to use a dummy suffix that is removed by the template.
+     ! This is due to be fixed in version 2.3 of the site plugin - see MSITE-159, MSHARED-189
+     ! Or use site:stage which does not convert these links ... 
      -->
     <href>http://commons.apache.org.remove.invalid/</href>
   </bannerLeft>
@@ -63,6 +66,7 @@
 
     <head>
     <!-- Better display of <source> code sections -->
+    <!-- Note: the $relativePath reference is resolved by the template -->
     <link rel="stylesheet" href="$relativePath/css/prettify.css" type="text/css" media="all" />
     <script type="text/javascript" src="$relativePath/js/prettify.js"></script>
     <script type="text/javascript">
@@ -127,8 +131,7 @@
       </div>
     </footer>
     <!--
-     ! We cannot pass in any extra info in the <bannerxx> sections
-     ! so we have to do it here
+     ! We cannot pass in any extra info in the <bannerxx> sections so we have to do it here
      -->
     <!-- Apache Commons on LHS -->
     <bannerLeft><tradePos>left: 0px</tradePos></bannerLeft>
