@@ -27,8 +27,7 @@
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
-  <!-- TODO: dummy version. In Maven 2.1, this will be auto-versioned being a generic parent -->
-  <version>19-SNAPSHOT</version>
+  <version>19</version>
   <name>Commons Parent</name>
   <url>http://commons.apache.org/</url>
 
@@ -131,7 +130,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>2.2</version>
+          <version>2.2.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>

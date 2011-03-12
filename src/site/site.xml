@@ -53,7 +53,7 @@
   <skin>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-skin</artifactId>
-    <version>3-SNAPSHOT</version>
+    <version>3</version>
   </skin>
 
   <body>
