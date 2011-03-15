@@ -126,7 +126,7 @@
     <!-- @project.name@ will be replaced by the template; if we used ${project.name} it would pick up Commons Parent -->
     <footer>
       <div class="center">
-      Apache Commons, Apache @project.name@, @project.name@, Apache, the Apache feather logo, and the Apache Commons project logos are trademarks of The Apache Software Foundation.
+      Apache Commons, Apache @project.name@, Apache, the Apache feather logo, and the Apache Commons project logos are trademarks of The Apache Software Foundation.
       All other marks mentioned may be trademarks or registered trademarks of their respective owners.
       </div>
     </footer>
