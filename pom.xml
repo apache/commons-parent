@@ -198,8 +198,6 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-remote-resources-plugin</artifactId>
-          <!-- override version 1.1 from apache parent to ensure JDK 1.4 compatibilty -->
-          <version>1.0</version>
           <configuration>
             <!--
                 apache parent pom automatically adds "LICENSE" and "NOTICE" files
