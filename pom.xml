@@ -119,7 +119,7 @@
         </includes>
       </resource>
     </resources>
-    <!-- ensure test jars also get N&L files -->
+    <!-- ensure test jars also get NOTICE & LICENSE files -->
     <testResources>
       <testResource>
         <directory>${basedir}</directory>
