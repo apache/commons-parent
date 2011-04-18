@@ -27,7 +27,7 @@
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
-  <version>21-SNAPSHOT</version>
+  <version>21</version>
   <name>Commons Parent</name>
   <url>http://commons.apache.org/</url>
 
@@ -119,7 +119,7 @@
         </includes>
       </resource>
     </resources>
-    <!-- ensure test jars also get N&L files -->
+    <!-- ensure test jars also get NOTICE & LICENSE files -->
     <testResources>
       <testResource>
         <directory>${basedir}</directory>
@@ -826,7 +826,7 @@
     <commons.compiler.compilerVersion />
     <commons.compiler.javac />
     <commons.surefire.java />
-    <commons.surefire.version>2.7.2</commons.surefire.version>
+    <commons.surefire.version>2.8.1</commons.surefire.version>
     <commons.javadoc.version>2.7</commons.javadoc.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
