@@ -364,6 +364,12 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-build-plugin</artifactId>
       </plugin>
+      <!-- Needed for command-line access, e.g mvn apache-rat:rat and mvn apache-rat:check -->
+      <plugin>
+        <groupId>org.apache.rat</groupId>
+        <artifactId>apache-rat-plugin</artifactId>
+        <version>${commons.rat.version}</version>
+      </plugin>
     </plugins>
   </build>
 
@@ -425,9 +431,9 @@
         <version>2.0-beta-2</version>
       </plugin>
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>rat-maven-plugin</artifactId>
-        <version>1.0-alpha-3</version>
+        <groupId>org.apache.rat</groupId>
+        <artifactId>apache-rat-plugin</artifactId>
+        <version>${commons.rat.version}</version>
       </plugin>
     </plugins>
   </reporting>
@@ -830,6 +836,9 @@
     <commons.surefire.java />
     <commons.surefire.version>2.9</commons.surefire.version>
     <commons.javadoc.version>2.8</commons.javadoc.version>
+    
+    <!-- plugin versions (allows same value in reporting and build sections) -->
+    <commons.rat.version>0.7</commons.rat.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
