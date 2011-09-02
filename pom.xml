@@ -266,16 +266,40 @@
       </plugins>
     </pluginManagement>
     <plugins>
+      <!-- org.apache.maven.plugins, alpha order by artifact id -->
       <plugin>
+        <!--
+          - Copy LICENSE.txt and NOTICE.txt so that they are included
+          - in the -javadoc jar file for the component.
+          -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>javadoc.resources</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <target>
+                <copy todir="${project.build.directory}/apidocs/META-INF">
+                  <fileset dir="${basedir}">
+                    <include name="LICENSE.txt" />
+                    <include name="NOTICE.txt" />
+                  </fileset>
+                </copy>
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
       </plugin>
       <plugin>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <configuration>
-          <jvm>${commons.surefire.java}</jvm>
-        </configuration>
-      </plugin>
-      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <configuration>
           <archive>
@@ -293,6 +317,29 @@
             </manifestEntries>
           </archive>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-idea-plugin</artifactId>
+        <!--
+         | N.B. The version is deliberately not provided - see COMMONSSITE-56
+         |      This may result in some warnings, e.g. from the Maven 2 Eclipse plugin.
+         -->
+        <configuration>
+          <jdkLevel>${maven.compile.source}</jdkLevel>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <jvm>${commons.surefire.java}</jvm>
+        </configuration>
+      </plugin>
+      <!-- Other plugins, alpha order by groupId and artifactId -->
+      <plugin>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-build-plugin</artifactId>
       </plugin>
       <plugin>
         <groupId>org.apache.felix</groupId>
@@ -322,47 +369,6 @@
             </goals>
           </execution>
         </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-idea-plugin</artifactId>
-        <!--
-         | N.B. The version is deliberately not provided - see COMMONSSITE-56
-         |      This may result in some warnings, e.g. from the Maven 2 Eclipse plugin.
-         -->
-        <configuration>
-          <jdkLevel>${maven.compile.source}</jdkLevel>
-        </configuration>
-      </plugin>
-      <plugin>
-        <!--
-          - Copy LICENSE.txt and NOTICE.txt so that they are included
-          - in the -javadoc jar file for the component.
-          -->
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-antrun-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>javadoc.resources</id>
-            <phase>generate-sources</phase>
-            <goals>
-              <goal>run</goal>
-            </goals>
-            <configuration>
-              <target>
-                <copy todir="${project.build.directory}/apidocs/META-INF">
-                  <fileset dir="${basedir}">
-                    <include name="LICENSE.txt" />
-                    <include name="NOTICE.txt" />
-                  </fileset>
-                </copy>
-              </target>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-build-plugin</artifactId>
       </plugin>
       <!-- Needed for command-line access, e.g mvn apache-rat:rat and mvn apache-rat:check -->
       <plugin>
