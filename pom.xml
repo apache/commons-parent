@@ -109,7 +109,15 @@
     </mailingList>
   </mailingLists>
   <build>
+    <!-- TODO find a better way to add N&L files to jars and test jars
+         See also maven-remote-resources-plugin configuration below. 
+    -->
     <resources>
+      <!-- This is the default setting from the super-pom -->
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      <!-- hack to ensure the N&L appear in jars -->
       <resource>
         <directory>${basedir}</directory>
         <targetPath>META-INF</targetPath>
@@ -121,6 +129,11 @@
     </resources>
     <!-- ensure test jars also get NOTICE & LICENSE files -->
     <testResources>
+      <!-- This is the default setting from the super-pom -->
+      <testResource>
+        <directory>src/test/resources</directory>
+      </testResource>
+      <!-- hack to ensure the N&L appear in jars -->
       <testResource>
         <directory>${basedir}</directory>
         <targetPath>META-INF</targetPath>
@@ -208,6 +221,7 @@
           <version>2.2.1</version>
         </plugin>
         <plugin>
+          <!-- TODO see above - find better way to add N&L files to jars and test jars -->
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-remote-resources-plugin</artifactId>
           <configuration>
