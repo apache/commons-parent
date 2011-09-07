@@ -37,6 +37,17 @@
   </ciManagement>
 
   <!--
+    Starting with version 22, the RAT plugin has changed Maven group and id, so any existing configuration
+    needs to be updated.
+    To fix component POMs, please change any occurrences of:
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>rat-maven-plugin</artifactId>
+    to the new values:
+        <groupId>org.apache.rat</groupId>
+        <artifactId>apache-rat-plugin</artifactId>
+  -->
+
+  <!--
     This section *must* be overwritten by subprojects. It is only to allow
     a release of the commons-parent POM.
   -->
