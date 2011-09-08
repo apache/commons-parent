@@ -45,6 +45,21 @@
     to the new values:
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
+        
+    Site deployment
+    ===============
+    Cannot define this here at present, see https://issues.apache.org/jira/browse/COMMONSSITE-26.
+
+    The following should be added to the component POM:
+   
+    <distributionManagement>
+      <site>
+        <id>apache.website</id>
+        <name>Apache Commons Site</name>
+        <url>${commons.deployment.protocol}://people.apache.org/www/commons.apache.org/${commons.componentid}</url>
+      </site>
+    </distributionManagement>
+
   -->
 
   <!--
