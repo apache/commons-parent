@@ -432,7 +432,12 @@
         <configuration>
           <!-- Use committed revision so it does not change every time svn update is run -->
           <useLastCommittedRevision>true</useLastCommittedRevision>
-          <revisionOnScmFailure>UNKNOWN_REVISION</revisionOnScmFailure>
+          <!-- default revision number if unavailable -->
+          <revisionOnScmFailure>??????</revisionOnScmFailure>
+          <!-- svnjava works even if an svn command-line client is not on the path -->
+          <providerImplementations>
+            <svn>javasvn</svn>
+          </providerImplementations>
         </configuration>
       </plugin>
     </plugins>
@@ -953,7 +958,7 @@
 
     <!-- build meta inf -->
     <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ssZ</maven.build.timestamp.format>
-    <implementation.build>r${buildNumber}; ${maven.build.timestamp}</implementation.build>
+    <implementation.build> ${buildScmBranch}/r${buildNumber}; ${maven.build.timestamp}</implementation.build>
 
     <!-- Allow Clirr severity to be overriden by the command-line option -DminSeverity=level -->
     <minSeverity>info</minSeverity>
