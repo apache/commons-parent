@@ -958,7 +958,7 @@
 
     <!-- build meta inf -->
     <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ssZ</maven.build.timestamp.format>
-    <implementation.build> ${buildScmBranch}/r${buildNumber}; ${maven.build.timestamp}</implementation.build>
+    <implementation.build> ${buildScmBranch}@r${buildNumber}; ${maven.build.timestamp}</implementation.build>
 
     <!-- Allow Clirr severity to be overriden by the command-line option -DminSeverity=level -->
     <minSeverity>info</minSeverity>
