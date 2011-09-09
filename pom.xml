@@ -430,6 +430,8 @@
           </execution>
         </executions>
         <configuration>
+          <!-- Use committed revision so it does not change every time svn update is run -->
+          <useLastCommittedRevision>true</useLastCommittedRevision>
           <revisionOnScmFailure>UNKNOWN_REVISION</revisionOnScmFailure>
         </configuration>
       </plugin>
