@@ -302,26 +302,15 @@
           <version>2.3.5</version>
           <inherited>true</inherited>
         </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>buildnumber-maven-plugin</artifactId>
+          <version>1.0</version>
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
       <!-- org.apache.maven.plugins, alpha order by artifact id -->
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>buildnumber-maven-plugin</artifactId>
-        <version>1.0</version>
-        <executions>
-          <execution>
-            <phase>validate</phase>
-            <goals>
-              <goal>create</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <revisionOnScmFailure>UNKNOWN</revisionOnScmFailure>
-        </configuration>
-      </plugin>
       <plugin>
         <!--
           - Copy LICENSE.txt and NOTICE.txt so that they are included
@@ -428,6 +417,21 @@
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
         <version>${commons.rat.version}</version>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>buildnumber-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>validate</phase>
+            <goals>
+              <goal>create</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <revisionOnScmFailure>UNKNOWN</revisionOnScmFailure>
+        </configuration>
       </plugin>
     </plugins>
   </build>
