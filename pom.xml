@@ -430,7 +430,7 @@
           </execution>
         </executions>
         <configuration>
-          <revisionOnScmFailure>UNKNOWN</revisionOnScmFailure>
+          <revisionOnScmFailure>UNKNOWN_REVISION</revisionOnScmFailure>
         </configuration>
       </plugin>
     </plugins>
