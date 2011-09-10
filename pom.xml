@@ -74,6 +74,12 @@
 
   <mailingLists>
     <!-- N.B. commons-site now uses the Apache POM so has its own copy of the mailing list definitions -->
+    <!-- 
+        Components should normally override the default mailing list report by using the comnand
+        mvn commons:mail-page
+        This generates the file src/site/xdoc/mail-lists.xml which when processed will replace the PIR version.
+     -->
+    <!-- Changes to this list should be synchronised with the commons build plugin -->
     <mailingList>
       <name>Commons User List</name>
       <subscribe>user-subscribe@commons.apache.org</subscribe>
