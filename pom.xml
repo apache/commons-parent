@@ -22,7 +22,8 @@
   <parent>
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
-    <version>10</version>
+    <!-- Version 10 is broken; see https://issues.apache.org/jira/browse/MPOM-32 -->
+    <version>9</version>
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
