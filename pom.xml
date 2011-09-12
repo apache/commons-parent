@@ -306,6 +306,7 @@
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
+          <!-- N.B. 2.3.5 does not work on Java 5; see profile java-1.5-detected for the workround -->
           <version>2.3.5</version>
           <inherited>true</inherited>
         </plugin>
@@ -907,8 +908,9 @@
       </activation>
       <build>
         <plugins>
+          <!-- workround for FELIX-3037 which applies to bundle 2.3.5 -->
           <plugin>
-            <!-- version 2.3.5 depends in bndlin 1.43.0 which requires Java 6; fix this -->
+            <!-- version 2.3.5 depends on bndlib 1.43.0 which requires Java 6; fix this -->
             <groupId>org.apache.felix</groupId>
             <artifactId>maven-bundle-plugin</artifactId>
             <dependencies>
