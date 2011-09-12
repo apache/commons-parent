@@ -306,11 +306,7 @@
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
-          <!-- 
-              Cannot use 2.3.5 because that has a dependency on biz/aQute/bndlib/1.43.0 which requires Java 6
-              See https://issues.apache.org/jira/browse/FELIX-3037
-            -->
-          <version>2.3.4</version>
+          <version>2.3.5</version>
           <inherited>true</inherited>
         </plugin>
         <plugin>
@@ -903,6 +899,31 @@
       </build>
     </profile>
     
+    <profile>
+      <!-- This profile detects Java 1.5 -->
+      <id>java-1.5-detected</id>
+      <activation>
+        <jdk>1.5</jdk>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <!-- version 2.3.5 depends in bndlin 1.43.0 which requires Java 6; fix this -->
+            <groupId>org.apache.felix</groupId>
+            <artifactId>maven-bundle-plugin</artifactId>
+            <dependencies>
+              <dependency>
+                <groupId>biz.aQute</groupId>
+                <artifactId>bndlib</artifactId>
+                <!-- 1.43.0 requires Java 6; use previous version which works with Java 5--> 
+                <version>1.15.0</version>
+              </dependency>
+            </dependencies>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+
   </profiles>
 
   <properties>
