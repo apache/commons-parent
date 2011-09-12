@@ -306,7 +306,11 @@
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
-          <version>2.3.5</version>
+          <!-- 
+              Cannot use 2.3.5 because that has a dependency on biz/aQute/bndlib/1.43.0 which requires Java 6
+              See https://issues.apache.org/jira/browse/FELIX-3037
+            -->
+          <version>2.3.4</version>
           <inherited>true</inherited>
         </plugin>
         <plugin>
