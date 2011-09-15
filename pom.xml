@@ -31,6 +31,7 @@
   <version>22-SNAPSHOT</version>
   <name>Commons Parent</name>
   <url>http://commons.apache.org/</url>
+  <description>The Apache Commons Parent Pom provides common settings for all Apache Commons components.</description>
 
   <ciManagement>
     <system>continuum</system>
@@ -926,6 +927,46 @@
       </build>
     </profile>
 
+    <profile>
+      <!-- 
+          Generate release notes in top-level directory from src/changes/changes.xml
+          Usage:
+          mvn changes:announcement-generate -Prelease-notes
+          
+          Requires file src/changes/release-notes.vm.
+          A sample template is available from:
+          https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk/src/changes/release-notes.vm
+       -->
+      <id>release-notes</id>
+      <build>
+        <plugins>
+           <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-changes-plugin</artifactId>
+            <version>2.6</version>
+            <configuration>
+              <template>release-notes.vm</template>
+              <templateDirectory>src/changes</templateDirectory>
+              <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
+              <outputDirectory>.</outputDirectory>
+              <announcementFile>RELEASE-NOTES.txt</announcementFile>
+              <announceParameters>
+                <releaseVersion>${commons.release.version}</releaseVersion>
+              </announceParameters>
+            </configuration>
+            <executions>
+              <execution>
+                <id>create-release-notes</id>
+                <phase>generate-resources</phase>
+                <goals>
+                  <goal>announcement-generate</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>      
+    </profile>
   </profiles>
 
   <properties>
