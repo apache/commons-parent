@@ -943,7 +943,7 @@
            <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-changes-plugin</artifactId>
-            <version>2.6</version>
+            <version>${commons.changes.version}</version>
             <configuration>
               <template>release-notes.vm</template>
               <templateDirectory>src/changes</templateDirectory>
@@ -985,6 +985,7 @@
     
     <!-- plugin versions (allows same value in reporting and build sections) -->
     <commons.rat.version>0.7</commons.rat.version>
+    <commons.changes.version>2.6</commons.changes.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
