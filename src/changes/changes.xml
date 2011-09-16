@@ -66,20 +66,20 @@ Starting with version 22, the RAT plugin has changed Maven group and id,
   &lt;groupId>org.apache.rat&lt;/groupId>
   &lt;artifactId>apache-rat-plugin&lt;/artifactId>
 ">
-            <action dev="sebb" type="update">
+            <action dev="sebb" type="add">
             Add release-notes profile to generate RELEASE-NOTES.txt from changes.xml.
             Added changes.xml and template release-notes.vm
             </action>
-            <action dev="sebb" type="update">
+            <action dev="sebb" type="add">
             Add pom description
             </action>
             <action dev="sebb" type="fix">
             Added workround for bundle plugin 2.3.5 on Java 1.5 - replace embedded bndlib with previous version
             </action>
-            <action dev="sebb" type="update">
+            <action dev="sebb" type="add">
             Add buildnumber plugin and put build details into manifests.
             </action>
-            <action dev="sebb" type="update">
+            <action dev="sebb" type="add">
             Add Clirr report for all components
             </action>
             <action dev="sebb" type="update">
@@ -92,13 +92,13 @@ Starting with version 22, the RAT plugin has changed Maven group and id,
             <action type="update">
             Update to latest releases of plugins.
             </action>
-            <action dev="sebb" type="fix">
+            <action dev="sebb" type="remove">
             Remove Maven IDEA plugin.
             </action>
             <action dev="sebb" type="update">
             Update to Apache RAT plugin, and enable use as standalone goal.
             </action>
-            <action dev="ggregory" type="fix">
+            <action dev="ggregory" type="add">
             Add Javadoc link to Java EE.
             </action>
             
