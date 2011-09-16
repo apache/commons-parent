@@ -42,16 +42,6 @@ The <action> type attribute can be add,update,fix,remove.
     <properties>
         <title>Changes</title>
         <author email="dev@commons.apache.org">Apache Commons devlopers</author>
-        <intro>
-    Starting with version 22, the RAT plugin has changed Maven group and id, so any existing configuration
-    needs to be updated.
-    To fix component POMs, please change any occurrences of:
-        &lt;groupId>org.codehaus.mojo&lt;/groupId>
-        &lt;artifactId>rat-maven-plugin&lt;/artifactId>
-    to the new values:
-        &lt;groupId>org.apache.rat&lt;/groupId>
-        &lt;artifactId>apache-rat-plugin&lt;/artifactId>
-        </intro>
     </properties>
 
     <!-- NOTE: 
@@ -83,6 +73,35 @@ Starting with version 22, the RAT plugin has changed Maven group and id,
             <action dev="sebb" type="update">
             Add pom description
             </action>
+            <action dev="sebb" type="fix">
+            Added workround for bundle plugin 2.3.5 on Java 1.5 - replace embedded bndlib with previous version
+            </action>
+            <action dev="sebb" type="update">
+            Add buildnumber plugin and put build details into manifests.
+            </action>
+            <action dev="sebb" type="update">
+            Add Clirr report for all components
+            </action>
+            <action dev="sebb" type="update">
+            Update to site plugin 3.0 (usable by Maven 2 and Maven 3)
+            </action>
+            <action dev="sebb" type="fix">
+            Fix resources and testResource overrides to include the default directories.
+            Components which redefine these may no longer need to do so.
+            </action>
+            <action type="update">
+            Update to latest releases of plugins.
+            </action>
+            <action dev="sebb" type="fix">
+            Remove Maven IDEA plugin.
+            </action>
+            <action dev="sebb" type="update">
+            Update to Apache RAT plugin, and enable use as standalone goal.
+            </action>
+            <action dev="ggregory" type="fix">
+            Add Javadoc link to Java EE.
+            </action>
+            
         </release>
 
     </body>
