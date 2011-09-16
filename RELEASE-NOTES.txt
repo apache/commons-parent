@@ -1,0 +1,46 @@
+              Apache Commons Parent 22 RELEASE NOTES
+
+The Commons Parent team is pleased to announce the release of Commons Parent 22
+
+The Apache Commons Parent Pom provides common settings for all Apache Commons components.
+
+Starting with version 22, the RAT plugin has changed Maven group and id,
+so any existing configuration needs to be updated.
+To fix component POMs, please change any occurrences of:
+ <groupId>org.codehaus.mojo</groupId>
+ <artifactId>rat-maven-plugin</artifactId>
+to the new values:
+ <groupId>org.apache.rat</groupId>
+ <artifactId>apache-rat-plugin</artifactId>
+
+Changes in this version include:
+
+
+New features:
+o           Add commons.release.version and commons.rc.version for use in releasing commons parent 
+o           Add release-notes profile to generate RELEASE-NOTES.txt from changes.xml.
+            Added changes.xml and template release-notes.vm 
+o           Add pom description 
+o           Add buildnumber plugin and put build details into manifests. 
+o           Add Clirr report for all components 
+o           Add Javadoc link to Java EE. 
+
+Fixed Bugs:
+o           Added workround for bundle plugin 2.3.5 on Java 1.5 - replace embedded bndlib with previous version 
+o           Fix resources and testResource overrides to include the default directories.
+            Components which redefine these may no longer need to do so. 
+
+Changes:
+o           Update to site plugin 3.0 (usable by Maven 2 and Maven 3) 
+o           Update to latest releases of plugins. 
+o           Update to Apache RAT plugin, and enable use as standalone goal. 
+
+Removed:
+o           Remove Maven IDEA plugin. 
+
+Historical list of changes: http://commons.apache.org/changes-report.html
+
+For complete information on Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+http://commons.apache.org/
