@@ -67,6 +67,9 @@ Starting with version 22, the RAT plugin has changed Maven group and id,
   &lt;artifactId>apache-rat-plugin&lt;/artifactId>
 ">
             <action dev="sebb" type="add">
+            Add commons.release.version and commons.rc.version for use in releasing commons parent
+            </action>
+            <action dev="sebb" type="add">
             Add release-notes profile to generate RELEASE-NOTES.txt from changes.xml.
             Added changes.xml and template release-notes.vm
             </action>
