@@ -277,14 +277,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
           <version>3.0</version>
-          <dependencies>
-            <dependency>
-              <!-- add support for ssh/scp -->
-              <groupId>org.apache.maven.wagon</groupId>
-              <artifactId>wagon-ssh</artifactId>
-              <version>1.0</version>
-            </dependency>
-          </dependencies>          
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -898,6 +890,14 @@
         <plugins>
           <plugin>
             <artifactId>maven-site-plugin</artifactId>
+            <dependencies>
+              <dependency>
+                  <!-- add support for ssh/scp -->
+                  <groupId>org.apache.maven.wagon</groupId>
+                  <artifactId>wagon-ssh</artifactId>
+                  <version>1.0</version>
+                </dependency>
+              </dependencies>                      
             <executions>
               <execution>
                 <id>attach-descriptor</id>
