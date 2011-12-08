@@ -479,10 +479,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jxr-plugin</artifactId>
         <version>${commons.jxr.version}</version>
-        <configuration>
-        <!-- TODO Deprecated. since 2.3. Use the goals jxr:aggregate and jxr:test-aggregate instead. --> 
-          <aggregate>false</aggregate>
-        </configuration> 
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
