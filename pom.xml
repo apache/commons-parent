@@ -446,7 +446,7 @@
           <revisionOnScmFailure>??????</revisionOnScmFailure>
           <!-- svnjava works even if an svn command-line client is not on the path -->
           <providerImplementations>
-            <svn>javasvn</svn>
+            <svn>${maven.buildNumber.svnProvider}</svn>
           </providerImplementations>
         </configuration>
       </plugin>
@@ -1064,6 +1064,12 @@
     <!-- build meta inf -->
     <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ssZ</maven.build.timestamp.format>
     <implementation.build>${scmBranch}@r${buildNumber}; ${maven.build.timestamp}</implementation.build>
+    
+    <!-- 
+        make the maven build svn application overrideable
+        If javasvn does not work, try using -Dmaven.buildNumber.svnProvider=svn 
+    -->
+    <maven.buildNumber.svnProvider>javasvn</maven.buildNumber.svnProvider>
 
     <!-- Allow Clirr severity to be overriden by the command-line option -DminSeverity=level -->
     <minSeverity>info</minSeverity>
