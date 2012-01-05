@@ -847,6 +847,8 @@
     <profile>
       <id>trunks-proper</id>
       <modules>
+        <!-- not yet using mvn module>../attributes</module-->
+        <module>../bcel</module>
         <module>../beanutils</module>
         <module>../betwixt</module>
         <module>../chain</module>
@@ -864,8 +866,11 @@
         <module>../email</module>
         <module>../exec</module>
         <module>../fileupload</module>
+        <module>../functor</module>
         <module>../io</module>
         <module>../jci</module>
+        <module>../jcs</module>
+        <!-- not yet using mvn module>../jelly</module-->
         <module>../jexl</module>
         <module>../jxpath</module>
         <module>../lang</module>
@@ -874,11 +879,13 @@
         <module>../math</module>
         <module>../modeler</module>
         <module>../net</module>
+        <module>../ognl</module>
         <module>../pool</module>
         <module>../primitives</module>
         <module>../proxy</module>
         <module>../sanselan</module>
         <module>../scxml</module>
+        <!-- not yet using mvn module>../transaction</module-->
         <module>../validator</module>
         <module>../vfs</module>
       </modules>
