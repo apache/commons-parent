@@ -34,6 +34,15 @@
   <url>http://commons.apache.org/</url>
   <description>The Apache Commons Parent Pom provides common settings for all Apache Commons components.</description>
 
+<!--
+Version 23:
+- moved buildNumber plugin to profile activated by presence of .svn directory
+- changed buildNumber plugin default provider to CLI; added "javasvn" profile as override
+- added aggregate:false to jxr plugin (aggregate is deprecated)
+- added java-1.7 profile
+- updated modules list, added: bcel, functor, jcs, ognl
+- added ssh/scp support to maven-site-plugin in Maven3
+ -->
   <ciManagement>
     <system>continuum</system>
     <url>http://vmbuild.apache.org/continuum/</url>
@@ -48,13 +57,13 @@
     to the new values:
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
-        
+
     Site deployment
     ===============
     Cannot define this here at present, see https://issues.apache.org/jira/browse/COMMONSSITE-26.
 
     The following should be added to the component POM:
-   
+
     <distributionManagement>
       <site>
         <id>apache.website</id>
@@ -77,7 +86,7 @@
 
   <mailingLists>
     <!-- N.B. commons-site now uses the Apache POM so has its own copy of the mailing list definitions -->
-    <!-- 
+    <!--
         Components should normally override the default mailing list report by using the comnand
         mvn commons:mail-page
         This generates the file src/site/xdoc/mail-lists.xml which when processed will replace the PIR version.
@@ -145,7 +154,7 @@
   </mailingLists>
   <build>
     <!-- TODO find a better way to add N&L files to jars and test jars
-         See also maven-remote-resources-plugin configuration below. 
+         See also maven-remote-resources-plugin configuration below.
     -->
     <resources>
       <!-- This is the default setting from the super-pom -->
@@ -389,13 +398,13 @@
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
         <configuration>
-          <!-- 
+          <!--
             dummy entry to stop bundle plugin from picking up jar config and reporting
             WARNING: Duplicate name in Manifest
-            See http://markmail.org/message/mpkl24wk3jrjhhjg 
+            See http://markmail.org/message/mpkl24wk3jrjhhjg
           -->
-          <archive> 
-            <forced>true</forced> 
+          <archive>
+            <forced>true</forced>
           </archive>
           <excludeDependencies>true</excludeDependencies>
           <manifestLocation>target/osgi</manifestLocation>
@@ -428,28 +437,6 @@
         <artifactId>apache-rat-plugin</artifactId>
         <version>${commons.rat.version}</version>
       </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>buildnumber-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <phase>validate</phase>
-            <goals>
-              <goal>create</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <!-- Use committed revision so it does not change every time svn update is run -->
-          <useLastCommittedRevision>true</useLastCommittedRevision>
-          <!-- default revision number if unavailable -->
-          <revisionOnScmFailure>??????</revisionOnScmFailure>
-          <!-- svnjava works even if an svn command-line client is not on the path -->
-          <providerImplementations>
-            <svn>${maven.buildNumber.svnProvider}</svn>
-          </providerImplementations>
-        </configuration>
-      </plugin>
     </plugins>
   </build>
 
@@ -462,7 +449,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>${commons.javadoc.version}</version>
-        <configuration> 
+        <configuration>
           <!-- keep only errors and warnings -->
           <quiet>true</quiet>
           <source>${maven.compile.source}</source>
@@ -473,7 +460,7 @@
             <link>${commons.javadoc.java.link}</link>
             <link>${commons.javadoc.javaee.link}</link>
           </links>
-        </configuration> 
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -740,7 +727,7 @@
                 </goals>
               </execution>
             </executions>
-          </plugin>          
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -815,10 +802,10 @@
       </properties>
     </profile>
 
-    <!-- N.B. when adding new java profiles, be sure to update 
+    <!-- N.B. when adding new java profiles, be sure to update
          the _removeheaders list in the maven_bundle_plugin configuration -->
 
-    <!-- 
+    <!--
      | Profile to allow testing of deploy phase
      | e.g.
      | mvn deploy -Ptest-deploy -Prelease -Dgpg.skip
@@ -829,7 +816,7 @@
         <altDeploymentRepository>id::default::file:target/deploy</altDeploymentRepository>
       </properties>
     </profile>
-   
+
     <!--
       Profile to build all Commons "proper" components.
 
@@ -891,7 +878,7 @@
       </modules>
     </profile>
 
-    <!-- 
+    <!--
         Configure site plugin to support both Maven2 and Maven3, see:
         http://maven.apache.org/plugins/maven-site-plugin/maven-3.html#Using_the_same_version_of_maven-site-plugin_for_both_Maven_2_and_Maven_3
     -->
@@ -914,7 +901,7 @@
                   <artifactId>wagon-ssh</artifactId>
                   <version>1.0</version>
                 </dependency>
-              </dependencies>                      
+              </dependencies>
             <executions>
               <execution>
                 <id>attach-descriptor</id>
@@ -927,7 +914,7 @@
         </plugins>
       </build>
     </profile>
-    
+
     <profile>
       <!-- This profile detects Java 1.5 -->
       <id>java-1.5-detected</id>
@@ -945,7 +932,7 @@
               <dependency>
                 <groupId>biz.aQute</groupId>
                 <artifactId>bndlib</artifactId>
-                <!-- 1.43.0 requires Java 6; use previous version which works with Java 5--> 
+                <!-- 1.43.0 requires Java 6; use previous version which works with Java 5-->
                 <version>1.15.0</version>
               </dependency>
             </dependencies>
@@ -955,11 +942,11 @@
     </profile>
 
     <profile>
-      <!-- 
+      <!--
           Generate release notes in top-level directory from src/changes/changes.xml
           Usage:
           mvn changes:announcement-generate -Prelease-notes
-          
+
           Requires file src/changes/release-notes.vm.
           A sample template is available from:
           https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk/src/changes/release-notes.vm
@@ -992,8 +979,60 @@
             </executions>
           </plugin>
         </plugins>
-      </build>      
+      </build>
     </profile>
+
+    <!-- Automatically run the buildnumber plugin if an SVN workspace is detected -->
+    <profile>
+     <id>svn-buildnumber</id>
+     <activation>
+       <file>
+         <exists>.svn</exists>
+       </file>
+     </activation>
+     <build>
+       <plugins>
+         <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>buildnumber-maven-plugin</artifactId>
+           <executions>
+             <execution>
+               <phase>generate-resources</phase>
+               <goals>
+                 <goal>create</goal>
+               </goals>
+             </execution>
+           </executions>
+           <configuration>
+             <!-- Use committed revision so it does not change every time svn update is run -->
+             <useLastCommittedRevision>true</useLastCommittedRevision>
+             <!-- default revision number if unavailable -->
+             <revisionOnScmFailure>??????</revisionOnScmFailure>
+             <doCheck>false</doCheck>
+             <doUpdate>false</doUpdate>
+           </configuration>
+         </plugin>
+       </plugins>
+     </build>
+   </profile>
+   <!-- optional profile to use javasvn instead of the SVN CLI for the buildNumber plugin -->
+   <profile>
+     <id>javasvn</id>
+     <build>
+       <plugins>
+         <plugin>
+           <groupId>org.codehaus.mojo</groupId>
+           <artifactId>buildnumber-maven-plugin</artifactId>
+           <configuration>
+             <providerImplementations>
+               <svn>javasvn</svn>
+             </providerImplementations>
+           </configuration>
+         </plugin>
+       </plugins>
+     </build>
+   </profile>
+
   </profiles>
 
   <properties>
@@ -1011,7 +1050,7 @@
     <commons.compiler.compilerVersion />
     <commons.compiler.javac />
     <commons.surefire.java />
-    
+
     <!-- plugin versions (allows same value in reporting and build sections) -->
     <commons.surefire.version>2.9</commons.surefire.version>
     <commons.surefire-report.version>2.9</commons.surefire-report.version>
@@ -1071,12 +1110,6 @@
     <!-- build meta inf -->
     <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ssZ</maven.build.timestamp.format>
     <implementation.build>${scmBranch}@r${buildNumber}; ${maven.build.timestamp}</implementation.build>
-    
-    <!-- 
-        make the maven build svn application overrideable
-        If javasvn does not work, try using -Dmaven.buildNumber.svnProvider=svn 
-    -->
-    <maven.buildNumber.svnProvider>javasvn</maven.buildNumber.svnProvider>
 
     <!-- Allow Clirr severity to be overriden by the command-line option -DminSeverity=level -->
     <minSeverity>info</minSeverity>
