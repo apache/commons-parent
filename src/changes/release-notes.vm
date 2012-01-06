@@ -15,9 +15,9 @@
 ## specific language governing permissions and limitations
 ## under the License.
 ##
-              Apache ${project.name} ${announceParameters.releaseVersion} RELEASE NOTES
+              Apache ${project.name} ${version} RELEASE NOTES
 
-The ${developmentTeam} is pleased to announce the release of ${project.name} ${announceParameters.releaseVersion}
+The ${developmentTeam} is pleased to announce the release of ${project.name} ${version}
 
 $introduction.replaceAll("(?<!\015)\012", "
 ")
