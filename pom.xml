@@ -945,7 +945,9 @@ Version 23:
       <!--
           Generate release notes in top-level directory from src/changes/changes.xml
           Usage:
-          mvn changes:announcement-generate -Prelease-notes
+          mvn changes:announcement-generate -Prelease-notes [-Dchanges.version=nnn]
+
+          Defining changes.version allows one to create the RN without first removing the SNAPSHOT suffix.
 
           Requires file src/changes/release-notes.vm.
           A sample template is available from:
