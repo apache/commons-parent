@@ -1040,7 +1040,7 @@ Version 23:
   <properties>
     <!-- configuration bits for cutting a release candidate, must be overridden by components -->
     <!-- must agree with project.version above -->
-    <commons.release.version>22</commons.release.version>
+    <commons.release.version>23</commons.release.version>
     <commons.rc.version>RC1</commons.rc.version>
 
     <!-- Default configuration for compiler source and target JVM -->
