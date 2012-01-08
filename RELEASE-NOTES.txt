@@ -5,8 +5,9 @@ The Commons Parent team is pleased to announce the release of Commons Parent 23
 The Apache Commons Parent Pom provides common settings for all Apache Commons components.
 
 The Maven3 site plugin has been updated to support ssh/scp for deployment
-The buildNumber plugin now defaults to using SVN CLI, and only runs if a workspace is detected.
-To use javasvn instead, use the profile: javasvn
+
+The buildNumber plugin now defaults to using SVN CLI, and does not run if buildNumber.skip=true
+ To use javasvn instead, use the profile: javasvn
 
 Changes in this version include:
 
@@ -16,7 +17,7 @@ o           added java-1.7 profile
 o           added ssh/scp support to maven-site-plugin in Maven3 
 
 Changes:
-o           moved buildNumber plugin to profile activated by presence of .svn directory
+o           moved buildNumber plugin to profile which is activated unless buildNumber.skip=true
             changed buildNumber plugin default provider to CLI; added 'javasvn' profile as override Thanks to Olivier Lamy. 
 o           added aggregate:false to jxr plugin (aggregate is deprecated) 
 o           updated modules list, added: bcel, functor, jcs, ognl 

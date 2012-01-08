@@ -36,7 +36,7 @@
 
 <!--
 Version 23:
-- moved buildNumber plugin to profile activated by presence of .svn directory
+- moved buildNumber plugin to profile which is activated unless buildNumber.skip=true
 - changed buildNumber plugin default provider to CLI; added "javasvn" profile as override
 - added aggregate:false to jxr plugin (aggregate is deprecated)
 - added java-1.7 profile
@@ -984,13 +984,13 @@ Version 23:
       </build>
     </profile>
 
-    <!-- Automatically run the buildnumber plugin if an SVN workspace is detected -->
+    <!-- 
+        Automatically run the buildnumber plugin unless the buildNumber.skip property is defined as true
+    -->
     <profile>
      <id>svn-buildnumber</id>
      <activation>
-       <file>
-         <exists>.svn</exists>
-       </file>
+       <property><name>!buildNumber.skip</name><value>!true</value></property>
      </activation>
      <build>
        <plugins>
