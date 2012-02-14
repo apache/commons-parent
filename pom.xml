@@ -1056,7 +1056,7 @@ Version 23:
     <!-- plugin versions (allows same value in reporting and build sections) -->
     <commons.surefire.version>2.9</commons.surefire.version>
     <commons.surefire-report.version>2.9</commons.surefire-report.version>
-    <commons.javadoc.version>2.8</commons.javadoc.version>
+    <commons.javadoc.version>2.8.1</commons.javadoc.version>
     <commons.rat.version>0.7</commons.rat.version>
     <commons.changes.version>2.6</commons.changes.version>
     <commons.clirr.version>2.3</commons.clirr.version>
