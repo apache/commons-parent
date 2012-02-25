@@ -317,7 +317,6 @@ Version 23:
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
-          <!-- N.B. 2.3.5 does not work on Java 5; see profile java-1.5-detected for the workround -->
           <version>2.3.6</version>
           <inherited>true</inherited>
         </plugin>
