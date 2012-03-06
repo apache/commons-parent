@@ -43,6 +43,12 @@ Version 23:
 - updated modules list, added: bcel, functor, jcs, ognl
 - added ssh/scp support to maven-site-plugin in Maven3
  -->
+
+  <!-- Now required by versions plugin -->
+  <prerequisites>
+    <maven>2.2.1</maven>
+  </prerequisites>
+
   <ciManagement>
     <system>continuum</system>
     <url>http://vmbuild.apache.org/continuum/</url>
@@ -236,7 +242,7 @@ Version 23:
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>2.3.2</version>
+          <version>2.4</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -268,6 +274,8 @@ Version 23:
           <!-- TODO see above - find better way to add N&L files to jars and test jars -->
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-remote-resources-plugin</artifactId>
+          <!-- override old version from Apache pom 9 -->
+          <version>1.2.1</version>
           <configuration>
             <!--
                 apache parent pom automatically adds "LICENSE" and "NOTICE" files
@@ -1059,7 +1067,7 @@ Version 23:
 
     <!-- plugin versions (allows same value in reporting and build sections) -->
     <commons.surefire.version>2.12</commons.surefire.version>
-    <commons.surefire-report.version>2.9</commons.surefire-report.version>
+    <commons.surefire-report.version>2.12</commons.surefire-report.version>
     <commons.javadoc.version>2.8.1</commons.javadoc.version>
     <commons.rat.version>0.8</commons.rat.version>
     <commons.changes.version>2.6</commons.changes.version>
