@@ -56,6 +56,8 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
+        <release version="24" date="2012-??-??" description="Update and add plugins">
+        </release>
         <release version="23" date="2012-01-11" description="
 The Maven3 site plugin has been updated to support ssh/scp for deployment
 
