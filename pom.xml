@@ -36,7 +36,21 @@
 
 <!--
 Version 24:
-- TBA
+      Updated various plugin versions:
+            antrun: 1.6 => 1.7
+            assembly: 2.2.1 => 2.3
+            jar: 2.3.2 => 2.4
+            release: 2.2.1 => 2.2.2
+            remote-resources: override Apache pom 9 with 1.2.1
+            commons-build: 1.3 => 1.4
+            bundle: 2.3.5 => 2.3.7; removed workround for Java 1.5 as no longer necessary
+            Added cobertura: 2.5.1 to reporting and buildManagement
+            surefire: 2.9 => 2.12
+            surefire-report: 2.9 => 2.12
+            Allow override of surefire-report aggregate setting using property commons.surefire-report.aggregate
+            javadoc: 2.8 => 2.8.1
+            rat: 0.7 => 0.8
+
 For full details see:
 http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-24/RELEASE-NOTES.txt
  -->
