@@ -57,6 +57,22 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
         <release version="24" date="2012-??-??" description="Update and add plugins">
+            <action type="update">
+            Updated various plugin versions:
+            antrun: 1.6 => 1.7
+            assembly: 2.2.1 => 2.3
+            jar: 2.3.2 => 2.4
+            release: 2.2.1 => 2.2.2
+            remote-resources: override Apache pom 9 with 1.2.1
+            commons-build: 1.3 => 1.4
+            bundle: 2.3.5 => 2.3.7; removed workround for Java 1.5 as no longer necessary
+            Added cobertura: 2.5.1 to reporting and buildManagement
+            surefire: 2.9 => 2.12
+            surefire-report: 2.9 => 2.12
+            Allow override of surefire-report aggregate setting using property commons.surefire-report.aggregate
+            javadoc: 2.8 => 2.8.1
+            rat: 0.7 => 0.8
+            </action>
         </release>
         <release version="23" date="2012-01-11" description="
 The Maven3 site plugin has been updated to support ssh/scp for deployment
