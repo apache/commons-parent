@@ -317,7 +317,7 @@ Version 23:
         <plugin>
           <groupId>org.apache.commons</groupId>
           <artifactId>commons-build-plugin</artifactId>
-          <version>1.3</version>
+          <version>1.4</version>
           <configuration>
             <commons.release.name>${commons.release.name}</commons.release.name>
           </configuration>
@@ -1086,6 +1086,9 @@ Version 23:
     <commons.release.2.name>${project.artifactId}-${commons.release.2.version}</commons.release.2.name>
     <commons.release.2.desc />
     <commons.release.2.binary.suffix>-bin</commons.release.2.binary.suffix>
+    <commons.release.3.name>${project.artifactId}-${commons.release.3.version}</commons.release.3.name>
+    <commons.release.3.desc />
+    <commons.release.3.binary.suffix>-bin</commons.release.3.binary.suffix>
 
     <!-- Commons Component Id -->
     <commons.componentid>${project.artifactId}</commons.componentid>
