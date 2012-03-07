@@ -496,6 +496,9 @@ Version 23:
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
         <version>${commons.surefire.version}</version>
+        <configuration>
+          <aggregate>${commons.surefire-report.aggregate}</aggregate>
+        </configuration>
       </plugin>
       <!-- Other plugins, alpha order by groupId and artifactId -->
       <plugin>
@@ -1127,6 +1130,9 @@ Version 23:
 
     <!-- Allow Clirr severity to be overriden by the command-line option -DminSeverity=level -->
     <minSeverity>info</minSeverity>
+    
+    <!-- Allow surefire-report aggregation to be easily configured for multi-module projects -->
+    <commons.surefire-report.aggregate>false</commons.surefire-report.aggregate>
   </properties>
 
 </project>
