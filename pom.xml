@@ -545,6 +545,11 @@ Version 23:
       </distributionManagement>
     </profile>
 
+    <!--
+         Profile for Commons releases via Nexus.
+         Assembles artifacts, creates source and javadoc jars, signs them and adds hashes. 
+         Does not use maven release plugin.
+    -->
     <profile>
       <id>release</id>
       <build>
@@ -704,6 +709,10 @@ Version 23:
       </build>
     </profile>
 
+     <!-- 
+       profile to synchronise with Apache parent pom profile of the same name.
+       Uses the Maven Release Plugin.
+     -->
     <profile>
       <id>apache-release</id>
       <build>
