@@ -50,6 +50,7 @@ Version 24:
             Allow override of surefire-report aggregate setting using property commons.surefire-report.aggregate
             javadoc: 2.8 => 2.8.1
             rat: 0.7 => 0.8
+            Deleted "ci" profile (does not apply with Nexus)
 
 For full details see:
 http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-24/RELEASE-NOTES.txt

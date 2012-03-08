@@ -24,6 +24,7 @@ o           Updated various plugin versions:
             Allow override of surefire-report aggregate setting using property commons.surefire-report.aggregate
             javadoc: 2.8 => 2.8.1
             rat: 0.7 => 0.8 
+            Deleted "ci" profile (does not apply with Nexus)
 
 Historical list of changes: http://commons.apache.org/changes-report.html
 
