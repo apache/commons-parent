@@ -540,22 +540,6 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
 
   <profiles>
 
-    <profile>
-      <id>ci</id>
-      <distributionManagement>
-        <repository>
-          <id>apache.snapshots</id>
-          <name>Apache Development Snapshot Repository</name>
-          <url>${commons.deployment.protocol}://people.apache.org/www/people.apache.org/repo/m2-snapshot-repository</url>
-        </repository>
-        <snapshotRepository>
-          <id>apache.snapshots</id>
-          <name>Apache Development Snapshot Repository</name>
-          <url>${commons.deployment.protocol}://people.apache.org/www/people.apache.org/repo/m2-snapshot-repository</url>
-        </snapshotRepository>
-      </distributionManagement>
-    </profile>
-
     <!--
          Profile for Commons releases via Nexus.
          Assembles artifacts, creates source and javadoc jars, signs them and adds hashes. 
