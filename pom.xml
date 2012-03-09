@@ -544,7 +544,6 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <!--
          Profile for Commons releases via Nexus.
          Assembles artifacts, creates source and javadoc jars, signs them and adds hashes. 
-         Does not use maven release plugin.
     -->
     <profile>
       <id>release</id>
@@ -706,8 +705,9 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     </profile>
 
      <!-- 
-       profile to synchronise with Apache parent pom profile of the same name.
-       Uses the Maven Release Plugin.
+       profile to update the Apache parent pom profile of the same name
+       to better suit the requirements of Apache Commons.
+       [Requires further work]
      -->
     <profile>
       <id>apache-release</id>
