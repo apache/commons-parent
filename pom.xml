@@ -52,6 +52,7 @@ Version 24:
             rat: 0.7 => 0.8
             Deleted "ci" profile (does not apply with Nexus)
             Add default project info reports: excluded license/plugins/plugin management
+            Add tests.jar and test-sources.jar to deployed files
 
 For full details see:
 http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-24/RELEASE-NOTES.txt
@@ -609,8 +610,18 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
                 <id>create-source-jar</id>
                 <goals>
                   <goal>jar</goal>
+                  <goal>test-jar</goal>
                 </goals>
-                <phase>package</phase>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <artifactId>maven-jar-plugin</artifactId>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>test-jar</goal>
+                </goals>
               </execution>
             </executions>
           </plugin>
