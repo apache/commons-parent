@@ -73,6 +73,7 @@ The <action> type attribute can be add,update,fix,remove.
             javadoc: 2.8 => 2.8.1
             rat: 0.7 => 0.8
             Deleted "ci" profile (does not apply with Nexus)
+            Add default project info reports: excluded license/plugins/plugin management
             </action>
         </release>
         <release version="23" date="2012-01-11" description="

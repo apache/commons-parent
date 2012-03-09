@@ -25,6 +25,7 @@ o           Updated various plugin versions:
             javadoc: 2.8 => 2.8.1
             rat: 0.7 => 0.8 
             Deleted "ci" profile (does not apply with Nexus)
+            Add default project info reports: excluded license/plugins/plugin management
 
 Historical list of changes: http://commons.apache.org/changes-report.html
 

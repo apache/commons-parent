@@ -51,6 +51,7 @@ Version 24:
             javadoc: 2.8 => 2.8.1
             rat: 0.7 => 0.8
             Deleted "ci" profile (does not apply with Nexus)
+            Add default project info reports: excluded license/plugins/plugin management
 
 For full details see:
 http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-24/RELEASE-NOTES.txt
@@ -490,6 +491,36 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>${commons.project-info.version}</version>
+        <!-- 
+            Unfortunately it does not appear to be possible to override
+            reports configured in a parent POM.
+            See https://jira.codehaus.org/browse/MPIR-241
+            and https://issues.apache.org/jira/browse/MPOM-32
+            So we define here all thos reports that are suitable for
+            all components. 
+            Components can add extra reports if they wish, but cannot disable any.
+        -->
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>index</report>
+              <report>summary</report>
+              <report>modules</report>
+<!--          <report>license</report>               site must link to ASF page instead  -->
+              <report>project-team</report>
+              <report>scm</report>
+              <report>issue-tracking</report>
+              <report>mailing-list</report>
+              <report>dependency-management</report>
+              <report>dependencies</report>
+              <report>dependency-convergence</report>
+              <report>cim</report>
+<!--          <report>plugin-management</report>      not very useful for end users -->
+<!--          <report>plugins</report>                not very useful for end users -->
+              <report>distribution-management</report>
+            </reports>
+          </reportSet>
+        </reportSets>      
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
