@@ -72,6 +72,7 @@ The <action> type attribute can be add,update,fix,remove.
             Allow override of surefire-report aggregate setting using property commons.surefire-report.aggregate
             javadoc: 2.8 => 2.8.1
             rat: 0.7 => 0.8
+            wagon-ssh 1.0 => 2.2 (M3 only)
             Deleted "ci" profile (does not apply with Nexus)
             Add default project info reports: excluded license/plugins/plugin management
             Add tests.jar and test-sources.jar to deployed files

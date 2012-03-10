@@ -50,6 +50,7 @@ Version 24:
             Allow override of surefire-report aggregate setting using property commons.surefire-report.aggregate
             javadoc: 2.8 => 2.8.1
             rat: 0.7 => 0.8
+            wagon-ssh 1.0 => 2.2 (M3 only)
             Deleted "ci" profile (does not apply with Nexus)
             Add default project info reports: excluded license/plugins/plugin management
             Add tests.jar and test-sources.jar to deployed files
@@ -961,7 +962,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
                   <!-- add support for ssh/scp -->
                   <groupId>org.apache.maven.wagon</groupId>
                   <artifactId>wagon-ssh</artifactId>
-                  <version>1.0</version>
+                  <version>${commons.wagon-ssh.version}</version>
                 </dependency>
               </dependencies>
             <executions>
@@ -1124,6 +1125,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.clirr.version>2.3</commons.clirr.version>
     <commons.jxr.version>2.3</commons.jxr.version>
     <commons.project-info.version>2.4</commons.project-info.version>
+    <commons.wagon-ssh.version>2.2</commons.wagon-ssh.version>
 
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
