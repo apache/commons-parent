@@ -29,7 +29,7 @@
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
   <!-- Must agree with commons.release.version below -->
-  <version>24-SNAPSHOT</version>
+  <version>24</version>
   <name>Commons Parent</name>
   <url>http://commons.apache.org/</url>
   <description>The Apache Commons Parent Pom provides common settings for all Apache Commons components.</description>
