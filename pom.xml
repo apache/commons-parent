@@ -29,7 +29,7 @@
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
   <!-- Must agree with commons.release.version below -->
-  <version>24-SNAPSHOT</version>
+  <version>25-SNAPSHOT</version>
   <name>Commons Parent</name>
   <url>http://commons.apache.org/</url>
   <description>The Apache Commons Parent Pom provides common settings for all Apache Commons components.</description>
@@ -1103,7 +1103,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
   <properties>
     <!-- configuration bits for cutting a release candidate, must be overridden by components -->
     <!-- must agree with project.version above -->
-    <commons.release.version>24</commons.release.version>
+    <commons.release.version>25</commons.release.version>
     <commons.rc.version>RC1</commons.rc.version>
 
     <!-- Default configuration for compiler source and target JVM -->
