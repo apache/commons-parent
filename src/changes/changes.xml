@@ -56,6 +56,12 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
+        <release version="25" date="2012-??-??" description="Update plugins">
+            <action type="update">
+            Updated various plugin versions:
+            clirr-maven-plugin: 2.3 => 2.4   
+            </action>
+        </release>
         <release version="24" date="2012-03-13" description="Update and add plugins">
             <action type="update">
             Updated various plugin versions:
