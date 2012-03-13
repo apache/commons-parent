@@ -38,7 +38,7 @@
 Version 25:
   Updated various plugin versions:
     clirr-maven-plugin: 2.3 => 2.4; 
-    clirr added to pluginManagement so can override the version from Apache POM          
+    clirr & RAT added to pluginManagement so can override the version from Apache POM          
 
 For full details see:
 http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-25/RELEASE-NOTES.txt
@@ -229,6 +229,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.7</version>
         </plugin>
+        <!-- Apache parent includes docck and enforcer -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
@@ -239,6 +240,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
           <artifactId>maven-install-plugin</artifactId>
           <version>2.3.1</version>
         </plugin>
+        <!-- Apache parent: invoker -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
@@ -290,6 +292,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
           <artifactId>maven-resources-plugin</artifactId>
           <version>2.5</version>
         </plugin>
+        <!-- Apache parent: scm -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
@@ -329,6 +332,11 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
           <inherited>true</inherited>
         </plugin>
         <plugin>
+          <groupId>org.apache.rat</groupId>
+          <artifactId>apache-rat-plugin</artifactId>
+          <version>${commons.rat.version}</version>
+        </plugin>
+        <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>buildnumber-maven-plugin</artifactId>
           <version>1.0</version>
@@ -341,6 +349,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
             <minSeverity>${minSeverity}</minSeverity>
           </configuration>
         </plugin>
+        <!-- Apache parent: plexus & modello -->
       </plugins>
     </pluginManagement>
     <plugins>
