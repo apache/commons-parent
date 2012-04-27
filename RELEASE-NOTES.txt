@@ -1,33 +1,19 @@
-              Apache Commons Parent 24 RELEASE NOTES
+              Apache Commons Parent 25 RELEASE NOTES
 
-The Commons Parent team is pleased to announce the release of Commons Parent 24
+The Commons Parent team is pleased to announce the release of Commons Parent 25
 
 The Apache Commons Parent Pom provides common settings for all Apache Commons components.
 
-Update and add plugins
+Update plugins
 
 Changes in this version include:
 
 
 Changes:
 o           Updated various plugin versions:
-            antrun: 1.6 => 1.7
-            assembly: 2.2.1 => 2.3
-            jar: 2.3.2 => 2.4
-            release: 2.2.1 => 2.2.2
-            remote-resources: override Apache pom 9 with 1.2.1
-            commons-build: 1.3 => 1.4
-            bundle: 2.3.5 => 2.3.7; removed workround for Java 1.5 as no longer necessary
-            Added cobertura: 2.5.1 to reporting and buildManagement
-            surefire: 2.9 => 2.12
-            surefire-report: 2.9 => 2.12
-            Allow override of surefire-report aggregate setting using property commons.surefire-report.aggregate
-            javadoc: 2.8 => 2.8.1
-            rat: 0.7 => 0.8 
-            wagon-ssh 1.0 => 2.2 (M3 only)
-            Deleted "ci" profile (does not apply with Nexus)
-            Add default project info reports: excluded license/plugins/plugin management
-            Add tests.jar and test-sources.jar to deployed files
+            clirr-maven-plugin: 2.3 => 2.4
+            clirr and RAT added to pluginManagement so can override the version from Apache POM
+            Add changes and jira reports 
 
 Historical list of changes: http://commons.apache.org/changes-report.html
 
