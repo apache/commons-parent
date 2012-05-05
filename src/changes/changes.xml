@@ -56,6 +56,12 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
+        <release version="26" date="2012-??-??" description="Update plugins">
+            <action type="update">
+            FELIX-3037 has been fixed; the profile java-1.5-detected is no longer needed
+            (in fact is causes problems, because it reverts bndlib to a version that is missing some required new methods)
+            </action>
+        </release>
         <release version="25" date="2012-??-??" description="Update plugins">
             <action type="update">
             Updated various plugin versions:

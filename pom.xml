@@ -1005,32 +1005,6 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     </profile>
 
     <profile>
-      <!-- This profile detects Java 1.5 -->
-      <id>java-1.5-detected</id>
-      <activation>
-        <jdk>1.5</jdk>
-      </activation>
-      <build>
-        <plugins>
-          <!-- workround for FELIX-3037 which applies to bundle 2.3.5 -->
-          <plugin>
-            <!-- version 2.3.5 depends on bndlib 1.43.0 which requires Java 6; fix this -->
-            <groupId>org.apache.felix</groupId>
-            <artifactId>maven-bundle-plugin</artifactId>
-            <dependencies>
-              <dependency>
-                <groupId>biz.aQute</groupId>
-                <artifactId>bndlib</artifactId>
-                <!-- 1.43.0 requires Java 6; use previous version which works with Java 5-->
-                <version>1.15.0</version>
-              </dependency>
-            </dependencies>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-
-    <profile>
       <!--
           Generate release notes in top-level directory from src/changes/changes.xml
           Usage:
