@@ -677,6 +677,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
           </plugin>
           <plugin>
             <artifactId>maven-assembly-plugin</artifactId>
+            <inherited>true</inherited>
             <executions>
               <execution>
                 <goals>
@@ -760,6 +761,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
           </plugin>
           <plugin>
             <artifactId>maven-assembly-plugin</artifactId>
+            <inherited>true</inherited>
             <executions>
               <execution>
                 <goals>
