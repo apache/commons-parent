@@ -432,7 +432,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
             <forced>true</forced>
           </archive>
           <excludeDependencies>true</excludeDependencies>
-          <manifestLocation>target/osgi</manifestLocation>
+          <manifestLocation>${project.build.directory}/osgi</manifestLocation>
           <instructions>
             <!-- stops the "uses" clauses being added to "Export-Package" manifest entry -->
             <_nouses>true</_nouses>
@@ -1153,7 +1153,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.osgi.private />
 
     <!-- location of any manifest file used by maven-jar-plugin -->
-    <commons.manifestfile>target/osgi/MANIFEST.MF</commons.manifestfile>
+    <commons.manifestfile>${project.build.directory}/osgi/MANIFEST.MF</commons.manifestfile>
 
     <!--
       Make the deployment protocol pluggable. This allows to switch to
