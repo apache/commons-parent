@@ -1124,7 +1124,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.surefire-report.version>2.12</commons.surefire-report.version>
     <commons.javadoc.version>2.8.1</commons.javadoc.version>
     <commons.rat.version>0.8</commons.rat.version>
-    <commons.changes.version>2.6</commons.changes.version>
+    <commons.changes.version>2.7</commons.changes.version>
     <commons.clirr.version>2.4</commons.clirr.version>
     <commons.jxr.version>2.3</commons.jxr.version>
     <commons.project-info.version>2.4</commons.project-info.version>
