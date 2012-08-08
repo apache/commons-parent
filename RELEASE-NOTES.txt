@@ -1,6 +1,6 @@
-              Apache Commons Parent 25 RELEASE NOTES
+              Apache Commons Parent 26 RELEASE NOTES
 
-The Commons Parent team is pleased to announce the release of Commons Parent 25
+The Commons Parent team is pleased to announce the release of commons-parent-26-SNAPSHOT
 
 The Apache Commons Parent Pom provides common settings for all Apache Commons components.
 
@@ -9,11 +9,12 @@ Update plugins
 Changes in this version include:
 
 
+
 Changes:
-o           Updated various plugin versions:
-            clirr-maven-plugin: 2.3 => 2.4
-            clirr and RAT added to pluginManagement so can override the version from Apache POM
-            Add changes and jira reports 
+o                   maven-changes-plugin: 2.6 => 2.7
+o                   FELIX-3037 has been fixed; the profile java-1.5-detected is no longer needed
+                    (in fact it causes problems, because it reverts bndlib to a version that is missing some required new methods)
+
 
 Historical list of changes: http://commons.apache.org/changes-report.html
 
