@@ -1107,6 +1107,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <!-- must agree with project.version above -->
     <commons.release.version>26</commons.release.version>
     <commons.rc.version>RC1</commons.rc.version>
+    <commons.jira.id>COMMONSSITE</commons.jira.id>
 
     <!-- Default configuration for compiler source and target JVM -->
     <!-- Name disagrees with standard Maven name - see https://issues.apache.org/jira/browse/COMMONSSITE-69 -->
