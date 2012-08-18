@@ -58,11 +58,21 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
         <release version="26" date="2012-??-??" description="Update plugins">
             <action type="update">
-            maven-changes-plugin: 2.6 => 2.7
+            FELIX-3037 has been fixed so the profile java-1.5-detected is no longer needed
+            (in fact it causes problems, because it reverts bndlib to a version that is missing some required new methods)
             </action>
             <action type="update">
-            FELIX-3037 has been fixed; the profile java-1.5-detected is no longer needed
-            (in fact it causes problems, because it reverts bndlib to a version that is missing some required new methods)
+            maven-changes-plugin: 2.6 => 2.7.1
+            maven-clean-plugin: 2.4.1 => 2.5
+            maven-compiler-plugin: 2.3.2 => 2.5.1
+            maven-project-info-reports-plugin: 2.4 => 2.5
+            maven-release-plugin: 2.2.2 => 2.3.2
+            maven-remote-resources-plugin: 1.2.1 => 1.3
+            maven-site-plugin: 3.0 => 3.1
+            maven-source-plugin: 2.1.2 => 2.2
+            maven-surefire-plugin: 2.12 => 2.12.2
+            maven-surefire-report-plugin: 2.12 => 2.12.2
+            org.codehaus.mojo:buildnumber-maven-plugin: 1.0 => 1.1
             </action>
         </release>
         <release version="25" date="2012-??-??" description="Update plugins">
