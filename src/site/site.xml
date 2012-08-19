@@ -57,6 +57,18 @@
   </skin>
 
   <body>
+    <head>
+      <!-- Better display of <source> code sections -->
+      <!-- Note: the $relativePath reference is resolved by the template -->
+      <link rel="stylesheet" href="$relativePath/css/prettify.css" type="text/css" media="all" />
+      <script type="text/javascript" src="$relativePath/js/prettify.js"></script>
+      <script type="text/javascript">
+          window.onload=function() {
+              prettyPrint();
+          }
+      </script>
+    </head>
+
     <!-- N.B. body links are automatically inherited -->
     <links>
       <item name="ApacheCon" href="http://www.apachecon.com/"/>
@@ -64,18 +76,6 @@
       <item name="Commons" href="http://commons.apache.org/" />
     </links>
 
-    <head>
-    <!-- Better display of <source> code sections -->
-    <!-- Note: the $relativePath reference is resolved by the template -->
-    <link rel="stylesheet" href="$relativePath/css/prettify.css" type="text/css" media="all" />
-    <script type="text/javascript" src="$relativePath/js/prettify.js"></script>
-    <script type="text/javascript">
-        window.onload=function() {
-            prettyPrint();
-        }
-    </script>
-    </head>
-    
     <menu ref="reports" inherit="bottom" />
 
     <menu name="Commons" inherit="bottom">
