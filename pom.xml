@@ -295,7 +295,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
-          <version>$(commons.site-plugin.version)</version>
+          <version>${commons.site-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
