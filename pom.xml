@@ -1130,7 +1130,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.wagon-ssh.version>2.2</commons.wagon-ssh.version>
     <commons.site-plugin.version>3.1</commons.site-plugin.version>
     <commons.cobertura.version>2.5.1</commons.cobertura.version>
-    <commons.jdepend.version>2.0-beta2</commons.jdepend.version>
+    <commons.jdepend.version>2.0-beta-2</commons.jdepend.version>
 
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
