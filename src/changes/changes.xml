@@ -60,6 +60,10 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">
             update maven-site-plugin to 3.1 in reporting section
             use properties for all reporting plugins to ensure consistency
+            maven-project-info-reports-plugin  2.5 -> 2.5.1
+            maven-resources-plugin             2.5 -> 2.6
+            maven-surefire-plugin              2.12.2 -> 2.12.3
+            maven-surefire-report-plugin       2.12.2 -> 2.12.3
             </action>
         </release>
         <release version="26" date="2012-08-23" description="Update plugins">
