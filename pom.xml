@@ -38,6 +38,7 @@
 Version 27:
           update maven-site-plugin to 3.1 in reporting section
           use properties for all reporting plugins to ensure consistency
+          maven-changes-plugin: 2.7.1 => 2.8
           maven-project-info-reports-plugin  2.5 -> 2.5.1
           maven-resources-plugin             2.5 -> 2.6
           maven-surefire-plugin              2.12.2 -> 2.12.3
@@ -479,8 +480,8 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <configuration>
           <xmlPath>${basedir}/src/changes/changes.xml</xmlPath>
           <columnNames>Fix Version,Key,Component,Summary,Type,Resolution,Status</columnNames>
-          <!-- Sort cols have to be reversed in JIRA 4 -->
-          <sortColumnNames>Key DESC,Type,Fix Version DESC</sortColumnNames>
+          <!-- Sort cols in natural order when using JQL for JIRA 5.1 -->
+          <sortColumnNames>Fix Version DESC,Type,Key DESC</sortColumnNames>
           <resolutionIds>Fixed</resolutionIds>
           <statusIds>Resolved,Closed</statusIds>
           <!-- Don't include sub-task -->
