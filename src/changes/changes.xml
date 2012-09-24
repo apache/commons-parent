@@ -56,7 +56,7 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="27" date="2012-??-??" description="Update plugins">
+        <release version="27" date="2012-09-24" description="Update plugins">
             <action type="update">
             update maven-site-plugin to 3.1 in reporting section
             use properties for all reporting plugins to ensure consistency
