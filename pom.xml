@@ -1110,7 +1110,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
   <properties>
     <!-- configuration bits for cutting a release candidate, must be overridden by components -->
     <!-- must agree with project.version above -->
-    <commons.release.version>26</commons.release.version>
+    <commons.release.version>27</commons.release.version>
     <commons.rc.version>RC1</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
 
