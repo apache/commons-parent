@@ -343,7 +343,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>buildnumber-maven-plugin</artifactId>
-          <version>1.1</version>
+          <version>1.2</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
