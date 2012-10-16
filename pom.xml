@@ -35,17 +35,14 @@
   <description>The Apache Commons Parent Pom provides common settings for all Apache Commons components.</description>
 
 <!--
-Version 27:
-          update maven-site-plugin to 3.1 in reporting section
-          use properties for all reporting plugins to ensure consistency
-          maven-changes-plugin: 2.7.1 => 2.8
-          maven-project-info-reports-plugin  2.5 -> 2.5.1
-          maven-resources-plugin             2.5 -> 2.6
-          maven-surefire-plugin              2.12.2 -> 2.12.3
-          maven-surefire-report-plugin       2.12.2 -> 2.12.3
+Version 28:
+          maven-surefire-plugin              2.12.3 -> 2.12.4
+          maven-surefire-report-plugin       2.12.3 -> 2.12.4
+          cobertura-maven-plugin             2.5.1  -> 2.5.2
+          buildnumber-maven-plugin           1.1    -> 1.2 
           
 For full details see:
-http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-27/RELEASE-NOTES.txt
+http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-28/RELEASE-NOTES.txt
  -->
 
   <!-- Now required by versions plugin -->
@@ -343,7 +340,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>buildnumber-maven-plugin</artifactId>
-          <version>1.1</version>
+          <version>1.2</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -1126,8 +1123,8 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.surefire.java />
 
     <!-- plugin versions (allows same value in reporting and build sections) -->
-    <commons.surefire.version>2.12.3</commons.surefire.version>
-    <commons.surefire-report.version>2.12.3</commons.surefire-report.version>
+    <commons.surefire.version>2.12.4</commons.surefire.version>
+    <commons.surefire-report.version>2.12.4</commons.surefire-report.version>
     <commons.javadoc.version>2.9</commons.javadoc.version>
     <commons.rat.version>0.8</commons.rat.version>
     <commons.changes.version>2.8</commons.changes.version>
@@ -1136,7 +1133,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.project-info.version>2.5.1</commons.project-info.version>
     <commons.wagon-ssh.version>2.2</commons.wagon-ssh.version>
     <commons.site-plugin.version>3.2</commons.site-plugin.version>
-    <commons.cobertura.version>2.5.1</commons.cobertura.version>
+    <commons.cobertura.version>2.5.2</commons.cobertura.version>
     <commons.jdepend.version>2.0-beta-2</commons.jdepend.version>
 
 

@@ -56,6 +56,14 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
+        <release version="28" date="TBA" description="Update plugins">
+            <action type="update">
+            maven-surefire-plugin              2.12.3 -> 2.12.4
+            maven-surefire-report-plugin       2.12.3 -> 2.12.4
+            cobertura-maven-plugin             2.5.1  -> 2.5.2
+            buildnumber-maven-plugin           1.1    -> 1.2 
+            </action>
+        </release>
         <release version="27" date="2012-09-24" description="Update plugins">
             <action type="update">
             update maven-site-plugin to 3.1 in reporting section
