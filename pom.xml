@@ -533,7 +533,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
           <quiet>true</quiet>
           <source>${maven.compile.source}</source>
           <encoding>${commons.encoding}</encoding>
-          <docEncoding>${commons.docEncoding}</docEncoding>
+          <docencoding>${commons.docEncoding}</docencoding>
           <linksource>true</linksource>
           <links>
             <link>${commons.javadoc.java.link}</link>
