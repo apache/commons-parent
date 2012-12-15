@@ -301,6 +301,10 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
           <version>${commons.site-plugin.version}</version>
+          <configuration>
+            <!-- don't deploy site with maven-site-plugin -->
+            <skipDeploy>true</skipDeploy>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -465,6 +469,28 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <artifactId>apache-rat-plugin</artifactId>
         <version>${commons.rat.version}</version>
       </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-scm-publish-plugin</artifactId>
+        <version>1.0-beta-2</version>
+        <configuration>
+          <content>${project.reporting.outputDirectory}</content>
+          <pubScmUrl>scm:svn:https://svn.apache.org/repos/asf/commons/cms-site/trunk/${maven.site.path}</pubScmUrl>
+          <checkoutDirectory>${commons.site.cache}/${commons.site.path}</checkoutDirectory>
+          <tryUpdate>true</tryUpdate>
+        </configuration>
+        <executions>
+          <execution>
+            <id>scm-publish</id>
+            <phase>site-deploy</phase><!-- deploy site with maven-scm-publish-plugin -->
+            <goals>
+              <goal>publish-scm</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
     </plugins>
   </build>
 
@@ -1194,6 +1220,12 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     
     <!-- Allow surefire-report aggregation to be easily configured for multi-module projects -->
     <commons.surefire-report.aggregate>false</commons.surefire-report.aggregate>
+
+    <!-- scm publish plugin configuration -->
+    <commons.site.cache>${user.home}/commons-sites</commons.site.cache>
+    <!-- value modules can override it -->
+    <commons.site.path>${project.artifactId}</commons.site.path>
+
   </properties>
 
 </project>
