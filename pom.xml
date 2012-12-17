@@ -476,8 +476,8 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <version>1.0-beta-2</version>
         <configuration>
           <content>${project.reporting.outputDirectory}</content>
-          <pubScmUrl>scm:svn:https://svn.apache.org/repos/asf/commons/cms-site/trunk/${maven.site.path}</pubScmUrl>
-          <checkoutDirectory>${commons.site.cache}/${commons.site.path}</checkoutDirectory>
+          <pubScmUrl>scm:svn:${commons.scmPubUrl}</pubScmUrl>
+          <checkoutDirectory>${commons.scmPubCheckoutDirectory}</checkoutDirectory>
           <tryUpdate>true</tryUpdate>
         </configuration>
         <executions>
@@ -1227,6 +1227,9 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.site.cache>${user.home}/commons-sites</commons.site.cache>
     <!-- value modules can override it -->
     <commons.site.path>${project.artifactId}</commons.site.path>
+
+    <commons.scmPubUrl>https://svn.apache.org/repos/asf/commons/cms-site/trunk/${commons.site.path}</commons.scmPubUrl>
+    <commons.scmPubCheckoutDirectory>${commons.site.cache}/${commons.site.path}</commons.scmPubCheckoutDirectory>
 
   </properties>
 
