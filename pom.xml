@@ -259,6 +259,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
             <quiet>true</quiet>
             <encoding>${commons.encoding}</encoding>
             <docEncoding>${commons.docEncoding}</docEncoding>
+            <notimestamp>true</notimestamp>
             <links>
               <link>${commons.javadoc.java.link}</link>
               <link>${commons.javadoc.javaee.link}</link>
@@ -534,6 +535,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
           <source>${maven.compile.source}</source>
           <encoding>${commons.encoding}</encoding>
           <docencoding>${commons.docEncoding}</docencoding>
+          <notimestamp>true</notimestamp>
           <linksource>true</linksource>
           <!-- prevent svnpub to be too much noisy -->
           <notimestamp>true</notimestamp>
