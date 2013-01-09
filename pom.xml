@@ -1231,6 +1231,8 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.scmPubUrl>https://svn.apache.org/repos/infra/websites/production/commons/content/${commons.site.path}</commons.scmPubUrl>
     <commons.scmPubCheckoutDirectory>${commons.site.cache}/${commons.site.path}</commons.scmPubCheckoutDirectory>
 
+    <sonar.host.url>https://analysis.apache.org/</sonar.host.url>
+
   </properties>
 
 </project>
