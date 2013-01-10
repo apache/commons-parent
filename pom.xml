@@ -613,11 +613,6 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <version>${commons.rat.version}</version>
       </plugin>
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>cobertura-maven-plugin</artifactId>
-        <version>${commons.cobertura.version}</version>
-      </plugin>
-      <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>clirr-maven-plugin</artifactId>
           <version>${commons.clirr.version}</version>
@@ -634,6 +629,25 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
   </reporting>
 
   <profiles>
+
+    <profile>
+      <id>reporting</id>
+      <activation>
+        <property>
+          <name>skipReports</name>
+          <value>!true</value>
+        </property>
+      </activation>
+      <reporting>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>cobertura-maven-plugin</artifactId>
+            <version>${commons.cobertura.version}</version>
+          </plugin>
+        </plugins>
+      </reporting>
+    </profile>
 
     <!--
          Profile for Commons releases via Nexus.
