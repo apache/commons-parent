@@ -980,6 +980,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <module>../exec</module>
         <module>../fileupload</module>
         <module>../functor</module>
+        <module>../imaging</module>
         <module>../io</module>
         <module>../jci</module>
         <module>../jcs</module>
@@ -996,7 +997,6 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <module>../pool</module>
         <module>../primitives</module>
         <module>../proxy</module>
-        <module>../sanselan</module>
         <module>../scxml</module>
         <!-- not yet using mvn module>../transaction</module-->
         <module>../validator</module>
