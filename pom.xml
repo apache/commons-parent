@@ -1244,7 +1244,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <!-- value modules can override it -->
     <commons.site.path>${project.artifactId}</commons.site.path>
 
-    <commons.scmPubUrl>https://svn.apache.org/repos/infra/websites/production/commons/content/propers/${project.artifactId}</commons.scmPubUrl>
+    <commons.scmPubUrl>https://svn.apache.org/repos/infra/websites/production/commons/content/proper/${project.artifactId}</commons.scmPubUrl>
     <commons.scmPubCheckoutDirectory>${commons.site.cache}/${commons.site.path}</commons.scmPubCheckoutDirectory>
 
     <sonar.host.url>https://analysis.apache.org/</sonar.host.url>
