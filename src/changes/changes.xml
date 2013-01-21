@@ -58,6 +58,8 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
         <release version="28" date="TBA" description="Update plugins">
             <action type="update">
+            apache-parent-pom                  9      -> 13
+
             maven-surefire-plugin              2.12.3 -> 2.12.4
             maven-surefire-report-plugin       2.12.3 -> 2.12.4
             cobertura-maven-plugin             2.5.1  -> 2.5.2
