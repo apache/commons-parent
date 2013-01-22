@@ -22,20 +22,21 @@
   <parent>
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
-    <!-- Versions 10-12 are broken; see https://issues.apache.org/jira/browse/MPOM-32 -->
-    <version>9</version>
+    <version>13</version>
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
   <!-- Must agree with commons.release.version below -->
-  <version>28-SNAPSHOT</version>
+  <version>28</version>
   <name>Commons Parent</name>
   <url>http://commons.apache.org/</url>
   <description>The Apache Commons Parent Pom provides common settings for all Apache Commons components.</description>
 
 <!--
 Version 28:
+          apache-parent-pom                  9      -> 13
+
           maven-surefire-plugin              2.12.3 -> 2.13
           maven-surefire-report-plugin       2.12.3 -> 2.13
           cobertura-maven-plugin             2.5.1  -> 2.5.2
@@ -559,7 +560,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
             reports configured in a parent POM.
             See https://jira.codehaus.org/browse/MPIR-241
             and https://issues.apache.org/jira/browse/MPOM-32
-            So we define here all thos reports that are suitable for
+            So we define here all those reports that are suitable for
             all components. 
             Components can add extra reports if they wish, but cannot disable any.
         -->

@@ -1,6 +1,6 @@
-              Apache Commons Parent 27 RELEASE NOTES
+              Apache Commons Parent 28 RELEASE NOTES
 
-The Commons Parent team is pleased to announce the release of commons-parent-27
+The Commons Parent team is pleased to announce the release of commons-parent-28
 
 The Apache Commons Parent Pom provides common settings for all Apache Commons components.
 
@@ -11,13 +11,12 @@ Changes in this version include:
 
 
 Changes:
-o                   update maven-site-plugin to 3.1 in reporting section
-                    use properties for all reporting plugins to ensure consistency
-                    maven-changes-plugin: 2.7.1 => 2.8 (fixes MCHANGES-285 SAXException parsing JIRA XML from JIRA 5.1)
-                    maven-project-info-reports-plugin  2.5 -> 2.5.1
-                    maven-resources-plugin             2.5 -> 2.6
-                    maven-surefire-plugin              2.12.2 -> 2.12.3
-                    maven-surefire-report-plugin       2.12.2 -> 2.12.3
+o                   apache-parent-pom                  9      -> 13
+
+                    maven-surefire-plugin              2.12.3 -> 2.12.4
+                    maven-surefire-report-plugin       2.12.3 -> 2.12.4
+                    cobertura-maven-plugin             2.5.1  -> 2.5.2
+                    buildnumber-maven-plugin           1.1    -> 1.2
 
 
 Historical list of changes: http://commons.apache.org/changes-report.html
