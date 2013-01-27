@@ -56,7 +56,7 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="28" date="TBA" description="Update plugins">
+        <release version="28" date="2013-01-26" description="Update plugins">
             <action type="update">
             apache-parent-pom                  9      -> 13
 
@@ -64,6 +64,15 @@ The <action> type attribute can be add,update,fix,remove.
             maven-surefire-report-plugin       2.12.3 -> 2.12.4
             cobertura-maven-plugin             2.5.1  -> 2.5.2
             buildnumber-maven-plugin           1.1    -> 1.2 
+            </action>
+            <action type="update">
+            Also changed, but omitted from changes section in released version:
+
+            Added maven-scm-publish-plugin  1.0-beta-2
+            Removed timestamp from Javadoc output
+            Moved Cobertura from default to reporting profile
+            Renamed module sanselan => imaging
+            Added scm publishing properties
             </action>
         </release>
         <release version="27" date="2012-09-24" description="Update plugins">
