@@ -34,19 +34,12 @@
   <description>The Apache Commons Parent Pom provides common settings for all Apache Commons components.</description>
 
 <!--
-Version 28:
-          apache-parent-pom                  9      -> 13
-
-          maven-surefire-plugin              2.12.3 -> 2.13
-          maven-surefire-report-plugin       2.12.3 -> 2.13
-          cobertura-maven-plugin             2.5.1  -> 2.5.2
-          buildnumber-maven-plugin           1.1    -> 1.2 
-          maven-assembly-plugin              2.3    -> 2.4
-          maven-compiler-plugin              2.5.1  -> 3.0
-          wagon-ssh                          2.2    -> 2.3
+Version 29:
+          maven-surefire-plugin              2.13 -> 2.14
+          maven-surefire-report-plugin       2.13 -> 2.14
           
 For full details see:
-http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-28/RELEASE-NOTES.txt
+http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-29/RELEASE-NOTES.txt
  -->
 
   <!-- Now required by versions plugin -->
@@ -1171,8 +1164,8 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.surefire.java />
 
     <!-- plugin versions (allows same value in reporting and build sections) -->
-    <commons.surefire.version>2.13</commons.surefire.version>
-    <commons.surefire-report.version>2.13</commons.surefire-report.version>
+    <commons.surefire.version>2.14</commons.surefire.version>
+    <commons.surefire-report.version>2.14</commons.surefire-report.version>
     <commons.javadoc.version>2.9</commons.javadoc.version>
     <commons.rat.version>0.8</commons.rat.version>
     <commons.changes.version>2.8</commons.changes.version>
