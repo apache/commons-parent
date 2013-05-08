@@ -35,8 +35,10 @@
 
 <!--
 Version 29:
-          maven-surefire-plugin              2.13 -> 2.14
-          maven-surefire-report-plugin       2.13 -> 2.14
+          cobertura-maven-plugin             2.5.2 -> removed
+          jacoco-maven-plugin                      -> 0.6.2.201302030002
+          maven-surefire-plugin              2.13  -> 2.14
+          maven-surefire-report-plugin       2.13  -> 2.14
           
 For full details see:
 http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-29/RELEASE-NOTES.txt
@@ -632,12 +634,54 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
           <value>!true</value>
         </property>
       </activation>
+      <build>
+        <plugins>
+          <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>${commons.jacoco.version}</version>
+          <executions>
+            <execution>
+              <id>prepare-agent</id>
+              <phase>process-test-classes</phase>
+              <goals>
+                <goal>prepare-agent</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>report</id>
+              <phase>site</phase>
+              <goals>
+                <goal>report</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>check</id>
+              <goals>
+                <goal>check</goal>
+              </goals>
+              <configuration>
+                <check>
+                  <classRatio>100</classRatio>
+                  <instructionRatio>90</instructionRatio>
+                  <methodRatio>95</methodRatio>
+                  <branchRatio>85</branchRatio>
+                  <complexityRatio>85</complexityRatio>
+                  <lineRatio>90</lineRatio>
+                </check>
+                <haltOnFailure>false</haltOnFailure>
+              </configuration>
+            </execution>
+          </executions>
+          </plugin>
+        </plugins>
+      </build>
       <reporting>
         <plugins>
           <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>cobertura-maven-plugin</artifactId>
-            <version>${commons.cobertura.version}</version>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>${commons.jacoco.version}</version>
           </plugin>
         </plugins>
       </reporting>
@@ -1174,7 +1218,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.project-info.version>2.6</commons.project-info.version>
     <commons.wagon-ssh.version>2.3</commons.wagon-ssh.version>
     <commons.site-plugin.version>3.2</commons.site-plugin.version>
-    <commons.cobertura.version>2.5.2</commons.cobertura.version>
+    <commons.jacoco.version>0.6.2.201302030002</commons.jacoco.version>
     <commons.jdepend.version>2.0-beta-2</commons.jdepend.version>
 
 
