@@ -13,8 +13,8 @@ Changes in this version include:
 Changes:
 o                   removed cobertura-maven-plugin
                     added jacoco-maven-plugin          0.6.2.201302030002
-                    maven-surefire-plugin              2.13 -> 2.14
-                    maven-surefire-report-plugin       2.13 -> 2.14
+                    maven-surefire-plugin              2.13 -> 2.14.1
+                    maven-surefire-report-plugin       2.13 -> 2.14.1
 
 
 Historical list of changes: http://commons.apache.org/changes-report.html
