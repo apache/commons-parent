@@ -31,7 +31,7 @@ setting must read as (note the use of the ${argLine} property):
         <configuration>
           <forkMode>pertest</forkMode>
           <!-- limit memory size see IO-161 -->
-          <!-- the ${argLine} preserves jacoco agent settings (see https://github.com/jacoco/eclemma/issues/22) -->
+          <!-- the ${argLine} preserves jacoco agent settings (see (see https://github.com/jacoco/jacoco/issues/44) -->
           <argLine>-Xmx25M ${argLine}</argLine>
           ...
         </configuration>
