@@ -640,6 +640,12 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
           <version>${commons.jacoco.version}</version>
+          <!-- Note that since JaCoCo relies on an agent to perform tests,
+               it changes the surefire arguments line. If a component also
+               needs to change the argument line of maven-surefire-plugin,
+               then it must add ${argLine} property (which is set by JaCoCo)
+               in the argLine configuration element of maven-surefire-plugin
+               to preserve JaCoCo settings. -->
           <executions>
             <execution>
               <id>prepare-agent</id>

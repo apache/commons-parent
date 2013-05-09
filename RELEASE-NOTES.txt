@@ -1,4 +1,4 @@
-              Apache Commons Parent 28 RELEASE NOTES
+              Apache Commons Parent 29 RELEASE NOTES
 
 The Commons Parent team is pleased to announce the release of commons-parent-29
 
@@ -8,14 +8,37 @@ Update plugins
 
 Changes in this version include:
 
-
-
 Changes:
 o                   removed cobertura-maven-plugin
                     added jacoco-maven-plugin          0.6.2.201302030002
                     maven-surefire-plugin              2.13 -> 2.14.1
                     maven-surefire-report-plugin       2.13 -> 2.14.1
 
+The main change is the replacement of cobertura with JaCoCo for test coverage analysis.
+The former is not maintained anymore, has numerous bugs and is extremely slow in
+some situations (typically generating coverage reports for [math] took about 9 hours whereas
+standard tests run in about 10 minutes). One important implication is that since JaCoCo
+relies on setting an agent, then it requires at least Java 1.5 to run the tests, and it
+changes the argument line of surefire tests. If a component also needs to adapt the
+surefire command line, it must add the property ${argLine} to the argument line in order
+to preserve JaCoCo settings. An example for this is Apache Commons IO, where the maven-surefire-plugin
+setting must read as (note the use of the ${argLine} property):
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <forkMode>pertest</forkMode>
+          <!-- limit memory size see IO-161 -->
+          <!-- the ${argLine} preserves jacoco agent settings (see https://github.com/jacoco/eclemma/issues/22) -->
+          <argLine>-Xmx25M ${argLine}</argLine>
+          ...
+        </configuration>
+      </plugin>
+      ...
+    </plugins>
+ 
 
 Historical list of changes: http://commons.apache.org/changes-report.html
 
