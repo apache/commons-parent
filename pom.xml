@@ -39,6 +39,9 @@ Version 29:
           jacoco-maven-plugin                      -> 0.6.2.201302030002
           maven-surefire-plugin              2.13  -> 2.14.1
           maven-surefire-report-plugin       2.13  -> 2.14.1
+
+Removed skipReports property (now JaCoCo coverage is triggered directly
+by JDK version being at least 1.5).
           
 For full details see:
 http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-29/RELEASE-NOTES.txt
@@ -629,10 +632,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <profile>
       <id>reporting</id>
       <activation>
-        <property>
-          <name>skipReports</name>
-          <value>!true</value>
-        </property>
+        <jdk>[1.5,)</jdk>
       </activation>
       <build>
         <plugins>
