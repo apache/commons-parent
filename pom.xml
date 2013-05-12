@@ -668,14 +668,14 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
               </goals>
               <configuration>
                 <check>
-                  <classRatio>100</classRatio>
-                  <instructionRatio>90</instructionRatio>
-                  <methodRatio>95</methodRatio>
-                  <branchRatio>85</branchRatio>
-                  <complexityRatio>85</complexityRatio>
-                  <lineRatio>90</lineRatio>
+                  <classRatio>${commons.jacoco.classRatio}</classRatio>
+                  <instructionRatio>${commons.jacoco.instructionRatio}</instructionRatio>
+                  <methodRatio>${commons.jacoco.methodRatio}</methodRatio>
+                  <branchRatio>${commons.jacoco.branchRatio}</branchRatio>
+                  <complexityRatio>${commons.jacoco.complexityRatio}</complexityRatio>
+                  <lineRatio>${commons.jacoco.lineRatio}</lineRatio>
                 </check>
-                <haltOnFailure>false</haltOnFailure>
+                <haltOnFailure>${commons.jacoco.haltOnFailure}</haltOnFailure>
               </configuration>
             </execution>
           </executions>
@@ -1239,6 +1239,15 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.release.3.desc />
     <commons.release.3.binary.suffix>-bin</commons.release.3.binary.suffix>
 
+    <!-- Default values for the jacoco-maven-plugin reports -->
+    <commons.jacoco.classRatio>100</commons.jacoco.classRatio>
+    <commons.jacoco.instructionRatio>90</commons.jacoco.instructionRatio>
+    <commons.jacoco.methodRatio>95</commons.jacoco.methodRatio>
+    <commons.jacoco.branchRatio>85</commons.jacoco.branchRatio>
+    <commons.jacoco.complexityRatio>85</commons.jacoco.complexityRatio>
+    <commons.jacoco.lineRatio>90</commons.jacoco.lineRatio>
+    <commons.jacoco.haltOnFailure>false</commons.jacoco.haltOnFailure>
+   
     <!-- Commons Component Id -->
     <commons.componentid>${project.artifactId}</commons.componentid>
 
