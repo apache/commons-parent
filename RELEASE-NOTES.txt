@@ -9,10 +9,14 @@ Update plugins
 Changes in this version include:
 
 Changes:
-o                   removed cobertura-maven-plugin
-                    added jacoco-maven-plugin          0.6.2.201302030002
-                    maven-surefire-plugin              2.13 -> 2.14.1
-                    maven-surefire-report-plugin       2.13 -> 2.14.1
+o         cobertura-maven-plugin         2.5.2 -> removed
+          jacoco-maven-plugin                  -> 0.6.2.201302030002
+          maven-surefire-plugin          2.13  -> 2.14.1
+          maven-surefire-report-plugin   2.13  -> 2.14.1
+          maven-changes-plugin           2.8   -> 2.9
+          maven-compiler-plugin          3.0   -> 3.1
+          maven-release-plugin           2.3.2 -> 2.4.1
+          apache-rat-plugin              0.8   -> 0.9
 
 The main change is the replacement of cobertura with JaCoCo for test
 coverage analysis.  The former is not maintained anymore, has numerous
