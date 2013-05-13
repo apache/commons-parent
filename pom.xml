@@ -28,7 +28,7 @@
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
   <!-- Must agree with commons.release.version below -->
-  <version>29-SNAPSHOT</version>
+  <version>29</version>
   <name>Apache Commons Parent</name>
   <url>http://commons.apache.org/</url>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
@@ -39,6 +39,14 @@ Version 29:
           jacoco-maven-plugin                      -> 0.6.2.201302030002
           maven-surefire-plugin              2.13  -> 2.14.1
           maven-surefire-report-plugin       2.13  -> 2.14.1
+          maven-changes-plugin               2.8   -> 2.9
+          maven-compiler-plugin              3.0   -> 3.1
+          maven-release-plugin               2.3.2 -> 2.4.1
+          maven-site-plugin                  3.2   -> 3.3
+          apache-rat-plugin                  0.8   -> 0.9
+
+Removed skipReports property (now JaCoCo coverage is triggered directly
+by JDK version being at least 1.5).
           
 For full details see:
 http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-29/RELEASE-NOTES.txt
@@ -214,7 +222,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.0</version>
+          <version>3.1</version>
           <configuration>
             <source>${maven.compile.source}</source>
             <target>${maven.compile.target}</target>
@@ -271,7 +279,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
-          <version>2.3.2</version>
+          <version>2.4.1</version>
         </plugin>
         <plugin>
           <!-- TODO see above - find better way to add N&L files to jars and test jars -->
@@ -629,10 +637,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <profile>
       <id>reporting</id>
       <activation>
-        <property>
-          <name>skipReports</name>
-          <value>!true</value>
-        </property>
+        <jdk>[1.5,)</jdk>
       </activation>
       <build>
         <plugins>
@@ -640,6 +645,12 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
           <version>${commons.jacoco.version}</version>
+          <!-- Note that since JaCoCo relies on an agent to perform tests,
+               it changes the surefire arguments line. If a component also
+               needs to change the argument line of maven-surefire-plugin,
+               then it must add ${argLine} property (which is set by JaCoCo)
+               in the argLine configuration element of maven-surefire-plugin
+               to preserve JaCoCo settings. -->
           <executions>
             <execution>
               <id>prepare-agent</id>
@@ -662,14 +673,14 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
               </goals>
               <configuration>
                 <check>
-                  <classRatio>100</classRatio>
-                  <instructionRatio>90</instructionRatio>
-                  <methodRatio>95</methodRatio>
-                  <branchRatio>85</branchRatio>
-                  <complexityRatio>85</complexityRatio>
-                  <lineRatio>90</lineRatio>
+                  <classRatio>${commons.jacoco.classRatio}</classRatio>
+                  <instructionRatio>${commons.jacoco.instructionRatio}</instructionRatio>
+                  <methodRatio>${commons.jacoco.methodRatio}</methodRatio>
+                  <branchRatio>${commons.jacoco.branchRatio}</branchRatio>
+                  <complexityRatio>${commons.jacoco.complexityRatio}</complexityRatio>
+                  <lineRatio>${commons.jacoco.lineRatio}</lineRatio>
                 </check>
-                <haltOnFailure>false</haltOnFailure>
+                <haltOnFailure>${commons.jacoco.haltOnFailure}</haltOnFailure>
               </configuration>
             </execution>
           </executions>
@@ -1211,13 +1222,13 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.surefire.version>2.14.1</commons.surefire.version>
     <commons.surefire-report.version>2.14.1</commons.surefire-report.version>
     <commons.javadoc.version>2.9</commons.javadoc.version>
-    <commons.rat.version>0.8</commons.rat.version>
-    <commons.changes.version>2.8</commons.changes.version>
+    <commons.rat.version>0.9</commons.rat.version>
+    <commons.changes.version>2.9</commons.changes.version>
     <commons.clirr.version>2.5</commons.clirr.version>
     <commons.jxr.version>2.3</commons.jxr.version>
     <commons.project-info.version>2.6</commons.project-info.version>
     <commons.wagon-ssh.version>2.3</commons.wagon-ssh.version>
-    <commons.site-plugin.version>3.2</commons.site-plugin.version>
+    <commons.site-plugin.version>3.3</commons.site-plugin.version>
     <commons.jacoco.version>0.6.2.201302030002</commons.jacoco.version>
     <commons.jdepend.version>2.0-beta-2</commons.jdepend.version>
 
@@ -1233,6 +1244,15 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.release.3.desc />
     <commons.release.3.binary.suffix>-bin</commons.release.3.binary.suffix>
 
+    <!-- Default values for the jacoco-maven-plugin reports -->
+    <commons.jacoco.classRatio>100</commons.jacoco.classRatio>
+    <commons.jacoco.instructionRatio>90</commons.jacoco.instructionRatio>
+    <commons.jacoco.methodRatio>95</commons.jacoco.methodRatio>
+    <commons.jacoco.branchRatio>85</commons.jacoco.branchRatio>
+    <commons.jacoco.complexityRatio>85</commons.jacoco.complexityRatio>
+    <commons.jacoco.lineRatio>90</commons.jacoco.lineRatio>
+    <commons.jacoco.haltOnFailure>false</commons.jacoco.haltOnFailure>
+   
     <!-- Commons Component Id -->
     <commons.componentid>${project.artifactId}</commons.componentid>
 
