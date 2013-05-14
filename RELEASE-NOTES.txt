@@ -17,7 +17,6 @@ o         cobertura-maven-plugin         2.5.2 -> removed
           maven-compiler-plugin          3.0   -> 3.1
           maven-release-plugin           2.3.2 -> 2.4.1
           maven-site-plugin              3.2   -> 3.3
-          apache-rat-plugin              0.8   -> 0.9
 
 The main change is the replacement of cobertura with JaCoCo for test
 coverage analysis.  The former is not maintained anymore, has numerous
