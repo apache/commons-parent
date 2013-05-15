@@ -614,6 +614,11 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
         <version>${commons.rat.version}</version>
+        <configuration>
+          <excludes>
+            <exclude>site-content/**/*</exclude>
+          </excludes>
+        </configuration>      
       </plugin>
       <plugin>
           <groupId>org.codehaus.mojo</groupId>
