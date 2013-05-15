@@ -36,9 +36,6 @@
 <!--
 Version 30:
           rat-maven-plugin                   0.8 -> 0.9
-          
-For RAT 0.9, make sure you <exclude>site-content/**/*</exclude> in your POM if you overrdide the configuration.
-If you do not exclude site-content, RAT will take a long time to run, for example, 1 hour for Commons IO.
 
 Version 29:
           cobertura-maven-plugin             2.5.2 -> removed
@@ -478,6 +475,19 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
         <version>${commons.rat.version}</version>
+        <!-- Should agree with config in reporting section -->
+        <configuration>
+          <!--
+               If you wish to extend this list in the component (child) pom, ensure you use
+                   <excludes combine.children="append">
+               so that the child pom entries are added to these 
+           -->
+          <excludes>
+            <exclude>site-content/**</exclude>
+            <exclude>.pmd</exclude>
+            <exclude>src/site/resources/download_*.cgi</exclude>
+          </excludes>
+        </configuration>      
       </plugin>
 
       <plugin>
@@ -620,10 +630,16 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
         <version>${commons.rat.version}</version>
+        <!-- Should agree with config in build section -->
         <configuration>
-          <excludes>
-            <exclude>site-content/**/*</exclude>
-          </excludes>
+          <!--
+               If you wish to extend this list in the component (child) pom, ensure you use
+                   <excludes combine.children="append">
+               so that the child pom entries are added to these 
+           -->
+            <exclude>site-content/**</exclude>
+            <exclude>.pmd</exclude>
+            <exclude>src/site/resources/download_*.cgi</exclude>
         </configuration>      
       </plugin>
       <plugin>
