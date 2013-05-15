@@ -637,9 +637,11 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
                    <excludes combine.children="append">
                so that the child pom entries are added to these 
            -->
+          <excludes>
             <exclude>site-content/**</exclude>
             <exclude>.pmd</exclude>
             <exclude>src/site/resources/download_*.cgi</exclude>
+          </excludes>
         </configuration>      
       </plugin>
       <plugin>
