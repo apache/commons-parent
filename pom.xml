@@ -1221,6 +1221,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.surefire.version>2.14.1</commons.surefire.version>
     <commons.surefire-report.version>2.14.1</commons.surefire-report.version>
     <commons.javadoc.version>2.9</commons.javadoc.version>
+    <!-- N.B. RAT 0.9 appears to be much slower -->
     <commons.rat.version>0.8</commons.rat.version>
     <commons.changes.version>2.9</commons.changes.version>
     <commons.clirr.version>2.5</commons.clirr.version>
