@@ -478,11 +478,11 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <!-- Should agree with config in reporting section -->
         <configuration>
           <!--
-               If you wish to extend this list in the component (child) pom, ensure you use
-                   <excludes combine.children="append">
-               so that the child pom entries are added to these 
+               If you wish to override this list in the component (child) pom, ensure you use
+                   <excludes combine.children="merge">
+               so that the child pom entries replace the parent entries 
            -->
-          <excludes>
+          <excludes combine.children="append">
             <exclude>site-content/**</exclude>
             <exclude>.pmd</exclude>
             <exclude>src/site/resources/download_*.cgi</exclude>
@@ -633,11 +633,11 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <!-- Should agree with config in build section -->
         <configuration>
           <!--
-               If you wish to extend this list in the component (child) pom, ensure you use
-                   <excludes combine.children="append">
-               so that the child pom entries are added to these 
+               If you wish to override this list in the component (child) pom, ensure you use
+                   <excludes combine.children="merge">
+               so that the child pom entries replace the parent entries 
            -->
-          <excludes>
+          <excludes combine.children="append">
             <exclude>site-content/**</exclude>
             <exclude>.pmd</exclude>
             <exclude>src/site/resources/download_*.cgi</exclude>
