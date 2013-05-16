@@ -36,6 +36,7 @@
 <!--
 Version 30:
           rat-maven-plugin                   0.8 -> 0.9
+          maven-project-info-reports-plugin  2.6 -> 2.7
 
 Version 29:
           cobertura-maven-plugin             2.5.2 -> removed
@@ -1258,7 +1259,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.changes.version>2.9</commons.changes.version>
     <commons.clirr.version>2.5</commons.clirr.version>
     <commons.jxr.version>2.3</commons.jxr.version>
-    <commons.project-info.version>2.6</commons.project-info.version>
+    <commons.project-info.version>2.7</commons.project-info.version>
     <commons.wagon-ssh.version>2.3</commons.wagon-ssh.version>
     <commons.site-plugin.version>3.3</commons.site-plugin.version>
     <commons.jacoco.version>0.6.2.201302030002</commons.jacoco.version>
