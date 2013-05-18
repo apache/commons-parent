@@ -59,17 +59,26 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
+        <release version="30" date="2013" description="
+The main changes in this release are RAT configuration changes:
+ - updated excludes: added .pmd and download_*.cgi
+ - changed excludes so child POM excludes will be appended to the parent list
+ - duplicated settings in build section so they apply to standalone invocations
+">
+            <!-- List updates separately so the changes html report is easier to read -->
+            <action type="update">rat-maven-plugin                   0.8 -> 0.9</action>
+            <action type="update">maven-project-info-reports-plugin  2.6 -> 2.7</action>
+        </release>
         <release version="29" date="2013-05-18" description="Replace Cobertura with JaCoCo; update plugin versions">
+            <action type="update">cobertura-maven-plugin         2.5.2 -> removed</action>
+            <action type="update">jacoco-maven-plugin                  -> 0.6.2.201302030002</action>
+            <action type="update">maven-surefire-plugin          2.13  -> 2.14.1</action>
+            <action type="update">maven-surefire-report-plugin   2.13  -> 2.14.1</action>
+            <action type="update">maven-changes-plugin           2.8   -> 2.9</action>
+            <action type="update">maven-compiler-plugin          3.0   -> 3.1</action>
+            <action type="update">maven-release-plugin           2.3.2 -> 2.4.1</action>
+            <action type="update">maven-site-plugin              3.2   -> 3.3</action>
             <action type="update" date="">
-o         cobertura-maven-plugin         2.5.2 -> removed
-          jacoco-maven-plugin                  -> 0.6.2.201302030002
-          maven-surefire-plugin          2.13  -> 2.14.1
-          maven-surefire-report-plugin   2.13  -> 2.14.1
-          maven-changes-plugin           2.8   -> 2.9
-          maven-compiler-plugin          3.0   -> 3.1
-          maven-release-plugin           2.3.2 -> 2.4.1
-          maven-site-plugin              3.2   -> 3.3
-
 The main change is the replacement of Cobertura with JaCoCo for test
 coverage analysis.  The former is not maintained anymore, has numerous
 bugs and is extremely slow in some situations (typically generating
