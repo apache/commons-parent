@@ -47,6 +47,8 @@ $release.description.replaceAll("  ", "
 ## Replace &lt; with < so can embed tag markup
 #set($action=$action.replaceAll("&lt;","<"))
 ## use an empty date to mean don't format the entry
+## TODO how to enable leading spaces without compromising html report
+## unfortunately leading spaces are trimmed even from CDATA sections
 #if ($actionItem.getDate() && $actionItem.getDate().length()==0)
 $action
 #else
