@@ -1,12 +1,14 @@
               Apache Commons Parent 29 RELEASE NOTES
 
-The Commons Parent team is pleased to announce the release of commons-parent-29
+The Apache Commons Parent team is pleased to announce the release of commons-parent-30-SNAPSHOT
 
-The Apache Commons Parent Pom provides common settings for all Apache Commons components.
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Update plugins
+Replace Cobertura with JaCoCo; update plugin versions
 
 Changes in this version include:
+
+
 
 Changes:
 o         cobertura-maven-plugin         2.5.2 -> removed
@@ -18,7 +20,7 @@ o         cobertura-maven-plugin         2.5.2 -> removed
           maven-release-plugin           2.3.2 -> 2.4.1
           maven-site-plugin              3.2   -> 3.3
 
-The main change is the replacement of cobertura with JaCoCo for test
+The main change is the replacement of Cobertura with JaCoCo for test
 coverage analysis.  The former is not maintained anymore, has numerous
 bugs and is extremely slow in some situations (typically generating
 coverage reports for [math] took about 9 hours whereas standard tests
@@ -46,11 +48,11 @@ ${argLine} property):
       </plugin>
       ...
     </plugins>
- 
+
 
 Historical list of changes: http://commons.apache.org/changes-report.html
 
-For complete information on Commons Parent, including instructions on how to submit bug reports,
-patches, or suggestions for improvement, see the Apache Commons Parent website:
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
 
 http://commons.apache.org/
