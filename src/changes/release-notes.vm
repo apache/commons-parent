@@ -15,7 +15,7 @@
 ## specific language governing permissions and limitations
 ## under the License.
 ##
-              Apache ${project.name} ${version} RELEASE NOTES
+              ${project.name} ${version} RELEASE NOTES
 
 The ${developmentTeam} is pleased to announce the release of ${finalName}
 
@@ -44,6 +44,12 @@ $release.description.replaceAll("  ", "
 ## Use replaceAll to fix up LF-only line ends on Windows.
 #set($action=$actionItem.getAction().replaceAll("\n","
 "))
+## Replace &lt; with < so can embed tag markup
+#set($action=$action.replaceAll("&lt;","<"))
+## use an empty date to mean don't format the entry
+#if ($actionItem.getDate() && $actionItem.getDate().length()==0)
+$action
+#else
 ## Fix up indentation for multi-line action descriptions
 #set($action=$action.replaceAll("(?m)^  +",$indent2))
 #if ($actionItem.getIssue())
@@ -61,6 +67,7 @@ $release.description.replaceAll("  ", "
 #set($dueto="")
 #end
 o $issue ${action}$dueto
+#end
 #set($action="")
 #set($issue="")
 #set($dueto="")
