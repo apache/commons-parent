@@ -38,21 +38,14 @@ Version 30:
           rat-maven-plugin                   0.8 -> 0.9
           maven-project-info-reports-plugin  2.6 -> 2.7
 
-Version 29:
-          cobertura-maven-plugin             2.5.2 -> removed
-          jacoco-maven-plugin                      -> 0.6.2.201302030002
-          maven-surefire-plugin              2.13  -> 2.14.1
-          maven-surefire-report-plugin       2.13  -> 2.14.1
-          maven-changes-plugin               2.8   -> 2.9
-          maven-compiler-plugin              3.0   -> 3.1
-          maven-release-plugin               2.3.2 -> 2.4.1
-          maven-site-plugin                  3.2   -> 3.3
+RAT changes:
+- updated excludes: added .pmd and download_*.cgi
+- changed excludes so child POM excludes will be appended to the parent list
+- duplicated settings in build section so they apply to standalone invocations
 
-Removed skipReports property (now JaCoCo coverage is triggered directly
-by JDK version being at least 1.5).
-          
+
 For full details see:
-http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-29/RELEASE-NOTES.txt
+http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-30/RELEASE-NOTES.txt
  -->
 
   <!-- Now required by versions plugin -->
