@@ -83,22 +83,25 @@ New features:
 #foreach($actionItem in $release.getActions('add'))
 #processaction()
 #end 
-#end
 
+#end
+##
 #if ($release.getActions('fix').size() !=0)
 Fixed Bugs:
 #foreach($actionItem in $release.getActions('fix'))
 #processaction()
 #end
-#end
 
+#end
+##
 #if ($release.getActions('update').size() !=0)
 Changes:
 #foreach($actionItem in $release.getActions('update'))
 #processaction()
 #end
-#end
 
+#end
+##
 #if ($release.getActions('remove').size() !=0)
 Removed:
 #foreach($actionItem in $release.getActions('remove'))
