@@ -64,6 +64,10 @@ The main changes in this release are RAT configuration changes:
  - updated excludes: added .pmd and download_*.cgi
  - changed excludes so child POM excludes will be appended to the parent list
  - duplicated settings in build section so they apply to standalone invocations
+
+Coverage tool:
+ Made JaCoCo an optional profile
+ Restored Cobertura as an optional profile
 ">
             <!-- List updates separately so the changes html report is easier to read -->
             <action type="update">rat-maven-plugin                   0.8 -> 0.9</action>

@@ -43,6 +43,9 @@ RAT changes:
 - changed excludes so child POM excludes will be appended to the parent list
 - duplicated settings in build section so they apply to standalone invocations
 
+Coverage tool:
+Made JaCoCo an optional profile
+Restored Cobertura as an optional profile
 
 For full details see:
 http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-30/RELEASE-NOTES.txt
@@ -81,6 +84,22 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <url>${commons.deployment.protocol}://people.apache.org/www/commons.apache.org/${commons.componentid}</url>
       </site>
     </distributionManagement>
+
+    Coverage tool selection
+    =======================
+    Starting with release 30, there are optional profiles for both Cobertura and JaCoCo.
+    These can be enabled independently on the command-line:
+
+    mvn site -Pcobertura  -Pjacoco
+
+    Or the component can define a default coverage tool by creating either (or both) of the following files:
+
+    src/site/resources/coverage.cobertura
+    src/site/resources/coverage.jacoco
+
+    These can later be overridden by cancelling the profile:
+
+    mvn site -P!jacoco
 
   -->
 
@@ -480,6 +499,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
             <exclude>site-content/**</exclude>
             <exclude>.pmd</exclude>
             <exclude>src/site/resources/download_*.cgi</exclude>
+            <exclude>src/site/resources/coverage.*</exclude>
           </excludes>
         </configuration>      
       </plugin>
@@ -635,6 +655,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
             <exclude>site-content/**</exclude>
             <exclude>.pmd</exclude>
             <exclude>src/site/resources/download_*.cgi</exclude>
+            <exclude>src/site/resources/coverage.*</exclude>
           </excludes>
         </configuration>      
       </plugin>
@@ -657,9 +678,23 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
   <profiles>
 
     <profile>
-      <id>reporting</id>
+      <id>jacoco</id>
       <activation>
-        <jdk>[1.5,)</jdk>
+        <!--
+            N.B. in spite of what the Maven docs may say,
+            activation conditions are ORed together, see:
+            http://jira.codehaus.org/browse/MNG-4565
+            Fairly useless, but that's what was done in
+            http://jira.codehaus.org/browse/MNG-3106
+
+            So we cannot also check for Java 1.5+
+            This should not be a problem now as the profile is optional.
+            Components that still target Java 1.4 or earlier
+            just need to ensure they don't use JaCoCo by default.
+        -->
+        <file>
+          <exists>src/site/resources/coverage.jacoco</exists>
+        </file>
       </activation>
       <build>
         <plugins>
@@ -715,6 +750,24 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
             <version>${commons.jacoco.version}</version>
+          </plugin>
+        </plugins>
+      </reporting>
+    </profile>
+
+    <profile>
+      <id>cobertura</id>
+      <activation>
+        <file>
+          <exists>src/site/resources/coverage.cobertura</exists>
+        </file>
+      </activation>
+      <reporting>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>cobertura-maven-plugin</artifactId>
+            <version>${commons.cobertura.version}</version>
           </plugin>
         </plugins>
       </reporting>
@@ -1256,6 +1309,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.wagon-ssh.version>2.3</commons.wagon-ssh.version>
     <commons.site-plugin.version>3.3</commons.site-plugin.version>
     <commons.jacoco.version>0.6.2.201302030002</commons.jacoco.version>
+    <commons.cobertura.version>2.5.2</commons.cobertura.version>
     <commons.jdepend.version>2.0-beta-2</commons.jdepend.version>
 
 
