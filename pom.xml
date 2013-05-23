@@ -304,7 +304,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
           <version>1.4</version>
           <configuration>
             <!--
-                apache parent pom automatically adds "LICENSE" and "NOTICE" files
+                Apache parent POM automatically adds "LICENSE" and "NOTICE" files
                 to jars - duplicating the "LICENSE.txt" and "NOTICE.txt"
                 files that components already have.
              -->
