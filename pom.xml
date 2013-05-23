@@ -94,8 +94,8 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
 
     Or the component can define a default coverage tool by creating either (or both) of the following files:
 
-    src/site/resources/coverage.cobertura
-    src/site/resources/coverage.jacoco
+    src/site/resources/profile.cobertura
+    src/site/resources/profile.jacoco
 
     These can later be overridden by cancelling the profile:
 
@@ -499,7 +499,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
             <exclude>site-content/**</exclude>
             <exclude>.pmd</exclude>
             <exclude>src/site/resources/download_*.cgi</exclude>
-            <exclude>src/site/resources/coverage.*</exclude>
+            <exclude>src/site/resources/profile.*</exclude>
           </excludes>
         </configuration>      
       </plugin>
@@ -655,7 +655,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
             <exclude>site-content/**</exclude>
             <exclude>.pmd</exclude>
             <exclude>src/site/resources/download_*.cgi</exclude>
-            <exclude>src/site/resources/coverage.*</exclude>
+            <exclude>src/site/resources/profile.*</exclude>
           </excludes>
         </configuration>      
       </plugin>
@@ -693,7 +693,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
             just need to ensure they don't use JaCoCo by default.
         -->
         <file>
-          <exists>src/site/resources/coverage.jacoco</exists>
+          <exists>src/site/resources/profile.jacoco</exists>
         </file>
       </activation>
       <build>
@@ -759,7 +759,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
       <id>cobertura</id>
       <activation>
         <file>
-          <exists>src/site/resources/coverage.cobertura</exists>
+          <exists>src/site/resources/profile.cobertura</exists>
         </file>
       </activation>
       <reporting>
