@@ -1,50 +1,22 @@
-              Apache Commons Parent 29 RELEASE NOTES
+              Apache Commons Parent 30 RELEASE NOTES
 
-The Apache Commons Parent team is pleased to announce the release of commons-parent-30-SNAPSHOT
+The Apache Commons Parent team is pleased to announce the release of commons-parent-30
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Replace Cobertura with JaCoCo; update plugin versions
+The main changes in this release are RAT configuration changes:
+- updated excludes: added .pmd and download_*.cgi
+- changed excludes so child POM excludes will be appended to the parent list
+- duplicated settings in build section so they apply to standalone invocations
+Coverage tool:
+Made JaCoCo an optional profile
+Restored Cobertura as an optional profile
 
 Changes in this version include:
 
 Changes:
-o                   cobertura-maven-plugin         2.5.2 -> removed
-o                   jacoco-maven-plugin                  -> 0.6.2.201302030002
-o                   maven-surefire-plugin          2.13  -> 2.14.1
-o                   maven-surefire-report-plugin   2.13  -> 2.14.1
-o                   maven-changes-plugin           2.8   -> 2.9
-o                   maven-compiler-plugin          3.0   -> 3.1
-o                   maven-release-plugin           2.3.2 -> 2.4.1
-o                   maven-site-plugin              3.2   -> 3.3
-The main change is the replacement of Cobertura with JaCoCo for test
-coverage analysis.  The former is not maintained anymore, has numerous
-bugs and is extremely slow in some situations (typically generating
-coverage reports for [math] took about 9 hours whereas standard tests
-run in about 10 minutes). One important implication is that since
-JaCoCo relies on setting an agent, it is triggered only if JDK used to
-run the tests is at least Java 1.5 (this is automatically detected),
-and it changes the argument line of surefire tests.  If a component
-also needs to adapt the surefire command line, it must add the
-property ${argLine} to the argument line in order to preserve JaCoCo
-settings. An example for this is Apache Commons IO, where the
-maven-surefire-plugin setting must read as (note the use of the
-${argLine} property):
-
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <configuration>
-          <forkMode>pertest</forkMode>
-          <!-- limit memory size see IO-161 -->
-          <!-- the ${argLine} preserves jacoco agent settings (see (see https://github.com/jacoco/jacoco/issues/44) -->
-          <argLine>-Xmx25M ${argLine}</argLine>
-          ...
-        </configuration>
-      </plugin>
-      ...
-    </plugins>
+o                   rat-maven-plugin                   0.8 -> 0.9
+o                   maven-project-info-reports-plugin  2.6 -> 2.7
 
 
 Historical list of changes: http://commons.apache.org/changes-report.html
