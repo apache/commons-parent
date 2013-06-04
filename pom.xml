@@ -497,6 +497,8 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
            -->
           <excludes combine.children="append">
             <exclude>site-content/**</exclude>
+            <exclude>.checkstyle</exclude>
+            <exclude>.fbprefs</exclude>
             <exclude>.pmd</exclude>
             <exclude>src/site/resources/download_*.cgi</exclude>
             <exclude>src/site/resources/profile.*</exclude>
