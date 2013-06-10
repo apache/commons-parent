@@ -244,6 +244,13 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
             <fork>${commons.compiler.fork}</fork>
             <compilerVersion>${commons.compiler.compilerVersion}</compilerVersion>
             <executable>${commons.compiler.javac}</executable>
+            <!--
+               Temporary hack:
+               Fix incremental compiler bug, see https://jira.codehaus.org/browse/MCOMPILER-205 etc. 
+            -->
+            <excludes>
+              <exclude>**/package-info.java</exclude>
+            </excludes>
           </configuration>
         </plugin>
         <plugin>

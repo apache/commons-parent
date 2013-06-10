@@ -59,6 +59,13 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
+        <release version="31" date="TBA" description="
+        TBA
+">
+            <!-- List each change individually so the changes html report is easier to read -->
+            <action type="update">Added temporary workround for incremental compiler issue MCOMPILER-205</action>
+            <action type="update">Exclude .checkstyle and .fbprefs from RAT check</action>
+        </release>
         <release version="30" date="2013-05-28" description="
 The main changes in this release are RAT configuration changes:
  - updated excludes: added .pmd and download_*.cgi
