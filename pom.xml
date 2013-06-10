@@ -27,8 +27,7 @@
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
-  <!-- Must agree with commons.release.version below -->
-  <version>30-SNAPSHOT</version>
+  <version>31-SNAPSHOT</version>
   <name>Apache Commons Parent</name>
   <url>http://commons.apache.org/</url>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
@@ -1279,8 +1278,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
 
   <properties>
     <!-- configuration bits for cutting a release candidate, must be overridden by components -->
-    <!-- must agree with project.version above -->
-    <commons.release.version>30</commons.release.version>
+    <commons.release.version>${project.version}</commons.release.version>
     <commons.rc.version>RC1</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
 
