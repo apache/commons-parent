@@ -63,7 +63,6 @@ The <action> type attribute can be add,update,fix,remove.
         TBA
 ">
             <!-- List each change individually so the changes html report is easier to read -->
-            <action type="update">Added temporary workround for incremental compiler issue MCOMPILER-205</action>
             <action type="update">Exclude .checkstyle and .fbprefs from RAT check</action>
         </release>
         <release version="30" date="2013-05-28" description="
