@@ -39,7 +39,10 @@ COMMONSSITE-69 - renamed properties maven.compile.* => maven.compiler.*
 
 ** N.B. Child POMs may need to be adjusted when upgrading to parent pom 30 **
 
-Exclude .checkstyle and .fbprefs from RAT check
+          jacoco-maven-plugin  0.6.2.201302030002 -> 0.6.3.201306030806
+          maven-bundle-plugin              2.3.7 -> 2.4.0
+          maven-surefire[-report]-plugin  2.14.1 -> 2.15
+          Exclude .checkstyle and .fbprefs from RAT check
 
 Version 30:
           rat-maven-plugin                   0.8 -> 0.9
@@ -363,7 +366,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
-          <version>2.3.7</version>
+          <version>2.4.0</version>
           <inherited>true</inherited>
         </plugin>
         <plugin>
@@ -1302,8 +1305,8 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.surefire.java />
 
     <!-- plugin versions (allows same value in reporting and build sections) -->
-    <commons.surefire.version>2.14.1</commons.surefire.version>
-    <commons.surefire-report.version>2.14.1</commons.surefire-report.version>
+    <commons.surefire.version>2.15</commons.surefire.version>
+    <commons.surefire-report.version>2.15</commons.surefire-report.version>
     <commons.javadoc.version>2.9</commons.javadoc.version>
     <!-- 
       For RAT 0.9, make sure you <exclude>site-content/**/*</exclude> in your POM if you overrdide the configuration
@@ -1316,7 +1319,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.project-info.version>2.7</commons.project-info.version>
     <commons.wagon-ssh.version>2.3</commons.wagon-ssh.version>
     <commons.site-plugin.version>3.3</commons.site-plugin.version>
-    <commons.jacoco.version>0.6.2.201302030002</commons.jacoco.version>
+    <commons.jacoco.version>0.6.3.201306030806</commons.jacoco.version>
     <commons.cobertura.version>2.5.2</commons.cobertura.version>
     <commons.jdepend.version>2.0-beta-2</commons.jdepend.version>
 
