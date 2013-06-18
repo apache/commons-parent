@@ -63,6 +63,7 @@ The <action> type attribute can be add,update,fix,remove.
         TBA
 ">
             <!-- List each change individually so the changes html report is easier to read -->
+            <action type="fix" issue="COMMONSSITE-69">renamed properties maven.compile.* => maven.compiler.*</action>
             <action type="update">Exclude .checkstyle and .fbprefs from RAT check</action>
         </release>
         <release version="30" date="2013-05-28" description="
