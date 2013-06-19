@@ -63,6 +63,7 @@ The <action> type attribute can be add,update,fix,remove.
         TBA
 ">
             <!-- List each change individually so the changes html report is easier to read -->
+            <action type="update">Dropped "rc" profile as no longer relevant</action>
             <action type="update">maven-bundle-plugin              2.3.7 -> 2.4.0</action>
             <action type="update">maven-surefire[-report]-plugin  2.14.1 -> 2.15</action>
             <action type="fix" issue="COMMONSSITE-69">renamed properties maven.compile.* => maven.compiler.*</action>
