@@ -1,22 +1,24 @@
-              Apache Commons Parent 30 RELEASE NOTES
+              Apache Commons Parent 31 RELEASE NOTES
 
-The Apache Commons Parent team is pleased to announce the release of commons-parent-30
+The Apache Commons Parent team is pleased to announce the release of commons-parent-31
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-The main changes in this release are RAT configuration changes:
-- updated excludes: added .pmd and download_*.cgi
-- changed excludes so child POM excludes will be appended to the parent list
-- duplicated settings in build section so they apply to standalone invocations
-Coverage tool:
-Made JaCoCo an optional profile
-Restored Cobertura as an optional profile
+The main changes in this release are:
+ - dropped unused 'rc' profile
+ - fixed the maven.compile[r] names
+ - updated some plugins and the RAT excludes list
 
 Changes in this version include:
 
+Fixed Bugs:
+o COMMONSSITE-69:   renamed properties maven.compile.* => maven.compiler.*
+
 Changes:
-o                   rat-maven-plugin                   0.8 -> 0.9
-o                   maven-project-info-reports-plugin  2.6 -> 2.7
+o                   Dropped "rc" profile as no longer relevant
+o                   maven-bundle-plugin              2.3.7 -> 2.4.0
+o                   maven-surefire[-report]-plugin  2.14.1 -> 2.15
+o                   Exclude .checkstyle and .fbprefs from RAT check
 
 
 Historical list of changes: http://commons.apache.org/changes-report.html

@@ -60,7 +60,10 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
         <release version="31" date="TBA" description="
-        TBA
+The main changes in this release are:
+  - dropped unused 'rc' profile
+  - fixed the maven.compile[r] names
+  - updated some plugins and the RAT excludes list
 ">
             <!-- List each change individually so the changes html report is easier to read -->
             <action type="update">Dropped "rc" profile as no longer relevant</action>
