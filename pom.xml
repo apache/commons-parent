@@ -27,7 +27,7 @@
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
-  <version>31-SNAPSHOT</version>
+  <version>32-SNAPSHOT</version>
   <name>Apache Commons Parent</name>
   <url>http://commons.apache.org/</url>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
@@ -1223,7 +1223,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <!-- plugin versions (allows same value in reporting and build sections) -->
     <commons.surefire.version>2.15</commons.surefire.version>
     <commons.surefire-report.version>2.15</commons.surefire-report.version>
-    <commons.javadoc.version>2.9</commons.javadoc.version>
+    <commons.javadoc.version>2.9.1</commons.javadoc.version>
     <!-- 
       For RAT 0.9, make sure you <exclude>site-content/**/*</exclude> in your POM if you overrdide the configuration
       If you do not exclude site-content, RAT will take a long time to run, for example, 1 hour for Commons IO. 

@@ -59,7 +59,16 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="31" date="TBA" description="
+
+        <release version="32" date="2013-??-??" description="
+The main changes in this release are:
+  - updated some plugins
+">
+            <!-- List each change individually so the changes html report is easier to read -->
+            <action type="update">maven-javadoc-plugin          2.9 -> 2.9.1</action>
+        </release>
+
+        <release version="31" date="2013-06-24" description="
 The main changes in this release are:
   - dropped unused 'rc' profile
   - fixed the maven.compile[r] names
