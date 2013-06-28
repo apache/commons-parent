@@ -33,29 +33,10 @@
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
 
 <!--
-Version 31:
+Version 32:
 
-COMMONSSITE-69 - renamed properties maven.compile.* => maven.compiler.*
-
-** N.B. Child POMs may need to be adjusted when upgrading to parent pom 30 **
-
-          jacoco-maven-plugin  0.6.2.201302030002 -> 0.6.3.201306030806
-          maven-bundle-plugin              2.3.7 -> 2.4.0
-          maven-surefire[-report]-plugin  2.14.1 -> 2.15
-          Exclude .checkstyle and .fbprefs from RAT check
-
-Version 30:
-          rat-maven-plugin                   0.8 -> 0.9
-          maven-project-info-reports-plugin  2.6 -> 2.7
-
-RAT changes:
-- updated excludes: added .pmd and download_*.cgi
-- changed excludes so child POM excludes will be appended to the parent list
-- duplicated settings in build section so they apply to standalone invocations
-
-Coverage tool:
-Made JaCoCo an optional profile
-Restored Cobertura as an optional profile
+        Updated javadoc plugin to 2.9.1
+        This includes the fix for Javadoc vulnerability (CVE-2013-1571, VU#225657) MJAVADOC-370
 
 For full details see:
 http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-30/RELEASE-NOTES.txt
