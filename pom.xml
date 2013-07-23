@@ -374,6 +374,16 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <plugins>
       <!-- org.apache.maven.plugins, alpha order by artifact id -->
       <plugin>
+          <!-- Parent POM is released, so needs source archive for ASF mirrors -->
+          <artifactId>maven-assembly-plugin</artifactId>
+          <configuration>
+              <descriptors>
+                  <descriptor>src/main/assembly/src.xml</descriptor>
+              </descriptors>
+              <tarLongFileMode>gnu</tarLongFileMode>
+          </configuration>
+      </plugin>
+      <plugin>
         <!--
           - Copy LICENSE.txt and NOTICE.txt so that they are included
           - in the -javadoc jar file for the component.
@@ -815,6 +825,10 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
                 <goals>
                   <goal>test-jar</goal>
                 </goals>
+                <configuration>
+                 <!-- Avoids an error when releasing the parent pom -->
+                 <skipIfEmpty>true</skipIfEmpty>
+                </configuration>
               </execution>
             </executions>
           </plugin>
