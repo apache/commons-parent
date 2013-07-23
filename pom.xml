@@ -228,7 +228,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.1</version>
+          <version>${commons.compiler.version}</version>
           <configuration>
             <source>${maven.compiler.source}</source>
             <target>${maven.compiler.target}</target>
@@ -1234,6 +1234,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.jacoco.version>0.6.3.201306030806</commons.jacoco.version>
     <commons.cobertura.version>2.5.2</commons.cobertura.version>
     <commons.jdepend.version>2.0-beta-2</commons.jdepend.version>
+    <commons.compiler.version>3.1</commons.compiler.version>
 
 
     <!-- Default values for the download-page generation by commons-build-plugin -->

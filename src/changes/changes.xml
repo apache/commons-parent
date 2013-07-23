@@ -64,6 +64,7 @@ The <action> type attribute can be add,update,fix,remove.
 The main changes in this release are:
 ">
             <!-- List each change individually so the changes html report is easier to read -->
+            <action type="update">Add commons.compiler.version property so compiler plugin version can be overridden if necessary</action>
         </release>
 
         <release version="32" date="2013-07-01" description="
