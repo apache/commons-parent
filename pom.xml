@@ -33,13 +33,10 @@
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
 
 <!--
-Version 32:
-
-        Updated javadoc plugin to 2.9.1
-        This includes the fix for Javadoc vulnerability (CVE-2013-1571, VU#225657) MJAVADOC-370
+Version 33:
 
 For full details see:
-http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-30/RELEASE-NOTES.txt
+http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-33/RELEASE-NOTES.txt
  -->
 
   <!-- Now required by versions plugin -->
@@ -732,14 +729,43 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
                 <goal>check</goal>
               </goals>
               <configuration>
-                <check>
-                  <classRatio>${commons.jacoco.classRatio}</classRatio>
-                  <instructionRatio>${commons.jacoco.instructionRatio}</instructionRatio>
-                  <methodRatio>${commons.jacoco.methodRatio}</methodRatio>
-                  <branchRatio>${commons.jacoco.branchRatio}</branchRatio>
-                  <complexityRatio>${commons.jacoco.complexityRatio}</complexityRatio>
-                  <lineRatio>${commons.jacoco.lineRatio}</lineRatio>
-                </check>
+                <rules>
+                  <rule>
+                    <element>BUNDLE</element>
+                    <limits>
+                      <limit>
+                        <counter>CLASS</counter>
+                        <value>COVEREDRATIO</value>
+                        <minimum>${commons.jacoco.classRatio}</minimum>
+                      </limit>
+                      <limit>
+                        <counter>INSTRUCTION</counter>
+                        <value>COVEREDRATIO</value>
+                        <minimum>${commons.jacoco.instructionRatio}</minimum>
+                      </limit>
+                      <limit>
+                        <counter>METHOD</counter>
+                        <value>COVEREDRATIO</value>
+                        <minimum>${commons.jacoco.methodRatio}</minimum>
+                      </limit>
+                      <limit>
+                        <counter>BRANCH</counter>
+                        <value>COVEREDRATIO</value>
+                        <minimum>${commons.jacoco.branchRatio}</minimum>
+                      </limit>
+                      <limit>
+                        <counter>LINE</counter>
+                        <value>COVEREDRATIO</value>
+                        <minimum>${commons.jacoco.lineRatio}</minimum>
+                      </limit>
+                      <limit>
+                        <counter>COMPLEXITY</counter>
+                        <value>COVEREDRATIO</value>
+                        <minimum>${commons.jacoco.complexityRatio}</minimum>
+                      </limit>
+                    </limits>
+                  </rule>
+                </rules>
                 <haltOnFailure>${commons.jacoco.haltOnFailure}</haltOnFailure>
               </configuration>
             </execution>
@@ -1249,12 +1275,12 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.release.3.binary.suffix>-bin</commons.release.3.binary.suffix>
 
     <!-- Default values for the jacoco-maven-plugin reports -->
-    <commons.jacoco.classRatio>100</commons.jacoco.classRatio>
-    <commons.jacoco.instructionRatio>90</commons.jacoco.instructionRatio>
-    <commons.jacoco.methodRatio>95</commons.jacoco.methodRatio>
-    <commons.jacoco.branchRatio>85</commons.jacoco.branchRatio>
-    <commons.jacoco.complexityRatio>85</commons.jacoco.complexityRatio>
-    <commons.jacoco.lineRatio>90</commons.jacoco.lineRatio>
+    <commons.jacoco.classRatio>1.00</commons.jacoco.classRatio>
+    <commons.jacoco.instructionRatio>0.90</commons.jacoco.instructionRatio>
+    <commons.jacoco.methodRatio>0.95</commons.jacoco.methodRatio>
+    <commons.jacoco.branchRatio>0.85</commons.jacoco.branchRatio>
+    <commons.jacoco.complexityRatio>0.85</commons.jacoco.complexityRatio>
+    <commons.jacoco.lineRatio>0.90</commons.jacoco.lineRatio>
     <commons.jacoco.haltOnFailure>false</commons.jacoco.haltOnFailure>
    
     <!-- Commons Component Id -->
