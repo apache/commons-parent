@@ -63,7 +63,7 @@ The <action> type attribute can be add,update,fix,remove.
         <release version="33" date="2013-??-??" description="
 The main changes in this release are:
 ">
-            <!-- List each change individually so the changes html report is easier to read -->
+            <!-- List each change individually so the changes HTML report is easier to read -->
             <!-- Note: the (major) syntax change is not documented AFAICT, and only the trunk docs are online for comparison. -->
             <action type="update">Fixed JaCoCo configuration - syntax changed completely between 0.6.2.x and 0.6.3.x</action>
             <action type="update">Add commons.compiler.version property so compiler plugin version can be overridden if necessary</action>
