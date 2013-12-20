@@ -1253,7 +1253,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.rat.version>0.9</commons.rat.version>
     <commons.changes.version>2.9</commons.changes.version>
     <commons.clirr.version>2.5</commons.clirr.version>
-    <commons.jxr.version>2.3</commons.jxr.version>
+    <commons.jxr.version>2.4</commons.jxr.version>
     <commons.project-info.version>2.7</commons.project-info.version>
     <commons.wagon-ssh.version>2.3</commons.wagon-ssh.version>
     <commons.site-plugin.version>3.3</commons.site-plugin.version>
