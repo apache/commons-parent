@@ -15,6 +15,7 @@ Changes:
 o maven-javadoc-plugin          2.9  -> 2.9.1
 o maven-surefire-plugin         2.15 -> 2.16
 o maven-jxr-plugin              2.3 -> 2.4
+o clirr-maven-plugin            2.5 -> 2.6.1
 
 
 Historical list of changes: http://commons.apache.org/changes-report.html
