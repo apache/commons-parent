@@ -35,6 +35,9 @@
 <!--
 Version 33:
 
+  - Fixed Jacoco configuration syntax
+  - updated some plugins
+
 For full details see:
 http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-33/RELEASE-NOTES.txt
  -->
@@ -238,7 +241,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.7</version>
+          <version>2.8.1</version>
         </plugin>
         <!-- Apache parent includes docck and enforcer -->
         <plugin>
@@ -249,7 +252,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-install-plugin</artifactId>
-          <version>2.4</version>
+          <version>2.5.1</version>
         </plugin>
         <!-- Apache parent: invoker -->
         <plugin>
@@ -282,14 +285,14 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
-          <version>2.4.1</version>
+          <version>2.4.2</version>
         </plugin>
         <plugin>
           <!-- TODO see above - find better way to add N&L files to jars and test jars -->
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-remote-resources-plugin</artifactId>
           <!-- override old version from Apache pom 9 -->
-          <version>1.4</version>
+          <version>1.5</version>
           <configuration>
             <!--
                 Apache parent POM automatically adds "LICENSE" and "NOTICE" files
@@ -1246,19 +1249,15 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.surefire-report.version>2.16</commons.surefire-report.version>
     <!-- 2.9.1 includes fix for Javadoc vulnerability (CVE-2013-1571, VU#225657) MJAVADOC-370 -->
     <commons.javadoc.version>2.9.1</commons.javadoc.version>
-    <!-- 
-      For RAT 0.9, make sure you <exclude>site-content/**/*</exclude> in your POM if you overrdide the configuration
-      If you do not exclude site-content, RAT will take a long time to run, for example, 1 hour for Commons IO. 
-    -->
-    <commons.rat.version>0.9</commons.rat.version>
+    <commons.rat.version>0.10</commons.rat.version>
     <commons.changes.version>2.9</commons.changes.version>
     <commons.clirr.version>2.6.1</commons.clirr.version>
     <commons.jxr.version>2.4</commons.jxr.version>
     <commons.project-info.version>2.7</commons.project-info.version>
     <commons.wagon-ssh.version>2.3</commons.wagon-ssh.version>
     <commons.site-plugin.version>3.3</commons.site-plugin.version>
-    <commons.jacoco.version>0.6.3.201306030806</commons.jacoco.version>
-    <commons.cobertura.version>2.5.2</commons.cobertura.version>
+    <commons.jacoco.version>0.6.4.201312101107</commons.jacoco.version>
+    <commons.cobertura.version>2.6</commons.cobertura.version>
     <commons.jdepend.version>2.0-beta-2</commons.jdepend.version>
     <commons.compiler.version>3.1</commons.compiler.version>
 

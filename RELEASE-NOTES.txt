@@ -1,21 +1,30 @@
               Apache Commons Parent 33
                   RELEASE NOTES
 
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 32
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 33
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
 The main changes in this release are:
- - added fix for Javadoc vulnerability (CVE-2013-1571, VU#225657) MJAVADOC-370
+ - Fixed Jacoco configuration syntax
  - updated some plugins
 
 Changes in this version include:
 
 Changes:
-o maven-javadoc-plugin          2.9  -> 2.9.1
-o maven-surefire-plugin         2.15 -> 2.16
-o maven-jxr-plugin              2.3 -> 2.4
-o clirr-maven-plugin            2.5 -> 2.6.1
+o                   maven-deploy-plugin                2.7 -> 2.8.1
+o                   maven-jxr-plugin                   2.3 -> 2.4
+o                   maven-install-plugin               2.4 -> 2.5.1
+o                   maven-release-plugin             2.4.1 -> 2.4.2
+o                   maven-surefire-plugin(s)          2.15 -> 2.16
+o                   remote-resources-plugin            1.4 -> 1.5
+o                   apache-rat-plugin                  0.9 -> 0.10
+o                   clirr-maven-plugin                 2.5 -> 2.6.1
+o                   cobertura-maven-plugin           2.5.2 -> 2.6
+o                   jacoco-maven-plugin 0.6.3.201306030806 -> 0.6.4.201312101107
+o                   Fixed JaCoCo configuration - syntax changed completely between 0.6.2.x and 0.6.3.x
+o                   Add commons.compiler.version property so compiler plugin version can be overridden if necessary
+o                   Add source archive to Maven artifacts
 
 
 Historical list of changes: http://commons.apache.org/changes-report.html

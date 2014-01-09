@@ -60,14 +60,30 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
-        <release version="33" date="2013-??-??" description="
+        <release version="33" date="2014-01-??" description="
 The main changes in this release are:
+  - Fixed Jacoco configuration syntax
+  - updated some plugins
 ">
             <!-- List each change individually so the changes HTML report is easier to read -->
-            <!-- Note: the (major) syntax change is not documented AFAICT, and only the trunk docs are online for comparison. -->
+             
+            <action type="update">maven-deploy-plugin                2.7 -> 2.8.1</action>
+            <action type="update">maven-jxr-plugin                   2.3 -> 2.4</action>
+            <action type="update">maven-install-plugin               2.4 -> 2.5.1</action>
+            <action type="update">maven-release-plugin             2.4.1 -> 2.4.2</action>
+            <action type="update">maven-surefire-plugin(s)          2.15 -> 2.16</action>
+            <action type="update">remote-resources-plugin            1.4 -> 1.5</action>
+
+            <action type="update">apache-rat-plugin                  0.9 -> 0.10</action>
+            <action type="update">clirr-maven-plugin                 2.5 -> 2.6.1</action>
+            <action type="update">cobertura-maven-plugin           2.5.2 -> 2.6</action>
+            
+            <action type="update">jacoco-maven-plugin 0.6.3.201306030806 -> 0.6.4.201312101107</action>
             <action type="update">Fixed JaCoCo configuration - syntax changed completely between 0.6.2.x and 0.6.3.x</action>
+            <!-- Note: the (major) syntax change is not documented AFAICT, and only the trunk docs are online for comparison. -->
             <action type="update">Add commons.compiler.version property so compiler plugin version can be overridden if necessary</action>
-        </release>
+            <action type="update">Add source archive to Maven artifacts</action>
+            </release>
 
         <release version="32" date="2013-07-01" description="
 The main changes in this release are:
@@ -102,6 +118,7 @@ Coverage tool:
  Restored Cobertura as an optional profile
 ">
             <!-- List updates separately so the changes html report is easier to read -->
+            <action type="update">cobertura-maven-plugin           2.5.2 reinstated</action>
             <action type="update">jacoco-maven-plugin  0.6.2.201302030002 -> 0.6.3.201306030806</action>
             <action type="update">rat-maven-plugin                   0.8 -> 0.9</action>
             <action type="update">maven-project-info-reports-plugin  2.6 -> 2.7</action>
