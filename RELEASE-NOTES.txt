@@ -22,6 +22,7 @@ o                   apache-rat-plugin                  0.9 -> 0.10
 o                   clirr-maven-plugin                 2.5 -> 2.6.1
 o                   cobertura-maven-plugin           2.5.2 -> 2.6
 o                   jacoco-maven-plugin 0.6.3.201306030806 -> 0.6.4.201312101107
+o                   maven-scm-publish-plugin     1.0-beta2 -> 1.0
 o                   Fixed JaCoCo configuration - syntax changed completely between 0.6.2.x and 0.6.3.x
 o                   Add commons.compiler.version property so compiler plugin version can be overridden if necessary
 o                   Add source archive to Maven artifacts
