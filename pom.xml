@@ -510,7 +510,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-scm-publish-plugin</artifactId>
-        <version>1.0-beta-2</version>
+        <version>${commons.scm-publish.version}</version>
         <configuration>
           <content>${project.reporting.outputDirectory}</content>
           <pubScmUrl>scm:svn:${commons.scmPubUrl}</pubScmUrl>
@@ -1260,7 +1260,9 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.cobertura.version>2.6</commons.cobertura.version>
     <commons.jdepend.version>2.0-beta-2</commons.jdepend.version>
     <commons.compiler.version>3.1</commons.compiler.version>
-
+    <!-- Version 1.0 requires Maven 3.0 or later -->
+    <commons.scm-publish.version>1.0-beta-2</commons.scm-publish.version>
+    
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
