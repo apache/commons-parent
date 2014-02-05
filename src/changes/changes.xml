@@ -67,6 +67,7 @@ The main changes in this release are:
 ">
             <!-- List each change individually so the changes HTML report is easier to read -->
              
+            <action type="update">commons-skin                       3 -> 4</action>
             <action type="update">maven-deploy-plugin                2.7 -> 2.8.1</action>
             <action type="update">maven-jxr-plugin                   2.3 -> 2.4</action>
             <action type="update">maven-install-plugin               2.4 -> 2.5.1</action>

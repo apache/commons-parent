@@ -37,6 +37,7 @@ Version 33:
 
   - Fixed Jacoco configuration syntax
   - updated some plugins
+  - update to commons-skin-4
 
 For full details see:
 http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-33/RELEASE-NOTES.txt
