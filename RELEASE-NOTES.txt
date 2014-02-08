@@ -12,6 +12,7 @@ The main changes in this release are:
 Changes in this version include:
 
 Changes:
+o                   commons-skin                         3 -> 4
 o                   maven-deploy-plugin                2.7 -> 2.8.1
 o                   maven-jxr-plugin                   2.3 -> 2.4
 o                   maven-install-plugin               2.4 -> 2.5.1
