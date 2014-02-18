@@ -50,7 +50,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
 
   <ciManagement>
     <system>continuum</system>
-    <url>http://vmbuild.apache.org/continuum/</url>
+    <url>https://continuum-ci.apache.org/</url>
   </ciManagement>
 
   <!--
