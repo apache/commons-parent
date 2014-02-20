@@ -71,9 +71,9 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
 
     <distributionManagement>
       <site>
-        <id>apache.website</id>
-        <name>Apache Commons Site</name>
-        <url>${commons.deployment.protocol}://people.apache.org/www/commons.apache.org/${commons.componentid}</url>
+        <id>commons.site</id>
+        <name>Apache Commons Site SVN</name>
+        <url>scm:svn:${commons.scmPubUrl}</url>
       </site>
     </distributionManagement>
 
@@ -244,7 +244,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.1</version>
         </plugin>
-        <!-- Apache parent includes docck and enforcer -->
+        <!-- Apache parent includes docck -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
@@ -416,6 +416,28 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <artifactId>maven-compiler-plugin</artifactId>
       </plugin>
       <plugin>
+        <inherited>true</inherited>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <version>1.3.1</version>
+        <executions>
+          <execution>
+            <id>enforce-maven-3</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireMavenVersion>
+                  <version>3.0.0</version>
+                </requireMavenVersion>                
+              </rules>
+              <fail>true</fail>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <configuration>
@@ -516,6 +538,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
           <content>${project.reporting.outputDirectory}</content>
           <pubScmUrl>scm:svn:${commons.scmPubUrl}</pubScmUrl>
           <checkoutDirectory>${commons.scmPubCheckoutDirectory}</checkoutDirectory>
+          <serverId>${commons.scmPubServer}</serverId>
           <tryUpdate>true</tryUpdate>
         </configuration>
         <executions>
@@ -1261,9 +1284,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     <commons.cobertura.version>2.6</commons.cobertura.version>
     <commons.jdepend.version>2.0-beta-2</commons.jdepend.version>
     <commons.compiler.version>3.1</commons.compiler.version>
-    <!-- Version 1.0 requires Maven 3.0 or later -->
-    <commons.scm-publish.version>1.0-beta-2</commons.scm-publish.version>
-    
+    <commons.scm-publish.version>1.0</commons.scm-publish.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
@@ -1336,6 +1357,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
 
     <commons.scmPubUrl>https://svn.apache.org/repos/infra/websites/production/commons/content/proper/${project.artifactId}</commons.scmPubUrl>
     <commons.scmPubCheckoutDirectory>${commons.site.cache}/${commons.site.path}</commons.scmPubCheckoutDirectory>
+    <commons.scmPubServer>commons.site</commons.scmPubServer>
 
     <sonar.host.url>https://analysis.apache.org/</sonar.host.url>
 
