@@ -68,9 +68,12 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
       <site>
         <id>commons.site</id>
         <name>Apache Commons Site SVN</name>
-        <url>scm:svn:${commons.scmPubUrl}</url>
+        <url />
       </site>
     </distributionManagement>
+
+    Alternatively you can map the component's existing site id to the
+    commons.scmPubServer property.
 
     Coverage tool selection
     =======================
