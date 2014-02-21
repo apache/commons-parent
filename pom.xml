@@ -413,6 +413,10 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
       </plugin>
+      <!-- Unfortunately the much simpler
+           <prerequisites><maven>3.0</maven></prerequisites>  
+           is not inherited so we have to use the enforcer plugin
+      -->
       <plugin>
         <inherited>true</inherited>
         <groupId>org.apache.maven.plugins</groupId>
