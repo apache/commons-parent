@@ -68,7 +68,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
       <site>
         <id>commons.site</id>
         <name>Apache Commons Site SVN</name>
-        <url />
+        <url>scm:svn:${commons.scmPubUrl}</url>
       </site>
     </distributionManagement>
 
