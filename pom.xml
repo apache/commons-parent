@@ -43,11 +43,6 @@ For full details see:
 http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-33/RELEASE-NOTES.txt
  -->
 
-  <!-- Now required by versions plugin -->
-  <prerequisites>
-    <maven>2.2.1</maven>
-  </prerequisites>
-
   <ciManagement>
     <system>continuum</system>
     <url>https://continuum-ci.apache.org/</url>
