@@ -77,7 +77,7 @@ http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-paren
     Starting with release 30, there are optional profiles for both Cobertura and JaCoCo.
     These can be enabled independently on the command-line:
 
-    mvn site -Pcobertura  -Pjacoco
+    mvn site -Pcobertura -Pjacoco
 
     Or the component can define a default coverage tool by creating either (or both) of the following files:
 
