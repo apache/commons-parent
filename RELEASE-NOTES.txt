@@ -1,3 +1,25 @@
+              Apache Commons Parent 34
+                  RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 34
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Changes in this version include:
+
+Changes:
+o maven-surefire-plugin(s) 2.16 -> 2.17
+
+
+Historical list of changes: http://commons.apache.org/changes-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
+
+http://commons.apache.org/
+
+---
+
               Apache Commons Parent 33
                   RELEASE NOTES
 
