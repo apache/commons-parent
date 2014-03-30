@@ -35,8 +35,11 @@
 <!--
 Version 34:
 
+  - Added Maven enforcer to ensure builds use Maven 3.0.0 or later
+  - scm-publish 1.0-beta2 -> 1.0
   - Surefire 2.16 -> 2.17
-  
+  - Added Java 1.8 profile
+
  -->
 
   <ciManagement>
@@ -486,7 +489,7 @@ Version 34:
             <!-- stops the "uses" clauses being added to "Export-Package" manifest entry -->
             <_nouses>true</_nouses>
             <!-- Stop the JAVA_1_n_HOME variables from being treated as headers by Bnd -->
-            <_removeheaders>JAVA_1_3_HOME,JAVA_1_4_HOME,JAVA_1_5_HOME,JAVA_1_6_HOME,JAVA_1_7_HOME</_removeheaders>
+            <_removeheaders>JAVA_1_3_HOME,JAVA_1_4_HOME,JAVA_1_5_HOME,JAVA_1_6_HOME,JAVA_1_7_HOME,JAVA_1_8_HOME</_removeheaders>
             <Bundle-SymbolicName>${commons.osgi.symbolicName}</Bundle-SymbolicName>
             <Export-Package>${commons.osgi.export}</Export-Package>
             <Private-Package>${commons.osgi.private}</Private-Package>
@@ -1037,6 +1040,20 @@ Version 34:
         <commons.compiler.compilerVersion>1.7</commons.compiler.compilerVersion>
         <commons.compiler.javac>${JAVA_1_7_HOME}/bin/javac</commons.compiler.javac>
         <commons.surefire.java>${JAVA_1_7_HOME}/bin/java</commons.surefire.java>
+      </properties>
+    </profile>
+
+    <!--
+       Profile for running the build using JDK 1.8
+       (JAVA_1_8_HOME needs to be defined, e.g. in settings.xml or an environment variable)
+      -->
+    <profile>
+      <id>java-1.8</id>
+      <properties>
+        <commons.compiler.fork>true</commons.compiler.fork>
+        <commons.compiler.compilerVersion>1.8</commons.compiler.compilerVersion>
+        <commons.compiler.javac>${JAVA_1_8_HOME}/bin/javac</commons.compiler.javac>
+        <commons.surefire.java>${JAVA_1_8_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
 

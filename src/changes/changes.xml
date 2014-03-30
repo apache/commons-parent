@@ -60,7 +60,22 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
-        <release version="33" date="2014-01-??" description="
+        <release version="34" date="2014-04-??" description="
+The main changes in this release are:
+  - Added Maven enforcer to ensure builds use Maven 3.0.0 or later
+  - Surefire 2.16 -> 2.17
+  - added java-1.8 profile
+">
+            <!-- List each change individually so the changes HTML report is easier to read -->
+
+            <action type="update">Added java-1.8 profile</action>
+            <action type="update">maven-scm-publish-plugin      1.0-beta -> 1.0</action>
+            <action type="update">maven-surefire-plugin(s)          2.16 -> 2.17</action>
+            <action type="update">Added Maven enforcer to ensure builds use Maven 3.0.0 or later</action>
+
+        </release>
+
+        <release version="33" date="2014-02-14" description="
 The main changes in this release are:
   - Fixed Jacoco configuration syntax
   - updated some plugins
