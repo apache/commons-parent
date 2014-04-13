@@ -1,0 +1,60 @@
+Notes on building/releasing Commons Parent
+==========================================
+
+These recipes should work.
+Other recipes may suit other tastes!
+
+Building for local repo:
+-----------------------
+
+mvn -N install
+
+Snapshot deployment:
+-------------------
+
+mvn deploy
+
+Preparing for release candidate:
+-------------------------------
+Check for updates to plugins and dependencies
+Ensure changes.xml is up to date; generate RELEASE-NOTES using non-SNAPSHOT version
+Ensure pom.xml header comment agrees with changes for this release
+Commit all changes to SVN
+
+Creating release candidate tag:
+------------------------------
+Checkout trunk in clean workspace:
+svn co https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk commons-parent-34-RC1
+cd commons-parent-34-RC1
+Edit pom.xml to remove SNAPSHOT suffix
+Create tag in SVN from the updated workspace:
+svn cp . https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-34-RC1 -m"Create 34 RC1 tag"
+
+Test build of tag:
+-----------------
+mvn package deploy -Dassembly.attach=false -Duser.name=ASF-login-name -Prelease -Pjava-1.5 -Ptest-deploy
+Check the contents of target/deploy - should contain pom.xml, site.xml and sigs/hashes
+
+Deploy RC to Nexus:
+------------------
+As above, but omitting -Ptest-deploy profile:
+mvn package deploy -Dassembly.attach=false -Duser.name=ASF-login-name -Prelease -Pjava-1.5
+
+Tidy and close Nexus staging area:
+---------------------------------
+Login to Nexus: https://repository.apache.org/index.html
+Open "Staging Repositories", find the correct "Open" entry (check Summary tab in bottom panel)
+The message "No CLM data recorded" appears to be benign
+Open the bottom "Content" tab and navigate to the files
+Delete *.asc.md5 and *.asc.sha1 if present
+Double-check!
+Close the staging area - "Commons Parent 34 RC1"
+Screen does not auto-refresh - you need to press refresh
+
+Send round the release vote(lazy)
+--------------------------------
+
+Promote the Nexus staging area
+------------------------------
+Assuming the vote passes, login to Nexus and use the Release function
+[If there was a problem identified, Drop the repo instead and start again]
