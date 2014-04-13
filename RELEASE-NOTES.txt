@@ -5,49 +5,19 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Changes in this version include:
-
-Changes:
-o maven-surefire-plugin(s) 2.16 -> 2.17
-
-
-Historical list of changes: http://commons.apache.org/changes-report.html
-
-For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
-patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
-
-http://commons.apache.org/
-
----
-
-              Apache Commons Parent 33
-                  RELEASE NOTES
-
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 33
-
-The Apache Commons Parent POM provides common settings for all Apache Commons components.
-
 The main changes in this release are:
- - Fixed Jacoco configuration syntax
- - updated some plugins
+ - Added Maven enforcer to ensure builds use Maven 3.0.0 or later
+ - Surefire 2.16 -> 2.17
+ - scm-publish 1.0-beta -> 1.0
+ - added java-1.8 profile
 
 Changes in this version include:
 
 Changes:
-o                   commons-skin                         3 -> 4
-o                   maven-deploy-plugin                2.7 -> 2.8.1
-o                   maven-jxr-plugin                   2.3 -> 2.4
-o                   maven-install-plugin               2.4 -> 2.5.1
-o                   maven-release-plugin             2.4.1 -> 2.4.2
-o                   maven-surefire-plugin(s)          2.15 -> 2.16
-o                   remote-resources-plugin            1.4 -> 1.5
-o                   apache-rat-plugin                  0.9 -> 0.10
-o                   clirr-maven-plugin                 2.5 -> 2.6.1
-o                   cobertura-maven-plugin           2.5.2 -> 2.6
-o                   jacoco-maven-plugin 0.6.3.201306030806 -> 0.6.4.201312101107
-o                   Fixed JaCoCo configuration - syntax changed completely between 0.6.2.x and 0.6.3.x
-o                   Add commons.compiler.version property so compiler plugin version can be overridden if necessary
-o                   Add source archive to Maven artifacts
+o                   Added java-1.8 profile
+o                   maven-scm-publish-plugin      1.0-beta -> 1.0
+o                   maven-surefire-plugin(s)          2.16 -> 2.17
+o                   Added Maven enforcer to ensure builds use Maven 3.0.0 or later
 
 
 Historical list of changes: http://commons.apache.org/changes-report.html

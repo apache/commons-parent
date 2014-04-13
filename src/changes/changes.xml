@@ -60,10 +60,11 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
-        <release version="34" date="2014-04-??" description="
+        <release version="34" date="2014-04-18" description="
 The main changes in this release are:
   - Added Maven enforcer to ensure builds use Maven 3.0.0 or later
   - Surefire 2.16 -> 2.17
+  - scm-publish 1.0-beta -> 1.0
   - added java-1.8 profile
 ">
             <!-- List each change individually so the changes HTML report is easier to read -->
