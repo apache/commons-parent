@@ -27,18 +27,15 @@
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
-  <version>34-SNAPSHOT</version>
+  <version>35-SNAPSHOT</version>
   <name>Apache Commons Parent</name>
   <url>http://commons.apache.org/</url>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
 
 <!--
-Version 34:
+Version 35:
 
-  - Added Maven enforcer to ensure builds use Maven 3.0.0 or later
-  - scm-publish 1.0-beta2 -> 1.0
-  - Surefire 2.16 -> 2.17
-  - Added Java 1.8 profile
+Suppress test Javadocs
 
  -->
 
@@ -610,6 +607,15 @@ Version 34:
             <link>${commons.javadoc.javaee.link}</link>
           </links>
         </configuration>
+        <!-- Suppress test Javadocs -->
+        <reportSets>
+          <reportSet>
+            <id>default</id>
+            <reports>
+              <report>javadoc</report>
+            </reports>
+          </reportSet>
+        </reportSets>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

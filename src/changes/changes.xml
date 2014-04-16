@@ -60,7 +60,17 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
-        <release version="34" date="2014-04-18" description="
+        <release version="35" date="2014-??-??" description="
+The main changes in this release are:
+  - suppress Test Javadocs from site build
+">
+            <!-- List each change individually so the changes HTML report is easier to read -->
+
+            <action type="update">Suppress test Javadocs when building site</action>
+
+        </release>
+
+        <release version="34" date="2014-04-16" description="
 The main changes in this release are:
   - Added Maven enforcer to ensure builds use Maven 3.0.0 or later
   - Surefire 2.16 -> 2.17
