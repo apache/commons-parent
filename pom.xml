@@ -35,7 +35,8 @@
 <!--
 Version 35:
 
-Suppress test Javadocs
+- Suppress test Javadocs
+- Update to JaCoCo 0.7.0.201403182114
 
  -->
 
@@ -1306,7 +1307,7 @@ Suppress test Javadocs
     <commons.project-info.version>2.7</commons.project-info.version>
     <commons.wagon-ssh.version>2.3</commons.wagon-ssh.version>
     <commons.site-plugin.version>3.3</commons.site-plugin.version>
-    <commons.jacoco.version>0.6.4.201312101107</commons.jacoco.version>
+    <commons.jacoco.version>0.7.0.201403182114</commons.jacoco.version>
     <commons.cobertura.version>2.6</commons.cobertura.version>
     <commons.jdepend.version>2.0-beta-2</commons.jdepend.version>
     <commons.compiler.version>3.1</commons.compiler.version>
