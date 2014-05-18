@@ -219,7 +219,11 @@ Version 35:
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>2.4</version>
+          <!-- 
+           2.4 is broken: MASSEMBLY-637
+           Downgrade now in case 2.5 not released before next CP release 
+          -->
+          <version>2.3</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
