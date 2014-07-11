@@ -37,6 +37,7 @@ Version 35:
 
 - Suppress test Javadocs
 - Update to JaCoCo 0.7.0.201403182114
+- Update maven-source-plugin to 2.3 from 2.2.1
 
  -->
 
@@ -325,7 +326,7 @@ Version 35:
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
-          <version>2.2.1</version>
+          <version>2.3</version>
           <configuration>
             <archive>
               <manifest>
