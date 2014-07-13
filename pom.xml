@@ -302,7 +302,7 @@ Version 35:
           <!-- TODO see above - find better way to add N&L files to jars and test jars -->
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-remote-resources-plugin</artifactId>
-          <!-- override old version from Apache pom 9 -->
+          <!-- override old version from Apache pom 13 -->
           <version>1.5</version>
           <configuration>
             <!--
