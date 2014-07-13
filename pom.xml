@@ -45,6 +45,7 @@ Version 35:
 - Update maven-release-plugin 2.4.2 -> 2.5
 - Update maven-bundle-plugin 2.4.0 -> 2.5.0
 - Update buildnumber-maven-plugin 1.2 -> 1.3
+- Update wagon-ssh 2.3 -> 2.6
 
  -->
 
@@ -1317,7 +1318,7 @@ Version 35:
     <commons.clirr.version>2.6.1</commons.clirr.version>
     <commons.jxr.version>2.4</commons.jxr.version>
     <commons.project-info.version>2.7</commons.project-info.version>
-    <commons.wagon-ssh.version>2.3</commons.wagon-ssh.version>
+    <commons.wagon-ssh.version>2.6</commons.wagon-ssh.version>
     <commons.site-plugin.version>3.4</commons.site-plugin.version>
     <commons.jacoco.version>0.7.0.201403182114</commons.jacoco.version>
     <commons.cobertura.version>2.6</commons.cobertura.version>
