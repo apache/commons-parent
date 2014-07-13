@@ -37,7 +37,8 @@ Version 35:
 
 - Suppress test Javadocs
 - Update to JaCoCo 0.7.0.201403182114
-- Update maven-source-plugin to 2.3 from 2.2.1
+- Update maven-source-plugin to 2.2.1 -> 2.3
+- Update maven-site-plugin 3.3 -> 3.4
 
  -->
 
@@ -1311,7 +1312,7 @@ Version 35:
     <commons.jxr.version>2.4</commons.jxr.version>
     <commons.project-info.version>2.7</commons.project-info.version>
     <commons.wagon-ssh.version>2.3</commons.wagon-ssh.version>
-    <commons.site-plugin.version>3.3</commons.site-plugin.version>
+    <commons.site-plugin.version>3.4</commons.site-plugin.version>
     <commons.jacoco.version>0.7.0.201403182114</commons.jacoco.version>
     <commons.cobertura.version>2.6</commons.cobertura.version>
     <commons.jdepend.version>2.0-beta-2</commons.jdepend.version>
