@@ -39,6 +39,7 @@ Version 35:
 - Update to JaCoCo 0.7.0.201403182114
 - Update maven-source-plugin to 2.2.1 -> 2.3
 - Update maven-site-plugin 3.3 -> 3.4
+- Update maven-gpg-plugin 1.4 -> 1.5
 
  -->
 
@@ -254,7 +255,7 @@ Version 35:
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
-          <version>1.4</version>
+          <version>1.5</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
