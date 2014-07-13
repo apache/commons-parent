@@ -1377,8 +1377,8 @@ Version 35:
     <project.build.sourceEncoding>${commons.encoding}</project.build.sourceEncoding>
     <project.reporting.outputEncoding>${commons.encoding}</project.reporting.outputEncoding>
 
-    <!-- Javadoc link to Java API.  Default is Java 1.6; components can override to other versions -->
-    <commons.javadoc.java.link>http://docs.oracle.com/javase/6/docs/api/</commons.javadoc.java.link>
+    <!-- Javadoc link to Java API.  Default is Java 1.7; components can override to other versions -->
+    <commons.javadoc.java.link>http://docs.oracle.com/javase/7/docs/api/</commons.javadoc.java.link>
     <commons.javadoc.javaee.link>http://docs.oracle.com/javaee/6/api/</commons.javadoc.javaee.link>
 
     <!-- build meta inf -->
