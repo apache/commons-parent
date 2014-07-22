@@ -55,7 +55,7 @@ Version 35:
   <prerequisites>
     <maven>3.0</maven>
   </prerequisites>
- 
+
   <ciManagement>
     <system>continuum</system>
     <url>https://continuum-ci.apache.org/</url>
@@ -230,9 +230,9 @@ Version 35:
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
-          <!-- 
+          <!--
            2.4 is broken: MASSEMBLY-637
-           Downgrade now in case 2.5 not released before next CP release 
+           Downgrade now in case 2.5 not released before next CP release
           -->
           <version>2.3</version>
         </plugin>
@@ -431,7 +431,7 @@ Version 35:
         <artifactId>maven-compiler-plugin</artifactId>
       </plugin>
       <!-- Unfortunately the much simpler
-           <prerequisites><maven>3.0</maven></prerequisites>  
+           <prerequisites><maven>3.0</maven></prerequisites>
            is not inherited so we have to use the enforcer plugin
       -->
       <plugin>
@@ -449,7 +449,7 @@ Version 35:
               <rules>
                 <requireMavenVersion>
                   <version>3.0.0</version>
-                </requireMavenVersion>                
+                </requireMavenVersion>
               </rules>
               <fail>true</fail>
             </configuration>
@@ -536,7 +536,7 @@ Version 35:
           <!--
                If you wish to override this list in the component (child) pom, ensure you use
                    <excludes combine.children="merge">
-               so that the child pom entries replace the parent entries 
+               so that the child pom entries replace the parent entries
            -->
           <excludes combine.children="append">
             <exclude>site-content/**</exclude>
@@ -546,7 +546,7 @@ Version 35:
             <exclude>src/site/resources/download_*.cgi</exclude>
             <exclude>src/site/resources/profile.*</exclude>
           </excludes>
-        </configuration>      
+        </configuration>
       </plugin>
 
       <plugin>
@@ -642,13 +642,13 @@ Version 35:
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>${commons.project-info.version}</version>
-        <!-- 
+        <!--
             Unfortunately it does not appear to be possible to override
             reports configured in a parent POM.
             See https://jira.codehaus.org/browse/MPIR-241
             and https://issues.apache.org/jira/browse/MPOM-32
             So we define here all those reports that are suitable for
-            all components. 
+            all components.
             Components can add extra reports if they wish, but cannot disable any.
         -->
         <reportSets>
@@ -671,7 +671,7 @@ Version 35:
               <report>distribution-management</report>
             </reports>
           </reportSet>
-        </reportSets>      
+        </reportSets>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -704,7 +704,7 @@ Version 35:
           <!--
                If you wish to override this list in the component (child) pom, ensure you use
                    <excludes combine.children="merge">
-               so that the child pom entries replace the parent entries 
+               so that the child pom entries replace the parent entries
            -->
           <excludes combine.children="append">
             <exclude>site-content/**</exclude>
@@ -712,7 +712,7 @@ Version 35:
             <exclude>src/site/resources/download_*.cgi</exclude>
             <exclude>src/site/resources/profile.*</exclude>
           </excludes>
-        </configuration>      
+        </configuration>
       </plugin>
       <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -859,7 +859,7 @@ Version 35:
 
     <!--
          Profile for Commons releases via Nexus.
-         Assembles artifacts, creates source and javadoc jars, signs them and adds hashes. 
+         Assembles artifacts, creates source and javadoc jars, signs them and adds hashes.
     -->
     <profile>
       <id>release</id>
@@ -952,7 +952,7 @@ Version 35:
       </build>
     </profile>
 
-     <!-- 
+     <!--
        profile to update the Apache parent pom profile of the same name
        to better suit the requirements of Apache Commons.
        [Requires further work]
@@ -1240,7 +1240,7 @@ Version 35:
       </build>
     </profile>
 
-    <!-- 
+    <!--
         Automatically run the buildnumber plugin unless the buildNumber.skip property is defined as true
     -->
     <profile>
@@ -1347,7 +1347,7 @@ Version 35:
     <commons.jacoco.complexityRatio>0.85</commons.jacoco.complexityRatio>
     <commons.jacoco.lineRatio>0.90</commons.jacoco.lineRatio>
     <commons.jacoco.haltOnFailure>false</commons.jacoco.haltOnFailure>
-   
+
     <!-- Commons Component Id -->
     <commons.componentid>${project.artifactId}</commons.componentid>
 
@@ -1388,7 +1388,7 @@ Version 35:
 
     <!-- Allow Clirr severity to be overriden by the command-line option -DminSeverity=level -->
     <minSeverity>info</minSeverity>
-    
+
     <!-- Allow surefire-report aggregation to be easily configured for multi-module projects -->
     <commons.surefire-report.aggregate>false</commons.surefire-report.aggregate>
 
