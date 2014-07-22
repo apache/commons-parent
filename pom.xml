@@ -662,6 +662,7 @@ Version 35:
               <report>scm</report>
               <report>issue-tracking</report>
               <report>mailing-list</report>
+              <report>dependency-info</report>
               <report>dependency-management</report>
               <report>dependencies</report>
               <report>dependency-convergence</report>
