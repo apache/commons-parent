@@ -68,7 +68,7 @@ The main changes in this release are:
 
             <action type="update">Revert to assembly plugin version 23 to avoid MASSEMBLY-637</action>
             <action type="update">Suppress test Javadocs when building site</action>
-
+            <action type="add">Add link to security page in general navigation section</action>
         </release>
 
         <release version="34" date="2014-04-16" description="
