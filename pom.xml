@@ -48,6 +48,7 @@ Version 35:
 - Update maven-scm-publish-plugin 1.0 -> 1.1
 - Update jdepend-maven-plugin 2.0-beta-2 -> 2.0
 - Update apache-rat-plugin 0.10 -> 0.11
+- Update maven-javadoc-plugin 2.9.1 -> 2.10.
 
  -->
 
@@ -1315,7 +1316,7 @@ Version 35:
     <commons.surefire.version>2.17</commons.surefire.version>
     <commons.surefire-report.version>2.17</commons.surefire-report.version>
     <!-- 2.9.1 includes fix for Javadoc vulnerability (CVE-2013-1571, VU#225657) MJAVADOC-370 -->
-    <commons.javadoc.version>2.9.1</commons.javadoc.version>
+    <commons.javadoc.version>2.10</commons.javadoc.version>
     <commons.rat.version>0.11</commons.rat.version>
     <commons.changes.version>2.9</commons.changes.version>
     <commons.clirr.version>2.6.1</commons.clirr.version>
