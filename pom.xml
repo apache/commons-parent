@@ -51,6 +51,7 @@ Version 35:
 - Update maven-clean-plugin 2.5 -> 2.6.
 - Update maven-changes-plugin 2.9 -> 2.11
 - Update maven-deploy-plugin 2.8.1 -> 2.8.2
+- Update maven-install-plugin 2.5.1 -> 2.5.2
 
  -->
 
@@ -271,7 +272,7 @@ Version 35:
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-install-plugin</artifactId>
-          <version>2.5.1</version>
+          <version>2.5.2</version>
         </plugin>
         <!-- Apache parent: invoker -->
         <plugin>
