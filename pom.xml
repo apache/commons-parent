@@ -49,6 +49,7 @@ Version 35:
 - Update jdepend-maven-plugin 2.0-beta-2 -> 2.0
 - Update apache-rat-plugin 0.10 -> 0.11
 - Update maven-clean-plugin 2.5 -> 2.6.
+- Update maven-changes-plugin 2.9 -> 2.11
 
  -->
 
@@ -1318,7 +1319,7 @@ Version 35:
     <!-- 2.9.1 includes fix for Javadoc vulnerability (CVE-2013-1571, VU#225657) MJAVADOC-370 -->
     <commons.javadoc.version>2.9.1</commons.javadoc.version>
     <commons.rat.version>0.11</commons.rat.version>
-    <commons.changes.version>2.9</commons.changes.version>
+    <commons.changes.version>2.11</commons.changes.version>
     <commons.clirr.version>2.6.1</commons.clirr.version>
     <commons.jxr.version>2.4</commons.jxr.version>
     <commons.project-info.version>2.7</commons.project-info.version>
