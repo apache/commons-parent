@@ -52,6 +52,7 @@ Version 35:
 - Update maven-changes-plugin 2.9 -> 2.11
 - Update maven-deploy-plugin 2.8.1 -> 2.8.2
 - Update maven-install-plugin 2.5.1 -> 2.5.2
+- Add property commons.findbugs.version.
 
  -->
 
@@ -1295,6 +1296,15 @@ Version 35:
        </plugins>
      </build>
    </profile>
+    <profile>
+      <id>jdk7-findbugs</id>
+      <activation>
+        <jdk>[1.7,)</jdk>
+      </activation>
+      <properties>
+        <commons.findbugs.version>3.0.0</commons.findbugs.version>
+      </properties>
+    </profile>
 
   </profiles>
 
@@ -1332,6 +1342,7 @@ Version 35:
     <commons.jdepend.version>2.0</commons.jdepend.version>
     <commons.compiler.version>3.1</commons.compiler.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
+    <commons.findbugs.version>2.5.5</commons.findbugs.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
