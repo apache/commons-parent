@@ -66,33 +66,33 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="add">Add link to security page in general navigation section</action>
             <action type="update">Added java-1.9 profile</action>
             <action type="update">Suppress test Javadocs</action>
-            <action type="update">Update JaCoCo -> 0.7.2.201409121644</action>
-            <action type="update">Update maven-compiler-plugin to 3.1 -> 3.2</action>
-            <action type="update">Update maven-source-plugin to 2.2.1 -> 2.4</action>
-            <action type="update">Update maven-site-plugin 3.3 -> 3.4</action>
-            <action type="update">Update maven-gpg-plugin 1.4 -> 1.5</action>
-            <action type="update">Update maven-jar-plugin 2.4 -> 2.5</action>
-            <action type="update">Update maven-release-plugin 2.4.2 -> 2.5.1</action>
-            <action type="update">Update maven-bundle-plugin 2.4.0 -> 2.5.3</action>
-            <action type="update">Update buildnumber-maven-plugin 1.2 -> 1.3</action>
-            <action type="update">Update wagon-ssh 2.3 -> 2.6</action>
-            <action type="update">Update maven-scm-publish-plugin 1.0 -> 1.1</action>
-            <action type="update">Update jdepend-maven-plugin 2.0-beta-2 -> 2.0</action>
-            <action type="update">Update apache-rat-plugin 0.10 -> 0.11</action>
-            <action type="update">Update maven-clean-plugin 2.5 -> 2.6.</action>
-            <action type="update">Update maven-changes-plugin 2.9 -> 2.11</action>
-            <action type="update">Update maven-deploy-plugin 2.8.1 -> 2.8.2</action>
-            <action type="update">Update maven-install-plugin 2.5.1 -> 2.5.2</action>
-            <action type="update">Update maven-javadic-plugin 2.9.1 -> 2.10.1</action>
-            <action type="update">Update apache 13 -> 15</action>
+            <action type="update">Update JaCoCo to 0.7.2.201409121644</action>
+            <action type="update">Update maven-compiler-plugin to 3.1 to 3.2</action>
+            <action type="update">Update maven-source-plugin to 2.2.1 to 2.4</action>
+            <action type="update">Update maven-site-plugin 3.3 to 3.4</action>
+            <action type="update">Update maven-gpg-plugin 1.4 to 1.5</action>
+            <action type="update">Update maven-jar-plugin 2.4 to 2.5</action>
+            <action type="update">Update maven-release-plugin 2.4.2 to 2.5.1</action>
+            <action type="update">Update maven-bundle-plugin 2.4.0 to 2.5.3</action>
+            <action type="update">Update buildnumber-maven-plugin 1.2 to 1.3</action>
+            <action type="update">Update wagon-ssh 2.3 to 2.6</action>
+            <action type="update">Update maven-scm-publish-plugin 1.0 to 1.1</action>
+            <action type="update">Update jdepend-maven-plugin 2.0-beta-2 to 2.0</action>
+            <action type="update">Update apache-rat-plugin 0.10 to 0.11</action>
+            <action type="update">Update maven-clean-plugin 2.5 to 2.6.</action>
+            <action type="update">Update maven-changes-plugin 2.9 to 2.11</action>
+            <action type="update">Update maven-deploy-plugin 2.8.1 to 2.8.2</action>
+            <action type="update">Update maven-install-plugin 2.5.1 to 2.5.2</action>
+            <action type="update">Update maven-javadic-plugin 2.9.1 to 2.10.1</action>
+            <action type="update">Update apache 13 to 15</action>
             <action type="update">Add property commons.findbugs.version.</action>
         </release>
 
         <release version="34" date="2014-04-16" description="
 The main changes in this release are:
   - Added Maven enforcer to ensure builds use Maven 3.0.0 or later
-  - Surefire 2.16 -> 2.17
-  - scm-publish 1.0-beta -> 1.0
+  - Surefire 2.16 to 2.17
+  - scm-publish 1.0-beta to 1.0
   - added java-1.8 profile
 ">
             <!-- List each change individually so the changes HTML report is easier to read -->
