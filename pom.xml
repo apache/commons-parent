@@ -1089,6 +1089,20 @@ Version 35:
       </properties>
     </profile>
 
+    <!--
+       Profile for running the build using JDK 1.9
+       (JAVA_1_9_HOME needs to be defined, e.g. in settings.xml or an environment variable)
+      -->
+    <profile>
+      <id>java-1.9</id>
+      <properties>
+        <commons.compiler.fork>true</commons.compiler.fork>
+        <commons.compiler.compilerVersion>1.9</commons.compiler.compilerVersion>
+        <commons.compiler.javac>${JAVA_1_9_HOME}/bin/javac</commons.compiler.javac>
+        <commons.surefire.java>${JAVA_1_9_HOME}/bin/java</commons.surefire.java>
+      </properties>
+    </profile>
+
     <!-- N.B. when adding new java profiles, be sure to update
          the _removeheaders list in the maven_bundle_plugin configuration -->
 
