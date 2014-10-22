@@ -60,7 +60,7 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
-        <release version="35" date="2014-??-??" description="Update plugins and maintenance">
+        <release version="35" date="2014-10-22" description="Update plugins and maintenance">
             <!-- List each change individually so the changes HTML report is easier to read -->
             <action type="add">Add link to security page in general navigation section</action>
             <action type="add">Added java-1.9 profile</action>
