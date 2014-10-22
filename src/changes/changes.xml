@@ -62,9 +62,9 @@ The <action> type attribute can be add,update,fix,remove.
 
         <release version="35" date="2014-??-??" description="Update plugins and maintenance">
             <!-- List each change individually so the changes HTML report is easier to read -->
-            <action type="update">Suppress test Javadocs when building site</action>
             <action type="add">Add link to security page in general navigation section</action>
-            <action type="update">Added java-1.9 profile</action>
+            <action type="add">Added java-1.9 profile</action>
+            <action type="update">Suppress test Javadocs when building site</action>
             <action type="update">Suppress test Javadocs</action>
             <action type="update">Update JaCoCo to 0.7.2.201409121644</action>
             <action type="update">Update maven-compiler-plugin to 3.1 to 3.2</action>
