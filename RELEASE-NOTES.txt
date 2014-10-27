@@ -1,3 +1,5 @@
+-------------------------------------------------------------------------------
+
 The Apache Commons Parent team is pleased to announce the commons-parent 35 release!
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.

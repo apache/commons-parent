@@ -27,12 +27,14 @@
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
-  <version>35-SNAPSHOT</version>
+  <version>36-SNAPSHOT</version>
   <name>Apache Commons Parent</name>
   <url>http://commons.apache.org/</url>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
 
 <!--
+Version 36:
+
 Version 35:
 
 - Suppress test Javadocs
