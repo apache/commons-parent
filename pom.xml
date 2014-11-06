@@ -36,6 +36,7 @@
 Version 36:
 
 - maven-assembly-plugin 2.4.1 -> 2.5. 
+- maven-jxr-plugin 2.4 -> 2.5.
 
 Version 35:
 
@@ -1350,7 +1351,7 @@ Version 35:
     <commons.rat.version>0.11</commons.rat.version>
     <commons.changes.version>2.11</commons.changes.version>
     <commons.clirr.version>2.6.1</commons.clirr.version>
-    <commons.jxr.version>2.4</commons.jxr.version>
+    <commons.jxr.version>2.5</commons.jxr.version>
     <commons.project-info.version>2.7</commons.project-info.version>
     <commons.wagon-ssh.version>2.6</commons.wagon-ssh.version>
     <commons.site-plugin.version>3.4</commons.site-plugin.version>
