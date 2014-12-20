@@ -1,66 +1,25 @@
--------------------------------------------------------------------------------
-
-The Apache Commons Parent team is pleased to announce the commons-parent 35 release!
-
-The Apache Commons Parent POM provides common settings for all Apache Commons components.
-
-Changes in this version include:
-
-New features:
-o Add link to security page in general navigation section 
-o Added java-1.9 profile 
-
-
-Changes:
-o Suppress test Javadocs when building site 
-o Suppress test Javadocs 
-o Update JaCoCo to 0.7.2.201409121644 
-o Update maven-compiler-plugin to 3.1 to 3.2 
-o Update maven-source-plugin to 2.2.1 to 2.4 
-o Update maven-site-plugin 3.3 to 3.4 
-o Update maven-gpg-plugin 1.4 to 1.5 
-o Update maven-jar-plugin 2.4 to 2.5 
-o Update maven-release-plugin 2.4.2 to 2.5.1 
-o Update maven-bundle-plugin 2.4.0 to 2.5.3 
-o Update buildnumber-maven-plugin 1.2 to 1.3 
-o Update wagon-ssh 2.3 to 2.6 
-o Update maven-scm-publish-plugin 1.0 to 1.1 
-o Update jdepend-maven-plugin 2.0-beta-2 to 2.0 
-o Update apache-rat-plugin 0.10 to 0.11 
-o Update maven-clean-plugin 2.5 to 2.6. 
-o Update maven-changes-plugin 2.9 to 2.11 
-o Update maven-deploy-plugin 2.8.1 to 2.8.2 
-o Update maven-install-plugin 2.5.1 to 2.5.2 
-o Update maven-javadic-plugin 2.9.1 to 2.10.1 
-o Update apache 13 to 15 
-o Add property commons.findbugs.version. 
-
-
-Have fun!
--Apache Commons Parent team
-
-
--------------------------------------------------------------------------------
-              Apache Commons Parent 34
+              Apache Commons Parent 36
                   RELEASE NOTES
 
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 34
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 36
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-The main changes in this release are:
- - Added Maven enforcer to ensure builds use Maven 3.0.0 or later
- - Surefire 2.16 -> 2.17
- - scm-publish 1.0-beta -> 1.0
- - added java-1.8 profile
 
 Changes in this version include:
 
+Update plugins, fix release-notes profile.
+
+
+Fixed Bugs:
+ o Add announcementDirectory to release-notes profile.
+
 Changes:
-o                   Added java-1.8 profile
-o                   maven-scm-publish-plugin      1.0-beta -> 1.0
-o                   maven-surefire-plugin(s)          2.16 -> 2.17
-o                   Added Maven enforcer to ensure builds use Maven 3.0.0 or later
+ o Update maven-jxr-plugin 2.4 to 2.5
+ o Update maven-surefire-plugin(s) 2.17 to 2.18
+ o Update maven-assembly-plugin 2.5 to 2.5.1
+ o Update maven-clean-plugin 2.6 to 2.6.1
+ o Update commons.wagon-ssh.version 2.6 to 2.8
 
 
 Historical list of changes: http://commons.apache.org/changes-report.html
