@@ -1246,7 +1246,7 @@ Version 35:
               <template>release-notes.vm</template>
               <templateDirectory>src/changes</templateDirectory>
               <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
-              <outputDirectory>.</outputDirectory>
+              <announcementDirectory>.</announcementDirectory>
               <announcementFile>RELEASE-NOTES.txt</announcementFile>
               <announceParameters>
                 <releaseVersion>${commons.release.version}</releaseVersion>
