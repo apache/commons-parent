@@ -60,6 +60,16 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
+	<release version="36" date="2014-12-21" description="Update plugins, fix release-notes profile.">
+            <!-- List each change individually so the changes HTML report is easier to read -->
+            <action type="update">Update maven-jxr-plugin 2.4 to 2.5</action>
+            <action type="update">Update maven-surefire-plugin 2.17 to 2.18</action>
+            <action type="update">Update maven-assembly-plugin 2.5 to 2.5.1</action>
+            <action type="update">Update maven-clean-plugin 2.6 to 2.6.1</action>
+            <action type="update">Update commons.wagon-ssh.version 2.6 to 2.8</action>
+            <action type="fix">Add announcementDirectory to release-notes profile.</action>
+        </release>
+
         <release version="35" date="2014-10-22" description="Update plugins and maintenance">
             <!-- List each change individually so the changes HTML report is easier to read -->
             <action type="add">Add link to security page in general navigation section</action>
@@ -67,8 +77,8 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">Suppress test Javadocs when building site</action>
             <action type="update">Suppress test Javadocs</action>
             <action type="update">Update JaCoCo to 0.7.2.201409121644</action>
-            <action type="update">Update maven-compiler-plugin to 3.1 to 3.2</action>
-            <action type="update">Update maven-source-plugin to 2.2.1 to 2.4</action>
+            <action type="update">Update maven-compiler-plugin 3.1 to 3.2</action>
+            <action type="update">Update maven-source-plugin 2.2.1 to 2.4</action>
             <action type="update">Update maven-site-plugin 3.3 to 3.4</action>
             <action type="update">Update maven-gpg-plugin 1.4 to 1.5</action>
             <action type="update">Update maven-jar-plugin 2.4 to 2.5</action>
