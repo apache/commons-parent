@@ -60,6 +60,11 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
+        <release version="37" date="TBD" description="TBD">
+            <!-- List each change individually so the changes HTML report is easier to read -->
+
+        </release>
+
 	<release version="36" date="2014-12-21" description="Update plugins, fix release-notes profile.">
             <!-- List each change individually so the changes HTML report is easier to read -->
             <action type="update">Update maven-jxr-plugin 2.4 to 2.5</action>

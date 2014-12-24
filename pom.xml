@@ -27,12 +27,15 @@
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
-  <version>36-SNAPSHOT</version>
+  <version>37-SNAPSHOT</version>
   <name>Apache Commons Parent</name>
   <url>http://commons.apache.org/</url>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
 
 <!--
+Version 37:
+
+
 Version 36:
 
 - Update maven-assembly-plugin 2.4.1 -> 2.5.3
@@ -42,30 +45,6 @@ Version 36:
 - Update maven-clean-plugin    2.6   -> 2.6.1
 - commons.wagon-ssh.version    2.6   -> 2.8
 - Fixed release-notes profile (announcementDirectory)
-
-Version 35:
-
-- Suppress test Javadocs
-- Update JaCoCo -> 0.7.2.201409121644
-- Update maven-compiler-plugin to 3.1 -> 3.2
-- Update maven-source-plugin to 2.2.1 -> 2.4
-- Update maven-site-plugin 3.3 -> 3.4
-- Update maven-gpg-plugin 1.4 -> 1.5
-- Update maven-jar-plugin 2.4 -> 2.5
-- Update maven-release-plugin 2.4.2 -> 2.5.1
-- Update maven-bundle-plugin 2.4.0 -> 2.5.3
-- Update buildnumber-maven-plugin 1.2 -> 1.3
-- Update wagon-ssh 2.3 -> 2.6
-- Update maven-scm-publish-plugin 1.0 -> 1.1
-- Update jdepend-maven-plugin 2.0-beta-2 -> 2.0
-- Update apache-rat-plugin 0.10 -> 0.11
-- Update maven-clean-plugin 2.5 -> 2.6.
-- Update maven-changes-plugin 2.9 -> 2.11
-- Update maven-deploy-plugin 2.8.1 -> 2.8.2
-- Update maven-install-plugin 2.5.1 -> 2.5.2
-- Update maven-javadic-plugin 2.9.1 -> 2.10.1
-- Update apache 13 -> 15
-- Add property commons.findbugs.version.
 
  -->
 
