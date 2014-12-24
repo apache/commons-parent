@@ -24,11 +24,11 @@ Commit all changes to SVN
 Creating release candidate tag:
 ------------------------------
 Checkout trunk in clean workspace:
-svn co https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk commons-parent-36-RC1
+svn co https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk commons-parent-37-RC1
 cd commons-parent-36-RC1
 Edit pom.xml to remove SNAPSHOT suffix
 Create tag in SVN from the updated workspace:
-svn cp . https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-36-RC1 -m"Create 36 RC1 tag"
+svn cp . https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-37-RC1 -m"Create 37 RC1 tag"
 
 Test build of tag:
 -----------------
@@ -37,6 +37,7 @@ Check the contents of target/deploy - should contain pom.xml, site.xml and sigs/
 
 Deploy RC to Nexus:
 ------------------
+Set up passwords in settings.xml (https://wiki.apache.org/commons/UsingNexus)
 As above, but omitting -Ptest-deploy profile:
 mvn package deploy -Dassembly.attach=false -Duser.name=ASF-login-name -Prelease -Pjava-1.5
 
@@ -48,7 +49,7 @@ The message "No CLM data recorded" appears to be benign
 Open the bottom "Content" tab and navigate to the files
 Delete *.asc.md5 and *.asc.sha1 if present
 Double-check!
-Close the staging area - Description: "Apache Commons Parent 36 RC1"
+Close the staging area - Description: "Apache Commons Parent 37 RC1"
 Screen does not auto-refresh - you need to press refresh
 
 Send round the release vote(lazy)
