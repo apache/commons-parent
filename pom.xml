@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
-    <version>15</version>
+    <version>16</version>
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
@@ -34,6 +34,8 @@
 
 <!--
 Version 37:
+
+- Update org.apache:apache 15 to 16 (nop for commons, maven-compiler-plugin already contained source/target)
 
 
 Version 36:
