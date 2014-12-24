@@ -59,3 +59,11 @@ Promote the Nexus staging area
 ------------------------------
 Assuming the vote passes, login to Nexus and use the Release function
 [If there was a problem identified, Drop the repo instead and start again]
+Copy the RC Tag to final tag:
+  URL=https://svn.apache.org/repos/asf/commons/proper/commons-parent/
+  svn cp "$URL/tags/commons-parent-37-RC1" "$URL/tags/commons-parent-37" -m "Release commons-parent 37 based in RC1"
+
+Prepare next Release Cycle
+--------------------------
+Modify pom.xml with next SNAPSHOT version, remove second last history comment
+Add next release tag in src/changes/changes.xml and commit changes to trunk
