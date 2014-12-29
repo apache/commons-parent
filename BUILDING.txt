@@ -3,6 +3,8 @@ Notes on building/releasing Commons Parent
 
 These recipes should work.
 Other recipes may suit other tastes!
+This is the short form of "Releasing Commons Components"
+http://commons.apache.org/releases/index.html
 
 Building for local repo:
 -----------------------
@@ -25,10 +27,15 @@ Creating release candidate tag:
 ------------------------------
 Checkout trunk in clean workspace:
 svn co https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk commons-parent-37-RC1
-cd commons-parent-36-RC1
-Edit pom.xml to remove SNAPSHOT suffix
+cd commons-parent-37-RC1
+Edit version in pom.xml to remove SNAPSHOT suffix
+Edit three SCM URLs to point to the future (non-RC) tag:
+    <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-37</connection>
+    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-37</developerConnection>
+    <url>http://svn.apache.org/viewvc/commons/proper/commons-parent/tags/commons-parent-37</url>
 Create tag in SVN from the updated workspace:
 svn cp . https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-37-RC1 -m"Create 37 RC1 tag"
+(this ensures the trunk never sees the different URLs or released version)
 
 Test build of tag:
 -----------------
@@ -57,7 +64,7 @@ Send round the release vote(lazy)
 
 Promote the Nexus staging area
 ------------------------------
-Assuming the vote passes, login to Nexus and use the Release function
+Assuming the vote passes, login to Nexus and use the "Release" function
 [If there was a problem identified, Drop the repo instead and start again]
 Copy the RC Tag to final tag:
   URL=https://svn.apache.org/repos/asf/commons/proper/commons-parent/
