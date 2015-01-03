@@ -1021,6 +1021,8 @@ Version 36:
         <commons.compiler.compilerVersion>1.4</commons.compiler.compilerVersion>
         <commons.compiler.javac>${JAVA_1_4_HOME}/bin/javac</commons.compiler.javac>
         <commons.surefire.java>${JAVA_1_4_HOME}/bin/java</commons.surefire.java>
+        <!-- later versions of surefire don't support Java 1.4 -->
+        <commons.surefire.version>2.11</commons.surefire.version>
       </properties>
     </profile>
 
