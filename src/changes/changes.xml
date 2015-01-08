@@ -62,6 +62,7 @@ The <action> type attribute can be add,update,fix,remove.
 
         <release version="37" date="TBD" description="TBD">
             <!-- List each change individually so the changes HTML report is easier to read -->
+            <action type="update">Update minimum maven prerequisite (as defined by findbugs) 3.0 -> 3.0.1</action>
             <action type="update">Update org.apache:apache 15 to 16 (nop for commons: maven-compiler-plugin already contained source/target)</action>
         </release>
 

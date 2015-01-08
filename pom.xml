@@ -36,6 +36,7 @@
 Version 37:
 
 - Update org.apache:apache 15 to 16 (nop for commons, maven-compiler-plugin already contained source/target)
+- Adjust maven prerequisite 3.0 -> 3.0.1 as required by findbugs
 
 
 Version 36:
@@ -52,7 +53,7 @@ Version 36:
 
   <!-- Maven versions plugin reports an error if this is omitted -->
   <prerequisites>
-    <maven>3.0</maven>
+    <maven>3.0.1</maven>
   </prerequisites>
 
   <ciManagement>
