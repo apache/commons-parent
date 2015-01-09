@@ -249,7 +249,13 @@ Version 36:
             <source>${maven.compiler.source}</source>
             <target>${maven.compiler.target}</target>
             <encoding>${commons.encoding}</encoding>
+            <!--
+               fork is set true by the java-1.x profiles
+               This allows the use of a different version of the compiler from the
+               JDK being used to run Maven
+            -->
             <fork>${commons.compiler.fork}</fork>
+            <!-- the following are only needed if fork is true -->
             <compilerVersion>${commons.compiler.compilerVersion}</compilerVersion>
             <executable>${commons.compiler.javac}</executable>
           </configuration>
@@ -481,6 +487,10 @@ Version 36:
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
+          <!--
+            commons.surefire.java is normally empty.
+            It is defined by the java-1.x profiles to change the JVM used by Surefire 
+          -->
           <jvm>${commons.surefire.java}</jvm>
         </configuration>
       </plugin>
