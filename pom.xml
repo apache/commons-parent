@@ -62,6 +62,10 @@ Version 36:
   </ciManagement>
 
   <!--
+    In release 31, the maven.compile.* properties were corrected to maven.compiler.*
+    [See COMMONSSITE-69]
+    If updating from a previous version, please check the property definitions
+
     Starting with version 22, the RAT plugin has changed Maven group and id, so any existing configuration
     needs to be updated.
     To fix component POMs, please change any occurrences of:
