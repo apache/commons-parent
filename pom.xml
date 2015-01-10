@@ -387,13 +387,13 @@ Version 37:
       <!-- org.apache.maven.plugins, alpha order by artifact id -->
       <plugin>
           <!-- Parent POM is released, so needs source archive for ASF mirrors -->
-          <artifactId>maven-assembly-plugin</artifactId>
-          <configuration>
-              <descriptors>
-                  <descriptor>src/main/assembly/src.xml</descriptor>
-              </descriptors>
-              <tarLongFileMode>gnu</tarLongFileMode>
-          </configuration>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <descriptors>
+            <descriptor>src/main/assembly/src.xml</descriptor>
+          </descriptors>
+          <tarLongFileMode>gnu</tarLongFileMode>
+        </configuration>
       </plugin>
       <plugin>
         <!--
@@ -716,12 +716,12 @@ Version 37:
         </configuration>
       </plugin>
       <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>clirr-maven-plugin</artifactId>
-          <version>${commons.clirr.version}</version>
-          <configuration>
-              <minSeverity>${minSeverity}</minSeverity>
-          </configuration>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>clirr-maven-plugin</artifactId>
+        <version>${commons.clirr.version}</version>
+        <configuration>
+          <minSeverity>${minSeverity}</minSeverity>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -755,77 +755,77 @@ Version 37:
       <build>
         <plugins>
           <plugin>
-          <groupId>org.jacoco</groupId>
-          <artifactId>jacoco-maven-plugin</artifactId>
-          <version>${commons.jacoco.version}</version>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>${commons.jacoco.version}</version>
           <!-- Note that since JaCoCo relies on an agent to perform tests,
                it changes the surefire arguments line. If a component also
                needs to change the argument line of maven-surefire-plugin,
                then it must add ${argLine} property (which is set by JaCoCo)
                in the argLine configuration element of maven-surefire-plugin
                to preserve JaCoCo settings. -->
-          <executions>
-            <execution>
-              <id>prepare-agent</id>
-              <phase>process-test-classes</phase>
-              <goals>
-                <goal>prepare-agent</goal>
-              </goals>
-            </execution>
-            <execution>
-              <id>report</id>
-              <phase>site</phase>
-              <goals>
-                <goal>report</goal>
-              </goals>
-            </execution>
-            <execution>
-              <id>check</id>
-              <goals>
-                <goal>check</goal>
-              </goals>
-              <configuration>
-                <rules>
-                  <rule>
-                    <element>BUNDLE</element>
-                    <limits>
-                      <limit>
-                        <counter>CLASS</counter>
-                        <value>COVEREDRATIO</value>
-                        <minimum>${commons.jacoco.classRatio}</minimum>
-                      </limit>
-                      <limit>
-                        <counter>INSTRUCTION</counter>
-                        <value>COVEREDRATIO</value>
-                        <minimum>${commons.jacoco.instructionRatio}</minimum>
-                      </limit>
-                      <limit>
-                        <counter>METHOD</counter>
-                        <value>COVEREDRATIO</value>
-                        <minimum>${commons.jacoco.methodRatio}</minimum>
-                      </limit>
-                      <limit>
-                        <counter>BRANCH</counter>
-                        <value>COVEREDRATIO</value>
-                        <minimum>${commons.jacoco.branchRatio}</minimum>
-                      </limit>
-                      <limit>
-                        <counter>LINE</counter>
-                        <value>COVEREDRATIO</value>
-                        <minimum>${commons.jacoco.lineRatio}</minimum>
-                      </limit>
-                      <limit>
-                        <counter>COMPLEXITY</counter>
-                        <value>COVEREDRATIO</value>
-                        <minimum>${commons.jacoco.complexityRatio}</minimum>
-                      </limit>
-                    </limits>
-                  </rule>
-                </rules>
-                <haltOnFailure>${commons.jacoco.haltOnFailure}</haltOnFailure>
-              </configuration>
-            </execution>
-          </executions>
+            <executions>
+              <execution>
+                <id>prepare-agent</id>
+                <phase>process-test-classes</phase>
+                <goals>
+                  <goal>prepare-agent</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>report</id>
+                <phase>site</phase>
+                <goals>
+                  <goal>report</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>check</id>
+                <goals>
+                  <goal>check</goal>
+                </goals>
+                <configuration>
+                  <rules>
+                    <rule>
+                      <element>BUNDLE</element>
+                      <limits>
+                        <limit>
+                          <counter>CLASS</counter>
+                          <value>COVEREDRATIO</value>
+                          <minimum>${commons.jacoco.classRatio}</minimum>
+                        </limit>
+                        <limit>
+                          <counter>INSTRUCTION</counter>
+                          <value>COVEREDRATIO</value>
+                          <minimum>${commons.jacoco.instructionRatio}</minimum>
+                        </limit>
+                        <limit>
+                          <counter>METHOD</counter>
+                          <value>COVEREDRATIO</value>
+                          <minimum>${commons.jacoco.methodRatio}</minimum>
+                        </limit>
+                        <limit>
+                          <counter>BRANCH</counter>
+                          <value>COVEREDRATIO</value>
+                          <minimum>${commons.jacoco.branchRatio}</minimum>
+                        </limit>
+                        <limit>
+                          <counter>LINE</counter>
+                          <value>COVEREDRATIO</value>
+                          <minimum>${commons.jacoco.lineRatio}</minimum>
+                        </limit>
+                        <limit>
+                          <counter>COMPLEXITY</counter>
+                          <value>COVEREDRATIO</value>
+                          <minimum>${commons.jacoco.complexityRatio}</minimum>
+                        </limit>
+                      </limits>
+                    </rule>
+                  </rules>
+                  <haltOnFailure>${commons.jacoco.haltOnFailure}</haltOnFailure>
+                </configuration>
+              </execution>
+            </executions>
           </plugin>
         </plugins>
       </build>
@@ -908,8 +908,8 @@ Version 37:
                   <goal>test-jar</goal>
                 </goals>
                 <configuration>
-                 <!-- Avoids an error when releasing the parent pom -->
-                 <skipIfEmpty>true</skipIfEmpty>
+                  <!-- Avoids an error when releasing the parent pom -->
+                  <skipIfEmpty>true</skipIfEmpty>
                 </configuration>
               </execution>
             </executions>
@@ -965,7 +965,7 @@ Version 37:
           <plugin>
             <artifactId>maven-release-plugin</artifactId>
             <configuration>
-                <releaseProfiles>apache-release</releaseProfiles>
+              <releaseProfiles>apache-release</releaseProfiles>
             </configuration>
           </plugin>
           <plugin>
@@ -1196,11 +1196,11 @@ Version 37:
             <dependencies>
               <dependency>
                   <!-- add support for ssh/scp -->
-                  <groupId>org.apache.maven.wagon</groupId>
-                  <artifactId>wagon-ssh</artifactId>
-                  <version>${commons.wagon-ssh.version}</version>
-                </dependency>
-              </dependencies>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh</artifactId>
+                <version>${commons.wagon-ssh.version}</version>
+              </dependency>
+            </dependencies>
             <executions>
               <execution>
                 <id>attach-descriptor</id>
@@ -1229,7 +1229,7 @@ Version 37:
       <id>release-notes</id>
       <build>
         <plugins>
-           <plugin>
+          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-changes-plugin</artifactId>
             <version>${commons.changes.version}</version>
@@ -1261,52 +1261,55 @@ Version 37:
         Automatically run the buildnumber plugin unless the buildNumber.skip property is defined as true
     -->
     <profile>
-     <id>svn-buildnumber</id>
-     <activation>
-       <property><name>!buildNumber.skip</name><value>!true</value></property>
-     </activation>
-     <build>
-       <plugins>
-         <plugin>
-           <groupId>org.codehaus.mojo</groupId>
-           <artifactId>buildnumber-maven-plugin</artifactId>
-           <executions>
-             <execution>
-               <phase>generate-resources</phase>
-               <goals>
-                 <goal>create</goal>
-               </goals>
-             </execution>
-           </executions>
-           <configuration>
-             <!-- Use committed revision so it does not change every time svn update is run -->
-             <useLastCommittedRevision>true</useLastCommittedRevision>
-             <!-- default revision number if unavailable -->
-             <revisionOnScmFailure>??????</revisionOnScmFailure>
-             <doCheck>false</doCheck>
-             <doUpdate>false</doUpdate>
-           </configuration>
-         </plugin>
-       </plugins>
-     </build>
-   </profile>
-   <!-- optional profile to use javasvn instead of the SVN CLI for the buildNumber plugin -->
-   <profile>
-     <id>javasvn</id>
-     <build>
-       <plugins>
-         <plugin>
-           <groupId>org.codehaus.mojo</groupId>
-           <artifactId>buildnumber-maven-plugin</artifactId>
-           <configuration>
-             <providerImplementations>
-               <svn>javasvn</svn>
-             </providerImplementations>
-           </configuration>
-         </plugin>
-       </plugins>
-     </build>
-   </profile>
+      <id>svn-buildnumber</id>
+      <activation>
+        <property>
+          <name>!buildNumber.skip</name>
+          <value>!true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>buildnumber-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <phase>generate-resources</phase>
+                <goals>
+                  <goal>create</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <!-- Use committed revision so it does not change every time svn update is run -->
+              <useLastCommittedRevision>true</useLastCommittedRevision>
+              <!-- default revision number if unavailable -->
+              <revisionOnScmFailure>??????</revisionOnScmFailure>
+              <doCheck>false</doCheck>
+              <doUpdate>false</doUpdate>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <!-- optional profile to use javasvn instead of the SVN CLI for the buildNumber plugin -->
+    <profile>
+      <id>javasvn</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>buildnumber-maven-plugin</artifactId>
+            <configuration>
+              <providerImplementations>
+                <svn>javasvn</svn>
+              </providerImplementations>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
     <profile>
       <id>jdk7-findbugs</id>
       <activation>
