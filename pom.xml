@@ -35,19 +35,9 @@
 <!--
 Version 37:
 
-- Update org.apache:apache 15 to 16 (nop for commons, maven-compiler-plugin already contained source/target)
-- Adjust maven prerequisite 3.0 -> 3.0.1 as required by findbugs
-
-
-Version 36:
-
-- Update maven-assembly-plugin 2.4.1 -> 2.5.3
-- Update maven-jxr-plugin      2.4   -> 2.5
-- Update maven-surefire-plugin 2.17  -> 2.18
-- Update maven-assembly-plugin 2.5   -> 2.5.1
-- Update maven-clean-plugin    2.6   -> 2.6.1
-- commons.wagon-ssh.version    2.6   -> 2.8
-- Fixed release-notes profile (announcementDirectory)
+- Update org.apache:apache 15 to 16 (nop for Commons, maven-compiler-plugin already contained source/target)
+- Adjust Maven prerequisite 3.0 -> 3.0.1 as required by Findbugs
+- Update Maven Project Info Reports Plugin : 2.7 => 2.8
 
  -->
 
@@ -1354,7 +1344,7 @@ Version 36:
     <commons.changes.version>2.11</commons.changes.version>
     <commons.clirr.version>2.6.1</commons.clirr.version>
     <commons.jxr.version>2.5</commons.jxr.version>
-    <commons.project-info.version>2.7</commons.project-info.version>
+    <commons.project-info.version>2.8</commons.project-info.version>
     <commons.wagon-ssh.version>2.8</commons.wagon-ssh.version>
     <commons.site-plugin.version>3.4</commons.site-plugin.version>
     <commons.jacoco.version>0.7.2.201409121644</commons.jacoco.version>
