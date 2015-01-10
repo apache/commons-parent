@@ -23,6 +23,13 @@ Ensure changes.xml is up to date; generate RELEASE-NOTES using non-SNAPSHOT vers
 Ensure pom.xml header comment agrees with changes for this release
 Commit all changes to SVN
 
+Please check that the site documentation is up to date 
+See:
+https://svn.apache.org/repos/asf/commons/cms-site/trunk/content/xdoc/commons-parent-pom.xml
+This will need updating if any new features / profiles etc are added.
+It does not list plugin or dependency versions.
+However at the least please update the version details and URL at the start of the page.
+
 Creating release candidate tag:
 ------------------------------
 Checkout trunk in clean workspace:
