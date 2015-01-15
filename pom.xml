@@ -750,6 +750,74 @@ Version 37:
 
   <profiles>
 
+      <!-- 
+           Runs the Animal Sniffer plugin to check that generated code does not included references
+           to methods/classes etc that are not present in the standard Java runtime for the defined target version.
+           To bypass the checks, define "animal.sniffer.skip" as true, or create the file "src/site/resources/profile.noanimal" 
+      -->
+
+      <profile>
+        <id>animal-sniffer</id>
+        <activation>
+          <!--  active unless the file is found -->
+          <file>
+            <missing>src/site/resources/profile.noanimal</missing>
+          </file>
+        </activation>
+        
+        <build>
+          <plugins>
+            <!-- convert maven.compiler.target - e.g. 1.6 - to the sniffer signature - e.g. java16 -->
+            <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.9.1</version>
+              <executions>
+                <execution>
+                  <id>regex-property</id>
+                  <phase>validate</phase>
+                  <goals>
+                    <goal>regex-property</goal>
+                  </goals>
+                  <configuration>
+                    <!-- generate the default animal sniffer java signature name from the java target version -->
+                    <name>animal-sniffer.signature</name>
+                    <value>${maven.compiler.target}</value>
+                    <regex>^(\d)\.(\d)$</regex>
+                    <replacement>java$1$2</replacement>
+                    <failIfNoMatch>true</failIfNoMatch> <!-- unexpected compiler version (assuming n.m version format)-->
+                  </configuration>
+                </execution>
+              </executions>
+            </plugin>
+
+            <!-- Run the Animal Sniffer checks -->
+            <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>animal-sniffer-maven-plugin</artifactId>
+              <version>1.13</version>
+              <executions>
+                <execution>
+                  <id>checkAPIcompatibility</id>
+                  <phase>test</phase>
+                  <goals>
+                    <goal>check</goal>
+                  </goals>
+                </execution>
+              </executions>
+              <configuration>
+                <signature>
+                  <groupId>org.codehaus.mojo.signature</groupId>
+                  <artifactId>${animal-sniffer.signature}</artifactId>
+                  <version>1.0</version>
+                </signature>
+              </configuration>
+            </plugin>
+
+          </plugins>
+        </build>
+      </profile>
+
     <profile>
       <id>jacoco</id>
       <activation>
