@@ -67,6 +67,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">Update Maven Project Info Reports Plugin : 2.7 => 2.8</action>
             <action type="update">merged maven-3 profile into main body (Maven 2 is no longer supported)</action>
             <action type="update">Added Animal Sniffer profile (active by default)</action>
+            <action type="update">renamed the profile jdk7-findbugs to jdk7-plugin-fix-version</action>
         </release>
 
 	<release version="36" date="2014-12-21" description="Update plugins, fix release-notes profile.">
