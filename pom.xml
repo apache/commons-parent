@@ -40,7 +40,8 @@ Version 37:
 - Update Maven Project Info Reports Plugin : 2.7 => 2.8
 - merged maven-3 profile into main body (Maven 2 is no longer supported)
 - added Animal Sniffer plugin in profile "animal-sniffer". This is active by default.
-  Unfortunately the current version of the plugin (1.13) requires Java 7 to report API violations
+  The current version of the plugin (1.13) requires Java 7 to report API violations.
+  The default version is set to 1.11 which works with Java 5 unless Maven is running under Java 7+
 
  -->
 
@@ -1367,6 +1368,8 @@ Version 37:
       </activation>
       <properties>
         <commons.findbugs.version>3.0.0</commons.findbugs.version>
+        <!-- Current latest version requires Java 7 when running Maven -->
+        <commons.animal-sniffer.version>1.13</commons.animal-sniffer.version>
       </properties>
     </profile>
 
@@ -1406,7 +1409,8 @@ Version 37:
     <commons.compiler.version>3.2</commons.compiler.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
     <commons.findbugs.version>2.5.5</commons.findbugs.version>
-    <commons.animal-sniffer.version>1.13</commons.animal-sniffer.version>
+    <!-- version 1.12 and 1.13 currently require Java 7 -->
+    <commons.animal-sniffer.version>1.11</commons.animal-sniffer.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
