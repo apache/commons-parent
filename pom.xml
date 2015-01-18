@@ -41,8 +41,11 @@ Version 37:
 - merged maven-3 profile into main body (Maven 2 is no longer supported)
 - added Animal Sniffer plugin in profile "animal-sniffer". This is active by default.
   The current version of the plugin (1.13) requires Java 7 to report API violations.
-  The default version is set to 1.11 which works with Java 5 unless Maven is running under Java 7+
+  The default version is set to 1.11 which works with Java 5 unless jdk7-plugin-fix-version is detected.
 - renamed the profile jdk7-findbugs to jdk7-plugin-fix-version
+- OSGI bundle-plugin allows commons.osgi.excludeDependencies to be configured
+  (default is true for compatibility with older versions, it excludes all dependencies and makes
+  the plugin skip most of its work around attributing packages correctly)
 
  -->
 
@@ -522,7 +525,7 @@ Version 37:
           <archive>
             <forced>true</forced>
           </archive>
-          <excludeDependencies>true</excludeDependencies>
+          <excludeDependencies>${commons.osgi.excludeDependencies}</excludeDependencies>
           <manifestLocation>${project.build.directory}/osgi</manifestLocation>
           <instructions>
             <!-- stops the "uses" clauses being added to "Export-Package" manifest entry -->
@@ -1443,6 +1446,7 @@ Version 37:
     <commons.osgi.import>*</commons.osgi.import>
     <commons.osgi.dynamicImport />
     <commons.osgi.private />
+    <commons.osgi.excludeDependencies>true</commons.osgi.excludeDependencies>
 
     <!-- location of any manifest file used by maven-jar-plugin -->
     <commons.manifestfile>${project.build.directory}/osgi/MANIFEST.MF</commons.manifestfile>

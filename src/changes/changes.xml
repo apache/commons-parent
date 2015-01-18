@@ -68,9 +68,10 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">merged maven-3 profile into main body (Maven 2 is no longer supported)</action>
             <action type="update">Added Animal Sniffer profile (active by default)</action>
             <action type="update">renamed the profile jdk7-findbugs to jdk7-plugin-fix-version</action>
+            <action type="add">Allow to configure dependency excludes of bundle-plugin with commons.osgi.excludeDependencies</action>
         </release>
 
-	<release version="36" date="2014-12-21" description="Update plugins, fix release-notes profile.">
+        <release version="36" date="2014-12-21" description="Update plugins, fix release-notes profile.">
             <!-- List each change individually so the changes HTML report is easier to read -->
             <action type="update">Update maven-jxr-plugin 2.4 to 2.5</action>
             <action type="update">Update maven-surefire-plugin(s) 2.17 to 2.18</action>
