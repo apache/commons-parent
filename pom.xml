@@ -816,7 +816,7 @@ Version 37:
                 <signature>
                   <groupId>org.codehaus.mojo.signature</groupId>
                   <artifactId>${animal-sniffer.signature}</artifactId>
-                  <version>1.0</version>
+                  <version>${commons.animal-sniffer.signature.version}</version>
                 </signature>
               </configuration>
             </plugin>
@@ -1414,8 +1414,10 @@ Version 37:
     <commons.compiler.version>3.2</commons.compiler.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
     <commons.findbugs.version>2.5.5</commons.findbugs.version>
-    <!-- version 1.12 and 1.13 currently require Java 7 -->
+    <!-- plugin versions 1.12 and 1.13 currently require Java 7 -->
     <commons.animal-sniffer.version>1.11</commons.animal-sniffer.version>
+    <!--  Almost all signatures use version 1.0. Allow override just in case -->
+    <commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
