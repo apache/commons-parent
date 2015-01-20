@@ -47,6 +47,7 @@ Version 37:
   (default is true for compatibility with older versions, it excludes all dependencies and makes
   the plugin skip most of its work around attributing packages correctly)
 - Added property commons.changes.onlyCurrentVersion for changes plugin Jira report
+- Update GPG Plugin : 1.5 => 1.6
 
  -->
 
@@ -268,7 +269,7 @@ Version 37:
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
-          <version>1.5</version>
+          <version>1.6</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
