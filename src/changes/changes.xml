@@ -69,6 +69,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">Added Animal Sniffer profile (active by default)</action>
             <action type="update">renamed the profile jdk7-findbugs to jdk7-plugin-fix-version</action>
             <action type="add">Allow to configure dependency excludes of bundle-plugin with commons.osgi.excludeDependencies</action>
+            <action type="update">Added property commons.changes.onlyCurrentVersion for changes plugin Jira report</action>
         </release>
 
         <release version="36" date="2014-12-21" description="Update plugins, fix release-notes profile.">

@@ -46,6 +46,7 @@ Version 37:
 - OSGI bundle-plugin allows commons.osgi.excludeDependencies to be configured
   (default is true for compatibility with older versions, it excludes all dependencies and makes
   the plugin skip most of its work around attributing packages correctly)
+- Added property commons.changes.onlyCurrentVersion for changes plugin Jira report
 
  -->
 
@@ -618,6 +619,7 @@ Version 37:
           <typeIds>Bug,New Feature,Task,Improvement,Wish,Test</typeIds>
           <!-- For JIRA >= 5.1 -->
           <useJql>true</useJql>
+          <onlyCurrentVersion>${commons.changes.onlyCurrentVersion}</onlyCurrentVersion>
         </configuration>
         <reportSets>
           <reportSet>
@@ -1486,6 +1488,8 @@ Version 37:
     <!-- Allow surefire-report aggregation to be easily configured for multi-module projects -->
     <commons.surefire-report.aggregate>false</commons.surefire-report.aggregate>
 
+    <!-- Allow changes Jira report to be restricted to just the current version (plugin default is false)-->
+    <commons.changes.onlyCurrentVersion>false</commons.changes.onlyCurrentVersion>
     <!-- scm publish plugin configuration -->
     <commons.site.cache>${user.home}/commons-sites</commons.site.cache>
     <!-- value modules can override it -->
