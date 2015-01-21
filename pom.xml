@@ -48,6 +48,7 @@ Version 37:
   the plugin skip most of its work around attributing packages correctly)
 - Added property commons.changes.onlyCurrentVersion for changes plugin Jira report
 - Update GPG Plugin : 1.5 => 1.6
+- Update Antrun plugin 1.7 => 1.8
 
  -->
 
@@ -229,7 +230,7 @@ Version 37:
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
-          <version>1.7</version>
+          <version>1.8</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
