@@ -763,6 +763,45 @@ Version 37:
 
   <profiles>
 
+      <profile>
+        <!--
+          Make the version parts of the maven.compiler.target property
+          available as separate properties, so that they can be used to define
+          the java signature artifactId used by animal-sniffer etc.
+        -->
+        <id>parse-target-version</id>
+        <activation>
+          <property>
+            <!--
+               This property should always be defined.
+               The intention is to ensure that the profile is always enabled.
+               (activeByDefault only applies if other profiles are not enabled) 
+            -->
+            <name>user.home</name>
+          </property>
+        </activation>
+        <build>
+          <plugins>
+            <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>build-helper-maven-plugin</artifactId>
+              <executions>
+                <execution>
+                  <id>parse-version</id>
+                  <goals>
+                    <goal>parse-version</goal>
+                  </goals>
+                  <configuration>
+                    <propertyPrefix>javaTarget</propertyPrefix>
+                    <versionString>${maven.compiler.target}</versionString>
+                  </configuration>
+                </execution>
+              </executions>
+            </plugin>
+          </plugins>
+        </build>
+      </profile>
+
       <!-- 
            Runs the Animal Sniffer plugin to check that generated code does not included references
            to methods/classes etc that are not present in the standard Java runtime for the defined target version.
@@ -778,31 +817,13 @@ Version 37:
           </file>
         </activation>
         
+        <properties>
+          <!-- define this as a property to allow command-line override -->
+          <animal-sniffer.signature>java${javaTarget.majorVersion}${javaTarget.minorVersion}</animal-sniffer.signature>
+        </properties>
+
         <build>
           <plugins>
-            <!-- convert maven.compiler.target - e.g. 1.6 - to the sniffer signature - e.g. java16 -->
-            <plugin>
-              <groupId>org.codehaus.mojo</groupId>
-              <artifactId>build-helper-maven-plugin</artifactId>
-                <version>1.9.1</version>
-              <executions>
-                <execution>
-                  <id>regex-property</id>
-                  <phase>validate</phase>
-                  <goals>
-                    <goal>regex-property</goal>
-                  </goals>
-                  <configuration>
-                    <!-- generate the default animal sniffer java signature name from the java target version -->
-                    <name>animal-sniffer.signature</name>
-                    <value>${maven.compiler.target}</value>
-                    <regex>^(\d)\.(\d)$</regex>
-                    <replacement>java$1$2</replacement>
-                    <failIfNoMatch>true</failIfNoMatch> <!-- unexpected compiler version (assuming n.m version format)-->
-                  </configuration>
-                </execution>
-              </executions>
-            </plugin>
 
             <!-- Run the Animal Sniffer checks -->
             <plugin>
