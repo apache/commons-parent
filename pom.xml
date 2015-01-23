@@ -49,6 +49,7 @@ Version 37:
 - Added property commons.changes.onlyCurrentVersion for changes plugin Jira report
 - Update GPG Plugin : 1.5 => 1.6
 - Update Antrun plugin 1.7 => 1.8
+- Allow changes Jira report maxEntries to be overridden (default 100)
 
  -->
 
@@ -622,6 +623,7 @@ Version 37:
           <!-- For JIRA >= 5.1 -->
           <useJql>true</useJql>
           <onlyCurrentVersion>${commons.changes.onlyCurrentVersion}</onlyCurrentVersion>
+          <maxEntries>${commons.changes.maxEntries}</maxEntries>
         </configuration>
         <reportSets>
           <reportSet>
@@ -1515,6 +1517,9 @@ Version 37:
 
     <!-- Allow changes Jira report to be restricted to just the current version (plugin default is false)-->
     <commons.changes.onlyCurrentVersion>false</commons.changes.onlyCurrentVersion>
+    <!-- Allow changes Jira report maxEntries to be overridden (default 100) -->
+    <commons.changes.maxEntries>100</commons.changes.maxEntries>
+
     <!-- scm publish plugin configuration -->
     <commons.site.cache>${user.home}/commons-sites</commons.site.cache>
     <!-- value modules can override it -->
