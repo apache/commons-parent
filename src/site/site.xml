@@ -98,6 +98,8 @@
       <item name="Volunteering"          href="http://commons.apache.org/volunteering.html" />
       <item name="Contributing Patches"  href="http://commons.apache.org/patches.html" />
       <item name="Building Components"   href="http://commons.apache.org/building.html" />
+      <item name="Commons Parent Pom"    href="http://commons.apache.org/commons-parent-pom.html" />
+      <item name="Commons Build Plugin"  href="http://commons.apache.org/build-plugin/index.html" />
       <item name="Releasing Components"  href="http://commons.apache.org/releases/index.html" />
       <item name="Wiki"                  href="http://wiki.apache.org/commons/FrontPage" />
     </menu>
