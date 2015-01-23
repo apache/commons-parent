@@ -51,6 +51,7 @@ Version 37:
 - Update Antrun plugin 1.7 => 1.8
 - Allow changes Jira report maxEntries to be overridden (default 100)
 - Allow changes Jira report runOnlyAtExecutionRoot to be overridden
+- Added site-basic profile to allow quick generation of the basic site docs
 
  -->
 
@@ -1406,6 +1407,23 @@ Version 37:
         <commons.findbugs.version>3.0.0</commons.findbugs.version>
         <!-- Current latest version requires Java 7 when running Maven -->
         <commons.animal-sniffer.version>1.13</commons.animal-sniffer.version>
+      </properties>
+    </profile>
+
+    <!-- allow simple creation of the site without any optional reports -->
+    <profile>
+      <id>site-basic</id>
+      <properties>
+        <skipTests>true</skipTests>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
+        <cobertura.skip>true</cobertura.skip>
+        <findbugs.skip>true</findbugs.skip>
+        <checkstyle.skip>true</checkstyle.skip>
+        <clirr.skip>true</clirr.skip>
+        <changes.jira.skip>true</changes.jira.skip>
+        <rat.skip>true</rat.skip> <!-- from version 0.12 -->
+        <jacoco.skip>true</jacoco.skip>
+        <skipSurefireReport>true</skipSurefireReport>
       </properties>
     </profile>
 
