@@ -50,6 +50,7 @@ Version 37:
 - Update GPG Plugin : 1.5 => 1.6
 - Update Antrun plugin 1.7 => 1.8
 - Allow changes Jira report maxEntries to be overridden (default 100)
+- Allow changes Jira report runOnlyAtExecutionRoot to be overridden
 
  -->
 
@@ -624,6 +625,7 @@ Version 37:
           <useJql>true</useJql>
           <onlyCurrentVersion>${commons.changes.onlyCurrentVersion}</onlyCurrentVersion>
           <maxEntries>${commons.changes.maxEntries}</maxEntries>
+          <runOnlyAtExecutionRoot>${commons.changes.runOnlyAtExecutionRoot}</runOnlyAtExecutionRoot>
         </configuration>
         <reportSets>
           <reportSet>
@@ -1517,8 +1519,10 @@ Version 37:
 
     <!-- Allow changes Jira report to be restricted to just the current version (plugin default is false)-->
     <commons.changes.onlyCurrentVersion>false</commons.changes.onlyCurrentVersion>
-    <!-- Allow changes Jira report maxEntries to be overridden (default 100) -->
+    <!-- Allow changes Jira report maxEntries to be overridden (plugin default 100) -->
     <commons.changes.maxEntries>100</commons.changes.maxEntries>
+    <!-- Allow changes Jira report runOnlyAtExecutionRoot to be overridden (plugin default is false) -->
+    <commons.changes.runOnlyAtExecutionRoot>false</commons.changes.runOnlyAtExecutionRoot>
 
     <!-- scm publish plugin configuration -->
     <commons.site.cache>${user.home}/commons-sites</commons.site.cache>

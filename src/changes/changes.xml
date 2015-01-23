@@ -73,6 +73,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">Update GPG Plugin : 1.5 => 1.6</action>
             <action type="update">Update Antrun Plugin : 1.7 => 1.8</action>
             <action type="update">Allow changes Jira report maxEntries to be overridden (default 100)</action>
+            <action type="update">Allow changes Jira report runOnlyAtExecutionRoot to be overridden</action>
         </release>
 
         <release version="36" date="2014-12-21" description="Update plugins, fix release-notes profile.">
