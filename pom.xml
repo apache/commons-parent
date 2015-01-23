@@ -1487,14 +1487,16 @@ Version 37:
     <commons.deployment.protocol>scp</commons.deployment.protocol>
 
     <!--
-      Encoding of Java source files: Make sure, that the compiler and
+      Encoding of Java source files: ensures that the compiler and
       the javadoc generator use the right encoding. Subprojects may
       overwrite this, if they are using another encoding.
     -->
     <commons.encoding>iso-8859-1</commons.encoding>
+    <!-- used in this pom to provide the Javadoc HTML file encoding -->
     <commons.docEncoding>${commons.encoding}</commons.docEncoding>
-    <!-- Define encoding for filtering -->
+    <!-- Define source encoding for filtering; used by general plugins -->
     <project.build.sourceEncoding>${commons.encoding}</project.build.sourceEncoding>
+    <!-- This is used by reporting plugins -->
     <project.reporting.outputEncoding>${commons.encoding}</project.reporting.outputEncoding>
 
     <!-- Javadoc link to Java API.  Default is Java 1.7; components can override to other versions -->
