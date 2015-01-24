@@ -845,6 +845,9 @@ Version 37:
                 <execution>
                   <id>checkAPIcompatibility</id>
                   <!-- default is:  <phase>process-classes</phase>  -->
+                  <!-- Note: if the plugin is ever enhanced to check test classes
+                       it will presumably need to be bound to process-test-classes instead 
+                  -->
                   <goals>
                     <goal>check</goal>
                   </goals>
