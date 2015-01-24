@@ -798,6 +798,7 @@ Version 37:
               <executions>
                 <execution>
                   <id>parse-version</id>
+                  <!-- default is:  <phase>validate</phase>  -->
                   <goals>
                     <goal>parse-version</goal>
                   </goals>
@@ -843,7 +844,7 @@ Version 37:
               <executions>
                 <execution>
                   <id>checkAPIcompatibility</id>
-                  <phase>test</phase>
+                  <!-- default is:  <phase>process-classes</phase>  -->
                   <goals>
                     <goal>check</goal>
                   </goals>
