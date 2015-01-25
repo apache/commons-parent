@@ -19,6 +19,7 @@ mvn deploy
 Preparing for release candidate:
 -------------------------------
 Check for updates to plugins and dependencies
+Ensure NOTICE has correct year
 Ensure changes.xml is up to date; generate RELEASE-NOTES using non-SNAPSHOT version
 Ensure pom.xml header comment agrees with changes for this release
 Commit all changes to SVN
