@@ -1,25 +1,30 @@
-              Apache Commons Parent 36
+              Apache Commons Parent 37
                   RELEASE NOTES
 
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 36
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 37
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
+Update plugins, add Animal Sniffer and site-basic profile
 
 Changes in this version include:
 
-Update plugins, fix release-notes profile.
-
-
-Fixed Bugs:
- o Add announcementDirectory to release-notes profile.
+New features:
+o                   Added Animal Sniffer profile (active by default)
+o                   Allow to configure dependency excludes of bundle-plugin with commons.osgi.excludeDependencies
+o                   Added property commons.changes.onlyCurrentVersion for changes plugin Jira report
+o                   Allow changes Jira report maxEntries to be overridden (default 100)
+o                   Allow changes Jira report runOnlyAtExecutionRoot to be overridden
+o                   Added site-basic profile to allow quick generation of the basic site docs
 
 Changes:
- o Update maven-jxr-plugin 2.4 to 2.5
- o Update maven-surefire-plugin(s) 2.17 to 2.18
- o Update maven-assembly-plugin 2.5 to 2.5.1
- o Update maven-clean-plugin 2.6 to 2.6.1
- o Update commons.wagon-ssh.version 2.6 to 2.8
+o                   Update minimum Maven prerequisite (as defined by Findbugs) 3.0 -> 3.0.1
+o                   Update org.apache:apache 15 to 16 (nop for Commons: maven-compiler-plugin already contained source/target)
+o                   Update Maven Project Info Reports Plugin : 2.7 => 2.8
+o                   merged maven-3 profile into main body (Maven 2 is no longer supported)
+o                   renamed the profile jdk7-findbugs to jdk7-plugin-fix-version
+o                   Update GPG Plugin : 1.5 => 1.6
+o                   Update Antrun Plugin : 1.7 => 1.8
 
 
 Historical list of changes: http://commons.apache.org/changes-report.html

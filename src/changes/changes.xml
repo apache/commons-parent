@@ -60,21 +60,21 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
-        <release version="37" date="TBD" description="TBD">
+        <release version="37" date="2015-01-28" description="Update plugins, add Animal Sniffer and site-basic profile">
             <!-- List each change individually so the changes HTML report is easier to read -->
             <action type="update">Update minimum Maven prerequisite (as defined by Findbugs) 3.0 -> 3.0.1</action>
             <action type="update">Update org.apache:apache 15 to 16 (nop for Commons: maven-compiler-plugin already contained source/target)</action>
             <action type="update">Update Maven Project Info Reports Plugin : 2.7 => 2.8</action>
             <action type="update">merged maven-3 profile into main body (Maven 2 is no longer supported)</action>
-            <action type="update">Added Animal Sniffer profile (active by default)</action>
+            <action type="add">Added Animal Sniffer profile (active by default)</action>
             <action type="update">renamed the profile jdk7-findbugs to jdk7-plugin-fix-version</action>
             <action type="add">Allow to configure dependency excludes of bundle-plugin with commons.osgi.excludeDependencies</action>
-            <action type="update">Added property commons.changes.onlyCurrentVersion for changes plugin Jira report</action>
+            <action type="add">Added property commons.changes.onlyCurrentVersion for changes plugin Jira report</action>
             <action type="update">Update GPG Plugin : 1.5 => 1.6</action>
             <action type="update">Update Antrun Plugin : 1.7 => 1.8</action>
-            <action type="update">Allow changes Jira report maxEntries to be overridden (default 100)</action>
-            <action type="update">Allow changes Jira report runOnlyAtExecutionRoot to be overridden</action>
-            <action type="update">Added site-basic profile to allow quick generation of the basic site docs</action>
+            <action type="add">Allow changes Jira report maxEntries to be overridden (default 100)</action>
+            <action type="add">Allow changes Jira report runOnlyAtExecutionRoot to be overridden</action>
+            <action type="add">Added site-basic profile to allow quick generation of the basic site docs</action>
         </release>
 
         <release version="36" date="2014-12-21" description="Update plugins, fix release-notes profile.">
