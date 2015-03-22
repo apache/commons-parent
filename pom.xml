@@ -1458,7 +1458,7 @@ Version 37:
     <!-- plugin versions (allows same value in reporting and build sections) -->
     <commons.surefire.version>2.18</commons.surefire.version>
     <commons.surefire-report.version>2.18</commons.surefire-report.version>
-    <commons.javadoc.version>2.10.1</commons.javadoc.version>
+    <commons.javadoc.version>2.10.2</commons.javadoc.version>
     <commons.rat.version>0.11</commons.rat.version>
     <commons.changes.version>2.11</commons.changes.version>
     <commons.clirr.version>2.6.1</commons.clirr.version>
