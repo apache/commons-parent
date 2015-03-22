@@ -49,6 +49,9 @@ Version 37:
 - Added property commons.changes.onlyCurrentVersion for changes plugin Jira report
 - Update GPG Plugin : 1.5 => 1.6
 - Update Antrun plugin 1.7 => 1.8
+- Update Javadoc plugin 2.10.1 => 2.10.2
+- Update Jacoco plugin 0.7.2 => 0.7.4
+- Update Surefire plugin 2.18 => 2.18.1
 - Allow changes Jira report maxEntries to be overridden (default 100)
 - Allow changes Jira report runOnlyAtExecutionRoot to be overridden
 - Added site-basic profile to allow quick generation of the basic site docs
