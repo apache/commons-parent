@@ -1466,7 +1466,7 @@ Version 37:
     <commons.project-info.version>2.8</commons.project-info.version>
     <commons.wagon-ssh.version>2.8</commons.wagon-ssh.version>
     <commons.site-plugin.version>3.4</commons.site-plugin.version>
-    <commons.jacoco.version>0.7.2.201409121644</commons.jacoco.version>
+    <commons.jacoco.version>0.7.4.201502262128</commons.jacoco.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
     <commons.jdepend.version>2.0</commons.jdepend.version>
     <commons.compiler.version>3.2</commons.compiler.version>
