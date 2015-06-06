@@ -60,6 +60,15 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
+        <release version="38" date="TBA" description="TBA">
+            <!-- List each change individually so the changes HTML report is easier to read -->
+            <action type="update">Update Assembly Plugin : 2.5.3 => 2.5.5</action>
+            <action type="update">Update Cobertura Plugin : 2.6 => 2.7</action>
+            <action type="update">Update Jacoco Plugin : 0.7.2 => 0.7.4</action>
+            <action type="update">Update Javadoc Plugin : 2.10.1 => 2.10.2</action>
+            <action type="update">Update Surefire Plugin : 2.18 => 2.18.1</action>
+        </release>
+
         <release version="37" date="2015-01-28" description="Update plugins, add Animal Sniffer and site-basic profile">
             <!-- List each change individually so the changes HTML report is easier to read -->
             <action type="update">Update minimum Maven prerequisite (as defined by Findbugs) 3.0 -> 3.0.1</action>

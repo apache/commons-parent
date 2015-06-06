@@ -27,34 +27,19 @@
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
-  <version>37-SNAPSHOT</version>
+  <version>38-SNAPSHOT</version>
   <name>Apache Commons Parent</name>
   <url>http://commons.apache.org/</url>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
 
 <!--
-Version 37:
+Version 38:
 
-- Update org.apache:apache 15 to 16 (nop for Commons, maven-compiler-plugin already contained source/target)
-- Adjust Maven prerequisite 3.0 -> 3.0.1 as required by Findbugs
-- Update Maven Project Info Reports Plugin : 2.7 => 2.8
-- merged maven-3 profile into main body (Maven 2 is no longer supported)
-- added Animal Sniffer plugin in profile "animal-sniffer". This is active by default.
-  The current version of the plugin (1.13) requires Java 7 to report API violations.
-  The default version is set to 1.11 which works with Java 5 unless jdk7-plugin-fix-version is detected.
-- renamed the profile jdk7-findbugs to jdk7-plugin-fix-version
-- OSGI bundle-plugin allows commons.osgi.excludeDependencies to be configured
-  (default is true for compatibility with older versions, it excludes all dependencies and makes
-  the plugin skip most of its work around attributing packages correctly)
-- Added property commons.changes.onlyCurrentVersion for changes plugin Jira report
-- Update GPG Plugin : 1.5 => 1.6
-- Update Antrun plugin 1.7 => 1.8
-- Update Javadoc plugin 2.10.1 => 2.10.2
+- Update Assembly Plugin : 2.5.3 => 2.5.5
+- Update Cobertura plugin 2.6 => 2.7
 - Update Jacoco plugin 0.7.2 => 0.7.4
+- Update Javadoc plugin 2.10.1 => 2.10.2
 - Update Surefire plugin 2.18 => 2.18.1
-- Allow changes Jira report maxEntries to be overridden (default 100)
-- Allow changes Jira report runOnlyAtExecutionRoot to be overridden
-- Added site-basic profile to allow quick generation of the basic site docs
 
  -->
 
@@ -241,7 +226,7 @@ Version 37:
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>2.5.3</version>
+          <version>2.5.5</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -1416,6 +1401,9 @@ Version 37:
         <jdk>[1.7,)</jdk>
       </activation>
       <properties>
+        <!-- TODO should these be separately overrideable properties?
+            early versions are unlikely to be updated, but current latest will be
+         -->
         <commons.findbugs.version>3.0.0</commons.findbugs.version>
         <!-- Current latest version requires Java 7 when running Maven -->
         <commons.animal-sniffer.version>1.13</commons.animal-sniffer.version>
