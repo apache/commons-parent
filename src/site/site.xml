@@ -94,7 +94,7 @@
 
     <!-- Should agree with commons-site -->
     <menu name="General Information" inherit="bottom">
-      <item name="Security"              href="/security.html"/>
+      <item name="Security"              href="http://commons.apache.org/security.html"/>
       <item name="Volunteering"          href="http://commons.apache.org/volunteering.html" />
       <item name="Contributing Patches"  href="http://commons.apache.org/patches.html" />
       <item name="Building Components"   href="http://commons.apache.org/building.html" />
