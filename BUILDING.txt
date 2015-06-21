@@ -35,21 +35,22 @@ However at the least please update the version details and URL at the start of t
 Creating release candidate tag:
 ------------------------------
 Checkout trunk in clean workspace:
-svn co https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk commons-parent-37-RC1
-cd commons-parent-37-RC1
+svn co https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk commons-parent-<NN>-RC1
+cd commons-parent-<NN>-RC1
 Edit version in pom.xml to remove SNAPSHOT suffix
 Edit three SCM URLs to point to the future (non-RC) tag:
-    <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-37</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-37</developerConnection>
-    <url>http://svn.apache.org/viewvc/commons/proper/commons-parent/tags/commons-parent-37</url>
+    <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-<NN></connection>
+    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-<NN></developerConnection>
+    <url>http://svn.apache.org/viewvc/commons/proper/commons-parent/tags/commons-parent-<NN></url>
 Create tag in SVN from the updated workspace:
-svn cp . https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-37-RC1 -m"Create 37 RC1 tag"
+svn cp . https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-<NN>-RC1 -m"Create <NN> RC1 tag"
 (this ensures the trunk never sees the different URLs or released version)
 
 Test build of tag:
 -----------------
 mvn package deploy -Dassembly.attach=false -Duser.name=ASF-login-name -Prelease -Pjava-1.5 -Ptest-deploy
-Check the contents of target/deploy - should contain pom.xml, site.xml and sigs/hashes
+Check the contents of target/deploy/org/apache/commons/commons-parent/<NN>
+ - should contain commons-parent-<NN>.pom, commons-parent-<NN>-site.xml and sigs/hashes
 
 Deploy RC to Nexus:
 ------------------
