@@ -60,7 +60,7 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
-        <release version="38" date="TBA" description="TBA">
+        <release version="38" date="2015-06-25" description="Fix bug in site Security link; update plugins">
             <!-- List each change individually so the changes HTML report is easier to read -->
             <action type="update">Fix URL for Security link</action>
             <action type="update">Update Assembly Plugin : 2.5.3 => 2.5.5</action>
