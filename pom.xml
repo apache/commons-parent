@@ -27,7 +27,7 @@
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
-  <version>38-SNAPSHOT</version>
+  <version>38</version>
   <name>Apache Commons Parent</name>
   <url>http://commons.apache.org/</url>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
@@ -108,9 +108,9 @@ Version 38:
     a release of the commons-parent POM.
   -->
   <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk</developerConnection>
-    <url>http://svn.apache.org/viewvc/commons/proper/commons-parent/trunk</url>
+    <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-38</connection>
+    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-38</developerConnection>
+    <url>http://svn.apache.org/viewvc/commons/proper/commons-parent/tags/commons-parent-38</url>
   </scm>
 
   <mailingLists>
