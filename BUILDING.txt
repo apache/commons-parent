@@ -66,7 +66,7 @@ The message "No CLM data recorded" appears to be benign
 Open the bottom "Content" tab and navigate to the files
 Delete *.asc.md5 and *.asc.sha1 if present
 Double-check!
-Close the staging area - Description: "Apache Commons Parent 37 RC1"
+Close the staging area - Description: "Apache Commons Parent <NN> RC1"
 Screen does not auto-refresh - you need to press refresh
 
 Send round the release vote(lazy)
