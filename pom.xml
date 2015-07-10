@@ -27,20 +27,15 @@
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
-  <version>38-SNAPSHOT</version>
+  <version>39-SNAPSHOT</version>
   <name>Apache Commons Parent</name>
   <url>http://commons.apache.org/</url>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
 
 <!--
-Version 38:
+Version 39:
 
-- Fix URL for Security link
-- Update Assembly Plugin : 2.5.3 => 2.5.5
-- Update Cobertura plugin 2.6 => 2.7
-- Update Jacoco plugin 0.7.2 => 0.7.4
-- Update Javadoc plugin 2.10.1 => 2.10.2
-- Update Surefire plugin 2.18 => 2.18.1
+- ...
 
  -->
 
