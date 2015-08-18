@@ -36,6 +36,7 @@
 Version 39:
 
 - Jacoco 0.7.4.201502262128 -> 0.7.5.201505241946
+- move assembly to standard location
 
  -->
 
@@ -409,7 +410,7 @@ Version 39:
         <artifactId>maven-assembly-plugin</artifactId>
         <configuration>
           <descriptors>
-            <descriptor>src/main/assembly/src.xml</descriptor>
+            <descriptor>src/assembly/src.xml</descriptor>
           </descriptors>
           <tarLongFileMode>gnu</tarLongFileMode>
         </configuration>

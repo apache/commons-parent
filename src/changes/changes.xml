@@ -59,6 +59,10 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
+        <release version="39" date="TBA" description="Fix bug in site Security link; update plugins">
+            <action type="update">Move assembly to standard location</action>
+            <action type="update">Update Jacoco Plugin : 0.7.4.201502262128 -> 0.7.5.201505241946</action>
+        </release>
 
         <release version="38" date="2015-06-25" description="Fix bug in site Security link; update plugins">
             <!-- List each change individually so the changes HTML report is easier to read -->
