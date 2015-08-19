@@ -37,6 +37,7 @@ Version 39:
 
 - Jacoco 0.7.4.201502262128 -> 0.7.5.201505241946
 - move assembly to standard location
+- bump animal-sniffer plugin to 1.14 (for java 7+ builds) supporting Java8
 
  -->
 
@@ -1402,8 +1403,8 @@ Version 39:
             early versions are unlikely to be updated, but current latest will be
          -->
         <commons.findbugs.version>3.0.0</commons.findbugs.version>
-        <!-- Current latest version requires Java 7 when running Maven -->
-        <commons.animal-sniffer.version>1.13</commons.animal-sniffer.version>
+        <!-- Since 1.13 running maven with Java7 is required, 1.14 also supports Java8 class files (ASM 5.0) -->
+        <commons.animal-sniffer.version>1.14</commons.animal-sniffer.version>
       </properties>
     </profile>
 
@@ -1528,6 +1529,9 @@ Version 39:
 
     <!-- Allow Clirr severity to be overriden by the command-line option -DminSeverity=level -->
     <minSeverity>info</minSeverity>
+
+    <!-- Control number of issues retrieved from JIRA with changes plugin -->
+    <commons.changes.maxEntries>100</commons.changes.maxEntries>
 
     <!-- Allow surefire-report aggregation to be easily configured for multi-module projects -->
     <commons.surefire-report.aggregate>false</commons.surefire-report.aggregate>
