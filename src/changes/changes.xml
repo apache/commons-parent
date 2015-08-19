@@ -60,6 +60,7 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
         <release version="39" date="TBA" description="Fix bug in site Security link; update plugins">
+            <action type="update">Update animal-sniffer Plugin : 2.13 => 2.14 (for Java7+ build profile)</action>
             <action type="update">Move assembly to standard location</action>
             <action type="update">Update Jacoco Plugin : 0.7.4.201502262128 -> 0.7.5.201505241946</action>
         </release>
