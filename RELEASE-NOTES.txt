@@ -5,14 +5,19 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Fix bug in site Security link; update plugins
+Uses a new location assembly location; updates plugins; allows Java 8 builds to use animal-sniffer.
 
 Changes in this version include:
 
 Changes:
+o                   Update Compiler Plugin : 3.2 -> 3.3
+o                   Update Build Helper Plugin : 1.8 -> 1.9.1
+o                   Update Release Plugin : 2.5.1 -> 2.5.2
+o                   Update Javadoc Plugin : 2.10.2 -> 2.10.3
+o                   Update Jar Plugin : 2.5 -> 2.6
 o                   Drop the "trunks-proper" profile
-o                   Update animal-sniffer Plugin : 2.13 => 2.14 (for Java7+ build profile)
-o                   Move assembly to standard location
+o                   Update animal-sniffer Plugin : 2.13 -> 2.14 (for Java7+ build profile)
+o                   Move assembly to standard location. src/main => src/assembly/src.xml
 o                   Update Jacoco Plugin : 0.7.4.201502262128 -> 0.7.5.201505241946
 
 

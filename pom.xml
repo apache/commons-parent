@@ -35,9 +35,13 @@
 <!--
 Version 39:
 
-- Jacoco 0.7.4.201502262128 -> 0.7.5.201505241946
-- move assembly to standard location
-- bump animal-sniffer plugin to 1.14 (for java 7+ builds) supporting Java8
+- Update Compiler Plugin : 3.2 -> 3.3
+- Update Build Helper Plugin : 1.8 -> 1.9.1
+- Update Release Plugin : 2.5.1 -> 2.5.2
+- Update Javadoc Plugin : 2.10.2 -> 2.10.3
+- Update Jacoco 0.7.4.201502262128 -> 0.7.5.201505241946
+- Move assembly to standard location. src/main => src/assembly/src.xml
+- Update animal-sniffer Plugin : 1.13 -> 1.14 (for java 7+ builds) supporting Java8
 - dropped the trunks-proper profile
 
  -->
@@ -271,7 +275,7 @@ Version 39:
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>2.5</version>
+          <version>2.6</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -298,7 +302,7 @@ Version 39:
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
-          <version>2.5.1</version>
+          <version>2.5.2</version>
         </plugin>
         <plugin>
           <!-- TODO see above - find better way to add N&L files to jars and test jars -->
@@ -387,7 +391,7 @@ Version 39:
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>build-helper-maven-plugin</artifactId>
-          <version>1.8</version>
+          <version>1.9.1</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -1387,7 +1391,7 @@ Version 39:
     <!-- plugin versions (allows same value in reporting and build sections) -->
     <commons.surefire.version>2.18.1</commons.surefire.version>
     <commons.surefire-report.version>2.18.1</commons.surefire-report.version>
-    <commons.javadoc.version>2.10.2</commons.javadoc.version>
+    <commons.javadoc.version>2.10.3</commons.javadoc.version>
     <commons.rat.version>0.11</commons.rat.version>
     <commons.changes.version>2.11</commons.changes.version>
     <commons.clirr.version>2.6.1</commons.clirr.version>
@@ -1398,7 +1402,7 @@ Version 39:
     <commons.jacoco.version>0.7.5.201505241946</commons.jacoco.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
     <commons.jdepend.version>2.0</commons.jdepend.version>
-    <commons.compiler.version>3.2</commons.compiler.version>
+    <commons.compiler.version>3.3</commons.compiler.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
     <commons.findbugs.version>2.5.5</commons.findbugs.version>
     <!-- plugin versions 1.12 and 1.13 currently require Java 7 -->

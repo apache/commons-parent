@@ -59,10 +59,15 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="39" date="TBA" description="Fix bug in site Security link; update plugins">
+        <release version="39" date="TBA" description="Uses a new location assembly location; updates plugins; allows Java 8 builds to use animal-sniffer.">
+            <action type="update">Update Compiler Plugin : 3.2 -> 3.3</action>
+            <action type="update">Update Build Helper Plugin : 1.8 -> 1.9.1</action>
+            <action type="update">Update Release Plugin : 2.5.1 -> 2.5.2</action>
+            <action type="update">Update Javadoc Plugin : 2.10.2 -> 2.10.3</action>
+            <action type="update">Update Jar Plugin : 2.5 -> 2.6</action>
             <action type="update">Drop the "trunks-proper" profile</action>
-            <action type="update">Update animal-sniffer Plugin : 2.13 => 2.14 (for Java7+ build profile)</action>
-            <action type="update">Move assembly to standard location</action>
+            <action type="update">Update animal-sniffer Plugin : 2.13 -> 2.14 (for Java7+ build profile)</action>
+            <action type="update">Move assembly to standard location. src/main => src/assembly/src.xml</action>
             <action type="update">Update Jacoco Plugin : 0.7.4.201502262128 -> 0.7.5.201505241946</action>
         </release>
 
