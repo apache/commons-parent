@@ -10,6 +10,8 @@ Fix bug in site Security link; update plugins
 Changes in this version include:
 
 Changes:
+o                   Drop the "trunks-proper" profile
+o                   Update animal-sniffer Plugin : 2.13 => 2.14 (for Java7+ build profile)
 o                   Move assembly to standard location
 o                   Update Jacoco Plugin : 0.7.4.201502262128 -> 0.7.5.201505241946
 

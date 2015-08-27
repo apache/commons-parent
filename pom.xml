@@ -38,6 +38,7 @@ Version 39:
 - Jacoco 0.7.4.201502262128 -> 0.7.5.201505241946
 - move assembly to standard location
 - bump animal-sniffer plugin to 1.14 (for java 7+ builds) supporting Java8
+- dropped the trunks-proper profile
 
  -->
 
@@ -1233,67 +1234,6 @@ Version 39:
       <properties>
         <altDeploymentRepository>id::default::file:target/deploy</altDeploymentRepository>
       </properties>
-    </profile>
-
-    <!--
-      Profile to build all Commons "proper" components.
-
-      The trunks of all "proper" components can be checked out using:
-          https://svn.apache.org/repos/asf/commons/trunks-proper/
-
-      This profile is a convenience which can be used, for example, to build all the component sites:
-          mvn -Ptrunks-proper site
-
-      or, to clean up:
-          mvn -Ptrunks-proper clean
-
-      see http://issues.apache.org/jira/browse/COMMONSSITE-30
-      -->
-    <profile>
-      <id>trunks-proper</id>
-      <modules>
-        <!-- not yet using mvn module>../attributes</module-->
-        <module>../bcel</module>
-        <module>../beanutils</module>
-        <module>../betwixt</module>
-        <module>../chain</module>
-        <module>../cli</module>
-        <module>../codec</module>
-        <module>../collections</module>
-        <module>../compress</module>
-        <module>../configuration</module>
-        <module>../daemon</module>
-        <module>../dbcp</module>
-        <module>../dbutils</module>
-        <module>../digester</module>
-        <module>../discovery</module>
-        <module>../el</module>
-        <module>../email</module>
-        <module>../exec</module>
-        <module>../fileupload</module>
-        <module>../functor</module>
-        <module>../imaging</module>
-        <module>../io</module>
-        <module>../jci</module>
-        <module>../jcs</module>
-        <!-- not yet using mvn module>../jelly</module-->
-        <module>../jexl</module>
-        <module>../jxpath</module>
-        <module>../lang</module>
-        <module>../launcher</module>
-        <module>../logging</module>
-        <module>../math</module>
-        <module>../modeler</module>
-        <module>../net</module>
-        <module>../ognl</module>
-        <module>../pool</module>
-        <module>../primitives</module>
-        <module>../proxy</module>
-        <module>../scxml</module>
-        <!-- not yet using mvn module>../transaction</module-->
-        <module>../validator</module>
-        <module>../vfs</module>
-      </modules>
     </profile>
 
     <profile>
