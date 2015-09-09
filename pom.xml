@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
-    <version>16</version>
+    <version>17</version>
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
@@ -34,7 +34,8 @@
 
 <!--
 Versions 40:
-- 
+
+- Update parent: 16 -> 17
 
 Version 39:
 
