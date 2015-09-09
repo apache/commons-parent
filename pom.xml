@@ -27,12 +27,15 @@
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
-  <version>39-SNAPSHOT</version>
+  <version>40-SNAPSHOT</version>
   <name>Apache Commons Parent</name>
   <url>http://commons.apache.org/</url>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
 
 <!--
+Versions 40:
+- 
+
 Version 39:
 
 - Update Compiler Plugin : 3.2 -> 3.3

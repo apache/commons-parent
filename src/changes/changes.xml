@@ -59,7 +59,10 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="39" date="TBA" description="Uses a new location assembly location; updates plugins; allows Java 8 builds to use animal-sniffer.">
+        <release version="40" date="TBA" description="TBD; updates plugins.">
+        </release>
+
+        <release version="39" date="2015-09-07" description="Uses a new location assembly location; updates plugins; allows Java 8 builds to use animal-sniffer.">
             <action type="update">Update Compiler Plugin : 3.2 -> 3.3</action>
             <action type="update">Update Build Helper Plugin : 1.8 -> 1.9.1</action>
             <action type="update">Update Release Plugin : 2.5.1 -> 2.5.2</action>
