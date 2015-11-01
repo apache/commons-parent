@@ -6,6 +6,10 @@ Other recipes may suit other tastes!
 This is the short form of "Releasing Commons Components"
 http://commons.apache.org/releases/index.html
 
+To perform the license release audit, a.k.a. "RAT check", run.
+
+mvn apache-rat:check
+
 Building for local repo:
 -----------------------
 
