@@ -40,7 +40,7 @@ Versions 40:
 - buildnumber-maven-plugin 1.3 -> 1.4 (supports git SCM now)
 - maven-assembly-plugin 2.5.5 -> 2.6
 - maven-surefire-plugin 2.18.1 -> 2.19.1
-- Update Compiler Plugin : 3.3 -> 3.5
+- maven-compiler-plugin : 3.3 -> 3.5.1
 
 
 Version 39:
@@ -1412,7 +1412,7 @@ Version 39:
     <commons.jacoco.version>0.7.5.201505241946</commons.jacoco.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
     <commons.jdepend.version>2.0</commons.jdepend.version>
-    <commons.compiler.version>3.5</commons.compiler.version>
+    <commons.compiler.version>3.5.1</commons.compiler.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
     <commons.findbugs.version>2.5.5</commons.findbugs.version>
     <!-- plugin versions 1.12 and 1.13 currently require Java 7 -->
