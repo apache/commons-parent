@@ -41,6 +41,7 @@ Versions 40:
 - maven-assembly-plugin 2.5.5 -> 2.6
 - maven-surefire-plugin 2.18.1 -> 2.19.1
 - maven-compiler-plugin : 3.3 -> 3.5.1
+- maven-changes-plugin : 2.11 -> 2.12
 
 
 Version 39:
@@ -1403,7 +1404,7 @@ Version 39:
     <commons.surefire-report.version>2.19.1</commons.surefire-report.version>
     <commons.javadoc.version>2.10.3</commons.javadoc.version>
     <commons.rat.version>0.11</commons.rat.version>
-    <commons.changes.version>2.11</commons.changes.version>
+    <commons.changes.version>2.12</commons.changes.version>
     <commons.clirr.version>2.6.1</commons.clirr.version>
     <commons.jxr.version>2.5</commons.jxr.version>
     <commons.project-info.version>2.8</commons.project-info.version>
