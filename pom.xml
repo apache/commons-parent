@@ -33,7 +33,7 @@
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
 
 <!--
-Versions 40:
+Version 40:
 
 - Update parent: 16 -> 17
 - maven-release-plugin 2.5.2 -> 2.5.3
@@ -42,6 +42,7 @@ Versions 40:
 - maven-surefire-plugin 2.18.1 -> 2.19.1
 - maven-compiler-plugin : 3.3 -> 3.5.1
 - maven-changes-plugin : 2.11 -> 2.12
+- commons-build-plugin : 1.4 -> 1.5
 
 
 Version 39:
@@ -383,7 +384,7 @@ Version 39:
         <plugin>
           <groupId>org.apache.commons</groupId>
           <artifactId>commons-build-plugin</artifactId>
-          <version>1.4</version>
+          <version>${commons.build-plugin.version}</version>
           <configuration>
             <commons.release.name>${commons.release.name}</commons.release.name>
           </configuration>
@@ -1399,7 +1400,8 @@ Version 39:
     <commons.compiler.javac />
     <commons.surefire.java />
 
-    <!-- plugin versions (allows same value in reporting and build sections) -->
+    <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
+    <commons.build-plugin.version>1.5</commons.build-plugin.version>
     <commons.surefire.version>2.19.1</commons.surefire.version>
     <commons.surefire-report.version>2.19.1</commons.surefire-report.version>
     <commons.javadoc.version>2.10.3</commons.javadoc.version>
