@@ -45,7 +45,7 @@ svn cp . https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/com
 
 Test build of tag:
 -----------------
-mvn package deploy -Dassembly.attach=false -Duser.name=ASF-login-name -Prelease -Pjava-1.5 -Ptest-deploy
+mvn deploy -Dassembly.attach=false -Duser.name=ASF-login-name -Prelease -Pjava-1.5 -Ptest-deploy
 Check the contents of target/deploy/org/apache/commons/commons-parent/<NN>
  - should contain commons-parent-<NN>.pom, commons-parent-<NN>-site.xml and sigs/hashes
 
