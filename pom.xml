@@ -35,7 +35,7 @@
 <!--
 Version 40:
 
-- Update parent: 16 -> 17
+- Update Apache parent: 16 -> 17
 - maven-release-plugin 2.5.2 -> 2.5.3
 - buildnumber-maven-plugin 1.3 -> 1.4 (supports git SCM now)
 - maven-assembly-plugin 2.5.5 -> 2.6
@@ -43,6 +43,7 @@ Version 40:
 - maven-compiler-plugin : 3.3 -> 3.5.1
 - maven-changes-plugin : 2.11 -> 2.12
 - commons-build-plugin : 1.4 -> 1.5
+- COMMONSSITE-87 - ensure assembly plugin runs after all package phase plugins
 
 
 Version 39:
@@ -1081,7 +1082,8 @@ Version 39:
                 <goals>
                   <goal>single</goal>
                 </goals>
-                <phase>package</phase>
+                <!-- COMMONSSITE-87 Ensure this runs after all package phase plugins -->
+                <phase>verify</phase>
               </execution>
             </executions>
           </plugin>
