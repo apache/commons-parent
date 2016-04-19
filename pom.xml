@@ -1402,6 +1402,15 @@ Version 39:
 
     <!-- Default configuration for compiler source and target JVM -->
     <!-- Do NOT change this; it must remain as 1.3 -->
+    <!-- 
+        It's important that child POMs don't need to change when the parent POM is updated.
+        At the time when these properties were introduced, the default Java version was 1.3.
+        Thus components that failed to define the version would not be affected by updates
+        to the Commons Parent or its parent the Apache pom.
+        Of course most if not all components now define the properties.
+        However it's still important to keep the properties as they effectively 
+        force child poms to define the Java version they require.
+     -->
     <maven.compiler.source>1.3</maven.compiler.source>
     <maven.compiler.target>1.3</maven.compiler.target>
 
