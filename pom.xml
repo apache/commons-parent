@@ -1432,6 +1432,40 @@ Version 39:
     <commons.jxr.version>2.5</commons.jxr.version>
     <commons.project-info.version>2.9</commons.project-info.version>
     <commons.wagon-ssh.version>2.8</commons.wagon-ssh.version>
+    <!-- 
+    Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
+
+    http://maven.apache.org/plugins/maven-site-plugin/migrate.html
+
+    In particular, adding CDATA to header and footer sections is not backwards compatible.
+    I.e. these have to be updated at the same time. 
+
+    Also it causes the following errors:
+
+    [ERROR] Failed to execute goal org.apache.maven.plugins:maven-site-plugin:3.5.1:site (default-site) on project commons-parent: 
+    Execution default-site of goal org.apache.maven.plugins:maven-site-plugin:3.5.1:site failed: 
+    A required class was missing while executing org.apache.maven.plugins:maven-site-plugin:3.5.1:site: org/apache/maven/doxia/sink/impl/XhtmlBaseSink
+
+    This is because Apache POM 17 forces an older version of Doxia core:    
+    https://mail-archives.apache.org/mod_mbox/maven-users/201602.mbox/%3C2337255.xU7aS9G1qr@herve-desktop%3E
+
+    The same error applies when running with version 3.5.
+
+    Since the version is defined as a property, the CP version can be overridden as follows if necessary:
+
+    mvn site -Dcommons.site-plugin.version=3.5.1
+
+    You will also need to add a dependency on Doxia core:
+      <artifactId>maven-site-plugin</artifactId>
+      <dependencies>
+        <dependency>
+          <groupId>org.apache.maven.doxia</groupId>
+          <artifactId>doxia-core</artifactId>
+          <version>1.7</version>
+        </dependency>
+      </dependencies>
+
+     -->
     <commons.site-plugin.version>3.4</commons.site-plugin.version>
     <commons.jacoco.version>0.7.6.201602180812</commons.jacoco.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
