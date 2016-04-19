@@ -45,15 +45,16 @@ svn cp . https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/com
 
 Test build of tag:
 -----------------
-mvn deploy -Dassembly.attach=false -Duser.name=ASF-login-name -Prelease -Pjava-1.5 -Ptest-deploy
+mvn deploy -Duser.name=ASF-login-name -Prelease -Ptest-deploy
 Check the contents of target/deploy/org/apache/commons/commons-parent/<NN>
  - should contain commons-parent-<NN>.pom, commons-parent-<NN>-site.xml and sigs/hashes
+ - also -src.tar.gz, -src.zip and sigs/hashes
 
 Deploy RC to Nexus:
 ------------------
 Set up passwords in settings.xml (https://wiki.apache.org/commons/UsingNexus)
-As above, but omitting -Ptest-deploy profile:
-mvn package deploy -Dassembly.attach=false -Duser.name=ASF-login-name -Prelease -Pjava-1.5
+Same command as above, but omitting -Ptest-deploy profile:
+mvn package deploy -Dassembly.attach=false -Duser.name=ASF-login-name -Prelease
 
 Tidy and close Nexus staging area:
 ---------------------------------
@@ -62,7 +63,10 @@ Open "Staging Repositories", find the correct "Open" entry (check Summary tab in
 The message "No CLM data recorded" appears to be benign
 Open the bottom "Content" tab and navigate to the files
 Delete *.asc.md5 and *.asc.sha1 if present
-Double-check!
+Checkout https://dist.apache.org/repos/dist/dev/commons/commons-parent
+Download the -src archives, their sigs and hashes, then delete them from Nexus.
+Commit the dist/dev/ folder
+
 Close the staging area - Description: "Apache Commons Parent <NN> RC1"
 Screen does not auto-refresh - you need to press refresh
 
@@ -73,9 +77,13 @@ Promote the Nexus staging area
 ------------------------------
 Assuming the vote passes, login to Nexus and use the "Release" function
 [If there was a problem identified, Drop the repo instead and start again]
+
 Copy the RC Tag to final tag:
   URL=https://svn.apache.org/repos/asf/commons/proper/commons-parent/
   svn cp "$URL/tags/commons-parent-37-RC1" "$URL/tags/commons-parent-37" -m "Release commons-parent 37 based on RC1"
+
+Publish the source files to 
+https://dist.apache.org/repos/dist/release/commons/commons-parent
 
 Update site documentation
 -------------------------
