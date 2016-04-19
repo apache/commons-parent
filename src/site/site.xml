@@ -58,7 +58,6 @@
 
   <body>
     <head>
-     <![CDATA[
       <!-- Better display of <source> code sections -->
       <!-- Note: the $relativePath reference is resolved by the template -->
       <link rel="stylesheet" href="$relativePath/css/prettify.css" type="text/css" media="all" />
@@ -68,7 +67,6 @@
               prettyPrint();
           }
       </script>
-      ]]>
     </head>
 
     <!-- N.B. body links are automatically inherited -->
