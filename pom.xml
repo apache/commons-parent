@@ -402,7 +402,7 @@ Version 39:
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
-          <version>3.0.1</version>
+          <version>${commons.felix.version}</version>
           <inherited>true</inherited>
         </plugin>
         <plugin>
@@ -413,7 +413,7 @@ Version 39:
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>build-helper-maven-plugin</artifactId>
-          <version>1.10</version>
+          <version>${commons.build-helper.version}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -1366,12 +1366,13 @@ Version 39:
         <jdk>[1.7,)</jdk>
       </activation>
       <properties>
-        <!-- TODO should these be separately overrideable properties?
-            early versions are unlikely to be updated, but current latest will be
-         -->
         <commons.findbugs.version>3.0.0</commons.findbugs.version>
         <!-- Since 1.13 running maven with Java7 is required, 1.14 also supports Java8 class files (ASM 5.0) -->
         <commons.animal-sniffer.version>1.15</commons.animal-sniffer.version>
+        <!-- Requires Java 7+ -->
+        <commons.felix.version>3.0.1</commons.felix.version>
+        <!-- Requires Java 7+ -->
+        <commons.build-helper.version>1.10</commons.build-helper.version>
       </properties>
     </profile>
 
@@ -1438,6 +1439,10 @@ Version 39:
     <commons.compiler.version>3.5.1</commons.compiler.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
     <commons.findbugs.version>2.5.5</commons.findbugs.version>
+    <!-- later versions require Java 7+ -->
+    <commons.felix.version>2.5.3</commons.felix.version>
+    <!-- later versions require Java 7+ -->
+    <commons.build-helper.version>1.9.1</commons.build-helper.version>
     <!-- plugin versions 1.12 and 1.13 currently require Java 7 -->
     <commons.animal-sniffer.version>1.11</commons.animal-sniffer.version>
     <!--  Almost all signatures use version 1.0. Allow override just in case -->
