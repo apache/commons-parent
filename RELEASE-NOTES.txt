@@ -5,7 +5,12 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Updates plugins and parent; fixes COMMONSSITE-87 and COMMONSSITE-82
+Updates plugins and parent; fixes COMMONSSITE-87 and COMMONSSITE-82.
+
+N.B. The assembly plugin now runs in the verify phase (it was previously run in the package phase). See COMMONSSITE-87.
+This allows child poms to create additional jars to be added to the assembly.
+This will affect child poms that rely on the assembly occurring in the package phase.
+They will need to be amended to use the verify phase instead.
 
 Changes in this version include:
 

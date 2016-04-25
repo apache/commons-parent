@@ -59,7 +59,14 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="40" date="2016-04-24" description="Updates plugins and parent; fixes COMMONSSITE-87 and COMMONSSITE-82">
+        <release version="40" date="2016-04-24" description="Updates plugins and parent; fixes COMMONSSITE-87 and COMMONSSITE-82.
+
+
+
+N.B. The assembly plugin now runs in the verify phase (it was previously run in the package phase). See COMMONSSITE-87.
+ This allows child poms to create additional jars to be added to the assembly.
+ This will affect child poms that rely on the assembly occurring in the package phase.
+ They will need to be amended to use the verify phase instead.">
             <action type="update">Update Apache Parent POM : 16 -> 17</action>
             <action type="update">COMMONSSITE-87 - ensure assembly plugin runs after all package phase plugins</action>
             <action type="update">COMMONSSITE-82 - use Commons Skin 4.1 (site.xml)</action>
