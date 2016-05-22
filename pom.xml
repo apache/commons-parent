@@ -40,6 +40,7 @@
 Version 41:
 
 - Update Apache parent: 17 -> 18
+- changed ciManagement to Jenkins builds.apache.org
 
 Version 40:
 
@@ -84,8 +85,8 @@ Version 39:
   </prerequisites>
 
   <ciManagement>
-    <system>continuum</system>
-    <url>https://continuum-ci.apache.org/</url>
+    <system>jenkins</system>
+    <url>https://builds.apache.org/</url>
   </ciManagement>
 
   <!--
