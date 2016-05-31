@@ -40,7 +40,7 @@
 Version 41:
 
 - Update Apache parent: 17 -> 18
-- changed ciManagement to Jenkins builds.apache.org
+- Changed ciManagement to Jenkins builds.apache.org
 - RAT: Exclude Eclipse local files and folders
 
 Version 40:
