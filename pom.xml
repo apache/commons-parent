@@ -42,6 +42,7 @@ Version 41:
 - Update Apache parent: 17 -> 18
 - Changed ciManagement to Jenkins builds.apache.org
 - RAT: Exclude Eclipse local files and folders
+- maven-javadoc-plugin 2.10.3 -> 2.10.4
 
 Version 40:
 
@@ -1395,7 +1396,7 @@ Version 39:
     <commons.build-plugin.version>1.6</commons.build-plugin.version>
     <commons.surefire.version>2.19.1</commons.surefire.version>
     <commons.surefire-report.version>2.19.1</commons.surefire-report.version>
-    <commons.javadoc.version>2.10.3</commons.javadoc.version>
+    <commons.javadoc.version>2.10.4</commons.javadoc.version>
     <commons.rat.version>0.11</commons.rat.version>
     <commons.changes.version>2.12</commons.changes.version>
     <commons.clirr.version>2.7</commons.clirr.version>
