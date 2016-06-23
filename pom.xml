@@ -44,6 +44,7 @@ Version 41:
 - RAT: Exclude Eclipse local files and folders
 - maven-javadoc-plugin 2.10.3 -> 2.10.4
 - commons.rat.version 0.11 -> 0.12
+- maven-source-plugin 3.0.0 -> 3.0.1
 
 Version 40:
 
@@ -342,7 +343,7 @@ Version 39:
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
-          <version>3.0.0</version>
+          <version>3.0.1</version>
           <configuration>
             <archive>
               <manifest>
