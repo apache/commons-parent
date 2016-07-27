@@ -45,6 +45,8 @@ Version 41:
 - maven-javadoc-plugin 2.10.3 -> 2.10.4
 - commons.rat.version 0.11 -> 0.12
 - maven-source-plugin 3.0.0 -> 3.0.1
+- new profile clirr (add src/site/resources/profile.clirr to enable, clirr report no longer automatic)
+- new profile japicmp (add src/site/resources/japicmp.clirr to enable)
 
 Version 40:
 
