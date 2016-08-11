@@ -1,42 +1,23 @@
-              Apache Commons Parent 40
+              Apache Commons Parent 41
                   RELEASE NOTES
 
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 40
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 41
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Updates plugins and parent; fixes COMMONSSITE-87 and COMMONSSITE-82.
-
-N.B. The assembly plugin now runs in the verify phase (it was previously run in the package phase). See COMMONSSITE-87.
-This allows child poms to create additional jars to be added to the assembly.
-This will affect child poms that rely on the assembly occurring in the package phase.
-They will need to be amended to use the verify phase instead.
+TBA
 
 Changes in this version include:
 
 Changes:
-o                   Update Apache Parent POM : 16 -> 17
-o                   COMMONSSITE-87 - ensure assembly plugin runs after all package phase plugins
-o                   COMMONSSITE-82 - use Commons Skin 4.1 (site.xml)
-o                   Require minimum of Maven 3.0.5
-o                   maven-assembly-plugin : 2.5.5 -> 2.6
-o                   maven-changes-plugin : 2.11 -> 2.12
-o                   maven-clean-plugin : 2.6.1 -> 3.0.0
-o                   maven-compiler-plugin : 3.3 -> 3.5.1
-o                   maven-enforcer-plugin : 1.3.1 -> 1.4.1
-o                   maven-source-plugin : 2.4 -> 3.0.0
-o                   maven-surefire-plugin : 2.18.1 -> 2.19.1
-o                   maven-project-info-reports-plugin : 2.8 -> 2.9
-o                   maven-release-plugin : 2.5.2 -> 2.5.3
-o                   animal-sniffer-maven-plugin : 1.11 -> 1.15
-o                   build-helper-maven-plugin : 1.9.1 -> 1.10
-o                   buildnumber-maven-plugin 1.3 -> 1.4 (supports git SCM now)
-o                   clirr-maven-plugin : 2.6.1 -> 2.7
-o                   commons-build-plugin : 1.4 -> 1.6
-o                   felix:maven-bundle-plugin : 2.5.3 -> 3.0.0
-o                   findbugs-maven-plugin : 3.0.0 -> 3.0.3
-o                   jacoco-maven-plugin : 0.7.5.201505241946 -> 0.7.6.201602180812
-o                   wagon-ssh : 2.8 -> 2.10
+o                   COMMONSSITE-89 - support both clirr and japicmp
+Clirr report must now be explicitly enabled using src/site/resources/profile.clirr file or -Pclirr option
+o                   maven-source-plugin 3.0.0 -> 3.0.1
+o                   commons.rat.version 0.11 -> 0.12
+o                   maven-javadoc-plugin 2.10.3 -> 2.10.4
+o                   RAT: Exclude Eclipse local files and folders
+o                   Changed ciManagement to Jenkins builds.apache.org
+o                   Update Apache parent: 17 -> 18
 
 
 Historical list of changes: http://commons.apache.org/commons-parent-pom.htmlchanges-report.html
