@@ -59,7 +59,11 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="41" date="2016-08-15" description="TBA">
+        <release version="42" date="TBD" description="TBA">
+            <action type="update">Prevent uploading of the source zip/tar.gz</action>
+        </release>
+        
+        <release version="41" date="2016-08-15" description="Updates plugins and adds source compatibility profiles">
             <action type="update">COMMONSSITE-89 - support both clirr and japicmp
 Clirr report must now be explicitly enabled using src/site/resources/profile.clirr file or -Pclirr option</action>
             <action type="update">maven-source-plugin 3.0.0 -> 3.0.1</action>
