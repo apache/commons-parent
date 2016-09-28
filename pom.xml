@@ -37,6 +37,12 @@
   </issueManagement>
 
 <!--
+Version 42:
+
+- Update japicmp: 0.8.0 -> 0.9.1
+
+-->
+<!--
 Version 41:
 
 - Update Apache parent: 17 -> 18
@@ -1461,7 +1467,7 @@ Version 39:
     <commons.rat.version>0.12</commons.rat.version>
     <commons.changes.version>2.12</commons.changes.version>
     <commons.clirr.version>2.7</commons.clirr.version>
-    <commons.japicmp.version>0.8.0</commons.japicmp.version>
+    <commons.japicmp.version>0.9.1</commons.japicmp.version>
     <commons.jxr.version>2.5</commons.jxr.version>
     <commons.project-info.version>2.9</commons.project-info.version>
     <commons.wagon-ssh.version>2.10</commons.wagon-ssh.version>
