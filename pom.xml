@@ -40,7 +40,8 @@
 Version 42:
 
 - Update japicmp: 0.8.0 -> 0.9.1
-
+- japicmp plugin no longer fail on "mvn site" (it requires
+  target/*jar), use "mvn package site -Pjapicmp" to include its report
 -->
 <!--
 Version 41:
@@ -375,6 +376,8 @@ Version 39:
             <parameter>
               <onlyModified>true</onlyModified>
               <breakBuildOnBinaryIncompatibleModifications>true</breakBuildOnBinaryIncompatibleModifications>
+              <!-- skip japicmp on "mvn site" - use "mvn package site" to include report -->
+              <ignoreMissingNewVersion />
             </parameter>
           </configuration>
         </plugin>
