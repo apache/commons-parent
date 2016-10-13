@@ -378,6 +378,7 @@ Version 39:
               <breakBuildOnBinaryIncompatibleModifications>true</breakBuildOnBinaryIncompatibleModifications>
               <!-- skip japicmp on "mvn site" - use "mvn package site" to include report -->
               <ignoreMissingNewVersion />
+	      <reportOnlyFilename>true</reportOnlyFilename>
             </parameter>
           </configuration>
         </plugin>
