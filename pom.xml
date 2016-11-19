@@ -54,6 +54,7 @@ Version 41:
 - maven-javadoc-plugin 2.10.3 -> 2.10.4
 - commons.rat.version 0.11 -> 0.12
 - maven-source-plugin 3.0.0 -> 3.0.1
+- versions-maven-plugin 2.3
 - new profile clirr (add src/site/resources/profile.clirr to enable, clirr report no longer automatic)
 - new profile japicmp (add src/site/resources/profile.japicmp to enable)
 
@@ -420,6 +421,12 @@ Version 39:
           <configuration>
             <minSeverity>${minSeverity}</minSeverity>
           </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>versions-maven-plugin</artifactId>
+          <!-- Version 2.2 causes an NPE with Maven 3.3.9 -->
+          <version>2.3</version>
         </plugin>
         <!-- Apache parent: plexus & modello -->
       </plugins>
