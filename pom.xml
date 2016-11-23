@@ -39,6 +39,7 @@
 <!--
 Version 42:
 
+- jacoco-maven-plugin : 0.7.6.201602180812 -> 0.7.7.201606060606
 - commons-build-plugin : 1.6 -> 1.7
 - maven-changes-plugin : 2.12 -> 2.12.1
 - Update japicmp: 0.8.0 -> 0.9.1
@@ -1517,7 +1518,7 @@ Version 39:
 
      -->
     <commons.site-plugin.version>3.4</commons.site-plugin.version>
-    <commons.jacoco.version>0.7.6.201602180812</commons.jacoco.version>
+    <commons.jacoco.version>0.7.7.201606060606</commons.jacoco.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
     <commons.jdepend.version>2.0</commons.jdepend.version>
     <commons.compiler.version>3.6.0</commons.compiler.version>
