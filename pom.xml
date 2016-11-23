@@ -39,6 +39,7 @@
 <!--
 Version 42:
 
+- maven-site-plugin 3.4 -> 3.6 (for migrating from 3.4 to 3.5.1, see https://maven.apache.org/components/plugins/maven-site-plugin/migrate.html) 
 - jacoco-maven-plugin : 0.7.6.201602180812 -> 0.7.7.201606060606
 - commons-build-plugin : 1.6 -> 1.7
 - maven-changes-plugin : 2.12 -> 2.12.1
@@ -1517,7 +1518,7 @@ Version 39:
       </dependencies>
 
      -->
-    <commons.site-plugin.version>3.4</commons.site-plugin.version>
+    <commons.site-plugin.version>3.6</commons.site-plugin.version>
     <commons.jacoco.version>0.7.7.201606060606</commons.jacoco.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
     <commons.jdepend.version>2.0</commons.jdepend.version>
