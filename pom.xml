@@ -384,7 +384,7 @@ Version 39:
               <breakBuildOnBinaryIncompatibleModifications>true</breakBuildOnBinaryIncompatibleModifications>
               <!-- skip japicmp on "mvn site" - use "mvn package site" to include report -->
               <ignoreMissingNewVersion />
-	      <reportOnlyFilename>true</reportOnlyFilename>
+          <reportOnlyFilename>true</reportOnlyFilename>
             </parameter>
           </configuration>
         </plugin>
@@ -430,6 +430,79 @@ Version 39:
           <artifactId>versions-maven-plugin</artifactId>
           <!-- Version 2.2 causes an NPE with Maven 3.3.9 -->
           <version>2.3</version>
+        </plugin>
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>${commons.jacoco.version}</version>
+          <!-- Note that since JaCoCo relies on an agent to perform tests,
+               it changes the surefire arguments line. If a component also
+               needs to change the argument line of maven-surefire-plugin,
+               then it must add ${argLine} property (which is set by JaCoCo)
+               in the argLine configuration element of maven-surefire-plugin
+               to preserve JaCoCo settings. -->
+          <executions>
+            <execution>
+              <id>prepare-agent</id>
+              <phase>process-test-classes</phase>
+              <goals>
+                <goal>prepare-agent</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>report</id>
+              <phase>site</phase>
+              <goals>
+                <goal>report</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>check</id>
+              <goals>
+                <goal>check</goal>
+              </goals>
+              <configuration>
+                <rules>
+                  <rule>
+                    <element>BUNDLE</element>
+                    <limits>
+                      <limit>
+                        <counter>CLASS</counter>
+                        <value>COVEREDRATIO</value>
+                        <minimum>${commons.jacoco.classRatio}</minimum>
+                      </limit>
+                      <limit>
+                        <counter>INSTRUCTION</counter>
+                        <value>COVEREDRATIO</value>
+                        <minimum>${commons.jacoco.instructionRatio}</minimum>
+                      </limit>
+                      <limit>
+                        <counter>METHOD</counter>
+                        <value>COVEREDRATIO</value>
+                        <minimum>${commons.jacoco.methodRatio}</minimum>
+                      </limit>
+                      <limit>
+                        <counter>BRANCH</counter>
+                        <value>COVEREDRATIO</value>
+                        <minimum>${commons.jacoco.branchRatio}</minimum>
+                      </limit>
+                      <limit>
+                        <counter>LINE</counter>
+                        <value>COVEREDRATIO</value>
+                        <minimum>${commons.jacoco.lineRatio}</minimum>
+                      </limit>
+                      <limit>
+                        <counter>COMPLEXITY</counter>
+                        <value>COVEREDRATIO</value>
+                        <minimum>${commons.jacoco.complexityRatio}</minimum>
+                      </limit>
+                    </limits>
+                  </rule>
+                </rules>
+                <haltOnFailure>${commons.jacoco.haltOnFailure}</haltOnFailure>
+              </configuration>
+            </execution>
+          </executions>
         </plugin>
         <!-- Apache parent: plexus & modello -->
       </plugins>
@@ -1444,6 +1517,53 @@ Version 39:
       </properties>
     </profile>
 
+    <profile>
+      <id>travis-cobertura</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>cobertura-maven-plugin</artifactId>
+            <version>${commons.cobertura.version}</version>
+            <configuration>
+              <formats>
+                <format>xml</format>
+              </formats>
+            </configuration>
+          </plugin>
+          <plugin>
+            <groupId>org.eluder.coveralls</groupId>
+            <artifactId>coveralls-maven-plugin</artifactId>
+            <version>${commons.coveralls.version}</version>
+            <configuration>
+              <timestampFormat>${commons.coveralls.timestampFormat}</timestampFormat>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+
+    <profile>
+      <id>travis-jacoco</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>${commons.jacoco.version}</version>
+          </plugin>
+          <plugin>
+            <groupId>org.eluder.coveralls</groupId>
+            <artifactId>coveralls-maven-plugin</artifactId>
+            <version>${commons.coveralls.version}</version>
+            <configuration>
+              <timestampFormat>${commons.coveralls.timestampFormat}</timestampFormat>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+
   </profiles>
 
   <properties>
@@ -1521,6 +1641,8 @@ Version 39:
     <commons.site-plugin.version>3.6</commons.site-plugin.version>
     <commons.jacoco.version>0.7.7.201606060606</commons.jacoco.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
+    <commons.coveralls.version>4.3.0</commons.coveralls.version>
+    <commons.coveralls.timestampFormat>EpochMillis</commons.coveralls.timestampFormat>
     <commons.jdepend.version>2.0</commons.jdepend.version>
     <commons.compiler.version>3.6.0</commons.compiler.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
