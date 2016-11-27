@@ -679,7 +679,6 @@ Version 39:
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-scm-publish-plugin</artifactId>
-        <version>${commons.scm-publish.version}</version>
         <configuration>
           <content>${project.reporting.outputDirectory}</content>
           <pubScmUrl>scm:svn:${commons.scmPubUrl}</pubScmUrl>
