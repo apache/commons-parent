@@ -10,14 +10,14 @@ TBA
 Changes in this version include:
 
 Changes:
-o                   COMMONSSITE-89 - support both clirr and japicmp
+o COMMONSSITE-89 - support both clirr and japicmp
 Clirr report must now be explicitly enabled using src/site/resources/profile.clirr file or -Pclirr option
-o                   maven-source-plugin 3.0.0 -> 3.0.1
-o                   commons.rat.version 0.11 -> 0.12
-o                   maven-javadoc-plugin 2.10.3 -> 2.10.4
-o                   RAT: Exclude Eclipse local files and folders
-o                   Changed ciManagement to Jenkins builds.apache.org
-o                   Update Apache parent: 17 -> 18
+o maven-source-plugin 3.0.0 -> 3.0.1
+o commons.rat.version 0.11 -> 0.12
+o maven-javadoc-plugin 2.10.3 -> 2.10.4
+o RAT: Exclude Eclipse local files and folders
+o Changed ciManagement to Jenkins builds.apache.org
+o Update Apache parent: 17 -> 18
 
 
 Historical list of changes: http://commons.apache.org/commons-parent-pom.htmlchanges-report.html
