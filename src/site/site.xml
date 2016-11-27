@@ -58,6 +58,7 @@
 
   <body>
     <head>
+      <![CDATA[
       <!-- Better display of <source> code sections -->
       <!-- Note: the $relativePath reference is resolved by the template -->
       <link rel="stylesheet" href="$relativePath/css/prettify.css" type="text/css" media="all" />
@@ -67,6 +68,7 @@
               prettyPrint();
           }
       </script>
+      ]]>
     </head>
 
     <!-- N.B. body links are automatically inherited -->
@@ -127,13 +129,15 @@
 
   <!-- inherited -->
   <custom>
-    <!-- @project.name@ will be replaced by the template; if we used ${project.name} it would pick up Commons Parent -->
+    <![CDATA[
+    <!-- @project.name@ will be replaced by the template; if we used ${project.name} it would pick up Commons Parent -->    
     <footer>
       <div class="center">
       Apache Commons, Apache @project.name@, Apache, the Apache feather logo, and the Apache Commons project logos are trademarks of The Apache Software Foundation.
       All other marks mentioned may be trademarks or registered trademarks of their respective owners.
       </div>
     </footer>
+    ]]>
   </custom>
 
 </project>
