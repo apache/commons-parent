@@ -1,7 +1,7 @@
-              Apache Commons Parent 41
+              Apache Commons Parent 42
                   RELEASE NOTES
 
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 41
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 42
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
@@ -10,14 +10,14 @@ TBA
 Changes in this version include:
 
 Changes:
-o COMMONSSITE-89 - support both clirr and japicmp
-Clirr report must now be explicitly enabled using src/site/resources/profile.clirr file or -Pclirr option
-o maven-source-plugin 3.0.0 -> 3.0.1
-o commons.rat.version 0.11 -> 0.12
-o maven-javadoc-plugin 2.10.3 -> 2.10.4
-o RAT: Exclude Eclipse local files and folders
-o Changed ciManagement to Jenkins builds.apache.org
-o Update Apache parent: 17 -> 18
+o Prevent uploading of the source zip/tar.gz
+o maven-site-plugin 3.4 -> 3.6 (for migrating from 3.4 to 3.5.1, see https://maven.apache.org/components/plugins/maven-site-plugin/migrate.html)
+o jacoco-maven-plugin : 0.7.6.201602180812 -> 0.7.7.201606060606
+o commons-build-plugin : 1.6 -> 1.7
+o maven-changes-plugin : 2.12 -> 2.12.1
+o Update japicmp: 0.8.0 -> 0.9.1
+o maven-compiler-plugin : 3.5.1 -> 3.6.0
+o japicmp plugin no longer fail on "mvn site" (it requires target/*jar), use "mvn package site -Pjapicmp" to include its report
 
 
 Historical list of changes: http://commons.apache.org/commons-parent-pom.htmlchanges-report.html
