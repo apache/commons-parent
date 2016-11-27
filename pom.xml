@@ -39,6 +39,7 @@
 <!--
 Version 42:
 
+- maven-changes-plugin 2.12 -> 2.12.1
 - maven-site-plugin 3.4 -> 3.6 (for migrating from 3.4 to 3.5.1, see https://maven.apache.org/components/plugins/maven-site-plugin/migrate.html) 
 - jacoco-maven-plugin : 0.7.6.201602180812 -> 0.7.7.201606060606
 - commons-build-plugin : 1.6 -> 1.7
@@ -1530,7 +1531,7 @@ Version 39:
     <commons.surefire-report.version>2.19.1</commons.surefire-report.version>
     <commons.javadoc.version>2.10.4</commons.javadoc.version>
     <commons.rat.version>0.12</commons.rat.version>
-    <commons.changes.version>2.12</commons.changes.version>
+    <commons.changes.version>2.12.1</commons.changes.version>
     <commons.clirr.version>2.7</commons.clirr.version>
     <commons.japicmp.version>0.9.1</commons.japicmp.version>
     <commons.jxr.version>2.5</commons.jxr.version>
