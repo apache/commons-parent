@@ -22,50 +22,54 @@ mvn deploy
 
 Preparing for release candidate:
 -------------------------------
-Check for updates to plugins and dependencies
-Ensure NOTICE has correct year
-Ensure changes.xml is up to date; generate RELEASE-NOTES using non-SNAPSHOT version:
-mvn changes:announcement-generate -Prelease-notes -Dchanges.version=nn
-Ensure pom.xml header comment agrees with changes for this release
-Commit all changes to SVN
+- Check for updates to plugins and dependencies.
+- Ensure NOTICE has correct year.
+- Ensure changes.xml is up to date; generate RELEASE-NOTES using non-SNAPSHOT version:
+  mvn changes:announcement-generate -Prelease-notes -Dchanges.version=nn
+- Ensure pom.xml header comment agrees with changes for this release
+- Regenerate CONTRIBUTING.md:
+  mvn commons:contributing-md
+- Regenerate README.md:
+  mvn commons:readme-md
+- Commit all changes to SVN
 
 Creating release candidate tag:
 ------------------------------
-Checkout trunk in clean workspace:
-svn co https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk commons-parent-<NN>-RC1
-cd commons-parent-<NN>-RC1
-Edit version in pom.xml to remove SNAPSHOT suffix
-Edit three SCM URLs to point to the future (non-RC) tag:
+- Checkout trunk in clean workspace:
+  svn co https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk commons-parent-<NN>-RC1
+- cd commons-parent-<NN>-RC1
+- Edit version in pom.xml to remove SNAPSHOT suffix
+- Edit three SCM URLs to point to the future (non-RC) tag:
     <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-<NN></connection>
     <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-<NN></developerConnection>
     <url>http://svn.apache.org/viewvc/commons/proper/commons-parent/tags/commons-parent-<NN></url>
-Create tag in SVN from the updated workspace:
-svn cp . https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-<NN>-RC1 -m"Create <NN> RC1 tag"
-(this ensures the trunk never sees the different URLs or released version)
+- Create tag in SVN from the updated workspace:
+  svn cp . https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-<NN>-RC1 -m"Create <NN> RC1 tag"
+  (this ensures the trunk never sees the different URLs or released version)
 
 Test build of tag:
 -----------------
-mvn deploy -Duser.name=ASF-login-name -Prelease -Ptest-deploy
-Check the contents of target/deploy/org/apache/commons/commons-parent/<NN>
- - should contain commons-parent-<NN>.pom, commons-parent-<NN>-site.xml and sigs/hashes
- - also -src.tar.gz, -src.zip and sigs/hashes
+- mvn deploy -Duser.name=ASF-login-name -Prelease -Ptest-deploy
+- Check the contents of target/deploy/org/apache/commons/commons-parent/<NN>
+  - should contain commons-parent-<NN>.pom, commons-parent-<NN>-site.xml and sigs/hashes
+  - also -src.tar.gz, -src.zip and sigs/hashes
 
 Deploy RC to Nexus:
 ------------------
-Set up passwords in settings.xml (https://wiki.apache.org/commons/UsingNexus)
-Same command as above, but omitting -Ptest-deploy profile:
-mvn package deploy -Dassembly.attach=false -Duser.name=ASF-login-name -Prelease
+- Set up passwords in settings.xml (https://wiki.apache.org/commons/UsingNexus)
+- Same command as above, but omitting -Ptest-deploy profile:
+- mvn package deploy -Dassembly.attach=false -Duser.name=ASF-login-name -Prelease
 
 Tidy and close Nexus staging area:
 ---------------------------------
-Login to Nexus: https://repository.apache.org/index.html
-Open "Staging Repositories", find the correct "Open" entry (check Summary tab in bottom panel)
-The message "No CLM data recorded" appears to be benign
-Open the bottom "Content" tab and navigate to the files
-Delete *.asc.md5 and *.asc.sha1 if present
-Checkout https://dist.apache.org/repos/dist/dev/commons/commons-parent
-Download the -src archives, their sigs and hashes, then delete them from Nexus.
-Commit the dist/dev/ folder
+- Login to Nexus: https://repository.apache.org/index.html
+- Open "Staging Repositories", find the correct "Open" entry (check Summary tab in bottom panel)
+- The message "No CLM data recorded" appears to be benign
+- Open the bottom "Content" tab and navigate to the files
+- Delete *.asc.md5 and *.asc.sha1 if present
+- Checkout https://dist.apache.org/repos/dist/dev/commons/commons-parent
+- Download the -src archives, their sigs and hashes, then delete them from Nexus.
+- Commit the dist/dev/ folder
 
 Close the staging area - Description: "Apache Commons Parent <NN> RC1"
 Screen does not auto-refresh - you need to press refresh
