@@ -68,6 +68,13 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">Update japicmp: 0.8.0 -> 0.9.1</action>
             <action type="update">maven-compiler-plugin : 3.5.1 -> 3.6.0</action>
             <action type="update">japicmp plugin no longer fail on "mvn site" (it requires target/*jar), use "mvn package site -Pjapicmp" to include its report</action>
+            <action type="update">japicmp-maven-plugin : 0.8.0 -> 0.9.3</action>
+            <action type="add">new profiles to run coveralls coverage
+            reports via Travis using Jacoco or Cobertura respectively</action>
+            <action type="update">new property
+            commons.japicmp.breakBuildOnBinaryIncompatibleModifications
+            controls the breakBuildOnBinaryIncompatibleModifications
+            setting of japicmp</action>
         </release>
         
         <release version="41" date="2016-08-15" description="Updates plugins and adds source compatibility profiles">
