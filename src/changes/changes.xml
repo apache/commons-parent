@@ -60,7 +60,6 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
         <release version="42" date="TBD" description="TBA">
-            <action type="update">Prevent uploading of the source zip/tar.gz</action>
             <action type="update">maven-site-plugin 3.4 -> 3.6 (for migrating from 3.4 to 3.5.1, see https://maven.apache.org/components/plugins/maven-site-plugin/migrate.html)</action>
             <action type="update">jacoco-maven-plugin : 0.7.6.201602180812 -> 0.7.7.201606060606</action>
             <action type="update">commons-build-plugin : 1.6 -> 1.7</action>
