@@ -43,7 +43,7 @@ Version 43:
 Version 42:
 
 - maven-changes-plugin 2.12 -> 2.12.1
-- maven-site-plugin 3.4 -> 3.6 (for migrating from 3.4 to 3.5.1, see https://maven.apache.org/components/plugins/maven-site-plugin/migrate.html) 
+- maven-site-plugin 3.4 -> 3.6 (for migrating from 3.4 to 3.5.1, see https://maven.apache.org/components/plugins/maven-site-plugin/migrate.html)
 - jacoco-maven-plugin : 0.7.6.201602180812 -> 0.7.7.201606060606
 - commons-build-plugin : 1.6 -> 1.7
 - maven-changes-plugin : 2.12 -> 2.12.1
@@ -611,7 +611,7 @@ Version 39:
         <configuration>
           <!--
             commons.surefire.java is normally empty.
-            It is defined by the java-1.x profiles to change the JVM used by Surefire 
+            It is defined by the java-1.x profiles to change the JVM used by Surefire
           -->
           <jvm>${commons.surefire.java}</jvm>
         </configuration>
@@ -878,7 +878,7 @@ Version 39:
             <!--
                This property should always be defined.
                The intention is to ensure that the profile is always enabled.
-               (activeByDefault only applies if other profiles are not enabled) 
+               (activeByDefault only applies if other profiles are not enabled)
             -->
             <name>user.home</name>
           </property>
@@ -906,10 +906,10 @@ Version 39:
         </build>
       </profile>
 
-      <!-- 
+      <!--
            Runs the Animal Sniffer plugin to check that generated code does not included references
            to methods/classes etc that are not present in the standard Java runtime for the defined target version.
-           To bypass the checks, define "animal.sniffer.skip" as true, or create the file "src/site/resources/profile.noanimal" 
+           To bypass the checks, define "animal.sniffer.skip" as true, or create the file "src/site/resources/profile.noanimal"
       -->
 
       <profile>
@@ -920,7 +920,7 @@ Version 39:
             <missing>src/site/resources/profile.noanimal</missing>
           </file>
         </activation>
-        
+
         <properties>
           <!-- define this as a property to allow command-line override -->
           <animal-sniffer.signature>java${javaTarget.majorVersion}${javaTarget.minorVersion}</animal-sniffer.signature>
@@ -939,7 +939,7 @@ Version 39:
                   <id>checkAPIcompatibility</id>
                   <!-- default is:  <phase>process-classes</phase>  -->
                   <!-- Note: if the plugin is ever enhanced to check test classes
-                       it will presumably need to be bound to process-test-classes instead 
+                       it will presumably need to be bound to process-test-classes instead
                   -->
                   <goals>
                     <goal>check</goal>
@@ -1512,13 +1512,13 @@ Version 39:
 
     <!-- Default configuration for compiler source and target JVM -->
     <!-- Do NOT change this; it must remain as 1.3 -->
-    <!-- 
+    <!--
         It's important that child POMs don't need to change when the parent POM is updated.
         At the time when these properties were introduced, the default Java version was 1.3.
         Thus components that failed to define the version would not be affected by updates
         to the Commons Parent or its parent the Apache pom.
         Of course most if not all components now define the properties.
-        However it's still important to keep the properties as they effectively 
+        However it's still important to keep the properties as they effectively
         force child poms to define the Java version they require.
      -->
     <maven.compiler.source>1.3</maven.compiler.source>
@@ -1542,21 +1542,21 @@ Version 39:
     <commons.jxr.version>2.5</commons.jxr.version>
     <commons.project-info.version>2.9</commons.project-info.version>
     <commons.wagon-ssh.version>2.10</commons.wagon-ssh.version>
-    <!-- 
+    <!--
     Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
 
     http://maven.apache.org/plugins/maven-site-plugin/migrate.html
 
     In particular, adding CDATA to header and footer sections is not backwards compatible.
-    I.e. these have to be updated at the same time. 
+    I.e. these have to be updated at the same time.
 
     Also it causes the following errors:
 
-    [ERROR] Failed to execute goal org.apache.maven.plugins:maven-site-plugin:3.5.1:site (default-site) on project commons-parent: 
-    Execution default-site of goal org.apache.maven.plugins:maven-site-plugin:3.5.1:site failed: 
+    [ERROR] Failed to execute goal org.apache.maven.plugins:maven-site-plugin:3.5.1:site (default-site) on project commons-parent:
+    Execution default-site of goal org.apache.maven.plugins:maven-site-plugin:3.5.1:site failed:
     A required class was missing while executing org.apache.maven.plugins:maven-site-plugin:3.5.1:site: org/apache/maven/doxia/sink/impl/XhtmlBaseSink
 
-    This is because Apache POM 17 forces an older version of Doxia core:    
+    This is because Apache POM 17 forces an older version of Doxia core:
     https://mail-archives.apache.org/mod_mbox/maven-users/201602.mbox/%3C2337255.xU7aS9G1qr@herve-desktop%3E
 
     The same error applies when running with version 3.5.
@@ -1683,7 +1683,7 @@ Version 39:
     <!-- allow japicmp's breakBuildOnBinaryIncompatibleModifications
          to be overridden, plugin's default is false -->
     <commons.japicmp.breakBuildOnBinaryIncompatibleModifications>true</commons.japicmp.breakBuildOnBinaryIncompatibleModifications>
-    
+
     <sonar.host.url>https://analysis.apache.org/</sonar.host.url>
 
   </properties>
