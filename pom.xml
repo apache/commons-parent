@@ -39,6 +39,7 @@
 <!--
 Version 43:
 maven-compiler-plugin 3.6.1 -> 3.6.2
+jacoco-maven-plugin 0.7.7.201606060606 -> 0.7.9
 -->
 <!--
 Version 42:
@@ -1578,7 +1579,7 @@ Version 39:
 
      -->
     <commons.site-plugin.version>3.6</commons.site-plugin.version>
-    <commons.jacoco.version>0.7.7.201606060606</commons.jacoco.version>
+    <commons.jacoco.version>0.7.9</commons.jacoco.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
     <commons.coveralls.version>4.3.0</commons.coveralls.version>
     <commons.coveralls.timestampFormat>EpochMillis</commons.coveralls.timestampFormat>
