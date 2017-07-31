@@ -41,6 +41,7 @@ Version 43:
 - maven-compiler-plugin 3.6.1 -> 3.6.2
 - jacoco-maven-plugin 0.7.7.201606060606 -> 0.7.9
 - maven-javadoc-plugin 2.10.4 -> 3.0.0-M1 (for Java 9 compatibility)
+- Update japicmp: 0.9.3 -> 0.10.0
 -->
 <!--
 Version 42:
@@ -1541,7 +1542,7 @@ Version 39:
     <commons.rat.version>0.12</commons.rat.version>
     <commons.changes.version>2.12.1</commons.changes.version>
     <commons.clirr.version>2.7</commons.clirr.version>
-    <commons.japicmp.version>0.9.3</commons.japicmp.version>
+    <commons.japicmp.version>0.10.0</commons.japicmp.version>
     <commons.jxr.version>2.5</commons.jxr.version>
     <commons.project-info.version>2.9</commons.project-info.version>
     <commons.wagon-ssh.version>2.10</commons.wagon-ssh.version>
