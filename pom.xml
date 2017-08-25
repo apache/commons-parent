@@ -44,6 +44,7 @@ Version 43:
 - Update japicmp 0.9.3 -> 0.10.0
 - animal-sniffer-maven-plugin 1.15 -> 1.16
 - commons.findbugs.version 3.0.3 -> 3.0.5 (Java 7 profile)
+- commons.clirr.version 2.7 -> 2.8
 -->
 <!--
 Version 42:
@@ -1543,7 +1544,7 @@ Version 39:
     <commons.javadoc.version>3.0.0-M1</commons.javadoc.version>
     <commons.rat.version>0.12</commons.rat.version>
     <commons.changes.version>2.12.1</commons.changes.version>
-    <commons.clirr.version>2.7</commons.clirr.version>
+    <commons.clirr.version>2.8</commons.clirr.version>
     <commons.japicmp.version>0.10.0</commons.japicmp.version>
     <commons.jxr.version>2.5</commons.jxr.version>
     <commons.project-info.version>2.9</commons.project-info.version>
