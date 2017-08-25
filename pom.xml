@@ -41,8 +41,9 @@ Version 43:
 - maven-compiler-plugin 3.6.1 -> 3.6.2
 - jacoco-maven-plugin 0.7.7.201606060606 -> 0.7.9
 - maven-javadoc-plugin 2.10.4 -> 3.0.0-M1 (for Java 9 compatibility)
-- Update japicmp: 0.9.3 -> 0.10.0
-- animal-sniffer-maven-plugin : 1.15 -> 1.16
+- Update japicmp 0.9.3 -> 0.10.0
+- animal-sniffer-maven-plugin 1.15 -> 1.16
+- commons.findbugs.version 3.0.3 -> 3.0.5 (Java 7 profile)
 -->
 <!--
 Version 42:
@@ -1433,7 +1434,7 @@ Version 39:
         <jdk>[1.7,)</jdk>
       </activation>
       <properties>
-        <commons.findbugs.version>3.0.3</commons.findbugs.version>
+        <commons.findbugs.version>3.0.5</commons.findbugs.version>
         <!-- Since 1.13 running maven with Java7 is required, 1.14 also supports Java8 class files (ASM 5.0) -->
         <commons.animal-sniffer.version>1.16</commons.animal-sniffer.version>
         <!-- Requires Java 7+ -->
