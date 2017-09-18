@@ -46,6 +46,8 @@ Version 43:
 - animal-sniffer-maven-plugin 1.15 -> 1.16
 - commons.findbugs.version 3.0.3 -> 3.0.5 (Java 7 profile)
 - commons.clirr.version 2.7 -> 2.8
+- maven-surefire-plugin 2.19.1 -> 2.20.1
+- Add maven-failsafe-plugin 2.20.1 (to along with surefire.)
 -->
 <!--
 Version 42:
@@ -389,6 +391,11 @@ Version 39:
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${commons.surefire.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-failsafe-plugin</artifactId>
+          <version>${commons.failsafe.version}</version>
         </plugin>
         <!-- Other plugins, alpha order by groupId and artifactId -->
         <plugin>
@@ -1540,8 +1547,9 @@ Version 39:
 
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
     <commons.build-plugin.version>1.7</commons.build-plugin.version>
-    <commons.surefire.version>2.19.1</commons.surefire.version>
-    <commons.surefire-report.version>2.19.1</commons.surefire-report.version>
+    <commons.surefire.version>2.20.1</commons.surefire.version>
+    <commons.failsafe.version>2.20.1</commons.failsafe.version>
+    <commons.surefire-report.version>2.20.1</commons.surefire-report.version>
     <commons.javadoc.version>3.0.0-M1</commons.javadoc.version>
     <commons.rat.version>0.12</commons.rat.version>
     <commons.changes.version>2.12.1</commons.changes.version>
