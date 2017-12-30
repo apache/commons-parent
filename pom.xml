@@ -48,6 +48,8 @@ Version 43:
 - commons.clirr.version 2.7 -> 2.8
 - maven-surefire-plugin 2.19.1 -> 2.20.1
 - Add maven-failsafe-plugin 2.20.1 (to along with surefire.)
+- felix:maven-bundle-plugin : 3.0.1 -> 3.4.0
+
 -->
 <!--
 Version 42:
@@ -1447,7 +1449,7 @@ Version 39:
         <!-- Since 1.13 running maven with Java7 is required, 1.14 also supports Java8 class files (ASM 5.0) -->
         <commons.animal-sniffer.version>1.16</commons.animal-sniffer.version>
         <!-- Requires Java 7+ -->
-        <commons.felix.version>3.0.1</commons.felix.version>
+        <commons.felix.version>3.4.0</commons.felix.version>
         <!-- Requires Java 7+ -->
         <commons.build-helper.version>1.10</commons.build-helper.version>
       </properties>
