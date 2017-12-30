@@ -52,6 +52,7 @@ Version 43:
 - versions-maven-plugin 2.3 -> 2.5
 - japicmp-maven-plugin 0.10.0 -> 0.11.0
 - build-helper-maven-plugin 1.10 -> 3.0.0 (requires Maven 3 and Java 7.)
+- wagon-ssh 2.10 -> 3.0.0
 
 -->
 <!--
@@ -1555,7 +1556,7 @@ Version 39:
     <commons.japicmp.version>0.11.0</commons.japicmp.version>
     <commons.jxr.version>2.5</commons.jxr.version>
     <commons.project-info.version>2.9</commons.project-info.version>
-    <commons.wagon-ssh.version>2.10</commons.wagon-ssh.version>
+    <commons.wagon-ssh.version>3.0.0</commons.wagon-ssh.version>
     <!--
     Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
 
