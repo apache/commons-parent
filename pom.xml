@@ -1448,8 +1448,6 @@ Version 39:
         <jdk>[1.7,)</jdk>
       </activation>
       <properties>
-        <!-- Since 1.13 running maven with Java7 is required, 1.14 also supports Java8 class files (ASM 5.0) -->
-        <commons.animal-sniffer.version>1.16</commons.animal-sniffer.version>
       </properties>
     </profile>
 
@@ -1602,10 +1600,8 @@ Version 39:
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
     <commons.findbugs.version>3.0.5</commons.findbugs.version>
     <commons.felix.version>3.4.0</commons.felix.version>
-    <!-- later versions require Java 7+ -->
     <commons.build-helper.version>3.0.0</commons.build-helper.version>
-    <!-- plugin versions 1.12 and 1.13 currently require Java 7 -->
-    <commons.animal-sniffer.version>1.11</commons.animal-sniffer.version>
+    <commons.animal-sniffer.version>1.16</commons.animal-sniffer.version>
     <!--  Almost all signatures use version 1.0. Allow override just in case -->
     <commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
 
