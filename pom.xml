@@ -1453,8 +1453,6 @@ Version 39:
         <commons.animal-sniffer.version>1.16</commons.animal-sniffer.version>
         <!-- Requires Java 7+ -->
         <commons.felix.version>3.4.0</commons.felix.version>
-        <!-- Requires Java 7+ -->
-        <commons.build-helper.version>3.0.0</commons.build-helper.version>
       </properties>
     </profile>
 
@@ -1609,7 +1607,7 @@ Version 39:
     <!-- later versions require Java 7+ -->
     <commons.felix.version>2.5.3</commons.felix.version>
     <!-- later versions require Java 7+ -->
-    <commons.build-helper.version>1.9.1</commons.build-helper.version>
+    <commons.build-helper.version>3.0.0</commons.build-helper.version>
     <!-- plugin versions 1.12 and 1.13 currently require Java 7 -->
     <commons.animal-sniffer.version>1.11</commons.animal-sniffer.version>
     <!--  Almost all signatures use version 1.0. Allow override just in case -->
