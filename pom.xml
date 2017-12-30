@@ -51,6 +51,7 @@ Version 43:
 - felix:maven-bundle-plugin 3.0.1 -> 3.4.0
 - versions-maven-plugin 2.3 -> 2.5
 - japicmp-maven-plugin 0.10.0 -> 0.11.0
+- build-helper-maven-plugin 1.10 -> 3.0.0 (requires Maven 3.)
 
 -->
 <!--
@@ -1453,7 +1454,7 @@ Version 39:
         <!-- Requires Java 7+ -->
         <commons.felix.version>3.4.0</commons.felix.version>
         <!-- Requires Java 7+ -->
-        <commons.build-helper.version>1.10</commons.build-helper.version>
+        <commons.build-helper.version>3.0.0</commons.build-helper.version>
       </properties>
     </profile>
 
