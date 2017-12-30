@@ -44,7 +44,7 @@ Version 43:
 - maven-javadoc-plugin 2.10.4 -> 3.0.0 (Java 9 compatibility)
 - Update japicmp 0.9.3 -> 0.10.0
 - animal-sniffer-maven-plugin 1.15 -> 1.16
-- commons.findbugs.version 3.0.3 -> 3.0.5 (Java 7 profile)
+- commons.findbugs.version 3.0.3 -> 3.0.5 (requires Java 7)
 - commons.clirr.version 2.7 -> 2.8
 - maven-surefire-plugin 2.19.1 -> 2.20.1
 - Add maven-failsafe-plugin 2.20.1 (to along with surefire.)
@@ -1448,7 +1448,6 @@ Version 39:
         <jdk>[1.7,)</jdk>
       </activation>
       <properties>
-        <commons.findbugs.version>3.0.5</commons.findbugs.version>
         <!-- Since 1.13 running maven with Java7 is required, 1.14 also supports Java8 class files (ASM 5.0) -->
         <commons.animal-sniffer.version>1.16</commons.animal-sniffer.version>
       </properties>
@@ -1601,7 +1600,7 @@ Version 39:
     <commons.jdepend.version>2.0</commons.jdepend.version>
     <commons.compiler.version>3.7.0</commons.compiler.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
-    <commons.findbugs.version>2.5.5</commons.findbugs.version>
+    <commons.findbugs.version>3.0.5</commons.findbugs.version>
     <commons.felix.version>3.4.0</commons.felix.version>
     <!-- later versions require Java 7+ -->
     <commons.build-helper.version>3.0.0</commons.build-helper.version>
