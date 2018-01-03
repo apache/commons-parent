@@ -38,6 +38,8 @@
 
 <!--
 Version 43:
+
+- build artifacts -test.jar, -sources.jar and -test-sources.jar always, not only at release time
 - maven-compiler-plugin 3.6.1 -> 3.6.2
 - maven-compiler-plugin 3.6.2 -> 3.7.0
 - jacoco-maven-plugin 0.7.7.201606060606 -> 0.7.9
@@ -609,6 +611,17 @@ Version 39:
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>test-jar</goal>
+            </goals>
+            <configuration>
+              <!-- Avoids an error when releasing the parent pom -->
+              <skipIfEmpty>true</skipIfEmpty>
+            </configuration>
+          </execution>
+        </executions>
         <configuration>
           <archive>
             <manifestFile>${commons.manifestfile}</manifestFile>
@@ -626,6 +639,18 @@ Version 39:
             </manifestEntries>
           </archive>
         </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>create-source-jar</id>
+            <goals>
+              <goal>jar-no-fork</goal>
+              <goal>test-jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -887,6 +912,40 @@ Version 39:
   </reporting>
 
   <profiles>
+    <profile>
+      <id>svn</id>
+      <activation>
+        <file>
+          <exists>.svn</exists>
+        </file>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>buildnumber-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <phase>validate</phase>
+                <goals>
+                  <goal>create</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <!-- Use committed revision so it does not change every time svn update is run -->
+              <useLastCommittedRevision>true</useLastCommittedRevision>
+              <!-- default revision number if unavailable -->
+              <revisionOnScmFailure>??????</revisionOnScmFailure>
+              <!-- svnjava works even if an svn command-line client is not on the path -->
+              <providerImplementations>
+                <svn>javasvn</svn>
+              </providerImplementations>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
 
       <profile>
         <!--
@@ -1117,32 +1176,6 @@ Version 39:
             <configuration>
               <createChecksum>true</createChecksum>
             </configuration>
-          </plugin>
-          <plugin>
-            <artifactId>maven-source-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>create-source-jar</id>
-                <goals>
-                  <goal>jar</goal>
-                  <goal>test-jar</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-          <plugin>
-            <artifactId>maven-jar-plugin</artifactId>
-            <executions>
-              <execution>
-                <goals>
-                  <goal>test-jar</goal>
-                </goals>
-                <configuration>
-                  <!-- Avoids an error when releasing the parent pom -->
-                  <skipIfEmpty>true</skipIfEmpty>
-                </configuration>
-              </execution>
-            </executions>
           </plugin>
           <plugin>
             <artifactId>maven-release-plugin</artifactId>
