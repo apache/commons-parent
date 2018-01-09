@@ -38,6 +38,9 @@
 
 <!--
 Version 44:
+
+- felix:maven-bundle-plugin 3.4.0 -> 3.5.0.
+
 -->
 
 <!--
@@ -1638,7 +1641,7 @@ Version 39:
     <commons.compiler.version>3.7.0</commons.compiler.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
     <commons.findbugs.version>3.0.5</commons.findbugs.version>
-    <commons.felix.version>3.4.0</commons.felix.version>
+    <commons.felix.version>3.5.0</commons.felix.version>
     <commons.build-helper.version>3.0.0</commons.build-helper.version>
     <commons.animal-sniffer.version>1.16</commons.animal-sniffer.version>
     <!--  Almost all signatures use version 1.0. Allow override just in case -->
