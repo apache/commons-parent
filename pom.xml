@@ -39,6 +39,7 @@
 <!--
 Version 44:
 
+- new profile module-name to add 'Automatic-Module-Name' entry to the manifest
 - felix:maven-bundle-plugin 3.4.0 -> 3.5.0.
 - build artifacts -test.jar, -sources.jar and -test-sources.jar always, not only at release time
 
@@ -730,6 +731,7 @@ Version 39:
             <exclude>.pmd</exclude>
             <exclude>src/site/resources/download_*.cgi</exclude>
             <exclude>src/site/resources/profile.*</exclude>
+            <exclude>profile.*</exclude>
             <!-- Exclude Eclipse local files and folders -->
             <exclude>maven-eclipse.xml</exclude>
             <exclude>.externalToolBuilders/**</exclude>
@@ -904,6 +906,7 @@ Version 39:
             <exclude>.pmd</exclude>
             <exclude>src/site/resources/download_*.cgi</exclude>
             <exclude>src/site/resources/profile.*</exclude>
+            <exclude>profile.*</exclude>
             <!-- Exclude Eclipse local files and folders -->
             <exclude>maven-eclipse.xml</exclude>
             <exclude>.externalToolBuilders/**</exclude>
@@ -948,6 +951,35 @@ Version 39:
               <providerImplementations>
                 <svn>javasvn</svn>
               </providerImplementations>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+
+    <profile>
+      <!--
+        Add an automatic module name to the manifest if the file
+        'profile.module-name' exists. The name must be provided in the property
+        'commons.module.name'.
+      -->
+      <id>module-name</id>
+      <activation>
+        <file>
+          <exists>profile.module-name</exists>
+        </file>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <configuration>
+              <archive combine.children="append">
+                <manifestEntries>
+                  <Automatic-Module-Name>${commons.module.name}</Automatic-Module-Name>
+                </manifestEntries>
+              </archive>
             </configuration>
           </plugin>
         </plugins>
