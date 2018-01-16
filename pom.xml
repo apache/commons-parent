@@ -42,6 +42,7 @@ Version 44:
 - new profile module-name to add 'Automatic-Module-Name' entry to the manifest
 - felix:maven-bundle-plugin 3.4.0 -> 3.5.0.
 - build artifacts -test.jar, -sources.jar and -test-sources.jar always, not only at release time
+- maven-enforcer-plugin set version to 3.0.0-M1 and update Maven requirement from 3.0.0 to 3.0.5 (the latest 3.0.x.)
 
 -->
 
@@ -599,6 +600,7 @@ Version 39:
         <inherited>true</inherited>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
+        <version>3.0.0-M1</version>
         <executions>
           <execution>
             <id>enforce-maven-3</id>
@@ -608,8 +610,11 @@ Version 39:
             <configuration>
               <rules>
                 <requireMavenVersion>
-                  <version>3.0.0</version>
+                  <version>3.0.5</version>
                 </requireMavenVersion>
+                <requireJavaVersion>
+                  <version>${maven.compiler.target}</version>
+                </requireJavaVersion>
               </rules>
               <fail>true</fail>
             </configuration>
