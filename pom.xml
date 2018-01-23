@@ -17,7 +17,8 @@
    limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.apache</groupId>
@@ -32,109 +33,109 @@
   <url>http://commons.apache.org/commons-parent-pom.html</url>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
   <issueManagement>
-      <system>jira</system>
-      <url>http://issues.apache.org/jira/browse/COMMONSSITE</url>
+    <system>jira</system>
+    <url>http://issues.apache.org/jira/browse/COMMONSSITE</url>
   </issueManagement>
 
-<!--
-Version 44:
+  <!--
+    Version 44:
 
-- new profile module-name to add 'Automatic-Module-Name' entry to the manifest
-- felix:maven-bundle-plugin 3.4.0 -> 3.5.0.
-- build artifacts -test.jar, -sources.jar and -test-sources.jar always, not only at release time
-- maven-enforcer-plugin set version to 3.0.0-M1 and update Maven requirement from 3.0.0 to 3.0.5 (the latest 3.0.x.)
-- jacoco-maven-plugin 0.7.9 -> 0.8.0.
+    - new profile module-name to add 'Automatic-Module-Name' entry to the manifest
+    - felix:maven-bundle-plugin 3.4.0 -> 3.5.0.
+    - build artifacts -test.jar, -sources.jar and -test-sources.jar always, not only at release time
+    - maven-enforcer-plugin set version to 3.0.0-M1 and update Maven requirement from 3.0.0 to 3.0.5 (the latest 3.0.x.)
+    - jacoco-maven-plugin 0.7.9 -> 0.8.0.
 
--->
+  -->
 
-<!--
-Version 43:
+  <!--
+    Version 43:
 
-- maven-compiler-plugin 3.6.1 -> 3.6.2
-- maven-compiler-plugin 3.6.2 -> 3.7.0
-- jacoco-maven-plugin 0.7.7.201606060606 -> 0.7.9
-- maven-javadoc-plugin 2.10.4 -> 3.0.0 (Java 9 compatibility)
-- Update japicmp 0.9.3 -> 0.10.0
-- animal-sniffer-maven-plugin 1.15 -> 1.16
-- commons.findbugs.version 3.0.3 -> 3.0.5 (requires Java 7)
-- commons.clirr.version 2.7 -> 2.8
-- maven-surefire-plugin 2.19.1 -> 2.20.1
-- Add maven-failsafe-plugin 2.20.1 (to along with surefire.)
-- felix:maven-bundle-plugin 3.0.1 -> 3.4.0 (requires Java 7.
-- versions-maven-plugin 2.3 -> 2.5
-- japicmp-maven-plugin 0.10.0 -> 0.11.0
-- build-helper-maven-plugin 1.10 -> 3.0.0 (requires Maven 3 and Java 7.)
-- wagon-ssh 2.10 -> 3.0.0
-- maven-site-plugin 3.6 -> 3.7 (fixes Java 9 builds; for migrating from 3.4 to 3.5.1, see https://maven.apache.org/components/plugins/maven-site-plugin/migrate.html)
+    - maven-compiler-plugin 3.6.1 -> 3.6.2
+    - maven-compiler-plugin 3.6.2 -> 3.7.0
+    - jacoco-maven-plugin 0.7.7.201606060606 -> 0.7.9
+    - maven-javadoc-plugin 2.10.4 -> 3.0.0 (Java 9 compatibility)
+    - Update japicmp 0.9.3 -> 0.10.0
+    - animal-sniffer-maven-plugin 1.15 -> 1.16
+    - commons.findbugs.version 3.0.3 -> 3.0.5 (requires Java 7)
+    - commons.clirr.version 2.7 -> 2.8
+    - maven-surefire-plugin 2.19.1 -> 2.20.1
+    - Add maven-failsafe-plugin 2.20.1 (to along with surefire.)
+    - felix:maven-bundle-plugin 3.0.1 -> 3.4.0 (requires Java 7.
+    - versions-maven-plugin 2.3 -> 2.5
+    - japicmp-maven-plugin 0.10.0 -> 0.11.0
+    - build-helper-maven-plugin 1.10 -> 3.0.0 (requires Maven 3 and Java 7.)
+    - wagon-ssh 2.10 -> 3.0.0
+    - maven-site-plugin 3.6 -> 3.7 (fixes Java 9 builds; for migrating from 3.4 to 3.5.1, see https://maven.apache.org/components/plugins/maven-site-plugin/migrate.html)
 
--->
-<!--
-Version 42:
+  -->
+  <!--
+    Version 42:
 
-- maven-changes-plugin 2.12 -> 2.12.1
-- maven-site-plugin 3.4 -> 3.6 (for migrating from 3.4 to 3.5.1, see https://maven.apache.org/components/plugins/maven-site-plugin/migrate.html)
-- jacoco-maven-plugin : 0.7.6.201602180812 -> 0.7.7.201606060606
-- commons-build-plugin : 1.6 -> 1.7
-- maven-changes-plugin : 2.12 -> 2.12.1
-- Update japicmp: 0.8.0 -> 0.9.3
-- maven-compiler-plugin : 3.5.1 -> 3.6.0
-- new profiles travis-cobertura and travis-jacoco for running
-  coveralls coverage reports via Travis CI
-- japicmp plugin no longer fail on "mvn site" (it requires
-  target/*jar), use "mvn package site -Pjapicmp" to include its report
-- commons.japicmp.breakBuildOnBinaryIncompatibleModifications can be
-  used to override the breakBuildOnBinaryIncompatibleModifications
-  setting of the japicmp plugin (default is true)
--->
-<!--
-Version 41:
+    - maven-changes-plugin 2.12 -> 2.12.1
+    - maven-site-plugin 3.4 -> 3.6 (for migrating from 3.4 to 3.5.1, see https://maven.apache.org/components/plugins/maven-site-plugin/migrate.html)
+    - jacoco-maven-plugin : 0.7.6.201602180812 -> 0.7.7.201606060606
+    - commons-build-plugin : 1.6 -> 1.7
+    - maven-changes-plugin : 2.12 -> 2.12.1
+    - Update japicmp: 0.8.0 -> 0.9.3
+    - maven-compiler-plugin : 3.5.1 -> 3.6.0
+    - new profiles travis-cobertura and travis-jacoco for running
+    coveralls coverage reports via Travis CI
+    - japicmp plugin no longer fail on "mvn site" (it requires
+    target/*jar), use "mvn package site -Pjapicmp" to include its report
+    - commons.japicmp.breakBuildOnBinaryIncompatibleModifications can be
+    used to override the breakBuildOnBinaryIncompatibleModifications
+    setting of the japicmp plugin (default is true)
+  -->
+  <!--
+    Version 41:
 
-- Update Apache parent: 17 -> 18
-- Changed ciManagement to Jenkins builds.apache.org
-- RAT: Exclude Eclipse local files and folders
-- maven-javadoc-plugin 2.10.3 -> 2.10.4
-- commons.rat.version 0.11 -> 0.12
-- maven-source-plugin 3.0.0 -> 3.0.1
-- versions-maven-plugin 2.3
-- new profile clirr (add src/site/resources/profile.clirr to enable, clirr report no longer automatic)
-- new profile japicmp (add src/site/resources/profile.japicmp to enable)
+    - Update Apache parent: 17 -> 18
+    - Changed ciManagement to Jenkins builds.apache.org
+    - RAT: Exclude Eclipse local files and folders
+    - maven-javadoc-plugin 2.10.3 -> 2.10.4
+    - commons.rat.version 0.11 -> 0.12
+    - maven-source-plugin 3.0.0 -> 3.0.1
+    - versions-maven-plugin 2.3
+    - new profile clirr (add src/site/resources/profile.clirr to enable, clirr report no longer automatic)
+    - new profile japicmp (add src/site/resources/profile.japicmp to enable)
 
-Version 40:
+    Version 40:
 
-- Update Apache parent: 16 -> 17
-- Require minimum of Maven 3.0.5
-- maven-release-plugin 2.5.2 -> 2.5.3
-- buildnumber-maven-plugin 1.3 -> 1.4 (supports git SCM now)
-- maven-assembly-plugin 2.5.5 -> 2.6
-- maven-surefire-plugin 2.18.1 -> 2.19.1
-- maven-compiler-plugin : 3.3 -> 3.5.1
-- maven-changes-plugin : 2.11 -> 2.12
-- commons-build-plugin : 1.4 -> 1.6
-- COMMONSSITE-87 - ensure assembly plugin runs after all package phase plugins
-- felix:maven-bundle-plugin : 2.5.3 -> 3.0.1
-- maven-enforcer-plugin : 1.3.1 -> 1.4.1
-- maven-project-info-reports-plugin : 2.8 -> 2.9
-- maven-source-plugin : 2.4 -> 3.0.0
-- animal-sniffer-maven-plugin : 1.11 -> 1.15
-- build-helper-maven-plugin : 1.9.1 -> 1.10
-- clirr-maven-plugin : 2.6.1 -> 2.7
-- jacoco-maven-plugin : 0.7.5.201505241946 -> 0.7.6.201602180812
-- maven-clean-plugin : 2.6.1 -> 3.0.0
-- commons.findbugs.version : 3.0.0 -> 3.0.3
-- wagon-ssh : 2.8 -> 2.10
+    - Update Apache parent: 16 -> 17
+    - Require minimum of Maven 3.0.5
+    - maven-release-plugin 2.5.2 -> 2.5.3
+    - buildnumber-maven-plugin 1.3 -> 1.4 (supports git SCM now)
+    - maven-assembly-plugin 2.5.5 -> 2.6
+    - maven-surefire-plugin 2.18.1 -> 2.19.1
+    - maven-compiler-plugin : 3.3 -> 3.5.1
+    - maven-changes-plugin : 2.11 -> 2.12
+    - commons-build-plugin : 1.4 -> 1.6
+    - COMMONSSITE-87 - ensure assembly plugin runs after all package phase plugins
+    - felix:maven-bundle-plugin : 2.5.3 -> 3.0.1
+    - maven-enforcer-plugin : 1.3.1 -> 1.4.1
+    - maven-project-info-reports-plugin : 2.8 -> 2.9
+    - maven-source-plugin : 2.4 -> 3.0.0
+    - animal-sniffer-maven-plugin : 1.11 -> 1.15
+    - build-helper-maven-plugin : 1.9.1 -> 1.10
+    - clirr-maven-plugin : 2.6.1 -> 2.7
+    - jacoco-maven-plugin : 0.7.5.201505241946 -> 0.7.6.201602180812
+    - maven-clean-plugin : 2.6.1 -> 3.0.0
+    - commons.findbugs.version : 3.0.0 -> 3.0.3
+    - wagon-ssh : 2.8 -> 2.10
 
-Version 39:
+    Version 39:
 
-- Update Compiler Plugin : 3.2 -> 3.3
-- Update Build Helper Plugin : 1.8 -> 1.9.1
-- Update Release Plugin : 2.5.1 -> 2.5.2
-- Update Javadoc Plugin : 2.10.2 -> 2.10.3
-- Update Jacoco 0.7.4.201502262128 -> 0.7.5.201505241946
-- Move assembly to standard location. src/main => src/assembly/src.xml
-- Update animal-sniffer Plugin : 1.13 -> 1.14 (for java 7+ builds) supporting Java8
-- dropped the trunks-proper profile
+    - Update Compiler Plugin : 3.2 -> 3.3
+    - Update Build Helper Plugin : 1.8 -> 1.9.1
+    - Update Release Plugin : 2.5.1 -> 2.5.2
+    - Update Javadoc Plugin : 2.10.2 -> 2.10.3
+    - Update Jacoco 0.7.4.201502262128 -> 0.7.5.201505241946
+    - Move assembly to standard location. src/main => src/assembly/src.xml
+    - Update animal-sniffer Plugin : 1.13 -> 1.14 (for java 7+ builds) supporting Java8
+    - dropped the trunks-proper profile
 
- -->
+  -->
 
   <!-- Maven versions plugin reports an error if this is omitted -->
   <prerequisites>
@@ -154,11 +155,11 @@ Version 39:
     Starting with version 22, the RAT plugin has changed Maven group and id, so any existing configuration
     needs to be updated.
     To fix component POMs, please change any occurrences of:
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>rat-maven-plugin</artifactId>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>rat-maven-plugin</artifactId>
     to the new values:
-        <groupId>org.apache.rat</groupId>
-        <artifactId>apache-rat-plugin</artifactId>
+    <groupId>org.apache.rat</groupId>
+    <artifactId>apache-rat-plugin</artifactId>
 
     Site deployment
     ===============
@@ -167,11 +168,11 @@ Version 39:
     The following should be added to the component POM:
 
     <distributionManagement>
-      <site>
-        <id>commons.site</id>
-        <name>Apache Commons Site SVN</name>
-        <url>scm:svn:${commons.scmPubUrl}</url>
-      </site>
+    <site>
+    <id>commons.site</id>
+    <name>Apache Commons Site SVN</name>
+    <url>scm:svn:${commons.scmPubUrl}</url>
+    </site>
     </distributionManagement>
 
     Alternatively you can map the component's existing site id to the
@@ -208,10 +209,10 @@ Version 39:
   <mailingLists>
     <!-- N.B. commons-site now uses the Apache POM so has its own copy of the mailing list definitions -->
     <!--
-        Components should normally override the default mailing list report by using the comnand
-        mvn commons:mail-page
-        This generates the file src/site/xdoc/mail-lists.xml which when processed will replace the PIR version.
-     -->
+      Components should normally override the default mailing list report by using the comnand
+      mvn commons:mail-page
+      This generates the file src/site/xdoc/mail-lists.xml which when processed will replace the PIR version.
+    -->
     <!-- Changes to this list should be synchronised with the commons build plugin -->
     <mailingList>
       <name>Commons User List</name>
@@ -275,7 +276,7 @@ Version 39:
   </mailingLists>
   <build>
     <!-- TODO find a better way to add N&L files to jars and test jars
-         See also maven-remote-resources-plugin configuration below.
+      See also maven-remote-resources-plugin configuration below.
     -->
     <resources>
       <!-- This is the default setting from the super-pom -->
@@ -320,9 +321,9 @@ Version 39:
             <target>${maven.compiler.target}</target>
             <encoding>${commons.encoding}</encoding>
             <!--
-               fork is set true by the java-1.x profiles
-               This allows the use of a different version of the compiler from the
-               JDK being used to run Maven
+              fork is set true by the java-1.x profiles
+              This allows the use of a different version of the compiler from the
+              JDK being used to run Maven
             -->
             <fork>${commons.compiler.fork}</fork>
             <!-- the following are only needed if fork is true -->
@@ -360,10 +361,10 @@ Version 39:
           <artifactId>maven-remote-resources-plugin</artifactId>
           <configuration>
             <!--
-                Apache parent POM automatically adds "LICENSE" and "NOTICE" files
-                to jars - duplicating the "LICENSE.txt" and "NOTICE.txt"
-                files that components already have.
-             -->
+              Apache parent POM automatically adds "LICENSE" and "NOTICE" files
+              to jars - duplicating the "LICENSE.txt" and "NOTICE.txt"
+              files that components already have.
+            -->
             <skip>true</skip>
           </configuration>
         </plugin>
@@ -378,7 +379,7 @@ Version 39:
           </configuration>
           <dependencies>
             <dependency>
-                <!-- add support for ssh/scp -->
+              <!-- add support for ssh/scp -->
               <groupId>org.apache.maven.wagon</groupId>
               <artifactId>wagon-ssh</artifactId>
               <version>${commons.wagon-ssh.version}</version>
@@ -427,7 +428,7 @@ Version 39:
               <breakBuildOnBinaryIncompatibleModifications>${commons.japicmp.breakBuildOnBinaryIncompatibleModifications}</breakBuildOnBinaryIncompatibleModifications>
               <!-- skip japicmp on "mvn site" - use "mvn package site" to include report -->
               <ignoreMissingNewVersion />
-          <reportOnlyFilename>true</reportOnlyFilename>
+              <reportOnlyFilename>true</reportOnlyFilename>
             </parameter>
           </configuration>
         </plugin>
@@ -479,11 +480,11 @@ Version 39:
           <artifactId>jacoco-maven-plugin</artifactId>
           <version>${commons.jacoco.version}</version>
           <!-- Note that since JaCoCo relies on an agent to perform tests,
-               it changes the surefire arguments line. If a component also
-               needs to change the argument line of maven-surefire-plugin,
-               then it must add ${argLine} property (which is set by JaCoCo)
-               in the argLine configuration element of maven-surefire-plugin
-               to preserve JaCoCo settings. -->
+            it changes the surefire arguments line. If a component also
+            needs to change the argument line of maven-surefire-plugin,
+            then it must add ${argLine} property (which is set by JaCoCo)
+            in the argLine configuration element of maven-surefire-plugin
+            to preserve JaCoCo settings. -->
           <executions>
             <execution>
               <id>prepare-agent</id>
@@ -553,7 +554,7 @@ Version 39:
     <plugins>
       <!-- org.apache.maven.plugins, alpha order by artifact id -->
       <plugin>
-          <!-- Parent POM is released, so needs source archive for ASF mirrors -->
+        <!-- Parent POM is released, so needs source archive for ASF mirrors -->
         <artifactId>maven-assembly-plugin</artifactId>
         <configuration>
           <descriptors>
@@ -566,7 +567,7 @@ Version 39:
         <!--
           - Copy LICENSE.txt and NOTICE.txt so that they are included
           - in the -javadoc jar file for the component.
-          -->
+        -->
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-antrun-plugin</artifactId>
         <executions>
@@ -594,8 +595,8 @@ Version 39:
         <artifactId>maven-compiler-plugin</artifactId>
       </plugin>
       <!-- Unfortunately the much simpler
-           <prerequisites><maven>3.0</maven></prerequisites>
-           is not inherited so we have to use the enforcer plugin
+        <prerequisites><maven>3.0</maven></prerequisites>
+        is not inherited so we have to use the enforcer plugin
       -->
       <plugin>
         <inherited>true</inherited>
@@ -726,10 +727,10 @@ Version 39:
         <!-- Should agree with config in reporting section -->
         <configuration>
           <!--
-               If you wish to override this list in the component (child) pom, ensure you use
-                   <excludes combine.children="merge">
-               so that the child pom entries replace the parent entries
-           -->
+            If you wish to override this list in the component (child) pom, ensure you use
+            <excludes combine.children="merge">
+            so that the child pom entries replace the parent entries
+          -->
           <excludes combine.children="append">
             <exclude>site-content/**</exclude>
             <exclude>.checkstyle</exclude>
@@ -771,7 +772,7 @@ Version 39:
 
   <reporting>
     <!-- N.B. plugins defined here in the <reporting> section ignore what's defined in <pluginManagement>
-         in the <build> section above, so we have to define the versions here. -->
+      in the <build> section above, so we have to define the versions here. -->
     <plugins>
       <!-- org.apache.maven.plugins, alpha order by artifact id -->
       <plugin>
@@ -841,13 +842,13 @@ Version 39:
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>${commons.project-info.version}</version>
         <!--
-            Unfortunately it does not appear to be possible to override
-            reports configured in a parent POM.
-            See https://jira.codehaus.org/browse/MPIR-241
-            and https://issues.apache.org/jira/browse/MPOM-32
-            So we define here all those reports that are suitable for
-            all components.
-            Components can add extra reports if they wish, but cannot disable any.
+          Unfortunately it does not appear to be possible to override
+          reports configured in a parent POM.
+          See https://jira.codehaus.org/browse/MPIR-241
+          and https://issues.apache.org/jira/browse/MPOM-32
+          So we define here all those reports that are suitable for
+          all components.
+          Components can add extra reports if they wish, but cannot disable any.
         -->
         <reportSets>
           <reportSet>
@@ -855,7 +856,7 @@ Version 39:
               <report>index</report>
               <report>summary</report>
               <report>modules</report>
-<!--          <report>license</report>               site must link to ASF page instead  -->
+              <!-- <report>license</report> site must link to ASF page instead -->
               <report>project-team</report>
               <report>scm</report>
               <report>issue-tracking</report>
@@ -865,8 +866,8 @@ Version 39:
               <report>dependencies</report>
               <report>dependency-convergence</report>
               <report>cim</report>
-<!--          <report>plugin-management</report>      not very useful for end users -->
-<!--          <report>plugins</report>                not very useful for end users -->
+              <!-- <report>plugin-management</report> not very useful for end users -->
+              <!-- <report>plugins</report> not very useful for end users -->
               <report>distribution-management</report>
             </reports>
           </reportSet>
@@ -878,8 +879,8 @@ Version 39:
         <version>${commons.site-plugin.version}</version>
         <configuration>
           <!-- Exclude the navigation file for Maven 1 sites
-               and the changes file used by the changes-plugin,
-               as they interfere with the site generation. -->
+            and the changes file used by the changes-plugin,
+            as they interfere with the site generation. -->
           <moduleExcludes>
             <xdoc>navigation.xml,changes.xml</xdoc>
           </moduleExcludes>
@@ -901,10 +902,10 @@ Version 39:
         <!-- Should agree with config in build section -->
         <configuration>
           <!--
-               If you wish to override this list in the component (child) pom, ensure you use
-                   <excludes combine.children="merge">
-               so that the child pom entries replace the parent entries
-           -->
+            If you wish to override this list in the component (child) pom, ensure you use
+            <excludes combine.children="merge">
+            so that the child pom entries replace the parent entries
+          -->
           <excludes combine.children="append">
             <exclude>site-content/**</exclude>
             <exclude>.checkstyle</exclude>
@@ -992,113 +993,113 @@ Version 39:
       </build>
     </profile>
 
-      <profile>
-        <!--
-          Make the version parts of the maven.compiler.target property
-          available as separate properties, so that they can be used to define
-          the java signature artifactId used by animal-sniffer etc.
-        -->
-        <id>parse-target-version</id>
-        <activation>
-          <property>
-            <!--
-               This property should always be defined.
-               The intention is to ensure that the profile is always enabled.
-               (activeByDefault only applies if other profiles are not enabled)
-            -->
-            <name>user.home</name>
-          </property>
-        </activation>
-        <build>
-          <plugins>
-            <plugin>
-              <groupId>org.codehaus.mojo</groupId>
-              <artifactId>build-helper-maven-plugin</artifactId>
-              <executions>
-                <execution>
-                  <id>parse-version</id>
-                  <!-- default is:  <phase>validate</phase>  -->
-                  <goals>
-                    <goal>parse-version</goal>
-                  </goals>
-                  <configuration>
-                    <propertyPrefix>javaTarget</propertyPrefix>
-                    <versionString>${maven.compiler.target}</versionString>
-                  </configuration>
-                </execution>
-              </executions>
-            </plugin>
-          </plugins>
-        </build>
-      </profile>
-
+    <profile>
       <!--
-           Runs the Animal Sniffer plugin to check that generated code does not included references
-           to methods/classes etc that are not present in the standard Java runtime for the defined target version.
-           To bypass the checks, define "animal.sniffer.skip" as true, or create the file "src/site/resources/profile.noanimal"
+        Make the version parts of the maven.compiler.target property
+        available as separate properties, so that they can be used to define
+        the java signature artifactId used by animal-sniffer etc.
       -->
+      <id>parse-target-version</id>
+      <activation>
+        <property>
+          <!--
+            This property should always be defined.
+            The intention is to ensure that the profile is always enabled.
+            (activeByDefault only applies if other profiles are not enabled)
+          -->
+          <name>user.home</name>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>parse-version</id>
+                <!-- default is: <phase>validate</phase> -->
+                <goals>
+                  <goal>parse-version</goal>
+                </goals>
+                <configuration>
+                  <propertyPrefix>javaTarget</propertyPrefix>
+                  <versionString>${maven.compiler.target}</versionString>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
 
-      <profile>
-        <id>animal-sniffer</id>
-        <activation>
-          <!--  active unless the file is found -->
-          <file>
-            <missing>src/site/resources/profile.noanimal</missing>
-          </file>
-        </activation>
+    <!--
+      Runs the Animal Sniffer plugin to check that generated code does not included references
+      to methods/classes etc that are not present in the standard Java runtime for the defined target version.
+      To bypass the checks, define "animal.sniffer.skip" as true, or create the file "src/site/resources/profile.noanimal"
+    -->
 
-        <properties>
-          <!-- define this as a property to allow command-line override -->
-          <animal-sniffer.signature>java${javaTarget.majorVersion}${javaTarget.minorVersion}</animal-sniffer.signature>
-        </properties>
+    <profile>
+      <id>animal-sniffer</id>
+      <activation>
+        <!-- active unless the file is found -->
+        <file>
+          <missing>src/site/resources/profile.noanimal</missing>
+        </file>
+      </activation>
 
-        <build>
-          <plugins>
+      <properties>
+        <!-- define this as a property to allow command-line override -->
+        <animal-sniffer.signature>java${javaTarget.majorVersion}${javaTarget.minorVersion}</animal-sniffer.signature>
+      </properties>
 
-            <!-- Run the Animal Sniffer checks -->
-            <plugin>
-              <groupId>org.codehaus.mojo</groupId>
-              <artifactId>animal-sniffer-maven-plugin</artifactId>
-              <version>${commons.animal-sniffer.version}</version>
-              <executions>
-                <execution>
-                  <id>checkAPIcompatibility</id>
-                  <!-- default is:  <phase>process-classes</phase>  -->
-                  <!-- Note: if the plugin is ever enhanced to check test classes
-                       it will presumably need to be bound to process-test-classes instead
-                  -->
-                  <goals>
-                    <goal>check</goal>
-                  </goals>
-                </execution>
-              </executions>
-              <configuration>
-                <signature>
-                  <groupId>org.codehaus.mojo.signature</groupId>
-                  <artifactId>${animal-sniffer.signature}</artifactId>
-                  <version>${commons.animal-sniffer.signature.version}</version>
-                </signature>
-              </configuration>
-            </plugin>
+      <build>
+        <plugins>
 
-          </plugins>
-        </build>
-      </profile>
+          <!-- Run the Animal Sniffer checks -->
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>animal-sniffer-maven-plugin</artifactId>
+            <version>${commons.animal-sniffer.version}</version>
+            <executions>
+              <execution>
+                <id>checkAPIcompatibility</id>
+                <!-- default is: <phase>process-classes</phase> -->
+                <!-- Note: if the plugin is ever enhanced to check test classes
+                  it will presumably need to be bound to process-test-classes instead
+                -->
+                <goals>
+                  <goal>check</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <signature>
+                <groupId>org.codehaus.mojo.signature</groupId>
+                <artifactId>${animal-sniffer.signature}</artifactId>
+                <version>${commons.animal-sniffer.signature.version}</version>
+              </signature>
+            </configuration>
+          </plugin>
+
+        </plugins>
+      </build>
+    </profile>
 
     <profile>
       <id>jacoco</id>
       <activation>
         <!--
-            N.B. in spite of what the Maven docs may say,
-            activation conditions are ORed together, see:
-            http://jira.codehaus.org/browse/MNG-4565
-            Fairly useless, but that's what was done in
-            http://jira.codehaus.org/browse/MNG-3106
+          N.B. in spite of what the Maven docs may say,
+          activation conditions are ORed together, see:
+          http://jira.codehaus.org/browse/MNG-4565
+          Fairly useless, but that's what was done in
+          http://jira.codehaus.org/browse/MNG-3106
 
-            So we cannot also check for Java 1.5+
-            This should not be a problem now as the profile is optional.
-            Components that still target Java 1.4 or earlier
-            just need to ensure they don't use JaCoCo by default.
+          So we cannot also check for Java 1.5+
+          This should not be a problem now as the profile is optional.
+          Components that still target Java 1.4 or earlier
+          just need to ensure they don't use JaCoCo by default.
         -->
         <file>
           <exists>src/site/resources/profile.jacoco</exists>
@@ -1196,8 +1197,8 @@ Version 39:
     </profile>
 
     <!--
-         Profile for Commons releases via Nexus.
-         Assembles artifacts, creates source and javadoc jars, signs them and adds hashes.
+      Profile for Commons releases via Nexus.
+      Assembles artifacts, creates source and javadoc jars, signs them and adds hashes.
     -->
     <profile>
       <id>release</id>
@@ -1262,11 +1263,11 @@ Version 39:
       </build>
     </profile>
 
-     <!--
-       profile to update the Apache parent pom profile of the same name
-       to better suit the requirements of Apache Commons.
-       [Requires further work]
-     -->
+    <!--
+      profile to update the Apache parent pom profile of the same name
+      to better suit the requirements of Apache Commons.
+      [Requires further work]
+    -->
     <profile>
       <id>apache-release</id>
       <build>
@@ -1311,9 +1312,9 @@ Version 39:
     </profile>
 
     <!--
-       Profile for running the build using JDK 1.3
-       (JAVA_1_3_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-      -->
+      Profile for running the build using JDK 1.3
+      (JAVA_1_3_HOME needs to be defined, e.g. in settings.xml or an environment variable)
+    -->
     <profile>
       <id>java-1.3</id>
       <properties>
@@ -1325,9 +1326,9 @@ Version 39:
     </profile>
 
     <!--
-       Profile for running the build using JDK 1.4
-       (JAVA_1_4_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-      -->
+      Profile for running the build using JDK 1.4
+      (JAVA_1_4_HOME needs to be defined, e.g. in settings.xml or an environment variable)
+    -->
     <profile>
       <id>java-1.4</id>
       <properties>
@@ -1341,9 +1342,9 @@ Version 39:
     </profile>
 
     <!--
-       Profile for running the build using JDK 1.5
-       (JAVA_1_5_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-      -->
+      Profile for running the build using JDK 1.5
+      (JAVA_1_5_HOME needs to be defined, e.g. in settings.xml or an environment variable)
+    -->
     <profile>
       <id>java-1.5</id>
       <properties>
@@ -1355,9 +1356,9 @@ Version 39:
     </profile>
 
     <!--
-       Profile for running the build using JDK 1.6
-       (JAVA_1_6_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-      -->
+      Profile for running the build using JDK 1.6
+      (JAVA_1_6_HOME needs to be defined, e.g. in settings.xml or an environment variable)
+    -->
     <profile>
       <id>java-1.6</id>
       <properties>
@@ -1369,9 +1370,9 @@ Version 39:
     </profile>
 
     <!--
-       Profile for running the build using JDK 1.7
-       (JAVA_1_7_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-      -->
+      Profile for running the build using JDK 1.7
+      (JAVA_1_7_HOME needs to be defined, e.g. in settings.xml or an environment variable)
+    -->
     <profile>
       <id>java-1.7</id>
       <properties>
@@ -1383,9 +1384,9 @@ Version 39:
     </profile>
 
     <!--
-       Profile for running the build using JDK 1.8
-       (JAVA_1_8_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-      -->
+      Profile for running the build using JDK 1.8
+      (JAVA_1_8_HOME needs to be defined, e.g. in settings.xml or an environment variable)
+    -->
     <profile>
       <id>java-1.8</id>
       <properties>
@@ -1397,9 +1398,9 @@ Version 39:
     </profile>
 
     <!--
-       Profile for running the build using JDK 1.9
-       (JAVA_1_9_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-      -->
+      Profile for running the build using JDK 1.9
+      (JAVA_1_9_HOME needs to be defined, e.g. in settings.xml or an environment variable)
+    -->
     <profile>
       <id>java-1.9</id>
       <properties>
@@ -1411,13 +1412,13 @@ Version 39:
     </profile>
 
     <!-- N.B. when adding new java profiles, be sure to update
-         the _removeheaders list in the maven_bundle_plugin configuration -->
+      the _removeheaders list in the maven_bundle_plugin configuration -->
 
     <!--
-     | Profile to allow testing of deploy phase
-     | e.g.
-     | mvn deploy -Ptest-deploy -Prelease -Dgpg.skip
-     -->
+      | Profile to allow testing of deploy phase
+      | e.g.
+      | mvn deploy -Ptest-deploy -Prelease -Dgpg.skip
+    -->
     <profile>
       <id>test-deploy</id>
       <properties>
@@ -1427,16 +1428,16 @@ Version 39:
 
     <profile>
       <!--
-          Generate release notes in top-level directory from src/changes/changes.xml
-          Usage:
-          mvn changes:announcement-generate -Prelease-notes [-Dchanges.version=nnn]
+        Generate release notes in top-level directory from src/changes/changes.xml
+        Usage:
+        mvn changes:announcement-generate -Prelease-notes [-Dchanges.version=nnn]
 
-          Defining changes.version allows one to create the RN without first removing the SNAPSHOT suffix.
+        Defining changes.version allows one to create the RN without first removing the SNAPSHOT suffix.
 
-          Requires file src/changes/release-notes.vm.
-          A sample template is available from:
-          https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk/src/changes/release-notes.vm
-       -->
+        Requires file src/changes/release-notes.vm.
+        A sample template is available from:
+        https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk/src/changes/release-notes.vm
+      -->
       <id>release-notes</id>
       <build>
         <plugins>
@@ -1469,7 +1470,7 @@ Version 39:
     </profile>
 
     <!--
-        Automatically run the buildnumber plugin unless the buildNumber.skip property is defined as true
+      Automatically run the buildnumber plugin unless the buildNumber.skip property is defined as true
     -->
     <profile>
       <id>svn-buildnumber</id>
@@ -1606,14 +1607,14 @@ Version 39:
     <!-- Default configuration for compiler source and target JVM -->
     <!-- Do NOT change this; it must remain as 1.3 -->
     <!--
-        It's important that child POMs don't need to change when the parent POM is updated.
-        At the time when these properties were introduced, the default Java version was 1.3.
-        Thus components that failed to define the version would not be affected by updates
-        to the Commons Parent or its parent the Apache pom.
-        Of course most if not all components now define the properties.
-        However it's still important to keep the properties as they effectively
-        force child poms to define the Java version they require.
-     -->
+      It's important that child POMs don't need to change when the parent POM is updated.
+      At the time when these properties were introduced, the default Java version was 1.3.
+      Thus components that failed to define the version would not be affected by updates
+      to the Commons Parent or its parent the Apache pom.
+      Of course most if not all components now define the properties.
+      However it's still important to keep the properties as they effectively
+      force child poms to define the Java version they require.
+    -->
     <maven.compiler.source>1.3</maven.compiler.source>
     <maven.compiler.target>1.3</maven.compiler.target>
 
@@ -1637,39 +1638,39 @@ Version 39:
     <commons.project-info.version>2.9</commons.project-info.version>
     <commons.wagon-ssh.version>3.0.0</commons.wagon-ssh.version>
     <!--
-    Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
+      Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
 
-    http://maven.apache.org/plugins/maven-site-plugin/migrate.html
+      http://maven.apache.org/plugins/maven-site-plugin/migrate.html
 
-    In particular, adding CDATA to header and footer sections is not backwards compatible.
-    I.e. these have to be updated at the same time.
+      In particular, adding CDATA to header and footer sections is not backwards compatible.
+      I.e. these have to be updated at the same time.
 
-    Also it causes the following errors:
+      Also it causes the following errors:
 
-    [ERROR] Failed to execute goal org.apache.maven.plugins:maven-site-plugin:3.5.1:site (default-site) on project commons-parent:
-    Execution default-site of goal org.apache.maven.plugins:maven-site-plugin:3.5.1:site failed:
-    A required class was missing while executing org.apache.maven.plugins:maven-site-plugin:3.5.1:site: org/apache/maven/doxia/sink/impl/XhtmlBaseSink
+      [ERROR] Failed to execute goal org.apache.maven.plugins:maven-site-plugin:3.5.1:site (default-site) on project commons-parent:
+      Execution default-site of goal org.apache.maven.plugins:maven-site-plugin:3.5.1:site failed:
+      A required class was missing while executing org.apache.maven.plugins:maven-site-plugin:3.5.1:site: org/apache/maven/doxia/sink/impl/XhtmlBaseSink
 
-    This is because Apache POM 17 forces an older version of Doxia core:
-    https://mail-archives.apache.org/mod_mbox/maven-users/201602.mbox/%3C2337255.xU7aS9G1qr@herve-desktop%3E
+      This is because Apache POM 17 forces an older version of Doxia core:
+      https://mail-archives.apache.org/mod_mbox/maven-users/201602.mbox/%3C2337255.xU7aS9G1qr@herve-desktop%3E
 
-    The same error applies when running with version 3.5.
+      The same error applies when running with version 3.5.
 
-    Since the version is defined as a property, the CP version can be overridden as follows if necessary:
+      Since the version is defined as a property, the CP version can be overridden as follows if necessary:
 
-    mvn site -Dcommons.site-plugin.version=3.5.1
+      mvn site -Dcommons.site-plugin.version=3.5.1
 
-    You will also need to add a dependency on Doxia core:
+      You will also need to add a dependency on Doxia core:
       <artifactId>maven-site-plugin</artifactId>
       <dependencies>
-        <dependency>
-          <groupId>org.apache.maven.doxia</groupId>
-          <artifactId>doxia-core</artifactId>
-          <version>1.8</version>
-        </dependency>
+      <dependency>
+      <groupId>org.apache.maven.doxia</groupId>
+      <artifactId>doxia-core</artifactId>
+      <version>1.8</version>
+      </dependency>
       </dependencies>
 
-     -->
+    -->
     <commons.site-plugin.version>3.7</commons.site-plugin.version>
     <commons.jacoco.version>0.8.0</commons.jacoco.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
@@ -1682,7 +1683,7 @@ Version 39:
     <commons.felix.version>3.5.0</commons.felix.version>
     <commons.build-helper.version>3.0.0</commons.build-helper.version>
     <commons.animal-sniffer.version>1.16</commons.animal-sniffer.version>
-    <!--  Almost all signatures use version 1.0. Allow override just in case -->
+    <!-- Almost all signatures use version 1.0. Allow override just in case -->
     <commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
@@ -1738,7 +1739,7 @@ Version 39:
     <!-- This is used by reporting plugins -->
     <project.reporting.outputEncoding>${commons.encoding}</project.reporting.outputEncoding>
 
-    <!-- Javadoc link to Java API.  Default is Java 1.7; components can override to other versions -->
+    <!-- Javadoc link to Java API. Default is Java 1.7; components can override to other versions -->
     <commons.javadoc.java.link>http://docs.oracle.com/javase/7/docs/api/</commons.javadoc.java.link>
     <commons.javadoc.javaee.link>http://docs.oracle.com/javaee/6/api/</commons.javadoc.javaee.link>
 
@@ -1755,7 +1756,7 @@ Version 39:
     <!-- Allow surefire-report aggregation to be easily configured for multi-module projects -->
     <commons.surefire-report.aggregate>false</commons.surefire-report.aggregate>
 
-    <!-- Allow changes Jira report to be restricted to just the current version (plugin default is false)-->
+    <!-- Allow changes Jira report to be restricted to just the current version (plugin default is false) -->
     <commons.changes.onlyCurrentVersion>false</commons.changes.onlyCurrentVersion>
     <!-- Allow changes Jira report maxEntries to be overridden (plugin default 100) -->
     <commons.changes.maxEntries>100</commons.changes.maxEntries>
@@ -1772,7 +1773,7 @@ Version 39:
     <commons.scmPubServer>commons.site</commons.scmPubServer>
 
     <!-- allow japicmp's breakBuildOnBinaryIncompatibleModifications
-         to be overridden, plugin's default is false -->
+      to be overridden, plugin's default is false -->
     <commons.japicmp.breakBuildOnBinaryIncompatibleModifications>true</commons.japicmp.breakBuildOnBinaryIncompatibleModifications>
 
     <sonar.host.url>https://analysis.apache.org/</sonar.host.url>
