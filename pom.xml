@@ -45,6 +45,7 @@
     - build artifacts -test.jar, -sources.jar and -test-sources.jar always, not only at release time
     - maven-enforcer-plugin set version to 3.0.0-M1 and update Maven requirement from 3.0.0 to 3.0.5 (the latest 3.0.x.)
     - jacoco-maven-plugin 0.7.9 -> 0.8.0.
+    - Fix japicmp config: add to reporting section and define ignoreMissingNewVersion explicitly
 
   -->
 
@@ -425,7 +426,7 @@
               <onlyModified>true</onlyModified>
               <breakBuildOnBinaryIncompatibleModifications>${commons.japicmp.breakBuildOnBinaryIncompatibleModifications}</breakBuildOnBinaryIncompatibleModifications>
               <!-- skip japicmp on "mvn site" - use "mvn package site" to include report -->
-              <ignoreMissingNewVersion />
+              <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
               <reportOnlyFilename>true</reportOnlyFilename>
             </parameter>
           </configuration>
@@ -922,6 +923,20 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>jdepend-maven-plugin</artifactId>
         <version>${commons.jdepend.version}</version>
+      </plugin>
+      <plugin>
+        <groupId>com.github.siom79.japicmp</groupId>
+        <artifactId>japicmp-maven-plugin</artifactId>
+        <version>${commons.japicmp.version}</version>
+        <configuration>
+          <parameter>
+            <onlyModified>true</onlyModified>
+            <breakBuildOnBinaryIncompatibleModifications>${commons.japicmp.breakBuildOnBinaryIncompatibleModifications}</breakBuildOnBinaryIncompatibleModifications>
+            <!-- skip japicmp on "mvn site" - use "mvn package site" to include report -->
+            <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
+            <reportOnlyFilename>true</reportOnlyFilename>
+          </parameter>
+        </configuration>
       </plugin>
     </plugins>
   </reporting>
