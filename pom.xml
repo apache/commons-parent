@@ -23,7 +23,7 @@
   <parent>
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
-    <version>18</version>
+    <version>19</version>
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
@@ -46,6 +46,7 @@
     - maven-enforcer-plugin set version to 3.0.0-M1 and update Maven requirement from 3.0.0 to 3.0.5 (the latest 3.0.x.)
     - jacoco-maven-plugin 0.7.9 -> 0.8.0.
     - Fix japicmp config: add to reporting section and define ignoreMissingNewVersion explicitly
+    - org.apache:apache 18 -> 19
 
   -->
 
