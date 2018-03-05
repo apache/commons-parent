@@ -38,6 +38,10 @@
   </issueManagement>
 
   <!--
+    Version 45:
+  -->
+
+  <!--
     Version 44:
 
     - new profile module-name to add 'Automatic-Module-Name' entry to the manifest

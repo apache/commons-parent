@@ -59,7 +59,14 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="44" date="YYYY-MM-DD" description="TBD">
+        <release version="44" date="YYYY-MM-DD" description="Plugin Updates and add new commons-release-plugin">
+            <action type="add">new profile module-name to add 'Automatic-Module-Name' entry to the manifest</action>
+            <action type="update">felix:maven-bundle-plugin 3.4.0 -> 3.5.0.</action>
+            <action type="update">build artifacts -test.jar, -sources.jar and -test-sources.jar always, not only at release time</action>
+            <action type="update">maven-enforcer-plugin set version to 3.0.0-M1 and update Maven requirement from 3.0.0 to 3.0.5 (the latest 3.0.x.)</action>
+            <action type="update">jacoco-maven-plugin 0.7.9 -> 0.8.0.</action>
+            <action type="update">Fix japicmp config: add to reporting section and define ignoreMissingNewVersion explicitly</action>
+            <action type="update">org.apache:apache 18 -> 19</action>
             <action type="add">COMMONSSITE-105: Add commons-release-plugin version 1.1</action>
         </release>
 
