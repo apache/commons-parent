@@ -47,6 +47,7 @@
     - jacoco-maven-plugin 0.7.9 -> 0.8.0.
     - Fix japicmp config: add to reporting section and define ignoreMissingNewVersion explicitly
     - org.apache:apache 18 -> 19
+    - add commons-release-plugin:1.1
 
   -->
 
@@ -1273,6 +1274,34 @@
               </execution>
             </executions>
           </plugin>
+          <plugin>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-release-plugin</artifactId>
+            <version>${commons.release-plugin.version}</version>
+            <executions>
+              <execution>
+                <id>detatch-distributions</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>detach-distributions</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>compress-site</id>
+                <phase>site</phase>
+                <goals>
+                  <goal>compress-site</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>stage-distributions</id>
+                <phase>deploy</phase>
+                <goals>
+                  <goal>stage-distributions</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -1437,6 +1466,7 @@
       <id>test-deploy</id>
       <properties>
         <altDeploymentRepository>id::default::file:target/deploy</altDeploymentRepository>
+        <commons.release.dryRun>true</commons.release.dryRun>
       </properties>
     </profile>
 
@@ -1640,6 +1670,7 @@
 
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
     <commons.build-plugin.version>1.7</commons.build-plugin.version>
+    <commons.release-plugin.version>1.1</commons.release-plugin.version>
     <commons.surefire.version>2.20.1</commons.surefire.version>
     <commons.failsafe.version>2.20.1</commons.failsafe.version>
     <commons.surefire-report.version>2.20.1</commons.surefire-report.version>
