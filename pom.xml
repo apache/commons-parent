@@ -560,17 +560,13 @@
         <plugin>
           <groupId>org.apache.commons</groupId>
           <artifactId>commons-release-plugin</artifactId>
-          <version>1.0</version>
-          <configuration>
-            <distSvnStagingUrl>${commons-release-plugin.distSvnStagingUrl}</distSvnStagingUrl>
-            <dryRun>${dryRun}</dryRun>
-          </configuration>
+          <version>${commons.release-plugin.version}</version>
           <executions>
             <execution>
-              <id>detatch-distributions</id>
+              <id>detach-distributions</id>
               <phase>verify</phase>
               <goals>
-                <goal>detatch-distributions</goal>
+                <goal>detach-distributions</goal>
               </goals>
             </execution>
             <execution>
