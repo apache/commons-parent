@@ -1,3 +1,37 @@
+             Apache Commons Parent 44
+                  RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 44
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Updates plugins and generally requires Java 7.
+
+Changes in this version include:
+
+New features:
+o new profile module-name to add 'Automatic-Module-Name' entry to the manifest
+o COMMONSSITE-105: Add commons-release-plugin version 1.1
+
+
+Changes:
+o felix:maven-bundle-plugin 3.4.0 -> 3.5.0.
+o build artifacts -test.jar, -sources.jar and -test-sources.jar always, not only at release time
+o maven-enforcer-plugin set version to 3.0.0-M1 and update Maven requirement from 3.0.0 to 3.0.5 (the latest 3.0.x.)
+o jacoco-maven-plugin 0.7.9 -> 0.8.0.
+o Fix japicmp config: add to reporting section and define ignoreMissingNewVersion explicitly
+o org.apache:apache 18 -> 19
+
+
+Historical list of changes: http://commons.apache.org/commons-parent-pom.htmlchanges-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
+
+http://commons.apache.org/commons-parent-pom.html
+
+-----------------------------------------------------------------------------
+
               Apache Commons Parent 43
                   RELEASE NOTES
 
