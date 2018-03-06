@@ -52,6 +52,7 @@
     - Fix japicmp config: add to reporting section and define ignoreMissingNewVersion explicitly
     - org.apache:apache 18 -> 19
     - add commons-release-plugin:1.1
+    - add spotbugs-maven-plugin: 3.1.3
 
   -->
 
@@ -1588,6 +1589,7 @@
         <maven.javadoc.skip>true</maven.javadoc.skip>
         <cobertura.skip>true</cobertura.skip>
         <findbugs.skip>true</findbugs.skip>
+        <spotbugs.skip>true</spotbugs.skip>
         <checkstyle.skip>true</checkstyle.skip>
         <clirr.skip>true</clirr.skip>
         <changes.jira.skip>true</changes.jira.skip>
@@ -1729,6 +1731,7 @@
     <commons.compiler.version>3.7.0</commons.compiler.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
     <commons.findbugs.version>3.0.5</commons.findbugs.version>
+    <commons.spotbugs.version>3.1.3</commons.spotbugs.version>
     <commons.felix.version>3.5.0</commons.felix.version>
     <commons.build-helper.version>3.0.0</commons.build-helper.version>
     <commons.animal-sniffer.version>1.16</commons.animal-sniffer.version>
