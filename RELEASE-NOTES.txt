@@ -22,6 +22,8 @@ o maven-enforcer-plugin set version to 3.0.0-M1 and update Maven requirement fro
 o jacoco-maven-plugin 0.7.9 -> 0.8.0.
 o Fix japicmp config: add to reporting section and define ignoreMissingNewVersion explicitly
 o org.apache:apache 18 -> 19
+o maven-surefire-plugin 2.20.1 -> 2.21.0
+o maven-failsafe-plugin 2.20.1 -> 2.21.0
 
 
 Historical list of changes: http://commons.apache.org/commons-parent-pom.htmlchanges-report.html

@@ -69,6 +69,8 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">org.apache:apache 18 -> 19</action>
             <action type="add">COMMONSSITE-105: Add commons-release-plugin version 1.1</action>
             <action type="add">COMMONSSITE-106: Add spotbugs-maven-plugin version 3.1.3</action>
+            <action type="update">maven-surefire-plugin 2.20.1 -> 2.21.0</action>
+            <action type="update">maven-failsafe-plugin 2.20.1 -> 2.21.0</action>
         </release>
 
         <release version="43" date="2018-01-02" description="Updates plugins and generally requires Java 7.">
