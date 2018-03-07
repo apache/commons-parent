@@ -55,6 +55,7 @@
     - add spotbugs-maven-plugin: 3.1.3
     - maven-surefire-plugin 2.20.1 -> 2.21.0
     - maven-failsafe-plugin 2.20.1 -> 2.21.0
+    - Add "commons.previous.release.version" parameter for japicmp. Which must be overridden.
 
   -->
 
@@ -437,6 +438,7 @@
               <!-- skip japicmp on "mvn site" - use "mvn package site" to include report -->
               <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
               <reportOnlyFilename>true</reportOnlyFilename>
+              <oldVersion>${commons.previous.release.version}</oldVersion>
             </parameter>
           </configuration>
         </plugin>
@@ -1681,6 +1683,7 @@
   <properties>
     <!-- configuration bits for cutting a release candidate, must be overridden by components -->
     <commons.release.version>${project.version}</commons.release.version>
+    <commons.previous.release.version>43</commons.previous.release.version>
     <commons.rc.version>RC1</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
 
