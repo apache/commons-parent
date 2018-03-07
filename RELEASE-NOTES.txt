@@ -24,7 +24,8 @@ o Fix japicmp config: add to reporting section and define ignoreMissingNewVersio
 o org.apache:apache 18 -> 19
 o maven-surefire-plugin 2.20.1 -> 2.21.0
 o maven-failsafe-plugin 2.20.1 -> 2.21.0
-o add "commons.japicmp.skip" = "true" parameter for japicmp. Which should be overridden.
+o add "commons.japicmp.skip" = "true" parameter for japicmp. Which should be overridden
+o add newVersion of the current artifact to japicmp configuration
 
 
 Historical list of changes: http://commons.apache.org/commons-parent-pom.htmlchanges-report.html

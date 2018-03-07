@@ -72,6 +72,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">maven-surefire-plugin 2.20.1 -> 2.21.0</action>
             <action type="update">maven-failsafe-plugin 2.20.1 -> 2.21.0</action>
             <action type="update">add "commons.japicmp.skip" = "true" parameter for japicmp. Which should be overridden.</action>
+            <action type="update">add newVersion of the current artifact to japicmp configuration</action>
         </release>
 
         <release version="43" date="2018-01-02" description="Updates plugins and generally requires Java 7.">
