@@ -1684,7 +1684,7 @@
     <!-- configuration bits for cutting a release candidate, must be overridden by components -->
     <commons.release.version>${project.version}</commons.release.version>
     <commons.previous.release.version>43</commons.previous.release.version>
-    <commons.rc.version>RC1</commons.rc.version>
+    <commons.rc.version>RC3</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
 
     <!-- Default configuration for compiler source and target JVM -->
