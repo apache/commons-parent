@@ -55,7 +55,7 @@
     - add spotbugs-maven-plugin: 3.1.3
     - maven-surefire-plugin 2.20.1 -> 2.21.0
     - maven-failsafe-plugin 2.20.1 -> 2.21.0
-    - Add "commons.previous.release.version" parameter for japicmp. Which must be overridden.
+    - add "commons.japicmp.skip" = "true" parameter for japicmp. Which should be overridden.
 
   -->
 
@@ -438,8 +438,8 @@
               <!-- skip japicmp on "mvn site" - use "mvn package site" to include report -->
               <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
               <reportOnlyFilename>true</reportOnlyFilename>
-              <oldVersion>${commons.previous.release.version}</oldVersion>
             </parameter>
+            <skip>${commons.japicmp.skip}</skip>
           </configuration>
         </plugin>
         <plugin>
@@ -975,6 +975,7 @@
             <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
             <reportOnlyFilename>true</reportOnlyFilename>
           </parameter>
+          <skip>${commons.japicmp.skip}</skip>
         </configuration>
       </plugin>
     </plugins>
@@ -1683,7 +1684,6 @@
   <properties>
     <!-- configuration bits for cutting a release candidate, must be overridden by components -->
     <commons.release.version>${project.version}</commons.release.version>
-    <commons.previous.release.version>43</commons.previous.release.version>
     <commons.rc.version>RC3</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
 
@@ -1860,6 +1860,8 @@
     <!-- allow japicmp's breakBuildOnBinaryIncompatibleModifications
       to be overridden, plugin's default is false -->
     <commons.japicmp.breakBuildOnBinaryIncompatibleModifications>true</commons.japicmp.breakBuildOnBinaryIncompatibleModifications>
+    <!-- default japicmp to off so this project can build, **SHOULD BE OVERRIDDEN** -->
+    <commons.japicmp.skip>true</commons.japicmp.skip>
 
     <sonar.host.url>https://analysis.apache.org/</sonar.host.url>
 
