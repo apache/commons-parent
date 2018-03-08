@@ -59,7 +59,22 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="44" date="YYYY-MM-DD" description="Plugin Updates and add new commons-release-plugin">
+        <release version="44" date="2018-03-08" description="Plugin Updates and add new commons-release-plugin
+
+        Notes on Building version 44.
+        -----------------------------
+        When building, because of an issue with japicmp, we have an erroneous non-failing stacktrace
+        that occurs. Specifically, we see:
+
+        [warn] No new version specified and file './commons-parent/pom.xml' of artifact could not be opened as
+              jar archive: error in opening zip file
+        java.util.zip.ZipException: error in opening zip file
+
+        mainly caused by an error in
+        japicmp.maven.JApiCmpMojo.populateArchivesListsFromParameters(JApiCmpMojo.java:341).
+
+        We have asked for this to be addressed in the github issue: https://github.com/siom79/japicmp/issues/195
+        ">
             <action type="add">new profile module-name to add 'Automatic-Module-Name' entry to the manifest</action>
             <action type="update">felix:maven-bundle-plugin 3.4.0 -> 3.5.0.</action>
             <action type="update">build artifacts -test.jar, -sources.jar and -test-sources.jar always, not only at release time</action>
@@ -71,8 +86,6 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="add">COMMONSSITE-106: Add spotbugs-maven-plugin version 3.1.3</action>
             <action type="update">maven-surefire-plugin 2.20.1 -> 2.21.0</action>
             <action type="update">maven-failsafe-plugin 2.20.1 -> 2.21.0</action>
-            <action type="update">add "commons.japicmp.skip" = "true" parameter for japicmp. Which should be overridden.</action>
-            <action type="update">add newVersion of the current artifact to japicmp configuration</action>
         </release>
 
         <release version="43" date="2018-01-02" description="Updates plugins and generally requires Java 7.">
