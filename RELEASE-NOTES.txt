@@ -7,8 +7,22 @@ The Apache Commons Parent POM provides common settings for all Apache Commons co
 
 Updates plugins and generally requires Java 7.
 
-Changes in this version include:
+Notes on Building version 44.
+-----------------------------
+When building, because of an issue with japicmp, we have an erroneous non-failing stacktrace
+that occurs. Specifically, we see:
 
+[warn] No new version specified and file './commons-parent/pom.xml' of artifact could not be opened as
+      jar archive: error in opening zip file
+java.util.zip.ZipException: error in opening zip file
+
+mainly caused by an error in
+japicmp.maven.JApiCmpMojo.populateArchivesListsFromParameters(JApiCmpMojo.java:341).
+
+We have asked for this to be addressed in the github issue: https://github.com/siom79/japicmp/issues/195
+
+Changes in this version include:
+--------------------------------
 New features:
 o new profile module-name to add 'Automatic-Module-Name' entry to the manifest
 o COMMONSSITE-105: Add commons-release-plugin version 1.1
@@ -24,7 +38,6 @@ o Fix japicmp config: add to reporting section and define ignoreMissingNewVersio
 o org.apache:apache 18 -> 19
 o maven-surefire-plugin 2.20.1 -> 2.21.0
 o maven-failsafe-plugin 2.20.1 -> 2.21.0
-o add "commons.japicmp.skip" = "true" parameter for japicmp. Which should be overridden.
 
 
 Historical list of changes: http://commons.apache.org/commons-parent-pom.htmlchanges-report.html

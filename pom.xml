@@ -18,7 +18,7 @@
 
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.apache</groupId>
@@ -55,7 +55,6 @@
     - add spotbugs-maven-plugin: 3.1.3
     - maven-surefire-plugin 2.20.1 -> 2.21.0
     - maven-failsafe-plugin 2.20.1 -> 2.21.0
-    - add "commons.japicmp.skip" = "true" parameter for japicmp. Which should be overridden.
 
   -->
 
@@ -439,7 +438,6 @@
               <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
               <reportOnlyFilename>true</reportOnlyFilename>
             </parameter>
-            <skip>${commons.japicmp.skip}</skip>
           </configuration>
         </plugin>
         <plugin>
@@ -975,7 +973,6 @@
             <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
             <reportOnlyFilename>true</reportOnlyFilename>
           </parameter>
-          <skip>${commons.japicmp.skip}</skip>
         </configuration>
       </plugin>
     </plugins>
@@ -1684,7 +1681,7 @@
   <properties>
     <!-- configuration bits for cutting a release candidate, must be overridden by components -->
     <commons.release.version>${project.version}</commons.release.version>
-    <commons.rc.version>RC3</commons.rc.version>
+    <commons.rc.version>RC1</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
 
     <!-- Default configuration for compiler source and target JVM -->
@@ -1860,8 +1857,6 @@
     <!-- allow japicmp's breakBuildOnBinaryIncompatibleModifications
       to be overridden, plugin's default is false -->
     <commons.japicmp.breakBuildOnBinaryIncompatibleModifications>true</commons.japicmp.breakBuildOnBinaryIncompatibleModifications>
-    <!-- default japicmp to off so this project can build, **SHOULD BE OVERRIDDEN** -->
-    <commons.japicmp.skip>true</commons.japicmp.skip>
 
     <sonar.host.url>https://analysis.apache.org/</sonar.host.url>
 
