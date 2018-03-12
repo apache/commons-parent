@@ -557,34 +557,6 @@
           </executions>
         </plugin>
         <!-- Apache parent: plexus & modello -->
-        <plugin>
-          <groupId>org.apache.commons</groupId>
-          <artifactId>commons-release-plugin</artifactId>
-          <version>${commons.release-plugin.version}</version>
-          <executions>
-            <execution>
-              <id>detach-distributions</id>
-              <phase>verify</phase>
-              <goals>
-                <goal>detach-distributions</goal>
-              </goals>
-            </execution>
-            <execution>
-              <id>compress-site</id>
-              <phase>site</phase>
-              <goals>
-                <goal>compress-site</goal>
-              </goals>
-            </execution>
-            <execution>
-              <id>stage-distributions</id>
-              <phase>deploy</phase>
-              <goals>
-                <goal>stage-distributions</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
@@ -1254,19 +1226,6 @@
       <id>release</id>
       <build>
         <plugins>
-          <!-- We want to sign the artifact, the POM, and all attached artifacts -->
-          <plugin>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
           <plugin>
             <artifactId>maven-install-plugin</artifactId>
             <configuration>
@@ -1309,6 +1268,19 @@
               </execution>
             </executions>
           </plugin>
+          <!-- We want to sign the artifact, the POM, and all attached artifacts -->
+          <plugin>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
           <plugin>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-release-plugin</artifactId>
@@ -1323,7 +1295,7 @@
               </execution>
               <execution>
                 <id>compress-site</id>
-                <phase>site</phase>
+                <phase>install</phase>
                 <goals>
                   <goal>compress-site</goal>
                 </goals>
