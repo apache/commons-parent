@@ -59,6 +59,10 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
+        <release version="45" date="2018-03-12" description="Changing location of commons-release-plugin">
+          <action type="update">Rearranging plugin order in -Prelease, removing commons-release-plugin from build>pluginManagement</action>
+        </release>
+
         <release version="44" date="2018-03-08" description="Plugin Updates and add new commons-release-plugin
 
         Notes on Building version 44.

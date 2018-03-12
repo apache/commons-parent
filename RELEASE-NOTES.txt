@@ -1,4 +1,30 @@
-             Apache Commons Parent 44
+              Apache Commons Parent 45
+                  RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the commons-parent-45 release!
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Updates plugins and generally requires Java 7.
+
+
+Changes in this version include:
+
+
+Changes:
+o Rearranging plugin order in -Prelease, removing commons-release-plugin from build>pluginManagement
+
+
+Historical list of changes: http://commons.apache.org/commons-parent-pom.htmlchanges-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
+
+http://commons.apache.org/commons-parent-pom.html
+
+-----------------------------------------------------------------------------
+
+              Apache Commons Parent 44
                   RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 44

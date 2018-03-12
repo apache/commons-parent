@@ -28,7 +28,7 @@
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
-  <version>45-SNAPSHOT</version>
+  <version>45</version>
   <name>Apache Commons Parent</name>
   <url>http://commons.apache.org/commons-parent-pom.html</url>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
@@ -39,6 +39,8 @@
 
   <!--
     Version 45:
+
+    -Rearranging plugin order in -Prelease, removing commons-release-plugin from build>pluginManagement
   -->
 
   <!--
