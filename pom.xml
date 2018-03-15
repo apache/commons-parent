@@ -44,7 +44,7 @@
   <!--
     Version 45:
 
-    -Rearranging plugin order in -Prelease, removing commons-release-plugin from build>pluginManagement
+    - Rearranging plugin order in -Prelease, removing commons-release-plugin from build>pluginManagement
   -->
 
   <!--
