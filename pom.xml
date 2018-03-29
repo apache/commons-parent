@@ -44,6 +44,7 @@
     - maven-surefire-report-plugin 2.20.1 -> 2.21.0
     - Add java-1.10 profile
     - Add java-1.11 profile
+    - jacoco-maven-plugin 0.8.0 -> 0.8.1
 
   -->
 
@@ -1766,7 +1767,7 @@
 
     -->
     <commons.site-plugin.version>3.7</commons.site-plugin.version>
-    <commons.jacoco.version>0.8.0</commons.jacoco.version>
+    <commons.jacoco.version>0.8.1</commons.jacoco.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
     <commons.coveralls.version>4.3.0</commons.coveralls.version>
     <commons.coveralls.timestampFormat>EpochMillis</commons.coveralls.timestampFormat>
