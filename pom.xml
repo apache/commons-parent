@@ -42,6 +42,8 @@
 
     - japicmp-maven-plugin 0.11.0 -> 0.11.1
     - maven-surefire-report-plugin 2.20.1 -> 2.21.0
+    - Add java-1.10 profile
+    - Add java-1.11 profile
 
   -->
 
@@ -1469,6 +1471,34 @@
         <commons.compiler.compilerVersion>1.9</commons.compiler.compilerVersion>
         <commons.compiler.javac>${JAVA_1_9_HOME}/bin/javac</commons.compiler.javac>
         <commons.surefire.java>${JAVA_1_9_HOME}/bin/java</commons.surefire.java>
+      </properties>
+    </profile>
+
+    <!--
+      Profile for running the build using JDK 1.10
+      (JAVA_1_10_HOME needs to be defined, e.g. in settings.xml or an environment variable)
+    -->
+    <profile>
+      <id>java-1.10</id>
+      <properties>
+        <commons.compiler.fork>true</commons.compiler.fork>
+        <commons.compiler.compilerVersion>1.10</commons.compiler.compilerVersion>
+        <commons.compiler.javac>${JAVA_1_10_HOME}/bin/javac</commons.compiler.javac>
+        <commons.surefire.java>${JAVA_1_10_HOME}/bin/java</commons.surefire.java>
+      </properties>
+    </profile>
+
+    <!--
+      Profile for running the build using JDK 1.11
+      (JAVA_1_11_HOME needs to be defined, e.g. in settings.xml or an environment variable)
+    -->
+    <profile>
+      <id>java-1.11</id>
+      <properties>
+        <commons.compiler.fork>true</commons.compiler.fork>
+        <commons.compiler.compilerVersion>1.11</commons.compiler.compilerVersion>
+        <commons.compiler.javac>${JAVA_1_11_HOME}/bin/javac</commons.compiler.javac>
+        <commons.surefire.java>${JAVA_1_11_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
 
