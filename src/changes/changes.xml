@@ -59,7 +59,8 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="46" date="YYYY-MM-DD" description="TBD">
+        <release version="46" date="2018-MM-DD" description="TBD">
+            <action type="update">japicmp-maven-plugin 0.11.0 -> 0.11.1</action>
         </release>
 
         <release version="45" date="2018-03-12" description="Changing location of commons-release-plugin">
