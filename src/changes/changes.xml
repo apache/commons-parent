@@ -61,6 +61,10 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
         <release version="46" date="2018-MM-DD" description="TBD">
             <action type="update">japicmp-maven-plugin 0.11.0 -> 0.11.1</action>
+            <action type="update">maven-surefire-report-plugin 2.20.1 -> 2.21.0</action>
+            <action type="add">Add java-1.10 profile</action>
+            <action type="add">Add java-1.11 profile</action>
+            <action type="update">jacoco-maven-plugin 0.8.0 -> 0.8.1</action>
         </release>
 
         <release version="45" date="2018-03-12" description="Changing location of commons-release-plugin">
