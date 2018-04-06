@@ -46,6 +46,7 @@
     - Add java-1.11 profile
     - jacoco-maven-plugin 0.8.0 -> 0.8.1
     - commons-build-plugin 1.7 -> 1.8
+    - commons-release-plugin 1.1 -> 1.2
 
   -->
 
@@ -1721,7 +1722,7 @@
 
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
     <commons.build-plugin.version>1.8</commons.build-plugin.version>
-    <commons.release-plugin.version>1.1</commons.release-plugin.version>
+    <commons.release-plugin.version>1.2</commons.release-plugin.version>
     <commons.surefire.version>2.21.0</commons.surefire.version>
     <commons.failsafe.version>2.21.0</commons.failsafe.version>
     <commons.surefire-report.version>2.21.0</commons.surefire-report.version>

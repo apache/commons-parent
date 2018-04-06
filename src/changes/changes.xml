@@ -66,6 +66,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="add">Add java-1.11 profile</action>
             <action type="update">jacoco-maven-plugin 0.8.0 -> 0.8.1</action>
             <action type="update">commons-build-plugin 1.7 -> 1.8</action>
+            <action type="update">commons-release-plugin 1.1 -> 1.2</action>
         </release>
 
         <release version="45" date="2018-03-12" description="Changing location of commons-release-plugin">
