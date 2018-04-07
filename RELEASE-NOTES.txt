@@ -1,3 +1,47 @@
+              Apache Commons Parent 46
+                  RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the commons-parent-46 release!
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Updates plugins and generally requires Java 7.
+
+Plugin updates
+
+Notes on japicmp usage in 46
+----------------------------
+For japicmp to work when running 'mvn site', we must first run package
+because japicmp needs a built artifact to which to compare the previous
+version. Thus, we run 'mvn package site' to get an appropriate japicmp
+report.
+
+
+Changes in this version include:
+
+New features:
+o Add java-1.10 profile
+o Add java-1.11 profile
+
+
+Changes:
+o japicmp-maven-plugin 0.11.0 -> 0.11.1
+o maven-surefire-report-plugin 2.20.1 -> 2.21.0
+o jacoco-maven-plugin 0.8.0 -> 0.8.1
+o commons-build-plugin 1.7 -> 1.8
+o commons-release-plugin 1.1 -> 1.2
+o japicmp-maven-plugin: oldVersionPattern=\d+\.\d+\.\d*
+
+
+Historical list of changes: http://commons.apache.org/commons-parent-pom.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
+
+http://commons.apache.org/commons-parent-pom.html
+
+-----------------------------------------------------------------------------
+
               Apache Commons Parent 45
                   RELEASE NOTES
 
@@ -15,7 +59,7 @@ Changes:
 o Rearranging plugin order in -Prelease, removing commons-release-plugin from build>pluginManagement
 
 
-Historical list of changes: http://commons.apache.org/commons-parent-pom.htmlchanges-report.html
+Historical list of changes: http://commons.apache.org/commons-parent-pom.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
@@ -66,7 +110,7 @@ o maven-surefire-plugin 2.20.1 -> 2.21.0
 o maven-failsafe-plugin 2.20.1 -> 2.21.0
 
 
-Historical list of changes: http://commons.apache.org/commons-parent-pom.htmlchanges-report.html
+Historical list of changes: http://commons.apache.org/commons-parent-pom.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
@@ -105,7 +149,7 @@ o wagon-ssh 2.10 -> 3.0.0.
 o maven-site-plugin 3.6 -> 3.7 (fixes Java 9 builds; for migrating from 3.4 to 3.5.1, see https://maven.apache.org/components/plugins/maven-site-plugin/migrate.html)
 
 
-Historical list of changes: http://commons.apache.org/commons-parent-pom.htmlchanges-report.html
+Historical list of changes: http://commons.apache.org/commons-parent-pom.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Apache Commons Parent website:

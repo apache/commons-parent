@@ -59,7 +59,15 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="46" date="2018-MM-DD" description="TBD">
+        <release version="46" date="2018-04-07" description="Plugin updates
+
+        Notes on japicmp usage in 46
+        ----------------------------
+        For japicmp to work when running 'mvn site', we must first run package
+        because japicmp needs a built artifact to which to compare the previous
+        version. Thus, we run 'mvn package site' to get an appropriate japicmp
+        report.
+        ">
             <action type="update">japicmp-maven-plugin 0.11.0 -> 0.11.1</action>
             <action type="update">maven-surefire-report-plugin 2.20.1 -> 2.21.0</action>
             <action type="add">Add java-1.10 profile</action>
