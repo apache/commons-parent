@@ -47,6 +47,7 @@
     - jacoco-maven-plugin 0.8.0 -> 0.8.1
     - commons-build-plugin 1.7 -> 1.8
     - commons-release-plugin 1.1 -> 1.2
+    - japicmp-maven-plugin: oldVersionPattern=\d+\.\d+\.\d*
 
   -->
 
@@ -454,6 +455,7 @@
               <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
               <reportOnlyFilename>true</reportOnlyFilename>
             </parameter>
+            <oldVersionPattern>\d+\.\d+\.\d*</oldVersionPattern>
           </configuration>
         </plugin>
         <plugin>
