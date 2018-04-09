@@ -48,6 +48,7 @@
     - commons-build-plugin 1.7 -> 1.8
     - commons-release-plugin 1.1 -> 1.2
     - japicmp-maven-plugin: oldVersionPattern=\d+\.\d+\.\d*
+    - maven-assembly-plugin: 3.0.0 -> 3.1.0
 
   -->
 
@@ -454,8 +455,9 @@
               <!-- skip japicmp on "mvn site" - use "mvn package site" to include report -->
               <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
               <reportOnlyFilename>true</reportOnlyFilename>
+              <skipPomModules>true</skipPomModules>
+              <oldVersionPattern>\d+\.\d*\.\d*</oldVersionPattern>
             </parameter>
-            <oldVersionPattern>\d+\.\d+\.\d*</oldVersionPattern>
           </configuration>
         </plugin>
         <plugin>
@@ -582,6 +584,7 @@
       <plugin>
         <!-- Parent POM is released, so needs source archive for ASF mirrors -->
         <artifactId>maven-assembly-plugin</artifactId>
+        <version>${commons.assembly-plugin.version}</version>
         <configuration>
           <descriptors>
             <descriptor>src/assembly/src.xml</descriptor>
@@ -960,8 +963,10 @@
             <onlyModified>true</onlyModified>
             <breakBuildOnBinaryIncompatibleModifications>${commons.japicmp.breakBuildOnBinaryIncompatibleModifications}</breakBuildOnBinaryIncompatibleModifications>
             <!-- skip japicmp on "mvn site" - use "mvn package site" to include report -->
+            <skipPomModules>true</skipPomModules>
             <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
             <reportOnlyFilename>true</reportOnlyFilename>
+            <oldVersionPattern>\d+\.\d*\.\d*</oldVersionPattern>
           </parameter>
         </configuration>
       </plugin>
@@ -1275,6 +1280,7 @@
           </plugin>
           <plugin>
             <artifactId>maven-assembly-plugin</artifactId>
+            <version>${commons.assembly-plugin.version}</version>
             <inherited>true</inherited>
             <executions>
               <execution>
@@ -1770,6 +1776,7 @@
       </dependencies>
 
     -->
+    <commons.assembly-plugin.version>3.1.0</commons.assembly-plugin.version>
     <commons.site-plugin.version>3.7</commons.site-plugin.version>
     <commons.jacoco.version>0.8.1</commons.jacoco.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
