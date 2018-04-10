@@ -14,7 +14,28 @@ Notes on japicmp usage in 46
 For japicmp to work when running 'mvn site', we must first run package
 because japicmp needs a built artifact to which to compare the previous
 version. Thus, we run 'mvn package site' to get an appropriate japicmp
-report.
+report. Further, during project build we see the following warning and
+stacktrace during site generation:
+
+[debug] No packaging support defined, no filtering
+[info] Skipping execution because packaging of this module is 'pom'.
+[debug] Searching for versions in versionRange: (,46)
+[info] Unable to find a previous version of the project in the repository.
+[warn] No new version specified and file '/..../commons-parent/pom.xml' of artifact could not be opened as jar archive: error in opening zip file
+
+java.util.zip.ZipException: error in opening zip file
+        at java.util.zip.ZipFile.open(Native Method)
+        at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+        at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+        at java.util.jar.JarFile.<init>(JarFile.java:166)
+        at java.util.jar.JarFile.<init>(JarFile.java:130)
+        at japicmp.maven.JApiCmpMojo.populateArchivesListsFromParameters(JApiCmpMojo.java:345)
+        at japicmp.maven.JApiCmpMojo.getOptions(JApiCmpMojo.java:708)
+        at japicmp.maven.JApiCmpReport.getOptions(JApiCmpReport.java:108)
+        at japicmp.maven.JApiCmpReport.getDescription(JApiCmpReport.java:127)
+        at org.apache.maven.plugins.site.render.CategorySummaryDocumentRenderer.renderDocument(CategorySummaryDocumentRenderer.java:155)
+
+
 
 
 Changes in this version include:
