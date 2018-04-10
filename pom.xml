@@ -28,7 +28,7 @@
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
-  <version>46</version>
+  <version>46-SNAPSHOT</version>
   <name>Apache Commons Parent</name>
   <url>http://commons.apache.org/commons-parent-pom.html</url>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
@@ -49,6 +49,7 @@
     - commons-release-plugin 1.1 -> 1.2
     - japicmp-maven-plugin: oldVersionPattern=\d+\.\d+\.\d*
     - maven-assembly-plugin: 3.0.0 -> 3.1.0
+    - Set maven-jar-plugin version to 3.1.0.
 
   -->
 
@@ -357,6 +358,11 @@
             <executable>${commons.compiler.javac}</executable>
           </configuration>
         </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>${commons.assembly-plugin.version}</version>
+        </plugin>
         <!-- Apache parent includes docck -->
         <!-- Apache parent: invoker -->
         <plugin>
@@ -584,7 +590,6 @@
       <plugin>
         <!-- Parent POM is released, so needs source archive for ASF mirrors -->
         <artifactId>maven-assembly-plugin</artifactId>
-        <version>${commons.assembly-plugin.version}</version>
         <configuration>
           <descriptors>
             <descriptor>src/assembly/src.xml</descriptor>
@@ -655,6 +660,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
+        <version>${commons.jar-plugin.version}</version>
         <executions>
           <execution>
             <goals>
@@ -1776,6 +1782,7 @@
       </dependencies>
 
     -->
+    <commons.jar-plugin.version>3.1.0</commons.jar-plugin.version>
     <commons.assembly-plugin.version>3.1.0</commons.assembly-plugin.version>
     <commons.site-plugin.version>3.7</commons.site-plugin.version>
     <commons.jacoco.version>0.8.1</commons.jacoco.version>
