@@ -462,7 +462,6 @@
               <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
               <reportOnlyFilename>true</reportOnlyFilename>
               <skipPomModules>true</skipPomModules>
-              <oldVersionPattern>\d+\.\d*\.\d*</oldVersionPattern>
             </parameter>
           </configuration>
         </plugin>
@@ -972,7 +971,6 @@
             <skipPomModules>true</skipPomModules>
             <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
             <reportOnlyFilename>true</reportOnlyFilename>
-            <oldVersionPattern>\d+\.\d*\.\d*</oldVersionPattern>
           </parameter>
         </configuration>
       </plugin>
