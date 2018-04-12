@@ -28,7 +28,7 @@
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
-  <version>46-SNAPSHOT</version>
+  <version>46</version>
   <name>Apache Commons Parent</name>
   <url>http://commons.apache.org/commons-parent-pom.html</url>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
@@ -636,23 +636,23 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
         <version>3.0.0-M1</version>
+        <configuration>
+          <rules>
+            <requireMavenVersion>
+              <version>3.0.5</version>
+            </requireMavenVersion>
+            <requireJavaVersion>
+              <version>${maven.compiler.target}</version>
+            </requireJavaVersion>
+          </rules>
+          <fail>true</fail>
+        </configuration>
         <executions>
           <execution>
             <id>enforce-maven-3</id>
             <goals>
               <goal>enforce</goal>
             </goals>
-            <configuration>
-              <rules>
-                <requireMavenVersion>
-                  <version>3.0.5</version>
-                </requireMavenVersion>
-                <requireJavaVersion>
-                  <version>${maven.compiler.target}</version>
-                </requireJavaVersion>
-              </rules>
-              <fail>true</fail>
-            </configuration>
           </execution>
         </executions>
       </plugin>
