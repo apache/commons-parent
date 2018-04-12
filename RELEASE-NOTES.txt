@@ -54,6 +54,9 @@ o commons-release-plugin 1.1 -> 1.2
 o japicmp-maven-plugin: oldVersionPattern=\d+\.\d+\.\d*
 o maven-assembly-plugin: 3.0.0 -> 3.1.0
 
+Removed:
+o Prerequisites tag; should only be used for maven-plugins, using maven-enforcer-plugin instead.
+
 
 Historical list of changes: http://commons.apache.org/commons-parent-pom.html
 

@@ -164,11 +164,6 @@
 
   -->
 
-  <!-- Maven versions plugin reports an error if this is omitted -->
-  <prerequisites>
-    <maven>3.0.5</maven>
-  </prerequisites>
-
   <ciManagement>
     <system>jenkins</system>
     <url>https://builds.apache.org/</url>

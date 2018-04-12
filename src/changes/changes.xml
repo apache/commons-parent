@@ -77,6 +77,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">commons-release-plugin 1.1 -> 1.2</action>
             <action type="update">japicmp-maven-plugin: oldVersionPattern=\d+\.\d+\.\d*</action>
             <action type="update">maven-assembly-plugin: 3.0.0 -> 3.1.0</action>
+            <action type="remove">Prerequisites tag; should only be used for maven-plugins, using maven-enforcer-plugin instead.</action>
         </release>
 
         <release version="45" date="2018-03-12" description="Changing location of commons-release-plugin">
