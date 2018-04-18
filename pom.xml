@@ -42,6 +42,7 @@
     
     - Set the version of Apache Commons BCEL used by maven-project-info-reports-plugin to avoid 
       "org.apache.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19"
+    - Allows JApiCmp's ignoreMissingClasses parameter to be easily overridable with the property commons.japicmp.ignoreMissingClasses.
       
   -->
   
@@ -465,6 +466,7 @@
               <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
               <reportOnlyFilename>true</reportOnlyFilename>
               <skipPomModules>true</skipPomModules>
+              <ignoreMissingClasses>${commons.japicmp.ignoreMissingClasses}</ignoreMissingClasses>
             </parameter>
           </configuration>
         </plugin>
@@ -1901,6 +1903,7 @@
     <!-- allow japicmp's breakBuildOnBinaryIncompatibleModifications
       to be overridden, plugin's default is false -->
     <commons.japicmp.breakBuildOnBinaryIncompatibleModifications>true</commons.japicmp.breakBuildOnBinaryIncompatibleModifications>
+    <commons.japicmp.ignoreMissingClasses>false</commons.japicmp.ignoreMissingClasses>    
 
     <sonar.host.url>https://analysis.apache.org/</sonar.host.url>
 
