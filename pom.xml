@@ -38,6 +38,14 @@
   </issueManagement>
 
   <!--
+    Version 47:
+    
+    - Set the version of Apache Commons BCEL used by maven-project-info-reports-plugin to avoid 
+      "org.apache.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19"
+      
+  -->
+  
+  <!--
     Version 46:
 
     - japicmp-maven-plugin 0.11.0 -> 0.11.1
@@ -576,7 +584,18 @@
             </execution>
           </executions>
         </plugin>
-        <!-- Apache parent: plexus & modello -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
+          <version>${commons.project-info.version}</version>
+            <dependencies>
+              <dependency>
+                <groupId>org.apache.bcel</groupId>
+                <artifactId>bcel</artifactId>
+                <version>6.2</version>
+              </dependency>
+            </dependencies>
+         </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
