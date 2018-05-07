@@ -59,6 +59,12 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
+        <release version="47" date="YYYY-MM-DD" description="TBD">
+            <action type="update">Set the version of Apache Commons BCEL used by maven-project-info-reports-plugin to avoid
+                "org.apache.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19"</action>
+            <action type="update">Allows JApiCmp's ignoreMissingClasses parameter to be easily overridable with the property commons.japicmp.ignoreMissingClasses.</action>
+            <action type="update">japicmp-maven-plugin 0.11.1 -> 0.12.0</action>
+        </release>
         <release version="46" date="2018-04-07" description="Plugin updates
 
         Notes on japicmp usage in 46
