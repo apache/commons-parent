@@ -47,7 +47,6 @@
     - Add properties:
       - commons.releaseManagerName
       - commons.releaseManagerKey
-      - commons.componentrootid
       
   -->
   
@@ -1843,16 +1842,13 @@
     <commons.jacoco.lineRatio>0.90</commons.jacoco.lineRatio>
     <commons.jacoco.haltOnFailure>false</commons.jacoco.haltOnFailure>
 
-    <!-- Commons Component Id -->
-    <commons.componentid>${project.artifactId}</commons.componentid>
-    
-    <!-- The Commons Component root id is used on the distribution server, for example:
+    <!-- The Commons Component id is used on the distribution server, for example:
          - use dbcp instead of dbcp2 
          - use collections instead of collections4
          - use lang instead of lang3 
     -->
-    <commons.componentrootid>${project.artifactId}</commons.componentrootid>
-
+    <commons.componentid>${project.artifactId}</commons.componentid>
+    
     <!-- Configuration properties for the OSGi maven-bundle-plugin -->
     <commons.osgi.symbolicName>org.apache.commons.${commons.componentid}</commons.osgi.symbolicName>
     <commons.osgi.export>org.apache.commons.*;version=${project.version};-noimport:=true</commons.osgi.export>
