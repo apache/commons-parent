@@ -1841,6 +1841,13 @@
 
     <!-- Commons Component Id -->
     <commons.componentid>${project.artifactId}</commons.componentid>
+    
+    <!-- The Commons Component root id is used on the distribution server, for example:
+         - use dbcp instead of dbcp2 
+         - use collections instead of collections4
+         - use lang instead of lang3 
+    -->
+    <commons.componentrootid>${project.artifactId}</commons.componentrootid>
 
     <!-- Configuration properties for the OSGi maven-bundle-plugin -->
     <commons.osgi.symbolicName>org.apache.commons.${commons.componentid}</commons.osgi.symbolicName>
