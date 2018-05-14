@@ -1917,8 +1917,8 @@
     <commons.japicmp.breakBuildOnBinaryIncompatibleModifications>true</commons.japicmp.breakBuildOnBinaryIncompatibleModifications>
     <commons.japicmp.ignoreMissingClasses>false</commons.japicmp.ignoreMissingClasses>    
 
-    <commons.releaseManagerName>${user.name}</commons.releaseManagerName>    
-    <commons.releaseManagerKey>DEADBEEF</commons.releaseManagerKey>    
+    <commons.releaseManagerName>${user.name}</commons.releaseManagerName>
+    <commons.releaseManagerKey>DEADBEEF</commons.releaseManagerKey>
     <sonar.host.url>https://analysis.apache.org/</sonar.host.url>
 
   </properties>
