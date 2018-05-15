@@ -54,7 +54,7 @@ Documentation
 -------------
 
 More information can be found on the [Apache Commons Parent homepage](https://commons.apache.org/proper/commons-commons-parent).
-The [JavaDoc](https://commons.apache.org/proper/commons-commons-parent/javadocs/api-release) can be browsed.
+The [Javadoc](https://commons.apache.org/proper/commons-commons-parent/javadocs/api-release) can be browsed.
 Questions related to the usage of Apache Commons Parent should be posted to the [user mailing list][ml].
 
 Where can I get the latest release?
