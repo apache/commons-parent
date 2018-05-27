@@ -45,6 +45,7 @@
     - Allows JApiCmp's ignoreMissingClasses parameter to be easily overridable with the property commons.japicmp.ignoreMissingClasses.
     - japicmp-maven-plugin 0.11.1 -> 0.12.0
     - Add properties:
+      - commons.distSvnStagingUrl
       - commons.releaseManagerName
       - commons.releaseManagerKey
       
@@ -1919,10 +1920,10 @@
     <commons.japicmp.breakBuildOnBinaryIncompatibleModifications>true</commons.japicmp.breakBuildOnBinaryIncompatibleModifications>
     <commons.japicmp.ignoreMissingClasses>false</commons.japicmp.ignoreMissingClasses>    
 
-    <!-- Commons Release plugin -->
+    <!-- Commons Release plugin: dist dev site -->
     <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>    
 
-    <!-- Release Manager -->
+    <!-- Commons Release plugin: release manager -->
     <commons.releaseManagerName>${user.name}</commons.releaseManagerName>
     <commons.releaseManagerKey>DEADBEEF</commons.releaseManagerKey>
     
