@@ -1922,7 +1922,7 @@
     <commons.japicmp.ignoreMissingClasses>false</commons.japicmp.ignoreMissingClasses>    
 
     <!-- Commons Release plugin: dist dev site -->
-    <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>    
+    <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}/${commons.release.version}-${commons.rc.version}</commons.distSvnStagingUrl>    
 
     <!-- Commons Release plugin: release manager -->
     <commons.releaseManagerName>${user.name}</commons.releaseManagerName>
