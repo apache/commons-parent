@@ -1808,7 +1808,7 @@
     -->
     <commons.jar-plugin.version>3.1.0</commons.jar-plugin.version>
     <commons.assembly-plugin.version>3.1.0</commons.assembly-plugin.version>
-    <commons.site-plugin.version>3.7</commons.site-plugin.version>
+    <commons.site-plugin.version>3.7.1</commons.site-plugin.version>
     <commons.jacoco.version>0.8.1</commons.jacoco.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
     <commons.coveralls.version>4.3.0</commons.coveralls.version>
