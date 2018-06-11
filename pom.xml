@@ -478,6 +478,7 @@
               <skipPomModules>true</skipPomModules>
               <ignoreMissingClasses>${commons.japicmp.ignoreMissingClasses}</ignoreMissingClasses>
             </parameter>
+            <skip>true</skip>
           </configuration>
         </plugin>
         <plugin>
@@ -1760,7 +1761,7 @@
 
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
     <commons.build-plugin.version>1.8</commons.build-plugin.version>
-    <commons.release-plugin.version>1.2</commons.release-plugin.version>
+    <commons.release-plugin.version>1.3-SNAPSHOT</commons.release-plugin.version>
     <commons.surefire.version>2.21.0</commons.surefire.version>
     <commons.failsafe.version>2.21.0</commons.failsafe.version>
     <commons.surefire-report.version>2.21.0</commons.surefire-report.version>
@@ -1922,7 +1923,7 @@
     <commons.japicmp.ignoreMissingClasses>false</commons.japicmp.ignoreMissingClasses>    
 
     <!-- Commons Release plugin: dist dev site -->
-    <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}/${commons.release.version}-${commons.rc.version}</commons.distSvnStagingUrl>    
+    <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
 
     <!-- Commons Release plugin: release manager -->
     <commons.releaseManagerName>${user.name}</commons.releaseManagerName>
