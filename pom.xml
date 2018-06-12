@@ -50,6 +50,7 @@
       - commons.releaseManagerKey
     - maven-javadoc-plugin 3.0.0 -> 3.0.1 (Java 10 compatibility)
     - maven-site-plugin 3.7.0 -> 3.7.1.
+    - org.apache.maven.wagon:wagon-ssh 3.0.0 -> 3.1.0
       
   -->
   
