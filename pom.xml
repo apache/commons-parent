@@ -49,6 +49,7 @@
       - commons.releaseManagerName
       - commons.releaseManagerKey
     - maven-javadoc-plugin 3.0.0 -> 3.0.1 (Java 10 compatibility)
+    - maven-site-plugin 3.7.0 -> 3.7.1.
       
   -->
   
@@ -1772,7 +1773,7 @@
     <commons.japicmp.version>0.12.0</commons.japicmp.version>
     <commons.jxr.version>2.5</commons.jxr.version>
     <commons.project-info.version>2.9</commons.project-info.version>
-    <commons.wagon-ssh.version>3.0.0</commons.wagon-ssh.version>
+    <commons.wagon-ssh.version>3.1.0</commons.wagon-ssh.version>
     <!--
       Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
 
