@@ -1764,7 +1764,7 @@
     <commons.release-plugin.version>1.3</commons.release-plugin.version>
     <commons.surefire.version>2.22.0</commons.surefire.version>
     <commons.failsafe.version>2.22.0</commons.failsafe.version>
-    <commons.surefire-report.version>2.21.0</commons.surefire-report.version>
+    <commons.surefire-report.version>2.22.0</commons.surefire-report.version>
     <commons.javadoc.version>3.0.1</commons.javadoc.version>
     <commons.rat.version>0.12</commons.rat.version>
     <commons.changes.version>2.12.1</commons.changes.version>
