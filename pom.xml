@@ -1760,7 +1760,7 @@
     <commons.surefire.java />
 
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
-    <commons.build-plugin.version>1.8</commons.build-plugin.version>
+    <commons.build-plugin.version>1.9</commons.build-plugin.version>
     <commons.release-plugin.version>1.3</commons.release-plugin.version>
     <commons.surefire.version>2.22.0</commons.surefire.version>
     <commons.failsafe.version>2.22.0</commons.failsafe.version>
