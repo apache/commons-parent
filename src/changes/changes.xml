@@ -64,6 +64,12 @@ The <action> type attribute can be add,update,fix,remove.
                 "org.apache.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19"</action>
             <action type="update">Allows JApiCmp's ignoreMissingClasses parameter to be easily overridable with the property commons.japicmp.ignoreMissingClasses.</action>
             <action type="update">japicmp-maven-plugin 0.11.1 -> 0.12.0</action>
+            <action type="add">New properties: commons.distSvnStagingUrl, commons.releaseManagerName, commons.releaseManagerKey</action>
+            <action type="update">maven-javadoc-plugin 3.0.0 -> 3.0.1 (Java 10 compatibility)</action>
+            <actiom type="update">maven-site-plugin 3.7.0 -> 3.7.1.</actiom>
+            <action type="update">org.apache.maven.wagon:wagon-ssh 3.0.0 -> 3.1.0</action>
+            <action type="update">maven-surefire-report-plugin 2.21.0 -> 2.22.0</action>
+            <action type="update">maven-enforcer-plugin 3.0.0-M1 -> 3.0.0-M2</action>
             <action type="update">commons-release-plugin 1.2 -> 1.3</action>
             <action type="update">commons-build-plugin 1.8 -> 1.9</action>
         </release>
