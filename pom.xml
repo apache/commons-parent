@@ -28,7 +28,7 @@
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
   <packaging>pom</packaging>
-  <version>47</version>
+  <version>47-SNAPSHOT</version>
   <name>Apache Commons Parent</name>
   <url>http://commons.apache.org/commons-parent-pom.html</url>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
@@ -56,7 +56,7 @@
     - commons-release-plugin 1.2 -> 1.3
     - commons-build-plugin 1.8 -> 1.9
     - maven-surefire-plugin 2.21.0 -> 2.22.0
-      
+    - maven-project-info-reports-plugin 2.9 -> 3.0.0
   -->
   
   <!--
@@ -1771,7 +1771,7 @@
     <commons.clirr.version>2.8</commons.clirr.version>
     <commons.japicmp.version>0.12.0</commons.japicmp.version>
     <commons.jxr.version>2.5</commons.jxr.version>
-    <commons.project-info.version>2.9</commons.project-info.version>
+    <commons.project-info.version>3.0.0</commons.project-info.version>
     <commons.wagon-ssh.version>3.1.0</commons.wagon-ssh.version>
     <!--
       Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
