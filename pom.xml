@@ -925,15 +925,15 @@
               <report>summary</report>
               <report>modules</report>
               <!-- <report>license</report> site must link to ASF page instead -->
-              <report>project-team</report>
+              <report>team</report>
               <report>scm</report>
-              <report>issue-tracking</report>
-              <report>mailing-list</report>
+              <report>issue-management</report>
+              <report>mailing-lists</report>
               <report>dependency-info</report>
               <report>dependency-management</report>
               <report>dependencies</report>
               <report>dependency-convergence</report>
-              <report>cim</report>
+              <report>ci-management</report>
               <!-- <report>plugin-management</report> not very useful for end users -->
               <!-- <report>plugins</report> not very useful for end users -->
               <report>distribution-management</report>
