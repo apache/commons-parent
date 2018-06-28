@@ -73,6 +73,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">commons-release-plugin 1.2 -> 1.3</action>
             <action type="update">commons-build-plugin 1.8 -> 1.9</action>
             <action type="update">maven-surefire-plugin 2.21.0 -> 2.22.0</action>
+            <action type="update">maven-project-info-reports-plugin 2.9 -> 3.0.0</action>
         </release>
 
         <release version="46" date="2018-04-07" description="Plugin updates
