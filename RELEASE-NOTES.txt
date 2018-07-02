@@ -25,6 +25,7 @@ o maven-enforcer-plugin 3.0.0-M1 -> 3.0.0-M2
 o commons-release-plugin 1.2 -> 1.3
 o commons-build-plugin 1.8 -> 1.9
 o maven-surefire-plugin 2.21.0 -> 2.22.0
+o maven-project-info-reports-plugin 2.9 -> 3.0.0
 
 
 Historical list of changes: http://commons.apache.org/commons-parent-pom.html
