@@ -38,6 +38,12 @@
   </issueManagement>
 
   <!--
+    Version 48:
+    
+    - Comments go here.
+  -->
+  
+  <!--
     Version 47:
     
     - Set the version of Apache Commons BCEL used by maven-project-info-reports-plugin to avoid 
