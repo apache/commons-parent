@@ -23,7 +23,7 @@
   <parent>
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
-    <version>19</version>
+    <version>20</version>
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
@@ -40,7 +40,8 @@
   <!--
     Version 48:
     
-    - Comments go here.
+    - Update parent from org.apache:apache 19 to 20.
+    - Add your comment here.
   -->
   
   <!--
