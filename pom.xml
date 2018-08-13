@@ -42,6 +42,10 @@
     
     - Update parent from org.apache:apache 19 to 20.
     - maven-compiler-plugin 3.7.0 -> 3.8.0
+    - re-enabled japicmp and introduced japicmp.skip property that
+      controls whether japicmp reports are run. It is disabled by
+      default and enabled via a special profile enabled by the
+      presence of the file src/site/resources/profile.japicmp
     - Add your comment here.
   -->
   
@@ -493,7 +497,7 @@
               <skipPomModules>true</skipPomModules>
               <ignoreMissingClasses>${commons.japicmp.ignoreMissingClasses}</ignoreMissingClasses>
             </parameter>
-            <skip>true</skip>
+            <skip>${japicmp.skip}</skip>
           </configuration>
         </plugin>
         <plugin>
@@ -1255,6 +1259,9 @@
     <!-- alternative to clirr, will fail build if binary compatibility is broken -->
     <profile>
       <id>japicmp</id>
+      <properties>
+        <japicmp.skip>false</japicmp.skip>
+      </properties>
       <activation>
         <file>
           <exists>src/site/resources/profile.japicmp</exists>
@@ -1688,6 +1695,7 @@
         <changes.jira.skip>true</changes.jira.skip>
         <rat.skip>true</rat.skip> <!-- from version 0.12 -->
         <jacoco.skip>true</jacoco.skip>
+        <japicmp.skip>true</japicmp.skip>
         <skipSurefireReport>true</skipSurefireReport>
       </properties>
     </profile>
@@ -1936,7 +1944,9 @@
     <!-- allow japicmp's breakBuildOnBinaryIncompatibleModifications
       to be overridden, plugin's default is false -->
     <commons.japicmp.breakBuildOnBinaryIncompatibleModifications>true</commons.japicmp.breakBuildOnBinaryIncompatibleModifications>
-    <commons.japicmp.ignoreMissingClasses>false</commons.japicmp.ignoreMissingClasses>    
+    <commons.japicmp.ignoreMissingClasses>false</commons.japicmp.ignoreMissingClasses>
+    <!-- disable japicmp by default -->
+    <japicmp.skip>true</japicmp.skip>
 
     <!-- Commons Release plugin: dist dev site -->
     <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
