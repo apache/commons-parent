@@ -1862,7 +1862,7 @@
     <commons.jacoco.lineRatio>0.90</commons.jacoco.lineRatio>
     <commons.jacoco.haltOnFailure>false</commons.jacoco.haltOnFailure>
 
-    <!-- The Commons Component id is used on the distribution server, for example:
+    <!-- The Commons component id is used on the distribution server, for example:
          - Use dbcp instead of dbcp2. 
          - Use collections instead of collections4.
          - Use lang instead of lang3. 
@@ -1870,7 +1870,8 @@
          - and so on... 
     -->
     <commons.componentid>${project.artifactId}</commons.componentid>
-    <!-- The Commons Component id is substring of the package name from o.a.commons.(.*)., for example:
+    
+    <!-- The package id is substring of the package name from o.a.commons.(.*)., for example:
          - Use dbcp2 instead of dbcp.
          - Use collections4 instead of collections.
          - Use lang3 instead of lang.
