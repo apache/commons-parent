@@ -46,6 +46,7 @@
       controls whether japicmp reports are run. It is disabled by
       default and enabled via a special profile enabled by the
       presence of the file src/site/resources/profile.japicmp
+    - org.apache.felix:maven-bundle-plugin 3.5.0 -> 3.5.1
     - Add your comment here.
   -->
   
@@ -1835,7 +1836,7 @@
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
     <commons.findbugs.version>3.0.5</commons.findbugs.version>
     <commons.spotbugs.version>3.1.3</commons.spotbugs.version>
-    <commons.felix.version>3.5.0</commons.felix.version>
+    <commons.felix.version>3.5.1</commons.felix.version>
     <commons.build-helper.version>3.0.0</commons.build-helper.version>
     <commons.animal-sniffer.version>1.16</commons.animal-sniffer.version>
     <!-- Almost all signatures use version 1.0. Allow override just in case -->
