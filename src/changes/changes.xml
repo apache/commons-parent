@@ -61,6 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
 
         <release version="48" date="YYYY-MM-DD" description="TBD">
+            <action issue="COMMONSSITE-124" type="fix" dev="britter">Revert change in commons.scmPubUrl in Parent 47</action>
             <action type="update">Update parent from org.apache:apache 19 to 20.</action>
             <action type="update">maven-compiler-plugin 3.7.0 -> 3.8.0</action>
             <action type="fix">re-enabled japicmp and introduced japicmp.skip property that
