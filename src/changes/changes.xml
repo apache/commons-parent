@@ -38,7 +38,8 @@ and commit
 The <action> type attribute can be add,update,fix,remove.
 -->
 
-<document xmlns="http://maven.apache.org/changes/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/xsd/changes-1.0.0.xsd">
+<document xmlns="http://maven.apache.org/changes/1.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/xsd/changes-1.0.0.xsd">
     <properties>
         <title>Changes</title>
         <author email="dev@commons.apache.org">Apache Commons developers</author>
@@ -111,7 +112,7 @@ The <action> type attribute can be add,update,fix,remove.
         </release>
 
         <release version="45" date="2018-03-12" description="Changing location of commons-release-plugin">
-          <action type="update">Rearranging plugin order in -Prelease, removing commons-release-plugin from build>pluginManagement</action>
+            <action type="update">Rearranging plugin order in -Prelease, removing commons-release-plugin from build>pluginManagement</action>
         </release>
 
         <release version="44" date="2018-03-08" description="Plugin Updates and add new commons-release-plugin
@@ -178,7 +179,7 @@ The <action> type attribute can be add,update,fix,remove.
             controls the breakBuildOnBinaryIncompatibleModifications
             setting of japicmp</action>
         </release>
-        
+
         <release version="41" date="2016-08-15" description="Updates plugins and adds source compatibility profiles">
             <action type="update">COMMONSSITE-89 - support both clirr and japicmp
 Clirr report must now be explicitly enabled using src/site/resources/profile.clirr file or -Pclirr option</action>
@@ -318,7 +319,7 @@ The main changes in this release are:
   - updated some plugins
 ">
             <!-- List each change individually so the changes HTML report is easier to read -->
-             
+
             <action type="update">commons-skin                       3 -> 4</action>
             <action type="update">maven-deploy-plugin                2.7 -> 2.8.1</action>
             <action type="update">maven-jxr-plugin                   2.3 -> 2.4</action>
@@ -330,13 +331,13 @@ The main changes in this release are:
             <action type="update">apache-rat-plugin                  0.9 -> 0.10</action>
             <action type="update">clirr-maven-plugin                 2.5 -> 2.6.1</action>
             <action type="update">cobertura-maven-plugin           2.5.2 -> 2.6</action>
-            
+
             <action type="update">jacoco-maven-plugin 0.6.3.201306030806 -> 0.6.4.201312101107</action>
             <action type="update">Fixed JaCoCo configuration - syntax changed completely between 0.6.2.x and 0.6.3.x</action>
             <!-- Note: the (major) syntax change is not documented AFAICT, and only the trunk docs are online for comparison. -->
             <action type="update">Add commons.compiler.version property so compiler plugin version can be overridden if necessary</action>
             <action type="update">Add source archive to Maven artifacts</action>
-            </release>
+        </release>
 
         <release version="32" date="2013-07-01" description="
 The main changes in this release are:
@@ -566,7 +567,7 @@ Starting with version 22, the RAT plugin has changed Maven group and id,
             <action dev="ggregory" type="add">
             Add Javadoc link to Java EE.
             </action>
-            
+
         </release>
 
     </body>
