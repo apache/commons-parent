@@ -1617,9 +1617,9 @@
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
     <commons.build-plugin.version>1.9</commons.build-plugin.version>
     <commons.release-plugin.version>1.4</commons.release-plugin.version>
-    <commons.surefire.version>2.22.0</commons.surefire.version>
-    <commons.failsafe.version>2.22.0</commons.failsafe.version>
-    <commons.surefire-report.version>2.22.0</commons.surefire-report.version>
+    <commons.surefire.version>2.22.1</commons.surefire.version>
+    <commons.failsafe.version>2.22.1</commons.failsafe.version>
+    <commons.surefire-report.version>2.22.1</commons.surefire-report.version>
     <commons.javadoc.version>3.0.1</commons.javadoc.version>
     <commons.rat.version>0.12</commons.rat.version>
     <commons.changes.version>2.12.1</commons.changes.version>

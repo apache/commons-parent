@@ -75,6 +75,9 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">org.apache.felix:maven-bundle-plugin 3.5.0 -> 3.5.1</action>
             <action type="update">org.jacoco:jacoco-maven-plugin 0.8.1 -> 0.8.2 (Java 11)</action>
             <action type="update">org.apache.maven.wagon:wagon-ssh 3.1.0 -> 3.2.0</action>
+            <action type="update">maven-surefire-plugin 2.22.0 -> 2.22.1</action>
+            <action type="update">maven-surefire-report-plugin 2.22.0 -> 2.22.1</action>
+            <action type="update">maven-failsafe-plugin 2.22.0 -> 2.22.1</action>
         </release>
 
         <release version="47" date="2018-07-02" description="Release version 47">
