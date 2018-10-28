@@ -1674,7 +1674,7 @@
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
     <commons.findbugs.version>3.0.5</commons.findbugs.version>
     <commons.spotbugs.version>3.1.6</commons.spotbugs.version>
-    <commons.felix.version>3.5.1</commons.felix.version>
+    <commons.felix.version>4.0.0</commons.felix.version>
     <commons.build-helper.version>3.0.0</commons.build-helper.version>
     <commons.animal-sniffer.version>1.16</commons.animal-sniffer.version>
     <!-- Almost all signatures use version 1.0. Allow override just in case -->
