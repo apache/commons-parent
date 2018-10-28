@@ -79,6 +79,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">maven-surefire-report-plugin 2.22.0 -> 2.22.1</action>
             <action type="update">maven-failsafe-plugin 2.22.0 -> 2.22.1</action>
             <action type="update">versions-maven-plugin 2.5 -> 2.7</action>
+            <action type="update">org.apache.felix:maven-bundle-plugin 3.5.1 -> 4.0.0</action>
         </release>
 
         <release version="47" date="2018-07-02" description="Release version 47">
