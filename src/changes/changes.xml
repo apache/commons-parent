@@ -81,6 +81,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">versions-maven-plugin 2.5 -> 2.7</action>
             <action type="update">org.apache.felix:maven-bundle-plugin 3.5.1 -> 4.1.0</action>
             <action type="update">maven-jxr-plugin 2.5 -> 3.0.0</action>
+            <action type="update">org.apache.rat:apache-rat-plugin 0.12 -> 0.13</action>
         </release>
 
         <release version="47" date="2018-07-02" description="Release version 47">
