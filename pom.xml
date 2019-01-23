@@ -1626,7 +1626,7 @@
     <commons.japicmp.version>0.13.0</commons.japicmp.version>
     <commons.jxr.version>3.0.0</commons.jxr.version>
     <commons.project-info.version>3.0.0</commons.project-info.version>
-    <commons.wagon-ssh.version>3.2.0</commons.wagon-ssh.version>
+    <commons.wagon-ssh.version>3.3.1</commons.wagon-ssh.version>
     <!--
       Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
 
