@@ -84,6 +84,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">org.apache.rat:apache-rat-plugin 0.12 -> 0.13</action>
             <action type="update">commons.wagon-ssh.version 3.2.0 -> 3.3.1</action>
             <action type="update">maven-assembly-plugin 3.1.0 -> 3.1.1</action>
+            <action type="update">commons.jar-plugin.version 3.1.0 -> 3.1.1</action>
         </release>
 
         <release version="47" date="2018-07-02" description="Release version 47">
