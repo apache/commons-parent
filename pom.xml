@@ -327,6 +327,19 @@
           <artifactId>japicmp-maven-plugin</artifactId>
           <version>${commons.japicmp.version}</version>
           <configuration>
+            <oldVersion>
+              <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>${project.artifactId}</artifactId>
+                <version>${commons.bc.version}</version>
+                <type>jar</type>
+             </dependency>
+            </oldVersion>
+            <newVersion>
+              <file>
+                <path>${project.build.directory}/${project.artifactId}-${project.version}.${project.packaging}</path>
+              </file>
+            </newVersion>
             <parameter>
               <onlyModified>true</onlyModified>
               <breakBuildOnBinaryIncompatibleModifications>${commons.japicmp.breakBuildOnBinaryIncompatibleModifications}</breakBuildOnBinaryIncompatibleModifications>
