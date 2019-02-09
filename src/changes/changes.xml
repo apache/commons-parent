@@ -87,6 +87,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">commons.jar-plugin.version 3.1.0 -> 3.1.1</action>
             <action type="update">commons.animal-sniffer.version 1.16 -> 1.17</action>
             <action type="update">org.apache.bcel:bcel 6.2 -> 6.3</action>
+            <action type="update">commons-release-plugin 1.4 -> 1.5</action>
         </release>
 
         <release version="47" date="2018-07-02" description="Release version 47">
