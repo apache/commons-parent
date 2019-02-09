@@ -100,9 +100,9 @@
     a release of the commons-parent POM.
   -->
   <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk</developerConnection>
-    <url>http://svn.apache.org/viewvc/commons/proper/commons-parent/trunk</url>
+    <connection>scm:git:http://gitbox.apache.org/repos/asf/commons-parent.git</connection>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/commons-parent.git</developerConnection>
+    <url>https://gitbox.apache.org/repos/asf?p=commons-parent.git</url>
   </scm>
 
   <mailingLists>
@@ -118,12 +118,10 @@
       <subscribe>user-subscribe@commons.apache.org</subscribe>
       <unsubscribe>user-unsubscribe@commons.apache.org</unsubscribe>
       <post>user@commons.apache.org</post>
-      <archive>http://mail-archives.apache.org/mod_mbox/commons-user/</archive>
+      <archive>https://mail-archives.apache.org/mod_mbox/commons-user/</archive>
       <otherArchives>
-        <otherArchive>http://markmail.org/list/org.apache.commons.users/</otherArchive>
-        <otherArchive>http://old.nabble.com/Commons---User-f319.html</otherArchive>
-        <otherArchive>http://www.mail-archive.com/user@commons.apache.org/</otherArchive>
-        <otherArchive>http://news.gmane.org/gmane.comp.jakarta.commons.user</otherArchive>
+        <otherArchive>https://markmail.org/list/org.apache.commons.users/</otherArchive>
+        <otherArchive>https://www.mail-archive.com/user@commons.apache.org/</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
@@ -131,45 +129,40 @@
       <subscribe>dev-subscribe@commons.apache.org</subscribe>
       <unsubscribe>dev-unsubscribe@commons.apache.org</unsubscribe>
       <post>dev@commons.apache.org</post>
-      <archive>http://mail-archives.apache.org/mod_mbox/commons-dev/</archive>
+      <archive>https://mail-archives.apache.org/mod_mbox/commons-dev/</archive>
       <otherArchives>
-        <otherArchive>http://markmail.org/list/org.apache.commons.dev/</otherArchive>
-        <otherArchive>http://old.nabble.com/Commons---Dev-f317.html</otherArchive>
-        <otherArchive>http://www.mail-archive.com/dev@commons.apache.org/</otherArchive>
-        <otherArchive>http://news.gmane.org/gmane.comp.jakarta.commons.devel</otherArchive>
+        <otherArchive>https://markmail.org/list/org.apache.commons.dev/</otherArchive>
+        <otherArchive>https://www.mail-archive.com/dev@commons.apache.org/</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
       <name>Commons Issues List</name>
       <subscribe>issues-subscribe@commons.apache.org</subscribe>
       <unsubscribe>issues-unsubscribe@commons.apache.org</unsubscribe>
-      <archive>http://mail-archives.apache.org/mod_mbox/commons-issues/</archive>
+      <archive>https://mail-archives.apache.org/mod_mbox/commons-issues/</archive>
       <otherArchives>
-        <otherArchive>http://markmail.org/list/org.apache.commons.issues/</otherArchive>
-        <otherArchive>http://old.nabble.com/Commons---Issues-f25499.html</otherArchive>
-        <otherArchive>http://www.mail-archive.com/issues@commons.apache.org/</otherArchive>
+        <otherArchive>https://markmail.org/list/org.apache.commons.issues/</otherArchive>
+        <otherArchive>https://www.mail-archive.com/issues@commons.apache.org/</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
       <name>Commons Commits List</name>
       <subscribe>commits-subscribe@commons.apache.org</subscribe>
       <unsubscribe>commits-unsubscribe@commons.apache.org</unsubscribe>
-      <archive>http://mail-archives.apache.org/mod_mbox/commons-commits/</archive>
+      <archive>https://mail-archives.apache.org/mod_mbox/commons-commits/</archive>
       <otherArchives>
-        <otherArchive>http://markmail.org/list/org.apache.commons.commits/</otherArchive>
-        <otherArchive>http://www.mail-archive.com/commits@commons.apache.org/</otherArchive>
+        <otherArchive>https://markmail.org/list/org.apache.commons.commits/</otherArchive>
+        <otherArchive>https://www.mail-archive.com/commits@commons.apache.org/</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
       <name>Apache Announce List</name>
       <subscribe>announce-subscribe@apache.org</subscribe>
       <unsubscribe>announce-unsubscribe@apache.org</unsubscribe>
-      <archive>http://mail-archives.apache.org/mod_mbox/www-announce/</archive>
+      <archive>https://mail-archives.apache.org/mod_mbox/www-announce/</archive>
       <otherArchives>
-        <otherArchive>http://markmail.org/list/org.apache.announce/</otherArchive>
-        <otherArchive>http://old.nabble.com/Apache-News-and-Announce-f109.html</otherArchive>
-        <otherArchive>http://www.mail-archive.com/announce@apache.org/</otherArchive>
-        <otherArchive>http://news.gmane.org/gmane.comp.apache.announce</otherArchive>
+        <otherArchive>https://markmail.org/list/org.apache.announce/</otherArchive>
+        <otherArchive>https://www.mail-archive.com/announce@apache.org/</otherArchive>
       </otherArchives>
     </mailingList>
   </mailingLists>
@@ -1643,7 +1636,7 @@
     <!--
       Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
 
-      http://maven.apache.org/plugins/maven-site-plugin/migrate.html
+      https://maven.apache.org/plugins/maven-site-plugin/migrate.html
 
       In particular, adding CDATA to header and footer sections is not backwards compatible.
       I.e. these have to be updated at the same time.
