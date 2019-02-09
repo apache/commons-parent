@@ -100,9 +100,9 @@
     a release of the commons-parent POM.
   -->
   <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk</developerConnection>
-    <url>http://svn.apache.org/viewvc/commons/proper/commons-parent/trunk</url>
+    <connection>scm:git:http://gitbox.apache.org/repos/asf/commons-parent.git</connection>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/commons-parent.git</developerConnection>
+    <url>https://gitbox.apache.org/repos/asf?p=commons-parent.git</url>
   </scm>
 
   <mailingLists>
