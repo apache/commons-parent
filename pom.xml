@@ -1209,6 +1209,13 @@
             <version>${commons.release-plugin.version}</version>
             <executions>
               <execution>
+                <id>clean-staging</id>
+                <phase>clean</phase>
+                <goals>
+                  <goal>clean-staging</goal>
+                </goals>
+              </execution>
+              <execution>
                 <id>detatch-distributions</id>
                 <phase>verify</phase>
                 <goals>
@@ -1621,7 +1628,7 @@
 
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
     <commons.build-plugin.version>1.9</commons.build-plugin.version>
-    <commons.release-plugin.version>1.5</commons.release-plugin.version>
+    <commons.release-plugin.version>1.6</commons.release-plugin.version>
     <commons.surefire.version>2.22.1</commons.surefire.version>
     <commons.failsafe.version>2.22.1</commons.failsafe.version>
     <commons.surefire-report.version>2.22.1</commons.surefire-report.version>
