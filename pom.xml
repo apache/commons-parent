@@ -669,6 +669,15 @@
             <exclude>.externalToolBuilders/**</exclude>
           </excludes>
         </configuration>
+        <executions>
+          <execution>
+            <id>rat-check</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
 
       <plugin>
