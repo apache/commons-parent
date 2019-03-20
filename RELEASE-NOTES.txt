@@ -1,3 +1,63 @@
+              Apache Commons Parent 48
+                  RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the commons-parent-48 release!
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Changes in this version include:
+
+
+Fixed Bugs:
+o Revert revert change in commons.scmPubUrl in Parent 47, use commons.packageId for osgi
+o Revert change in commons.scmPubUrl in Parent 47  Issue: COMMONSSITE-124.
+o re-enabled japicmp and introduced japicmp.skip property that
+                controls whether japicmp reports are run. It is disabled by
+                default and enabled via a special profile enabled by the
+                presence of the file src/site/resources/profile.japicmp
+                - org.apache.felix:maven-bundle-plugin 3.5.0 -> 3.5.1
+
+Changes:
+o Run "apache-rat:check" as part of "mvn validate"
+o commons.build-plugin.version: 1.9 -> 1.10
+o commons.release-plugin.version: 1.5 -> 1.6
+o commons.spotbugs.version: 3.1.3 -> 3.1.6
+o japicmp-maven-plugin: 0.12.0 -> 0.13.0
+o Update parent from org.apache:apache 19 to 20.
+o maven-compiler-plugin 3.7.0 -> 3.8.0
+o org.apache.felix:maven-bundle-plugin 3.5.0 -> 3.5.1
+o org.jacoco:jacoco-maven-plugin 0.8.1 -> 0.8.3 (Java 11)
+o org.apache.maven.wagon:wagon-ssh 3.1.0 -> 3.2.0
+o maven-surefire-plugin 2.22.0 -> 2.22.1
+o maven-surefire-report-plugin 2.22.0 -> 2.22.1
+o maven-failsafe-plugin 2.22.0 -> 2.22.1
+o versions-maven-plugin 2.5 -> 2.7
+o org.apache.felix:maven-bundle-plugin 3.5.1 -> 4.1.0
+o maven-jxr-plugin 2.5 -> 3.0.0
+o org.apache.rat:apache-rat-plugin 0.12 -> 0.13
+o commons.wagon-ssh.version 3.2.0 -> 3.3.1
+o maven-assembly-plugin 3.1.0 -> 3.1.1
+o commons.jar-plugin.version 3.1.0 -> 3.1.1
+o commons.animal-sniffer.version 1.16 -> 1.17
+o org.apache.bcel:bcel 6.2 -> 6.3
+o commons-release-plugin 1.4 -> 1.5
+o org.apache.maven.wagon:wagon-ssh 3.3.1 -> 3.3.2
+o org.apache.maven.plugins:maven-javadoc-plugin 3.0.1 -> 3.1.0
+
+
+Historical list of changes: http://commons.apache.org/commons-parent-pom.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
+
+http://commons.apache.org/commons-parent-pom.html
+
+
+Have fun!
+-Apache Commons Parent team
+
+-----------------------------------------------------------------------------
+
               Apache Commons Parent 47
                   RELEASE NOTES
 
