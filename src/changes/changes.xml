@@ -60,7 +60,11 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-
+    
+        <release version="49" date="YYYY-MM-DD" description="TBD">
+            <action type="update" dev="ggregory">Update maven-project-info-reports-plugin's Apache Commons BCEL from 6.3 to 6.3.1.</action>
+        </release>
+        
         <release version="48" date="2019-03-20" description="Release version 47">
             <action type="update" dev="chtompki">Run "apache-rat:check" as part of "mvn validate"</action>
             <action type="fix" dev="chtompki">Revert revert change in commons.scmPubUrl in Parent 47, use commons.packageId for osgi</action>
