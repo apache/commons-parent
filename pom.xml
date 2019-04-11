@@ -1798,7 +1798,7 @@
     <!-- value modules can override it -->
     <commons.site.path>${commons.componentid}</commons.site.path>
 
-    <commons.scmPubUrl>https://svn.apache.org/repos/infra/websites/production/commons/content/proper/${commons.componentid}</commons.scmPubUrl>
+    <commons.scmPubUrl>https://svn.apache.org/repos/infra/websites/production/commons/content/proper/commons-${commons.componentid}</commons.scmPubUrl>
     <commons.scmPubCheckoutDirectory>${commons.site.cache}/${commons.site.path}</commons.scmPubCheckoutDirectory>
     <commons.scmPubServer>commons.site</commons.scmPubServer>
     

@@ -64,6 +64,7 @@ The <action> type attribute can be add,update,fix,remove.
         <release version="49" date="YYYY-MM-DD" description="TBD">
             <action type="update" dev="ggregory">Update maven-project-info-reports-plugin's Apache Commons BCEL from 6.3 to 6.3.1.</action>
             <action type="update" dev="ggregory">japicmp-maven-plugin 0.13.0 -> 0.13.1</action>
+            <action type="fix" dev="ggregory">commons.scmPubUrl was not built properly, e.g. using 'pool' instead of 'commons-pool'</action>
         </release>
         
         <release version="48" date="2019-03-20" description="Release version 47">
