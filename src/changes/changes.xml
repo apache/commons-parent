@@ -67,6 +67,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update" dev="ggregory">maven-bundle-plugin 4.1.0 -> 4.2.0</action>
             <action type="fix" dev="ggregory">commons.scmPubUrl was not built properly, e.g. using 'pool' instead of 'commons-pool'</action>
             <action type="update" dev="ggregory">japicmp-maven-plugin 0.13.1 -> 0.14.0</action>
+            <action type="update" dev="ggregory">japicmp-maven-plugin should not break builds on source incompatible changes by default.</action>            
         </release>
         
         <release version="48" date="2019-03-20" description="Release version 47">

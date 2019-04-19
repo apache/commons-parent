@@ -335,6 +335,7 @@
             </newVersion>
             <parameter>
               <onlyModified>true</onlyModified>
+              <breakBuildOnSourceIncompatibleModifications>${commons.japicmp.breakBuildOnSourceIncompatibleModifications}</breakBuildOnSourceIncompatibleModifications>
               <breakBuildOnBinaryIncompatibleModifications>${commons.japicmp.breakBuildOnBinaryIncompatibleModifications}</breakBuildOnBinaryIncompatibleModifications>
               <!-- skip japicmp on "mvn site" - use "mvn package site" to include report -->
               <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
@@ -1805,6 +1806,7 @@
     <!-- allow japicmp's breakBuildOnBinaryIncompatibleModifications
       to be overridden, plugin's default is false -->
     <commons.japicmp.breakBuildOnBinaryIncompatibleModifications>true</commons.japicmp.breakBuildOnBinaryIncompatibleModifications>
+    <commons.japicmp.breakBuildOnSourceIncompatibleModifications>false</commons.japicmp.breakBuildOnSourceIncompatibleModifications>
     <commons.japicmp.ignoreMissingClasses>false</commons.japicmp.ignoreMissingClasses>
     <!-- disable japicmp by default -->
     <japicmp.skip>true</japicmp.skip>
