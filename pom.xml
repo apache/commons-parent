@@ -1693,7 +1693,7 @@
     <commons.coveralls.version>4.3.0</commons.coveralls.version>
     <commons.coveralls.timestampFormat>EpochMillis</commons.coveralls.timestampFormat>
     <commons.jdepend.version>2.0</commons.jdepend.version>
-    <commons.compiler.version>3.8.0</commons.compiler.version>
+    <commons.compiler.version>3.8.1</commons.compiler.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
     <commons.findbugs.version>3.0.5</commons.findbugs.version>
     <commons.spotbugs.version>3.1.6</commons.spotbugs.version>
