@@ -69,6 +69,8 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update" dev="ggregory">japicmp-maven-plugin 0.13.1 -> 0.14.0</action>
             <action type="update" dev="ggregory">japicmp-maven-plugin should not break builds on source incompatible changes by default.</action>
             <action type="update" dev="ggregory">commons.compiler.version 3.8.0 ->3.8.1.</action>
+            <action type="update" dev="ggregory">Add properties commons.javadoc6.java.link through commons.javadoc12.java.link</action>
+            <action type="update" dev="ggregory">Add properties commons.javadoc.javaee5.link through commons.javadoc.javaee7.link</action>
         </release>
         
         <release version="48" date="2019-03-20" description="Release version 47">
