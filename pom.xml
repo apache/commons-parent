@@ -1715,7 +1715,7 @@
     <commons.build-helper.version>3.0.0</commons.build-helper.version>
     <commons.animal-sniffer.version>1.17</commons.animal-sniffer.version>
     <!-- Almost all signatures use version 1.0. Allow override just in case -->
-    <commons.animal-sniffer.signature.version>1.0</commons.animal-sniff-sourceer.signature.version>
+    <commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
