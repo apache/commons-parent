@@ -1422,6 +1422,20 @@
       </properties>
     </profile>
 
+    <!--
+      Profile for running the build using JDK 1.12
+      (JAVA_1_12_HOME needs to be defined, e.g. in settings.xml or an environment variable)
+    -->
+    <profile>
+      <id>java-1.12</id>
+      <properties>
+        <commons.compiler.fork>true</commons.compiler.fork>
+        <commons.compiler.compilerVersion>1.12</commons.compiler.compilerVersion>
+        <commons.compiler.javac>${JAVA_1_12_HOME}/bin/javac</commons.compiler.javac>
+        <commons.surefire.java>${JAVA_1_12_HOME}/bin/java</commons.surefire.java>
+      </properties>
+    </profile>
+
     <!-- N.B. when adding new java profiles, be sure to update
       the _removeheaders list in the maven_bundle_plugin configuration -->
 
@@ -1701,7 +1715,7 @@
     <commons.build-helper.version>3.0.0</commons.build-helper.version>
     <commons.animal-sniffer.version>1.17</commons.animal-sniffer.version>
     <!-- Almost all signatures use version 1.0. Allow override just in case -->
-    <commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
+    <commons.animal-sniffer.signature.version>1.0</commons.animal-sniff-sourceer.signature.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
