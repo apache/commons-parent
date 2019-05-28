@@ -1700,6 +1700,7 @@
 
     -->
     <commons.source-plugin.version>3.1.0</commons.source-plugin.version>
+    <commons.checkstyle-plugin.version>3.1.0</commons.checkstyle-plugin.version>
     <commons.jar-plugin.version>3.1.2</commons.jar-plugin.version>
     <commons.assembly-plugin.version>3.1.1</commons.assembly-plugin.version>
     <commons.site-plugin.version>3.7.1</commons.site-plugin.version>
