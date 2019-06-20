@@ -62,6 +62,7 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
     
         <release version="49" date="YYYY-MM-DD" description="TBD">
+            <action type="fix" dev="sebb">Downdate felix plugin to work on Java 7</action>
             <action type="update" dev="ggregory">Update maven-project-info-reports-plugin's Apache Commons BCEL from 6.3 to 6.3.1.</action>
             <action type="update" dev="ggregory">japicmp-maven-plugin 0.13.0 -> 0.13.1</action>
             <action type="update" dev="ggregory">maven-bundle-plugin 4.1.0 -> 4.2.0</action>

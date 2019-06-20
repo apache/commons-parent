@@ -1548,13 +1548,15 @@
         </plugins>
       </build>
     </profile>
-    <!-- profile to allow the use of plugin versions that require Java 7+ -->
+    <!-- profile to allow the use of plugin versions that require Java 7 -->
     <profile>
       <id>jdk7-plugin-fix-version</id>
       <activation>
-        <jdk>[1.7,)</jdk>
+        <jdk>[1.7,1.8)</jdk>
       </activation>
       <properties>
+        <!-- Fix to build on JDK 7: version 4.0.0 requires Java 8. -->
+        <commons.felix.version>3.5.1</commons.felix.version>
       </properties>
     </profile>
 
