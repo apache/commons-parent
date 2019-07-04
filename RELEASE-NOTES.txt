@@ -45,12 +45,12 @@ o org.apache.maven.wagon:wagon-ssh 3.3.1 -> 3.3.2
 o org.apache.maven.plugins:maven-javadoc-plugin 3.0.1 -> 3.1.0
 
 
-Historical list of changes: http://commons.apache.org/commons-parent-pom.html
+Historical list of changes: https://commons.apache.org/commons-parent-pom.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
 
-http://commons.apache.org/commons-parent-pom.html
+https://commons.apache.org/commons-parent-pom.html
 
 
 Have fun!
@@ -88,12 +88,12 @@ o maven-surefire-plugin 2.21.0 -> 2.22.0
 o maven-project-info-reports-plugin 2.9 -> 3.0.0
 
 
-Historical list of changes: http://commons.apache.org/commons-parent-pom.html
+Historical list of changes: https://commons.apache.org/commons-parent-pom.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
 
-http://commons.apache.org/commons-parent-pom.html
+https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
@@ -157,12 +157,12 @@ Removed:
 o Prerequisites tag; should only be used for maven-plugins, using maven-enforcer-plugin instead.
 
 
-Historical list of changes: http://commons.apache.org/commons-parent-pom.html
+Historical list of changes: https://commons.apache.org/commons-parent-pom.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
 
-http://commons.apache.org/commons-parent-pom.html
+https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
@@ -183,12 +183,12 @@ Changes:
 o Rearranging plugin order in -Prelease, removing commons-release-plugin from build>pluginManagement
 
 
-Historical list of changes: http://commons.apache.org/commons-parent-pom.html
+Historical list of changes: https://commons.apache.org/commons-parent-pom.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
 
-http://commons.apache.org/commons-parent-pom.html
+https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
@@ -234,12 +234,12 @@ o maven-surefire-plugin 2.20.1 -> 2.21.0
 o maven-failsafe-plugin 2.20.1 -> 2.21.0
 
 
-Historical list of changes: http://commons.apache.org/commons-parent-pom.html
+Historical list of changes: https://commons.apache.org/commons-parent-pom.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
 
-http://commons.apache.org/commons-parent-pom.html
+https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
@@ -273,12 +273,12 @@ o wagon-ssh 2.10 -> 3.0.0.
 o maven-site-plugin 3.6 -> 3.7 (fixes Java 9 builds; for migrating from 3.4 to 3.5.1, see https://maven.apache.org/components/plugins/maven-site-plugin/migrate.html)
 
 
-Historical list of changes: http://commons.apache.org/commons-parent-pom.html
+Historical list of changes: https://commons.apache.org/commons-parent-pom.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
 
-http://commons.apache.org/commons-parent-pom.html
+https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
@@ -310,9 +310,9 @@ o new property
   setting of japicmp
 
 
-Historical list of changes: http://commons.apache.org/commons-parent-pom.html
+Historical list of changes: https://commons.apache.org/commons-parent-pom.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
 
-http://commons.apache.org/commons-parent-pom.html
+https://commons.apache.org/commons-parent-pom.html

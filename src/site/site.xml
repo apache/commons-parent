@@ -43,7 +43,7 @@
      ! This is due to be fixed in version 2.3 of the site plugin - see MSITE-159, MSHARED-189
      ! Or use site:stage which does not convert these links ... 
      -->
-    <href>http://commons.apache.org.remove.invalid/</href>
+    <href>https://commons.apache.org.remove.invalid/</href>
   </bannerLeft>
 
   <publishDate format="dd MMMM yyyy" position="left" />
@@ -75,34 +75,34 @@
     <links>
       <item name="ApacheCon" href="http://www.apachecon.com/"/>
       <item name="Apache"  href="http://www.apache.org"/>
-      <item name="Commons" href="http://commons.apache.org/" />
+      <item name="Commons" href="https://commons.apache.org/" />
     </links>
 
     <menu ref="reports" inherit="bottom" />
 
     <menu name="Commons" inherit="bottom">
-      <item name="Home"                  href="http://commons.apache.org/" />
+      <item name="Home"                  href="https://commons.apache.org/" />
       <item name="License"               href="http://www.apache.org/licenses/"/>
-      <item name="Components"            href="http://commons.apache.org/components.html" collapse="true">
-        <item name="Full list..."        href="http://commons.apache.org/components.html" />
+      <item name="Components"            href="https://commons.apache.org/components.html" collapse="true">
+        <item name="Full list..."        href="https://commons.apache.org/components.html" />
       </item> 
-      <item name="Sandbox"               href="http://commons.apache.org/sandbox/index.html" collapse="true">
-        <item name="Full list..."        href="http://commons.apache.org/sandbox/index.html" />
+      <item name="Sandbox"               href="https://commons.apache.org/sandbox/index.html" collapse="true">
+        <item name="Full list..."        href="https://commons.apache.org/sandbox/index.html" />
       </item>
-      <item name="Dormant"               href="http://commons.apache.org/dormant/index.html" collapse="true">
-        <item name="Full list..."        href="http://commons.apache.org/dormant/index.html" />
+      <item name="Dormant"               href="https://commons.apache.org/dormant/index.html" collapse="true">
+        <item name="Full list..."        href="https://commons.apache.org/dormant/index.html" />
       </item>
     </menu>
 
     <!-- Should agree with commons-site -->
     <menu name="General Information" inherit="bottom">
-      <item name="Security"              href="http://commons.apache.org/security.html"/>
-      <item name="Volunteering"          href="http://commons.apache.org/volunteering.html" />
-      <item name="Contributing Patches"  href="http://commons.apache.org/patches.html" />
-      <item name="Building Components"   href="http://commons.apache.org/building.html" />
-      <item name="Commons Parent Pom"    href="http://commons.apache.org/commons-parent-pom.html" />
-      <item name="Commons Build Plugin"  href="http://commons.apache.org/build-plugin/index.html" />
-      <item name="Releasing Components"  href="http://commons.apache.org/releases/index.html" />
+      <item name="Security"              href="https://commons.apache.org/security.html"/>
+      <item name="Volunteering"          href="https://commons.apache.org/volunteering.html" />
+      <item name="Contributing Patches"  href="https://commons.apache.org/patches.html" />
+      <item name="Building Components"   href="https://commons.apache.org/building.html" />
+      <item name="Commons Parent Pom"    href="https://commons.apache.org/commons-parent-pom.html" />
+      <item name="Commons Build Plugin"  href="https://commons.apache.org/build-plugin/index.html" />
+      <item name="Releasing Components"  href="https://commons.apache.org/releases/index.html" />
       <item name="Wiki"                  href="http://wiki.apache.org/commons/FrontPage" />
     </menu>
 
