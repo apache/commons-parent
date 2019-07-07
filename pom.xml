@@ -34,7 +34,7 @@
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
   <issueManagement>
     <system>jira</system>
-    <url>http://issues.apache.org/jira/browse/COMMONSSITE</url>
+    <url>https://issues.apache.org/jira/browse/COMMONSSITE</url>
   </issueManagement>
 
   <prerequisites>
