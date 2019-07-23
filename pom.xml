@@ -1732,6 +1732,8 @@
     <commons.release.3.name>${project.artifactId}-${commons.release.3.version}</commons.release.3.name>
     <commons.release.3.desc />
     <commons.release.3.binary.suffix>-bin</commons.release.3.binary.suffix>
+    <commons.release.4.desc />
+    <commons.release.4.binary.suffix>-bin</commons.release.4.binary.suffix>
 
     <!-- Default values for the jacoco-maven-plugin reports -->
     <commons.jacoco.classRatio>1.00</commons.jacoco.classRatio>
