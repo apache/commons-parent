@@ -81,6 +81,8 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="add" dev="ggregory">Add commons.checkstyle-plugin.version</action>
             <action type="add" dev="ggregory">Add property commons.release.4.desc (see Apache Commons Pool.)</action>
             <action type="add" dev="ggregory">Add property commons.release.4.binary.suffix (see Apache Commons Pool.)</action>
+            <action type="update" dev="ggregory">commons.wagon-ssh.version 3.3.2 -> 3.3.3</action>
+            <action type="update" dev="ggregory">commons.javadoc.version 3.1.0 -> 3.1.1</action>
         </release>
         
         <release version="48" date="2019-03-20" description="Release version 47">
