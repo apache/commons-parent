@@ -237,6 +237,7 @@
           <configuration>
             <!-- keep only errors and warnings -->
             <quiet>true</quiet>
+            <source>${maven.compiler.source}</source>
             <encoding>${commons.encoding}</encoding>
             <docEncoding>${commons.docEncoding}</docEncoding>
             <notimestamp>true</notimestamp>
