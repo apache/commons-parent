@@ -109,19 +109,34 @@
     <commons.compiler.javac />
 
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
+    <commons.animal-sniffer.version>1.17</commons.animal-sniffer.version>
+    <!-- Almost all signatures use version 1.0. Allow override just in case -->
+    <commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
+    <commons.assembly-plugin.version>3.1.1</commons.assembly-plugin.version>
+    <commons.build-helper.version>3.0.0</commons.build-helper.version>
     <commons.build-plugin.version>1.10</commons.build-plugin.version>
-    <commons.release-plugin.version>1.6</commons.release-plugin.version>
-    <commons.surefire.version>2.22.2</commons.surefire.version>
-    <commons.failsafe.version>2.22.2</commons.failsafe.version>
-    <commons.surefire-report.version>2.22.2</commons.surefire-report.version>
-    <commons.javadoc.version>3.1.1</commons.javadoc.version>
-    <commons.rat.version>0.13</commons.rat.version>
     <commons.changes.version>2.12.1</commons.changes.version>
+    <commons.checkstyle-plugin.version>3.1.0</commons.checkstyle-plugin.version>
     <commons.clirr.version>2.8</commons.clirr.version>
+    <commons.cobertura.version>2.7</commons.cobertura.version>
+    <commons.compiler.version>3.8.1</commons.compiler.version>
+    <commons.coveralls.version>4.3.0</commons.coveralls.version>
+    <commons.coveralls.timestampFormat>EpochMillis</commons.coveralls.timestampFormat>
+    <commons.failsafe.version>2.22.2</commons.failsafe.version>
+    <commons.felix.version>4.2.0</commons.felix.version>
+    <commons.findbugs.version>3.0.5</commons.findbugs.version>
+    <commons.jacoco.version>0.8.3</commons.jacoco.version>
     <commons.japicmp.version>0.14.1</commons.japicmp.version>
+    <commons.jar-plugin.version>3.1.2</commons.jar-plugin.version>
+    <commons.javadoc.version>3.1.1</commons.javadoc.version>
+    <commons.jdepend.version>2.0</commons.jdepend.version>
     <commons.jxr.version>3.0.0</commons.jxr.version>
+    <commons.pmd.version>3.12.0</commons.pmd.version>
     <commons.project-info.version>3.0.0</commons.project-info.version>
-    <commons.wagon-ssh.version>3.3.3</commons.wagon-ssh.version>
+    <commons.rat.version>0.13</commons.rat.version>
+    <commons.release-plugin.version>1.6</commons.release-plugin.version>
+    <commons.scm-publish.version>1.1</commons.scm-publish.version>
+
     <!--
       Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
 
@@ -156,26 +171,12 @@
       </dependencies>
 
     -->
-    <commons.source-plugin.version>3.1.0</commons.source-plugin.version>
-    <commons.checkstyle-plugin.version>3.1.0</commons.checkstyle-plugin.version>
-    <commons.jar-plugin.version>3.1.2</commons.jar-plugin.version>
-    <commons.assembly-plugin.version>3.1.1</commons.assembly-plugin.version>
     <commons.site-plugin.version>3.7.1</commons.site-plugin.version>
-    <commons.jacoco.version>0.8.3</commons.jacoco.version>
-    <commons.cobertura.version>2.7</commons.cobertura.version>
-    <commons.coveralls.version>4.3.0</commons.coveralls.version>
-    <commons.coveralls.timestampFormat>EpochMillis</commons.coveralls.timestampFormat>
-    <commons.jdepend.version>2.0</commons.jdepend.version>
-    <commons.compiler.version>3.8.1</commons.compiler.version>
-    <commons.scm-publish.version>1.1</commons.scm-publish.version>
-    <commons.findbugs.version>3.0.5</commons.findbugs.version>
+    <commons.source-plugin.version>3.1.0</commons.source-plugin.version>
     <commons.spotbugs.version>3.1.6</commons.spotbugs.version>
-    <commons.pmd.version>3.12.0</commons.pmd.version>
-    <commons.felix.version>4.2.0</commons.felix.version>
-    <commons.build-helper.version>3.0.0</commons.build-helper.version>
-    <commons.animal-sniffer.version>1.17</commons.animal-sniffer.version>
-    <!-- Almost all signatures use version 1.0. Allow override just in case -->
-    <commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
+    <commons.surefire-report.version>2.22.2</commons.surefire-report.version>
+    <commons.surefire.version>2.22.2</commons.surefire.version>
+    <commons.wagon-ssh.version>3.3.3</commons.wagon-ssh.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
