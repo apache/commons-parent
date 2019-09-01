@@ -576,6 +576,14 @@
               <reportOnlyFilename>true</reportOnlyFilename>
               <skipPomModules>true</skipPomModules>
               <ignoreMissingClasses>${commons.japicmp.ignoreMissingClasses}</ignoreMissingClasses>
+              <overrideCompatibilityChangeParameters>
+                <overrideCompatibilityChangeParameter>
+                  <compatibilityChange>METHOD_NEW_DEFAULT</compatibilityChange>
+                  <binaryCompatible>true</binaryCompatible>
+                  <sourceCompatible>true</sourceCompatible>
+                  <semanticVersionLevel>PATCH</semanticVersionLevel>
+                </overrideCompatibilityChangeParameter>
+              </overrideCompatibilityChangeParameters>
             </parameter>
             <skip>${japicmp.skip}</skip>
           </configuration>
@@ -1107,6 +1115,14 @@
             <skipPomModules>true</skipPomModules>
             <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
             <reportOnlyFilename>true</reportOnlyFilename>
+            <overrideCompatibilityChangeParameters>
+              <overrideCompatibilityChangeParameter>
+                <compatibilityChange>METHOD_NEW_DEFAULT</compatibilityChange>
+                <binaryCompatible>true</binaryCompatible>
+                <sourceCompatible>true</sourceCompatible>
+                <semanticVersionLevel>PATCH</semanticVersionLevel>
+              </overrideCompatibilityChangeParameter>
+            </overrideCompatibilityChangeParameters>
           </parameter>
         </configuration>
       </plugin>

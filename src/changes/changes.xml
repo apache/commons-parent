@@ -84,6 +84,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update" dev="ggregory">commons.wagon-ssh.version 3.3.2 -> 3.3.3</action>
             <action type="update" dev="ggregory">commons.javadoc.version 3.1.0 -> 3.1.1</action>
             <action type="update" dev="ggregory">Add missing source config for Javadoc plugin.</action>
+            <action type="update" dev="ggregory">Adding Java 8 default methods should not break binary compatibility.</action>           
         </release>
         
         <release version="48" date="2019-03-20" description="Release version 47">
