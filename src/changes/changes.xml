@@ -87,7 +87,8 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update" dev="ggregory">Adding Java 8 default methods should not break binary compatibility.</action>
             <action type="update" dev="ggregory">Set Javadoc source option to Maven compiler source setting.</action>
             <action type="update" dev="ggregory">jacoco-maven-plugin 0.8.3 -> 0.8.4.</action>
-            <action type="update" dev="ggregory">commons-release-plugin 1.6 -> 1.7.</action>            
+            <action type="update" dev="ggregory">commons-release-plugin 1.6 -> 1.7.</action>
+            <action type="update" dev="ggregory">animal-sniffer-maven-plugin 1.17 -> 1.18.</action>
         </release>
         
         <release version="48" date="2019-03-20" description="Release version 47">
