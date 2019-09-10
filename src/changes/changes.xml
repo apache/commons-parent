@@ -62,6 +62,7 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
     
         <release version="49" date="YYYY-MM-DD" description="TBD">
+            <action type="update" dev="chtompki">maven-project-info-reports-plugin 3.0.0 -> 3.0.1</action>
             <action type="update" dev="chtompki">commons.felix.version=maven-bundle-plugin 4.2.0 -> 4.2.1</action>
             <action type="update" dev="chtompki">commons-build-plugin 1.10 -> 1.11</action>
             <action type-="update" dev="ggregory">commons-release-plugin 1.6 -> 1.7</action>
