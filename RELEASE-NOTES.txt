@@ -5,8 +5,6 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-TBD
-
 Changes in this version include:
 
 New features:
