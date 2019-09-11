@@ -994,7 +994,6 @@
           <linksource>true</linksource>
           <!-- prevent svnpub to be too much noisy -->
           <notimestamp>true</notimestamp>
-          <source>${maven.compiler.source}</source>
           <links>
             <link>${commons.javadoc.java.link}</link>
             <link>${commons.javadoc.javaee.link}</link>
