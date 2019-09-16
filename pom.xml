@@ -27,7 +27,7 @@
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>49-SNAPSHOT</version>
+  <version>49</version>
   <packaging>pom</packaging>
   <name>Apache Commons Parent</name>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
@@ -994,7 +994,6 @@
           <linksource>true</linksource>
           <!-- prevent svnpub to be too much noisy -->
           <notimestamp>true</notimestamp>
-          <source>${maven.compiler.source}</source>
           <links>
             <link>${commons.javadoc.java.link}</link>
             <link>${commons.javadoc.javaee.link}</link>
