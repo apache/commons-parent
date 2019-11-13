@@ -21,7 +21,7 @@
 This file is also used by the maven-changes-plugin to generate the release notes.
 Useful ways of finding items to add to this file are:
 
-1.  Add items when you fix a bug or add a feature (this makes the 
+1.  Add items when you fix a bug or add a feature (this makes the
 release process easy :-).
 
 2.  Do a JIRA search for tickets closed since the previous release.
@@ -32,20 +32,20 @@ SVN commits. TBA how to use this with SVN.
 To generate the release notes from this file:
 
 mvn changes:announcement-generate -Prelease-notes [-Dchanges.version=nn]
-then tweak the formatting if necessary 
+then tweak the formatting if necessary
 and commit
 
 The <action> type attribute can be add,update,fix,remove.
 -->
 
-<document xmlns="http://maven.apache.org/changes/1.0.0" 
+<document xmlns="http://maven.apache.org/changes/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/xsd/changes-1.0.0.xsd">
     <properties>
         <title>Apache Commons Parent Release Notes</title>
         <author email="dev@commons.apache.org">Apache Commons developers</author>
     </properties>
 
-    <!-- NOTE: 
+    <!-- NOTE:
     The description below is specially formatted so as to improve the layout of the generated release notes:
     The parsing process removes all line feeds, replacing them with a single space.
     The Velocity template in resources/templates has been enhanced to replace pairs of adjacent spaces
@@ -54,9 +54,9 @@ The <action> type attribute can be add,update,fix,remove.
 
     To suppress formatting of an action entry when generating release notes, add an empty date.
     This does not affect the HTML changes report (in any case dates are not displayed by default)
-    
+
     N.B. The release notes template groups actions by type, and only extracts data for the current release.
-    The changes report outputs actions in the order they appear in this file. 
+    The changes report outputs actions in the order they appear in this file.
      -->
 
     <body>
@@ -65,7 +65,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update" dev="aherbert">Disable jacoco non-aggregate reports.</action>
             <action type="update" dev="ggregory">Update site build from Apache Commons BCEL 6.3.1 to 6.4.1.</action>
         </release>
-    
+
         <release version="49" date="2019-09-10" description="Release version 49">
             <action type="update" dev="chtompki">maven-site-plugin 3.7.1 -> 3.8.2</action>
             <action type="update" dev="chtompki">commons.felix.version=maven-bundle-plugin 4.2.0 -> 4.2.1</action>
@@ -100,7 +100,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update" dev="ggregory">commons-release-plugin 1.6 -> 1.7.</action>
             <action type="update" dev="ggregory">animal-sniffer-maven-plugin 1.17 -> 1.18.</action>
         </release>
-        
+
         <release version="48" date="2019-03-20" description="Release version 47">
             <action type="update" dev="chtompki">Run "apache-rat:check" as part of "mvn validate"</action>
             <action type="fix" dev="chtompki">Revert revert change in commons.scmPubUrl in Parent 47, use commons.packageId for osgi</action>
@@ -487,7 +487,7 @@ ${argLine} property):
             maven-surefire-plugin              2.12.3 -> 2.12.4
             maven-surefire-report-plugin       2.12.3 -> 2.12.4
             cobertura-maven-plugin             2.5.1  -> 2.5.2
-            buildnumber-maven-plugin           1.1    -> 1.2 
+            buildnumber-maven-plugin           1.1    -> 1.2
             </action>
             <action type="update">
             Also changed, but omitted from changes section in released version:
@@ -534,7 +534,7 @@ ${argLine} property):
             Updated various plugin versions:
             clirr-maven-plugin: 2.3 => 2.4
             clirr and RAT added to pluginManagement so can override the version from Apache POM
-            Add changes and jira reports       
+            Add changes and jira reports
             </action>
         </release>
         <release version="24" date="2012-03-13" description="Update and add plugins">
