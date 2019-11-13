@@ -1321,6 +1321,14 @@
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
             <version>${commons.jacoco.version}</version>
+            <reportSets>
+              <reportSet>
+                <reports>
+                  <!-- select non-aggregate reports -->
+                  <report>report</report>
+                </reports>
+              </reportSet>
+            </reportSets>
           </plugin>
         </plugins>
       </reporting>
