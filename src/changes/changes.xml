@@ -62,6 +62,7 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
 
         <release version="50" date="MM-DD-YYYY" description="TBD">
+            <action type="update" dev="aherbert">jacoco-maven-plugin 0.8.4 -> 0.8.5</action>
             <action type="update" dev="aherbert">Move japicmp reporting section to the profile for opt-in behaviour. Remove japicmp.skip flag used to skip the report.</action>
             <action type="update" dev="aherbert">Disable jacoco non-aggregate reports.</action>
             <action type="update" dev="ggregory">Update site build from Apache Commons BCEL 6.3.1 to 6.4.1.</action>
