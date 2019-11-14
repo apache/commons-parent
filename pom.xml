@@ -172,7 +172,7 @@
 
     -->
     <commons.site-plugin.version>3.8.2</commons.site-plugin.version>
-    <commons.source-plugin.version>3.1.0</commons.source-plugin.version>
+    <commons.source-plugin.version>3.2.0</commons.source-plugin.version>
     <commons.spotbugs.version>3.1.6</commons.spotbugs.version>
     <commons.surefire-report.version>2.22.2</commons.surefire-report.version>
     <commons.surefire.version>2.22.2</commons.surefire.version>
