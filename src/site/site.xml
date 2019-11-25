@@ -129,7 +129,6 @@
 
   <!-- inherited -->
   <custom>
-    <![CDATA[
     <!-- @project.name@ will be replaced by the template; if we used ${project.name} it would pick up Commons Parent -->    
     <footer>
       <div class="center">
@@ -137,7 +136,6 @@
       All other marks mentioned may be trademarks or registered trademarks of their respective owners.
       </div>
     </footer>
-    ]]>
   </custom>
 
 </project>
