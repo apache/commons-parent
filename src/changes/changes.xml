@@ -61,7 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
-        <release version="50" date="MM-DD-YYYY" description="TBD">
+        <release version="50" date="2019-12-17" description="Release version 50">
             <action type="update" dev="aherbert">site.xml: Removed custom head element. PrettyPrint functionality is loaded by commons-skin-4.2.</action>
             <action type="update" dev="aherbert">site.xml: commons-skin 4.1 -> 4.2</action>
             <action type="update" dev="aherbert">site.xml: Removed CDATA tag around the custom footer element</action>

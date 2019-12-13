@@ -1,3 +1,48 @@
+              Apache Commons Parent 50
+                  RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 50
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Notes on site generation in 50
+------------------------------
+
+This release updates commons-skin which is used by projects to render the site using a
+'Commons' style. It restores the correct copyright notice to the footer of site pages.
+The new skin allows a project to add custom XHTML to the <head> tag of their site
+descriptor (site.xml).
+
+
+Changes in this version include:
+
+Changes:
+o site.xml: Removed custom head element. PrettyPrint functionality is loaded by commons-skin-4.2.
+o site.xml: commons-skin 4.1 -> 4.2
+o site.xml: Removed CDATA tag around the custom footer element
+o commons.wagon-ssh.version 3.3.3 -> 3.3.4
+o commons.assembly-plugin.version 3.1.1 -> 3.2.0
+o commons.source-plugin.version 3.1.0 -> 3.2.0
+o commons.jar-plugin.version 3.1.2 -> 3.2.0
+o jacoco-maven-plugin 0.8.4 -> 0.8.5
+o Move japicmp reporting section to the profile for opt-in behaviour. Remove japicmp.skip flag used to skip the report.
+o Disable jacoco non-aggregate reports.
+o Update site build from Apache Commons BCEL 6.3.1 to 6.4.1.
+
+
+Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
+
+https://commons.apache.org/commons-parent-pom.html
+
+Have fun!
+-Apache Commons Parent team
+
+-----------------------------------------------------------------------------
+
+
               Apache Commons Parent 49
                   RELEASE NOTES
 
@@ -8,40 +53,40 @@ The Apache Commons Parent POM provides common settings for all Apache Commons co
 Changes in this version include:
 
 New features:
-o                   Add commons.pmd.version
-o                   Add commons.checkstyle-plugin.version
-o                   Add property commons.release.4.desc (see Apache Commons Pool.)
-o                   Add property commons.release.4.binary.suffix (see Apache Commons Pool.)
+o Add commons.pmd.version
+o Add commons.checkstyle-plugin.version
+o Add property commons.release.4.desc (see Apache Commons Pool.)
+o Add property commons.release.4.binary.suffix (see Apache Commons Pool.)
 
 Fixed Bugs:
-o                   Downdate felix plugin to work on Java 7
-o                   commons.scmPubUrl was not built properly, e.g. using 'pool' instead of 'commons-pool'
+o Downdate felix plugin to work on Java 7
+o commons.scmPubUrl was not built properly, e.g. using 'pool' instead of 'commons-pool'
 
 Changes:
-o                   maven-site-plugin 3.7.1 -> 3.8.2
-o                   commons.felix.version=maven-bundle-plugin 4.2.0 -> 4.2.1
-o                   commons-build-plugin 1.10 -> 1.11
-o                   Update maven-project-info-reports-plugin's Apache Commons BCEL from 6.3 to 6.3.1.
-o                   japicmp-maven-plugin 0.13.0 -> 0.13.1
-o                   maven-bundle-plugin 4.1.0 -> 4.2.0
-o                   japicmp-maven-plugin 0.13.1 -> 0.14.0
-o                   japicmp-maven-plugin should not break builds on source incompatible changes by default.
-o                   commons.compiler.version 3.8.0 ->3.8.1.
-o                   Add properties commons.javadoc6.java.link through commons.javadoc12.java.link
-o                   Add properties commons.javadoc.javaee5.link through commons.javadoc.javaee7.link
-o                   Maven Surefire and Failsafe plugins 2.22.1 -> 2.22.2
-o                   commons.jar-plugin.version 3.1.1 -> 3.1.2
-o                   Add profile java-1.12
-o                   maven-source-plugin 3.0.1 -> 3.1.0
-o                   japicmp-maven-plugin 0.14.0 -> 0.14.1
-o                   commons.wagon-ssh.version 3.3.2 -> 3.3.3
-o                   commons.javadoc.version 3.1.0 -> 3.1.1
-o                   Add missing source config for Javadoc plugin.
-o                   Adding Java 8 default methods should not break binary compatibility.
-o                   Set Javadoc source option to Maven compiler source setting.
-o                   jacoco-maven-plugin 0.8.3 -> 0.8.4.
-o                   commons-release-plugin 1.6 -> 1.7.
-o                   animal-sniffer-maven-plugin 1.17 -> 1.18.
+o maven-site-plugin 3.7.1 -> 3.8.2
+o commons.felix.version=maven-bundle-plugin 4.2.0 -> 4.2.1
+o commons-build-plugin 1.10 -> 1.11
+o Update maven-project-info-reports-plugin's Apache Commons BCEL from 6.3 to 6.3.1.
+o japicmp-maven-plugin 0.13.0 -> 0.13.1
+o maven-bundle-plugin 4.1.0 -> 4.2.0
+o japicmp-maven-plugin 0.13.1 -> 0.14.0
+o japicmp-maven-plugin should not break builds on source incompatible changes by default.
+o commons.compiler.version 3.8.0 ->3.8.1.
+o Add properties commons.javadoc6.java.link through commons.javadoc12.java.link
+o Add properties commons.javadoc.javaee5.link through commons.javadoc.javaee7.link
+o Maven Surefire and Failsafe plugins 2.22.1 -> 2.22.2
+o commons.jar-plugin.version 3.1.1 -> 3.1.2
+o Add profile java-1.12
+o maven-source-plugin 3.0.1 -> 3.1.0
+o japicmp-maven-plugin 0.14.0 -> 0.14.1
+o commons.wagon-ssh.version 3.3.2 -> 3.3.3
+o commons.javadoc.version 3.1.0 -> 3.1.1
+o Add missing source config for Javadoc plugin.
+o Adding Java 8 default methods should not break binary compatibility.
+o Set Javadoc source option to Maven compiler source setting.
+o jacoco-maven-plugin 0.8.3 -> 0.8.4.
+o commons-release-plugin 1.6 -> 1.7.
+o animal-sniffer-maven-plugin 1.17 -> 1.18.
 
 
 Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges-report.html
@@ -50,10 +95,6 @@ For complete information on Apache Commons Parent, including instructions on how
 patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
 
 https://commons.apache.org/commons-parent-pom.html
-
-
-Have fun!
--Apache Commons Parent team
 
 -----------------------------------------------------------------------------
 
@@ -301,74 +342,30 @@ https://commons.apache.org/commons-parent-pom.html
               Apache Commons Parent 43
                   RELEASE NOTES
 
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 43
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 50
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Updates plugins and generally requires Java 7.
+TBD
 
 Changes in this version include:
 
 Changes:
-o maven-compiler-plugin 3.6.1 -> 3.6.2.
-o maven-compiler-plugin 3.6.2 -> 3.7.0.
-o jacoco-maven-plugin 0.7.7.201606060606 -> 0.7.9.
-o maven-javadoc-plugin 2.10.4 -> 3.0.0 (Java 9 compatibility.)
-o Update japicmp 0.9.3 -> 0.10.0.
-o animal-sniffer-maven-plugin 1.15 -> 1.16.
-o commons.findbugs.version 3.0.3 -> 3.0.5 (requires Java 7.)
-o commons.clirr.version 2.7 -> 2.8.
-o maven-surefire-plugin 2.19.1 -> 2.20.1.
-o Add maven-failsafe-plugin 2.20.1 (to along with surefire.)
-o felix:maven-bundle-plugin 3.0.1 -> 3.4.0 (requires Java 7.
-o versions-maven-plugin 2.3 -> 2.5.
-o japicmp-maven-plugin 0.10.0 -> 0.11.0.
-o build-helper-maven-plugin 1.10 -> 3.0.0 (requires Maven 3 and Java 7.)
-o wagon-ssh 2.10 -> 3.0.0.
-o maven-site-plugin 3.6 -> 3.7 (fixes Java 9 builds; for migrating from 3.4 to 3.5.1, see https://maven.apache.org/components/plugins/maven-site-plugin/migrate.html)
+o site.xml: commons-skin 4.1 -> 4.2
+o site.xml: Removed CDATA tag around the custom footer element
+o commons.wagon-ssh.version 3.3.3 -> 3.3.4
+o commons.assembly-plugin.version 3.1.1 -> 3.2.0
+o commons.source-plugin.version 3.1.0 -> 3.2.0
+o commons.jar-plugin.version 3.1.2 -> 3.2.0
+o jacoco-maven-plugin 0.8.4 -> 0.8.5
+o Move japicmp reporting section to the profile for opt-in behaviour. Remove japicmp.skip flag used to skip the report.
+o Disable jacoco non-aggregate reports.
+o Update site build from Apache Commons BCEL 6.3.1 to 6.4.1.
 
 
-Historical list of changes: https://commons.apache.org/commons-parent-pom.html
+Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges-report.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
 
 https://commons.apache.org/commons-parent-pom.html
-
------------------------------------------------------------------------------
-
-              Apache Commons Parent 42
-                  RELEASE NOTES
-
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 42
-
-The Apache Commons Parent POM provides common settings for all Apache Commons components.
-
-Changes in this version include:
-
-New features:
-o new profiles to run coveralls coverage
-  reports via Travis using Jacoco or Cobertura respectively
-
-Changes:
-o maven-site-plugin 3.4 -> 3.6 (for migrating from 3.4 to 3.5.1, see https://maven.apache.org/components/plugins/maven-site-plugin/migrate.html)
-o jacoco-maven-plugin : 0.7.6.201602180812 -> 0.7.7.201606060606
-o commons-build-plugin : 1.6 -> 1.7
-o maven-changes-plugin : 2.12 -> 2.12.1
-o Update japicmp: 0.8.0 -> 0.9.1
-o maven-compiler-plugin : 3.5.1 -> 3.6.0
-o japicmp plugin no longer fail on "mvn site" (it requires target/*jar), use "mvn package site -Pjapicmp" to include its report
-o japicmp-maven-plugin : 0.8.0 -> 0.9.3
-o new property
-  commons.japicmp.breakBuildOnBinaryIncompatibleModifications
-  controls the breakBuildOnBinaryIncompatibleModifications
-  setting of japicmp
-
-
-Historical list of changes: https://commons.apache.org/commons-parent-pom.html
-
-For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
-patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
-
-https://commons.apache.org/commons-parent-pom.html
-
