@@ -61,7 +61,14 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
-        <release version="50" date="2019-12-17" description="Release version 50">
+        <release version="50" date="2019-12-17" description="Update site generation.
+
+        Updates to commons-skin:4.2, fixes custom footer copyright notice and removes redundant site.xml head element.
+
+        Removes jacoco aggregate reports and changes conditional japicmp plugin to require Java 8 and activate via opt-in behaviour.
+
+        Includes some plugins updates.
+        ">
             <action type="update" dev="aherbert">site.xml: Removed custom head element. PrettyPrint functionality is loaded by commons-skin-4.2.</action>
             <action type="update" dev="aherbert">site.xml: commons-skin 4.1 -> 4.2</action>
             <action type="update" dev="aherbert">site.xml: Removed CDATA tag around the custom footer element</action>
@@ -110,7 +117,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update" dev="ggregory">animal-sniffer-maven-plugin 1.17 -> 1.18.</action>
         </release>
 
-        <release version="48" date="2019-03-20" description="Release version 47">
+        <release version="48" date="2019-03-20" description="Release version 48">
             <action type="update" dev="chtompki">Run "apache-rat:check" as part of "mvn validate"</action>
             <action type="fix" dev="chtompki">Revert revert change in commons.scmPubUrl in Parent 47, use commons.packageId for osgi</action>
             <action type="update">commons.build-plugin.version: 1.9 -> 1.10</action>
