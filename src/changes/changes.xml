@@ -61,6 +61,9 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
+        <release version="51" date="YYYY-MM-DD" description="TBD">
+        </release>
+
         <release version="50" date="2019-12-17" description="Update site generation.
 
         Updates to commons-skin:4.2, fixes custom footer copyright notice and removes redundant site.xml head element.
