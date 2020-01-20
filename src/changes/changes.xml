@@ -62,6 +62,9 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
 
         <release version="51" date="YYYY-MM-DD" description="TBD">
+            <action type="update" dev="ggregory">JApiCmp 0.14.1 -> 0.14.3.</action>
+            <action type="update" dev="ggregory">maven-enforcer-plugin 3.0.0-M2 -> 3.0.0-M3.</action>
+            <action type="update" dev="ggregory">maven-source-plugin 3.2.0 -> 3.2.1.</action>
         </release>
 
         <release version="50" date="2019-12-17" description="Update site generation.
