@@ -1602,7 +1602,7 @@
     </profile>
 
     <!--
-      Profile for running the build using JDK 1.7
+      Profile for running the build using JDK 7
       (JAVA_1_7_HOME needs to be defined, e.g. in settings.xml or an environment variable)
     -->
     <profile>
@@ -1616,7 +1616,7 @@
     </profile>
 
     <!--
-      Profile for running the build using JDK 1.8
+      Profile for running the build using JDK 8
       (JAVA_1_8_HOME needs to be defined, e.g. in settings.xml or an environment variable)
     -->
     <profile>
@@ -1630,7 +1630,7 @@
     </profile>
 
     <!--
-      Profile for running the build using JDK 1.9
+      Profile for running the build using JDK 9
       (JAVA_1_9_HOME needs to be defined, e.g. in settings.xml or an environment variable)
     -->
     <profile>
@@ -1644,7 +1644,7 @@
     </profile>
 
     <!--
-      Profile for running the build using JDK 1.10
+      Profile for running the build using JDK 10
       (JAVA_1_10_HOME needs to be defined, e.g. in settings.xml or an environment variable)
     -->
     <profile>
@@ -1658,7 +1658,7 @@
     </profile>
 
     <!--
-      Profile for running the build using JDK 1.11
+      Profile for running the build using JDK 11
       (JAVA_1_11_HOME needs to be defined, e.g. in settings.xml or an environment variable)
     -->
     <profile>
@@ -1672,7 +1672,7 @@
     </profile>
 
     <!--
-      Profile for running the build using JDK 1.12
+      Profile for running the build using JDK 12
       (JAVA_1_12_HOME needs to be defined, e.g. in settings.xml or an environment variable)
     -->
     <profile>
@@ -1682,6 +1682,20 @@
         <commons.compiler.compilerVersion>1.12</commons.compiler.compilerVersion>
         <commons.compiler.javac>${JAVA_1_12_HOME}/bin/javac</commons.compiler.javac>
         <commons.surefire.java>${JAVA_1_12_HOME}/bin/java</commons.surefire.java>
+      </properties>
+    </profile>
+
+    <!--
+      Profile for running the build using JDK 13
+      (JAVA_1_13_HOME needs to be defined, e.g. in settings.xml or an environment variable)
+    -->
+    <profile>
+      <id>java-1.13</id>
+      <properties>
+        <commons.compiler.fork>true</commons.compiler.fork>
+        <commons.compiler.compilerVersion>1.13</commons.compiler.compilerVersion>
+        <commons.compiler.javac>${JAVA_1_13_HOME}/bin/javac</commons.compiler.javac>
+        <commons.surefire.java>${JAVA_1_13_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
 
