@@ -414,6 +414,8 @@
         <includes>
           <include>NOTICE.txt</include>
           <include>LICENSE.txt</include>
+          <include>NOTICE</include>
+          <include>LICENSE</include>
         </includes>
       </resource>
     </resources>
@@ -748,6 +750,8 @@
                   <fileset dir="${basedir}">
                     <include name="LICENSE.txt" />
                     <include name="NOTICE.txt" />
+                    <include name="LICENSE" />
+                    <include name="NOTICE" />
                   </fileset>
                 </copy>
               </target>
