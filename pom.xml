@@ -110,6 +110,7 @@
 
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
     <commons.animal-sniffer.version>1.18</commons.animal-sniffer.version>
+     <!-- 1.8 requires Java 8+ -->
     <!-- Almost all signatures use version 1.0. Allow override just in case -->
     <commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
     <commons.assembly-plugin.version>3.2.0</commons.assembly-plugin.version>
@@ -136,6 +137,8 @@
     <commons.rat.version>0.13</commons.rat.version>
     <commons.release-plugin.version>1.7</commons.release-plugin.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
+    <!-- requires Java 8+ -->
+    <biz.aQute.bndlib.version>5.0.1</biz.aQute.bndlib.version>
 
     <!--
       Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
@@ -606,7 +609,7 @@
               <!-- Fixes https://github.com/bndtools/bnd/issues/3903 seen with Commons CSV. -->
               <groupId>biz.aQute.bnd</groupId>
               <artifactId>biz.aQute.bndlib</artifactId>
-              <version>5.0.1</version>
+              <version>${biz.aQute.bndlib.version}</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -1833,6 +1836,8 @@
       <properties>
         <!-- Fix to build on JDK 7: version 4.0.0 requires Java 8. -->
         <commons.felix.version>3.5.1</commons.felix.version>
+        <commons.animal-sniffer.version>1.17</commons.animal-sniffer.version>
+        <biz.aQute.bndlib.version>3.5.0</biz.aQute.bndlib.version>
       </properties>
     </profile>
 
