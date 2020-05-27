@@ -72,6 +72,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update" dev="ggregory">Fix https://github.com/bndtools/bnd/issues/3903 seen with Commons CSV.</action>
             <action type="fix" dev="sebb">Allow Java7 builds: commons.animal-sniffer.version=1.17; biz.aQute.bndlib.version=3.5.0</action>
             <action type="fix" dev="sebb">PR#5: change &lt;docEncoding&gt; to &lt;docencoding&gt; for maven javadoc plugin.</action>
+            <action type="update" dev="sebb">commons.project-info.version 3.0.0 -> 3.1.0</action>
         </release>
 
         <release version="50" date="2019-12-17" description="Update site generation.
