@@ -25,7 +25,7 @@
  | commons-build-plugin/trunk/src/main/resources/commons-xdoc-templates |
  +======================================================================+
  |                                                                      |
- | 1) Re-generate using: mvn commons:readme-md                          |
+ | 1) Re-generate using: mvn commons-build:readme-md                    |
  |                                                                      |
  | 2) Set the following properties in the component's pom:              |
  |    - commons.componentid (required, alphabetic, lower case)          |
@@ -43,10 +43,10 @@
 Apache Commons Parent
 ===================
 
-[![Build Status](https://travis-ci.org/apache/commons-parent.svg?branch=master)](https://travis-ci.org/apache/commons-parent)
-[![Coverage Status](https://coveralls.io/repos/apache/commons-parent/badge.svg?branch=master)](https://coveralls.io/r/apache/commons-parent)
+[![Build Status](https://travis-ci.org/apache/commons-commons-parent.svg)](https://travis-ci.org/apache/commons-commons-parent)
+[![Coverage Status](https://coveralls.io/repos/apache/commons-commons-parent/badge.svg)](https://coveralls.io/r/apache/commons-commons-parent)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/)
-[![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
+[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/51-SNAPSHOT.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/51-SNAPSHOT)
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
@@ -54,7 +54,7 @@ Documentation
 -------------
 
 More information can be found on the [Apache Commons Parent homepage](https://commons.apache.org/proper/commons-commons-parent).
-The [Javadoc](https://commons.apache.org/proper/commons-commons-parent/javadocs/api-release) can be browsed.
+The [Javadoc](https://commons.apache.org/proper/commons-commons-parent/apidocs) can be browsed.
 Questions related to the usage of Apache Commons Parent should be posted to the [user mailing list][ml].
 
 Where can I get the latest release?
@@ -67,7 +67,7 @@ Alternatively you can pull it from the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>48</version>
+  <version>51-SNAPSHOT</version>
 </dependency>
 ```
 
