@@ -28,10 +28,10 @@ Preparing for release candidate:
   mvn changes:announcement-generate -Prelease-notes -Dchanges.version=nn
 - Ensure pom.xml header comment agrees with changes for this release
 - Regenerate CONTRIBUTING.md:
-  mvn commons:contributing-md
+  mvn commons-build:contributing-md
 - Regenerate README.md:
-  mvn commons:readme-md
-- Commit all changes to SVN
+  mvn commons-build:readme-md
+- Commit all changes
 
 Creating release candidate tag:
 ------------------------------
