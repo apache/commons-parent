@@ -35,17 +35,21 @@ Preparing for release candidate:
 
 Creating release candidate tag:
 ------------------------------
-- Checkout trunk in clean workspace:
-  svn co https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk commons-parent-<NN>-RC1
+- Checkout default branch in clean workspace:
+  git clone https://gitbox.apache.org/repos/asf/commons-parent.git commons-parent-<NN>-RC1
 - cd commons-parent-<NN>-RC1
 - Edit version in pom.xml to remove SNAPSHOT suffix
-- Edit three SCM URLs to point to the future (non-RC) tag:
-    <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-<NN></connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-<NN></developerConnection>
-    <url>http://svn.apache.org/viewvc/commons/proper/commons-parent/tags/commons-parent-<NN></url>
-- Create tag in SVN from the updated workspace:
-  svn cp . https://svn.apache.org/repos/asf/commons/proper/commons-parent/tags/commons-parent-<NN>-RC1 -m"Create <NN> RC1 tag"
-  (this ensures the trunk never sees the different URLs or released version)
+- Edit the SCM tag to point to the future (non-RC) tag:
+    <connection>scm:git:http://gitbox.apache.org/repos/asf/commons-parent.git</connection>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/commons-parent.git</developerConnection>
+    <url>https://gitbox.apache.org/repos/asf?p=commons-parent.git</url>
+    <tag>commons-parent-NN</tag>
+- Create tag the from the updated workspace:
+  git checkout release
+  TODO: how to synch release branch
+  git commit -am "Update version numbers for Commons Parent version NN"
+  git tag -s commons-parent-NN -m "Tag Commons Parent version NN"
+  git push --tags
 
 Test build of tag:
 -----------------
@@ -83,8 +87,7 @@ Assuming the vote passes, login to Nexus and use the "Release" function
 [If there was a problem identified, Drop the repo instead and start again]
 
 Copy the RC Tag to final tag:
-  URL=https://svn.apache.org/repos/asf/commons/proper/commons-parent/
-  svn cp "$URL/tags/commons-parent-37-RC1" "$URL/tags/commons-parent-37" -m "Release commons-parent 37 based on RC1"
+   TBA
 
 Publish the source files to 
 https://dist.apache.org/repos/dist/release/commons/commons-parent
