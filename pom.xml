@@ -138,7 +138,7 @@
     <commons.release-plugin.version>1.7</commons.release-plugin.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
     <!-- requires Java 8+ -->
-    <biz.aQute.bndlib.version>5.0.1</biz.aQute.bndlib.version>
+    <biz.aQute.bndlib.version>5.1.0</biz.aQute.bndlib.version>
 
     <!--
       Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
@@ -185,7 +185,7 @@
     <commons.spotbugs.version>3.1.12.2</commons.spotbugs.version>
     <commons.surefire-report.version>2.22.2</commons.surefire-report.version>
     <commons.surefire.version>2.22.2</commons.surefire.version>
-    <commons.wagon-ssh.version>3.3.4</commons.wagon-ssh.version>
+    <commons.wagon-ssh.version>3.4.0</commons.wagon-ssh.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
@@ -384,7 +384,7 @@
   </mailingLists>
 
   <prerequisites>
-    <maven>3.0.5</maven>
+    <maven>3.5.0</maven>
   </prerequisites>
 
   <!--
@@ -731,7 +731,7 @@
             <dependency>
               <groupId>org.apache.bcel</groupId>
               <artifactId>bcel</artifactId>
-              <version>6.4.1</version>
+              <version>6.5.0</version>
             </dependency>
           </dependencies>
         </plugin>

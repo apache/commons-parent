@@ -75,6 +75,10 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update" dev="sebb">commons.project-info.version 3.0.0 -> 3.1.0</action>
             <action type="update" dev="ggregory">Add support for Java 13</action>
             <action type="update" dev="erans">Support NOTICE and LICENSE alongside .txt versions</action>
+            <action type="update" dev="sebb">commons.wagon-ssh.version 3.0.0 -> 3.1.0</action>
+            <action type="update" dev="sebb">biz.aQute.bndlib.version 5.0.1 => 5.1.0</action>
+            <action type="update" dev="sebb">bcel version 6.4.1 => 6.5.0</action>
+            <action type="update" dev="sebb">maven pre-requisite 3.0.5 => 3.5.0</action>
         </release>
 
         <release version="50" date="2019-12-17" description="Update site generation.
