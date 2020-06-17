@@ -1749,7 +1749,7 @@
 
         Requires file src/changes/release-notes.vm.
         A sample template is available from:
-        https://svn.apache.org/repos/asf/commons/proper/commons-parent/trunk/src/changes/release-notes.vm
+        https://gitbox.apache.org/repos/asf?p=commons-parent.git;a=blob_plain;f=src/changes/release-notes.vm;hb=HEAD
       -->
       <id>release-notes</id>
       <build>
