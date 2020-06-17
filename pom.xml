@@ -608,6 +608,11 @@
           </configuration>
         </plugin>
         <plugin>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-release-plugin</artifactId>
+          <version>${commons.release-plugin.version}</version>
+        </plugin>
+        <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
           <version>${commons.felix.version}</version>
@@ -1490,7 +1495,6 @@
           <plugin>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-release-plugin</artifactId>
-            <version>${commons.release-plugin.version}</version>
             <executions>
               <execution>
                 <id>clean-staging</id>
