@@ -383,10 +383,6 @@
     </mailingList>
   </mailingLists>
 
-  <prerequisites>
-    <maven>3.5.0</maven>
-  </prerequisites>
-
   <!--
     This section *must* be overwritten by subprojects. It is only to allow
     a release of the commons-parent POM.
@@ -799,7 +795,7 @@
         <configuration>
           <rules>
             <requireMavenVersion>
-              <version>3.0.5</version>
+              <version>3.5.0</version>
             </requireMavenVersion>
             <requireJavaVersion>
               <version>${maven.compiler.target}</version>
