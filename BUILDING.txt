@@ -56,7 +56,7 @@ N.B. This is done in a separate release branch so that the default branch remain
   OR
   git tag -a commons-parent-NN-RC1 -m "Tag Commons Parent version NN-RC1"
 
-  git push --tags
+  git push --tags origin release
 
 Test build of tag:
 -----------------
