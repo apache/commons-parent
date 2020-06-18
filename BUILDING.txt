@@ -27,11 +27,10 @@ Preparing for release candidate:
 - Ensure changes.xml is up to date; generate RELEASE-NOTES using non-SNAPSHOT version:
   mvn changes:announcement-generate -Prelease-notes -Dchanges.version=nn
 - Ensure pom.xml header comment agrees with changes for this release
-- Regenerate CONTRIBUTING.md:
-  mvn commons-build:contributing-md
-- Regenerate README.md:
-  mvn commons-build:readme-md
-- Commit all changes
+- Regenerate files:
+  mvn commons-build:all -Dproject.inceptionYear=2006
+  (N.B. the year is not defined in the pom to avoid propagation to components)
+- Check and commit all changes
 
 Creating release candidate tag:
 ------------------------------
