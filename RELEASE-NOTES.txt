@@ -1,3 +1,52 @@
+              Apache Commons Parent 51
+                  RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 51
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Fix incompatibilty issues with Java 7
+Add support for Java 13.
+Update various plugin versions.
+
+Changes in this version include:
+
+New features:
+o  Allow override of changes.announcementFile/announcementDirectory
+
+Fixed Bugs:
+o  Allow Java7 builds: commons.animal-sniffer.version=1.17; biz.aQute.bndlib.version=3.5.0
+o  PR#5: change <docEncoding> to <docencoding> for maven javadoc plugin.
+
+Changes:
+o  JApiCmp 0.14.1 -> 0.14.3.
+o  maven-enforcer-plugin 3.0.0-M2 -> 3.0.0-M3.
+o  maven-source-plugin 3.2.0 -> 3.2.1.
+o  commons.spotbugs.version 3.1.6 -> 3.1.12.2.
+o  org.apache:apache 21 -> 23.
+o  maven-javadoc-plugin 3.1.1 -> 3.2.0.
+o  commons.pmd.version 3.12.0 -> 3.13.0.
+o  Fix https://github.com/bndtools/bnd/issues/3903 seen with Commons CSV.
+o  commons.project-info.version 3.0.0 -> 3.1.0
+o  Add support for Java 13
+o  Support NOTICE and LICENSE alongside .txt versions
+o  commons.wagon-ssh.version 3.0.0 -> 3.1.0
+o  biz.aQute.bndlib.version 5.0.1 => 5.1.0
+o  bcel version 6.4.1 => 6.5.0
+o  maven pre-requisite 3.0.5 => 3.5.0
+o  commons.build-helper.version 3.0.0 => 3.1.0
+
+
+Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
+
+https://commons.apache.org/commons-parent-pom.html
+
+-----------------------------------------------------------------------------
+
+
               Apache Commons Parent 50
                   RELEASE NOTES
 
