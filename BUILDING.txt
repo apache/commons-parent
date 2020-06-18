@@ -24,8 +24,7 @@ Preparing for release candidate:
 -------------------------------
 - Check for updates to plugins and dependencies.
 - Ensure NOTICE has correct year.
-- Ensure changes.xml is up to date; generate RELEASE-NOTES using non-SNAPSHOT version:
-  mvn changes:announcement-generate -Prelease-notes -Dchanges.version=nn
+- Ensure changes.xml is up to date (Release notes are updated during tagging)
 - Ensure pom.xml header comment agrees with changes for this release
 - Regenerate files:
   mvn commons-build:all -Dproject.inceptionYear=2006
@@ -53,9 +52,9 @@ N.B. This is done in a separate release branch so that the default branch remain
 - Create tag the from the updated workspace:
   git commit -am "Update version numbers for Commons Parent version NN"
 
-  git tag -s commons-parent-NN -m "Tag Commons Parent version NN" [-u keyid] # signed tag
+  git tag -s commons-parent-NN-RC1 -m "Tag Commons Parent version NN-RC1" [-u keyid] # signed tag
   OR
-  git tag -a commons-parent-NN -m "Tag Commons Parent version NN"
+  git tag -a commons-parent-NN-RC1 -m "Tag Commons Parent version NN-RC1"
 
   git push --tags
 
