@@ -89,7 +89,7 @@
       <item name="Commons Parent Pom"    href="https://commons.apache.org/commons-parent-pom.html" />
       <item name="Commons Build Plugin"  href="https://commons.apache.org/build-plugin/index.html" />
       <item name="Releasing Components"  href="https://commons.apache.org/releases/index.html" />
-      <item name="Wiki"                  href="http://wiki.apache.org/commons/FrontPage" />
+      <item name="Wiki"                  href="https://cwiki.apache.org/confluence/display/commons/FrontPage" />
     </menu>
 
     <!-- Should agree with commons-site -->
