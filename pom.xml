@@ -323,6 +323,10 @@
 
     <sonar.host.url>https://analysis.apache.org/</sonar.host.url>
 
+    <!-- allow override of changes.announcementFile and directory -->
+    <changes.announcementDirectory>.</changes.announcementDirectory>
+    <changes.announcementFile>RELEASE-NOTES.txt</changes.announcementFile>
+
   </properties>
 
   <mailingLists>
@@ -1766,8 +1770,8 @@
               <template>release-notes.vm</template>
               <templateDirectory>src/changes</templateDirectory>
               <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
-              <announcementDirectory>.</announcementDirectory>
-              <announcementFile>RELEASE-NOTES.txt</announcementFile>
+              <announcementDirectory>${changes.announcementDirectory}</announcementDirectory>
+              <announcementFile>${changes.announcementFile}</announcementFile>
               <announceParameters>
                 <releaseVersion>${commons.release.version}</releaseVersion>
               </announceParameters>

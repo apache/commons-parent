@@ -61,7 +61,10 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
-        <release version="51" date="YYYY-MM-DD" description="TBD">
+        <release version="51" date="YYYY-MM-DD" description="Fix incompatibilty issues with Java 7
+ Add support for Java 13.
+ Update various plugin versions.
+        ">
             <action type="update" dev="ggregory">JApiCmp 0.14.1 -> 0.14.3.</action>
             <action type="update" dev="ggregory">maven-enforcer-plugin 3.0.0-M2 -> 3.0.0-M3.</action>
             <action type="update" dev="ggregory">maven-source-plugin 3.2.0 -> 3.2.1.</action>
@@ -80,6 +83,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update" dev="sebb">bcel version 6.4.1 => 6.5.0</action>
             <action type="update" dev="sebb">maven pre-requisite 3.0.5 => 3.5.0</action>
             <action type="update" dev="sebb">commons.build-helper.version 3.0.0 => 3.1.0</action>
+            <action type="add" dev="sebb">Allow override of changes.announcementFile/announcementDirectory</action>
         </release>
 
         <release version="50" date="2019-12-17" description="Update site generation.
