@@ -44,6 +44,7 @@ N.B. This is done in a separate release branch so that the default branch remain
   git pull origin master
 - Edit version in pom.xml to remove SNAPSHOT suffix
   mvn versions:set -DnewVersion=NN -DgenerateBackupPoms=false
+  edit commons.rc.version to agree with the RC number
 - Update the release notes. These are cumulative, so the new notes must be generated in a temporary file
   Generate a temporary file, for example:
   mvn changes:announcement-generate -Prelease-notes -Dchanges.version=NN -Dchanges.announcementFile=NN.tmp
@@ -69,7 +70,7 @@ Deploy RC to Nexus:
 ------------------
 - Set up passwords in settings.xml (https://wiki.apache.org/commons/UsingNexus)
 - Same command as above, but omitting -Ptest-deploy profile:
-- mvn package deploy -Dassembly.attach=false -Duser.name=ASF-login-name -Prelease
+- mvn package deploy -Duser.name=ASF-login-name -Prelease
 
 Tidy and close Nexus staging area:
 ---------------------------------
@@ -94,10 +95,25 @@ Assuming the vote passes, login to Nexus and use the "Release" function
 [If there was a problem identified, Drop the repo instead and start again]
 
 Copy the RC Tag to final tag:
-   TBA
+----------------------------
+- git co release
+- git pull origin release # synch with remote
 
-Publish the source files to 
+- git diff commons-parent-NN-RCn # check that the workspace agrees with the tag in the vote
+- git tag -s commons-parent-NN -m "Create Commons Parent NN release tag"
+- git push --tags
+
+- git checkout master
+- git merge release # This should update the RN
+- mvn versions:set -DnewVersion=52-SNAPSHOT -DgenerateBackupPoms=false
+- Add next release tag in src/changes/changes.xml
+- git commit -am "Bump to next development version"
+
+Publish the source files to
+------------------------
 https://dist.apache.org/repos/dist/release/commons/commons-parent
+
+TBA
 
 Update site documentation
 -------------------------
@@ -107,9 +123,3 @@ https://svn.apache.org/repos/asf/commons/cms-site/trunk/content/xdoc/commons-par
 This will need updating if any new features / profiles etc are added.
 It does not list plugin or dependency versions.
 However at the least please update the version details and URL at the start of the page.
-
-
-Prepare next Release Cycle
---------------------------
-Modify pom.xml with next SNAPSHOT version, remove second last history comment
-Add next release tag in src/changes/changes.xml and commit changes to trunk
