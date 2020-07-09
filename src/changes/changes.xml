@@ -88,6 +88,7 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update" dev="sebb">maven pre-requisite 3.0.5 -> 3.5.0</action>
             <action type="update" dev="sebb">commons.build-helper.version 3.0.0 -> 3.1.0</action>
             <action type="add" dev="sebb">Allow override of changes.announcementFile/announcementDirectory</action>
+            <action type="update" dev="ggregory">maven-assembly-plugin 3.2.0 -> 3.3.0</action>
         </release>
 
         <release version="50" date="2019-12-17" description="Update site generation.
