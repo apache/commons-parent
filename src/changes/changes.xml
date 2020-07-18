@@ -63,6 +63,7 @@ The <action> type attribute can be add,update,fix,remove.
 
         <release version="52" date="YYYY-MM-DD" description="TBA">
           <action type="update" dev="ggregory">biz.aQute.bndlib.version 5.1.0 -> 5.1.1.</action>
+          <action type="add" dev="sebb">Align javadoc version with java override profile</action>          
         </release>
 
         <release version="51" date="2020-06-23" description="Fix incompatibilty issues with Java 7

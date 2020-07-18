@@ -111,6 +111,7 @@
     <commons.compiler.fork>false</commons.compiler.fork>
     <commons.compiler.compilerVersion />
     <commons.compiler.javac />
+    <commons.compiler.javadoc />
 
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
     <commons.animal-sniffer.version>1.18</commons.animal-sniffer.version>
@@ -487,6 +488,7 @@
             <!-- keep only errors and warnings -->
             <quiet>true</quiet>
             <source>${maven.compiler.source}</source>
+            <javadocExecutable>${commons.compiler.javadoc}</javadocExecutable>
             <encoding>${commons.encoding}</encoding>
             <docencoding>${commons.docEncoding}</docencoding>
             <notimestamp>true</notimestamp>
@@ -1018,6 +1020,7 @@
           <!-- keep only errors and warnings -->
           <quiet>true</quiet>
           <source>${maven.compiler.source}</source>
+          <javadocExecutable>${commons.compiler.javadoc}</javadocExecutable>
           <encoding>${commons.encoding}</encoding>
           <docencoding>${commons.docEncoding}</docencoding>
           <notimestamp>true</notimestamp>
@@ -1467,6 +1470,7 @@
             </executions>
             <configuration>
               <source>${maven.compiler.source}</source>
+              <javadocExecutable>${commons.compiler.javadoc}</javadocExecutable>
             </configuration>
           </plugin>
           <plugin>
@@ -1585,6 +1589,7 @@
         <commons.compiler.fork>true</commons.compiler.fork>
         <commons.compiler.compilerVersion>1.3</commons.compiler.compilerVersion>
         <commons.compiler.javac>${JAVA_1_3_HOME}/bin/javac</commons.compiler.javac>
+        <commons.compiler.javadoc>${JAVA_1_3_HOME}/bin/javadoc</commons.compiler.javadoc>
         <commons.surefire.java>${JAVA_1_3_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
@@ -1599,6 +1604,7 @@
         <commons.compiler.fork>true</commons.compiler.fork>
         <commons.compiler.compilerVersion>1.4</commons.compiler.compilerVersion>
         <commons.compiler.javac>${JAVA_1_4_HOME}/bin/javac</commons.compiler.javac>
+        <commons.compiler.javadoc>${JAVA_1_4_HOME}/bin/javadoc</commons.compiler.javadoc>
         <commons.surefire.java>${JAVA_1_4_HOME}/bin/java</commons.surefire.java>
         <!-- later versions of surefire don't support Java 1.4 -->
         <commons.surefire.version>2.11</commons.surefire.version>
@@ -1615,6 +1621,7 @@
         <commons.compiler.fork>true</commons.compiler.fork>
         <commons.compiler.compilerVersion>1.5</commons.compiler.compilerVersion>
         <commons.compiler.javac>${JAVA_1_5_HOME}/bin/javac</commons.compiler.javac>
+        <commons.compiler.javadoc>${JAVA_1_5_HOME}/bin/javadoc</commons.compiler.javadoc>
         <commons.surefire.java>${JAVA_1_5_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
@@ -1629,6 +1636,7 @@
         <commons.compiler.fork>true</commons.compiler.fork>
         <commons.compiler.compilerVersion>1.6</commons.compiler.compilerVersion>
         <commons.compiler.javac>${JAVA_1_6_HOME}/bin/javac</commons.compiler.javac>
+        <commons.compiler.javadoc>${JAVA_1_6_HOME}/bin/javadoc</commons.compiler.javadoc>
         <commons.surefire.java>${JAVA_1_6_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
@@ -1643,6 +1651,7 @@
         <commons.compiler.fork>true</commons.compiler.fork>
         <commons.compiler.compilerVersion>1.7</commons.compiler.compilerVersion>
         <commons.compiler.javac>${JAVA_1_7_HOME}/bin/javac</commons.compiler.javac>
+        <commons.compiler.javadoc>${JAVA_1_7_HOME}/bin/javadoc</commons.compiler.javadoc>
         <commons.surefire.java>${JAVA_1_7_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
@@ -1657,6 +1666,7 @@
         <commons.compiler.fork>true</commons.compiler.fork>
         <commons.compiler.compilerVersion>1.8</commons.compiler.compilerVersion>
         <commons.compiler.javac>${JAVA_1_8_HOME}/bin/javac</commons.compiler.javac>
+        <commons.compiler.javadoc>${JAVA_1_8_HOME}/bin/javadoc</commons.compiler.javadoc>
         <commons.surefire.java>${JAVA_1_8_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
@@ -1671,6 +1681,7 @@
         <commons.compiler.fork>true</commons.compiler.fork>
         <commons.compiler.compilerVersion>1.9</commons.compiler.compilerVersion>
         <commons.compiler.javac>${JAVA_1_9_HOME}/bin/javac</commons.compiler.javac>
+        <commons.compiler.javadoc>${JAVA_1_9_HOME}/bin/javadoc</commons.compiler.javadoc>
         <commons.surefire.java>${JAVA_1_9_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
@@ -1685,6 +1696,7 @@
         <commons.compiler.fork>true</commons.compiler.fork>
         <commons.compiler.compilerVersion>1.10</commons.compiler.compilerVersion>
         <commons.compiler.javac>${JAVA_1_10_HOME}/bin/javac</commons.compiler.javac>
+        <commons.compiler.javadoc>${JAVA_1_10_HOME}/bin/javadoc</commons.compiler.javadoc>
         <commons.surefire.java>${JAVA_1_10_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
@@ -1699,6 +1711,7 @@
         <commons.compiler.fork>true</commons.compiler.fork>
         <commons.compiler.compilerVersion>1.11</commons.compiler.compilerVersion>
         <commons.compiler.javac>${JAVA_1_11_HOME}/bin/javac</commons.compiler.javac>
+        <commons.compiler.javadoc>${JAVA_1_11_HOME}/bin/javadoc</commons.compiler.javadoc>
         <commons.surefire.java>${JAVA_1_11_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
@@ -1713,6 +1726,7 @@
         <commons.compiler.fork>true</commons.compiler.fork>
         <commons.compiler.compilerVersion>1.12</commons.compiler.compilerVersion>
         <commons.compiler.javac>${JAVA_1_12_HOME}/bin/javac</commons.compiler.javac>
+        <commons.compiler.javadoc>${JAVA_1_12_HOME}/bin/javadoc</commons.compiler.javadoc>
         <commons.surefire.java>${JAVA_1_12_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
@@ -1727,6 +1741,7 @@
         <commons.compiler.fork>true</commons.compiler.fork>
         <commons.compiler.compilerVersion>1.13</commons.compiler.compilerVersion>
         <commons.compiler.javac>${JAVA_1_13_HOME}/bin/javac</commons.compiler.javac>
+        <commons.compiler.javadoc>${JAVA_1_13_HOME}/bin/javadoc</commons.compiler.javadoc>
         <commons.surefire.java>${JAVA_1_13_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
