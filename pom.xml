@@ -185,7 +185,7 @@
      org.apache.maven.plugins:maven-site-plugin:3.9.0:site:
      java.lang.NoSuchMethodError: org.codehaus.plexus.util.xml.Xpp3Dom.getInputLocation()Ljava/lang/Object;
     -->
-    <commons.site-plugin.version>3.8.2</commons.site-plugin.version>
+    <commons.site-plugin.version>3.9.1</commons.site-plugin.version>
     <commons.source-plugin.version>3.2.1</commons.source-plugin.version>
     <commons.spotbugs.version>3.1.12.2</commons.spotbugs.version>
     <commons.surefire-report.version>2.22.2</commons.surefire-report.version>
