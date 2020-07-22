@@ -143,7 +143,7 @@
     <commons.release-plugin.version>1.7</commons.release-plugin.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
     <!-- requires Java 8 -->
-    <biz.aQute.bndlib.version>5.1.1</biz.aQute.bndlib.version>
+    <biz.aQute.bndlib.version>5.1.2</biz.aQute.bndlib.version>
 
     <!--
       Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
