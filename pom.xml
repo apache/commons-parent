@@ -187,7 +187,8 @@
     -->
     <commons.site-plugin.version>3.8.2</commons.site-plugin.version>
     <commons.source-plugin.version>3.2.1</commons.source-plugin.version>
-    <commons.spotbugs.version>3.1.12.2</commons.spotbugs.version>
+    <commons.spotbugs.version>4.0.4</commons.spotbugs.version>
+    <commons.spotbugs.impl.version>4.0.6</commons.spotbugs.impl.version>    
     <commons.surefire-report.version>2.22.2</commons.surefire-report.version>
     <commons.surefire.version>2.22.2</commons.surefire.version>
     <commons.wagon-ssh.version>3.4.0</commons.wagon-ssh.version>
