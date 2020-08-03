@@ -61,6 +61,9 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
+        <release version="53" date="YYYY-MM-DD" description="TBD">
+        </release>
+
         <release version="52" date="2020-07-30" description="Add support for Java 15.">
           <action type="update" dev="chtompki">Update maven-site-plugin version 3.8.2 -> 3.9.1.</action>
           <action type="add" dev="sebb">Align Javadoc version with java override profile</action>
