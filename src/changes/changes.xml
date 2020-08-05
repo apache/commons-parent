@@ -61,7 +61,11 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
-        <release version="52" date="YYYY-MM-DD" description="TBA">
+        <release version="53" date="YYYY-MM-DD" description="TBD">
+        </release>
+
+        <release version="52" date="2020-07-30" description="Add support for Java 15.">
+          <action type="update" dev="chtompki">Update maven-site-plugin version 3.8.2 -> 3.9.1.</action>
           <action type="add" dev="sebb">Align Javadoc version with java override profile</action>
           <action type="update" dev="ggregory">Update biz.aQute.bndlib version 5.1.0 -> 5.1.2, Java 15 support.</action>
           <action type="update" dev="ggregory">Update maven-bundle-plugin from 4.2.1 to 5.1.1, Java 15 support.</action>
