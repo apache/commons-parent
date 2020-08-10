@@ -62,6 +62,8 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
 
         <release version="53" date="YYYY-MM-DD" description="TBD">
+          <action type="update" dev="ggregory">Update versions-maven-plugin 2.7 -> 2.8.1.</action>
+          <action type="add" dev="ggregory">Add versions-maven-plugin run for this build.</action>
         </release>
 
         <release version="52" date="2020-07-30" description="Add support for Java 15.">
