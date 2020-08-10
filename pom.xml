@@ -1059,7 +1059,7 @@
         <!--
           Unfortunately it does not appear to be possible to override
           reports configured in a parent POM.
-          See https://jira.codehaus.org/browse/MPIR-241
+          See https://issues.apache.org/jira/browse/MPIR-241
           and https://issues.apache.org/jira/browse/MPOM-32
           So we define here all those reports that are suitable for
           all components.
@@ -1307,9 +1307,9 @@
         <!--
           N.B. in spite of what the Maven docs may say,
           activation conditions are ORed together, see:
-          http://jira.codehaus.org/browse/MNG-4565
+          https://issues.apache.org/jira/browse/MNG-4565
           Fairly useless, but that's what was done in
-          http://jira.codehaus.org/browse/MNG-3106
+          https://issues.apache.org/jira/browse/MNG-3106
 
           So we cannot also check for Java 1.5+
           This should not be a problem now as the profile is optional.
