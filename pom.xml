@@ -933,6 +933,7 @@
             so that the child pom entries replace the parent entries
           -->
           <excludes combine.children="append">
+            <exclude>.mvn/wrapper/maven-wrapper.properties</exclude>
             <exclude>site-content/**</exclude>
             <exclude>.checkstyle</exclude>
             <exclude>.fbprefs</exclude>
@@ -1122,6 +1123,7 @@
             so that the child pom entries replace the parent entries
           -->
           <excludes combine.children="append">
+            <exclude>.mvn/wrapper/maven-wrapper.properties</exclude>
             <exclude>site-content/**</exclude>
             <exclude>.checkstyle</exclude>
             <exclude>.fbprefs</exclude>
