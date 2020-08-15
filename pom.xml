@@ -73,7 +73,7 @@
     Starting with release 30, there are optional profiles for both Cobertura and JaCoCo.
     These can be enabled independently on the command-line:
 
-    mvn site -Pcobertura -Pjacoco
+    ./mvnw site -Pcobertura -Pjacoco
 
     Or the component can define a default coverage tool by creating either (or both) of the following files:
 
@@ -82,7 +82,7 @@
 
     These can later be overridden by cancelling the profile:
 
-    mvn site -P!jacoco
+    ./mvnw site -P!jacoco
 
   -->
 
@@ -166,7 +166,7 @@
 
       Since the version is defined as a property, the CP version can be overridden as follows if necessary:
 
-      mvn site -Dcommons.site-plugin.version=3.5.1
+      ./mvnw site -Dcommons.site-plugin.version=3.5.1
 
       You will also need to add a dependency on Doxia core:
       <artifactId>maven-site-plugin</artifactId>
@@ -335,7 +335,7 @@
     <!-- N.B. commons-site now uses the Apache POM so has its own copy of the mailing list definitions -->
     <!--
       Components should normally override the default mailing list report by using the comnand
-      mvn commons-build:mail-page
+      ./mvnw commons-build:mail-page
       This generates the file src/site/xdoc/mail-lists.xml which when processed will replace the PIR version.
     -->
     <!-- Changes to this list should be synchronised with the commons build plugin -->
@@ -590,7 +590,7 @@
               <onlyModified>true</onlyModified>
               <breakBuildOnBinaryIncompatibleModifications>${commons.japicmp.breakBuildOnBinaryIncompatibleModifications}</breakBuildOnBinaryIncompatibleModifications>
               <breakBuildOnSourceIncompatibleModifications>${commons.japicmp.breakBuildOnSourceIncompatibleModifications}</breakBuildOnSourceIncompatibleModifications>
-              <!-- skip japicmp on "mvn site" - use "mvn package site" to include report -->
+              <!-- skip japicmp on "./mvnw site" - use "./mvnw package site" to include report -->
               <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
               <reportOnlyFilename>true</reportOnlyFilename>
               <skipPomModules>true</skipPomModules>
@@ -921,7 +921,7 @@
           </execution>
         </executions>
       </plugin>
-      <!-- Needed for command-line access, e.g mvn apache-rat:rat and mvn apache-rat:check -->
+      <!-- Needed for command-line access, e.g ./mvnw apache-rat:rat and ./mvnw apache-rat:check -->
       <plugin>
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
@@ -1420,7 +1420,7 @@
                 <onlyModified>true</onlyModified>
                 <breakBuildOnBinaryIncompatibleModifications>${commons.japicmp.breakBuildOnBinaryIncompatibleModifications}</breakBuildOnBinaryIncompatibleModifications>
                 <breakBuildOnSourceIncompatibleModifications>${commons.japicmp.breakBuildOnSourceIncompatibleModifications}</breakBuildOnSourceIncompatibleModifications>
-                <!-- skip japicmp on "mvn site" - use "mvn package site" to include report -->
+                <!-- skip japicmp on "./mvnw site" - use "./mvnw package site" to include report -->
                 <ignoreMissingNewVersion>true</ignoreMissingNewVersion>
                 <reportOnlyFilename>true</reportOnlyFilename>
                 <skipPomModules>true</skipPomModules>
@@ -1757,7 +1757,7 @@
     <!--
       | Profile to allow testing of deploy phase
       | e.g.
-      | mvn deploy -Ptest-deploy -Prelease -Dgpg.skip
+      | ./mvnw deploy -Ptest-deploy -Prelease -Dgpg.skip
     -->
     <profile>
       <id>test-deploy</id>
@@ -1771,7 +1771,7 @@
       <!--
         Generate release notes in top-level directory from src/changes/changes.xml
         Usage:
-        mvn changes:announcement-generate -Prelease-notes [-Dchanges.version=nnn]
+        ./mvnw changes:announcement-generate -Prelease-notes [-Dchanges.version=nnn]
 
         Defining changes.version allows one to create the RN without first removing the SNAPSHOT suffix.
 

@@ -8,17 +8,17 @@ https://commons.apache.org/releases/index.html
 
 To perform the license release audit, a.k.a. "RAT check", run.
 
-mvn apache-rat:check
+./mvnw apache-rat:check
 
 Building for local repo:
 -----------------------
 
-mvn -N install
+./mvnw -N install
 
 Snapshot deployment:
 -------------------
 
-mvn deploy
+./mvnw deploy
 
 Preparing for release candidate:
 -------------------------------
@@ -27,7 +27,7 @@ Preparing for release candidate:
 - Ensure changes.xml is up to date (Release notes are updated during tagging)
 - Ensure pom.xml header comment agrees with changes for this release
 - Regenerate files:
-  mvn commons-build:all -Dproject.inceptionYear=2006
+  ./mvnw commons-build:all -Dproject.inceptionYear=2006
   (N.B. the year is not defined in the pom to avoid propagation to components)
 - Check and commit all changes
 
@@ -43,11 +43,11 @@ N.B. This is done in a separate release branch so that the default branch remain
   git pull origin release
   git pull origin master
 - Edit version in pom.xml to remove SNAPSHOT suffix
-  mvn versions:set -DnewVersion=NN -DgenerateBackupPoms=false
+  ./mvnw versions:set -DnewVersion=NN -DgenerateBackupPoms=false
   edit commons.rc.version to agree with the RC number
 - Update the release notes. These are cumulative, so the new notes must be generated in a temporary file
   Generate a temporary file, for example:
-  mvn changes:announcement-generate -Prelease-notes -Dchanges.version=NN -Dchanges.announcementFile=NN.tmp
+  ./mvnw changes:announcement-generate -Prelease-notes -Dchanges.version=NN -Dchanges.announcementFile=NN.tmp
   Edit the file to tidy it up, and prepend it to RELEASE-NOTES.txt
   Remove the temporary file
 - Create tag the from the updated workspace:
@@ -61,7 +61,7 @@ N.B. This is done in a separate release branch so that the default branch remain
 
 Test build of tag:
 -----------------
-- mvn deploy -Duser.name=ASF-login-name -Prelease -Ptest-deploy
+- ./mvnw deploy -Duser.name=ASF-login-name -Prelease -Ptest-deploy
 - Check the contents of target/deploy/org/apache/commons/commons-parent/<NN>
   - should contain commons-parent-<NN>.pom, commons-parent-<NN>-site.xml and sigs/hashes
   - also -src.tar.gz, -src.zip and sigs/hashes
@@ -70,7 +70,7 @@ Deploy RC to Nexus:
 ------------------
 - Set up passwords in settings.xml (https://wiki.apache.org/commons/UsingNexus)
 - Same command as above, but omitting -Ptest-deploy profile:
-- mvn package deploy -Duser.name=ASF-login-name -Prelease
+- ./mvnw package deploy -Duser.name=ASF-login-name -Prelease
 
 Tidy and close Nexus staging area:
 ---------------------------------
@@ -105,7 +105,7 @@ Copy the RC Tag to final tag:
 
 - git checkout master
 - git merge release # This should update the RN
-- mvn versions:set -DnewVersion=52-SNAPSHOT -DgenerateBackupPoms=false
+- ./mvnw versions:set -DnewVersion=52-SNAPSHOT -DgenerateBackupPoms=false
 - Add next release tag in src/changes/changes.xml
 - git commit -am "Bump to next development version"
 

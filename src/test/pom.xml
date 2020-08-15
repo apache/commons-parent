@@ -31,8 +31,8 @@
   All the plugins not already listed in the parent POM pluginManagement section
   are listed here.
   The following commands can then be used to check the versions:
-  mvn versions:display-dependency-updates -U
-  mvn versions:display-plugin-updates -U
+  ./mvnw versions:display-dependency-updates -U
+  ./mvnw versions:display-plugin-updates -U
   </description>
   <properties>
     <maven.compiler.source>1.7</maven.compiler.source>
