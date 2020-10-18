@@ -69,6 +69,7 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="update" dev="ggregory" due-to="Dependabot">Update maven-project-info-reports-plugin from 3.1.0 to 3.1.1 #19.</action>
           <action type="update" dev="ggregory">Update Jacoco from 0.8.5 to 0.8.6.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Update actions/setup-java from v1.4.0 to v1.4.2 #18.</action>
+          <action type="update" dev="sebb">commons-build-plugin 1.11 -> 1.12</action>
         </release>
 
         <release version="52" date="2020-07-30" description="Add support for Java 15.">
