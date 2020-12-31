@@ -73,7 +73,7 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="update" dev="ggregory" due-to="Dependabot">Bump actions/checkout from v2.3.1 to v2.3.4, #15, #21, #25.</action>
           <action type="update" dev="ggregory">Update spotbugs-maven-plugin from 4.0.4 to 4.1.4.</action>
           <action type="update" dev="ggregory">Update spotbugs impl from 4.0.6 to 4.2.0.</action>
-          <action type="update" dev="ggregory">Update com.github.siom79.japicmp:japicmp-maven-plugin 0.14.3 -> 0.14.4.</action>
+          <action type="update" dev="ggregory">Update com.github.siom79.japicmp:japicmp-maven-plugin 0.14.3 -> 0.15.1.</action>
           <action type="update" dev="ggregory">Update org.apache.maven.wagon:wagon-ssh 3.4.0 -> 3.4.2.</action>
           <action type="update" dev="ggregory">Update commons.pmd.version 3.13.0 -> 3.14.0.</action>
         </release>
