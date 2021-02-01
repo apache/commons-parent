@@ -63,6 +63,7 @@ The <action> type attribute can be add,update,fix,remove.
 
         <release version="53" date="YYYY-MM-DD" description="TBD">
           <action type="add" dev="ggregory">Add versions-maven-plugin run for this build.</action>
+          <action type="add" dev="ggregory">Add maven-checkstyle-plugin to pluginManagement.</action>
           <!-- UPDATES -->
           <action type="update" dev="ggregory">Update versions-maven-plugin 2.7 -> 2.8.1.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Update maven-project-info-reports-plugin from 3.1.0 to 3.1.1 #19.</action>
