@@ -59,8 +59,8 @@
   <body>
     <!-- N.B. body links are automatically inherited -->
     <links>
-      <item name="ApacheCon" href="http://www.apachecon.com/"/>
-      <item name="Apache"  href="http://www.apache.org"/>
+      <item name="ApacheCon" href="https://www.apachecon.com/"/>
+      <item name="Apache"  href="https://www.apache.org"/>
       <item name="Commons" href="https://commons.apache.org/" />
     </links>
 
@@ -68,7 +68,7 @@
 
     <menu name="Commons" inherit="bottom">
       <item name="Home"                  href="https://commons.apache.org/" />
-      <item name="License"               href="http://www.apache.org/licenses/"/>
+      <item name="License"               href="https://www.apache.org/licenses/"/>
       <item name="Components"            href="https://commons.apache.org/components.html" collapse="true">
         <item name="Full list..."        href="https://commons.apache.org/components.html" />
       </item> 
@@ -94,23 +94,23 @@
 
     <!-- Should agree with commons-site -->
     <menu name="ASF" inherit="bottom">
-      <item name="How the ASF works"     href="http://www.apache.org/foundation/how-it-works.html" />
-      <item name="Get Involved"          href="http://www.apache.org/foundation/getinvolved.html" />
-      <item name="Developer Resources"   href="http://www.apache.org/dev/" />
-      <item name="Code of Conduct"       href="http://www.apache.org/foundation/policies/conduct.html" />
-      <item name="Sponsorship"           href="http://www.apache.org/foundation/sponsorship.html" />
-      <item name="Thanks"                href="http://www.apache.org/foundation/thanks.html" />
+      <item name="How the ASF works"     href="https://www.apache.org/foundation/how-it-works.html" />
+      <item name="Get Involved"          href="https://www.apache.org/foundation/getinvolved.html" />
+      <item name="Developer Resources"   href="https://www.apache.org/dev/" />
+      <item name="Code of Conduct"       href="https://www.apache.org/foundation/policies/conduct.html" />
+      <item name="Sponsorship"           href="https://www.apache.org/foundation/sponsorship.html" />
+      <item name="Thanks"                href="https://www.apache.org/foundation/thanks.html" />
     </menu>
   </body>
 
   <!-- inherited -->
   <poweredBy>
     <!-- Add ApacheCon logo -->
-    <logo name="ApacheCon" href="http://www.apache.org/events/current-event.html"
-          img="http://www.apache.org/events/current-event-125x125.png"/>
+    <logo name="ApacheCon" href="https://www.apache.org/events/current-event.html"
+          img="https://www.apache.org/events/current-event-125x125.png"/>
     <!-- Keep the default logo as well -->
-    <logo name="Maven" href="http://maven.apache.org/"
-          img="http://maven.apache.org/images/logos/maven-feather.png"/>
+    <logo name="Maven" href="https://maven.apache.org/"
+          img="https://maven.apache.org/images/logos/maven-feather.png"/>
   </poweredBy>
 
   <!-- inherited -->
