@@ -420,6 +420,7 @@
     <!-- TODO find a better way to add N&L files to jars and test jars
       See also maven-remote-resources-plugin configuration below.
     -->
+    <defaultGoal>clean apache-rat:check package site</defaultGoal>
     <resources>
       <!-- This is the default setting from the super-pom -->
       <resource>
