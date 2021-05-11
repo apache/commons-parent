@@ -71,7 +71,7 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="add" dev="ggregory">Add maven-checkstyle-plugin to pluginManagement.</action>
           <!-- UPDATES -->
           <action type="update" dev="ggregory">Update versions-maven-plugin 2.7 -> 2.8.1.</action>
-          <action type="update" dev="ggregory" due-to="Dependabot">Update maven-project-info-reports-plugin from 3.1.0 to 3.1.1 #19.</action>
+          <action type="update" dev="ggregory" due-to="Dependabot">Update maven-project-info-reports-plugin from 3.1.0 to 3.1.2 #19, #41.</action>
           <action type="update" dev="ggregory, Dependabot">Update Jacoco from 0.8.5 to 0.8.7, #42.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Update actions/setup-java from v1.4.0 to v1.4.3, #18, #22.</action>
           <action type="update" dev="sebb">commons-build-plugin 1.11 -> 1.12</action>
