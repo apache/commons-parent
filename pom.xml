@@ -130,7 +130,7 @@
     <commons.coveralls.version>4.3.0</commons.coveralls.version>
     <commons.coveralls.timestampFormat>EpochMillis</commons.coveralls.timestampFormat>
     <commons.failsafe.version>2.22.2</commons.failsafe.version>
-    <commons.felix.version>5.1.1</commons.felix.version>
+    <commons.felix.version>5.1.2</commons.felix.version>
     <commons.findbugs.version>3.0.5</commons.findbugs.version>
     <commons.jacoco.version>0.8.7</commons.jacoco.version>
     <commons.japicmp.version>0.15.3</commons.japicmp.version>
