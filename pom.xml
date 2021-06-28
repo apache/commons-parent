@@ -189,7 +189,7 @@
     -->
     <commons.site-plugin.version>3.9.1</commons.site-plugin.version>
     <commons.source-plugin.version>3.2.1</commons.source-plugin.version>
-    <commons.spotbugs.version>4.2.3</commons.spotbugs.version>
+    <commons.spotbugs.plugin.version>4.2.3</commons.spotbugs.plugin.version>
     <commons.spotbugs.impl.version>4.2.3</commons.spotbugs.impl.version>    
     <commons.surefire-report.version>2.22.2</commons.surefire-report.version>
     <commons.surefire.version>2.22.2</commons.surefire.version>
@@ -761,6 +761,18 @@
               <groupId>com.puppycrawl.tools</groupId>
               <artifactId>checkstyle</artifactId>
               <version>${commons.checkstyle.version}</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+        <plugin>
+          <groupId>com.github.spotbugs</groupId>
+          <artifactId>spotbugs-maven-plugin</artifactId>
+          <version>${commons.spotbugs.plugin.version}</version>
+          <dependencies>
+            <dependency>
+              <groupId>com.github.spotbugs</groupId>
+              <artifactId>spotbugs</artifactId>
+              <version>${commons.spotbugs.impl.version}</version>
             </dependency>
           </dependencies>
         </plugin>
