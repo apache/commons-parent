@@ -190,7 +190,7 @@
     <commons.site-plugin.version>3.9.1</commons.site-plugin.version>
     <commons.source-plugin.version>3.2.1</commons.source-plugin.version>
     <commons.spotbugs.plugin.version>4.2.3</commons.spotbugs.plugin.version>
-    <commons.spotbugs.impl.version>4.3.0</commons.spotbugs.impl.version>    
+    <commons.spotbugs.impl.version>4.3.0</commons.spotbugs.impl.version>
     <commons.surefire-report.version>2.22.2</commons.surefire-report.version>
     <commons.surefire.version>2.22.2</commons.surefire.version>
     <commons.wagon-ssh.version>3.4.3</commons.wagon-ssh.version>
@@ -1012,7 +1012,23 @@
           </execution>
         </executions>
       </plugin>
-
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>create-javadoc-jar</id>
+            <goals>
+              <goal>javadoc</goal>
+              <goal>jar</goal>
+            </goals>
+            <phase>package</phase>
+          </execution>
+        </executions>
+        <configuration>
+          <source>${maven.compiler.source}</source>
+          <javadocExecutable>${commons.compiler.javadoc}</javadocExecutable>
+        </configuration>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-scm-publish-plugin</artifactId>
@@ -1516,23 +1532,6 @@
             <configuration>
               <!-- Pass these arguments to the deploy plugin. -->
               <arguments>-Prelease</arguments>
-            </configuration>
-          </plugin>
-          <plugin>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>create-javadoc-jar</id>
-                <goals>
-                  <goal>javadoc</goal>
-                  <goal>jar</goal>
-                </goals>
-                <phase>package</phase>
-              </execution>
-            </executions>
-            <configuration>
-              <source>${maven.compiler.source}</source>
-              <javadocExecutable>${commons.compiler.javadoc}</javadocExecutable>
             </configuration>
           </plugin>
           <plugin>
