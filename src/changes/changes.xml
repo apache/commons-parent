@@ -71,6 +71,7 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="add" dev="ggregory">Add maven-checkstyle-plugin to pluginManagement.</action>
           <action type="add" dev="ggregory">Allow Maven PMD plugin to override PMD implementation jars with property "commons.pmd-impl.version".</action>
           <action type="add" dev="ggregory">Add property commons.javadoc16.java.link.</action>
+          <action type="add" dev="ggregory">Add property commons.enforcer-plugin.version.</action>
           <action type="add" dev="ggregory">Add SpotBugs to plugin management section.</action>
           <!-- UPDATES -->
           <action type="update" dev="ggregory">Update versions-maven-plugin 2.7 -> 2.8.1.</action>

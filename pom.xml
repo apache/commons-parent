@@ -144,6 +144,7 @@
     <commons.rat.version>0.13</commons.rat.version>
     <commons.release-plugin.version>1.7</commons.release-plugin.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
+    <commons.enforcer-plugin.version>3.0.0</commons.enforcer-plugin.version>
     <!-- requires Java 8 -->
     <biz.aQute.bndlib.version>5.3.0</biz.aQute.bndlib.version>
 
@@ -859,7 +860,7 @@
         <inherited>true</inherited>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.0.0</version>
+        <version>${commons.enforcer-plugin.version}</version>
         <configuration>
           <rules>
             <requireMavenVersion>
