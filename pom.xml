@@ -495,14 +495,16 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>${commons.javadoc.version}</version>
-          <configuration>
-            <!-- keep only errors and warnings -->
+          <configuration>            
+            <!-- Keep only errors and warnings -->
             <quiet>true</quiet>
             <source>${maven.compiler.source}</source>
             <javadocExecutable>${commons.compiler.javadoc}</javadocExecutable>
             <encoding>${commons.encoding}</encoding>
             <docencoding>${commons.docEncoding}</docencoding>
+            <!-- Prevent too many SCM changes -->
             <notimestamp>true</notimestamp>
+            <linksource>true</linksource>
             <links>
               <link>${commons.javadoc.java.link}</link>
               <link>${commons.javadoc.javaee.link}</link>
@@ -1082,22 +1084,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>${commons.javadoc.version}</version>
-        <configuration>
-          <!-- keep only errors and warnings -->
-          <quiet>true</quiet>
-          <source>${maven.compiler.source}</source>
-          <javadocExecutable>${commons.compiler.javadoc}</javadocExecutable>
-          <encoding>${commons.encoding}</encoding>
-          <docencoding>${commons.docEncoding}</docencoding>
-          <notimestamp>true</notimestamp>
-          <linksource>true</linksource>
-          <!-- prevent svnpub to be too much noisy -->
-          <notimestamp>true</notimestamp>
-          <links>
-            <link>${commons.javadoc.java.link}</link>
-            <link>${commons.javadoc.javaee.link}</link>
-          </links>
-        </configuration>
         <!-- Suppress test Javadocs -->
         <reportSets>
           <reportSet>
