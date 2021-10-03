@@ -74,6 +74,7 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="add" dev="ggregory">Add and use property commons.enforcer-plugin.version.</action>
           <action type="add" dev="ggregory">Add SpotBugs to plugin management section.</action>
           <action type="add" dev="ggregory">Add and use property commons.buildnumber-plugin.version.</action>
+          <action type="add" dev="ggregory">Add property commons.javadoc17.java.link.</action>
           <!-- UPDATES -->
           <action type="update" dev="ggregory">Update versions-maven-plugin 2.7 -> 2.8.1.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Update maven-project-info-reports-plugin from 3.1.0 to 3.1.2 #19, #41.</action>
