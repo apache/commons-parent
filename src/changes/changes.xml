@@ -82,8 +82,6 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="update" dev="sebb">commons-build-plugin 1.11 -> 1.12</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump biz.aQute.bndlib from 5.1.2 to 5.3.0, #23, #31.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump actions/checkout from v2.3.1 to v2.3.4, #15, #21, #25.</action>
-          <action type="update" dev="ggregory">Update spotbugs-maven-plugin from 4.0.4 to 4.2.3.</action>
-          <action type="update" dev="ggregory">Update spotbugs impl from 4.0.6 to 4.2.3.</action>
           <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Update com.github.siom79.japicmp:japicmp-maven-plugin 0.14.3 -> 0.15.3, #34.</action>
           <action type="update" dev="ggregory">Update org.apache.maven.wagon:wagon-ssh 3.4.0 -> 3.4.3, #32</action>
           <action type="update" dev="ggregory">Update maven-pmd-plugin 3.13.0 -> 3.14.0.</action>
@@ -96,7 +94,8 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-jxr-plugin from 3.0.0 to 3.1.1 #39.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-javadoc-plugin from 3.2.0 to 3.3.1 #43, #59.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump commons.pmd-impl.version from 6.29.0 to 6.38.0 #46, #47, #53, #57.</action>
-          <action type="update" dev="ggregory" due-to="Dependabot">Bump spotbugs-maven-plugin from 4.2.3 to 4.4.1 #50, #60.</action>
+          <action type="update" dev="ggregory" due-to="Dependabot">Bump spotbugs-maven-plugin from 4.0.4 to 4.4.1 #50, #60.</action>
+          <action type="update" dev="ggregory">Update spotbugs impl from 4.0.6 to 4.2.3.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-enforcer-plugin from 3.0.0-M3 to 3.0.0 #52.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump parent POM org.apache:apache from 23 to 24.</action>
         </release>
