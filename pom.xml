@@ -125,7 +125,7 @@
     <commons.build-plugin.version>1.12</commons.build-plugin.version>
     <commons.changes.version>2.12.1</commons.changes.version>
     <commons.checkstyle-plugin.version>3.1.2</commons.checkstyle-plugin.version>
-    <commons.checkstyle.version>9.0</commons.checkstyle.version>
+    <commons.checkstyle.version>9.0.1</commons.checkstyle.version>
     <commons.clirr.version>2.8</commons.clirr.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
     <commons.compiler.version>3.8.1</commons.compiler.version>
