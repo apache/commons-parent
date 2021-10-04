@@ -65,6 +65,7 @@ The <action> type attribute can be add,update,fix,remove.
           <!-- FIX -->
           <action type="fix" dev="ggregory">Use HTTPS for Javadoc links to Oracle.</action>
           <action type="fix" dev="ggregory">Use HTTPS for most links to Apache.</action>
+          <action type="fix" dev="ggregory">Rename property biz.aQute.bndlib.version -> commons.biz.aQute.bndlib.version.</action>
           <!-- ADD -->
           <action type="add" dev="sebb">Add .asf.yaml to RAT excludes.</action>
           <action type="add" dev="ggregory">Add versions-maven-plugin run for this build.</action>
