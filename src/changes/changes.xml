@@ -77,17 +77,17 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="add" dev="ggregory">Add and use property commons.buildnumber-plugin.version.</action>
           <action type="add" dev="ggregory">Add property commons.javadoc17.java.link.</action>
           <!-- UPDATES -->
-          <action type="update" dev="ggregory">Update versions-maven-plugin 2.7 -> 2.8.1.</action>
-          <action type="update" dev="ggregory" due-to="Dependabot">Update maven-project-info-reports-plugin from 3.1.0 to 3.1.2 #19, #41.</action>
-          <action type="update" dev="ggregory, Dependabot">Update Jacoco from 0.8.5 to 0.8.7, #42.</action>
-          <action type="update" dev="ggregory" due-to="Dependabot">Update actions/setup-java from v1.4.0 to v1.4.3, #18, #22.</action>
-          <action type="update" dev="sebb">commons-build-plugin 1.11 -> 1.12</action>
+          <action type="update" dev="ggregory">Bump versions-maven-plugin 2.7 -> 2.8.1.</action>
+          <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-project-info-reports-plugin from 3.1.0 to 3.1.2 #19, #41.</action>
+          <action type="update" dev="ggregory, Dependabot">Bump Jacoco from 0.8.5 to 0.8.7, #42.</action>
+          <action type="update" dev="ggregory" due-to="Dependabot">Bump actions/setup-java from v1.4.0 to v1.4.3, #18, #22.</action>
+          <action type="update" dev="sebb">Bump commons-build-plugin 1.11 -> 1.12</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump biz.aQute.bndlib from 5.1.2 to 6.0.0, #23, #31, #64.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump actions/checkout from v2.3.1 to v2.3.5, #15, #21, #25, #66.</action>
-          <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Update com.github.siom79.japicmp:japicmp-maven-plugin 0.14.3 -> 0.15.4, #34, #68.</action>
-          <action type="update" dev="ggregory">Update org.apache.maven.wagon:wagon-ssh 3.4.0 -> 3.4.3, #32</action>
-          <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Update maven-pmd-plugin 3.13.0 -> 3.15.0.</action>
-          <action type="update" dev="ggregory">Update commons.checkstyle-plugin.version 3.1.1 -> 3.1.2.</action>
+          <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump com.github.siom79.japicmp:japicmp-maven-plugin 0.14.3 -> 0.15.4, #34, #68.</action>
+          <action type="update" dev="ggregory">Bump org.apache.maven.wagon:wagon-ssh 3.4.0 -> 3.4.3, #32</action>
+          <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump maven-pmd-plugin 3.13.0 -> 3.15.0.</action>
+          <action type="update" dev="ggregory">Bump commons.checkstyle-plugin.version 3.1.1 -> 3.1.2.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump actions/cache from v2 to v2.1.6 #29, #38, #44.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump animal-sniffer-maven-plugin from 1.19 to 1.20 #30.</action>
           <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 8.40 to 9.0.1 #33, #45, #48, #54, #55, #38.</action>
@@ -97,7 +97,7 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-javadoc-plugin from 3.2.0 to 3.3.1 #43, #59.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump commons.pmd-impl.version from 6.29.0 to 6.39.0 #46, #47, #53, #57, #62.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump spotbugs-maven-plugin from 4.0.4 to 4.4.1 #50, #60.</action>
-          <action type="update" dev="ggregory">Update spotbugs impl from 4.0.6 to 4.2.3.</action>
+          <action type="update" dev="ggregory">Bump spotbugs impl from 4.0.6 to 4.2.3.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-enforcer-plugin from 3.0.0-M3 to 3.0.0 #52.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump parent POM org.apache:apache from 23 to 24.</action>
         </release>
