@@ -100,6 +100,7 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="update" dev="ggregory">Bump spotbugs impl from 4.0.6 to 4.2.3.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-enforcer-plugin from 3.0.0-M3 to 3.0.0 #52.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump buildnumber-maven-plugin from 1.4 to 3.0.0 #81.</action>
+          <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-site-plugin from 3.9.1 to 3.10.0 #84.</action>
         </release>
 
         <release version="52" date="2020-07-30" description="Add support for Java 15.">
