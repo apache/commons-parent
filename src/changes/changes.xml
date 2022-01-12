@@ -80,7 +80,7 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="update" dev="ggregory">Bump versions-maven-plugin 2.7 -> 2.8.1.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-project-info-reports-plugin from 3.1.0 to 3.1.2 #19, #41.</action>
           <action type="update" dev="ggregory, Dependabot">Bump Jacoco from 0.8.5 to 0.8.7, #42.</action>
-          <action type="update" dev="ggregory" due-to="Dependabot">Bump actions/setup-java from v1.4.0 to v1.4.3, #18, #22.</action>
+          <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump actions/setup-java from v1.4.0 to v2, #18, #22.</action>
           <action type="update" dev="sebb">Bump commons-build-plugin 1.11 -> 1.12</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump biz.aQute.bndlib from 5.1.2 to 6.1.0, #23, #31, #64, #76.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump actions/checkout from v2.3.1 to v2.4.0, #15, #21, #25, #66, #71.</action>
@@ -91,7 +91,6 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="update" dev="ggregory" due-to="Dependabot">Bump actions/cache from v2 to v2.1.6 #29, #38, #44.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump animal-sniffer-maven-plugin from 1.19 to 1.20 #30.</action>
           <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 8.40 to 9.0.2 #33, #45, #48, #54, #55, #38, #77.</action>
-          <action type="update" dev="ggregory" due-to="Gary Gregory">Bump actions/setup-java from v1.4.0 to v2.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-bundle-plugin from 5.1.1 to 5.1.4 #35, #82, #87.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-jxr-plugin from 3.0.0 to 3.1.1 #39.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-javadoc-plugin from 3.2.0 to 3.3.1 #43, #59.</action>
