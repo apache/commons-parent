@@ -102,6 +102,7 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-site-plugin from 3.9.1 to 3.10.0 #84.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump wagon-ssh from 3.4.3 to 3.5.1 #85.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump checkstyle from 9.2 to 9.2.1 #86.</action>
+          <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-compiler-plugin from 3.8.1 to 3.9.0 #88.</action>
         </release>
 
         <release version="52" date="2020-07-30" description="Add support for Java 15.">
