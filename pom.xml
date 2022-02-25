@@ -135,7 +135,7 @@
     <commons.felix.version>5.1.4</commons.felix.version>
     <commons.findbugs.version>3.0.5</commons.findbugs.version>
     <commons.jacoco.version>0.8.7</commons.jacoco.version>
-    <commons.japicmp.version>0.15.4</commons.japicmp.version>
+    <commons.japicmp.version>0.15.6</commons.japicmp.version>
     <commons.jar-plugin.version>3.2.2</commons.jar-plugin.version>
     <commons.javadoc.version>3.3.1</commons.javadoc.version>
     <commons.jdepend.version>2.0</commons.jdepend.version>
