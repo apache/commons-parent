@@ -137,7 +137,7 @@
     <commons.jacoco.version>0.8.7</commons.jacoco.version>
     <commons.japicmp.version>0.15.6</commons.japicmp.version>
     <commons.jar-plugin.version>3.2.2</commons.jar-plugin.version>
-    <commons.javadoc.version>3.3.1</commons.javadoc.version>
+    <commons.javadoc.version>3.3.2</commons.javadoc.version>
     <commons.jdepend.version>2.0</commons.jdepend.version>
     <commons.jxr.version>3.1.1</commons.jxr.version>
     <commons.pmd.version>3.16.0</commons.pmd.version>
