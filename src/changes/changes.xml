@@ -99,7 +99,7 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="update" dev="ggregory">Bump spotbugs impl from 4.0.6 to 4.2.3.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-enforcer-plugin from 3.0.0-M3 to 3.0.0 #52.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump buildnumber-maven-plugin from 1.4 to 3.0.0 #81.</action>
-          <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-site-plugin from 3.9.1 to 3.10.0 #84.</action>
+          <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-site-plugin from 3.9.1 to 3.11.0 #84, #98.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump wagon-ssh from 3.4.3 to 3.5.1 #85.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump checkstyle from 9.2 to 9.2.1 #86.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-compiler-plugin from 3.8.1 to 3.9.0 #88.</action>
