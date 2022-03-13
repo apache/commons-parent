@@ -596,7 +596,7 @@
             </oldVersion>
             <newVersion>
               <file>
-                <path>${project.build.directory}/${project.artifactId}-${project.version}.${project.packaging}</path>
+                <path>${project.build.directory}/${project.artifactId}-${project.version}.jar</path>
               </file>
             </newVersion>
             <parameter>
