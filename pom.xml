@@ -193,7 +193,7 @@
     -->
     <commons.site-plugin.version>3.11.0</commons.site-plugin.version>
     <commons.source-plugin.version>3.2.1</commons.source-plugin.version>
-    <commons.spotbugs.plugin.version>4.5.2.0</commons.spotbugs.plugin.version>
+    <commons.spotbugs.plugin.version>4.5.3.0</commons.spotbugs.plugin.version>
     <commons.spotbugs.impl.version>4.5.3</commons.spotbugs.impl.version>    
     <commons.surefire-report.version>2.22.2</commons.surefire-report.version>
     <commons.surefire.version>2.22.2</commons.surefire.version>
