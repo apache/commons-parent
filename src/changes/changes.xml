@@ -61,7 +61,9 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
 
-        <release version="53" date="YYYY-MM-DD" description="TBD">
+        <release version="53" date="YYYY-MM-DD" description="
+        WARNING: checkstyle version has been updated; there are breaking changes which may require updates to checkstyle.xml files
+        ">
           <!-- FIX -->
           <action type="fix" dev="ggregory">Use HTTPS for Javadoc links to Oracle.</action>
           <action type="fix" dev="ggregory">Use HTTPS for most links to Apache.</action>
