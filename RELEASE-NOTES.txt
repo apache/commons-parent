@@ -1,3 +1,70 @@
+              Apache Commons Parent 53
+                  RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 53
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+WARNING: checkstyle version has been updated; there are breaking changes which may require updates to checkstyle.xml files
+
+Changes in this version include:
+
+New features:
+o                   Add .asf.yaml to RAT excludes.
+o                   Add versions-maven-plugin run for this build.
+o                   Add maven-checkstyle-plugin to pluginManagement.
+o                   Allow Maven PMD plugin to override PMD implementation jars with property "commons.pmd-impl.version".
+o                   Add property commons.javadoc16.java.link.
+o                   Add and use property commons.enforcer-plugin.version.
+o                   Add SpotBugs to plugin management section.
+o                   Add and use property commons.buildnumber-plugin.version.
+o                   Add property commons.javadoc17.java.link.
+
+Fixed Bugs:
+o                   Use HTTPS for Javadoc links to Oracle.
+o                   Use HTTPS for most links to Apache.
+o                   Rename property biz.aQute.bndlib.version -> commons.biz.aQute.bndlib.version.
+
+Changes:
+o                   Bump versions-maven-plugin from 2.7 to 2.10.0 #97, #101. Thanks to Dependabot, Gary Gregory.
+o                   Bump maven-project-info-reports-plugin from 3.1.0 to 3.2.2 #19, #41, #89, #103. Thanks to Dependabot.
+o                   Bump Jacoco from 0.8.5 to 0.8.7, #42.
+o                   Bump actions/setup-java from v1.4.0 to v2, #18, #22. Thanks to Dependabot, Gary Gregory.
+o                   Bump commons-build-plugin 1.11 -> 1.12
+o                   Bump biz.aQute.bndlib from 5.1.2 to 6.2.0, #23, #31, #64, #76. Thanks to Dependabot.
+o                   Bump actions/checkout from 2.3.1 to 3, #15, #21, #25, #66, #71, #79. Thanks to Dependabot.
+o                   Bump com.github.siom79.japicmp:japicmp-maven-plugin 0.14.3 -> 0.15.7, #34, #68, #93. Thanks to Gary Gregory, Dependabot.
+o                   Bump org.apache.maven.wagon:wagon-ssh 3.4.0 -> 3.4.3, #32
+o                   Bump maven-pmd-plugin 3.13.0 -> 3.16.0 #91. Thanks to Gary Gregory, Dependabot.
+o                   Bump commons.checkstyle-plugin.version 3.1.1 -> 3.1.2.
+o                   Bump actions/cache from 2 to 3 #29, #38, #44, #102. Thanks to Dependabot.
+o                   Bump animal-sniffer-maven-plugin from 1.19 to 1.21 #30. Thanks to Dependabot, Gary Gregory.
+o                   Bump com.puppycrawl.tools:checkstyle from 8.40 to 9.0.2 #33, #45, #48, #54, #55, #38, #77. Thanks to Dependabot, Gary Gregory.
+o                   Bump maven-bundle-plugin from 5.1.1 to 5.1.4 #35, #82, #87. Thanks to Dependabot.
+o                   Bump maven-jxr-plugin from 3.0.0 to 3.1.1 #39. Thanks to Dependabot.
+o                   Bump maven-javadoc-plugin from 3.2.0 to 3.3.2 #43, #59, #96. Thanks to Dependabot.
+o                   Bump commons.pmd-impl.version from 6.29.0 to 6.44.0 #46, #47, #53, #57, #62, #80, #90, #99. Thanks to Dependabot, Gary Gregory.
+o                   Bump spotbugs-maven-plugin from 4.0.4 to 4.5.3.0 #50, #60, #83, #100. Thanks to Dependabot.
+o                   Bump spotbugs from 4.0.6 to 4.5.3.
+o                   Bump maven-enforcer-plugin from 3.0.0-M3 to 3.0.0 #52. Thanks to Dependabot.
+o                   Bump buildnumber-maven-plugin from 1.4 to 3.0.0 #81. Thanks to Dependabot.
+o                   Bump maven-site-plugin from 3.9.1 to 3.11.0 #84, #98. Thanks to Dependabot.
+o                   Bump wagon-ssh from 3.4.3 to 3.5.1 #85. Thanks to Dependabot.
+o                   Bump checkstyle from 9.2 to 9.3 #86. Thanks to Dependabot, Gary Gregory.
+o                   Bump maven-compiler-plugin from 3.8.1 to 3.10.1 #88. Thanks to Dependabot, Gary Gregory.
+o                   Bump maven-jar-plugin from 3.2.0 to 3.2.2 #92. Thanks to Dependabot.
+o                   Bump commons-release-plugin from 1.7 to 1.8.0. Thanks to Gary Gregory.
+
+
+Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
+
+https://commons.apache.org/commons-parent-pom.html
+
+-----------------------------------------------------------------------------
+
               Apache Commons Parent 52
                   RELEASE NOTES
 
