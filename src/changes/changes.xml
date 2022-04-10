@@ -60,6 +60,9 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
+        <release version="54" date="2022-03-31" description="WIP">
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump build-helper-maven-plugin from 3.2.0 to 3.3.0 #105</action>
+        </release>
 
         <release version="53" date="2022-03-31" description="
         WARNING: checkstyle version has been updated; there are breaking changes which may require updates to checkstyle.xml files
