@@ -61,6 +61,8 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
         <release version="54" date="2022-03-31" description="WIP">
+           <!-- ADD -->
+           <action type="update" dev="ggregory" due-to="Dependabot">Add property commons.javadoc18.java.link.</action>
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump build-helper-maven-plugin from 3.2.0 to 3.3.0 #105</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump actions/cache from 3 to 3.0.2.</action>

@@ -282,6 +282,7 @@
     <commons.javadoc15.java.link>https://docs.oracle.com/en/java/javase/15/docs/api/</commons.javadoc15.java.link>
     <commons.javadoc16.java.link>https://docs.oracle.com/en/java/javase/16/docs/api/</commons.javadoc16.java.link>
     <commons.javadoc17.java.link>https://docs.oracle.com/en/java/javase/17/docs/api/</commons.javadoc17.java.link>
+    <commons.javadoc18.java.link>https://docs.oracle.com/en/java/javase/18/docs/api/</commons.javadoc18.java.link>
 
     <commons.javadoc.java.link>${commons.javadoc7.java.link}</commons.javadoc.java.link>
 
