@@ -134,7 +134,7 @@
     <commons.failsafe.version>2.22.2</commons.failsafe.version>
     <commons.felix.version>5.1.4</commons.felix.version>
     <commons.findbugs.version>3.0.5</commons.findbugs.version>
-    <commons.jacoco.version>0.8.7</commons.jacoco.version>
+    <commons.jacoco.version>0.8.8</commons.jacoco.version>
     <commons.japicmp.version>0.15.7</commons.japicmp.version>
     <commons.jar-plugin.version>3.2.2</commons.jar-plugin.version>
     <commons.javadoc.version>3.3.2</commons.javadoc.version>
