@@ -75,9 +75,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-bundle-plugin from 5.1.4 to 5.1.5.</action>
         </release>
 
-        <release version="53" date="2022-03-31" description="
-        WARNING: checkstyle version has been updated; there are breaking changes which may require updates to checkstyle.xml files
-        ">
+        <release version="53" date="2022-03-31" description="WARNING: checkstyle version has been updated; there are breaking changes which may require updates to checkstyle.xml files">
           <!-- FIX -->
           <action type="fix" dev="ggregory">Use HTTPS for Javadoc links to Oracle.</action>
           <action type="fix" dev="ggregory">Use HTTPS for most links to Apache.</action>
