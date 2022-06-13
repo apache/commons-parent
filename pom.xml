@@ -149,7 +149,7 @@
     <commons.enforcer-plugin.version>3.0.0</commons.enforcer-plugin.version>
     <commons.buildnumber-plugin.version>3.0.0</commons.buildnumber-plugin.version>
     <!-- requires Java 8 -->
-    <commons.biz.aQute.bndlib.version>6.2.0</commons.biz.aQute.bndlib.version>
+    <commons.biz.aQute.bndlib.version>6.3.1</commons.biz.aQute.bndlib.version>
 
     <!--
       Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
