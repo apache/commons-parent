@@ -79,6 +79,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump apache-rat from 0.13 to 0.14.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump biz.aQute.bndlib from 6.2.0 to 6.3.1.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-pmd-plugin from 3.16.0 to 3.17.0.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-enforcer-plugin from 3.0.0 to 3.1.0.</action>
         </release>
 
         <release version="53" date="2022-03-31" description="WARNING: checkstyle version has been updated; there are breaking changes which may require updates to checkstyle.xml files">
