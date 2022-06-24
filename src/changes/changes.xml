@@ -64,7 +64,7 @@ The <action> type attribute can be add,update,fix,remove.
            <!-- ADD -->
            <action type="update" dev="ggregory" due-to="Dependabot">Add property commons.javadoc18.java.link.</action>
            <!-- UPDATE -->
-           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump actions/cache from 3 to 3.0.3.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump actions/cache from 3 to 3.0.4, #118.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump actions/setup-java from 2 to 3.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump build-helper-maven-plugin from 3.2.0 to 3.3.0 #105.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump jacoco-maven-plugin from 0.8.7 to 0.8.8.</action>
