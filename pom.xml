@@ -1012,6 +1012,8 @@
             <!-- Exclude Eclipse local files and folders -->
             <exclude>maven-eclipse.xml</exclude>
             <exclude>.externalToolBuilders/**</exclude>
+            <!-- Visual Studio code files -->
+            <exclude>.vscode/**</exclude>
           </excludes>
         </configuration>
         <executions>
@@ -1185,6 +1187,8 @@
             <!-- Exclude Eclipse local files and folders -->
             <exclude>maven-eclipse.xml</exclude>
             <exclude>.externalToolBuilders/**</exclude>
+            <!-- Visual Studio code files -->
+            <exclude>.vscode/**</exclude>
           </excludes>
         </configuration>
       </plugin>
