@@ -65,7 +65,7 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="add" dev="sebb">Add .vscode/* to RAT excludes.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Add property commons.javadoc18.java.link.</action>
            <!-- UPDATE -->
-           <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump actions/cache from 3 to 3.0.4, #118.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump actions/cache from 3 to 3.0.5, #118.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump actions/setup-java from 2 to 3.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump apache from 24 to 26 #112.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump build-helper-maven-plugin from 3.2.0 to 3.3.0 #105.</action>
