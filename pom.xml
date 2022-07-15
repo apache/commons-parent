@@ -122,7 +122,7 @@
      <!-- 1.8 requires Java 8+ -->
     <!-- Almost all signatures use version 1.0. Allow override just in case -->
     <commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
-    <commons.assembly-plugin.version>3.3.0</commons.assembly-plugin.version>
+    <commons.assembly-plugin.version>3.4.1</commons.assembly-plugin.version>
     <commons.build-helper.version>3.3.0</commons.build-helper.version>
     <commons.build-plugin.version>1.12</commons.build-plugin.version>
     <commons.changes.version>2.12.1</commons.changes.version>
@@ -195,8 +195,8 @@
     -->
     <commons.site-plugin.version>3.12.0</commons.site-plugin.version>
     <commons.source-plugin.version>3.2.1</commons.source-plugin.version>
-    <commons.spotbugs.plugin.version>4.6.0.0</commons.spotbugs.plugin.version>
-    <commons.spotbugs.impl.version>4.6.0</commons.spotbugs.impl.version>
+    <commons.spotbugs.plugin.version>4.7.1.0</commons.spotbugs.plugin.version>
+    <commons.spotbugs.impl.version>4.7.1</commons.spotbugs.impl.version>
     <commons.surefire-report.version>2.22.2</commons.surefire-report.version>
     <commons.surefire.version>2.22.2</commons.surefire.version>
     <commons.wagon-ssh.version>3.5.2</commons.wagon-ssh.version>
