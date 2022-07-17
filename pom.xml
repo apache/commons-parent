@@ -140,7 +140,6 @@
     <commons.japicmp.version>0.15.7</commons.japicmp.version>
     <commons.jar-plugin.version>3.2.2</commons.jar-plugin.version>
     <commons.javadoc.version>3.4.0</commons.javadoc.version>
-    <commons.jdepend.version>2.0</commons.jdepend.version>
     <commons.jxr.version>3.2.0</commons.jxr.version>
     <commons.pmd.version>3.17.0</commons.pmd.version>
     <commons.pmd-impl.version>6.47.0</commons.pmd-impl.version>
@@ -1191,11 +1190,6 @@
             <exclude>.vscode/**</exclude>
           </excludes>
         </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>jdepend-maven-plugin</artifactId>
-        <version>${commons.jdepend.version}</version>
       </plugin>
     </plugins>
   </reporting>
