@@ -121,7 +121,7 @@
     <commons.animal-sniffer.version>1.21</commons.animal-sniffer.version>
     <!-- Almost all signatures use version 1.0. Allow override just in case -->
     <commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
-    <commons.assembly-plugin.version>3.4.1</commons.assembly-plugin.version>
+    <commons.assembly-plugin.version>3.4.2</commons.assembly-plugin.version>
     <commons.build-helper.version>3.3.0</commons.build-helper.version>
     <commons.build-plugin.version>1.12</commons.build-plugin.version>
     <commons.changes.version>2.12.1</commons.changes.version>
