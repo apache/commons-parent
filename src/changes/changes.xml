@@ -67,7 +67,7 @@ The <action> type attribute can be add,update,fix,remove.
            <!-- REMOVE -->
            <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove org.codehaus.mojo:jdepend-maven-plugin 2.0; it does not work with current versions of RAT and site plugins.</action>
            <!-- UPDATE -->
-           <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump actions/cache from 3 to 3.0.5, #118.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump actions/cache from 3 to 3.0.6, #118.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump actions/setup-java from 2 to 3.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump apache from 24 to 27 #112, #127.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump build-helper-maven-plugin from 3.2.0 to 3.3.0 #105.</action>
