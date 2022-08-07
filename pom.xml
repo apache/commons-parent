@@ -134,7 +134,6 @@
     <commons.coveralls.timestampFormat>EpochMillis</commons.coveralls.timestampFormat>
     <commons.failsafe.version>2.22.2</commons.failsafe.version>
     <commons.felix.version>5.1.8</commons.felix.version>
-    <commons.findbugs.version>3.0.5</commons.findbugs.version>
     <commons.jacoco.version>0.8.8</commons.jacoco.version>
     <commons.japicmp.version>0.15.7</commons.japicmp.version>
     <commons.jar-plugin.version>3.2.2</commons.jar-plugin.version>
@@ -1945,7 +1944,6 @@
         <skipTests>true</skipTests>
         <maven.javadoc.skip>true</maven.javadoc.skip>
         <cobertura.skip>true</cobertura.skip>
-        <findbugs.skip>true</findbugs.skip>
         <spotbugs.skip>true</spotbugs.skip>
         <checkstyle.skip>true</checkstyle.skip>
         <clirr.skip>true</clirr.skip>
