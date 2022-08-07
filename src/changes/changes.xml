@@ -64,7 +64,8 @@ The <action> type attribute can be add,update,fix,remove.
            <!-- ADD -->
            <action type="add" dev="sebb">Add .vscode/* to RAT excludes.</action>
            <action type="add" dev="ggregory" due-to="Dependabot">Add property commons.javadoc18.java.link.</action>
-           <action type="add" dev="sebb">Add JUnit BOM to dependency management.</action>
+           <action type="add" dev="ggregory">Add JUnit BOM to dependency management.</action>
+           <action type="add" dev="ggregory" due-to="Steve Springett">Add CycloneDX SBOM generation #122.</action>
            <!-- REMOVE -->
            <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove org.codehaus.mojo:jdepend-maven-plugin 2.0; it does not work with current versions of RAT and site plugins.</action>
            <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove FindBugs properties, use SpotBugs instead.</action>
