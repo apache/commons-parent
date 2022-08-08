@@ -133,6 +133,7 @@
     <commons.coveralls.version>4.3.0</commons.coveralls.version>
     <commons.coveralls.timestampFormat>EpochMillis</commons.coveralls.timestampFormat>
     <commons.cyclonedx.version>2.7.0</commons.cyclonedx.version>
+    <commons.spdx.version>0.5.5</commons.spdx.version>
     <commons.failsafe.version>2.22.2</commons.failsafe.version>
     <commons.felix.version>5.1.8</commons.felix.version>
     <commons.jacoco.version>0.8.8</commons.jacoco.version>
@@ -855,7 +856,7 @@
         <plugin>
           <groupId>org.spdx</groupId>
           <artifactId>spdx-maven-plugin</artifactId>
-          <version>0.5.5</version>
+          <version>${commons.spdx.version}</version>
           <executions>
             <execution>
               <id>build-spdx</id>
