@@ -84,7 +84,6 @@
 
   -->
 
-
   <properties>
     <!-- Minimum Maven version required by the plugins -->
     <minimalMavenBuildVersion>3.3.9</minimalMavenBuildVersion>
