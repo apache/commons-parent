@@ -193,8 +193,8 @@
     <commons.source-plugin.version>3.2.1</commons.source-plugin.version>
     <commons.spotbugs.plugin.version>4.7.1.1</commons.spotbugs.plugin.version>
     <commons.spotbugs.impl.version>4.7.1</commons.spotbugs.impl.version>
-    <commons.surefire-report.version>2.22.2</commons.surefire-report.version>
-    <commons.surefire.version>2.22.2</commons.surefire.version>
+    <commons.surefire-report.version>3.0.0-M7</commons.surefire-report.version>
+    <commons.surefire.version>3.0.0-M7</commons.surefire.version>
     <commons.wagon-ssh.version>3.5.2</commons.wagon-ssh.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
