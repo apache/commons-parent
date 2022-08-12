@@ -1,7 +1,63 @@
+              Apache Commons Parent 54
+                  RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 54.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Version 54: SBOMs, drop JDepend, replace FindBugs with SpotBugs, dependency bumps.
+
+Changes in this version include:
+
+New features:
+o Add .vscode/* to RAT excludes.
+o Add property commons.javadoc18.java.link. Thanks to Dependabot.
+o Add JUnit BOM to dependency management.
+o Add CycloneDX SBOM generation #122. Thanks to Steve Springett.
+o Add SPDX SBOM generation. Thanks to Gary Gregory.
+
+Changes:
+o Bump actions/cache from 3 to 3.0.6, #118. Thanks to Gary Gregory, Dependabot.
+o Bump actions/setup-java from 2 to 3. Thanks to Gary Gregory.
+o Bump apache from 24 to 27 #112, #127. Thanks to Dependabot.
+o Bump build-helper-maven-plugin from 3.2.0 to 3.3.0 #105. Thanks to Dependabot.
+o Bump jacoco-maven-plugin from 0.8.7 to 0.8.8. Thanks to Gary Gregory.
+o Bump spotbugs from 4.5.3 to 4.7.1 #120. Thanks to Gary Gregory, Dependabot.
+o Bump spotbugs-maven-plugin from 4.5.3.0 to 4.7.1.1, #129. Thanks to Gary Gregory, Dependabot.
+o Bump maven-project-info-reports-plugin from 3.2.2 to 3.4.0 #107, #128. Thanks to Dependabot.
+o Bump maven-site-plugin from 3.11.0 to 3.12.1 #108, #132. Thanks to Dependabot.
+o Bump maven-bundle-plugin from 5.1.4 to 5.1.8, #111, #126, #133. Thanks to Gary Gregory, Dependabot.
+o Bump net.sourceforge.pmd:pmd-* from 6.44.0 to 6.48.0. Thanks to Gary Gregory.
+o Bump maven-jxr-plugin from 3.1.1 to 3.2.0 #110. Thanks to Dependabot.
+o Bump maven-javadoc-plugin from 3.3.2 to 3.4.0 #114. Thanks to Dependabot.
+o Bump apache-rat from 0.13 to 0.14. Thanks to Gary Gregory.
+o Bump biz.aQute.bndlib from 6.2.0 to 6.3.1. Thanks to Gary Gregory.
+o Bump maven-pmd-plugin from 3.16.0 to 3.17.0. Thanks to Gary Gregory.
+o Bump maven-enforcer-plugin from 3.0.0 to 3.1.0. Thanks to Gary Gregory.
+o Bump org.apache.maven.wagon:wagon-ssh 3.5.1 to 3.5.2. Thanks to Gary Gregory.
+o Bump maven-assembly-plugin from 3.3.0 to 3.4.2 #123. Thanks to Dependabot, Gary Gregory.
+
+Removed:
+o Remove org.codehaus.mojo:jdepend-maven-plugin 2.0; it does not work with current versions of RAT and site plugins. Thanks to Gary Gregory.
+o Remove FindBugs properties, use SpotBugs instead. Thanks to Gary Gregory.
+
+Historical list of changes: https://commons.apache.org/commons-parent-pom.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
+
+https://commons.apache.org/commons-parent-pom.html
+
+Have fun!
+-Apache Commons Parent team
+
+-----------------------------------------------------------------------------
+
+
               Apache Commons Parent 52
                   RELEASE NOTES
 
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 52
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 52.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
@@ -10,15 +66,15 @@ Add support for Java 15.
 Changes in this version include:
 
 New features:
-o                   Align Javadoc version with java override profile
+o Align Javadoc version with java override profile
 
 Changes:
-o                   Update maven-site-plugin version 3.8.2 -> 3.9.1.
-o                   Update biz.aQute.bndlib version 5.1.0 -> 5.1.2, Java 15 support.
-o                   Update maven-bundle-plugin from 4.2.1 to 5.1.1, Java 15 support.
-o                   Update animal-sniffer-maven-plugin from 1.18 to 1.19.
-o                   Update build-helper-maven-plugin from 3.1.0 to 3.2.0.
-o                   Update commons.checkstyle-plugin.version from 3.1.0 to 3.1.1.
+o Update maven-site-plugin version 3.8.2 -> 3.9.1.
+o Update biz.aQute.bndlib version 5.1.0 -> 5.1.2, Java 15 support.
+o Update maven-bundle-plugin from 4.2.1 to 5.1.1, Java 15 support.
+o Update animal-sniffer-maven-plugin from 1.18 to 1.19.
+o Update build-helper-maven-plugin from 3.1.0 to 3.2.0.
+o Update commons.checkstyle-plugin.version from 3.1.0 to 3.1.1.
 
 
 Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges-report.html
@@ -37,7 +93,7 @@ Have fun!
               Apache Commons Parent 51
                   RELEASE NOTES
 
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 51
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 51.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
@@ -86,7 +142,7 @@ https://commons.apache.org/commons-parent-pom.html
               Apache Commons Parent 50
                   RELEASE NOTES
 
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 50
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 50.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
@@ -131,7 +187,7 @@ Have fun!
               Apache Commons Parent 49
                   RELEASE NOTES
 
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 49
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 49.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
@@ -376,7 +432,7 @@ https://commons.apache.org/commons-parent-pom.html
               Apache Commons Parent 44
                   RELEASE NOTES
 
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 44
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 44.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
@@ -427,7 +483,7 @@ https://commons.apache.org/commons-parent-pom.html
               Apache Commons Parent 43
                   RELEASE NOTES
 
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 50
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 43.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
