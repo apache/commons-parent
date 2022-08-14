@@ -129,7 +129,7 @@
     <commons.compiler.version>3.10.1</commons.compiler.version>
     <commons.coveralls.version>4.3.0</commons.coveralls.version>
     <commons.coveralls.timestampFormat>EpochMillis</commons.coveralls.timestampFormat>
-    <commons.cyclonedx.version>2.7.0</commons.cyclonedx.version>
+    <commons.cyclonedx.version>2.7.1</commons.cyclonedx.version>
     <commons.spdx.version>0.5.5</commons.spdx.version>
     <commons.failsafe.version>2.22.2</commons.failsafe.version>
     <commons.felix.version>5.1.8</commons.felix.version>
