@@ -115,7 +115,7 @@
     <commons.compiler.javadoc />
 
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
-    <commons.animal-sniffer.version>1.21</commons.animal-sniffer.version>
+    <commons.animal-sniffer.version>1.22</commons.animal-sniffer.version>
     <!-- Almost all signatures use version 1.0. Allow override just in case -->
     <commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
     <commons.assembly-plugin.version>3.4.2</commons.assembly-plugin.version>
