@@ -93,6 +93,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump Surefire 2.22.2 to 3.0.0-M7.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump Failsafe 2.22.2 to 3.0.0-M7.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump animal-sniffer-maven-plugin from 1.21 to 1.22.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-checkstyle-plugin from 3.1.2 to 3.2.0.</action>
         </release>
 
         <release version="53" date="2022-03-31" description="WARNING: checkstyle version has been updated; there are breaking changes which may require updates to checkstyle.xml files">
