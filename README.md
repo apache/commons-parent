@@ -45,7 +45,6 @@ Apache Commons Parent
 
 [![Travis-CI Status](https://travis-ci.org/apache/commons-commons-parent.svg)](https://travis-ci.org/apache/commons-commons-parent)
 [![GitHub Actions Status](https://github.com/apache/commons-commons-parent/workflows/Java%20CI/badge.svg)](https://github.com/apache/commons-commons-parent/actions)
-[![Coverage Status](https://coveralls.io/repos/apache/commons-commons-parent/badge.svg)](https://coveralls.io/r/apache/commons-commons-parent)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/)
 [![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/54.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/54)
 
