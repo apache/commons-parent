@@ -867,7 +867,26 @@
               <param>*.spdx</param>
             </excludedFilePatterns>
           </configuration>
-        </plugin>        
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>javancss-maven-plugin</artifactId>
+          <dependencies>
+            <!-- javancss 33.54 is used by default
+            <dependency>
+              <groupId>org.codehaus.javancss</groupId>
+              <artifactId>javancss</artifactId>
+              <version>33.54</version>
+            </dependency>
+            -->
+          </dependencies>
+          <configuration>
+            <excludes>
+              <!-- The latest javancss 33.54 in Maven Central fails on Java 8 sources and maybe even older Java versions -->
+              <exclude>**/*.java</exclude>
+          </excludes>          
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
