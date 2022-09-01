@@ -45,8 +45,9 @@ Apache Commons Parent
 
 [![Travis-CI Status](https://travis-ci.org/apache/commons-commons-parent.svg)](https://travis-ci.org/apache/commons-commons-parent)
 [![GitHub Actions Status](https://github.com/apache/commons-commons-parent/workflows/Java%20CI/badge.svg)](https://github.com/apache/commons-commons-parent/actions)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/)
-[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/54.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/54)
+[![Coverage Status](https://coveralls.io/repos/apache/commons-commons-parent/badge.svg)](https://coveralls.io/r/apache/commons-commons-parent)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/?gav=true)
+[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/54-SNAPSHOT.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/54-SNAPSHOT)
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
@@ -67,7 +68,7 @@ Alternatively you can pull it from the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>54</version>
+  <version>54-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -79,7 +80,7 @@ There are some guidelines which will make applying PRs easier for us:
 + No tabs! Please use spaces for indentation.
 + Respect the code style.
 + Create minimal diffs - disable on save actions like reformat source code or organize imports. If you feel the source code should be reformatted create a separate PR for this change.
-+ Provide JUnit tests for your changes and make sure your changes don't break any existing tests by running ```mvn```.
++ Provide JUnit tests for your changes and make sure your changes don't break any existing tests by running ```mvn clean test```.
 
 If you plan to contribute on a regular basis, please consider filing a [contributor license agreement](https://www.apache.org/licenses/#clas).
 You can learn more about contributing via GitHub in our [contribution guidelines](CONTRIBUTING.md).
