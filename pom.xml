@@ -130,16 +130,16 @@
     <commons.coveralls.version>4.3.0</commons.coveralls.version>
     <commons.coveralls.timestampFormat>EpochMillis</commons.coveralls.timestampFormat>
     <commons.cyclonedx.version>2.7.1</commons.cyclonedx.version>
-    <commons.spdx.version>0.5.5</commons.spdx.version>
+    <commons.spdx.version>0.6.0</commons.spdx.version>
     <commons.failsafe.version>3.0.0-M7</commons.failsafe.version>
     <commons.felix.version>5.1.8</commons.felix.version>
     <commons.jacoco.version>0.8.8</commons.jacoco.version>
-    <commons.japicmp.version>0.15.7</commons.japicmp.version>
+    <commons.japicmp.version>0.16.0</commons.japicmp.version>
     <commons.jar-plugin.version>3.2.2</commons.jar-plugin.version>
     <commons.javadoc.version>3.4.1</commons.javadoc.version>
-    <commons.jxr.version>3.2.0</commons.jxr.version>
+    <commons.jxr.version>3.3.0</commons.jxr.version>
     <commons.pmd.version>3.18.0</commons.pmd.version>
-    <commons.pmd-impl.version>6.48.0</commons.pmd-impl.version>
+    <commons.pmd-impl.version>6.49.0</commons.pmd-impl.version>
     <commons.project-info.version>3.4.1</commons.project-info.version>
     <commons.rat.version>0.14</commons.rat.version>
     <commons.release-plugin.version>1.8.0</commons.release-plugin.version>
