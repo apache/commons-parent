@@ -138,7 +138,7 @@
     <commons.jar-plugin.version>3.2.2</commons.jar-plugin.version>
     <commons.javadoc.version>3.4.1</commons.javadoc.version>
     <commons.jxr.version>3.3.0</commons.jxr.version>
-    <commons.pmd.version>3.18.0</commons.pmd.version>
+    <commons.pmd.version>3.19.0</commons.pmd.version>
     <commons.pmd-impl.version>6.49.0</commons.pmd-impl.version>
     <commons.project-info.version>3.4.1</commons.project-info.version>
     <commons.rat.version>0.14</commons.rat.version>
