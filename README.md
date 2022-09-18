@@ -43,12 +43,9 @@
 Apache Commons Parent
 ===================
 
-[![Build Status](https://travis-ci.org/apache/commons-commons-parent.svg)](https://travis-ci.org/apache/commons-commons-parent)
-[![Coverage Status](https://coveralls.io/repos/apache/commons-commons-parent/badge.svg)](https://coveralls.io/r/apache/commons-commons-parent)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/)
-[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/51-SNAPSHOT.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/51-SNAPSHOT)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/?gav=true)
 
-The Apache Commons Parent POM provides common settings for all Apache Commons components.
+The [Apache Commons Parent](https://commons.apache.org/proper/commons-parent/) POM provides common settings for all [Apache Commons](https://commons.apache.org/) components.
 
 Documentation
 -------------
@@ -67,7 +64,7 @@ Alternatively you can pull it from the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>52</version>
+  <version>54-SNAPSHOT</version>
 </dependency>
 ```
 

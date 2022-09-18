@@ -60,10 +60,48 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
+        <release version="54" date="2022-08-10" description="Version 54: SBOMs, drop JDepend, replace FindBugs with SpotBugs, dependency bumps.">
+           <!-- ADD -->
+           <action type="add" dev="sebb">Add .vscode/* to RAT excludes.</action>
+           <action type="add" dev="ggregory" due-to="Dependabot">Add property commons.javadoc18.java.link.</action>
+           <action type="add" dev="ggregory">Add JUnit BOM to dependency management.</action>
+           <action type="add" dev="ggregory" due-to="Steve Springett">Add CycloneDX SBOM generation #122.</action>
+           <action type="add" dev="ggregory" due-to="Gary Gregory">Add SPDX SBOM generation.</action>
+           <!-- REMOVE -->
+           <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove org.codehaus.mojo:jdepend-maven-plugin 2.0; it does not work with current versions of RAT and site plugins.</action>
+           <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove FindBugs properties, use SpotBugs instead.</action>
+           <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove Maven Clirr plugin in favor of JApiCmp.</action>
+           <!-- UPDATE -->
+           <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump actions/cache from 3 to 3.0.8, #118.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump actions/checkout from 3 to 3.0.2.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump actions/setup-java from 2 to 3.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump apache from 24 to 27 #112, #127.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump build-helper-maven-plugin from 3.2.0 to 3.3.0 #105.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump jacoco-maven-plugin from 0.8.7 to 0.8.8.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump spotbugs from 4.5.3 to 4.7.2 #120, #143.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump spotbugs-maven-plugin from 4.5.3.0 to 4.7.2.0, #129, #142.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-project-info-reports-plugin from 3.2.2 to 3.4.1 #107, #128.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-site-plugin from 3.11.0 to 3.12.1 #108, #132. Fix [WARNING] An issue has occurred with apache-rat-plugin:0.14:rat report, skipping LinkageError org.apache.rat.mp.RatReportMojo.generate(Lorg/codehaus/doxia/sink/Sink;Ljava/util/Locale;)V,</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump maven-bundle-plugin from 5.1.4 to 5.1.8, #111, #126, #133.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump net.sourceforge.pmd:pmd-* from 6.44.0 to 6.49.0, #138.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-jxr-plugin from 3.1.1 to 3.3.0 #110, #136.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump maven-javadoc-plugin from 3.3.2 to 3.4.1 #114.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump apache-rat from 0.13 to 0.15.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump biz.aQute.bndlib from 6.2.0 to 6.3.1.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump maven-pmd-plugin from 3.16.0 to 3.19.0 #141.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-enforcer-plugin from 3.0.0 to 3.1.0.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.maven.wagon:wagon-ssh 3.5.1 to 3.5.2.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump maven-assembly-plugin from 3.3.0 to 3.4.2 #123.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump Surefire 2.22.2 to 3.0.0-M7.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump Failsafe 2.22.2 to 3.0.0-M7.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump animal-sniffer-maven-plugin from 1.21 to 1.22.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-checkstyle-plugin from 3.1.2 to 3.2.0.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump japicmp-maven-plugin from 0.15.7 to 0.16.0 #140.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump versions-maven-plugin from 2.11.0 to 2.12.0 #144.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-jar-plugin from 3.2.2 to 3.3.0 #147.</action>
+        </release>
 
-        <release version="53" date="YYYY-MM-DD" description="
-        WARNING: checkstyle version has been updated; there are breaking changes which may require updates to checkstyle.xml files
-        ">
+        <release version="53" date="2022-03-31" description="WARNING: checkstyle version has been updated; there are breaking changes which may require updates to checkstyle.xml files">
           <!-- FIX -->
           <action type="fix" dev="ggregory">Use HTTPS for Javadoc links to Oracle.</action>
           <action type="fix" dev="ggregory">Use HTTPS for most links to Apache.</action>
