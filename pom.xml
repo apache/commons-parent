@@ -184,10 +184,7 @@
 
     -->
     <!-- 
-    Warning: site-plugin 3.9.0 causes the following error:
-    An API incompatibility was encountered while executing
-     org.apache.maven.plugins:maven-site-plugin:3.9.0:site:
-     java.lang.NoSuchMethodError: org.codehaus.plexus.util.xml.Xpp3Dom.getInputLocation()Ljava/lang/Object;
+    Warning: maven-site-plugin 4.0.0-M3 requires an update to commons-skin site.vm for new variable names.
     -->
     <commons.site-plugin.version>3.12.1</commons.site-plugin.version>
     <commons.source-plugin.version>3.2.1</commons.source-plugin.version>
