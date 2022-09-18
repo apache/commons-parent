@@ -92,8 +92,12 @@
     <project.build.outputTimestamp>2022-09-18T13:49:41Z</project.build.outputTimestamp>
     <commons.release.version>${project.version}</commons.release.version>
     <commons.rc.version>RC1</commons.rc.version>
-    <commons.bc.version>53</commons.bc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
+    <!-- Commons Release Plugin -->
+    <commons.bc.version>53</commons.bc.version>
+    <commons.release.isDistModule>true</commons.release.isDistModule>
+    <commons.releaseManagerName>Gary Gregory</commons.releaseManagerName>    
+    <commons.releaseManagerKey>86fdc7e2a11262cb</commons.releaseManagerKey>
 
     <!-- Default configuration for compiler source and target JVM -->
     <!-- Do NOT change this; it must remain as 1.3 -->
