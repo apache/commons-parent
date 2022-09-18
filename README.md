@@ -43,9 +43,9 @@
 Apache Commons Parent
 ===================
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/?gav=true)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/)
 
-The [Apache Commons Parent](https://commons.apache.org/proper/commons-parent/) POM provides common settings for all [Apache Commons](https://commons.apache.org/) components.
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
 Documentation
 -------------
@@ -64,7 +64,7 @@ Alternatively you can pull it from the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>54-SNAPSHOT</version>
+  <version>54</version>
 </dependency>
 ```
 
