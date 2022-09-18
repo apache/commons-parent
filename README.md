@@ -43,7 +43,6 @@
 Apache Commons Parent
 ===================
 
-[![Coverage Status](https://coveralls.io/repos/apache/commons-commons-parent/badge.svg)](https://coveralls.io/r/apache/commons-commons-parent)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/?gav=true)
 [![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/54-SNAPSHOT.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/54-SNAPSHOT)
 
