@@ -418,8 +418,8 @@
   </issueManagement>
 
   <ciManagement>
-    <system>jenkins</system>
-    <url>https://builds.apache.org/</url>
+    <system>GitHub</system>
+    <url>https://github.com/apache/commons-parent/actions</url>
   </ciManagement>
 
   <dependencyManagement>
