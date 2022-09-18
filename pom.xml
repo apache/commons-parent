@@ -124,7 +124,6 @@
     <commons.changes.version>2.12.1</commons.changes.version>
     <commons.checkstyle-plugin.version>3.2.0</commons.checkstyle-plugin.version>
     <commons.checkstyle.version>9.3</commons.checkstyle.version>
-    <commons.clirr.version>2.8</commons.clirr.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
     <commons.compiler.version>3.10.1</commons.compiler.version>
     <commons.coveralls.version>4.3.0</commons.coveralls.version>
@@ -672,14 +671,6 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>buildnumber-maven-plugin</artifactId>
           <version>${commons.buildnumber-plugin.version}</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>clirr-maven-plugin</artifactId>
-          <version>${commons.clirr.version}</version>
-          <configuration>
-            <minSeverity>${minSeverity}</minSeverity>
-          </configuration>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -1500,25 +1491,6 @@
     </profile>
 
     <profile>
-      <id>clirr</id>
-      <activation>
-        <file>
-          <exists>src/site/resources/profile.clirr</exists>
-        </file>
-      </activation>
-      <reporting>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>clirr-maven-plugin</artifactId>
-            <version>${commons.clirr.version}</version>
-          </plugin>
-        </plugins>
-      </reporting>
-    </profile>
-
-    <!-- alternative to clirr, will fail build if binary compatibility is broken -->
-    <profile>
       <id>japicmp</id>
       <activation>
         <jdk>[1.8,)</jdk>
@@ -2018,8 +1990,6 @@
         <cobertura.skip>true</cobertura.skip>
         <spotbugs.skip>true</spotbugs.skip>
         <checkstyle.skip>true</checkstyle.skip>
-        <clirr.skip>true</clirr.skip>
-        <changes.jira.skip>true</changes.jira.skip>
         <rat.skip>true</rat.skip> <!-- from version 0.12 -->
         <jacoco.skip>true</jacoco.skip>
         <skipSurefireReport>true</skipSurefireReport>
