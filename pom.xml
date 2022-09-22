@@ -1072,6 +1072,7 @@
             <exclude>.fbprefs</exclude>
             <exclude>.pmd</exclude>
             <exclude>.asf.yaml</exclude>
+            <exclude>.gitattributes</exclude>
             <exclude>src/site/resources/download_*.cgi</exclude>
             <exclude>src/site/resources/profile.*</exclude>
             <exclude>profile.*</exclude>
