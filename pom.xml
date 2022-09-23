@@ -823,6 +823,7 @@
           <version>${commons.cyclonedx.version}</version>
           <executions>
             <execution>
+              <id>make-bom</id>
               <phase>package</phase>
               <goals>
                 <goal>makeBom</goal>
