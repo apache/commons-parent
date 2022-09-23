@@ -63,6 +63,8 @@ The <action> type attribute can be add,update,fix,remove.
         <release version="55" date="2022-MM-DD" description="Version 55: SBOMs">
            <!-- FIX -->
            <action type="update" dev="ggregory" due-to="Gary Gregory">Make CycloneDX work better with multi-module projects.</action>
+           <!--  ADD -->
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Add property commons.javadoc19.java.link.</action>
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump JUnit from 5.9.0 to 5.9.1.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump from 2.1.23 to 2.1.25 #148.</action>
