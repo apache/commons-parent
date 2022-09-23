@@ -33,7 +33,7 @@
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
   <!-- Override inceptionYear in components, required by commons-build-plugin -->
   <inceptionYear>2006</inceptionYear>
-  <url>https://commons.apache.org/commons-parent-pom.html</url>
+  <url>https://commons.apache.org/proper/commons-parent/</url>
 
   <!--
     In release 31, the maven.compile.* properties were corrected to maven.compiler.*
