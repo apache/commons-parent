@@ -299,9 +299,6 @@
     <!-- Allow Clirr severity to be overriden by the command-line option -DminSeverity=level -->
     <minSeverity>info</minSeverity>
 
-    <!-- Control number of issues retrieved from JIRA with changes plugin -->
-    <commons.changes.maxEntries>100</commons.changes.maxEntries>
-
     <!-- Allow surefire-report aggregation to be easily configured for multi-module projects -->
     <commons.surefire-report.aggregate>false</commons.surefire-report.aggregate>
 
