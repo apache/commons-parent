@@ -73,6 +73,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump spdx-maven-plugin from 0.5.5 to 0.6.1. Fixes NPE https://github.com/spdx/spdx-maven-plugin/issues/53</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump pmd from 6.49.0 to 6.50.0.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump bcel from 6.5.0 to 6.6.0.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump cyclonedx-maven-plugin from 2.7.1 to 2.7.2 #157.</action>
         </release>   
         <release version="54" date="2022-09-18" description="Version 54: SBOMs, drop JDepend, replace FindBugs with SpotBugs, dependency bumps.">
            <!-- ADD -->
