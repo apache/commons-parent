@@ -66,7 +66,7 @@ The <action> type attribute can be add,update,fix,remove.
            <!--  ADD -->
            <action type="update" dev="ggregory" due-to="Gary Gregory">Add property commons.javadoc19.java.link.</action>
            <!-- UPDATE -->
-           <action type="update" dev="ggregory" due-to="Dependabot">Bump actions/cache from 3.0.8 to 3.0.10 #152, #155.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump actions/cache from 3.0.8 to 3.0.11 #152, #155, #160.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump actions/checkout from 3.0.2 to 3.1.0 #154.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump github/codeql-action from 2.1.23 to 2.1.27 #148, #150, #156.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump JUnit from 5.9.0 to 5.9.1.</action>
