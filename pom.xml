@@ -625,6 +625,13 @@
                   <sourceCompatible>true</sourceCompatible>
                   <semanticVersionLevel>PATCH</semanticVersionLevel>
                 </overrideCompatibilityChangeParameter>
+                <!-- New interface methods must be default methods to maintain BC -->
+                <overrideCompatibilityChangeParameter>
+                  <compatibilityChange>METHOD_ADDED_TO_INTERFACE</compatibilityChange>
+                  <binaryCompatible>false</binaryCompatible>
+                  <sourceCompatible>false</sourceCompatible>
+                  <semanticVersionLevel>PATCH</semanticVersionLevel>
+                </overrideCompatibilityChangeParameter>
               </overrideCompatibilityChangeParameters>
             </parameter>
           </configuration>
