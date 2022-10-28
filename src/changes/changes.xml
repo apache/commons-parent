@@ -70,6 +70,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump actions/cache from 3.0.8 to 3.0.11 #152, #155, #160.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump actions/checkout from 3.0.2 to 3.1.0 #154.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump actions/setup-java from 3.5.1 to 3.6.0 #164.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump actions/upload-artifact from 3.1.0 to 3.1.1 #165</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump github/codeql-action from 2.1.27 to 2.1.28 #162.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump github/codeql-action from 2.1.23 to 2.1.27 #148, #150, #156.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump ossf/scorecard-action from 1.1.2 to 2.0.6 #163.</action>
