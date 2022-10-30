@@ -31,14 +31,16 @@ jobs:
     name: "Scorecards analysis"
     runs-on: ubuntu-latest
     permissions:
-      security-events: write    # Needed to upload the results to the code-scanning dashboard.
+      # Needed to upload the results to the code-scanning dashboard.
+      security-events: write
       actions: read
-      contents: read
+      id-token: write # This is required for requesting the JWT
+      contents: read  # This is required for actions/checkout
 
     steps:
 
       - name: "Checkout code"
-        uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8   # 3.0.2
+        uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8   # 3.1.0
         with:
           persist-credentials: false
 
@@ -62,6 +64,6 @@ jobs:
           retention-days: 5
 
       - name: "Upload to code-scanning"
-        uses: github/codeql-action/upload-sarif@ec3cf9c605b848da5f1e41e8452719eb1ccfb9a6    # 2.1.22
+        uses: github/codeql-action/upload-sarif@b398f525a5587552e573b247ac661067fafa920b    # 2.1.22
         with:
           sarif_file: results.sarif
