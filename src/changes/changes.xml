@@ -76,7 +76,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump ossf/scorecard-action from 1.1.2 to 2.0.6 #163.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump JUnit from 5.9.0 to 5.9.1.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump spdx-maven-plugin from 0.5.5 to 0.6.2. Version 0.6.2 fixes NPE https://github.com/spdx/spdx-maven-plugin/issues/53 #159</action>
-           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump pmd from 6.49.0 to 6.50.0.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump pmd from 6.49.0 to 6.51.0.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump bcel from 6.5.0 to 6.6.0.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump cyclonedx-maven-plugin from 2.7.1 to 2.7.2 #157.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump spotbugs-maven-plugin from 4.7.2.0 to 4.7.2.1 #158.</action>
