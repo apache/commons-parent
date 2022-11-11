@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+⁰<?xml version="1.0"?>
 <!--
 
    Licensed to the Apache Software Foundation (ASF) under one or more
@@ -78,7 +78,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump spdx-maven-plugin from 0.5.5 to 0.6.3. Version 0.6.2 fixes NPE https://github.com/spdx/spdx-maven-plugin/issues/53 #159</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump pmd from 6.49.0 to 6.51.0.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump Apache Commons BCEL from 6.5.0 to 6.6.1.</action>
-           <action type="update" dev="ggregory" due-to="Dependabot">Bump cyclonedx-maven-plugin from 2.7.1 to 2.7.2 #157.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump cyclonedx-maven-plugin from 2.7.1 to 2.7.3 #157, #173.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump spotbugs-maven-plugin from 4.7.2.0 to 4.7.3.0 #158, #170, #171.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump spotbugs from 4.7.2 to 4.7.3 #161.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump versions-maven-plugin from 2.12.0 to 2.13.0 #167.</action>
