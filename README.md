@@ -43,7 +43,7 @@
 Apache Commons Parent
 ===================
 
-[![GitHub Actions Status](https://github.com/apache/commons-commons-parent/workflows/Java%20CI/badge.svg)](https://github.com/apache/commons-commons-parent/actions)
+[![GitHub Actions Status](https://github.com/apache/commons-parent/workflows/Java%20CI/badge.svg)](https://github.com/apache/commons-parent/actions)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/?gav=true)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-text/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-text)
 
