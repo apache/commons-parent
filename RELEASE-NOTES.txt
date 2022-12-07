@@ -1,3 +1,47 @@
+              Apache Commons Parent 55-SNAPSHOT
+                  RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 55-SNAPSHOT.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Version 55: Maintenance and update dependencies
+
+Changes in this version include:
+
+Changes:
+o                   Make CycloneDX work better with multi-module projects. Thanks to Gary Gregory.
+o                   New interface methods must be default methods to maintain BC. Thanks to Gary Gregory.
+o                   Add property commons.javadoc19.java.link. Thanks to Gary Gregory.
+o                   Bump actions/cache from 3.0.8 to 3.0.11 #152, #155, #160. Thanks to Dependabot.
+o                   Bump actions/checkout from 3.0.2 to 3.1.0 #154. Thanks to Dependabot.
+o                   Bump actions/setup-java from 3.5.1 to 3.6.0 #164. Thanks to Dependabot.
+o                   Bump actions/upload-artifact from 3.1.0 to 3.1.1 #165 Thanks to Dependabot.
+o                   Bump github/codeql-action from 2.1.27 to 2.1.35 #162, #166, #168, #178. Thanks to Dependabot.
+o                   Bump github/codeql-action from 2.1.23 to 2.1.31 #148, #150, #156, #172. Thanks to Gary Gregory, Dependabot.
+o                   Bump ossf/scorecard-action from 1.1.2 to 2.0.6 #163. Thanks to Gary Gregory, Dependabot.
+o                   Bump apache from 27 to 28 #175 Thanks to Dependabot.
+o                   Bump JUnit from 5.9.0 to 5.9.1. Thanks to Gary Gregory.
+o                   Bump spdx-maven-plugin from 0.5.5 to 0.6.3. Version 0.6.2 fixes NPE https://github.com/spdx/spdx-maven-plugin/issues/53 #159 Thanks to Gary Gregory, Dependabot.
+o                   Bump pmd from 6.49.0 to 6.52.0. Thanks to Gary Gregory.
+o                   Bump Apache Commons BCEL from 6.5.0 to 6.7.0. Thanks to Gary Gregory.
+o                   Bump cyclonedx-maven-plugin from 2.7.1 to 2.7.3 #157, #173. Thanks to Dependabot.
+o                   Bump spotbugs-maven-plugin from 4.7.2.0 to 4.7.3.0 #158, #170, #171. Thanks to Dependabot.
+o                   Bump spotbugs from 4.7.2 to 4.7.3 #161. Thanks to Dependabot.
+o                   Bump versions-maven-plugin from 2.12.0 to 2.13.0 #167. Thanks to Dependabot.
+o                   Bump japicmp-maven-plugin from 0.16.0 to 0.17.1 #174. Thanks to Dependabot.
+o                   Bump biz.aQute.bndlib from 6.3.1 to 6.4.0 #176. Thanks to Dependabot.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+-----------------------------------------------------------------------------
+
               Apache Commons Parent 54
                   RELEASE NOTES
 
@@ -58,7 +102,6 @@ patches, or suggestions for improvement, see the Apache Apache Commons Parent we
 https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
-
 
               Apache Commons Parent 53
                   RELEASE NOTES
@@ -130,7 +173,6 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-
               Apache Commons Parent 52
                   RELEASE NOTES
 
@@ -165,7 +207,6 @@ Have fun!
 -Apache Commons Parent team
 
 -----------------------------------------------------------------------------
-
 
               Apache Commons Parent 51
                   RELEASE NOTES
@@ -215,7 +256,6 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-
               Apache Commons Parent 50
                   RELEASE NOTES
 
@@ -259,7 +299,6 @@ Have fun!
 -Apache Commons Parent team
 
 -----------------------------------------------------------------------------
-
 
               Apache Commons Parent 49
                   RELEASE NOTES

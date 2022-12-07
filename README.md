@@ -43,7 +43,9 @@
 Apache Commons Parent
 ===================
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/)
+[![GitHub Actions Status](https://github.com/apache/commons-commons-parent/workflows/Java%20CI/badge.svg)](https://github.com/apache/commons-commons-parent/actions)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/?gav=true)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-text/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-text)
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
@@ -52,7 +54,7 @@ Documentation
 
 More information can be found on the [Apache Commons Parent homepage](https://commons.apache.org/proper/commons-commons-parent).
 The [Javadoc](https://commons.apache.org/proper/commons-commons-parent/apidocs) can be browsed.
-Questions related to the usage of Apache Commons Parent should be posted to the [user mailing list](https://commons.apache.org/mail-lists.html).
+Questions related to the usage of Apache Commons Parent should be posted to the [user mailing list][ml].
 
 Where can I get the latest release?
 -----------------------------------
@@ -64,7 +66,7 @@ Alternatively you can pull it from the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>54</version>
+  <version>55-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -76,7 +78,7 @@ There are some guidelines which will make applying PRs easier for us:
 + No tabs! Please use spaces for indentation.
 + Respect the code style.
 + Create minimal diffs - disable on save actions like reformat source code or organize imports. If you feel the source code should be reformatted create a separate PR for this change.
-+ Provide JUnit tests for your changes and make sure your changes don't break any existing tests by running ```mvn clean test```.
++ Provide JUnit tests for your changes and make sure your changes don't break any existing tests by running ```mvn```.
 
 If you plan to contribute on a regular basis, please consider filing a [contributor license agreement](https://www.apache.org/licenses/#clas).
 You can learn more about contributing via GitHub in our [contribution guidelines](CONTRIBUTING.md).
@@ -95,13 +97,14 @@ Additional Resources
 --------------------
 
 + [Apache Commons Homepage](https://commons.apache.org/)
-+ [Apache Issue Tracker (JIRA)](https://issues.apache.org/jira/browse/LANG)
++ [Apache Issue Tracker (JIRA)](https://issues.apache.org/jira/browse/COMMONSSITE)
 + [Apache Commons Slack Channel](https://the-asf.slack.com/archives/C60NVB8AD)
 + [Apache Commons Twitter Account](https://twitter.com/ApacheCommons)
 + `#apache-commons` IRC channel on `irc.freenode.org`
 
 Apache Commons Components
 -------------------------
+
 | Component | GitHub Repository | Apache Homepage |
 | --------- | ----------------- | ----------------|
 | Apache Commons BCEL | [commons-bcel](https://github.com/apache/commons-bcel) | [commons-bcel](https://commons.apache.org/proper/commons-bcel) |

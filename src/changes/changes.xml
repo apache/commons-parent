@@ -60,7 +60,7 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="55" date="2022-MM-DD" description="Version 55: Maintenance and update dependencies">
+        <release version="55" date="2022-12-07" description="Version 55: Maintenance and update dependencies">
            <!-- FIX -->
            <action type="update" dev="ggregory" due-to="Gary Gregory">Make CycloneDX work better with multi-module projects.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">New interface methods must be default methods to maintain BC.</action>
