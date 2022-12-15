@@ -66,7 +66,7 @@ Alternatively you can pull it from the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>55-SNAPSHOT</version>
+  <version>55</version>
 </dependency>
 ```
 
