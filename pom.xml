@@ -196,7 +196,7 @@
     <commons.spotbugs.impl.version>4.7.3</commons.spotbugs.impl.version>
     <commons.surefire-report.version>3.0.0-M7</commons.surefire-report.version>
     <commons.surefire.version>3.0.0-M7</commons.surefire.version>
-    <commons.wagon-ssh.version>3.5.2</commons.wagon-ssh.version>
+    <commons.wagon-ssh.version>3.5.3</commons.wagon-ssh.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
