@@ -23,7 +23,7 @@
   <parent>
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
-    <version>28</version>
+    <version>29</version>
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
@@ -94,7 +94,7 @@
     <commons.rc.version>RC1</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
     <!-- Commons Release Plugin -->
-    <commons.bc.version>54</commons.bc.version>
+    <commons.bc.version>55</commons.bc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
     <commons.releaseManagerName>Gary Gregory</commons.releaseManagerName>    
     <commons.releaseManagerKey>86fdc7e2a11262cb</commons.releaseManagerKey>
@@ -196,7 +196,7 @@
     <commons.spotbugs.impl.version>4.7.3</commons.spotbugs.impl.version>
     <commons.surefire-report.version>3.0.0-M7</commons.surefire-report.version>
     <commons.surefire.version>3.0.0-M7</commons.surefire.version>
-    <commons.wagon-ssh.version>3.5.2</commons.wagon-ssh.version>
+    <commons.wagon-ssh.version>3.5.3</commons.wagon-ssh.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
@@ -682,7 +682,7 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>versions-maven-plugin</artifactId>
           <!-- Version 2.2 causes an NPE with Maven 3.3.9 -->
-          <version>2.13.0</version>
+          <version>2.14.2</version>
         </plugin>
         <plugin>
           <groupId>org.jacoco</groupId>

@@ -82,24 +82,27 @@
 
     <!-- Should agree with commons-site -->
     <menu name="General Information" inherit="bottom">
-      <item name="Security"              href="https://commons.apache.org/security.html"/>
-      <item name="Volunteering"          href="https://commons.apache.org/volunteering.html" />
-      <item name="Contributing Patches"  href="https://commons.apache.org/patches.html" />
-      <item name="Building Components"   href="https://commons.apache.org/building.html" />
-      <item name="Commons Parent Pom"    href="https://commons.apache.org/commons-parent-pom.html" />
-      <item name="Commons Build Plugin"  href="https://commons.apache.org/build-plugin/index.html" />
-      <item name="Releasing Components"  href="https://commons.apache.org/releases/index.html" />
-      <item name="Wiki"                  href="https://cwiki.apache.org/confluence/display/commons/FrontPage" />
+      <item name="Security"               href="https://commons.apache.org/security.html"/>
+      <item name="Volunteering"           href="https://commons.apache.org/volunteering.html" />
+      <item name="Contributing Patches"   href="https://commons.apache.org/patches.html" />
+      <item name="Building Components"    href="https://commons.apache.org/building.html" />
+      <item name="Commons Parent POM"     href="https://commons.apache.org/commons-parent-pom.html" />
+      <item name="Commons Build Plugin"   href="https://commons.apache.org/build-plugin/index.html" />
+      <item name="Commons Release Plugin" href="/release-plugin/index.html" />
+      <item name="Site Publication"       href="/site-publish.html" />
+      <item name="Releasing Components"   href="https://commons.apache.org/releases/index.html" />
+      <item name="Wiki"                   href="https://cwiki.apache.org/confluence/display/commons/FrontPage" />
     </menu>
 
     <!-- Should agree with commons-site -->
     <menu name="ASF" inherit="bottom">
-      <item name="How the ASF works"     href="https://www.apache.org/foundation/how-it-works.html" />
-      <item name="Get Involved"          href="https://www.apache.org/foundation/getinvolved.html" />
-      <item name="Developer Resources"   href="https://www.apache.org/dev/" />
-      <item name="Code of Conduct"       href="https://www.apache.org/foundation/policies/conduct.html" />
-      <item name="Sponsorship"           href="https://www.apache.org/foundation/sponsorship.html" />
-      <item name="Thanks"                href="https://www.apache.org/foundation/thanks.html" />
+      <item name="How the ASF works"      href="https://www.apache.org/foundation/how-it-works.html" />
+      <item name="Get Involved"           href="https://www.apache.org/foundation/getinvolved.html" />
+      <item name="Developer Resources"    href="https://www.apache.org/dev/" />
+      <item name="Code of Conduct"        href="https://www.apache.org/foundation/policies/conduct.html" />
+      <item name="Privacy"                href="https://privacy.apache.org/policies/privacy-policy-public.html" />
+      <item name="Sponsorship"            href="https://www.apache.org/foundation/sponsorship.html" />
+      <item name="Thanks"                 href="https://www.apache.org/foundation/thanks.html" />
     </menu>
   </body>
 
