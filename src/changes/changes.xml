@@ -61,6 +61,8 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
         <release version="57" date="2023-MM-DD" description="Version 57: Maintenance and update dependencies">
+           <!-- UPDATE -->
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump pmd from 6.52.0 to 6.53.0.</action>
         </release>
         <release version="56" date="2022-12-30" description="Version 56: Maintenance and update dependencies">
            <!-- FIX -->
