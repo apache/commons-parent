@@ -60,6 +60,8 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
+        <release version="57" date="2023-MM-DD" description="Version 57: Maintenance and update dependencies">
+        </release>
         <release version="56" date="2022-12-30" description="Version 56: Maintenance and update dependencies">
            <!-- FIX -->
            <action type="fix" dev="sebb">Add Privacy link to site.xml</action>
