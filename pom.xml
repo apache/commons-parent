@@ -27,7 +27,7 @@
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>56-SNAPSHOT</version>
+  <version>57-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Apache Commons Parent</name>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
@@ -89,12 +89,12 @@
     <minimalMavenBuildVersion>3.3.9</minimalMavenBuildVersion>
     <!-- configuration bits for cutting a release candidate, must be overridden by components -->
     <!-- TODO How can we make project.build.outputTimestamp and changes.xml's release data the same? -->
-    <project.build.outputTimestamp>2022-09-21T19:49:58Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2023-01-03T14:38:47Z</project.build.outputTimestamp>
     <commons.release.version>${project.version}</commons.release.version>
     <commons.rc.version>RC1</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
     <!-- Commons Release Plugin -->
-    <commons.bc.version>54</commons.bc.version>
+    <commons.bc.version>55</commons.bc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
     <commons.releaseManagerName>Gary Gregory</commons.releaseManagerName>    
     <commons.releaseManagerKey>86fdc7e2a11262cb</commons.releaseManagerKey>
@@ -682,7 +682,7 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>versions-maven-plugin</artifactId>
           <!-- Version 2.2 causes an NPE with Maven 3.3.9 -->
-          <version>2.14.1</version>
+          <version>2.14.2</version>
         </plugin>
         <plugin>
           <groupId>org.jacoco</groupId>
