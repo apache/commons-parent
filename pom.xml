@@ -135,7 +135,7 @@
     <commons.coveralls.timestampFormat>EpochMillis</commons.coveralls.timestampFormat>
     <commons.cyclonedx.version>2.7.4</commons.cyclonedx.version>
     <commons.spdx.version>0.6.3</commons.spdx.version>
-    <commons.failsafe.version>3.0.0-M7</commons.failsafe.version>
+    <commons.failsafe.version>3.0.0-M8</commons.failsafe.version>
     <commons.felix.version>5.1.8</commons.felix.version>
     <commons.jacoco.version>0.8.8</commons.jacoco.version>
     <commons.japicmp.version>0.17.1</commons.japicmp.version>
