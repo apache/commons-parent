@@ -284,7 +284,7 @@
     <commons.javadoc18.java.link>https://docs.oracle.com/en/java/javase/18/docs/api/</commons.javadoc18.java.link>
     <commons.javadoc19.java.link>https://docs.oracle.com/en/java/javase/19/docs/api/</commons.javadoc19.java.link>
 
-    <commons.javadoc.java.link>${commons.javadoc7.java.link}</commons.javadoc.java.link>
+    <commons.javadoc.java.link>${commons.javadoc8.java.link}</commons.javadoc.java.link>
 
     <commons.javadoc.javaee5.link>https://docs.oracle.com/javaee/5/api/</commons.javadoc.javaee5.link>
     <commons.javadoc.javaee6.link>https://docs.oracle.com/javaee/6/api/</commons.javadoc.javaee6.link>

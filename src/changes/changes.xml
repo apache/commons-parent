@@ -65,7 +65,6 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Hervé Boutemy">Fix cyclonedx-maven-plugin configuration for multi-module projects.</action>
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump github/codeql-action from 2.1.37 to 2.1.38 #201.</action>
-           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump pmd from 6.52.0 to 6.54.0.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump cyclonedx-maven-plugin from 2.7.3 to 2.7.4 #195.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump junit-bom from 5.9.1 to 5.9.2 #198.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-pmd-plugin from 3.19.0 to 3.20.0 #206.</action>
@@ -73,6 +72,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-checkstyle-plugin from 3.2.0 to 3.2.1 #204.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-project-info-reports-plugin from 3.4.1 to 3.4.2 #203.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-failsafe-plugin from 3.0.0-M7 to 3.0.0-M8 #202.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump commons.javadoc.java.link from Java 7 to 8.</action>
         </release>
         <release version="56" date="2022-12-30" description="Version 56: Maintenance and update dependencies">
            <!-- FIX -->
