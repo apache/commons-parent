@@ -1917,6 +1917,16 @@
       </properties>
     </profile>
 
+    <profile>
+      <id>jdk8-plugin-fix-version</id>
+      <activation>
+        <jdk>[1.8,1.9)</jdk>
+      </activation>
+      <properties>
+        <commons.spdx.version>0.6.3</commons.spdx.version>
+      </properties>
+    </profile>
+
     <!-- allow simple creation of the site without any optional reports -->
     <profile>
       <id>site-basic</id>
