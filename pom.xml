@@ -850,11 +850,6 @@
               </goals>
             </execution>
           </executions>
-          <configuration>
-            <excludedFilePatterns>
-              <param>*.spdx</param>
-            </excludedFilePatterns>
-          </configuration>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
