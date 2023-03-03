@@ -138,7 +138,7 @@
     <commons.failsafe.version>3.0.0-M9</commons.failsafe.version>
     <commons.felix.version>5.1.8</commons.felix.version>
     <commons.jacoco.version>0.8.8</commons.jacoco.version>
-    <commons.japicmp.version>0.17.1</commons.japicmp.version>
+    <commons.japicmp.version>0.17.2</commons.japicmp.version>
     <commons.jar-plugin.version>3.3.0</commons.jar-plugin.version>
     <commons.javadoc.version>3.5.0</commons.javadoc.version>
     <commons.jxr.version>3.3.0</commons.jxr.version>
