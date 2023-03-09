@@ -83,6 +83,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-compiler-plugin from 3.10.1 to 3.11.0 #229.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump japicmp-maven-plugin from 0.17.1 to 0.17.2 #230.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump commons.javadoc.java.link from Java 7 to 8.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump minimum Maven version from 3.3.9 to 3.6.3.</action>
         </release>
         <release version="56" date="2022-12-30" description="Version 56: Maintenance and update dependencies">
            <!-- FIX -->
