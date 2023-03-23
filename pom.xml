@@ -292,10 +292,6 @@
 
     <commons.javadoc.javaee.link>${commons.javadoc.javaee6.link}</commons.javadoc.javaee.link>
 
-    <!-- build meta inf -->
-    <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ssZ</maven.build.timestamp.format>
-    <implementation.build>${scmBranch}@r${buildNumber}; ${maven.build.timestamp}</implementation.build>
-
     <!-- Allow Clirr severity to be overriden by the command-line option -DminSeverity=level -->
     <minSeverity>info</minSeverity>
 
@@ -972,7 +968,6 @@
               <Implementation-Version>${project.version}</Implementation-Version>
               <Implementation-Vendor>${project.organization.name}</Implementation-Vendor>
               <Implementation-Vendor-Id>org.apache</Implementation-Vendor-Id>
-              <Implementation-Build>${implementation.build}</Implementation-Build>
               <X-Compile-Source-JDK>${maven.compiler.source}</X-Compile-Source-JDK>
               <X-Compile-Target-JDK>${maven.compiler.target}</X-Compile-Target-JDK>
             </manifestEntries>
