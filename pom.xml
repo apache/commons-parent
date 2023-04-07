@@ -148,7 +148,7 @@
     <commons.rat.version>0.15</commons.rat.version>
     <commons.release-plugin.version>1.8.0</commons.release-plugin.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
-    <commons.enforcer-plugin.version>3.2.1</commons.enforcer-plugin.version>
+    <commons.enforcer-plugin.version>3.3.0</commons.enforcer-plugin.version>
     <commons.buildnumber-plugin.version>3.0.0</commons.buildnumber-plugin.version>
     <commons.biz.aQute.bndlib.version>6.4.0</commons.biz.aQute.bndlib.version>
     <commons.junit.version>5.9.2</commons.junit.version>
