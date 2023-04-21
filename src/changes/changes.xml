@@ -62,8 +62,9 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
         <release version="57" date="2023-MM-DD" description="Version 57: Maintenance and update dependencies">
            <!-- FIX -->           
-           <action type="update" dev="ggregory" due-to="Hervé Boutemy">Fix cyclonedx-maven-plugin configuration for multi-module projects.</action>
-           <action type="update" dev="ggregory" due-to="Hervé Boutemy">Drop non-reproducible Implementation-Build in jar #242.</action>
+           <action type="fix" dev="ggregory" due-to="Hervé Boutemy">Fix cyclonedx-maven-plugin configuration for multi-module projects.</action>
+           <action type="fix" dev="ggregory" due-to="Hervé Boutemy">Drop non-reproducible Implementation-Build in jar #242.</action>
+           <action type="fix" dev="ggregory" due-to="Gary Gregory">Use Java compiler release flag when compiling with Java >= 9.].</action>
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump github/codeql-action from 2.1.37 to 2.1.38 #201.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump cyclonedx-maven-plugin from 2.7.3 to 2.7.7 #195, #220, #253, #262.</action>
