@@ -45,20 +45,20 @@ Apache Commons Parent
 
 [![GitHub Actions Status](https://github.com/apache/commons-parent/workflows/Java%20CI/badge.svg)](https://github.com/apache/commons-parent/actions)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/?gav=true)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-text/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-text)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent)
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
 Documentation
 -------------
 
-More information can be found on the [Apache Commons Parent homepage](https://commons.apache.org/proper/commons-commons-parent).
-The [Javadoc](https://commons.apache.org/proper/commons-commons-parent/apidocs) can be browsed.
+More information can be found on the [Apache Commons Parent homepage](https://commons.apache.org/proper/commons-parent).
+The [Javadoc](https://commons.apache.org/proper/commons-parent/apidocs) can be browsed.
 Questions related to the usage of Apache Commons Parent should be posted to the [user mailing list][ml].
 
 Where can I get the latest release?
 -----------------------------------
-You can download source and binaries from our [download page](https://commons.apache.org/proper/commons-commons-parent/download_commons-parent.cgi).
+You can download source and binaries from our [download page](https://commons.apache.org/proper/commons-parent/download_commons-parent.cgi).
 
 Alternatively you can pull it from the central Maven repositories:
 
@@ -66,7 +66,7 @@ Alternatively you can pull it from the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>56</version>
+  <version>57</version>
 </dependency>
 ```
 
