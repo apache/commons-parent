@@ -27,7 +27,7 @@
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>57</version>
+  <version>57-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Apache Commons Parent</name>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
@@ -114,7 +114,7 @@
     <maven.compiler.target>1.3</maven.compiler.target>
 
     <!-- Java >= 9 -->
-    <maven.compiler.release>8</maven.compiler.release>
+    <commons.compiler.release>8</commons.compiler.release>
 
     <!-- compiler and surefire plugin settings for "java" profiles -->
     <commons.compiler.fork>false</commons.compiler.fork>
@@ -1932,7 +1932,7 @@
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-compiler-plugin</artifactId>
               <configuration>
-                <release>${maven.compiler.release}</release>
+                <release>${commons.compiler.release}</release>
               </configuration>
             </plugin>
           </plugins>
