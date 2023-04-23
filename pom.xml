@@ -91,7 +91,7 @@
     <!-- TODO How can we make project.build.outputTimestamp and changes.xml's release data the same? -->
     <project.build.outputTimestamp>2023-04-22T14:00:13Z</project.build.outputTimestamp>
     <commons.release.version>${project.version}</commons.release.version>
-    <commons.rc.version>RC1</commons.rc.version>
+    <commons.rc.version>RC2</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
     <!-- Commons Release Plugin -->
     <commons.bc.version>56</commons.bc.version>
