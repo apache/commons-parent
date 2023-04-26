@@ -140,7 +140,7 @@
     <commons.spdx.version>0.6.5</commons.spdx.version>
     <commons.failsafe.version>3.0.0</commons.failsafe.version>
     <commons.felix.version>5.1.8</commons.felix.version>
-    <commons.jacoco.version>0.8.9</commons.jacoco.version>
+    <commons.jacoco.version>0.8.10</commons.jacoco.version>
     <commons.japicmp.version>0.17.2</commons.japicmp.version>
     <commons.jar-plugin.version>3.3.0</commons.jar-plugin.version>
     <commons.javadoc.version>3.5.0</commons.javadoc.version>
