@@ -60,6 +60,13 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
+        <release version="58" date="2023-04-22" description="Version 57: Maintenance and update dependencies">
+           <!-- FIX -->           
+           <!-- UPDATE -->
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump cyclonedx-maven-plugin from 2.7.7 to 2.7.8 #266.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump jacoco-maven-plugin from 0.8.9 to 0.8.10 #265.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump junit-bom from 5.9.2 to 5.9.3 #263.</action>
+        </release>
         <release version="57" date="2023-04-22" description="Version 57: Maintenance and update dependencies">
            <!-- FIX -->           
            <action type="fix" dev="ggregory" due-to="Hervé Boutemy">Fix cyclonedx-maven-plugin configuration for multi-module projects.</action>
