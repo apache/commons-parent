@@ -60,7 +60,7 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="58" date="20YY-MM-DD" description="Version 57: Maintenance and update dependencies">
+        <release version="58" date="2023-05-20" description="Version 58: Maintenance and update dependencies">
            <!--  ADD -->
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add commons.javadoc20.java.link.</action>
            <!-- FIX -->           
