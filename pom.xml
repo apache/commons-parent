@@ -153,7 +153,7 @@
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
     <commons.enforcer-plugin.version>3.3.0</commons.enforcer-plugin.version>
     <commons.buildnumber-plugin.version>3.2.0</commons.buildnumber-plugin.version>
-    <commons.biz.aQute.bndlib.version>6.4.0</commons.biz.aQute.bndlib.version>
+    <commons.biz.aQute.bndlib.version>6.4.1</commons.biz.aQute.bndlib.version>
     <commons.junit.version>5.9.3</commons.junit.version>
 
     <!--
