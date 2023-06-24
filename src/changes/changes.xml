@@ -67,6 +67,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump versions-maven-plugin from 2.15.0 to 2.16.0 #276.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump buildnumber-maven-plugin from 3.1.0 to 3.2.0 #277.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump biz.aQute.bndlib from 6.4.0 to 6.4.1 #279.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump org:apache:apache (parent POM) from 29 to 30.</action>
         </release>
         <release version="58" date="2023-05-20" description="Version 58: Maintenance and update dependencies">
            <!-- ADD -->
