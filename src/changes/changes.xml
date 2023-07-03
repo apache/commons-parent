@@ -71,6 +71,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump spotbugs-maven-plugin from 4.7.3.4 to 4.7.3.5 #284.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org:apache:apache (parent POM) from 29 to 30.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump commons-release-plugin from 1.8.0 to 1.8.1.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump commons-build-plugin from 1.12 to 1.13.</action>
         </release>
         <release version="58" date="2023-05-20" description="Version 58: Maintenance and update dependencies">
            <!-- ADD -->
