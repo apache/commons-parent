@@ -297,6 +297,10 @@
     <commons.javadoc.javaee5.link>https://docs.oracle.com/javaee/5/api/</commons.javadoc.javaee5.link>
     <commons.javadoc.javaee6.link>https://docs.oracle.com/javaee/6/api/</commons.javadoc.javaee6.link>
     <commons.javadoc.javaee7.link>https://docs.oracle.com/javaee/7/api/</commons.javadoc.javaee7.link>
+    <commons.javadoc.javaee8.link>https://jakarta.ee/specifications/platform/8/apidocs/</commons.javadoc.javaee8.link>
+    <commons.javadoc.javaee9.link>https://jakarta.ee/specifications/platform/9/apidocs/</commons.javadoc.javaee9.link>
+    <commons.javadoc.javaee9.1.link>https://jakarta.ee/specifications/platform/9.1/apidocs/</commons.javadoc.javaee9.1.link>
+    <commons.javadoc.javaee10.link>https://jakarta.ee/specifications/platform/10/apidocs/</commons.javadoc.javaee10.link>
 
     <commons.javadoc.javaee.link>${commons.javadoc.javaee6.link}</commons.javadoc.javaee.link>
 
