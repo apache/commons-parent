@@ -1381,6 +1381,8 @@
     <profile>
       <id>animal-sniffer</id>
       <activation>
+		<!-- Don't use on Java >= 9, use the release flag instead -->
+        <jdk>(,9)</jdk>
         <!-- active unless the file is found -->
         <file>
           <missing>src/site/resources/profile.noanimal</missing>
