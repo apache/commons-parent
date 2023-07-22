@@ -60,7 +60,7 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="59" date="2023-MM-DD" description="Version 59: Maintenance and update dependencies">
+        <release version="59" date="2023-07-22" description="Version 59: Maintenance and update dependencies">
            <!-- ADD -->
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add moditect profile for JPMS on Java >= 9.</action>
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add POM property commons.javadoc.javaee8.link.</action>

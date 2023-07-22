@@ -1,3 +1,42 @@
+              Apache Commons Parent 59
+                  RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 59.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Version 59: Maintenance and update dependencies
+
+Changes in this version include:
+
+New features:
+o                   Add moditect profile for JPMS on Java >= 9. Thanks to Gary Gregory.
+o                   Add POM property commons.javadoc.javaee8.link. Thanks to Gary Gregory.
+o                   Add POM property commons.javadoc.javaee9.link. Thanks to Gary Gregory.
+o                   Add POM property commons.javadoc.javaee9.1.link. Thanks to Gary Gregory.
+o                   Add POM property commons.javadoc.javaee10.link. Thanks to Gary Gregory.
+o                   Don't use the animal sniffer plugin on Java >=9, use the release flag instead. Thanks to Gary Gregory.
+
+Changes:
+o                   Bump GitHub actions in .github. Thanks to Dependabot.
+o                   Bump versions-maven-plugin from 2.15.0 to 2.16.0 #276. Thanks to Dependabot.
+o                   Bump buildnumber-maven-plugin from 3.1.0 to 3.2.0 #277. Thanks to Dependabot.
+o                   Bump biz.aQute.bndlib from 6.4.0 to 6.4.1 #279. Thanks to Dependabot.
+o                   Bump spotbugs-maven-plugin from 4.7.3.4 to 4.7.3.5 #284. Thanks to Dependabot.
+o                   Bump org:apache:apache (parent POM) from 29 to 30. Thanks to Dependabot.
+o                   Bump commons-release-plugin from 1.8.0 to 1.8.1. Thanks to Dependabot.
+o                   Bump commons-build-plugin from 1.12 to 1.13. Thanks to Dependabot.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+-----------------------------------------------------------------------------
+
               Apache Commons Parent 58
                   RELEASE NOTES
 

@@ -52,21 +52,21 @@ The Apache Commons Parent POM provides common settings for all Apache Commons co
 Documentation
 -------------
 
-More information can be found on the [Apache Commons Parent homepage](https://commons.apache.org/proper/commons-parent).
-The [Javadoc](https://commons.apache.org/proper/commons-parent/apidocs) can be browsed.
+More information can be found on the [Apache Commons Parent homepage](https://commons.apache.org/proper/commons-commons-parent).
+The [Javadoc](https://commons.apache.org/proper/commons-commons-parent/apidocs) can be browsed.
 Questions related to the usage of Apache Commons Parent should be posted to the [user mailing list][ml].
 
 Where can I get the latest release?
 -----------------------------------
-You can download source and binaries from our [download page](https://commons.apache.org/proper/commons-parent/download_commons-parent.cgi).
+You can download source and binaries from our [download page](https://commons.apache.org/proper/commons-commons-parent/download_commons-parent.cgi).
 
-Alternatively you can pull it from the central Maven repositories:
+Alternatively, you can pull it from  the central Maven repositories:
 
 ```xml
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>58</version>
+  <version>59</version>
 </dependency>
 ```
 
@@ -85,7 +85,7 @@ You can learn more about contributing via GitHub in our [contribution guidelines
 
 License
 -------
-This code is under the [Apache Licence v2](https://www.apache.org/licenses/LICENSE-2.0).
+This code is under the [Apache License v2](https://www.apache.org/licenses/LICENSE-2.0).
 
 See the `NOTICE.txt` file for required notices and attributions.
 
