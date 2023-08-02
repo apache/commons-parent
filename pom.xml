@@ -835,7 +835,7 @@
           <version>${commons.cyclonedx.version}</version>
           <executions>
             <execution>
-              <id>make-bom</id>
+              <id>build-sbom-cyclonedx</id>
               <phase>package</phase>
               <goals>
                 <goal>makeAggregateBom</goal>
@@ -852,7 +852,8 @@
           <version>${commons.spdx.version}</version>
           <executions>
             <execution>
-              <id>build-spdx</id>
+              <id>build-sbom-spdx</id>
+              <phase>package</phase>
               <goals>
                 <goal>createSPDX</goal>
               </goals>

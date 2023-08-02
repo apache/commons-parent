@@ -71,8 +71,9 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add POM property commons.javadoc.javaee9.link.</action>
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add POM property commons.javadoc.javaee9.1.link.</action>
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add POM property commons.javadoc.javaee10.link.</action>
-           <action type="add" dev="ggregory" due-to="Gary Gregory">Don't use the animal sniffer plugin on Java >=9, use the release flag instead.</action>
+           <action type="add" dev="ggregory" due-to="Gary Gregory">Add SPDX SBOM in the package phase.</action>
            <!-- FIX -->           
+           <action type="add" dev="ggregory" due-to="Gary Gregory">Don't use the animal sniffer plugin on Java >=9, use the release flag instead.</action>
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions in .github.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump versions-maven-plugin from 2.15.0 to 2.16.0 #276.</action>
