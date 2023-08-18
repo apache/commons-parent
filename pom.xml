@@ -195,7 +195,6 @@
     Warning: maven-site-plugin 4.0.0-M3 requires an update to commons-skin site.vm for new variable names.
     -->
     <commons.site-plugin.version>3.12.1</commons.site-plugin.version>
-    <commons.source-plugin.version>3.3.0</commons.source-plugin.version>
     <commons.spotbugs.plugin.version>4.7.3.5</commons.spotbugs.plugin.version>
     <commons.spotbugs.impl.version>4.7.3</commons.spotbugs.impl.version>
     <commons.surefire-report.version>3.1.2</commons.surefire-report.version>
@@ -577,19 +576,6 @@
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-source-plugin</artifactId>
-          <version>${commons.source-plugin.version}</version>
-          <configuration>
-            <archive>
-              <manifest>
-                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-              </manifest>
-            </archive>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${commons.surefire.version}</version>
         </plugin>
@@ -882,7 +868,6 @@
       </plugins>
     </pluginManagement>
     <plugins>
-      <!-- org.apache.maven.plugins, alpha order by artifact id -->
       <plugin>
         <!-- Parent POM is released, so needs source archive for ASF mirrors -->
         <artifactId>maven-assembly-plugin</artifactId>
@@ -989,6 +974,14 @@
       </plugin>
       <plugin>
         <artifactId>maven-source-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+              <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+            </manifest>
+          </archive>
+        </configuration>
         <executions>
           <execution>
             <id>create-source-jar</id>
@@ -1854,6 +1847,8 @@
       </activation>
       <properties>
         <commons.spdx.version>0.6.3</commons.spdx.version>
+        <!-- https://issues.apache.org/jira/projects/MSOURCES/issues/MSOURCES-143 -->
+        <version.maven-source-plugin>3.2.1</version.maven-source-plugin>
       </properties>
     </profile>
 

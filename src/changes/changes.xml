@@ -61,6 +61,9 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
         <release version="60" date="2023-MM-DD" description="Version 60: Maintenance and update dependencies">
+           <!-- FIX -->
+           <action type="fix" dev="ggregory" due-to="Gary Gregory">Workaround MSOURCES-143 by using version.maven-source-plugin 3.2.1 on Java 8.</action>
+           <action type="fix" dev="ggregory" due-to="Gary Gregory">Remove property commons.source-plugin.version and reuse the parent POM's version.maven-source-plugin.</action>
            <!-- ADD -->
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add SPDX SBOM in the package phase.</action>
            <!-- UPDATE -->
