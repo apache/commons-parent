@@ -124,6 +124,9 @@
     <commons.compiler.javac />
     <commons.compiler.javadoc />
 
+    <!-- https://issues.apache.org/jira/projects/MSOURCES/issues/MSOURCES-143 -->
+    <version.maven-source-plugin>3.2.1</version.maven-source-plugin>
+
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
     <commons.animal-sniffer.version>1.23</commons.animal-sniffer.version>
     <!-- Almost all signatures use version 1.0. Allow override just in case -->
@@ -1819,8 +1822,6 @@
       </activation>
       <properties>
         <commons.spdx.version>0.6.3</commons.spdx.version>
-        <!-- https://issues.apache.org/jira/projects/MSOURCES/issues/MSOURCES-143 -->
-        <version.maven-source-plugin>3.2.1</version.maven-source-plugin>
       </properties>
     </profile>
 
