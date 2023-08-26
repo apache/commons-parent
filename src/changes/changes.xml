@@ -60,7 +60,7 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="61" date="2023-MM-DD" description="Version 60: Maintenance and update dependencies">
+        <release version="61" date="2023-08-26" description="Version 60: Maintenance and update dependencies">
            <!-- FIX -->
            <action type="fix" dev="ggregory" due-to="Gary Gregory">Always use version.maven-source-plugin 3.2.1 (workaround MSOURCES-143).</action>
            <!-- ADD -->
