@@ -60,11 +60,15 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="61" date="2023-08-26" description="Version 60: Maintenance and update dependencies">
+        <release version="62" date="2023-MM-DD" description="Version 62: Maintenance and update dependencies">
            <!-- FIX -->
-           <action type="fix" dev="ggregory" due-to="Gary Gregory">Always use version.maven-source-plugin 3.2.1 (workaround MSOURCES-143).</action>
+           <action type="fix" dev="ggregory" due-to="Gary Gregory">Use addServiceUses when generating JPMS module info.</action>
            <!-- ADD -->
            <!-- UPDATE -->
+        </release>
+        <release version="61" date="2023-08-26" description="Version 61: Maintenance and update dependencies">
+           <!-- FIX -->
+           <action type="fix" dev="ggregory" due-to="Gary Gregory">Always use version.maven-source-plugin 3.2.1 (workaround MSOURCES-143).</action>
         </release>
         <release version="60" date="2023-08-20" description="Version 60: Maintenance and update dependencies">
            <!-- FIX -->
