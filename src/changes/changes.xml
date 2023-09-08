@@ -65,20 +65,20 @@ The <action> type attribute can be add,update,fix,remove.
            <!-- ADD -->
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions.</action
-           <action type="update" dev="ggregory" due-to="Dependabot">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.17.2 to 0.17.3 #302.</action
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.17.2 to 0.17.3 #302.</action>
         </release>
         <release version="62" date="2023-09-02" description="Version 62: Maintenance and update dependencies">
            <!-- FIX -->
            <action type="fix" dev="ggregory" due-to="Gary Gregory">Use addServiceUses when generating JPMS module info.</action>
            <!-- ADD -->
            <!-- UPDATE -->
-           <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions.</action
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions.</action>
         </release>
         <release version="61" date="2023-08-26" description="Version 61: Maintenance and update dependencies">
            <!-- FIX -->
            <action type="fix" dev="ggregory" due-to="Gary Gregory">Always use version.maven-source-plugin 3.2.1 (workaround MSOURCES-143).</action>
            <!-- UPDATE -->
-           <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions.</action
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions.</action>
         </release>
         <release version="60" date="2023-08-20" description="Version 60: Maintenance and update dependencies">
            <!-- FIX -->
@@ -98,7 +98,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-source-plugin from 3.2.1 to 3.3.0.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.apache.felix:maven-bundle-plugin from 5.1.8 to 5.1.9.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.spdx:spdx-maven-plugin from 0.6.5 to 0.7.0.</action>
-           <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions.</action
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions.</action>
         </release>
         <release version="59" date="2023-07-22" description="Version 59: Maintenance and update dependencies">
            <!-- ADD -->
