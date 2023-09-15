@@ -139,8 +139,6 @@
     <commons.checkstyle.version>9.3</commons.checkstyle.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
     <commons.compiler.version>3.11.0</commons.compiler.version>
-    <commons.coveralls.version>4.3.0</commons.coveralls.version>
-    <commons.coveralls.timestampFormat>EpochMillis</commons.coveralls.timestampFormat>
     <commons.cyclonedx.version>2.7.9</commons.cyclonedx.version>
     <commons.spdx.version>0.7.0</commons.spdx.version>
     <commons.failsafe.version>3.1.2</commons.failsafe.version>
@@ -1858,53 +1856,6 @@
         <jacoco.skip>true</jacoco.skip>
         <skipSurefireReport>true</skipSurefireReport>
       </properties>
-    </profile>
-
-    <profile>
-      <id>travis-cobertura</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>cobertura-maven-plugin</artifactId>
-            <version>${commons.cobertura.version}</version>
-            <configuration>
-              <formats>
-                <format>xml</format>
-              </formats>
-            </configuration>
-          </plugin>
-          <plugin>
-            <groupId>org.eluder.coveralls</groupId>
-            <artifactId>coveralls-maven-plugin</artifactId>
-            <version>${commons.coveralls.version}</version>
-            <configuration>
-              <timestampFormat>${commons.coveralls.timestampFormat}</timestampFormat>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-
-    <profile>
-      <id>travis-jacoco</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-            <version>${commons.jacoco.version}</version>
-          </plugin>
-          <plugin>
-            <groupId>org.eluder.coveralls</groupId>
-            <artifactId>coveralls-maven-plugin</artifactId>
-            <version>${commons.coveralls.version}</version>
-            <configuration>
-              <timestampFormat>${commons.coveralls.timestampFormat}</timestampFormat>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
     </profile>
 
     <profile>

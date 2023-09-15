@@ -66,6 +66,8 @@ The <action> type attribute can be add,update,fix,remove.
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.17.2 to 0.17.3 #302.</action>
+           <!--  REMOVE -->
+           <action type="remove" dev="ggregory" due-to="Dependabot">Remove obsolete Travis CI profiles.</action>
         </release>
         <release version="62" date="2023-09-02" description="Version 62: Maintenance and update dependencies">
            <!-- FIX -->
