@@ -63,6 +63,7 @@ The <action> type attribute can be add,update,fix,remove.
         <release version="63" date="2023-MM-DD" description="Version 63: Maintenance and update dependencies">
            <!-- FIX -->
            <!-- ADD -->
+           <action type="add" dev="ggregory" due-to="Dependabot">Add commons.conf.dir property defaulting to src/conf.</action>
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.17.2 to 0.17.3 #302.</action>
