@@ -80,7 +80,7 @@
       </item>
     </menu>
 
-    <!-- Should agree with commons-site -->
+    <!-- Should agree with commons-site. N.B. site-relative links don't work here -->
     <menu name="General Information" inherit="bottom">
       <item name="Security"               href="https://commons.apache.org/security.html"/>
       <item name="Volunteering"           href="https://commons.apache.org/volunteering.html" />
@@ -88,8 +88,8 @@
       <item name="Building Components"    href="https://commons.apache.org/building.html" />
       <item name="Commons Parent POM"     href="https://commons.apache.org/commons-parent-pom.html" />
       <item name="Commons Build Plugin"   href="https://commons.apache.org/build-plugin/index.html" />
-      <item name="Commons Release Plugin" href="/release-plugin/index.html" />
-      <item name="Site Publication"       href="/site-publish.html" />
+      <item name="Commons Release Plugin" href="https://commons.apache.org/release-plugin/index.html" />
+      <item name="Site Publication"       href="https://commons.apache.org/site-publish.html" />
       <item name="Releasing Components"   href="https://commons.apache.org/releases/index.html" />
       <item name="Wiki"                   href="https://cwiki.apache.org/confluence/display/commons/FrontPage" />
     </menu>
