@@ -342,9 +342,6 @@
     <!-- Commons Release plugin: dist dev site -->
     <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
 
-    <!-- Commons Release plugin: release manager -->
-    <commons.releaseManagerName>${user.name}</commons.releaseManagerName>
-    <commons.releaseManagerKey>DEADBEEF</commons.releaseManagerKey>
     <commons.conf.dir>src/conf</commons.conf.dir>
 
     <sonar.host.url>https://analysis.apache.org/</sonar.host.url>
