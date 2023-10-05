@@ -60,7 +60,7 @@ The <action> type attribute can be add,update,fix,remove.
      -->
 
     <body>
-        <release version="63" date="2023-09-30" description="Version 63: Maintenance and update dependencies">
+        <release version="63" date="2023-10-02" description="Version 63: Maintenance and update dependencies">
            <!-- FIX -->
            <!-- ADD -->
            <action type="add" dev="ggregory" due-to="Dependabot">Add commons.conf.dir property defaulting to src/conf.</action>
