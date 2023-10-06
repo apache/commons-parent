@@ -93,11 +93,11 @@
     <!-- TODO How can we make project.build.outputTimestamp and changes.xml's release data the same? -->
     <project.build.outputTimestamp>2023-10-05T12:49:06Z</project.build.outputTimestamp>
     <commons.release.version>${project.version}</commons.release.version>
-    <commons.rc.version>RC2</commons.rc.version>
+    <commons.rc.version>RC1</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
     <!-- Commons Release Plugin -->
     <!-- Previous version of the component (used for reporting binary compatibility check)-->
-    <commons.bc.version>62</commons.bc.version>
+    <commons.bc.version>63</commons.bc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
     <!--
       Define the following in ~/.m2/settings.xml in an active profile:
