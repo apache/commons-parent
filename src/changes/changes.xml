@@ -66,6 +66,7 @@ The <action> type attribute can be add,update,fix,remove.
            <!-- ADD -->
            <!-- REMOVE -->
            <action type="remove" dev="ggregory" due-to="Dependabot">Remove 'javasvn' profile.</action>
+           <action type="remove" dev="ggregory" due-to="Dependabot">Remove Subversion profile.</action>
            <!-- UPDATE -->
         </release>
         <release version="63" date="2023-10-02" description="Version 63: Maintenance and update dependencies">

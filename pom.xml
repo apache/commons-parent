@@ -1239,40 +1239,6 @@
   </reporting>
 
   <profiles>
-    <profile>
-      <id>svn</id>
-      <activation>
-        <file>
-          <exists>.svn</exists>
-        </file>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>buildnumber-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <phase>validate</phase>
-                <goals>
-                  <goal>create</goal>
-                </goals>
-              </execution>
-            </executions>
-            <configuration>
-              <!-- Use committed revision so it does not change every time svn update is run -->
-              <useLastCommittedRevision>true</useLastCommittedRevision>
-              <!-- default revision number if unavailable -->
-              <revisionOnScmFailure>??????</revisionOnScmFailure>
-              <!-- svnjava works even if an svn command-line client is not on the path -->
-              <providerImplementations>
-                <svn>javasvn</svn>
-              </providerImplementations>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
 
     <profile>
       <!--
