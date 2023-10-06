@@ -1811,7 +1811,7 @@
     </profile>
 
     <profile>
-      <id>moditect</id>
+      <id>java-9-up</id>
       <activation>
 		<jdk>[9,)</jdk>
 	  </activation>
