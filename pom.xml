@@ -1865,6 +1865,20 @@
       </properties>
     </profile>
 
+    <profile>
+	  <!-- Java 17 and up -->
+      <id>java-17-up</id>
+      <activation>
+		<jdk>[17,)</jdk>
+	  </activation>
+      <properties>
+		<!-- 
+		Wait until org.apache.felix:maven-bundle-plugin supports bndlib 7
+        <commons.biz.aQute.bndlib.version>7.0.0</commons.biz.aQute.bndlib.version>
+        -->
+      </properties>
+    </profile>
+
   </profiles>
 
 </project>
