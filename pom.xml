@@ -239,7 +239,7 @@
          - Use pool instead of pool2.
          - and so on...
     -->
-    <commons.componentid>${project.artifactId}</commons.componentid>
+    <commons.componentid>parent</commons.componentid>
 
     <!-- The package id is substring of the package name from o.a.commons.(.*)., for example:
          - Use dbcp2 instead of dbcp.
