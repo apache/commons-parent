@@ -27,7 +27,7 @@
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>64-SNAPSHOT</version>
+  <version>64</version>
   <packaging>pom</packaging>
   <name>Apache Commons Parent</name>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
@@ -91,8 +91,9 @@
     <minimalJavaBuildVersion>8</minimalJavaBuildVersion>
     <!-- configuration bits for cutting a release candidate, must be overridden by components -->
     <!-- TODO How can we make project.build.outputTimestamp and changes.xml's release data the same? -->
-    <project.build.outputTimestamp>2023-10-05T12:49:06Z</project.build.outputTimestamp>
-    <commons.release.version>${project.version}</commons.release.version>
+    <project.build.outputTimestamp>2023-10-06T14:12:42Z</project.build.outputTimestamp>
+    <commons.release.version>64</commons.release.version>
+    <commons.release.next>65</commons.release.next>
     <commons.rc.version>RC1</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
     <!-- Commons Release Plugin -->
