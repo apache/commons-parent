@@ -1776,25 +1776,6 @@
       </properties>
     </profile>
 
-    <profile>
-      <id>jdk9-compiler</id>
-      <activation>
-        <jdk>[9</jdk>
-      </activation>
-      <properties>
-        <!--
-          The "release" compiler property (available in JDK 9+) must be set in order to generate
-          binary-compatible artifacts for the target JVM. This flag sets the version of the platform
-          APIs to compile against, which is necessary when building with a later JDK but targeting
-          an earlier one. For example, a covariant return type was added to java.nio.ByteBuffer.rewind()
-          in Java 9. If the release property is not set when compiling with JDK 9 for Java 8, then the
-          Java 9 method will be referenced in the bytecode, causing a runtime error when running on 8.
-          See also https://issues.apache.org/jira/browse/MCOMPILER-534
-       -->
-        <maven.compiler.release>${commons.compiler.release}</maven.compiler.release>
-      </properties>
-    </profile>
-
     <!-- allow simple creation of the site without any optional reports -->
     <profile>
       <id>site-basic</id>
@@ -1818,6 +1799,16 @@
       <properties>
         <moditect.java.version>9</moditect.java.version>
         <commons.moditect-maven-plugin.addServiceUses>true</commons.moditect-maven-plugin.addServiceUses>
+        <!--
+          The "release" compiler property (available in JDK 9+) must be set in order to generate
+          binary-compatible artifacts for the target JVM. This flag sets the version of the platform
+          APIs to compile against, which is necessary when building with a later JDK but targeting
+          an earlier one. For example, a covariant return type was added to java.nio.ByteBuffer.rewind()
+          in Java 9. If the release property is not set when compiling with JDK 9 for Java 8, then the
+          Java 9 method will be referenced in the bytecode, causing a runtime error when running on 8.
+          See also https://issues.apache.org/jira/browse/MCOMPILER-534
+        -->
+        <maven.compiler.release>${commons.compiler.release}</maven.compiler.release>
       </properties>
       <build>
 		<plugins>
