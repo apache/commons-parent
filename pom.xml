@@ -1787,23 +1787,6 @@
         </plugins>
       </build>
     </profile>
-    <!-- optional profile to use javasvn instead of the SVN CLI for the buildNumber plugin -->
-    <profile>
-      <id>javasvn</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>buildnumber-maven-plugin</artifactId>
-            <configuration>
-              <providerImplementations>
-                <svn>javasvn</svn>
-              </providerImplementations>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
     <!-- profile to allow the use of plugin versions that require Java 7 -->
     <profile>
       <id>jdk7-plugin-fix-version</id>
