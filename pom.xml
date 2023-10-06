@@ -1854,6 +1854,17 @@
 	  </build>
     </profile>
 
+    <profile>
+	  <!-- Java 11 and up -->
+      <id>java-11-up</id>
+      <activation>
+		<jdk>[11,)</jdk>
+	  </activation>
+      <properties>
+        <commons.checkstyle.version>10.12.4</commons.checkstyle.version>
+      </properties>
+    </profile>
+
   </profiles>
 
 </project>

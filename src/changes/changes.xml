@@ -62,12 +62,13 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
         <release version="64" date="2023-MM-DD" description="Version 64: Maintenance and update dependencies">
            <!-- FIX -->
-           <action type="add" dev="ggregory" due-to="Dependabot">Restore building on Java 8 (com.puppycrawl.tools:checkstyle 10.x requires Java 11).</action>
+           <action type="add" dev="ggregory" due-to="Gary Gregory">Restore building on Java 8 (com.puppycrawl.tools:checkstyle 10.x requires Java 11).</action>
            <!-- ADD -->
            <!-- REMOVE -->
-           <action type="remove" dev="ggregory" due-to="Dependabot">Remove 'javasvn' profile.</action>
-           <action type="remove" dev="ggregory" due-to="Dependabot">Remove Subversion profile.</action>
+           <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove 'javasvn' profile.</action>
+           <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove Subversion profile.</action>
            <!-- UPDATE -->
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Use Checkstyle 9.x on Java less than 11 and Checkstyle 10.x on Java 11 and up.</action>
         </release>
         <release version="63" date="2023-10-02" description="Version 63: Maintenance and update dependencies">
            <!-- FIX -->
