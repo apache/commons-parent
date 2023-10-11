@@ -27,7 +27,7 @@
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>64-SNAPSHOT</version>
+  <version>65</version>
   <packaging>pom</packaging>
   <name>Apache Commons Parent</name>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
@@ -91,13 +91,14 @@
     <minimalJavaBuildVersion>8</minimalJavaBuildVersion>
     <!-- configuration bits for cutting a release candidate, must be overridden by components -->
     <!-- TODO How can we make project.build.outputTimestamp and changes.xml's release data the same? -->
-    <project.build.outputTimestamp>2023-10-05T12:49:06Z</project.build.outputTimestamp>
-    <commons.release.version>${project.version}</commons.release.version>
-    <commons.rc.version>RC2</commons.rc.version>
+    <project.build.outputTimestamp>2023-10-09T17:15:16Z</project.build.outputTimestamp>
+    <commons.release.version>64</commons.release.version>
+    <commons.release.next>65</commons.release.next>
+    <commons.rc.version>RC1</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
     <!-- Commons Release Plugin -->
     <!-- Previous version of the component (used for reporting binary compatibility check)-->
-    <commons.bc.version>62</commons.bc.version>
+    <commons.bc.version>63</commons.bc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
     <!--
       Define the following in ~/.m2/settings.xml in an active profile:
@@ -141,7 +142,7 @@
     <commons.build-plugin.version>1.13</commons.build-plugin.version>
     <commons.changes.version>2.12.1</commons.changes.version>
     <commons.checkstyle-plugin.version>3.3.0</commons.checkstyle-plugin.version>
-    <commons.checkstyle.version>10.12.3</commons.checkstyle.version>
+    <commons.checkstyle.version>9.3</commons.checkstyle.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
     <commons.compiler.version>3.11.0</commons.compiler.version>
     <commons.cyclonedx.version>2.7.9</commons.cyclonedx.version>
@@ -238,7 +239,7 @@
          - Use pool instead of pool2.
          - and so on...
     -->
-    <commons.componentid>${project.artifactId}</commons.componentid>
+    <commons.componentid>parent</commons.componentid>
 
     <!-- The package id is substring of the package name from o.a.commons.(.*)., for example:
          - Use dbcp2 instead of dbcp.
@@ -1239,40 +1240,6 @@
   </reporting>
 
   <profiles>
-    <profile>
-      <id>svn</id>
-      <activation>
-        <file>
-          <exists>.svn</exists>
-        </file>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>buildnumber-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <phase>validate</phase>
-                <goals>
-                  <goal>create</goal>
-                </goals>
-              </execution>
-            </executions>
-            <configuration>
-              <!-- Use committed revision so it does not change every time svn update is run -->
-              <useLastCommittedRevision>true</useLastCommittedRevision>
-              <!-- default revision number if unavailable -->
-              <revisionOnScmFailure>??????</revisionOnScmFailure>
-              <!-- svnjava works even if an svn command-line client is not on the path -->
-              <providerImplementations>
-                <svn>javasvn</svn>
-              </providerImplementations>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
 
     <profile>
       <!--
@@ -1787,23 +1754,6 @@
         </plugins>
       </build>
     </profile>
-    <!-- optional profile to use javasvn instead of the SVN CLI for the buildNumber plugin -->
-    <profile>
-      <id>javasvn</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>buildnumber-maven-plugin</artifactId>
-            <configuration>
-              <providerImplementations>
-                <svn>javasvn</svn>
-              </providerImplementations>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
     <!-- profile to allow the use of plugin versions that require Java 7 -->
     <profile>
       <id>jdk7-plugin-fix-version</id>
@@ -1827,25 +1777,6 @@
       </properties>
     </profile>
 
-    <profile>
-      <id>jdk9-compiler</id>
-      <activation>
-        <jdk>[9</jdk>
-      </activation>
-      <properties>
-        <!--
-          The "release" compiler property (available in JDK 9+) must be set in order to generate
-          binary-compatible artifacts for the target JVM. This flag sets the version of the platform
-          APIs to compile against, which is necessary when building with a later JDK but targeting
-          an earlier one. For example, a covariant return type was added to java.nio.ByteBuffer.rewind()
-          in Java 9. If the release property is not set when compiling with JDK 9 for Java 8, then the
-          Java 9 method will be referenced in the bytecode, causing a runtime error when running on 8.
-          See also https://issues.apache.org/jira/browse/MCOMPILER-534
-       -->
-        <maven.compiler.release>${commons.compiler.release}</maven.compiler.release>
-      </properties>
-    </profile>
-
     <!-- allow simple creation of the site without any optional reports -->
     <profile>
       <id>site-basic</id>
@@ -1862,13 +1793,23 @@
     </profile>
 
     <profile>
-      <id>moditect</id>
+      <id>java-9-up</id>
       <activation>
 		<jdk>[9,)</jdk>
 	  </activation>
       <properties>
         <moditect.java.version>9</moditect.java.version>
         <commons.moditect-maven-plugin.addServiceUses>true</commons.moditect-maven-plugin.addServiceUses>
+        <!--
+          The "release" compiler property (available in JDK 9+) must be set in order to generate
+          binary-compatible artifacts for the target JVM. This flag sets the version of the platform
+          APIs to compile against, which is necessary when building with a later JDK but targeting
+          an earlier one. For example, a covariant return type was added to java.nio.ByteBuffer.rewind()
+          in Java 9. If the release property is not set when compiling with JDK 9 for Java 8, then the
+          Java 9 method will be referenced in the bytecode, causing a runtime error when running on 8.
+          See also https://issues.apache.org/jira/browse/MCOMPILER-534
+        -->
+        <maven.compiler.release>${commons.compiler.release}</maven.compiler.release>
       </properties>
       <build>
 		<plugins>
@@ -1903,6 +1844,31 @@
           </plugin>
 		</plugins>
 	  </build>
+    </profile>
+
+    <profile>
+	  <!-- Java 11 and up -->
+      <id>java-11-up</id>
+      <activation>
+		<jdk>[11,)</jdk>
+	  </activation>
+      <properties>
+        <commons.checkstyle.version>10.12.4</commons.checkstyle.version>
+      </properties>
+    </profile>
+
+    <profile>
+	  <!-- Java 17 and up -->
+      <id>java-17-up</id>
+      <activation>
+		<jdk>[17,)</jdk>
+	  </activation>
+      <properties>
+		<!-- 
+		Wait until org.apache.felix:maven-bundle-plugin supports bndlib 7
+        <commons.biz.aQute.bndlib.version>7.0.0</commons.biz.aQute.bndlib.version>
+        -->
+      </properties>
     </profile>
 
   </profiles>

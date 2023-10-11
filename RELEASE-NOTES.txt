@@ -1,3 +1,36 @@
+              Apache Commons Parent 64
+                  RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 64.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Version 64: Maintenance and update dependencies
+
+Changes in this version include:
+
+New features:
+o                   Restore building on Java 8 (com.puppycrawl.tools:checkstyle 10.x requires Java 11). Thanks to Gary Gregory.
+o                   Rename profile 'moditect' to 'java-9-up'. Thanks to Gary Gregory.
+o                   Merge profile 'jdk9-compiler' into 'java-9-up' and remove 'jdk9-compiler'. Thanks to Gary Gregory.
+
+Changes:
+o                   Use Checkstyle 9.x on Java less than 11 and Checkstyle 10.x on Java 11 and up. Thanks to Gary Gregory.
+
+Removed:
+o                   Remove 'javasvn' profile. Thanks to Gary Gregory.
+o                   Remove '.svn'-activated profile. Thanks to Gary Gregory.
+o                   Remove 'jdk9-compiler.' profile. Thanks to Gary Gregory.
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+-----------------------------------------------------------------------------
+
               Apache Commons Parent 63
                   RELEASE NOTES
 
