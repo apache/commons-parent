@@ -62,6 +62,7 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
         <release version="65" date="202Y-MM-DD" description="Version 65: Maintenance and update dependencies">
            <action type="update" dev="ggregory" due-to="Dependabot">Bump com.github.spotbugs:spotbugs from 4.7.3 to 4.8.0 #317.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump org.jacoco:jacoco-maven-plugin from 0.8.10 to 0.8.11 #321.</action>
         </release>
         <release version="64" date="2023-10-06" description="Version 64: Maintenance and update dependencies">
            <!-- FIX -->
