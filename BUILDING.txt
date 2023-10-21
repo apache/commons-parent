@@ -80,8 +80,14 @@ Tidy and close Nexus staging area:
 - Open the bottom "Content" tab and navigate to the files
 - Delete *.asc.md5 and *.asc.sha1 if present
 - Checkout https://dist.apache.org/repos/dist/dev/commons/commons-parent
-- Download the -src archives, their sigs and hashes, then delete them from Nexus.
-- Commit the dist/dev/ folder
+- create and change to the appropriate subdir: <NN>-RCn
+- Download the -src archives, and their sigs, then delete them (and md5/sha1 hashes) from Nexus.
+  wget https://repository.apache.org/service/local/repositories/orgapachecommons-<NexusID>/content/org/apache/commons/commons-parent/<NN>/commons-parent-<NN>-src.zip
+  Likewise for .tar.gz and the corresponding .asc files
+  TODO: could/should these be fetched from target instead?
+- replace the md5 and sha1 hashes with sha512 hashes
+- copy RELEASE-NOTES.txt from the git release area
+- Commit the dist/dev/commons-parent/<NN>-RCn folder
 
 Close the staging area - Description: "Apache Commons Parent <NN> RC1"
 Screen does not auto-refresh - you need to press refresh

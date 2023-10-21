@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
    Licensed to the Apache Software Foundation (ASF) under one or more
@@ -23,19 +23,17 @@
   <parent>
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
-    <version>23</version>
+    <version>30</version>
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>53-SNAPSHOT</version>
+  <version>65-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Apache Commons Parent</name>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
-  <!--
-  To avoid propagation to components, do not define the inceptionYear here
+  <!-- Override inceptionYear in components, required by commons-build-plugin -->
   <inceptionYear>2006</inceptionYear>
-  -->
-  <url>https://commons.apache.org/commons-parent-pom.html</url>
+  <url>https://commons.apache.org/proper/commons-parent/</url>
 
   <!--
     In release 31, the maven.compile.* properties were corrected to maven.compiler.*
@@ -86,12 +84,28 @@
 
   -->
 
-
   <properties>
+    <!-- Minimum Maven version required by the plugins -->
+    <minimalMavenBuildVersion>3.6.3</minimalMavenBuildVersion>
+    <!-- Minimum Java version required by build -->
+    <minimalJavaBuildVersion>8</minimalJavaBuildVersion>
     <!-- configuration bits for cutting a release candidate, must be overridden by components -->
-    <commons.release.version>${project.version}</commons.release.version>
+    <!-- TODO How can we make project.build.outputTimestamp and changes.xml's release data the same? -->
+    <project.build.outputTimestamp>2023-10-09T17:15:16Z</project.build.outputTimestamp>
+    <commons.release.version>64</commons.release.version>
+    <commons.release.next>65</commons.release.next>
     <commons.rc.version>RC1</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
+    <!-- Commons Release Plugin -->
+    <!-- Previous version of the component (used for reporting binary compatibility check)-->
+    <commons.bc.version>63</commons.bc.version>
+    <commons.release.isDistModule>true</commons.release.isDistModule>
+    <!--
+      Define the following in ~/.m2/settings.xml in an active profile:
+      (or provide them on the command line)
+      commons.releaseManagerName
+      commons.releaseManagerKey
+    -->
 
     <!-- Default configuration for compiler source and target JVM -->
     <!-- Do NOT change this; it must remain as 1.3 -->
@@ -107,45 +121,50 @@
     <maven.compiler.source>1.3</maven.compiler.source>
     <maven.compiler.target>1.3</maven.compiler.target>
 
+    <!-- Java >= 9 -->
+    <commons.compiler.release>8</commons.compiler.release>
+
     <!-- compiler and surefire plugin settings for "java" profiles -->
     <commons.compiler.fork>false</commons.compiler.fork>
     <commons.compiler.compilerVersion />
     <commons.compiler.javac />
     <commons.compiler.javadoc />
 
+    <!-- https://issues.apache.org/jira/projects/MSOURCES/issues/MSOURCES-143 -->
+    <version.maven-source-plugin>3.2.1</version.maven-source-plugin>
+
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
-    <commons.animal-sniffer.version>1.20</commons.animal-sniffer.version>
-     <!-- 1.8 requires Java 8+ -->
+    <commons.animal-sniffer.version>1.23</commons.animal-sniffer.version>
     <!-- Almost all signatures use version 1.0. Allow override just in case -->
     <commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
-    <commons.assembly-plugin.version>3.3.0</commons.assembly-plugin.version>
-    <commons.build-helper.version>3.2.0</commons.build-helper.version>
-    <commons.build-plugin.version>1.12</commons.build-plugin.version>
+    <commons.assembly-plugin.version>3.6.0</commons.assembly-plugin.version>
+    <commons.build-helper.version>3.4.0</commons.build-helper.version>
+    <commons.build-plugin.version>1.13</commons.build-plugin.version>
     <commons.changes.version>2.12.1</commons.changes.version>
-    <commons.checkstyle-plugin.version>3.1.2</commons.checkstyle-plugin.version>
-    <commons.checkstyle.version>8.44</commons.checkstyle.version>
-    <commons.clirr.version>2.8</commons.clirr.version>
+    <commons.checkstyle-plugin.version>3.3.0</commons.checkstyle-plugin.version>
+    <commons.checkstyle.version>9.3</commons.checkstyle.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
-    <commons.compiler.version>3.8.1</commons.compiler.version>
-    <commons.coveralls.version>4.3.0</commons.coveralls.version>
-    <commons.coveralls.timestampFormat>EpochMillis</commons.coveralls.timestampFormat>
-    <commons.failsafe.version>2.22.2</commons.failsafe.version>
-    <commons.felix.version>5.1.2</commons.felix.version>
-    <commons.findbugs.version>3.0.5</commons.findbugs.version>
-    <commons.jacoco.version>0.8.7</commons.jacoco.version>
-    <commons.japicmp.version>0.15.3</commons.japicmp.version>
-    <commons.jar-plugin.version>3.2.0</commons.jar-plugin.version>
-    <commons.javadoc.version>3.3.0</commons.javadoc.version>
-    <commons.jdepend.version>2.0</commons.jdepend.version>
-    <commons.jxr.version>3.1.1</commons.jxr.version>
-    <commons.pmd.version>3.14.0</commons.pmd.version>
-    <commons.pmd-impl.version>6.36.0</commons.pmd-impl.version>
-    <commons.project-info.version>3.1.2</commons.project-info.version>
-    <commons.rat.version>0.13</commons.rat.version>
-    <commons.release-plugin.version>1.7</commons.release-plugin.version>
+    <commons.compiler.version>3.11.0</commons.compiler.version>
+    <commons.cyclonedx.version>2.7.9</commons.cyclonedx.version>
+    <commons.spdx.version>0.7.0</commons.spdx.version>
+    <commons.failsafe.version>3.1.2</commons.failsafe.version>
+    <commons.felix.version>5.1.9</commons.felix.version>
+    <commons.jacoco.version>0.8.11</commons.jacoco.version>
+    <commons.japicmp.version>0.18.2</commons.japicmp.version>
+    <commons.jar-plugin.version>3.3.0</commons.jar-plugin.version>
+    <commons.javadoc.version>3.6.0</commons.javadoc.version>
+    <commons.jxr.version>3.3.0</commons.jxr.version>
+    <commons.pmd.version>3.21.0</commons.pmd.version>
+    <commons.pmd-impl.version>6.55.0</commons.pmd-impl.version>
+    <commons.project-info.version>3.4.5</commons.project-info.version>
+    <commons.rat.version>0.15</commons.rat.version>
+    <commons.release-plugin.version>1.8.1</commons.release-plugin.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
-    <!-- requires Java 8 -->
-    <biz.aQute.bndlib.version>5.3.0</biz.aQute.bndlib.version>
+    <commons.buildnumber-plugin.version>3.2.0</commons.buildnumber-plugin.version>
+    <commons.moditect-maven-plugin.version>1.0.0.Final</commons.moditect-maven-plugin.version>
+    <commons.moditect-maven-plugin.addServiceUses>true</commons.moditect-maven-plugin.addServiceUses>
+    <commons.biz.aQute.bndlib.version>6.4.1</commons.biz.aQute.bndlib.version>
+    <commons.junit.version>5.10.0</commons.junit.version>
 
     <!--
       Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
@@ -182,18 +201,14 @@
 
     -->
     <!-- 
-    Warning: site-plugin 3.9.0 causes the following error:
-    An API incompatibility was encountered while executing
-     org.apache.maven.plugins:maven-site-plugin:3.9.0:site:
-     java.lang.NoSuchMethodError: org.codehaus.plexus.util.xml.Xpp3Dom.getInputLocation()Ljava/lang/Object;
+    Warning: maven-site-plugin 4.0.0-M3 requires an update to commons-skin site.vm for new variable names.
     -->
-    <commons.site-plugin.version>3.9.1</commons.site-plugin.version>
-    <commons.source-plugin.version>3.2.1</commons.source-plugin.version>
-    <commons.spotbugs.plugin.version>4.2.3</commons.spotbugs.plugin.version>
-    <commons.spotbugs.impl.version>4.3.0</commons.spotbugs.impl.version>
-    <commons.surefire-report.version>2.22.2</commons.surefire-report.version>
-    <commons.surefire.version>2.22.2</commons.surefire.version>
-    <commons.wagon-ssh.version>3.4.3</commons.wagon-ssh.version>
+    <commons.site-plugin.version>3.12.1</commons.site-plugin.version>
+    <commons.spotbugs.plugin.version>4.7.3.6</commons.spotbugs.plugin.version>
+    <commons.spotbugs.impl.version>4.8.0</commons.spotbugs.impl.version>
+    <commons.surefire-report.version>3.1.2</commons.surefire-report.version>
+    <commons.surefire.version>3.1.2</commons.surefire.version>
+    <commons.wagon-ssh.version>3.5.3</commons.wagon-ssh.version>
 
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
@@ -224,7 +239,7 @@
          - Use pool instead of pool2.
          - and so on...
     -->
-    <commons.componentid>${project.artifactId}</commons.componentid>
+    <commons.componentid>parent</commons.componentid>
 
     <!-- The package id is substring of the package name from o.a.commons.(.*)., for example:
          - Use dbcp2 instead of dbcp.
@@ -234,6 +249,9 @@
          - and so on...
     -->
     <commons.packageId>${project.artifactId}</commons.packageId>
+
+    <!-- JPMS -->
+    <commons.module.name>org.apache.commons.${commons.packageId}</commons.module.name>
 
     <!-- Configuration properties for the OSGi maven-bundle-plugin -->
     <commons.osgi.symbolicName>org.apache.commons.${commons.packageId}</commons.osgi.symbolicName>
@@ -265,7 +283,7 @@
     <!-- This is used by reporting plugins -->
     <project.reporting.outputEncoding>${commons.encoding}</project.reporting.outputEncoding>
 
-    <!-- Javadoc link to Java API. Default is Java 1.7; components can override to other versions -->
+    <!-- Javadoc link to Java API. Default is Java 8; components can override to other versions -->
     <commons.javadoc6.java.link>https://docs.oracle.com/javase/6/docs/api/</commons.javadoc6.java.link>
     <commons.javadoc7.java.link>https://docs.oracle.com/javase/7/docs/api/</commons.javadoc7.java.link>
     <commons.javadoc8.java.link>https://docs.oracle.com/javase/8/docs/api/</commons.javadoc8.java.link>
@@ -276,24 +294,26 @@
     <commons.javadoc13.java.link>https://docs.oracle.com/en/java/javase/13/docs/api/</commons.javadoc13.java.link>
     <commons.javadoc14.java.link>https://docs.oracle.com/en/java/javase/14/docs/api/</commons.javadoc14.java.link>
     <commons.javadoc15.java.link>https://docs.oracle.com/en/java/javase/15/docs/api/</commons.javadoc15.java.link>
+    <commons.javadoc16.java.link>https://docs.oracle.com/en/java/javase/16/docs/api/</commons.javadoc16.java.link>
+    <commons.javadoc17.java.link>https://docs.oracle.com/en/java/javase/17/docs/api/</commons.javadoc17.java.link>
+    <commons.javadoc18.java.link>https://docs.oracle.com/en/java/javase/18/docs/api/</commons.javadoc18.java.link>
+    <commons.javadoc19.java.link>https://docs.oracle.com/en/java/javase/19/docs/api/</commons.javadoc19.java.link>
+    <commons.javadoc20.java.link>https://docs.oracle.com/en/java/javase/20/docs/api/</commons.javadoc20.java.link>
 
-    <commons.javadoc.java.link>${commons.javadoc7.java.link}</commons.javadoc.java.link>
+    <commons.javadoc.java.link>${commons.javadoc8.java.link}</commons.javadoc.java.link>
 
     <commons.javadoc.javaee5.link>https://docs.oracle.com/javaee/5/api/</commons.javadoc.javaee5.link>
     <commons.javadoc.javaee6.link>https://docs.oracle.com/javaee/6/api/</commons.javadoc.javaee6.link>
     <commons.javadoc.javaee7.link>https://docs.oracle.com/javaee/7/api/</commons.javadoc.javaee7.link>
+    <commons.javadoc.javaee8.link>https://jakarta.ee/specifications/platform/8/apidocs/</commons.javadoc.javaee8.link>
+    <commons.javadoc.javaee9.link>https://jakarta.ee/specifications/platform/9/apidocs/</commons.javadoc.javaee9.link>
+    <commons.javadoc.javaee9.1.link>https://jakarta.ee/specifications/platform/9.1/apidocs/</commons.javadoc.javaee9.1.link>
+    <commons.javadoc.javaee10.link>https://jakarta.ee/specifications/platform/10/apidocs/</commons.javadoc.javaee10.link>
 
     <commons.javadoc.javaee.link>${commons.javadoc.javaee6.link}</commons.javadoc.javaee.link>
 
-    <!-- build meta inf -->
-    <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ssZ</maven.build.timestamp.format>
-    <implementation.build>${scmBranch}@r${buildNumber}; ${maven.build.timestamp}</implementation.build>
-
     <!-- Allow Clirr severity to be overriden by the command-line option -DminSeverity=level -->
     <minSeverity>info</minSeverity>
-
-    <!-- Control number of issues retrieved from JIRA with changes plugin -->
-    <commons.changes.maxEntries>100</commons.changes.maxEntries>
 
     <!-- Allow surefire-report aggregation to be easily configured for multi-module projects -->
     <commons.surefire-report.aggregate>false</commons.surefire-report.aggregate>
@@ -323,9 +343,7 @@
     <!-- Commons Release plugin: dist dev site -->
     <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
 
-    <!-- Commons Release plugin: release manager -->
-    <commons.releaseManagerName>${user.name}</commons.releaseManagerName>
-    <commons.releaseManagerKey>DEADBEEF</commons.releaseManagerKey>
+    <commons.conf.dir>src/conf</commons.conf.dir>
 
     <sonar.host.url>https://analysis.apache.org/</sonar.host.url>
 
@@ -413,9 +431,21 @@
   </issueManagement>
 
   <ciManagement>
-    <system>jenkins</system>
-    <url>https://builds.apache.org/</url>
+    <system>GitHub</system>
+    <url>https://github.com/apache/commons-parent/actions</url>
   </ciManagement>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>${commons.junit.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <build>
     <!-- TODO find a better way to add N&L files to jars and test jars
@@ -490,14 +520,16 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>${commons.javadoc.version}</version>
-          <configuration>
-            <!-- keep only errors and warnings -->
+          <configuration>            
+            <!-- Keep only errors and warnings -->
             <quiet>true</quiet>
             <source>${maven.compiler.source}</source>
             <javadocExecutable>${commons.compiler.javadoc}</javadocExecutable>
             <encoding>${commons.encoding}</encoding>
             <docencoding>${commons.docEncoding}</docencoding>
+            <!-- Prevent too many SCM changes -->
             <notimestamp>true</notimestamp>
+            <linksource>true</linksource>
             <links>
               <link>${commons.javadoc.java.link}</link>
               <link>${commons.javadoc.javaee.link}</link>
@@ -551,19 +583,6 @@
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-source-plugin</artifactId>
-          <version>${commons.source-plugin.version}</version>
-          <configuration>
-            <archive>
-              <manifest>
-                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-              </manifest>
-            </archive>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${commons.surefire.version}</version>
         </plugin>
@@ -588,7 +607,7 @@
             </oldVersion>
             <newVersion>
               <file>
-                <path>${project.build.directory}/${project.artifactId}-${project.version}.${project.packaging}</path>
+                <path>${project.build.directory}/${project.artifactId}-${project.version}.jar</path>
               </file>
             </newVersion>
             <parameter>
@@ -605,6 +624,13 @@
                   <compatibilityChange>METHOD_NEW_DEFAULT</compatibilityChange>
                   <binaryCompatible>true</binaryCompatible>
                   <sourceCompatible>true</sourceCompatible>
+                  <semanticVersionLevel>PATCH</semanticVersionLevel>
+                </overrideCompatibilityChangeParameter>
+                <!-- New interface methods must be default methods to maintain BC -->
+                <overrideCompatibilityChangeParameter>
+                  <compatibilityChange>METHOD_ADDED_TO_INTERFACE</compatibilityChange>
+                  <binaryCompatible>false</binaryCompatible>
+                  <sourceCompatible>false</sourceCompatible>
                   <semanticVersionLevel>PATCH</semanticVersionLevel>
                 </overrideCompatibilityChangeParameter>
               </overrideCompatibilityChangeParameters>
@@ -634,7 +660,7 @@
               <!-- Fixes https://github.com/bndtools/bnd/issues/3903 seen with Commons CSV. -->
               <groupId>biz.aQute.bnd</groupId>
               <artifactId>biz.aQute.bndlib</artifactId>
-              <version>${biz.aQute.bndlib.version}</version>
+              <version>${commons.biz.aQute.bndlib.version}</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -651,21 +677,13 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>buildnumber-maven-plugin</artifactId>
-          <version>1.4</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>clirr-maven-plugin</artifactId>
-          <version>${commons.clirr.version}</version>
-          <configuration>
-            <minSeverity>${minSeverity}</minSeverity>
-          </configuration>
+          <version>${commons.buildnumber-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>versions-maven-plugin</artifactId>
           <!-- Version 2.2 causes an NPE with Maven 3.3.9 -->
-          <version>2.8.1</version>
+          <version>2.16.1</version>
         </plugin>
         <plugin>
           <groupId>org.jacoco</groupId>
@@ -745,10 +763,11 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>${commons.project-info.version}</version>
           <dependencies>
+            <!-- Fix org.apache.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19 -->
             <dependency>
               <groupId>org.apache.bcel</groupId>
               <artifactId>bcel</artifactId>
-              <version>6.5.0</version>
+              <version>6.7.0</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -803,10 +822,59 @@
             </dependency>
           </dependencies>
         </plugin>
+        <plugin>
+          <groupId>org.cyclonedx</groupId>
+          <artifactId>cyclonedx-maven-plugin</artifactId>
+          <version>${commons.cyclonedx.version}</version>
+          <executions>
+            <execution>
+              <id>build-sbom-cyclonedx</id>
+              <phase>package</phase>
+              <goals>
+                <goal>makeAggregateBom</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <outputName>${project.artifactId}-${project.version}-bom</outputName>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.spdx</groupId>
+          <artifactId>spdx-maven-plugin</artifactId>
+          <version>${commons.spdx.version}</version>
+          <executions>
+            <execution>
+              <id>build-sbom-spdx</id>
+              <phase>package</phase>
+              <goals>
+                <goal>createSPDX</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>javancss-maven-plugin</artifactId>
+          <dependencies>
+            <!-- javancss 33.54 is used by default
+            <dependency>
+              <groupId>org.codehaus.javancss</groupId>
+              <artifactId>javancss</artifactId>
+              <version>33.54</version>
+            </dependency>
+            -->
+          </dependencies>
+          <configuration>
+            <excludes>
+              <!-- The latest javancss 33.54 in Maven Central fails on Java 8 sources and maybe even older Java versions -->
+              <exclude>**/*.java</exclude>
+          </excludes>          
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
-      <!-- org.apache.maven.plugins, alpha order by artifact id -->
       <plugin>
         <!-- Parent POM is released, so needs source archive for ASF mirrors -->
         <artifactId>maven-assembly-plugin</artifactId>
@@ -850,35 +918,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
       </plugin>
-      <!-- Unfortunately the much simpler
-        <prerequisites><maven>3.0</maven></prerequisites>
-        is not inherited so we have to use the enforcer plugin
-      -->
-      <plugin>
-        <inherited>true</inherited>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.0.0-M3</version>
-        <configuration>
-          <rules>
-            <requireMavenVersion>
-              <version>3.5.0</version>
-            </requireMavenVersion>
-            <requireJavaVersion>
-              <version>${maven.compiler.target}</version>
-            </requireJavaVersion>
-          </rules>
-          <fail>true</fail>
-        </configuration>
-        <executions>
-          <execution>
-            <id>enforce-maven-3</id>
-            <goals>
-              <goal>enforce</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
@@ -905,7 +944,6 @@
               <Implementation-Version>${project.version}</Implementation-Version>
               <Implementation-Vendor>${project.organization.name}</Implementation-Vendor>
               <Implementation-Vendor-Id>org.apache</Implementation-Vendor-Id>
-              <Implementation-Build>${implementation.build}</Implementation-Build>
               <X-Compile-Source-JDK>${maven.compiler.source}</X-Compile-Source-JDK>
               <X-Compile-Target-JDK>${maven.compiler.target}</X-Compile-Target-JDK>
             </manifestEntries>
@@ -914,6 +952,14 @@
       </plugin>
       <plugin>
         <artifactId>maven-source-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+              <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+            </manifest>
+          </archive>
+        </configuration>
         <executions>
           <execution>
             <id>create-source-jar</id>
@@ -927,6 +973,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
+        <version>${commons.surefire-report.version}</version>
         <configuration>
           <!--
             commons.surefire.java is normally empty.
@@ -994,12 +1041,15 @@
             <exclude>.fbprefs</exclude>
             <exclude>.pmd</exclude>
             <exclude>.asf.yaml</exclude>
+            <exclude>.gitattributes</exclude>
             <exclude>src/site/resources/download_*.cgi</exclude>
             <exclude>src/site/resources/profile.*</exclude>
             <exclude>profile.*</exclude>
             <!-- Exclude Eclipse local files and folders -->
             <exclude>maven-eclipse.xml</exclude>
             <exclude>.externalToolBuilders/**</exclude>
+            <!-- Visual Studio code files -->
+            <exclude>.vscode/**</exclude>
           </excludes>
         </configuration>
         <executions>
@@ -1053,6 +1103,14 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>versions-maven-plugin</artifactId>
       </plugin>
+      <plugin>
+        <groupId>org.cyclonedx</groupId>
+        <artifactId>cyclonedx-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.spdx</groupId>
+        <artifactId>spdx-maven-plugin</artifactId>
+      </plugin>
     </plugins>
   </build>
 
@@ -1093,22 +1151,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>${commons.javadoc.version}</version>
-        <configuration>
-          <!-- keep only errors and warnings -->
-          <quiet>true</quiet>
-          <source>${maven.compiler.source}</source>
-          <javadocExecutable>${commons.compiler.javadoc}</javadocExecutable>
-          <encoding>${commons.encoding}</encoding>
-          <docencoding>${commons.docEncoding}</docencoding>
-          <notimestamp>true</notimestamp>
-          <linksource>true</linksource>
-          <!-- prevent svnpub to be too much noisy -->
-          <notimestamp>true</notimestamp>
-          <links>
-            <link>${commons.javadoc.java.link}</link>
-            <link>${commons.javadoc.javaee.link}</link>
-          </links>
-        </configuration>
         <!-- Suppress test Javadocs -->
         <reportSets>
           <reportSet>
@@ -1199,58 +1241,22 @@
             <exclude>.fbprefs</exclude>
             <exclude>.pmd</exclude>
             <exclude>.asf.yaml</exclude>
+            <exclude>.gitattributes</exclude>
             <exclude>src/site/resources/download_*.cgi</exclude>
             <exclude>src/site/resources/profile.*</exclude>
             <exclude>profile.*</exclude>
             <!-- Exclude Eclipse local files and folders -->
             <exclude>maven-eclipse.xml</exclude>
             <exclude>.externalToolBuilders/**</exclude>
+            <!-- Visual Studio code files -->
+            <exclude>.vscode/**</exclude>
           </excludes>
         </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>jdepend-maven-plugin</artifactId>
-        <version>${commons.jdepend.version}</version>
       </plugin>
     </plugins>
   </reporting>
 
   <profiles>
-    <profile>
-      <id>svn</id>
-      <activation>
-        <file>
-          <exists>.svn</exists>
-        </file>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>buildnumber-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <phase>validate</phase>
-                <goals>
-                  <goal>create</goal>
-                </goals>
-              </execution>
-            </executions>
-            <configuration>
-              <!-- Use committed revision so it does not change every time svn update is run -->
-              <useLastCommittedRevision>true</useLastCommittedRevision>
-              <!-- default revision number if unavailable -->
-              <revisionOnScmFailure>??????</revisionOnScmFailure>
-              <!-- svnjava works even if an svn command-line client is not on the path -->
-              <providerImplementations>
-                <svn>javasvn</svn>
-              </providerImplementations>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
 
     <profile>
       <!--
@@ -1330,6 +1336,8 @@
     <profile>
       <id>animal-sniffer</id>
       <activation>
+		<!-- Don't use on Java >= 9, use the release flag instead -->
+        <jdk>(,9)</jdk>
         <!-- active unless the file is found -->
         <file>
           <missing>src/site/resources/profile.noanimal</missing>
@@ -1439,25 +1447,6 @@
       </reporting>
     </profile>
 
-    <profile>
-      <id>clirr</id>
-      <activation>
-        <file>
-          <exists>src/site/resources/profile.clirr</exists>
-        </file>
-      </activation>
-      <reporting>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>clirr-maven-plugin</artifactId>
-            <version>${commons.clirr.version}</version>
-          </plugin>
-        </plugins>
-      </reporting>
-    </profile>
-
-    <!-- alternative to clirr, will fail build if binary compatibility is broken -->
     <profile>
       <id>japicmp</id>
       <activation>
@@ -1641,83 +1630,6 @@
     </profile>
 
     <!--
-      Profile for running the build using JDK 1.3
-      (JAVA_1_3_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-    -->
-    <profile>
-      <id>java-1.3</id>
-      <properties>
-        <commons.compiler.fork>true</commons.compiler.fork>
-        <commons.compiler.compilerVersion>1.3</commons.compiler.compilerVersion>
-        <commons.compiler.javac>${JAVA_1_3_HOME}/bin/javac</commons.compiler.javac>
-        <commons.compiler.javadoc>${JAVA_1_3_HOME}/bin/javadoc</commons.compiler.javadoc>
-        <commons.surefire.java>${JAVA_1_3_HOME}/bin/java</commons.surefire.java>
-      </properties>
-    </profile>
-
-    <!--
-      Profile for running the build using JDK 1.4
-      (JAVA_1_4_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-    -->
-    <profile>
-      <id>java-1.4</id>
-      <properties>
-        <commons.compiler.fork>true</commons.compiler.fork>
-        <commons.compiler.compilerVersion>1.4</commons.compiler.compilerVersion>
-        <commons.compiler.javac>${JAVA_1_4_HOME}/bin/javac</commons.compiler.javac>
-        <commons.compiler.javadoc>${JAVA_1_4_HOME}/bin/javadoc</commons.compiler.javadoc>
-        <commons.surefire.java>${JAVA_1_4_HOME}/bin/java</commons.surefire.java>
-        <!-- later versions of surefire don't support Java 1.4 -->
-        <commons.surefire.version>2.11</commons.surefire.version>
-      </properties>
-    </profile>
-
-    <!--
-      Profile for running the build using JDK 1.5
-      (JAVA_1_5_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-    -->
-    <profile>
-      <id>java-1.5</id>
-      <properties>
-        <commons.compiler.fork>true</commons.compiler.fork>
-        <commons.compiler.compilerVersion>1.5</commons.compiler.compilerVersion>
-        <commons.compiler.javac>${JAVA_1_5_HOME}/bin/javac</commons.compiler.javac>
-        <commons.compiler.javadoc>${JAVA_1_5_HOME}/bin/javadoc</commons.compiler.javadoc>
-        <commons.surefire.java>${JAVA_1_5_HOME}/bin/java</commons.surefire.java>
-      </properties>
-    </profile>
-
-    <!--
-      Profile for running the build using JDK 1.6
-      (JAVA_1_6_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-    -->
-    <profile>
-      <id>java-1.6</id>
-      <properties>
-        <commons.compiler.fork>true</commons.compiler.fork>
-        <commons.compiler.compilerVersion>1.6</commons.compiler.compilerVersion>
-        <commons.compiler.javac>${JAVA_1_6_HOME}/bin/javac</commons.compiler.javac>
-        <commons.compiler.javadoc>${JAVA_1_6_HOME}/bin/javadoc</commons.compiler.javadoc>
-        <commons.surefire.java>${JAVA_1_6_HOME}/bin/java</commons.surefire.java>
-      </properties>
-    </profile>
-
-    <!--
-      Profile for running the build using JDK 7
-      (JAVA_1_7_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-    -->
-    <profile>
-      <id>java-1.7</id>
-      <properties>
-        <commons.compiler.fork>true</commons.compiler.fork>
-        <commons.compiler.compilerVersion>1.7</commons.compiler.compilerVersion>
-        <commons.compiler.javac>${JAVA_1_7_HOME}/bin/javac</commons.compiler.javac>
-        <commons.compiler.javadoc>${JAVA_1_7_HOME}/bin/javadoc</commons.compiler.javadoc>
-        <commons.surefire.java>${JAVA_1_7_HOME}/bin/java</commons.surefire.java>
-      </properties>
-    </profile>
-
-    <!--
       Profile for running the build using JDK 8
       (JAVA_1_8_HOME needs to be defined, e.g. in settings.xml or an environment variable)
     -->
@@ -1733,36 +1645,6 @@
     </profile>
 
     <!--
-      Profile for running the build using JDK 9
-      (JAVA_1_9_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-    -->
-    <profile>
-      <id>java-1.9</id>
-      <properties>
-        <commons.compiler.fork>true</commons.compiler.fork>
-        <commons.compiler.compilerVersion>1.9</commons.compiler.compilerVersion>
-        <commons.compiler.javac>${JAVA_1_9_HOME}/bin/javac</commons.compiler.javac>
-        <commons.compiler.javadoc>${JAVA_1_9_HOME}/bin/javadoc</commons.compiler.javadoc>
-        <commons.surefire.java>${JAVA_1_9_HOME}/bin/java</commons.surefire.java>
-      </properties>
-    </profile>
-
-    <!--
-      Profile for running the build using JDK 10
-      (JAVA_1_10_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-    -->
-    <profile>
-      <id>java-1.10</id>
-      <properties>
-        <commons.compiler.fork>true</commons.compiler.fork>
-        <commons.compiler.compilerVersion>1.10</commons.compiler.compilerVersion>
-        <commons.compiler.javac>${JAVA_1_10_HOME}/bin/javac</commons.compiler.javac>
-        <commons.compiler.javadoc>${JAVA_1_10_HOME}/bin/javadoc</commons.compiler.javadoc>
-        <commons.surefire.java>${JAVA_1_10_HOME}/bin/java</commons.surefire.java>
-      </properties>
-    </profile>
-
-    <!--
       Profile for running the build using JDK 11
       (JAVA_1_11_HOME needs to be defined, e.g. in settings.xml or an environment variable)
     -->
@@ -1774,36 +1656,6 @@
         <commons.compiler.javac>${JAVA_1_11_HOME}/bin/javac</commons.compiler.javac>
         <commons.compiler.javadoc>${JAVA_1_11_HOME}/bin/javadoc</commons.compiler.javadoc>
         <commons.surefire.java>${JAVA_1_11_HOME}/bin/java</commons.surefire.java>
-      </properties>
-    </profile>
-
-    <!--
-      Profile for running the build using JDK 12
-      (JAVA_1_12_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-    -->
-    <profile>
-      <id>java-1.12</id>
-      <properties>
-        <commons.compiler.fork>true</commons.compiler.fork>
-        <commons.compiler.compilerVersion>1.12</commons.compiler.compilerVersion>
-        <commons.compiler.javac>${JAVA_1_12_HOME}/bin/javac</commons.compiler.javac>
-        <commons.compiler.javadoc>${JAVA_1_12_HOME}/bin/javadoc</commons.compiler.javadoc>
-        <commons.surefire.java>${JAVA_1_12_HOME}/bin/java</commons.surefire.java>
-      </properties>
-    </profile>
-
-    <!--
-      Profile for running the build using JDK 13
-      (JAVA_1_13_HOME needs to be defined, e.g. in settings.xml or an environment variable)
-    -->
-    <profile>
-      <id>java-1.13</id>
-      <properties>
-        <commons.compiler.fork>true</commons.compiler.fork>
-        <commons.compiler.compilerVersion>1.13</commons.compiler.compilerVersion>
-        <commons.compiler.javac>${JAVA_1_13_HOME}/bin/javac</commons.compiler.javac>
-        <commons.compiler.javadoc>${JAVA_1_13_HOME}/bin/javadoc</commons.compiler.javadoc>
-        <commons.surefire.java>${JAVA_1_13_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
 
@@ -1902,23 +1754,6 @@
         </plugins>
       </build>
     </profile>
-    <!-- optional profile to use javasvn instead of the SVN CLI for the buildNumber plugin -->
-    <profile>
-      <id>javasvn</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>buildnumber-maven-plugin</artifactId>
-            <configuration>
-              <providerImplementations>
-                <svn>javasvn</svn>
-              </providerImplementations>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
     <!-- profile to allow the use of plugin versions that require Java 7 -->
     <profile>
       <id>jdk7-plugin-fix-version</id>
@@ -1926,10 +1761,19 @@
         <jdk>[1.7,1.8)</jdk>
       </activation>
       <properties>
-        <!-- Fix to build on JDK 7: version 4.0.0 requires Java 8. -->
         <commons.felix.version>3.5.1</commons.felix.version>
         <commons.animal-sniffer.version>1.17</commons.animal-sniffer.version>
-        <biz.aQute.bndlib.version>3.5.0</biz.aQute.bndlib.version>
+        <commons.biz.aQute.bndlib.version>3.5.0</commons.biz.aQute.bndlib.version>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>jdk8-plugin-fix-version</id>
+      <activation>
+        <jdk>[1.8,1.9)</jdk>
+      </activation>
+      <properties>
+        <commons.spdx.version>0.6.3</commons.spdx.version>
       </properties>
     </profile>
 
@@ -1940,11 +1784,8 @@
         <skipTests>true</skipTests>
         <maven.javadoc.skip>true</maven.javadoc.skip>
         <cobertura.skip>true</cobertura.skip>
-        <findbugs.skip>true</findbugs.skip>
         <spotbugs.skip>true</spotbugs.skip>
         <checkstyle.skip>true</checkstyle.skip>
-        <clirr.skip>true</clirr.skip>
-        <changes.jira.skip>true</changes.jira.skip>
         <rat.skip>true</rat.skip> <!-- from version 0.12 -->
         <jacoco.skip>true</jacoco.skip>
         <skipSurefireReport>true</skipSurefireReport>
@@ -1952,50 +1793,82 @@
     </profile>
 
     <profile>
-      <id>travis-cobertura</id>
+      <id>java-9-up</id>
+      <activation>
+		<jdk>[9,)</jdk>
+	  </activation>
+      <properties>
+        <moditect.java.version>9</moditect.java.version>
+        <commons.moditect-maven-plugin.addServiceUses>true</commons.moditect-maven-plugin.addServiceUses>
+        <!--
+          The "release" compiler property (available in JDK 9+) must be set in order to generate
+          binary-compatible artifacts for the target JVM. This flag sets the version of the platform
+          APIs to compile against, which is necessary when building with a later JDK but targeting
+          an earlier one. For example, a covariant return type was added to java.nio.ByteBuffer.rewind()
+          in Java 9. If the release property is not set when compiling with JDK 9 for Java 8, then the
+          Java 9 method will be referenced in the bytecode, causing a runtime error when running on 8.
+          See also https://issues.apache.org/jira/browse/MCOMPILER-534
+        -->
+        <maven.compiler.release>${commons.compiler.release}</maven.compiler.release>
+      </properties>
       <build>
-        <plugins>
+		<plugins>
           <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>cobertura-maven-plugin</artifactId>
-            <version>${commons.cobertura.version}</version>
-            <configuration>
-              <formats>
-                <format>xml</format>
-              </formats>
-            </configuration>
+            <groupId>org.moditect</groupId>
+            <artifactId>moditect-maven-plugin</artifactId>
+            <version>${commons.moditect-maven-plugin.version}</version>
+            <executions>
+              <execution>
+                <id>add-module-infos</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>add-module-info</goal>
+                </goals>
+                <configuration>
+                  <jvmVersion>${moditect.java.version}</jvmVersion>
+                  <jdepsExtraArgs>
+                    <arg>--multi-release=${moditect.java.version}</arg>
+                  </jdepsExtraArgs>
+                  <outputDirectory>${project.build.directory}</outputDirectory>
+                  <overwriteExistingFiles>true</overwriteExistingFiles>
+                  <failOnWarning>false</failOnWarning>
+                  <module>
+                    <moduleInfo>
+                      <name>${commons.module.name}</name>
+                      <addServiceUses>${commons.moditect-maven-plugin.addServiceUses}</addServiceUses>
+                    </moduleInfo>
+                  </module>
+                </configuration>
+              </execution>
+            </executions>
           </plugin>
-          <plugin>
-            <groupId>org.eluder.coveralls</groupId>
-            <artifactId>coveralls-maven-plugin</artifactId>
-            <version>${commons.coveralls.version}</version>
-            <configuration>
-              <timestampFormat>${commons.coveralls.timestampFormat}</timestampFormat>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
+		</plugins>
+	  </build>
     </profile>
 
     <profile>
-      <id>travis-jacoco</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-            <version>${commons.jacoco.version}</version>
-          </plugin>
-          <plugin>
-            <groupId>org.eluder.coveralls</groupId>
-            <artifactId>coveralls-maven-plugin</artifactId>
-            <version>${commons.coveralls.version}</version>
-            <configuration>
-              <timestampFormat>${commons.coveralls.timestampFormat}</timestampFormat>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
+	  <!-- Java 11 and up -->
+      <id>java-11-up</id>
+      <activation>
+		<jdk>[11,)</jdk>
+	  </activation>
+      <properties>
+        <commons.checkstyle.version>10.12.4</commons.checkstyle.version>
+      </properties>
+    </profile>
+
+    <profile>
+	  <!-- Java 17 and up -->
+      <id>java-17-up</id>
+      <activation>
+		<jdk>[17,)</jdk>
+	  </activation>
+      <properties>
+		<!-- 
+		Wait until org.apache.felix:maven-bundle-plugin supports bndlib 7
+        <commons.biz.aQute.bndlib.version>7.0.0</commons.biz.aQute.bndlib.version>
+        -->
+      </properties>
     </profile>
 
   </profiles>

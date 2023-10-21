@@ -13,4 +13,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-* text=auto
+github:
+  description: "Apache Commons Parent"
+  homepage: https://commons.apache.org/parent/
+
+notifications:
+    commits:      commits@commons.apache.org
+    issues:       issues@commons.apache.org
+    pullrequests: issues@commons.apache.org
+    jira_options: link label
+    jobs:         notifications@commons.apache.org
+    issues_bot_dependabot: notifications@commons.apache.org
+    pullrequests_bot_dependabot: notifications@commons.apache.org
+    issues_bot_codecov-commenter: notifications@commons.apache.org
+    pullrequests_bot_codecov-commenter: notifications@commons.apache.org
