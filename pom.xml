@@ -856,6 +856,7 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>javancss-maven-plugin</artifactId>
+          <version>2.1</version>
           <dependencies>
             <!-- javancss 33.54 is used by default
             <dependency>
