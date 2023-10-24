@@ -98,7 +98,7 @@
     <commons.jira.id>COMMONSSITE</commons.jira.id>
     <!-- Commons Release Plugin -->
     <!-- Previous version of the component (used for reporting binary compatibility check)-->
-    <commons.bc.version>63</commons.bc.version>
+    <commons.bc.version>64</commons.bc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
     <!--
       Define the following in ~/.m2/settings.xml in an active profile:
