@@ -974,7 +974,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>${commons.surefire-report.version}</version>
+        <version>${commons.surefire.version}</version>
         <configuration>
           <!--
             commons.surefire.java is normally empty.
