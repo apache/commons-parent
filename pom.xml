@@ -1496,9 +1496,6 @@
         <plugins>
           <plugin>
             <artifactId>maven-install-plugin</artifactId>
-            <configuration>
-              <createChecksum>true</createChecksum>
-            </configuration>
           </plugin>
           <plugin>
             <artifactId>maven-release-plugin</artifactId>
@@ -1611,9 +1608,6 @@
           </plugin>
           <plugin>
             <artifactId>maven-install-plugin</artifactId>
-            <configuration>
-              <createChecksum>true</createChecksum>
-            </configuration>
           </plugin>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
