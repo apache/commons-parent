@@ -74,6 +74,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-checkstyle-plugin from 3.3.0 to 3.3.1.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:javancss-maven-plugin from undefined to 2.1.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump cyclonedx-maven-plugin from 2.7.9 to 2.7.10.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-pmd-plugin from 3.21.0 to 3.21.2.</action>
         </release>
         <release version="64" date="2023-10-06" description="Version 64: Maintenance and update dependencies">
            <!-- FIX -->
