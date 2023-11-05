@@ -66,7 +66,7 @@ The <action> type attribute can be add,update,fix,remove.
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump com.github.spotbugs:spotbugs from 4.7.3 to 4.8.0 #317.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.jacoco:jacoco-maven-plugin from 0.8.10 to 0.8.11 #321.</action>
-           <action type="update" dev="ggregory" due-to="Dependabot">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.18.1 to 0.18.2 #320.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.18.1 to 0.18.3 #320.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-failsafe-plugin from 3.1.2 to 3.2.1.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-jxr-plugin from 3.3.0 to 3.3.1.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-plugin from 3.1.2 to 3.2.1.</action>
