@@ -82,6 +82,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-failsafe-plugin from 3.2.1 to 3.2.2.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-plugin from 3.2.1 to 3.2.2.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-report-plugin from 3.2.1 to 3.2.2.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache:apache from 30 to 31.</action>
         </release>
         <release version="64" date="2023-10-06" description="Version 64: Maintenance and update dependencies">
            <!-- FIX -->
