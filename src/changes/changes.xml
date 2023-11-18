@@ -61,6 +61,8 @@ The <action> type attribute can be add,update,fix,remove.
 
     <body>
         <release version="65" date="202Y-MM-DD" description="Version 65: Maintenance and update dependencies">
+           <!-- ADD -->
+           <action type="add" dev="ggregory">Add exec-maven-plugin to plugin management section.</action>
            <!-- FIX -->
            <action type="fix" dev="sebb">s/commons.surefire-report.version/commons.surefire.version/ incorrectly added in 714c3a9</action>
            <!-- UPDATE -->
