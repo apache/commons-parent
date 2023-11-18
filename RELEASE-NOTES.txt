@@ -1,3 +1,53 @@
+              Apache Commons Parent 65
+                  RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 65.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Version 65: Maintenance and update dependencies
+
+Changes in this version include:
+
+New features:
+o                   Add exec-maven-plugin to plugin management section.
+
+Fixed Bugs:
+o                   s/commons.surefire-report.version/commons.surefire.version/ incorrectly added in 714c3a9
+
+Changes:
+o                   Bump com.github.spotbugs:spotbugs from 4.7.3 to 4.8.1 #317. Thanks to Dependabot, Gary Gregory.
+o                   Bump org.jacoco:jacoco-maven-plugin from 0.8.10 to 0.8.11 #321. Thanks to Dependabot.
+o                   Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.18.1 to 0.18.3 #320. Thanks to Dependabot, Gary Gregory.
+o                   Bump maven-failsafe-plugin from 3.1.2 to 3.2.1. Thanks to Gary Gregory.
+o                   Bump maven-jxr-plugin from 3.3.0 to 3.3.1. Thanks to Gary Gregory.
+o                   Bump maven-surefire-plugin from 3.1.2 to 3.2.1. Thanks to Gary Gregory.
+o                   Bump maven-surefire-report-plugin from 3.1.2 to 3.2.1. Thanks to Gary Gregory.
+o                   Bump maven-checkstyle-plugin from 3.3.0 to 3.3.1. Thanks to Gary Gregory.
+o                   Bump org.codehaus.mojo:javancss-maven-plugin from undefined to 2.1. Thanks to Gary Gregory.
+o                   Bump cyclonedx-maven-plugin from 2.7.9 to 2.7.10. Thanks to Gary Gregory.
+o                   Bump maven-pmd-plugin from 3.21.0 to 3.21.2. Thanks to Gary Gregory.
+o                   Bump maven-javadoc-plugin from 3.6.0 to 3.6.2. Thanks to Gary Gregory.
+o                   Bump JUnit from 5.10.0 to 5.10.1. Thanks to Gary Gregory.
+o                   Bump org.moditect:moditect-maven-plugin from 1.0.0.Final to 1.1.0. Thanks to Gary Gregory.
+o                   Bump com.github.spotbugs:spotbugs-maven-plugin from 4.7.3.6 to 4.8.1.0. Thanks to Gary Gregory.
+o                   Bump maven-failsafe-plugin from 3.2.1 to 3.2.2. Thanks to Gary Gregory.
+o                   Bump maven-surefire-plugin from 3.2.1 to 3.2.2. Thanks to Gary Gregory.
+o                   Bump maven-surefire-report-plugin from 3.2.1 to 3.2.2. Thanks to Gary Gregory.
+o                   Bump org.apache:apache from 30 to 31. Thanks to Gary Gregory.
+o                   Bump com.puppycrawl.tools:checkstyle from 10.12.4 on 10.12.5 when on Java 11 and up. Thanks to Gary Gregory.
+o                   Bump org.codehaus.mojo:versions-maven-plugin from 2.16.1 to 2.16.2 #330. Thanks to Gary Gregory.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+-----------------------------------------------------------------------------
+
               Apache Commons Parent 64
                   RELEASE NOTES
 
