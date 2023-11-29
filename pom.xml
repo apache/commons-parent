@@ -368,7 +368,6 @@
       <post>user@commons.apache.org</post>
       <archive>https://mail-archives.apache.org/mod_mbox/commons-user/</archive>
       <otherArchives>
-        <otherArchive>https://markmail.org/list/org.apache.commons.users/</otherArchive>
         <otherArchive>https://www.mail-archive.com/user@commons.apache.org/</otherArchive>
       </otherArchives>
     </mailingList>
@@ -379,7 +378,6 @@
       <post>dev@commons.apache.org</post>
       <archive>https://mail-archives.apache.org/mod_mbox/commons-dev/</archive>
       <otherArchives>
-        <otherArchive>https://markmail.org/list/org.apache.commons.dev/</otherArchive>
         <otherArchive>https://www.mail-archive.com/dev@commons.apache.org/</otherArchive>
       </otherArchives>
     </mailingList>
@@ -389,7 +387,6 @@
       <unsubscribe>issues-unsubscribe@commons.apache.org</unsubscribe>
       <archive>https://mail-archives.apache.org/mod_mbox/commons-issues/</archive>
       <otherArchives>
-        <otherArchive>https://markmail.org/list/org.apache.commons.issues/</otherArchive>
         <otherArchive>https://www.mail-archive.com/issues@commons.apache.org/</otherArchive>
       </otherArchives>
     </mailingList>
@@ -399,7 +396,6 @@
       <unsubscribe>commits-unsubscribe@commons.apache.org</unsubscribe>
       <archive>https://mail-archives.apache.org/mod_mbox/commons-commits/</archive>
       <otherArchives>
-        <otherArchive>https://markmail.org/list/org.apache.commons.commits/</otherArchive>
         <otherArchive>https://www.mail-archive.com/commits@commons.apache.org/</otherArchive>
       </otherArchives>
     </mailingList>
@@ -409,7 +405,6 @@
       <unsubscribe>announce-unsubscribe@apache.org</unsubscribe>
       <archive>https://mail-archives.apache.org/mod_mbox/www-announce/</archive>
       <otherArchives>
-        <otherArchive>https://markmail.org/list/org.apache.announce/</otherArchive>
         <otherArchive>https://www.mail-archive.com/announce@apache.org/</otherArchive>
       </otherArchives>
     </mailingList>
