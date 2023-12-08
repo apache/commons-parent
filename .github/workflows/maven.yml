@@ -24,14 +24,13 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    continue-on-error: ${{ matrix.experimental }}
+    # we want to try all Java versions here.
+    continue-on-error: true
     strategy:
       matrix:
         java: [ 8, 11, 17, 21 ]
-        experimental: [false]
 #        include:
 #          - java: 22-ea
-#            experimental: true        
         
     steps:
     - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
