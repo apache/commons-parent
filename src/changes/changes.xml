@@ -74,7 +74,9 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.12.5 to 10.12.6 on Java 11 and up.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-failsafe-plugin from 3.2.2 to 3.2.3.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-plugin from 3.2.2 to 3.2.3.</action>
-           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-report-plugin from 3.2.2 to 3.2.3.</action>           
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-report-plugin from 3.2.2 to 3.2.3.</action>
+           <!-- UPDATE -->
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Drop Javadoc properties commons.javadocX.java.link for non-LTS Java versions.</action>
         </release>
         <release version="65" date="2023-11-17" description="Version 65: Maintenance and update dependencies">
            <!-- ADD -->
