@@ -300,6 +300,7 @@
     <commons.javadoc18.java.link>https://docs.oracle.com/en/java/javase/18/docs/api/</commons.javadoc18.java.link>
     <commons.javadoc19.java.link>https://docs.oracle.com/en/java/javase/19/docs/api/</commons.javadoc19.java.link>
     <commons.javadoc20.java.link>https://docs.oracle.com/en/java/javase/20/docs/api/</commons.javadoc20.java.link>
+    <commons.javadoc21.java.link>https://docs.oracle.com/en/java/javase/21/docs/api/</commons.javadoc21.java.link>
 
     <commons.javadoc.java.link>${commons.javadoc8.java.link}</commons.javadoc.java.link>
 
