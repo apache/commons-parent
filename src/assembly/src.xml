@@ -33,6 +33,14 @@ Licensed to the Apache Software Foundation (ASF) under one or more
         <include>NOTICE*</include>
         <include>RELEASE-NOTES.txt</include>
         <include>pom.xml</include>
+        <!--
+          Note:
+          The following files are deliberately not included in the archive:
+          CODE_OF_CONDUCT.md
+          COMPONENTS.md
+          CONTRIBUTING.md
+          SECURITY.md
+        -->
       </includes>
     </fileSet>
     <fileSet>
