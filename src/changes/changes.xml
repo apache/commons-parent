@@ -63,6 +63,7 @@ The <action> type attribute can be add,update,fix,remove.
         <release version="66" date="20YY-MM-DD" description="Version 66: Maintenance and update dependencies">
            <!-- ADD -->
            <action type="add" dev="ggregory">Add property commons.javadoc21.java.link.</action>
+           <action type="add" dev="ggregory">Add artifact:check-buildplan to the validate phase.</action>
            <!-- FIX -->
            <action type="fix" dev="sebb">Drop markmail from mailingList section</action>
            <!-- UPDATE -->
