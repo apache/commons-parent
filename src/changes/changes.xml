@@ -37,14 +37,12 @@ and commit
 
 The <action> type attribute can be add,update,fix,remove.
 -->
-
 <document xmlns="http://maven.apache.org/changes/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/xsd/changes-1.0.0.xsd">
     <properties>
         <title>Apache Commons Parent Release Notes</title>
         <author email="dev@commons.apache.org">Apache Commons developers</author>
     </properties>
-
     <!-- NOTE:
     The description below is specially formatted so as to improve the layout of the generated release notes:
     The parsing process removes all line feeds, replacing them with a single space.
@@ -58,7 +56,6 @@ The <action> type attribute can be add,update,fix,remove.
     N.B. The release notes template groups actions by type, and only extracts data for the current release.
     The changes report outputs actions in the order they appear in this file.
      -->
-
     <body>
         <release version="66" date="20YY-MM-DD" description="Version 66: Maintenance and update dependencies">
            <!-- ADD -->
