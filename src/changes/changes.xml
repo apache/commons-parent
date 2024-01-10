@@ -70,13 +70,14 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs from 4.8.1 to 4.8.3.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-javadoc-plugin from 3.6.2 to 3.6.3.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.12.5 to 10.12.6 on Java 11 and up.</action>
-           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-failsafe-plugin from 3.2.2 to 3.2.3.</action>
-           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-plugin from 3.2.2 to 3.2.3.</action>
-           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-report-plugin from 3.2.2 to 3.2.3.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-failsafe-plugin from 3.2.2 to 3.2.5.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-plugin from 3.2.2 to 3.2.5.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-report-plugin from 3.2.2 to 3.2.5.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.spdx:spdx-maven-plugin from 0.7.0 to 0.7.2.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-compiler-plugin from 3.11.0 to 3.12.1.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.12.6 to 10.12.7 on Java 11 and up.</action>
-           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.maven.plugins:maven-jxr-plugin from 3.3.1 to 3.3.2 #345.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.maven.plugins:maven-jxr-plugin from 3.3.1 to 3.3.2.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.rat:apache-rat-plugin from 0.15 to 0.16.</action>
            <!-- REMOVE -->
            <action type="update" dev="ggregory" due-to="Gary Gregory">Drop Javadoc properties commons.javadocX.java.link for non-LTS Java versions.</action>
         </release>
