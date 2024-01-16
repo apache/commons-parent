@@ -145,7 +145,7 @@
     <commons.checkstyle.version>9.3</commons.checkstyle.version>
     <commons.cobertura.version>2.7</commons.cobertura.version>
     <commons.compiler.version>3.12.1</commons.compiler.version>
-    <commons.cyclonedx.version>2.7.10</commons.cyclonedx.version>
+    <commons.cyclonedx.version>2.7.11</commons.cyclonedx.version>
     <commons.spdx.version>0.7.2</commons.spdx.version>
     <commons.failsafe.version>3.2.5</commons.failsafe.version>
     <commons.felix.version>5.1.9</commons.felix.version>
