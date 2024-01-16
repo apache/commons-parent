@@ -79,6 +79,8 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.maven.plugins:maven-jxr-plugin from 3.3.1 to 3.3.2.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.rat:apache-rat-plugin from 0.15 to 0.16.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.apache.bcel:bcel from 6.8.0 to 6.8.1 #350.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump org.cyclonedx:cyclonedx-maven-plugin from 2.7.10 to 2.7.11 #353.</action>
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.8.2.0 to 4.8.3.0 #354.</action>
            <!-- REMOVE -->
            <action type="update" dev="ggregory" due-to="Gary Gregory">Drop Javadoc properties commons.javadocX.java.link for non-LTS Java versions.</action>
         </release>
