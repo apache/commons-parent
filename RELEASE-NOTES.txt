@@ -1,11 +1,58 @@
-              Apache Commons Parent 65
-                  RELEASE NOTES
+Apache Commons Parent 66
+RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 66.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Version 66: Maintenance and update dependencies.
+
+Changes in this version include:
+
+New features:
+o                   Add property commons.javadoc21.java.link.
+o                   Add artifact:check-buildplan to the validate phase.
+
+Fixed Bugs:
+o                   Drop markmail from mailingList section
+
+Changes:
+o                   Bump maven-project-info-reports-plugin from 3.4.5 to 3.5.0. Thanks to Gary Gregory.
+o                   Bump org.codehaus.mojo:build-helper-maven-plugin from 3.4.0 to 3.5.0. Thanks to Gary Gregory.
+o                   Bump com.github.spotbugs:spotbugs-maven-plugin from 4.8.1.0 to 4.8.3.0. Thanks to Gary Gregory.
+o                   Bump com.github.spotbugs:spotbugs from 4.8.1 to 4.8.3. Thanks to Gary Gregory.
+o                   Bump maven-javadoc-plugin from 3.6.2 to 3.6.3. Thanks to Gary Gregory.
+o                   Bump com.puppycrawl.tools:checkstyle from 10.12.5 to 10.12.6 on Java 11 and up. Thanks to Gary Gregory.
+o                   Bump maven-failsafe-plugin from 3.2.2 to 3.2.5. Thanks to Gary Gregory.
+o                   Bump maven-surefire-plugin from 3.2.2 to 3.2.5. Thanks to Gary Gregory.
+o                   Bump maven-surefire-report-plugin from 3.2.2 to 3.2.5. Thanks to Gary Gregory.
+o                   Bump org.spdx:spdx-maven-plugin from 0.7.0 to 0.7.2. Thanks to Dependabot.
+o                   Bump maven-compiler-plugin from 3.11.0 to 3.12.1. Thanks to Gary Gregory.
+o                   Bump com.puppycrawl.tools:checkstyle from 10.12.6 to 10.13.0 on Java 11 and up. Thanks to Gary Gregory.
+o                   Bump org.apache.maven.plugins:maven-jxr-plugin from 3.3.1 to 3.3.2. Thanks to Gary Gregory.
+o                   Bump org.apache.rat:apache-rat-plugin from 0.15 to 0.16.1. Thanks to Gary Gregory.
+o                   Bump org.apache.bcel:bcel from 6.8.0 to 6.8.1. Thanks to Dependabot.
+o                   Bump org.cyclonedx:cyclonedx-maven-plugin from 2.7.10 to 2.7.11. Thanks to Dependabot.
+o                   Drop Javadoc properties commons.javadocX.java.link for non-LTS Java versions. Thanks to Gary Gregory.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+-----------------------------------------------------------------------------
+
+Apache Commons Parent 65
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 65.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 65: Maintenance and update dependencies
+Version 65: Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -48,14 +95,14 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 64
-                  RELEASE NOTES
+Apache Commons Parent 64
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 64.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 64: Maintenance and update dependencies
+Version 64: Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -81,14 +128,14 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 63
-                  RELEASE NOTES
+Apache Commons Parent 63
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 63.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 63: Maintenance and update dependencies
+Version 63: Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -114,14 +161,14 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 62
-                  RELEASE NOTES
+Apache Commons Parent 62
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 62.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 62: Maintenance and update dependencies
+Version 62: Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -138,14 +185,14 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 61
-                  RELEASE NOTES
+Apache Commons Parent 61
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 61.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 61: Maintenance and update dependencies
+Version 61: Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -162,14 +209,14 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 60
-                  RELEASE NOTES
+Apache Commons Parent 60
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 60.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 60: Maintenance and update dependencies
+Version 60: Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -203,14 +250,14 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 59
-                  RELEASE NOTES
+Apache Commons Parent 59
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 59.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 59: Maintenance and update dependencies
+Version 59: Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -242,14 +289,14 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 58
-                  RELEASE NOTES
+Apache Commons Parent 58
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 58.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 57: Maintenance and update dependencies
+Version 57: Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -273,14 +320,14 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 57
-                  RELEASE NOTES
+Apache Commons Parent 57
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 57.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 57: Maintenance and update dependencies
+Version 57: Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -323,14 +370,14 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 56
-                  RELEASE NOTES
+Apache Commons Parent 56
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 56.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 56: Maintenance and update dependencies
+Version 56: Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -352,14 +399,14 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 55
-                  RELEASE NOTES
+Apache Commons Parent 55
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 55.
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 55: Maintenance and update dependencies
+Version 55: Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -396,8 +443,8 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 54
-                  RELEASE NOTES
+Apache Commons Parent 54
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 54.
 
@@ -457,8 +504,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 53
-                  RELEASE NOTES
+Apache Commons Parent 53
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 53
 
@@ -527,8 +574,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 52
-                  RELEASE NOTES
+Apache Commons Parent 52
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 52.
 
@@ -562,8 +609,8 @@ Have fun!
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 51
-                  RELEASE NOTES
+Apache Commons Parent 51
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 51.
 
@@ -610,8 +657,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 50
-                  RELEASE NOTES
+Apache Commons Parent 50
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 50.
 
@@ -654,8 +701,8 @@ Have fun!
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 49
-                  RELEASE NOTES
+Apache Commons Parent 49
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 49.
 
@@ -709,8 +756,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 48
-                  RELEASE NOTES
+Apache Commons Parent 48
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the commons-parent-48 release!
 
@@ -765,8 +812,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 47
-                  RELEASE NOTES
+Apache Commons Parent 47
+RELEASE NOTES
 
 
 The Apache Commons Parent team is pleased to announce the commons-parent-47 release!
@@ -804,8 +851,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 46
-                  RELEASE NOTES
+Apache Commons Parent 46
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the commons-parent-46 release!
 
@@ -873,8 +920,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 45
-                  RELEASE NOTES
+Apache Commons Parent 45
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the commons-parent-45 release!
 
@@ -899,8 +946,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 44
-                  RELEASE NOTES
+Apache Commons Parent 44
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 44.
 
@@ -950,8 +997,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-              Apache Commons Parent 43
-                  RELEASE NOTES
+Apache Commons Parent 43
+RELEASE NOTES
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 43.
 

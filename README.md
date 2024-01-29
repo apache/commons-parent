@@ -44,10 +44,7 @@ Apache Commons Parent
 ===================
 
 [![Java CI](https://github.com/apache/commons-parent/actions/workflows/maven.yml/badge.svg)](https://github.com/apache/commons-parent/actions/workflows/maven.yml)
-[![Coverage Status](https://codecov.io/gh/apache/commons-parent/branch/master/graph/badge.svg)](https://app.codecov.io/gh/apache/commons-parent)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/?gav=true)
-[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/65.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/65)
-[![CodeQL](https://github.com/apache/commons-parent/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/apache/commons-parent/actions/workflows/codeql-analysis.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent)
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
@@ -69,7 +66,7 @@ Alternatively, you can pull it from  the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>65</version>
+  <version>66</version>
 </dependency>
 ```
 
@@ -111,7 +108,6 @@ Additional Resources
 + [Apache Issue Tracker (JIRA)](https://issues.apache.org/jira/browse/COMMONSSITE)
 + [Apache Commons Slack Channel](https://the-asf.slack.com/archives/C60NVB8AD)
 + [Apache Commons Twitter Account](https://twitter.com/ApacheCommons)
-+ `#apache-commons` IRC channel on `irc.freenode.org`
 
 Apache Commons Components
 -------------------------

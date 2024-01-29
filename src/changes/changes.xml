@@ -57,7 +57,7 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
-        <release version="66" date="20YY-MM-DD" description="Version 66: Maintenance and update dependencies">
+        <release version="66" date="2024-01-29" description="Version 66: Maintenance and update dependencies.">
            <!-- ADD -->
            <action type="add" dev="ggregory">Add property commons.javadoc21.java.link.</action>
            <action type="add" dev="ggregory">Add artifact:check-buildplan to the validate phase.</action>
@@ -83,7 +83,7 @@ The <action> type attribute can be add,update,fix,remove.
            <!-- REMOVE -->
            <action type="update" dev="ggregory" due-to="Gary Gregory">Drop Javadoc properties commons.javadocX.java.link for non-LTS Java versions.</action>
         </release>
-        <release version="65" date="2023-11-17" description="Version 65: Maintenance and update dependencies">
+        <release version="65" date="2023-11-17" description="Version 65: Maintenance and update dependencies.">
            <!-- ADD -->
            <action type="add" dev="ggregory">Add exec-maven-plugin to plugin management section.</action>
            <!-- FIX -->
@@ -111,7 +111,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.12.4 on 10.12.5 when on Java 11 and up.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:versions-maven-plugin from 2.16.1 to 2.16.2 #330.</action>
         </release>
-        <release version="64" date="2023-10-06" description="Version 64: Maintenance and update dependencies">
+        <release version="64" date="2023-10-06" description="Version 64: Maintenance and update dependencies.">
            <!-- FIX -->
            <action type="add" dev="ggregory" due-to="Gary Gregory">Restore building on Java 8 (com.puppycrawl.tools:checkstyle 10.x requires Java 11).</action>
            <action type="add" dev="ggregory" due-to="Gary Gregory">Rename profile 'moditect' to 'java-9-up'.</action>
@@ -124,7 +124,7 @@ The <action> type attribute can be add,update,fix,remove.
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Gary Gregory">Use Checkstyle 9.x on Java less than 11 and Checkstyle 10.x on Java 11 and up.</action>
         </release>
-        <release version="63" date="2023-10-02" description="Version 63: Maintenance and update dependencies">
+        <release version="63" date="2023-10-02" description="Version 63: Maintenance and update dependencies.">
            <!-- FIX -->
            <!-- ADD -->
            <action type="add" dev="ggregory" due-to="Dependabot">Add commons.conf.dir property defaulting to src/conf.</action>
@@ -137,20 +137,20 @@ The <action> type attribute can be add,update,fix,remove.
            <!--  REMOVE -->
            <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove obsolete Travis CI profiles.</action>
         </release>
-        <release version="62" date="2023-09-02" description="Version 62: Maintenance and update dependencies">
+        <release version="62" date="2023-09-02" description="Version 62: Maintenance and update dependencies.">
            <!-- FIX -->
            <action type="fix" dev="ggregory" due-to="Gary Gregory">Use addServiceUses when generating JPMS module info.</action>
            <!-- ADD -->
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions.</action>
         </release>
-        <release version="61" date="2023-08-26" description="Version 61: Maintenance and update dependencies">
+        <release version="61" date="2023-08-26" description="Version 61: Maintenance and update dependencies.">
            <!-- FIX -->
            <action type="fix" dev="ggregory" due-to="Gary Gregory">Always use version.maven-source-plugin 3.2.1 (workaround MSOURCES-143).</action>
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions.</action>
         </release>
-        <release version="60" date="2023-08-20" description="Version 60: Maintenance and update dependencies">
+        <release version="60" date="2023-08-20" description="Version 60: Maintenance and update dependencies.">
            <!-- FIX -->
            <action type="fix" dev="sjaranowski" due-to="Slawomir Jaranowski">Reuse the parent POM's maven-enforcer-plugin configuration</action>
            <action type="fix" dev="ggregory" due-to="Gary Gregory">Workaround MSOURCES-143 by using version.maven-source-plugin 3.2.1 on Java 8.</action>
@@ -170,7 +170,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.spdx:spdx-maven-plugin from 0.6.5 to 0.7.0.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions.</action>
         </release>
-        <release version="59" date="2023-07-22" description="Version 59: Maintenance and update dependencies">
+        <release version="59" date="2023-07-22" description="Version 59: Maintenance and update dependencies.">
            <!-- ADD -->
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add moditect profile for JPMS on Java >= 9.</action>
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add POM property commons.javadoc.javaee8.link.</action>
@@ -189,7 +189,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump commons-release-plugin from 1.8.0 to 1.8.1.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump commons-build-plugin from 1.12 to 1.13.</action>
         </release>
-        <release version="58" date="2023-05-20" description="Version 58: Maintenance and update dependencies">
+        <release version="58" date="2023-05-20" description="Version 58: Maintenance and update dependencies.">
            <!-- ADD -->
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add commons.javadoc20.java.link.</action>
            <!-- FIX -->           
@@ -200,7 +200,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump build-helper-maven-plugin from 3.3.0 to 3.4.0 #270.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump buildnumber-maven-plugin from 3.0.0 to 3.1.0 #271.</action>
         </release>
-        <release version="57" date="2023-04-22" description="Version 57: Maintenance and update dependencies">
+        <release version="57" date="2023-04-22" description="Version 57: Maintenance and update dependencies.">
            <!-- FIX -->           
            <action type="fix" dev="ggregory" due-to="Hervé Boutemy">Fix cyclonedx-maven-plugin configuration for multi-module projects.</action>
            <action type="fix" dev="ggregory" due-to="Hervé Boutemy">Drop non-reproducible Implementation-Build in jar #242.</action>
@@ -229,7 +229,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump jacoco-maven-plugin from 0.8.8 to 0.8.9 #256.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump animal-sniffer-maven-plugin from 1.22 to 1.23 #251.</action>
         </release>
-        <release version="56" date="2022-12-30" description="Version 56: Maintenance and update dependencies">
+        <release version="56" date="2022-12-30" description="Version 56: Maintenance and update dependencies.">
            <!-- FIX -->
            <action type="fix" dev="sebb">Add Privacy link to site.xml</action>
            <!-- UPDATE -->
@@ -237,7 +237,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump versions-maven-plugin from 2.13.0 to 2.14.2 #181, #187, #191.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump wagon-ssh from 3.5.2 to 3.5.3 #190.</action>
         </release>
-        <release version="55" date="2022-12-07" description="Version 55: Maintenance and update dependencies">
+        <release version="55" date="2022-12-07" description="Version 55: Maintenance and update dependencies.">
            <action type="update" dev="ggregory" due-to="Gary Gregory">Make CycloneDX work better with multi-module projects.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">New interface methods must be default methods to maintain BC.</action>
            <!--  ADD -->
