@@ -285,7 +285,7 @@
     <!-- This is used by reporting plugins -->
     <project.reporting.outputEncoding>${commons.encoding}</project.reporting.outputEncoding>
 
-    <!-- Javadoc link to Java API. Default is Java 8; components can override to other versions -->
+    <!-- Javadoc link to Java API LTS versions. Default is Java 8; components can override to other versions -->
     <commons.javadoc8.java.link>https://docs.oracle.com/javase/8/docs/api/</commons.javadoc8.java.link>
     <commons.javadoc11.java.link>https://docs.oracle.com/en/java/javase/11/docs/api/</commons.javadoc11.java.link>
     <commons.javadoc17.java.link>https://docs.oracle.com/en/java/javase/17/docs/api/</commons.javadoc17.java.link>
