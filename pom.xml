@@ -166,7 +166,7 @@
     <commons.moditect-maven-plugin.addServiceUses>true</commons.moditect-maven-plugin.addServiceUses>
     <!-- Warning: org.apache.felix:maven-bundle-plugin does not yet support bndlib 7 -->
     <commons.biz.aQute.bndlib.version>6.4.1</commons.biz.aQute.bndlib.version>
-    <commons.junit.version>5.10.1</commons.junit.version>
+    <commons.junit.version>5.10.2</commons.junit.version>
 
     <!--
       Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
