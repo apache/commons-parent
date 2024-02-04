@@ -58,6 +58,7 @@ The <action> type attribute can be add,update,fix,remove.
      -->
     <body>
         <release version="67" date="2024-MM-DD" description="Version 67: Maintenance and update dependencies.">
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump org.junit:junit-bom from 5.10.1 to 5.10.2.</action>
         </release>
         <release version="66" date="2024-01-29" description="Version 66: Maintenance and update dependencies.">
            <!-- ADD -->
