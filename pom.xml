@@ -206,8 +206,12 @@
     Warning: maven-site-plugin 4.0.0-M3 requires an update to commons-skin site.vm for new variable names.
     -->
     <commons.site-plugin.version>3.12.1</commons.site-plugin.version>
+
+    <!-- Spotbugs -->
     <commons.spotbugs.plugin.version>4.8.3.1</commons.spotbugs.plugin.version>
     <commons.spotbugs.impl.version>4.8.3</commons.spotbugs.impl.version>
+    <findsecbugs.version>1.13.0</findsecbugs.version>
+    
     <commons.surefire-report.version>3.2.5</commons.surefire-report.version>
     <commons.surefire.version>3.2.5</commons.surefire.version>
     <commons.wagon-ssh.version>3.5.3</commons.wagon-ssh.version>
@@ -785,6 +789,15 @@
               <version>${commons.spotbugs.impl.version}</version>
             </dependency>
           </dependencies>
+          <configuration>
+            <plugins>
+              <plugin>
+                <groupId>com.h3xstream.findsecbugs</groupId>
+                <artifactId>findsecbugs-plugin</artifactId>
+                <version>${findsecbugs.version}</version>
+              </plugin>
+            </plugins>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
