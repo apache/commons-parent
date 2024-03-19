@@ -46,7 +46,7 @@ Apache Commons Parent
 [![Java CI](https://github.com/apache/commons-parent/actions/workflows/maven.yml/badge.svg)](https://github.com/apache/commons-parent/actions/workflows/maven.yml)
 [![Coverage Status](https://codecov.io/gh/apache/commons-parent/branch/master/graph/badge.svg)](https://app.codecov.io/gh/apache/commons-parent)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/?gav=true)
-[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/67.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/67)
+[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/68.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/68)
 [![CodeQL](https://github.com/apache/commons-parent/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/apache/commons-parent/actions/workflows/codeql-analysis.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent)
 
@@ -69,7 +69,7 @@ Alternatively, you can pull it from  the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>67</version>
+  <version>68</version>
 </dependency>
 ```
 

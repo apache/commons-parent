@@ -1,3 +1,30 @@
+Apache Commons Parent 68
+RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 68.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Version 68: Maintenance and update dependencies
+
+Changes
+-------
+*                   Bump org.apache.maven.plugins:maven-assembly-plugin from 3.6.0 to 3.7.1 #378, #384. Thanks to Dependabot.
+*                   Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.18.5 to 0.20.0 #376. Thanks to Dependabot.
+*                   Bump com.puppycrawl.tools:checkstyle from 10.14.0 to 10.14.2 on Java 11 and up. Thanks to Gary Gregory.
+*                   Bump org.moditect:moditect-maven-plugin from 1.1.0 to 1.2.0.Final #379. Thanks to Dependabot, Gary Gregory.
+*                   Bump org.apache.maven.plugins:maven-compiler-plugin from 3.12.1 to 3.13.0 #385. Thanks to Dependabot, Gary Gregory.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+-----------------------------------------------------------------------------
+
 Apache Commons Parent 67
 RELEASE NOTES
 
