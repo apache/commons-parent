@@ -57,6 +57,9 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
+        <release version="69" date="YYYY-MM-DD" description="Version 68: Maintenance and update dependencies">
+           <!-- UPDATE -->
+        </release>
         <release version="68" date="2024-03-19" description="Version 68: Maintenance and update dependencies">
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.apache.maven.plugins:maven-assembly-plugin from 3.6.0 to 3.7.1 #378, #384.</action>
