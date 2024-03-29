@@ -59,6 +59,7 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
         <release version="69" date="YYYY-MM-DD" description="Version 68: Maintenance and update dependencies">
            <!-- UPDATE -->
+           <action type="update" dev="ggregory" due-to="Dependabot">Bump org.cyclonedx:cyclonedx-maven-plugin from 2.7.11 to 2.8.0 #389.</action>
         </release>
         <release version="68" date="2024-03-19" description="Version 68: Maintenance and update dependencies">
            <!-- UPDATE -->
