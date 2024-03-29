@@ -1,3 +1,26 @@
+Apache Commons Parent 69
+RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 69.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Version 69: Maintenance and update dependencies
+
+Changes
+-------
+*                   Bump org.cyclonedx:cyclonedx-maven-plugin from 2.7.11 to 2.8.0 #389. Thanks to Dependabot.
+*                   Bump org.moditect:moditect-maven-plugin from 1.2.0.Final to 1.2.1.Final #390. Thanks to Dependabot.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+-----------------------------------------------------------------------------
 Apache Commons Parent 68
 RELEASE NOTES
 

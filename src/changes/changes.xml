@@ -57,7 +57,7 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
-        <release version="69" date="YYYY-MM-DD" description="Version 68: Maintenance and update dependencies">
+        <release version="69" date="2024-03-29" description="Version 69: Maintenance and update dependencies">
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.cyclonedx:cyclonedx-maven-plugin from 2.7.11 to 2.8.0 #389.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.moditect:moditect-maven-plugin from 1.2.0.Final to 1.2.1.Final #390.</action>
