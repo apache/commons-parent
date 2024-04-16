@@ -285,13 +285,9 @@
     <!-- This is used by reporting plugins -->
     <project.reporting.outputEncoding>${commons.encoding}</project.reporting.outputEncoding>
 
-    <!-- Javadoc link to Java API LTS versions. Default is Java 8; components can override to other versions -->
-    <commons.javadoc8.java.link>https://docs.oracle.com/javase/8/docs/api/</commons.javadoc8.java.link>
-    <commons.javadoc11.java.link>https://docs.oracle.com/en/java/javase/11/docs/api/</commons.javadoc11.java.link>
-    <commons.javadoc17.java.link>https://docs.oracle.com/en/java/javase/17/docs/api/</commons.javadoc17.java.link>
-    <commons.javadoc21.java.link>https://docs.oracle.com/en/java/javase/21/docs/api/</commons.javadoc21.java.link>
-
-    <commons.javadoc.java.link>${commons.javadoc8.java.link}</commons.javadoc.java.link>
+    <!-- Javadoc link to Java API LTS versions. -->
+    <!-- Modern Javadoc versions redirect to newest site (Java 22) when you ask for older links like Java 8. -->
+    <commons.javadoc.java.link>https://docs.oracle.com/en/java/javase/21/docs/api/</commons.javadoc.java.link>
 
     <commons.javadoc.javaee5.link>https://docs.oracle.com/javaee/5/api/</commons.javadoc.javaee5.link>
     <commons.javadoc.javaee6.link>https://docs.oracle.com/javaee/6/api/</commons.javadoc.javaee6.link>

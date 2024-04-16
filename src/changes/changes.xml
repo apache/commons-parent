@@ -58,6 +58,8 @@ The <action> type attribute can be add,update,fix,remove.
      -->
     <body>
         <release version="70" date="YYYY-MM-DD" description="Version 70: Maintenance and update dependencies">
+           <!-- FIX -->
+           <action type="fix" dev="ggregory" due-to="Gary Gregory">Set Javadoc link to latest Java API LTS version.</action>
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.14.2 to 10.15.0 on Java 11 and up.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.jacoco:jacoco-maven-plugin from 0.8.11 to 0.8.12 #392.</action>
