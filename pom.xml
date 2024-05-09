@@ -194,7 +194,7 @@
     Warning: maven-site-plugin 4.0.0-M3 requires an update to commons-skin site.vm for new variable names.
     -->
     <commons.site-plugin.version>3.12.1</commons.site-plugin.version>
-    <commons.spotbugs.plugin.version>4.8.4.0</commons.spotbugs.plugin.version>
+    <commons.spotbugs.plugin.version>4.8.5.0</commons.spotbugs.plugin.version>
     <!-- Wait for Spotbugs 4.8.5 to fix https://github.com/spotbugs/spotbugs/issues/2967 --> 
     <commons.spotbugs.impl.version>4.8.3</commons.spotbugs.impl.version>
     <commons.surefire-report.version>3.2.5</commons.surefire-report.version>
