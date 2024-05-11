@@ -63,6 +63,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add JMH to dependency management section.</action>
            <!-- FIX -->
            <action type="fix" dev="ggregory" due-to="Gary Gregory">Set Javadoc link to latest Java API LTS version.</action>
+           <action type="fix" dev="ggregory" due-to="Gary Gregory">Set Jacoco defaults to 1.00.</action>
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.14.2 to 10.16.0 on Java 11 and up.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.jacoco:jacoco-maven-plugin from 0.8.11 to 0.8.12 #392.</action>

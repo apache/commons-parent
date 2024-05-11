@@ -213,14 +213,14 @@
     <commons.release.4.desc />
     <commons.release.4.binary.suffix>-bin</commons.release.4.binary.suffix>
 
-    <!-- Default values for the jacoco-maven-plugin reports -->
-    <commons.jacoco.classRatio>1.00</commons.jacoco.classRatio>
-    <commons.jacoco.instructionRatio>0.90</commons.jacoco.instructionRatio>
-    <commons.jacoco.methodRatio>0.95</commons.jacoco.methodRatio>
-    <commons.jacoco.branchRatio>0.85</commons.jacoco.branchRatio>
-    <commons.jacoco.complexityRatio>0.85</commons.jacoco.complexityRatio>
-    <commons.jacoco.lineRatio>0.90</commons.jacoco.lineRatio>
+    <!-- Default values for jacoco-maven-plugin -->
     <commons.jacoco.haltOnFailure>false</commons.jacoco.haltOnFailure>
+    <commons.jacoco.classRatio>1.00</commons.jacoco.classRatio>
+    <commons.jacoco.instructionRatio>1.00</commons.jacoco.instructionRatio>
+    <commons.jacoco.methodRatio>1.00</commons.jacoco.methodRatio>
+    <commons.jacoco.branchRatio>1.00</commons.jacoco.branchRatio>
+    <commons.jacoco.lineRatio>1.00</commons.jacoco.lineRatio>
+    <commons.jacoco.complexityRatio>1.00</commons.jacoco.complexityRatio>
 
     <!-- The Commons component id is used on the distribution server, for example:
          - Use dbcp instead of dbcp2.
