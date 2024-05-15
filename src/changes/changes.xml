@@ -57,7 +57,12 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
-        <release version="70" date="2024-05-11" description="Version 70: Maintenance and update dependencies">
+      <release version="71" date="YYYY-MM-DD" description="Version 71: Maintenance and update dependencies.">
+          <!-- FIX -->
+          <!-- ADD -->
+          <!-- UPDATE -->
+        </release>
+        <release version="70" date="2024-05-11" description="Version 70: Maintenance and update dependencies.">
            <!-- ADD -->
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add profile benchmark for JMH benchmarks.</action>
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add JMH to dependency management section.</action>
