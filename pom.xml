@@ -883,7 +883,7 @@
             </goals>
             <configuration>
               <target>
-                <copy todir="${project.build.directory}/apidocs/META-INF">
+                <copy todir="${project.build.directory}/site/apidocs/META-INF">
                   <fileset dir="${basedir}">
                     <include name="LICENSE.txt" />
                     <include name="NOTICE.txt" />
@@ -1511,6 +1511,7 @@
               </execution>
             </executions>
             <configuration>
+              <outputDirectory>${project.build.directory}/site/apidocs/</outputDirectory>
               <source>${maven.compiler.source}</source>
               <javadocExecutable>${commons.compiler.javadoc}</javadocExecutable>
             </configuration>
