@@ -504,6 +504,7 @@
               <link>${commons.javadoc.java.link}</link>
               <link>${commons.javadoc.javaee.link}</link>
             </links>
+            <additionalOptions>${commons.javadoc.options}</additionalOptions>
             <archive>
               <manifest>
                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
@@ -1832,6 +1833,16 @@
           </plugin>
 		</plugins>
 	  </build>
+    </profile>
+    <profile>
+      <!-- Java 11 only -->
+      <id>java-11</id>
+      <activation>
+        <jdk>11</jdk>
+      </activation>
+      <properties>
+        <commons.javadoc.options>--frames</commons.javadoc.options>
+      </properties>
     </profile>
     <profile>
 	  <!-- Java 11 and up -->
