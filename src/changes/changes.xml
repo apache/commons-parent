@@ -70,6 +70,7 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="update" dev="ggregory" due-to="Dependabot">Bump commons.pmd-impl.version from 7.1.0 to 7.2.0 #422.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump org.apache.maven.plugins:maven-javadoc-plugin from 3.6.3 to 3.7.0 #424.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump org.apache.maven.plugins:maven-checkstyle-plugin from 3.3.1 to 3.4.0 #425.</action>
+          <action type="update" dev="ggregory" due-to="Dependabot">Bump org.apache.maven.plugins:maven-checkstyle-plugin from 3.3.1 to 3.4.0 #425.</action>         
         </release>
         <release version="70" date="2024-05-11" description="Version 70: Maintenance and update dependencies.">
            <!-- ADD -->
