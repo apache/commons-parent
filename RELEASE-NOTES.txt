@@ -27,39 +27,6 @@ patches, or suggestions for improvement, see the Apache Commons Parent website:
 https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
-Apache Commons Parent 71
-RELEASE NOTES
-
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 71.
-
-The Apache Commons Parent POM provides common settings for all Apache Commons components.
-
-Version 71: Maintenance and update dependencies.
-
-Fixed Bugs
-----------
-*                   Generate the Javadoc with frames when building with JDK 11
-
-Changes
--------
-*                   Bump org.junit:junit-bom from 5.11.0-M1 to 5.11.0-M2 #419. Thanks to Dependabot.
-*                   Bump org.codehaus.mojo:build-helper-maven-plugin from 3.5.0 to 3.6.0 #418. Thanks to Dependabot.
-*                   Bump org.codehaus.mojo:exec-maven-plugin from 3.2.0 to 3.3.0 #417. Thanks to Dependabot.
-*                   Bump com.puppycrawl.tools:checkstyle from 10.16.0 to 10.17.0 on Java 11 and up. Thanks to Gary Gregory.
-*                   Bump commons.pmd-impl.version from 7.1.0 to 7.2.0 #422. Thanks to Dependabot.
-*                   Bump org.apache.maven.plugins:maven-javadoc-plugin from 3.6.3 to 3.7.0 #424. Thanks to Dependabot.
-*                   Bump org.apache.maven.plugins:maven-checkstyle-plugin from 3.3.1 to 3.4.0 #425. Thanks to Dependabot.
-*                   Bump org.apache.maven.plugins:maven-checkstyle-plugin from 3.3.1 to 3.4.0 #425. Thanks to Dependabot.
-
-
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
-
-For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
-patches, or suggestions for improvement, see the Apache Commons Parent website:
-
-https://commons.apache.org/proper/commons-parent/
-
------------------------------------------------------------------------------
 Apache Commons Parent 70
 RELEASE NOTES
 
