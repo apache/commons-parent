@@ -59,8 +59,8 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
       <release version="71" date="YYYY-MM-DD" description="Version 71: Maintenance and update dependencies.">
           <!-- FIX -->
-          <action type="fix" dev="ebourg">Generate the javadoc with frames when building with JDK 11</action>
-          <action type="fix" dev="ebourg">Build the javadoc only once during the release</action>
+          <action type="fix" dev="ebourg">Generate the Javadoc with frames when building with JDK 11</action>
+          <action type="fix" dev="ebourg">Build the Javadoc only once during the release</action>
           <!-- ADD -->
           <!-- UPDATE -->
           <action type="update" dev="ggregory" due-to="Dependabot">Bump org.junit:junit-bom from 5.11.0-M1 to 5.11.0-M2 #419.</action>
