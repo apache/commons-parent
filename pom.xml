@@ -1502,15 +1502,9 @@
             <artifactId>maven-javadoc-plugin</artifactId>
             <executions>
               <execution>
-                <id>generate-javadoc</id>
-                <goals>
-                  <goal>javadoc</goal>
-                </goals>
-                <phase>prepare-package</phase>
-              </execution>
-              <execution>
                 <id>create-javadoc-jar</id>
                 <goals>
+                  <goal>javadoc</goal>
                   <goal>jar</goal>
                 </goals>
                 <phase>package</phase>
@@ -1520,30 +1514,6 @@
               <source>${maven.compiler.source}</source>
               <javadocExecutable>${commons.compiler.javadoc}</javadocExecutable>
             </configuration>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-antrun-plugin</artifactId>
-            <!--
-              Showing javadoc frames is no longer the default with JDK 11, the index
-              page displays the overview without frames unless a query string is
-              appended to the URL. This hack ensures that the index page doesn't
-              load another page by default and remains on the framed view.
-            -->
-            <executions>
-              <execution>
-                <id>patch-javadoc</id>
-                <goals>
-                  <goal>run</goal>
-                </goals>
-                <phase>prepare-package</phase>
-                <configuration>
-                  <target>
-                    <replace file="${project.build.directory}/site/apidocs/index.html" token="    window.location.replace" value="    //window.location.replace" preserveLastModified="true"/>
-                  </target>
-                </configuration>
-              </execution>
-            </executions>
           </plugin>
           <plugin>
             <artifactId>maven-assembly-plugin</artifactId>
