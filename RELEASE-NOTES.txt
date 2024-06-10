@@ -73,6 +73,9 @@ patches, or suggestions for improvement, see the Apache Commons Parent website:
 
 https://commons.apache.org/proper/commons-parent/
 
+Enjoy!
+Apache Commons Team
+
 -----------------------------------------------------------------------------
 Apache Commons Parent 69
 RELEASE NOTES
