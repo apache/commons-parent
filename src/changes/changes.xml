@@ -61,6 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
+        <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-pmd-plugin from 3.22.0 to 3.23.0 #428.</action> 
       </release>
       <release version="71" date="2024-06-07" description="Version 71: Maintenance and update dependencies.">
           <!-- FIX -->
