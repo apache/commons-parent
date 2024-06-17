@@ -136,7 +136,7 @@
     <commons.compiler.version>3.13.0</commons.compiler.version>
     <commons.cyclonedx.version>2.8.0</commons.cyclonedx.version>
     <commons.spdx.version>0.7.3</commons.spdx.version>
-    <commons.failsafe.version>3.2.5</commons.failsafe.version>
+    <commons.failsafe.version>3.3.0</commons.failsafe.version>
     <commons.felix.version>5.1.9</commons.felix.version>
     <commons.jacoco.version>0.8.12</commons.jacoco.version>
     <commons.japicmp.version>0.21.2</commons.japicmp.version>
