@@ -57,7 +57,7 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
-      <release version="72" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
+      <release version="72" date="YYYY-MM-DD" description="Version 72: Maintenance and update dependencies.">
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
