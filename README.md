@@ -44,7 +44,6 @@ Apache Commons Parent
 ===================
 
 [![Java CI](https://github.com/apache/commons-parent/actions/workflows/maven.yml/badge.svg)](https://github.com/apache/commons-parent/actions/workflows/maven.yml)
-[![Coverage Status](https://codecov.io/gh/apache/commons-parent/branch/master/graph/badge.svg)](https://app.codecov.io/gh/apache/commons-parent)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/?gav=true)
 [![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/71.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/71)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent)
