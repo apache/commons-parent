@@ -47,7 +47,6 @@ Apache Commons Parent
 [![Coverage Status](https://codecov.io/gh/apache/commons-parent/branch/master/graph/badge.svg)](https://app.codecov.io/gh/apache/commons-parent)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/?gav=true)
 [![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/71.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/71)
-[![CodeQL](https://github.com/apache/commons-parent/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/apache/commons-parent/actions/workflows/codeql-analysis.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent)
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
