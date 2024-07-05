@@ -122,7 +122,7 @@
     <version.maven-source-plugin>3.2.1</version.maven-source-plugin>
 
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
-    <commons.animal-sniffer.version>1.23</commons.animal-sniffer.version>
+    <commons.animal-sniffer.version>1.24</commons.animal-sniffer.version>
     <!-- Almost all signatures use version 1.0. Allow override just in case -->
     <commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
     <commons.assembly-plugin.version>3.7.1</commons.assembly-plugin.version>
