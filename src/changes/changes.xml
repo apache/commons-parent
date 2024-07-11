@@ -64,7 +64,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache:apache from 32 to 33 #445.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-pmd-plugin from 3.22.0 to 3.23.0 #428.</action>
-        <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-failsafe-plugin from 3.2.5 to 3.3.0 #434.</action>
+        <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-failsafe-plugin from 3.2.5 to 3.3.1 #434, #443.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-project-info-reports-plugin from 3.5.0 to 3.6.0 #433.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-surefire-report-plugin from 3.2.5 to 3.3.1 #432, #444.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-surefire-plugin from 3.2.5 to 3.3.1 #431, #446.</action>
