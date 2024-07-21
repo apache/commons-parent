@@ -26,6 +26,7 @@ Changes
 *                   Bump org.moditect:moditect-maven-plugin from 1.2.1.Final to 1.2.2.Final #439. Thanks to Dependabot, Gary Gregory.
 *                   Bump org.codehaus.mojo:versions-maven-plugin from 2.16.2 to 2.17.1 #440, #451. Thanks to Dependabot, Gary Gregory.
 *                   Bump org.codehaus.mojo:animal-sniffer-maven-plugin from 1.23 to 1.24 #441. Thanks to Dependabot.
+*                   Bump org.apache.maven.plugins:maven-javadoc-plugin from 3.7.0 to 3.8.0 #452.. Thanks to Dependabot, Gary Gregory.
 
 
 Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
