@@ -80,13 +80,13 @@
     <!-- configuration bits for cutting a release candidate, must be overridden by components -->
     <!-- TODO How can we make project.build.outputTimestamp and changes.xml's release data the same? -->
     <project.build.outputTimestamp>2024-06-10T20:12:58Z</project.build.outputTimestamp>
-    <commons.release.version>71</commons.release.version>
-    <commons.release.next>72</commons.release.next>
+    <commons.release.version>72</commons.release.version>
+    <commons.release.next>73</commons.release.next>
     <commons.rc.version>RC1</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
     <!-- Commons Release Plugin -->
     <!-- Previous version of the component (used for reporting binary compatibility check)-->
-    <commons.bc.version>70</commons.bc.version>
+    <commons.bc.version>71</commons.bc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
     <!--
       Define the following in ~/.m2/settings.xml in an active profile:
