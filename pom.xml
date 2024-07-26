@@ -1840,16 +1840,6 @@
 	  </build>
     </profile>
     <profile>
-      <!-- Java 11 only -->
-      <id>java-11</id>
-      <activation>
-        <jdk>11</jdk>
-      </activation>
-      <properties>
-        <commons.javadoc.options>--frames</commons.javadoc.options>
-      </properties>
-    </profile>
-    <profile>
 	  <!-- Java 11 and up -->
       <id>java-11-up</id>
       <activation>
