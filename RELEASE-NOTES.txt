@@ -1,3 +1,34 @@
+Apache Commons Parent 73
+RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 73.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Version 73: Maintenance and update dependencies.
+
+Changes
+-------
+*                   Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.21.2 to 0.22.0 #453. Thanks to Dependabot, Gary Gregory.
+*                   Bump commons.pmd-impl.version from 7.3.0 to 7.4.0 #456. Thanks to Dependabot, Gary Gregory.
+*                   Bump org.apache.bcel:bcel from 6.9.0 to 6.10.0 #454. Thanks to Dependabot, Gary Gregory.
+*                   Bump org.junit:junit-bom from 5.11.0-M2 to 5.11.0 #457, #465. Thanks to Dependabot, Gary Gregory.
+*                   Bump org.cyclonedx:cyclonedx-maven-plugin from 2.8.0 to 2.8.1 #460. Thanks to Dependabot, Gary Gregory.
+*                   Bump org.codehaus.mojo:exec-maven-plugin from 3.3.0 to 3.4.1 #461, #466. Thanks to Dependabot, Gary Gregory.
+*                   Remove broken Maven profile for Java 11. Thanks to Gary Gregory.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+Enjoy!
+Apache Commons Team
+
+-----------------------------------------------------------------------------
 Apache Commons Parent 72
 RELEASE NOTES
 
