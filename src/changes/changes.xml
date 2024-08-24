@@ -63,11 +63,9 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-failsafe-plugin from 3.3.1 to 3.4.0 #468.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-surefire-plugin from 3.3.1 to 3.4.0 #469.</action>
-        <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-site-plugin from 3.12.1 to 3.20.0 #471.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-surefire-report-plugin from 3.3.1 to 3.4.0 #470.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.22.0 to 0.23.0 #472.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-jxr-plugin from 3.4.0 to 3.5.0 #473.</action>
-        <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-project-info-reports-plugin from 3.6.2 to 3.7.0 #474.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-checkstyle-plugin from 3.4.0 to 3.5.0 #475.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.spdx:spdx-maven-plugin from 0.7.3 to 0.7.4 #476; fixes https://github.com/spdx/Spdx-Java-Library/issues/247 Warning message for License list version.</action> 
       </release>
