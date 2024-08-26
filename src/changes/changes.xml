@@ -69,7 +69,8 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-jxr-plugin from 3.4.0 to 3.5.0 #473.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-project-info-reports-plugin from 3.6.2 to 3.7.0 #474.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-checkstyle-plugin from 3.4.0 to 3.5.0 #475.</action>
-        <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.spdx:spdx-maven-plugin from 0.7.3 to 0.7.4 #476; fixes https://github.com/spdx/Spdx-Java-Library/issues/247 Warning message for License list version.</action> 
+        <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.spdx:spdx-maven-plugin from 0.7.3 to 0.7.4 #476; fixes https://github.com/spdx/Spdx-Java-Library/issues/247 Warning message for License list version.</action>
+        <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump commons.checkstyle.version from 10.17.0 to 10.18.0 on Java 11 and up.</action> 
       </release>
       <release version="73" date="2024-08-15" description="Version 73: Maintenance and update dependencies.">
         <!-- FIX -->
