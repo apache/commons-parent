@@ -27,7 +27,7 @@
   </parent>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>74-SNAPSHOT</version>
+  <version>75-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Apache Commons Parent</name>
   <description>The Apache Commons Parent POM provides common settings for all Apache Commons components.</description>
@@ -79,7 +79,7 @@
     <minimalJavaBuildVersion>8</minimalJavaBuildVersion>
     <!-- configuration bits for cutting a release candidate, must be overridden by components -->
     <!-- TODO How can we make project.build.outputTimestamp and changes.xml's release data the same? -->
-    <project.build.outputTimestamp>2024-08-18T13:48:49Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2024-08-27T21:59:26Z</project.build.outputTimestamp>
     <commons.release.version>74</commons.release.version>
     <commons.release.next>75</commons.release.next>
     <commons.rc.version>RC1</commons.rc.version>
@@ -145,7 +145,8 @@
     <commons.jxr.version>3.5.0</commons.jxr.version>
     <commons.pmd.version>3.24.0</commons.pmd.version>
     <commons.pmd-impl.version>7.4.0</commons.pmd-impl.version>
-    <commons.project-info.version>3.7.0</commons.project-info.version>
+    <!-- maven-project-info-reports-plugin 3.7.0 is not compatible with 3.6.2 -->
+    <commons.project-info.version>3.6.2</commons.project-info.version>
     <commons.rat.version>0.16.1</commons.rat.version>
     <commons.release-plugin.version>1.8.2</commons.release-plugin.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
@@ -192,8 +193,9 @@
     -->
     <!-- 
     Warning: maven-site-plugin 4.0.0-M3 requires an update to commons-skin site.vm for new variable names.
+    Warning: maven-site-plugin 3.20.0 is not compatible with 3.12.1.
     -->
-    <commons.site-plugin.version>3.20.0</commons.site-plugin.version>
+    <commons.site-plugin.version>3.12.1</commons.site-plugin.version>
     <commons.spotbugs.plugin.version>4.8.6.2</commons.spotbugs.plugin.version>
     <commons.spotbugs.impl.version>4.8.6</commons.spotbugs.impl.version>
     <commons.surefire-report.version>3.4.0</commons.surefire-report.version>
