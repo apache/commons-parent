@@ -150,7 +150,7 @@
     <commons.rat.version>0.16.1</commons.rat.version>
     <commons.release-plugin.version>1.8.2</commons.release-plugin.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
-    <commons.buildnumber-plugin.version>3.2.0</commons.buildnumber-plugin.version>
+    <commons.buildnumber-plugin.version>3.2.1</commons.buildnumber-plugin.version>
     <commons.moditect-maven-plugin.version>1.2.2.Final</commons.moditect-maven-plugin.version>
     <commons.moditect-maven-plugin.addServiceUses>true</commons.moditect-maven-plugin.addServiceUses>
     <!-- Warning: org.apache.felix:maven-bundle-plugin does not yet support bndlib 7 -->
