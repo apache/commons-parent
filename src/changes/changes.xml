@@ -57,7 +57,7 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
-      <release version="75" date="YYYY-MM-DD" description="Version 75: Maintenance and update dependencies.">
+      <release version="75" date="2024-09-14" description="Version 75: Maintenance and update dependencies.">
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
