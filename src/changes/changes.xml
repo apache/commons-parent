@@ -61,6 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
+        <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump the default URL for Java EE Javadoc to EE8; also avoids Javadoc issuing redirect warnings.</action>
       </release>
       <release version="75" date="2024-09-14" description="Version 75: Maintenance and update dependencies.">
         <!-- FIX -->
