@@ -1,3 +1,30 @@
+Apache Commons Parent 76
+RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 76.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Version 76: Maintenance and update dependencies.
+
+Changes
+-------
+*                   Bump the default URL for Java EE Javadoc to EE8; also avoids Javadoc issuing redirect warnings. Thanks to Dependabot, Gary Gregory.
+*                   Bump com.github.spotbugs:spotbugs-maven-plugin from 4.8.6.3 to 4.8.6.4 #496. Thanks to Dependabot, Gary Gregory.
+*                   Bump org.junit:junit-bom from 5.11.0 to 5.11.1 #497. Thanks to Dependabot, Gary Gregory.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+Enjoy!
+Apache Commons Team
+
+-----------------------------------------------------------------------------
 Apache Commons Parent 75
 RELEASE NOTES
 
