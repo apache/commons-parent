@@ -144,7 +144,7 @@
     <commons.javadoc.version>3.10.0</commons.javadoc.version>
     <commons.jxr.version>3.5.0</commons.jxr.version>
     <commons.pmd.version>3.25.0</commons.pmd.version>
-    <commons.pmd-impl.version>7.5.0</commons.pmd-impl.version>
+    <commons.pmd-impl.version>7.6.0</commons.pmd-impl.version>
     <!-- maven-project-info-reports-plugin 3.7.0 is not compatible with 3.6.2 -->
     <commons.project-info.version>3.6.2</commons.project-info.version>
     <commons.rat.version>0.16.1</commons.rat.version>
