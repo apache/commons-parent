@@ -63,6 +63,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.cyclonedx:cyclonedx-maven-plugin from 2.8.1 to 2.8.2 #498.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump commons.pmd-impl.version from 7.5.0 to 7.6.0 #501.</action>
+        <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-javadoc-plugin from 3.10.0 to 3.10.1 #503.</action> 
       </release>
       <release version="76" date="2024-09-25" description="Version 76: Maintenance and update dependencies.">
         <!-- FIX -->
