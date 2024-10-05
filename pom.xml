@@ -1415,24 +1415,6 @@
     </profile>
 
     <profile>
-      <id>cobertura</id>
-      <activation>
-        <file>
-          <exists>src/site/resources/profile.cobertura</exists>
-        </file>
-      </activation>
-      <reporting>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>cobertura-maven-plugin</artifactId>
-            <version>${commons.cobertura.version}</version>
-          </plugin>
-        </plugins>
-      </reporting>
-    </profile>
-
-    <profile>
       <id>japicmp</id>
       <activation>
         <jdk>[1.8,)</jdk>
