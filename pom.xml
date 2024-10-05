@@ -192,6 +192,11 @@
     <!-- 
     Warning: maven-site-plugin 4.0.0-M3 requires an update to commons-skin site.vm for new variable names.
     Warning: maven-site-plugin 3.20.0 is not compatible with 3.12.1.
+    Trying to use
+      org.apache.maven.skins:maven-fluido-skin:2.0.0-M11 and 
+      org.apache.maven.plugins:maven-site-plugin:3.20.0
+    builds but scrambles the HTML output for the Changes and Jira report pages.
+    See also https://lists.apache.org/thread/pgj1gd75hx1dhq9spnl3c70xxt07corx
     -->
     <commons.site-plugin.version>3.12.1</commons.site-plugin.version>
     <commons.spotbugs.plugin.version>4.8.6.4</commons.spotbugs.plugin.version>
