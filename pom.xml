@@ -56,14 +56,13 @@
 
     Coverage tool selection
     =======================
-    Starting with release 30, there are optional profiles for both Cobertura and JaCoCo.
+    There is optional profiles for JaCoCo.
     These can be enabled independently on the command-line:
 
-    mvn site -Pcobertura -Pjacoco
+    mvn site -Pjacoco
 
     Or the component can define a default coverage tool by creating either (or both) of the following files:
 
-    src/site/resources/profile.cobertura
     src/site/resources/profile.jacoco
 
     These can later be overridden by cancelling the profile:
@@ -132,7 +131,6 @@
     <commons.checkstyle-plugin.version>3.5.0</commons.checkstyle-plugin.version>
     <!-- Checkstyle 9.3 is the version compatible with Java 8 -->
     <commons.checkstyle.version>9.3</commons.checkstyle.version>
-    <commons.cobertura.version>2.7</commons.cobertura.version>
     <commons.compiler.version>3.13.0</commons.compiler.version>
     <commons.cyclonedx.version>2.8.2</commons.cyclonedx.version>
     <commons.spdx.version>0.7.4</commons.spdx.version>
@@ -1761,7 +1759,6 @@
       <properties>
         <skipTests>true</skipTests>
         <maven.javadoc.skip>true</maven.javadoc.skip>
-        <cobertura.skip>true</cobertura.skip>
         <spotbugs.skip>true</spotbugs.skip>
         <checkstyle.skip>true</checkstyle.skip>
         <rat.skip>true</rat.skip> <!-- from version 0.12 -->
