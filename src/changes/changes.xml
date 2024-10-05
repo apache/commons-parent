@@ -59,6 +59,7 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
       <release version="77" date="YYYY-MM-DD" description="Version 77: Maintenance and update dependencies.">
         <!-- FIX -->
+        <action type="fix" dev="ggregory" due-to="Dependabot, Gary Gregory">Pin maven-pmd-plugin to 3.24.0, site compatibility is broken in 3.25.0.</action>
         <!-- ADD -->
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.cyclonedx:cyclonedx-maven-plugin from 2.8.1 to 2.8.2 #498.</action>
