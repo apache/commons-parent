@@ -57,7 +57,7 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
-      <release version="77" date="YYYY-MM-DD" description="Version 77: Maintenance and update dependencies.">
+      <release version="77" date="2024-10-05" description="Version 77: Maintenance and update dependencies.">
         <!-- FIX -->
         <action type="fix" dev="ggregory" due-to="Dependabot, Gary Gregory">Pin maven-pmd-plugin to 3.24.0, site compatibility is broken in 3.25.0.</action>
         <!-- ADD -->
