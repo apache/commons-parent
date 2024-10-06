@@ -28,9 +28,10 @@ jobs:
     continue-on-error: true
     strategy:
       matrix:
-        java: [ 8, 11, 17, 21 ]
-#        include:
-#          - java: 22-ea
+        java: [ 8, 11, 17, 21, 23 ]
+        include:
+            - java: 24-ea
+              experimental: true
         
     steps:
     - uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938 # 4.2.0
