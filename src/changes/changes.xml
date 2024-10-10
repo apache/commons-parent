@@ -61,11 +61,13 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- FIX -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Fix spotbugs:check on Java 24-ea.</action>
         <!-- ADD -->
+        <action type="add" dev="ggregory" due-to="Gary Gregory">Add property commons.asm.version with the value "9.7.1".</action>
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.maven.plugins:maven-failsafe-plugin from 3.5.0 to 3.5.1.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.maven.plugins:maven-surefire-plugin from 3.5.0 to 3.5.1.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.maven.plugins:maven-surefire-report-plugin from 3.5.0 to 3.5.1.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.ow2.asm:asm from 9.7.0 to 9.7.1.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.cyclonedx:cyclonedx-maven-plugin from 2.8.2 to 2.9.0 #511.</action>         
         <!-- REMOVE -->
       </release>
       <release version="77" date="2024-10-05" description="Version 77: Maintenance and update dependencies.">
