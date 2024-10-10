@@ -1705,7 +1705,6 @@
         </plugins>
       </build>
     </profile>
-
     <!--
       Automatically run the buildnumber plugin unless the buildNumber.skip property is defined as true
     -->
@@ -1754,7 +1753,6 @@
         <commons.biz.aQute.bndlib.version>3.5.0</commons.biz.aQute.bndlib.version>
       </properties>
     </profile>
-
     <profile>
       <id>jdk8-plugin-fix-version</id>
       <activation>
@@ -1764,7 +1762,6 @@
         <commons.spdx.version>0.6.3</commons.spdx.version>
       </properties>
     </profile>
-
     <!-- allow simple creation of the site without any optional reports -->
     <profile>
       <id>site-basic</id>
@@ -1778,28 +1775,27 @@
         <skipSurefireReport>true</skipSurefireReport>
       </properties>
     </profile>
-
     <profile>
       <id>java-9-up</id>
-      <activation>
-		<jdk>[9,)</jdk>
-	  </activation>
-      <properties>
-        <moditect.java.version>9</moditect.java.version>
-        <commons.moditect-maven-plugin.addServiceUses>true</commons.moditect-maven-plugin.addServiceUses>
-        <!--
-          The "release" compiler property (available in JDK 9+) must be set in order to generate
-          binary-compatible artifacts for the target JVM. This flag sets the version of the platform
-          APIs to compile against, which is necessary when building with a later JDK but targeting
-          an earlier one. For example, a covariant return type was added to java.nio.ByteBuffer.rewind()
-          in Java 9. If the release property is not set when compiling with JDK 9 for Java 8, then the
-          Java 9 method will be referenced in the bytecode, causing a runtime error when running on 8.
-          See also https://issues.apache.org/jira/browse/MCOMPILER-534
-        -->
-        <maven.compiler.release>${commons.compiler.release}</maven.compiler.release>
+        <activation>
+	        <jdk>[9,)</jdk>
+        </activation>
+        <properties>
+          <moditect.java.version>9</moditect.java.version>
+          <commons.moditect-maven-plugin.addServiceUses>true</commons.moditect-maven-plugin.addServiceUses>
+          <!--
+            The "release" compiler property (available in JDK 9+) must be set in order to generate
+            binary-compatible artifacts for the target JVM. This flag sets the version of the platform
+            APIs to compile against, which is necessary when building with a later JDK but targeting
+            an earlier one. For example, a covariant return type was added to java.nio.ByteBuffer.rewind()
+            in Java 9. If the release property is not set when compiling with JDK 9 for Java 8, then the
+            Java 9 method will be referenced in the bytecode, causing a runtime error when running on 8.
+            See also https://issues.apache.org/jira/browse/MCOMPILER-534
+          -->
+          <maven.compiler.release>${commons.compiler.release}</maven.compiler.release>
       </properties>
       <build>
-		<plugins>
+        <plugins>
           <plugin>
             <groupId>org.moditect</groupId>
             <artifactId>moditect-maven-plugin</artifactId>
@@ -1833,21 +1829,21 @@
 	  </build>
     </profile>
     <profile>
-	  <!-- Java 11 and up -->
+	    <!-- Java 11 and up -->
       <id>java-11-up</id>
       <activation>
-		<jdk>[11,)</jdk>
-	  </activation>
+	      <jdk>[11,)</jdk>
+      </activation>
       <properties>
         <commons.checkstyle.version>10.18.2</commons.checkstyle.version>
       </properties>
     </profile>
     <profile>
-	  <!-- Java 17 and up -->
+	    <!-- Java 17 and up -->
       <id>java-17-up</id>
       <activation>
-		<jdk>[17,)</jdk>
-	  </activation>
+		    <jdk>[17,)</jdk>
+	    </activation>
       <properties>
 		<!-- 
 		Wait until org.apache.felix:maven-bundle-plugin supports bndlib 7
