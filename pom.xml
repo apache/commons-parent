@@ -157,8 +157,7 @@
     <commons.junit.version>5.11.2</commons.junit.version>
     <commons.jmh.version>1.37</commons.jmh.version>
     <commons.asm.version>9.7.1</commons.asm.version>
-    <!-- https://github.com/mojohaus/taglist-maven-plugin/issues/165 -->
-    <commons.taglist.version>3.1.0</commons.taglist.version>
+    <commons.taglist.version>3.2.1</commons.taglist.version>
     <!--
       Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
 
