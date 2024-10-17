@@ -34,42 +34,6 @@ Enjoy!
 Apache Commons Team
 
 -----------------------------------------------------------------------------
-Apache Commons Parent 77
-RELEASE NOTES
-
-The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 77.
-
-The Apache Commons Parent POM provides common settings for all Apache Commons components.
-
-Version 77: Maintenance and update dependencies.
-
-Fixed Bugs
-----------
-*                   Pin maven-pmd-plugin to 3.24.0, site compatibility is broken in 3.25.0. Thanks to Dependabot, Gary Gregory.
-
-Changes
--------
-*                   Bump org.cyclonedx:cyclonedx-maven-plugin from 2.8.1 to 2.8.2 #498. Thanks to Dependabot, Gary Gregory.
-*                   Bump commons.pmd-impl.version from 7.5.0 to 7.6.0 #501. Thanks to Dependabot, Gary Gregory.
-*                   Bump org.apache.maven.plugins:maven-javadoc-plugin from 3.10.0 to 3.10.1 #503. Thanks to Dependabot, Gary Gregory.
-*                   Bump com.puppycrawl.tools:checkstyle from 10.18.1 to 10.18.2 on Java 11 and up. Thanks to Dependabot, Gary Gregory.
-*                   Bump org.junit:junit-bom from 5.11.1 to 5.11.2 #506. Thanks to Dependabot, Gary Gregory.
-
-Removed
--------
-*                   Remove "cobertura" profile, we use JaCoco, Cobertura is unmaintained. Thanks to Gary Gregory.
-
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
-
-For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
-patches, or suggestions for improvement, see the Apache Commons Parent website:
-
-https://commons.apache.org/proper/commons-parent/
-
-Enjoy!
-Apache Commons Team
-
------------------------------------------------------------------------------
 Apache Commons Parent 76
 RELEASE NOTES
 
@@ -728,8 +692,8 @@ Version 57: Maintenance and update dependencies.
 Changes in this version include:
 
 Fixed Bugs:
-o Fix cyclonedx-maven-plugin configuration for multi-module projects. Thanks to Hervé Boutemy.
-o Drop non-reproducible Implementation-Build in jar #242. Thanks to Hervé Boutemy.
+o Fix cyclonedx-maven-plugin configuration for multi-module projects. Thanks to HervÃ© Boutemy.
+o Drop non-reproducible Implementation-Build in jar #242. Thanks to HervÃ© Boutemy.
 o Use Java compiler release flag when compiling with Java >= 9.]. Thanks to Gary Gregory.
 
 Changes:
