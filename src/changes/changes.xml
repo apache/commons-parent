@@ -60,6 +60,7 @@ The <action> type attribute can be add,update,fix,remove.
       <release version="79" date="YYYY-MM-DD" description="Version 79: This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
         <!-- ADD -->
+        <action type="add" dev="ggregory" due-to="Gary Gregory">Add org.junit-pioneer:junit-pioneer to dependencyManagement.</action>
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.8.6.4 to 4.8.6.5 #518.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.junit:junit-bom from 5.11.2 to 5.11.3 #519.</action>
