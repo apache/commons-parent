@@ -126,7 +126,7 @@
     <commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
     <commons.assembly-plugin.version>3.7.1</commons.assembly-plugin.version>
     <commons.build-helper.version>3.6.0</commons.build-helper.version>
-    <commons.build-plugin.version>1.14.0</commons.build-plugin.version>
+    <commons.build-plugin.version>1.14.1</commons.build-plugin.version>
     <commons.changes.version>2.12.1</commons.changes.version>
     <commons.checkstyle-plugin.version>3.5.0</commons.checkstyle-plugin.version>
     <!-- Checkstyle 9.3 is the version compatible with Java 8 -->
