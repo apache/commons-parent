@@ -203,7 +203,7 @@
     See also https://lists.apache.org/thread/pgj1gd75hx1dhq9spnl3c70xxt07corx
     -->
     <commons.site-plugin.version>3.12.1</commons.site-plugin.version>
-    <commons.spotbugs.plugin.version>4.8.6.5</commons.spotbugs.plugin.version>
+    <commons.spotbugs.plugin.version>4.8.6.6</commons.spotbugs.plugin.version>
     <commons.spotbugs.impl.version>4.8.6</commons.spotbugs.impl.version>
     <commons.surefire-report.version>3.5.2</commons.surefire-report.version>
     <commons.surefire.version>3.5.2</commons.surefire.version>
