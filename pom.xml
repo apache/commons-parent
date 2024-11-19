@@ -492,6 +492,12 @@
             <!-- the following are only needed if fork is true -->
             <compilerVersion>${commons.compiler.compilerVersion}</compilerVersion>
             <executable>${commons.compiler.javac}</executable>
+            <compilerArgs>
+              <!-- Disable annotation processing during compile -->
+              <!-- Background: https://www.oracle.com/java/technologies/javase/23-relnote-issues.html#JDK-8321314 -->
+              <!-- Background: https://xdev.software/en/news/detail/discovering-the-perfect-java-supply-chain-attack-vector-and-how-it-got-fixed -->
+              <arg>-proc:none</arg>
+            </compilerArgs>
           </configuration>
         </plugin>
         <plugin>

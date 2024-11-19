@@ -59,6 +59,9 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
       <release version="79" date="YYYY-MM-DD" description="Version 79: This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">Disable annotation processing during compile.
+        Background: https://www.oracle.com/java/technologies/javase/23-relnote-issues.html#JDK-8321314
+        Background: https://xdev.software/en/news/detail/discovering-the-perfect-java-supply-chain-attack-vector-and-how-it-got-fixed</action>
         <!-- ADD -->
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add org.junit-pioneer:junit-pioneer to dependencyManagement.</action>
         <!-- UPDATE -->
