@@ -275,7 +275,7 @@
       the javadoc generator use the right encoding. Subprojects may
       overwrite this, if they are using another encoding.
     -->
-    <commons.encoding>iso-8859-1</commons.encoding>
+    <commons.encoding>UTF-8</commons.encoding>
     <!-- used in this pom to provide the Javadoc HTML file encoding -->
     <commons.docEncoding>${commons.encoding}</commons.docEncoding>
     <!-- Define source encoding for filtering; used by general plugins -->
