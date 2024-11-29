@@ -144,7 +144,7 @@
     <!-- Compatibility is broken starting with PMD plugin 3.25.0; see comment about maven-site-plugin. -->
     <!-- Version 3.26.0: java.lang.NoSuchMethodError: org.apache.maven.doxia.sink.Sink.verbatim()V -->
     <commons.pmd.version>3.24.0</commons.pmd.version>
-    <commons.pmd-impl.version>7.7.0</commons.pmd-impl.version>
+    <commons.pmd-impl.version>7.8.0</commons.pmd-impl.version>
     <!-- maven-project-info-reports-plugin 3.7.0 is not compatible with 3.6.2 -->
     <commons.project-info.version>3.6.2</commons.project-info.version>
     <commons.rat.version>0.16.1</commons.rat.version>
