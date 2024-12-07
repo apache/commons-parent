@@ -139,7 +139,7 @@
     <commons.jacoco.version>0.8.12</commons.jacoco.version>
     <commons.japicmp.version>0.23.0</commons.japicmp.version>
     <commons.jar-plugin.version>3.4.2</commons.jar-plugin.version>
-    <commons.javadoc.version>3.11.1</commons.javadoc.version>
+    <commons.javadoc.version>3.11.2</commons.javadoc.version>
     <commons.jxr.version>3.6.0</commons.jxr.version>
     <!-- Compatibility is broken starting with PMD plugin 3.25.0; see comment about maven-site-plugin. -->
     <!-- Version 3.26.0: java.lang.NoSuchMethodError: org.apache.maven.doxia.sink.Sink.verbatim()V -->
