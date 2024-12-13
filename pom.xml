@@ -130,7 +130,7 @@
     <commons.changes.version>2.12.1</commons.changes.version>
     <commons.checkstyle-plugin.version>3.6.0</commons.checkstyle-plugin.version>
     <!-- Checkstyle 9.3 is the version compatible with Java 8 -->
-    <commons.checkstyle.version>9.3</commons.checkstyle.version>
+    <commons.checkstyle.version>10.21.0</commons.checkstyle.version>
     <commons.compiler.version>3.13.0</commons.compiler.version>
     <commons.cyclonedx.version>2.9.1</commons.cyclonedx.version>
     <commons.spdx.version>0.7.4</commons.spdx.version>
