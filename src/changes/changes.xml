@@ -37,8 +37,8 @@ and commit
 
 The <action> type attribute can be add,update,fix,remove.
 -->
-<document xmlns="http://maven.apache.org/changes/1.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/xsd/changes-1.0.0.xsd">
+<document xmlns="http://maven.apache.org/changes/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/changes/2.0.0 http://maven.apache.org/xsd/changes-2.0.0.xsd">
     <properties>
         <title>Apache Commons Parent Release Notes</title>
         <author email="dev@commons.apache.org">Apache Commons developers</author>
@@ -67,6 +67,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add org.junit-pioneer:junit-pioneer to dependencyManagement.</action>
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add org.apache.maven.plugins:maven-changes-plugin to pluginManagement.</action>
         <!-- UPDATE -->
+        <action type="update" dev="sjaranowski" due-to="Slawomir Jaranowski">Update site skin and reports plugins with Doxia 2 stack</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.8.6.4 to 4.8.6.6 #518, #544.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.junit:junit-bom from 5.11.2 to 5.11.4 #519, #558.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.apache.maven.plugins:maven-artifact-plugin from 3.5.1 to 3.5.3 #522, #538.</action>
@@ -502,7 +503,7 @@ The <action> type attribute can be add,update,fix,remove.
           <!-- UPDATES -->
           <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump versions-maven-plugin from 2.7 to 2.10.0 #97, #101.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-project-info-reports-plugin from 3.1.0 to 3.2.2 #19, #41, #89, #103.</action>
-          <action type="update" dev="ggregory, Dependabot">Bump Jacoco from 0.8.5 to 0.8.7, #42.</action>
+          <action type="update" dev="ggregory" due-to="Dependabot">Bump Jacoco from 0.8.5 to 0.8.7, #42.</action>
           <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump actions/setup-java from v1.4.0 to v2, #18, #22.</action>
           <action type="update" dev="sebb">Bump commons-build-plugin 1.11 -> 1.12</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump biz.aQute.bndlib from 5.1.2 to 6.2.0, #23, #31, #64, #76.</action>

@@ -127,7 +127,7 @@
     <commons.assembly-plugin.version>3.7.1</commons.assembly-plugin.version>
     <commons.build-helper.version>3.6.0</commons.build-helper.version>
     <commons.build-plugin.version>1.14.1</commons.build-plugin.version>
-    <commons.changes.version>2.12.1</commons.changes.version>
+    <commons.changes.version>3.0.0-M1</commons.changes.version>
     <commons.checkstyle-plugin.version>3.6.0</commons.checkstyle-plugin.version>
     <!-- Checkstyle 9.3 is the version compatible with Java 8 -->
     <commons.checkstyle.version>9.3</commons.checkstyle.version>
@@ -141,12 +141,9 @@
     <commons.jar-plugin.version>3.4.2</commons.jar-plugin.version>
     <commons.javadoc.version>3.11.2</commons.javadoc.version>
     <commons.jxr.version>3.6.0</commons.jxr.version>
-    <!-- Compatibility is broken starting with PMD plugin 3.25.0; see comment about maven-site-plugin. -->
-    <!-- Version 3.26.0: java.lang.NoSuchMethodError: org.apache.maven.doxia.sink.Sink.verbatim()V -->
-    <commons.pmd.version>3.24.0</commons.pmd.version>
+    <commons.pmd.version>3.26.0</commons.pmd.version>
     <commons.pmd-impl.version>7.8.0</commons.pmd-impl.version>
-    <!-- maven-project-info-reports-plugin 3.7.0 is not compatible with 3.6.2 -->
-    <commons.project-info.version>3.6.2</commons.project-info.version>
+    <commons.project-info.version>3.8.0</commons.project-info.version>
     <commons.rat.version>0.16.1</commons.rat.version>
     <commons.release-plugin.version>1.8.3</commons.release-plugin.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
@@ -161,50 +158,7 @@
     <commons.jmh.version>1.37</commons.jmh.version>
     <commons.asm.version>9.7.1</commons.asm.version>
     <commons.taglist.version>3.2.1</commons.taglist.version>
-    <!--
-      Note: Maven site plugin 3.5.1 is the latest version but is not a direct replacement:
-
-      https://maven.apache.org/plugins/maven-site-plugin/migrate.html
-
-      In particular, adding CDATA to header and footer sections is not backwards compatible.
-      I.e. these have to be updated at the same time.
-
-      Also it causes the following errors:
-
-      [ERROR] Failed to execute goal org.apache.maven.plugins:maven-site-plugin:3.5.1:site (default-site) on project commons-parent:
-      Execution default-site of goal org.apache.maven.plugins:maven-site-plugin:3.5.1:site failed:
-      A required class was missing while executing org.apache.maven.plugins:maven-site-plugin:3.5.1:site: org/apache/maven/doxia/sink/impl/XhtmlBaseSink
-
-      This is because Apache POM 17 forces an older version of Doxia core:
-      https://mail-archives.apache.org/mod_mbox/maven-users/201602.mbox/%3C2337255.xU7aS9G1qr@herve-desktop%3E
-
-      The same error applies when running with version 3.5.
-
-      Since the version is defined as a property, the CP version can be overridden as follows if necessary:
-
-      mvn site -Dcommons.site-plugin.version=3.5.1
-
-      You will also need to add a dependency on Doxia core:
-      <artifactId>maven-site-plugin</artifactId>
-      <dependencies>
-      <dependency>
-      <groupId>org.apache.maven.doxia</groupId>
-      <artifactId>doxia-core</artifactId>
-      <version>1.8</version>
-      </dependency>
-      </dependencies>
-
-    -->
-    <!-- 
-    Warning: maven-site-plugin 4.0.0-M3 requires an update to commons-skin site.vm for new variable names.
-    Warning: maven-site-plugin 3.20.0 is not compatible with 3.12.1.
-    Trying to use
-      org.apache.maven.skins:maven-fluido-skin:2.0.0-M11 and 
-      org.apache.maven.plugins:maven-site-plugin:3.20.0
-    builds but scrambles the HTML output for the Changes and Jira report pages.
-    See also https://lists.apache.org/thread/pgj1gd75hx1dhq9spnl3c70xxt07corx
-    -->
-    <commons.site-plugin.version>3.12.1</commons.site-plugin.version>
+    <commons.site-plugin.version>3.21.0</commons.site-plugin.version>
     <commons.spotbugs.plugin.version>4.8.6.6</commons.spotbugs.plugin.version>
     <commons.spotbugs.impl.version>4.8.6</commons.spotbugs.impl.version>
     <commons.surefire-report.version>3.5.2</commons.surefire-report.version>
@@ -1152,8 +1106,6 @@
           <statusIds>Resolved,Closed</statusIds>
           <!-- Don't include sub-task -->
           <typeIds>Bug,New Feature,Task,Improvement,Wish,Test</typeIds>
-          <!-- For JIRA >= 5.1 -->
-          <useJql>true</useJql>
           <onlyCurrentVersion>${commons.changes.onlyCurrentVersion}</onlyCurrentVersion>
           <maxEntries>${commons.changes.maxEntries}</maxEntries>
           <runOnlyAtExecutionRoot>${commons.changes.runOnlyAtExecutionRoot}</runOnlyAtExecutionRoot>
@@ -1161,8 +1113,8 @@
         <reportSets>
           <reportSet>
             <reports>
-              <report>changes-report</report>
-              <report>jira-report</report>
+              <report>changes</report>
+              <report>jira-changes</report>
             </reports>
           </reportSet>
         </reportSets>
@@ -1221,19 +1173,6 @@
             </reports>
           </reportSet>
         </reportSets>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-site-plugin</artifactId>
-        <version>${commons.site-plugin.version}</version>
-        <configuration>
-          <!-- Exclude the navigation file for Maven 1 sites
-            and the changes file used by the changes-plugin,
-            as they interfere with the site generation. -->
-          <moduleExcludes>
-            <xdoc>navigation.xml,changes.xml</xdoc>
-          </moduleExcludes>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

@@ -18,12 +18,18 @@
 
 -->
 
-<project name="Apache Commons" xmlns="http://maven.apache.org/DECORATION/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/DECORATION/1.1.0 http://maven.apache.org/xsd/decoration-1.1.0.xsd">
+<site name="Apache Commons" xmlns="http://maven.apache.org/SITE/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SITE/2.0.0 http://maven.apache.org/xsd/site-2.0.0.xsd">
 
   <!-- All non-body elements are automatically inherited -->
 
-  <bannerLeft>
-    <name>Apache Commons</name>
+  <!--
+   ! Similarly href entries are converted before they are passed to the template.
+   ! In this case, we want the URL to remain absolute.
+   ! The work-round is to use a dummy suffix that is removed by the template.
+   ! This is due to be fixed in version 2.3 of the site plugin - see MSITE-159, MSHARED-189
+   ! Or use site:stage which does not convert these links ...
+   -->
+  <bannerLeft name="Apache Commons" href="https://commons.apache.org.remove.invalid/">
     <!--
      ! Even though the default site.vm template contains code to convert relative links, this is
      ! actually done before the content is passed to the template, for both site:site and site:stage.
@@ -34,16 +40,7 @@
      ! as part of the template processing.
      ! See MSITE-559
      -->
-    <src>http://dummy.invalid/$relativePath/images/commons-logo.png</src>
-    <alt>Apache Commons logo</alt>
-    <!--
-     ! Similarly href entries are converted before they are passed to the template.
-     ! In this case, we want the URL to remain absolute.
-     ! The work-round is to use a dummy suffix that is removed by the template.
-     ! This is due to be fixed in version 2.3 of the site plugin - see MSITE-159, MSHARED-189
-     ! Or use site:stage which does not convert these links ... 
-     -->
-    <href>https://commons.apache.org.remove.invalid/</href>
+    <image src="http://dummy.invalid/$relativePath/images/commons-logo.png" alt="Apache Commons logo"/>
   </bannerLeft>
 
   <publishDate format="dd MMMM yyyy" position="left" />
@@ -53,7 +50,7 @@
   <skin>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-skin</artifactId>
-    <version>4.2</version>
+    <version>5.0.0</version>
   </skin>
   <!-- 
     Trying to use
@@ -121,11 +118,13 @@
   <!-- inherited -->
   <poweredBy>
     <!-- Add ApacheCon logo -->
-    <logo name="ApacheCon" href="https://www.apache.org/events/current-event.html"
-          img="https://www.apache.org/events/current-event-125x125.png"/>
+    <logo name="ApacheCon" href="https://www.apache.org/events/current-event.html">
+      <image src="https://www.apache.org/events/current-event-125x125.png"/>
+    </logo>
     <!-- Keep the default logo as well -->
-    <logo name="Maven" href="https://maven.apache.org/"
-          img="https://maven.apache.org/images/logos/maven-feather.png"/>
+    <logo name="Maven" href="https://maven.apache.org/">
+      <image src="https://maven.apache.org/images/logos/maven-feather.png"/>
+    </logo>
   </poweredBy>
 
   <!-- inherited -->
@@ -139,4 +138,4 @@
     </footer>
   </custom>
 
-</project>
+</site>
