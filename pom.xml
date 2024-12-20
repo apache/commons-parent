@@ -891,6 +891,11 @@
           <artifactId>taglist-maven-plugin</artifactId>
           <version>${commons.taglist.version}</version>
         </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-changes-plugin</artifactId>
+          <version>${commons.changes.version}</version>
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
@@ -1137,7 +1142,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-changes-plugin</artifactId>
-        <version>${commons.changes.version}</version>
         <configuration>
           <xmlPath>${basedir}/src/changes/changes.xml</xmlPath>
           <columnNames>Fix Version,Key,Component,Summary,Type,Resolution,Status</columnNames>
@@ -1701,7 +1705,6 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-changes-plugin</artifactId>
-            <version>${commons.changes.version}</version>
             <configuration>
               <template>release-notes.vm</template>
               <templateDirectory>src/changes</templateDirectory>
