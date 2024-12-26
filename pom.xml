@@ -156,7 +156,8 @@
     <!-- Warning: org.apache.felix:maven-bundle-plugin does not yet support bndlib 7 -->
     <commons.biz.aQute.bndlib.version>6.4.1</commons.biz.aQute.bndlib.version>
     <commons.junit.version>5.11.4</commons.junit.version>
-    <commons.junit-pioneer.version>2.3.0</commons.junit-pioneer.version>
+    <!-- JUnit Pioneer 2 requires Java 11 -->
+    <commons.junit-pioneer.version>1.9.1</commons.junit-pioneer.version>
     <commons.jmh.version>1.37</commons.jmh.version>
     <commons.asm.version>9.7.1</commons.asm.version>
     <commons.taglist.version>3.2.1</commons.taglist.version>
