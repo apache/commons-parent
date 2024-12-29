@@ -62,12 +62,12 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="fix" dev="ggregory" due-to="Gary Gregory">Disable annotation processing during compile.
         Background: https://www.oracle.com/java/technologies/javase/23-relnote-issues.html#JDK-8321314
         Background: https://xdev.software/en/news/detail/discovering-the-perfect-java-supply-chain-attack-vector-and-how-it-got-fixed</action>
-        <action type="add" dev="ggregory" due-to="Gary Gregory">The property commons.encoding is now set to UTF-8, see also the Doxia 2 migration https://github.com/apache/commons-skin/pull/179.</action>
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">The property commons.encoding is now set to UTF-8, see also the Doxia 2 migration https://github.com/apache/commons-skin/pull/179.</action>
         <!-- ADD -->
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add org.junit-pioneer:junit-pioneer to dependencyManagement.</action>
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add org.apache.maven.plugins:maven-changes-plugin to pluginManagement.</action>
         <!-- UPDATE -->
-        <action type="update" dev="sjaranowski" due-to="Slawomir Jaranowski">Update site skin and reports plugins with Doxia 2 stack</action>
+        <action type="update" dev="sjaranowski" due-to="Slawomir Jaranowski">Update site skin and reports plugins with Doxia 2 stack.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.8.6.4 to 4.8.6.6 #518, #544.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.junit:junit-bom from 5.11.2 to 5.11.4 #519, #558.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.apache.maven.plugins:maven-artifact-plugin from 3.5.1 to 3.5.3 #522, #538.</action>
