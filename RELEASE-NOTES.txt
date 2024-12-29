@@ -1,3 +1,55 @@
+Apache Commons Parent 79
+RELEASE NOTES
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 79.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Version 79: This is a feature and maintenance release. Java 8 or later is required.
+
+New features
+------------
+*                   Add org.junit-pioneer:junit-pioneer to dependencyManagement. Thanks to Gary Gregory.
+*                   Add org.apache.maven.plugins:maven-changes-plugin to pluginManagement. Thanks to Gary Gregory.
+
+Fixed Bugs
+----------
+*                   Disable annotation processing during compile.
+                    Background: https://www.oracle.com/java/technologies/javase/23-relnote-issues.html#JDK-8321314
+                    Background: https://xdev.software/en/news/detail/discovering-the-perfect-java-supply-chain-attack-vector-and-how-it-got-fixed Thanks to Gary Gregory.
+*                   The property commons.encoding is now set to UTF-8, see also the Doxia 2 migration https://github.com/apache/commons-skin/pull/179. Thanks to Gary Gregory.
+
+Changes
+-------
+*                   Update site skin and reports plugins with Doxia 2 stack. Thanks to Slawomir Jaranowski.
+*                   Bump com.github.spotbugs:spotbugs-maven-plugin from 4.8.6.4 to 4.8.6.6 #518, #544. Thanks to Gary Gregory, Dependabot.
+*                   Bump org.junit:junit-bom from 5.11.2 to 5.11.4 #519, #558. Thanks to Gary Gregory, Dependabot.
+*                   Bump org.apache.maven.plugins:maven-artifact-plugin from 3.5.1 to 3.5.3 #522, #538. Thanks to Gary Gregory, Dependabot.
+*                   Bump org.codehaus.mojo:exec-maven-plugin from 3.4.1 to 3.5.0 #523. Thanks to Gary Gregory, Dependabot.
+*                   Bump commons.pmd-impl.version from 7.6.0 to 7.8.0 #524, #549. Thanks to Gary Gregory, Dependabot.
+*                   Bump com.puppycrawl.tools:checkstyle from 10.18.2 to 10.21.1 on Java 11 and up. Thanks to Gary Gregory, Dependabot.
+*                   Bump org.apache.maven.plugins:maven-javadoc-plugin from 3.10.1 to 3.11.2 #537, #555. Thanks to Gary Gregory, Dependabot.
+*                   Bump org.apache.maven.plugins:maven-surefire-report-plugin from 3.5.1 to 3.5.2 #535, #541. Thanks to Gary Gregory, Dependabot.
+*                   Bump org.apache.maven.plugins:maven-failsafe-plugin from 3.5.1 to 3.5.2 #539. Thanks to Gary Gregory, Dependabot.
+*                   Bump org.apache.commons:commons-release-plugin from 1.8.2 to 1.8.3 #540. Thanks to Gary Gregory, Dependabot.
+*                   Bump org.apache.commons:commons-build-plugin from 1.14.0 to 1.14.1 #542. Thanks to Gary Gregory, Dependabot.
+*                   Bump org.codehaus.mojo:versions-maven-plugin from 2.17.1 to 2.18.0 #543. Thanks to Gary Gregory, Dependabot.
+*                   Bump org.apache.maven.plugins:maven-checkstyle-plugin from 3.5.0 to 3.6.0. Thanks to Gary Gregory.
+*                   Bump org.apache.maven.plugins:maven-jxr-plugin from 3.5.0 to 3.6.0. Thanks to Gary Gregory.
+*                   Bump org.cyclonedx:cyclonedx-maven-plugin from 2.9.0 to 2.9.1 #550. Thanks to Gary Gregory, Dependabot.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+Enjoy!
+Apache Commons Team
+
+-----------------------------------------------------------------------------
 Apache Commons Parent 78
 RELEASE NOTES
 

@@ -44,8 +44,8 @@ Apache Commons Parent
 ===================
 
 [![Java CI](https://github.com/apache/commons-parent/actions/workflows/maven.yml/badge.svg)](https://github.com/apache/commons-parent/actions/workflows/maven.yml)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/badge.svg?gav=true)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-parent/?gav=true)
-[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/78.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/78)
+[![Maven Central](https://img.shields.io/maven-central/v/org.apache.commons/commons-parent?label=Maven%20Central)](https://search.maven.org/artifact/org.apache.commons/commons-parent)
+[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/79.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/79)
 [![CodeQL](https://github.com/apache/commons-parent/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/apache/commons-parent/actions/workflows/codeql-analysis.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent)
 
@@ -68,7 +68,7 @@ Alternatively, you can pull it from the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>78</version>
+  <version>79</version>
 </dependency>
 ```
 
