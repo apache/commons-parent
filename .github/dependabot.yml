@@ -20,6 +20,11 @@ updates:
     schedule:
       interval: "weekly"
       day: "friday"
+    ignore:
+      - dependency-name: "biz.aQute.bnd:biz.aQute.bndlib"
+        # org.apache.felix:maven-bundle-plugin does not yet support bndlib 7,
+        # and bndlib 7.1 requires Java 17
+        update-types: [ "sem-ver:major" ]
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:

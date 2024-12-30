@@ -139,7 +139,9 @@
     <commons.buildnumber-plugin.version>3.2.1</commons.buildnumber-plugin.version>
     <commons.moditect-maven-plugin.version>1.2.2.Final</commons.moditect-maven-plugin.version>
     <commons.moditect-maven-plugin.addServiceUses>true</commons.moditect-maven-plugin.addServiceUses>
-    <!-- Warning: org.apache.felix:maven-bundle-plugin does not yet support bndlib 7 -->
+    <!-- Warning: org.apache.felix:maven-bundle-plugin does not yet support bndlib 7,
+         and bndlib 7.1 requires Java 17
+    -->
     <commons.biz.aQute.bndlib.version>6.4.1</commons.biz.aQute.bndlib.version>
     <commons.junit.version>5.11.4</commons.junit.version>
     <!-- JUnit Pioneer 2 requires Java 11 -->
