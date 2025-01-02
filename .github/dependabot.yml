@@ -25,6 +25,10 @@ updates:
         # org.apache.felix:maven-bundle-plugin does not yet support bndlib 7,
         # and bndlib 7.1 requires Java 17
         update-types: [ "sem-ver:major" ]
+      - dependency-name: "org.mockito:mockito-core"
+        # Next major version (5.x) requires Java 11
+        # https://github.com/mockito/mockito/releases/tag/v5.0.0
+        update-types: [ "sem-ver:major" ]
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
