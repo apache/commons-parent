@@ -75,7 +75,7 @@
     <project.build.outputTimestamp>2024-12-29T20:07:42Z</project.build.outputTimestamp>
     <commons.release.version>79</commons.release.version>
     <commons.release.next>80</commons.release.next>
-    <commons.rc.version>RC1</commons.rc.version>
+    <commons.rc.version>RC2</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
     <!-- Commons Release Plugin -->
     <!-- Previous version of the component (used for reporting binary compatibility check)-->
@@ -116,7 +116,7 @@
     <commons.assembly-plugin.version>3.7.1</commons.assembly-plugin.version>
     <commons.build-helper.version>3.6.0</commons.build-helper.version>
     <commons.build-plugin.version>1.14.1</commons.build-plugin.version>
-    <commons.changes.version>3.0.0-M1</commons.changes.version>
+    <commons.changes.version>3.0.0-M2</commons.changes.version>
     <commons.checkstyle-plugin.version>3.6.0</commons.checkstyle-plugin.version>
     <!-- Checkstyle 9.3 is the version compatible with Java 8 -->
     <commons.checkstyle.version>9.3</commons.checkstyle.version>
@@ -131,7 +131,7 @@
     <commons.javadoc.version>3.11.2</commons.javadoc.version>
     <commons.jxr.version>3.6.0</commons.jxr.version>
     <commons.pmd.version>3.26.0</commons.pmd.version>
-    <commons.pmd-impl.version>7.8.0</commons.pmd-impl.version>
+    <commons.pmd-impl.version>7.9.0</commons.pmd-impl.version>
     <commons.project-info.version>3.8.0</commons.project-info.version>
     <commons.rat.version>0.16.1</commons.rat.version>
     <commons.release-plugin.version>1.8.3</commons.release-plugin.version>
@@ -139,11 +139,14 @@
     <commons.buildnumber-plugin.version>3.2.1</commons.buildnumber-plugin.version>
     <commons.moditect-maven-plugin.version>1.2.2.Final</commons.moditect-maven-plugin.version>
     <commons.moditect-maven-plugin.addServiceUses>true</commons.moditect-maven-plugin.addServiceUses>
-    <!-- Warning: org.apache.felix:maven-bundle-plugin does not yet support bndlib 7 -->
+    <!-- Warning: org.apache.felix:maven-bundle-plugin does not yet support bndlib 7,
+         and bndlib 7.1 requires Java 17
+    -->
     <commons.biz.aQute.bndlib.version>6.4.1</commons.biz.aQute.bndlib.version>
     <commons.junit.version>5.11.4</commons.junit.version>
     <!-- JUnit Pioneer 2 requires Java 11 -->
     <commons.junit-pioneer.version>1.9.1</commons.junit-pioneer.version>
+    <commons.mockito.version>4.11.0</commons.mockito.version>
     <commons.jmh.version>1.37</commons.jmh.version>
     <commons.asm.version>9.7.1</commons.asm.version>
     <commons.taglist.version>3.2.1</commons.taglist.version>
@@ -346,6 +349,12 @@
         <groupId>org.junit-pioneer</groupId>
         <artifactId>junit-pioneer</artifactId>
         <version>${commons.junit-pioneer.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockit-core</artifactId>
+        <version>${commons.mockito.version}</version>
+        <scope>test</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
