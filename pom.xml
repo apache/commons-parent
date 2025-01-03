@@ -993,8 +993,6 @@
             <exclude>.asf.yaml</exclude>
             <exclude>.gitattributes</exclude>
             <exclude>src/site/resources/download_*.cgi</exclude>
-            <exclude>src/site/resources/profile.*</exclude>
-            <exclude>profile.*</exclude>
             <!-- Exclude Eclipse local files and folders -->
             <exclude>maven-eclipse.xml</exclude>
             <exclude>.externalToolBuilders/**</exclude>
@@ -1173,8 +1171,6 @@
             <exclude>.asf.yaml</exclude>
             <exclude>.gitattributes</exclude>
             <exclude>src/site/resources/download_*.cgi</exclude>
-            <exclude>src/site/resources/profile.*</exclude>
-            <exclude>profile.*</exclude>
             <!-- Exclude Eclipse local files and folders -->
             <exclude>maven-eclipse.xml</exclude>
             <exclude>.externalToolBuilders/**</exclude>
