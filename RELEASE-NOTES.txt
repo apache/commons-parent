@@ -12,6 +12,7 @@ New features
 *                   Add org.junit-pioneer:junit-pioneer to dependencyManagement. Thanks to Gary Gregory.
 *                   Add org.apache.maven.plugins:maven-changes-plugin to pluginManagement. Thanks to Gary Gregory.
 *                   Add mockito to dependencyManagement #568. Thanks to Arnout Engelen.
+*                   Run maven-changes-plugin changes-validate on verify. Thanks to Gary Gregory.
 
 Fixed Bugs
 ----------
