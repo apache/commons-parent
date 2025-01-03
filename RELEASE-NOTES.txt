@@ -41,7 +41,7 @@ Changes
 *                   Bump org.cyclonedx:cyclonedx-maven-plugin from 2.9.0 to 2.9.1 #550. Thanks to Gary Gregory, Dependabot.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -76,7 +76,7 @@ Changes
 *                   Bump org.cyclonedx:cyclonedx-maven-plugin from 2.8.2 to 2.9.0 #511. Thanks to Gary Gregory, Dependabot.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -112,7 +112,7 @@ Removed
 -------
 *                   Remove "cobertura" profile, we use JaCoco, Cobertura is unmaintained. Thanks to Gary Gregory.
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -139,7 +139,7 @@ Changes
 *                   Bump org.junit:junit-bom from 5.11.0 to 5.11.1 #497. Thanks to Dependabot, Gary Gregory.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -172,7 +172,7 @@ Changes
 *                   Bump com.github.spotbugs:spotbugs-maven-plugin from 4.8.6.2 to 4.8.6.3 #491. Thanks to Dependabot, Gary Gregory.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -205,7 +205,7 @@ Changes
                     Warning message for License list version. Thanks to Dependabot, Gary Gregory.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -236,7 +236,7 @@ Changes
 *                   Remove broken Maven profile for Java 11. Thanks to Gary Gregory.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -278,7 +278,7 @@ Changes
 *                   Bump org.apache.maven.plugins:maven-javadoc-plugin from 3.7.0 to 3.8.0 #452.. Thanks to Dependabot, Gary Gregory.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -310,7 +310,7 @@ Changes
 *                   Bump org.apache.maven.plugins:maven-checkstyle-plugin from 3.3.1 to 3.4.0 #425. Thanks to Dependabot.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -357,7 +357,7 @@ Changes
 *                   Bump org.junit.vintage:junit-vintage-engine from 5.10.2 to 5.11.0-M1. Thanks to Gary Gregory.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -383,7 +383,7 @@ Changes
 *                   Bump org.moditect:moditect-maven-plugin from 1.2.0.Final to 1.2.1.Final #390. Thanks to Dependabot.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -409,7 +409,7 @@ Changes
 *                   Bump org.apache.maven.plugins:maven-compiler-plugin from 3.12.1 to 3.13.0 #385. Thanks to Dependabot, Gary Gregory.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -438,7 +438,7 @@ Changes
 *                   Bump org.spdx:spdx-maven-plugin from 0.7.2 to 0.7.3 #371. Thanks to Dependabot.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -485,7 +485,7 @@ o                   Bump org.cyclonedx:cyclonedx-maven-plugin from 2.7.10 to 2.7
 o                   Drop Javadoc properties commons.javadocX.java.link for non-LTS Java versions. Thanks to Gary Gregory.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -535,7 +535,7 @@ o                   Bump com.puppycrawl.tools:checkstyle from 10.12.4 on 10.12.5
 o                   Bump org.codehaus.mojo:versions-maven-plugin from 2.16.1 to 2.16.2 #330. Thanks to Gary Gregory.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -568,7 +568,7 @@ o                   Remove 'javasvn' profile. Thanks to Gary Gregory.
 o                   Remove '.svn'-activated profile. Thanks to Gary Gregory.
 o                   Remove 'jdk9-compiler.' profile. Thanks to Gary Gregory.
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -601,7 +601,7 @@ o                   Bump com.github.spotbugs:spotbugs-maven-plugin from 4.7.3.5 
 Removed:
 o                   Remove obsolete Travis CI profiles. Thanks to Gary Gregory.
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -625,7 +625,7 @@ Fixed Bugs:
 o Use addServiceUses when generating JPMS module info. Thanks to Gary Gregory.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -649,7 +649,7 @@ Fixed Bugs:
 o Always use version.maven-source-plugin 3.2.1 (workaround MSOURCES-143). Thanks to Gary Gregory.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -690,7 +690,7 @@ o Bump org.apache.felix:maven-bundle-plugin from 5.1.8 to 5.1.9. Thanks to Depen
 o Bump org.spdx:spdx-maven-plugin from 0.6.5 to 0.7.0. Thanks to Dependabot.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -729,7 +729,7 @@ o Bump commons-release-plugin from 1.8.0 to 1.8.1. Thanks to Dependabot.
 o Bump commons-build-plugin from 1.12 to 1.13. Thanks to Dependabot.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -760,7 +760,7 @@ o Bump build-helper-maven-plugin from 3.3.0 to 3.4.0 #270. Thanks to Dependabot.
 o Bump buildnumber-maven-plugin from 3.0.0 to 3.1.0 #271. Thanks to Dependabot.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -810,7 +810,7 @@ o Bump jacoco-maven-plugin from 0.8.8 to 0.8.9 #256. Thanks to Dependabot.
 o Bump animal-sniffer-maven-plugin from 1.22 to 1.23 #251. Thanks to Dependabot.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -839,7 +839,7 @@ o Bump versions-maven-plugin from 2.13.0 to 2.14.2 #181, #187, #191. Thanks to D
 o Bump wagon-ssh from 3.5.2 to 3.5.3 #190. Thanks to Dependabot.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -883,7 +883,7 @@ o Bump japicmp-maven-plugin from 0.16.0 to 0.17.1 #174. Thanks to Dependabot.
 o Bump biz.aQute.bndlib from 6.3.1 to 6.4.0 #176. Thanks to Dependabot.
 
 
-Historical list of changes: https://commons.apache.org/proper/commons-parent/changes-report.html
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -944,7 +944,7 @@ o Remove org.codehaus.mojo:jdepend-maven-plugin 2.0; it does not work with curre
 o Remove FindBugs properties, use SpotBugs instead. Thanks to Gary Gregory.
 o Remove Maven Clirr plugin in favor of JApiCmp. Thanks to Gary Gregory.
 
-Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges-report.html
+Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -1014,7 +1014,7 @@ o Bump maven-jar-plugin from 3.2.0 to 3.2.2 #92. Thanks to Dependabot.
 o Bump commons-release-plugin from 1.7 to 1.8.0. Thanks to Gary Gregory.
 
 
-Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges-report.html
+Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -1046,7 +1046,7 @@ o Update build-helper-maven-plugin from 3.1.0 to 3.2.0.
 o Update commons.checkstyle-plugin.version from 3.1.0 to 3.1.1.
 
 
-Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges-report.html
+Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -1097,7 +1097,7 @@ o  maven pre-requisite 3.0.5 => 3.5.0
 o  commons.build-helper.version 3.0.0 => 3.1.0
 
 
-Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges-report.html
+Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -1138,7 +1138,7 @@ o Disable jacoco non-aggregate reports.
 o Update site build from Apache Commons BCEL 6.3.1 to 6.4.1.
 
 
-Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges-report.html
+Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -1196,7 +1196,7 @@ o commons-release-plugin 1.6 -> 1.7.
 o animal-sniffer-maven-plugin 1.17 -> 1.18.
 
 
-Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges-report.html
+Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
@@ -1470,7 +1470,7 @@ o Disable jacoco non-aggregate reports.
 o Update site build from Apache Commons BCEL 6.3.1 to 6.4.1.
 
 
-Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges-report.html
+Historical list of changes: https://commons.apache.org/commons-parent-pom.htmlchanges.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
 patches, or suggestions for improvement, see the Apache Commons Parent website:
