@@ -75,7 +75,7 @@
     <project.build.outputTimestamp>2024-10-22T11:11:44Z</project.build.outputTimestamp>
     <commons.release.version>79</commons.release.version>
     <commons.release.next>80</commons.release.next>
-    <commons.rc.version>RC1</commons.rc.version>
+    <commons.rc.version>RC2</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
     <!-- Commons Release Plugin -->
     <!-- Previous version of the component (used for reporting binary compatibility check)-->
