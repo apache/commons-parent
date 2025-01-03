@@ -821,6 +821,18 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-changes-plugin</artifactId>
           <version>${commons.changes.version}</version>
+          <executions>
+            <execution>
+              <id>validate-changes</id>
+              <phase>verify</phase>
+              <goals>
+                <goal>changes-validate</goal>
+              </goals>
+              <configuration>
+                <failOnError>true</failOnError>
+              </configuration>
+            </execution>
+          </executions>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -1054,6 +1066,10 @@
       <plugin>
         <groupId>org.spdx</groupId>
         <artifactId>spdx-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-changes-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
