@@ -137,7 +137,7 @@
     <commons.pmd-impl.version>7.9.0</commons.pmd-impl.version>
     <commons.project-info.version>3.8.0</commons.project-info.version>
     <commons.rat.version>0.16.1</commons.rat.version>
-    <commons.release-plugin.version>1.8.3</commons.release-plugin.version>
+    <commons.release-plugin.version>1.9.0</commons.release-plugin.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
     <commons.buildnumber-plugin.version>3.2.1</commons.buildnumber-plugin.version>
     <commons.moditect-maven-plugin.version>1.2.2.Final</commons.moditect-maven-plugin.version>
