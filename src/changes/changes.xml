@@ -57,12 +57,13 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
-	  <release version="80" date="YYYY-MM-DD" description="Version 80: This is a feature and maintenance release. Java 8 or later is required.">
+      <release version="80" date="YYYY-MM-DD" description="Version 80: This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
         <!-- ADD -->
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add property commons.main.branch.</action>
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add property commons.release.branch.</action>
-	    <!-- UPDATE -->
+        <!-- UPDATE -->
+        <action type="update" dev="engelen" due-to="Dependabot, Arnout Engelen">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.23.0 to 0.23.1 #574.</action>
       </release>
       <release version="79" date="2025-01-03" description="Version 79: This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
