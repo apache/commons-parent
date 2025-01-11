@@ -65,6 +65,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- UPDATE -->
         <action type="update" dev="engelen" due-to="Dependabot, Arnout Engelen">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.23.0 to 0.23.1 #574.</action>
         <action type="update" dev="engelen" due-to="Dependabot, Gary Gregory">Bump org.apache.commons:commons-release-plugin from 1.8.3 to 1.9.0 #576.</action>
+        <action type="update" dev="engelen" due-to="Dependabot, Gary Gregory">Bump org.apache.commons:commons-build-plugin from 1.14.1 to 1.15.0 #577.</action>
       </release>
       <release version="79" date="2025-01-03" description="Version 79: This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
