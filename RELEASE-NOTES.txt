@@ -40,7 +40,6 @@ Changes
 *                   Bump org.apache.maven.plugins:maven-jxr-plugin from 3.5.0 to 3.6.0. Thanks to Gary Gregory.
 *                   Bump org.cyclonedx:cyclonedx-maven-plugin from 2.9.0 to 2.9.1 #550. Thanks to Gary Gregory, Dependabot.
 
-
 Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
 For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
@@ -74,7 +73,6 @@ Changes
 *                   Bump org.apache.maven.plugins:maven-surefire-report-plugin from 3.5.0 to 3.5.1. Thanks to Gary Gregory.
 *                   Bump org.ow2.asm:asm from 9.7.0 to 9.7.1. Thanks to Gary Gregory.
 *                   Bump org.cyclonedx:cyclonedx-maven-plugin from 2.8.2 to 2.9.0 #511. Thanks to Gary Gregory, Dependabot.
-
 
 Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
 
