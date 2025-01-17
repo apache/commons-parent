@@ -64,9 +64,10 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add property commons.release.branch.</action>
         <!-- UPDATE -->
         <action type="update" dev="engelen" due-to="Dependabot, Arnout Engelen">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.23.0 to 0.23.1 #574.</action>
-        <action type="update" dev="engelen" due-to="Dependabot, Gary Gregory">Bump org.apache.commons:commons-release-plugin from 1.8.3 to 1.9.0 #576.</action>
-        <action type="update" dev="engelen" due-to="Dependabot, Gary Gregory">Bump org.apache.commons:commons-build-plugin from 1.14.1 to 1.15.0 #577.</action>
-        <action type="update" dev="engelen" due-to="Gary Gregory">Bump org.apache.maven.plugins:maven-remote-resources-plugin from 3.2.0 to 3.3.0 (maven-artifact-plugin:3.6.0:check-buildplan (check-buildplan) reports plugin with non-reproducible output: 3.2.0, require minimum 3.3.0).</action>
+        <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.commons:commons-release-plugin from 1.8.3 to 1.9.0 #576.</action>
+        <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.commons:commons-build-plugin from 1.14.1 to 1.15.0 #577.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.maven.plugins:maven-remote-resources-plugin from 3.2.0 to 3.3.0 (maven-artifact-plugin:3.6.0:check-buildplan (check-buildplan) reports plugin with non-reproducible output: 3.2.0, require minimum 3.3.0).</action>
+        <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-artifact-plugin from 3.5.3 to 3.6.0 #580.</action>
       </release>
       <release version="79" date="2025-01-03" description="Version 79: This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
