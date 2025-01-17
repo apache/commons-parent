@@ -159,6 +159,7 @@
     <commons.surefire-report.version>3.5.2</commons.surefire-report.version>
     <commons.surefire.version>3.5.2</commons.surefire.version>
     <commons.wagon-ssh.version>3.5.3</commons.wagon-ssh.version>
+    <commons.maven-remote-resources-plugin.version>3.3.0</commons.maven-remote-resources-plugin.version>
     <!-- Default values for the download-page generation by commons-build-plugin -->
     <commons.release.name>${project.artifactId}-${commons.release.version}</commons.release.name>
     <commons.release.desc />
@@ -473,6 +474,7 @@
           <!-- TODO see above - find better way to add N&L files to jars and test jars -->
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-remote-resources-plugin</artifactId>
+          <version>${commons.maven-remote-resources-plugin.version}</version>
           <configuration>
             <!--
               Apache parent POM automatically adds "LICENSE" and "NOTICE" files
