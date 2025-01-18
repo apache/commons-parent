@@ -7,6 +7,8 @@ The Apache Commons Parent POM provides common settings for all Apache Commons co
 
 Version 79: This is a feature and maintenance release. Java 8 or later is required.
 
+Updating changes.xml to use the version 2 XSD is also required. Some site XML files may also need updates.
+
 New features
 ------------
 *                   Add org.junit-pioneer:junit-pioneer to dependencyManagement. Thanks to Gary Gregory.

@@ -69,7 +69,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.maven.plugins:maven-remote-resources-plugin from 3.2.0 to 3.3.0 (maven-artifact-plugin:3.6.0:check-buildplan (check-buildplan) reports plugin with non-reproducible output: 3.2.0, require minimum 3.3.0).</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-artifact-plugin from 3.5.3 to 3.6.0 #580.</action>
       </release>
-      <release version="79" date="2025-01-03" description="Version 79: This is a feature and maintenance release. Java 8 or later is required.">
+      <release version="79" date="2025-01-03" description="Version 79: This is a feature and maintenance release. Java 8 or later is required. Updating changes.xml to use the version 2 XSD is also required. Some site XML files may also need updates.">
         <!-- FIX -->
         <action type="fix" dev="ggregory" due-to="Gary Gregory">Disable annotation processing during compile.
         Background: https://www.oracle.com/java/technologies/javase/23-relnote-issues.html#JDK-8321314
