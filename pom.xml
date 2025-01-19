@@ -356,7 +356,7 @@
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
-        <artifactId>mockit-core</artifactId>
+        <artifactId>mockito-bom</artifactId>
         <version>${commons.mockito.version}</version>
         <scope>test</scope>
       </dependency>
