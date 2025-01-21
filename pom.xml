@@ -225,6 +225,7 @@
     <project.build.sourceEncoding>${commons.encoding}</project.build.sourceEncoding>
     <!-- This is used by reporting plugins -->
     <project.reporting.outputEncoding>${commons.encoding}</project.reporting.outputEncoding>
+    <commons.javadoc.failOnWarnings>true</commons.javadoc.failOnWarnings>
     <!-- Javadoc link to Java API LTS versions. -->
     <!-- Modern Javadoc versions redirect to newest site (Java 22) when you ask for older links like Java 8. -->
     <commons.javadoc.java.link>https://docs.oracle.com/en/java/javase/21/docs/api/</commons.javadoc.java.link>
@@ -467,6 +468,7 @@
               &lt;a href="${project.issueManagement.url}">Issue management&lt;/a&gt; |
               &lt;a href="${project.scm.url}">Source repository&lt;/a&gt;
             </bottom>
+            <failOnWarnings>${commons.javadoc.failOnWarnings}</failOnWarnings>
           </configuration>
         </plugin>
         <plugin>
