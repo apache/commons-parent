@@ -452,7 +452,6 @@
             <notimestamp>true</notimestamp>
             <linksource>true</linksource>
             <links>
-              <link>${commons.javadoc.java.link}</link>
               <link>${commons.javadoc.javaee.link}</link>
             </links>
             <additionalOptions>${commons.javadoc.options}</additionalOptions>
