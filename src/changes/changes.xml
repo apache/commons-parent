@@ -57,7 +57,7 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
-      <release version="80" date="YYYY-MM-DD" description="Version 80: This is a feature and maintenance release. Java 8 or later is required.">
+      <release version="80" date="2025-01-25" description="Version 80: This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
         <action type="fix" dev="ggregory" due-to="Gary Gregory">Fix broken Mockito dependency.</action>
         <action type="fix" dev="ggregory" due-to="Gary Gregory, Sylwester Lachiewicz">Don't configure the Javadoc plugin to link to a fixed Java version, let the build pick up the matching version for that component.</action>

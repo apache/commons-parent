@@ -1,5 +1,48 @@
-Apache Commons Parent 79
-RELEASE NOTES
+Apache Commons Parent 80 Release Notes
+--------------------------------------
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 80.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Version 80: This is a feature and maintenance release. Java 8 or later is required.
+
+New features
+------------
+*                   Add property commons.main.branch. Thanks to Gary Gregory.
+*                   Add property commons.release.branch. Thanks to Gary Gregory.
+*                   Add property commons.javadoc.failOnWarnings set to true. Thanks to Gary Gregory.
+
+Fixed Bugs
+----------
+*                   Fix broken Mockito dependency. Thanks to Gary Gregory.
+*                   Don't configure the Javadoc plugin to link to a fixed Java version, let the build pick up the matching version for that component. Thanks to Gary Gregory, Sylwester Lachiewicz.
+*                   Remove -nouses directive from maven-bundle-plugin. OSGi package imports now state 'uses' definitions for package imports, this doesn't affect JPMS #581. Thanks to Christoph Läubrich, Piotr P. Karwasz, Gary Gregory, Bernd.
+
+Changes
+-------
+*                   Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.23.0 to 0.23.1 #574. Thanks to Dependabot, Arnout Engelen.
+*                   Bump org.apache.commons:commons-release-plugin from 1.8.3 to 1.9.0 #576. Thanks to Dependabot, Gary Gregory.
+*                   Bump org.apache.commons:commons-build-plugin from 1.14.1 to 1.15.0 #577. Thanks to Dependabot, Gary Gregory.
+*                   Bump org.apache.maven.plugins:maven-remote-resources-plugin from 3.2.0 to 3.3.0 (maven-artifact-plugin:3.6.0:check-buildplan (check-buildplan) reports plugin with non-reproducible output: 3.2.0, require minimum 3.3.0). Thanks to Gary Gregory.
+*                   Bump org.apache.maven.plugins:maven-artifact-plugin from 3.5.3 to 3.6.0 #580. Thanks to Dependabot, Gary Gregory.
+*                   Bump com.github.spotbugs:spotbugs from 4.8.6 to 4.9.0 #579. Thanks to Dependabot, Gary Gregory.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+Enjoy!
+Apache Commons Team
+
+-----------------------------------------------------------------------------
+
+Apache Commons Parent 79 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 79.
 
@@ -53,8 +96,9 @@ Enjoy!
 Apache Commons Team
 
 -----------------------------------------------------------------------------
-Apache Commons Parent 78
-RELEASE NOTES
+
+Apache Commons Parent 78 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 78.
 
@@ -87,8 +131,9 @@ Enjoy!
 Apache Commons Team
 
 -----------------------------------------------------------------------------
-Apache Commons Parent 77
-RELEASE NOTES
+
+Apache Commons Parent 77 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 77.
 
@@ -123,8 +168,9 @@ Enjoy!
 Apache Commons Team
 
 -----------------------------------------------------------------------------
-Apache Commons Parent 76
-RELEASE NOTES
+
+Apache Commons Parent 76 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 76.
 
@@ -150,8 +196,9 @@ Enjoy!
 Apache Commons Team
 
 -----------------------------------------------------------------------------
-Apache Commons Parent 75
-RELEASE NOTES
+
+Apache Commons Parent 75 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 75.
 
@@ -183,8 +230,9 @@ Enjoy!
 Apache Commons Team
 
 -----------------------------------------------------------------------------
-Apache Commons Parent 74
-RELEASE NOTES
+
+Apache Commons Parent 74 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 74.
 
@@ -216,8 +264,9 @@ Enjoy!
 Apache Commons Team
 
 -----------------------------------------------------------------------------
-Apache Commons Parent 73
-RELEASE NOTES
+
+Apache Commons Parent 73 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 73.
 
@@ -247,8 +296,9 @@ Enjoy!
 Apache Commons Team
 
 -----------------------------------------------------------------------------
-Apache Commons Parent 72
-RELEASE NOTES
+
+Apache Commons Parent 72 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 72.
 
@@ -289,8 +339,9 @@ Enjoy!
 Apache Commons Team
 
 -----------------------------------------------------------------------------
-Apache Commons Parent 71
-RELEASE NOTES
+
+Apache Commons Parent 71 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 71.
 
@@ -318,8 +369,9 @@ patches, or suggestions for improvement, see the Apache Commons Parent website:
 https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
-Apache Commons Parent 70
-RELEASE NOTES
+
+Apache Commons Parent 70 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 70.
 
@@ -368,8 +420,9 @@ Enjoy!
 Apache Commons Team
 
 -----------------------------------------------------------------------------
-Apache Commons Parent 69
-RELEASE NOTES
+
+Apache Commons Parent 69 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 69.
 
@@ -391,8 +444,9 @@ patches, or suggestions for improvement, see the Apache Commons Parent website:
 https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
-Apache Commons Parent 68
-RELEASE NOTES
+
+Apache Commons Parent 68 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 68.
 
@@ -418,8 +472,8 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 67
-RELEASE NOTES
+Apache Commons Parent 67 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 67.
 
@@ -447,8 +501,8 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 66
-RELEASE NOTES
+Apache Commons Parent 66 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 66.
 
@@ -494,8 +548,8 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 65
-RELEASE NOTES
+Apache Commons Parent 65 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 65.
 
@@ -544,8 +598,8 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 64
-RELEASE NOTES
+Apache Commons Parent 64 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 64.
 
@@ -577,8 +631,8 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 63
-RELEASE NOTES
+Apache Commons Parent 63 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 63.
 
@@ -610,8 +664,8 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 62
-RELEASE NOTES
+Apache Commons Parent 62 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 62.
 
@@ -634,8 +688,8 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 61
-RELEASE NOTES
+Apache Commons Parent 61 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 61.
 
@@ -658,8 +712,8 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 60
-RELEASE NOTES
+Apache Commons Parent 60 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 60.
 
@@ -699,8 +753,8 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 59
-RELEASE NOTES
+Apache Commons Parent 59 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 59.
 
@@ -738,8 +792,8 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 58
-RELEASE NOTES
+Apache Commons Parent 58 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 58.
 
@@ -769,8 +823,8 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 57
-RELEASE NOTES
+Apache Commons Parent 57 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 57.
 
@@ -819,8 +873,8 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 56
-RELEASE NOTES
+Apache Commons Parent 56 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 56.
 
@@ -848,8 +902,8 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 55
-RELEASE NOTES
+Apache Commons Parent 55 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 55.
 
@@ -892,8 +946,8 @@ https://commons.apache.org/proper/commons-parent/
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 54
-RELEASE NOTES
+Apache Commons Parent 54 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 54.
 
@@ -953,8 +1007,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 53
-RELEASE NOTES
+Apache Commons Parent 53 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 53
 
@@ -1023,8 +1077,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 52
-RELEASE NOTES
+Apache Commons Parent 52 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 52.
 
@@ -1058,8 +1112,8 @@ Have fun!
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 51
-RELEASE NOTES
+Apache Commons Parent 51 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 51.
 
@@ -1106,8 +1160,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 50
-RELEASE NOTES
+Apache Commons Parent 50 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 50.
 
@@ -1150,8 +1204,8 @@ Have fun!
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 49
-RELEASE NOTES
+Apache Commons Parent 49 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 49.
 
@@ -1205,8 +1259,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 48
-RELEASE NOTES
+Apache Commons Parent 48 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the commons-parent-48 release!
 
@@ -1261,8 +1315,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 47
-RELEASE NOTES
+Apache Commons Parent 47 Release Notes
+--------------------------------------
 
 
 The Apache Commons Parent team is pleased to announce the commons-parent-47 release!
@@ -1300,8 +1354,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 46
-RELEASE NOTES
+Apache Commons Parent 46 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the commons-parent-46 release!
 
@@ -1338,8 +1392,6 @@ java.util.zip.ZipException: error in opening zip file
         at org.apache.maven.plugins.site.render.CategorySummaryDocumentRenderer.renderDocument(CategorySummaryDocumentRenderer.java:155)
 
 
-
-
 Changes in this version include:
 
 New features:
@@ -1369,8 +1421,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 45
-RELEASE NOTES
+Apache Commons Parent 45 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the commons-parent-45 release!
 
@@ -1395,8 +1447,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 44
-RELEASE NOTES
+Apache Commons Parent 44 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 44.
 
@@ -1446,8 +1498,8 @@ https://commons.apache.org/commons-parent-pom.html
 
 -----------------------------------------------------------------------------
 
-Apache Commons Parent 43
-RELEASE NOTES
+Apache Commons Parent 43 Release Notes
+--------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 43.
 
@@ -1476,3 +1528,5 @@ For complete information on Apache Commons Parent, including instructions on how
 patches, or suggestions for improvement, see the Apache Commons Parent website:
 
 https://commons.apache.org/commons-parent-pom.html
+
+-----------------------------------------------------------------------------
