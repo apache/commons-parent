@@ -61,7 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- FIX -->
         <action type="fix" dev="ggregory" due-to="Gary Gregory">Fix broken Mockito dependency.</action>
         <action type="fix" dev="ggregory" due-to="Gary Gregory, Sylwester Lachiewicz">Don't configure the Javadoc plugin to link to a fixed Java version, let the build pick up the matching version for that component.</action>
-        <action type="fix" dev="ggregory" due-to="Christoph Läubrich, Piotr P. Karwasz, Gary Gregory, Bernd">Remove -nouses directive from maven-bundle-plugin #581.</action>
+        <action type="fix" dev="ggregory" due-to="Christoph Läubrich, Piotr P. Karwasz, Gary Gregory, Bernd">Remove -nouses directive from maven-bundle-plugin. OSGi package imports now state 'uses' definitions for package imports, this doesn't affect JPMS #581.</action>
         <!-- ADD -->
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add property commons.main.branch.</action>
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add property commons.release.branch.</action>
