@@ -1685,6 +1685,7 @@
         <commons.felix.version>3.5.1</commons.felix.version>
         <commons.animal-sniffer.version>1.17</commons.animal-sniffer.version>
         <commons.biz.aQute.bndlib.version>3.5.0</commons.biz.aQute.bndlib.version>
+        <commons.spotbugs.impl.version>4.8.6</commons.spotbugs.impl.version>
       </properties>
     </profile>
     <profile>
@@ -1694,6 +1695,7 @@
       </activation>
       <properties>
         <commons.spdx.version>0.6.3</commons.spdx.version>
+        <commons.spotbugs.impl.version>4.8.6</commons.spotbugs.impl.version>
       </properties>
     </profile>
     <!-- allow simple creation of the site without any optional reports -->
