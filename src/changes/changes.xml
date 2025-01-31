@@ -61,6 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.21.1 to 10.21.2.</action>
       </release>
       <release version="81" date="2025-01-29" description="Version 81: This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
