@@ -146,7 +146,7 @@
          and bndlib 7.1 requires Java 17
     -->
     <commons.biz.aQute.bndlib.version>6.4.1</commons.biz.aQute.bndlib.version>
-    <commons.junit.version>5.11.4</commons.junit.version>
+    <commons.junit.version>5.12.0-M1</commons.junit.version>
     <!-- JUnit Pioneer 2 requires Java 11 -->
     <commons.junit-pioneer.version>1.9.1</commons.junit-pioneer.version>
     <commons.mockito.version>4.11.0</commons.mockito.version>
