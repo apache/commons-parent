@@ -59,6 +59,7 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
       <release version="82" date="YYYY-MM-DD" description="Version 82: This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">Don't fork maven-jxr-plugin as it breaks in multi-module builds.</action>
         <!-- ADD -->
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.21.1 to 10.21.2 on Java 11+.</action>

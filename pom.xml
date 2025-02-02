@@ -1126,6 +1126,15 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jxr-plugin</artifactId>
         <version>${commons.jxr.version}</version>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <!-- Forking causes errors in multi-module builds. -->
+              <report>jxr-no-fork</report>
+              <report>test-jxr-no-fork</report>
+            </reports>
+          </reportSet>
+        </reportSets>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
