@@ -1787,8 +1787,8 @@
 	    <!-- Java 17 and up -->
       <id>java-17-up</id>
       <activation>
-		    <jdk>[17,)</jdk>
-	    </activation>
+        <jdk>[17,)</jdk>
+	  </activation>
       <properties>
 		<!-- 
 		Wait until org.apache.felix:maven-bundle-plugin supports bndlib 7
