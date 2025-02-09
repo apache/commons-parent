@@ -17,6 +17,7 @@
 # Commons components
 
 The table below is currently manually maintained from the corresponding component README files, and may get out of date. Please report any errors to the Commons Project.
+Or you can raise a PR. Thanks!
 
 | Component | Java CI | Coverage Status | Maven Central | Javadocs | CodeQL | OpenSSF Scorecard |
 | ---       |     --- |      ---        |     ---       |     ---  |    --- |     ---           |
