@@ -20,6 +20,11 @@ updates:
     schedule:
       interval: "weekly"
       day: "friday"
+  - ignore:
+      # Disable automatic major updates of bndlib because
+      # org.apache.felix:maven-bundle-plugin does not yet support bndlib 7
+      - dependency-name: "biz.aQute.bnd:biz.aQute.bndlib"
+        update-types: [ "version-update:semver-major" ]
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
