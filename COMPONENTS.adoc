@@ -405,8 +405,8 @@ GH Status badge function.
 	link=https://github.com/apache/commons-math/actions/workflows/maven.yml]
 | image:https://codecov.io/gh/apache/commons-math/branch/master/graph/badge.svg[Coverage Status,
 	link=https://app.codecov.io/gh/apache/commons-math]
-| image:https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-math4-parent/badge.svg[Maven Central,
-	link=https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-math4-parent/]
+| image:https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-math-parent/badge.svg[Maven Central,
+	link=https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-math-parent/]
 | image:https://javadoc.io/badge/org.apache.commons/commons-math4-parent/4.0.svg[Javadocs,
 	link=https://javadoc.io/doc/org.apache.commons/commons-math4-parent/4.0]
 | image:https://github.com/apache/commons-math/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
