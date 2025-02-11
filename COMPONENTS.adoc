@@ -338,8 +338,8 @@ GH Status badge function.
 | image:https://github.com/apache/commons-jelly/actions/workflows/maven.yml/badge.svg[Java CI,
 	link=https://github.com/apache/commons-jelly/actions/workflows/maven.yml]
 | -
-| image:https://maven-badges.herokuapp.com/maven-central/commons-jelly/commons-jelly/badge.svg[Maven Central,
-	link=https://maven-badges.herokuapp.com/maven-central/commons-jelly/commons-jelly/]
+| image:https://maven-badges.herokuapp.com/maven-central/commons-jelly/commons-jelly/badge.svg?gav=true[Maven Central,
+	link=https://maven-badges.herokuapp.com/maven-central/commons-jelly/commons-jelly/?gav=true]
 | -
 | image:https://github.com/apache/commons-jelly/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-jelly/actions/workflows/codeql-analysis.yml]
