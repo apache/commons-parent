@@ -68,6 +68,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.junit:junit-bom from 5.11.4 to 5.12.0-RC2.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs from 4.9.0 to 4.9.1. Fixes https://github.com/spotbugs/spotbugs/issues/3266: Exception analyzing org.apache.commons.io.input.BOMInputStream using detector edu.umd.cs.findbugs.detect.FindReturnRef.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.8.6.6 to 4.9.1.0.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.spdx:spdx-maven-plugin from 0.7.4 to 1.0.0-RC1.</action>
       </release>
       <release version="81" date="2025-01-29" description="Version 81: This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
