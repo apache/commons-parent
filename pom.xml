@@ -1772,7 +1772,7 @@
 	  </build>
     </profile>
     <profile>
-	    <!-- Java 11 and up -->
+      <!-- Java 11 and up -->
       <id>java-11-up</id>
       <activation>
 	      <jdk>[11,)</jdk>
@@ -1782,7 +1782,7 @@
       </properties>
     </profile>
     <profile>
-	    <!-- Java 17 and up -->
+      <!-- Java 17 and up -->
       <id>java-17-up</id>
       <activation>
         <jdk>[17,)</jdk>
