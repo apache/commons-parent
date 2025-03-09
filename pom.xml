@@ -1778,7 +1778,7 @@
 	      <jdk>[11,)</jdk>
       </activation>
       <properties>
-        <commons.checkstyle.version>10.21.3</commons.checkstyle.version>
+        <commons.checkstyle.version>10.21.4</commons.checkstyle.version>
       </properties>
     </profile>
     <profile>
