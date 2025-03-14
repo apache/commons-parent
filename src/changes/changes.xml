@@ -53,7 +53,7 @@ The <action> type attribute can be add,update,fix,remove.
     To suppress formatting of an action entry when generating release notes, add an empty date.
     This does not affect the HTML changes report (in any case dates are not displayed by default)
 
-    N.B. The release notes template groups actions by type, and only extracts data for the current release.
+    The release notes template groups actions by type, and only extracts data for the current release.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
