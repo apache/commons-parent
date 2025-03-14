@@ -89,7 +89,7 @@
       </item>
     </menu>
 
-    <!-- Should agree with commons-site. N.B. site-relative links don't work here -->
+    <!-- Should agree with commons-site. Site-relative links don't work here -->
     <menu name="General Information" inherit="bottom">
       <item name="Security"               href="https://commons.apache.org/security.html"/>
       <item name="Volunteering"           href="https://commons.apache.org/volunteering.html" />

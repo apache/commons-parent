@@ -28,12 +28,12 @@ Preparing for release candidate:
 - Ensure pom.xml header comment agrees with changes for this release
 - Regenerate files:
   mvn commons-build:all -Dproject.inceptionYear=2006
-  (N.B. the year is not defined in the pom to avoid propagation to components)
+  (The year is not defined in the pom to avoid propagation to components)
 - Check and commit all changes
 
 Creating release candidate tag:
 ------------------------------
-N.B. This is done in a separate release branch so that the default branch remains a SNAPSHOT version
+This is done in a separate release branch so that the default branch remains a SNAPSHOT version
 
 - Checkout default branch in clean workspace:
   git clone https://gitbox.apache.org/repos/asf/commons-parent.git commons-parent-<NN>-RC1

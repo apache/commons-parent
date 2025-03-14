@@ -799,7 +799,7 @@ Clirr report must now be explicitly enabled using src/site/resources/profile.cli
             <action type="update">Update Apache parent: 17 -> 18</action>
         </release>
         <release version="40" date="2016-04-30" description="Updates plugins and parent; fixes COMMONSSITE-87 and COMMONSSITE-82.
-N.B. The assembly plugin now runs in the verify phase (it was previously run in the package phase). See COMMONSSITE-87.
+ The assembly plugin now runs in the verify phase (it was previously run in the package phase). See COMMONSSITE-87.
  This allows child poms to create additional jars to be added to the assembly.
  This will affect child poms that rely on the assembly occurring in the package phase.
  They will need to be amended to use the verify phase instead.">

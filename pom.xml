@@ -267,7 +267,7 @@
     <changes.announcementFile>RELEASE-NOTES.txt</changes.announcementFile>
   </properties>
   <mailingLists>
-    <!-- N.B. commons-site now uses the Apache POM so has its own copy of the mailing list definitions -->
+    <!-- commons-site now uses the Apache POM so has its own copy of the mailing list definitions -->
     <!--
       Components should normally override the default mailing list report by using the comnand
       mvn commons-build:mail-page
@@ -1077,7 +1077,7 @@
   </build>
 
   <reporting>
-    <!-- N.B. plugins defined here in the <reporting> section ignore what's defined in <pluginManagement>
+    <!-- Plugins defined here in the <reporting> section ignore what's defined in <pluginManagement>
       in the <build> section above, so we have to define the versions here. -->
     <plugins>
       <!-- org.apache.maven.plugins, alpha order by artifact id -->
@@ -1331,7 +1331,7 @@
       <id>jacoco</id>
       <activation>
         <!--
-          N.B. in spite of what the Maven docs may say,
+          In spite of what the Maven docs may say,
           activation conditions are ORed together, see:
           https://issues.apache.org/jira/browse/MNG-4565
           Fairly useless, but that's what was done in
@@ -1591,7 +1591,7 @@
         <commons.surefire.java>${JAVA_1_11_HOME}/bin/java</commons.surefire.java>
       </properties>
     </profile>
-    <!-- N.B. when adding new java profiles, be sure to update
+    <!-- When adding new java profiles, be sure to update
       the _removeheaders list in the maven_bundle_plugin configuration -->
     <!--
       | Profile to allow testing of deploy phase
