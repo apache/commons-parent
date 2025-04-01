@@ -149,7 +149,7 @@
     <commons.junit-pioneer.version>1.9.1</commons.junit-pioneer.version>
     <commons.mockito.version>4.11.0</commons.mockito.version>
     <commons.jmh.version>1.37</commons.jmh.version>
-    <commons.asm.version>9.7.1</commons.asm.version>
+    <commons.asm.version>9.8</commons.asm.version>
     <commons.taglist.version>3.2.1</commons.taglist.version>
     <commons.site-plugin.version>3.21.0</commons.site-plugin.version>
     <commons.spotbugs.plugin.version>4.9.3.0</commons.spotbugs.plugin.version>
