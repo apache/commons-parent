@@ -63,20 +63,20 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="fix" dev="ggregory" due-to="Gary Gregory">Use maven-bundle-plugin 6 on Java 17+ to generate MANIFEST.MF.</action> 
         <!-- ADD -->
         <!-- UPDATE -->
-        <action type="update" dev="engelen" due-to="Dependabot, Arnout Engelen">Bump org.apache.maven.plugins:maven-compiler-plugin from 3.13.0 to 3.14.0 #590.</action>
+        <action type="update" dev="engelen" due-to="Arnout Engelen, Dependabot">Bump org.apache.maven.plugins:maven-compiler-plugin from 3.13.0 to 3.14.0 #590.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.21.1 to 10.23.0 on Java 11+.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump commons.pmd-impl.version from 7.9.0 to 7.12.0 #583, #592, #605.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.junit:junit-bom from 5.11.4 to 5.12.2.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump commons.pmd-impl.version from 7.9.0 to 7.12.0 #583, #592, #605.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.junit:junit-bom from 5.11.4 to 5.12.2.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs from 4.9.0 to 4.9.3. SB 4.9.1 fixes https://github.com/spotbugs/spotbugs/issues/3266: Exception analyzing org.apache.commons.io.input.BOMInputStream using detector edu.umd.cs.findbugs.detect.FindReturnRef.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.8.6.6 to 4.9.3.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.spdx:spdx-maven-plugin from 0.7.4 to 1.0.0, #593.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.maven.plugins:maven-project-info-reports-plugin from 3.8.0 to 3.9.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache:apache from 33 to 34.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.ow2.asm:asm from 9.7.1 to 9.8 #609.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.maven.plugins:maven-surefire-plugin from 3.5.2 to 3.5.3 #610.</action> 
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.maven.plugins:maven-failsafe-plugin from 3.5.2 to 3.5.3 #606.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.maven.plugins:maven-surefire-report-plugin from 3.5.2 to 3.5.3 #607.</action> 
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.jacoco:jacoco-maven-plugin from 0.8.12 to 0.8.13 #613.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.ow2.asm:asm from 9.7.1 to 9.8 #609.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.apache.maven.plugins:maven-surefire-plugin from 3.5.2 to 3.5.3 #610.</action> 
+        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.apache.maven.plugins:maven-failsafe-plugin from 3.5.2 to 3.5.3 #606.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.apache.maven.plugins:maven-surefire-report-plugin from 3.5.2 to 3.5.3 #607.</action> 
+        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.jacoco:jacoco-maven-plugin from 0.8.12 to 0.8.13 #613.</action>
       </release>
       <release version="81" date="2025-01-29" description="Version 81: This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
