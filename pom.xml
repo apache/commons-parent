@@ -365,7 +365,7 @@
     <!-- TODO find a better way to add N&L files to jars and test jars
       See also maven-remote-resources-plugin configuration below.
     -->
-    <defaultGoal>clean apache-rat:check verify site</defaultGoal>
+    <defaultGoal>clean apache-rat:check verify spotbugs:check pmd:check checkstyle:check site</defaultGoal>
     <resources>
       <!-- This is the default setting from the super-pom -->
       <resource>
@@ -1075,7 +1075,6 @@
       </plugin>
     </plugins>
   </build>
-
   <reporting>
     <!-- Plugins defined here in the <reporting> section ignore what's defined in <pluginManagement>
       in the <build> section above, so we have to define the versions here. -->
@@ -1326,7 +1325,6 @@
         </plugins>
       </build>
     </profile>
-
     <profile>
       <id>jacoco</id>
       <activation>
@@ -1775,10 +1773,11 @@
       <!-- Java 8, 9, 10 -->
       <id>java-8-9-10</id>
       <activation>
-	      <jdk>[8,10]</jdk>
+	      <jdk>[1.8,10]</jdk>
       </activation>
       <properties>
         <!-- SpotBugs 4.9.0 requires Java 11 -->
+        <commons.spotbugs.plugin.version>4.8.6.6</commons.spotbugs.plugin.version>
         <commons.spotbugs.impl.version>4.8.6</commons.spotbugs.impl.version>
       </properties>
     </profile>
