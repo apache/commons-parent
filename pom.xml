@@ -1772,6 +1772,17 @@
 	  </build>
     </profile>
     <profile>
+      <!-- Java 8, 9, 10 -->
+      <id>java-8-9-10</id>
+      <activation>
+	      <jdk>[8,10]</jdk>
+      </activation>
+      <properties>
+        <!-- SpotBugs 4.9.0 requires Java 11 -->
+        <commons.spotbugs.impl.version>4.8.6</commons.spotbugs.impl.version>
+      </properties>
+    </profile>
+    <profile>
       <!-- Java 11 and up -->
       <id>java-11-up</id>
       <activation>

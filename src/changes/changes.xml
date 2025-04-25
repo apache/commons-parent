@@ -58,6 +58,10 @@ The <action> type attribute can be add,update,fix,remove.
      -->
     <body>
       <release version="83-SNAPSHOT" date="YYYY-MM-DD" description="Version 82: This is a feature and maintenance release. Java 8 or later is required.">
+        <!-- FIX -->
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">Freeze SpotBugs implementation (ommons.spotbugs.impl.version) on Java 8, 9, and 10 to 4.8.6.</action>
+        <!-- ADD -->
+        <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump commons.pmd-impl.version from 7.12.0 to 7.13.0 #617.</action>
       </release>
       <release version="82" date="2025-04-20" description="Version 82: This is a feature and maintenance release. Java 8 or later is required.">
