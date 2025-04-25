@@ -1,3 +1,33 @@
+Apache Commons Parent 83 Release Notes
+--------------------------------------
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 83.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+Version 82: This is a feature and maintenance release. Java 8 or later is required.
+
+Fixed Bugs
+----------
+*                   Freeze SpotBugs implementation (commons.spotbugs.impl.version) on Java 8, 9, and 10 to 4.8.6; SpotBugs version 4.9.0 requires Java 11. Thanks to Gary Gregory.
+*                   Freeze SpotBugs plugin (ommons.spotbugs.plugin.version) on Java 8, 9, and 10 to 4.8.6.6; SpotBugs version 4.9.0 requires Java 11. Thanks to Gary Gregory.
+
+Changes
+-------
+*                   Bump commons.pmd-impl.version from 7.12.0 to 7.13.0 #617. Thanks to Gary Gregory, Dependabot.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+Enjoy!
+Apache Commons Team
+
+-----------------------------------------------------------------------------
 Apache Commons Parent 82 Release Notes
 --------------------------------------
 
