@@ -57,6 +57,9 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
+      <release version="83-SNAPSHOT" date="YYYY-MM-DD" description="Version 82: This is a feature and maintenance release. Java 8 or later is required.">
+        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump commons.pmd-impl.version from 7.12.0 to 7.13.0 #617.</action>
+      </release>
       <release version="82" date="2025-04-20" description="Version 82: This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
         <action type="fix" dev="ggregory" due-to="Gary Gregory">Don't fork maven-jxr-plugin as it breaks in multi-module builds.</action>
