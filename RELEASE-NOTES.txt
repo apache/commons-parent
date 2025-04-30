@@ -5,7 +5,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 82: This is a feature and maintenance release. Java 8 or later is required.
+This is a feature and maintenance release. Java 8 or later is required.
 
 Fixed Bugs
 ----------
@@ -35,7 +35,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 82: This is a feature and maintenance release. Java 8 or later is required.
+This is a feature and maintenance release. Java 8 or later is required.
 
 Fixed Bugs
 ----------
@@ -78,7 +78,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 81: This is a feature and maintenance release. Java 8 or later is required.
+This is a feature and maintenance release. Java 8 or later is required.
 
 Fixed Bugs
 ----------
@@ -103,7 +103,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 80: This is a feature and maintenance release. Java 8 or later is required.
+This is a feature and maintenance release. Java 8 or later is required.
 
 New features
 ------------
@@ -146,7 +146,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 79: This is a feature and maintenance release. Java 8 or later is required.
+This is a feature and maintenance release. Java 8 or later is required.
 
 Updating changes.xml to use the version 2 XSD is also required. Some site XML files may also need updates.
 
@@ -237,7 +237,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 77: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Fixed Bugs
 ----------
@@ -274,7 +274,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 76: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes
 -------
@@ -302,7 +302,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 75: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes
 -------
@@ -336,7 +336,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 74: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes
 -------
@@ -370,7 +370,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 73: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes
 -------
@@ -402,7 +402,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 72: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 New features
 ------------
@@ -445,7 +445,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 71: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes
 -------
@@ -475,7 +475,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 70: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 New features
 ------------
@@ -526,7 +526,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 69: Maintenance and update dependencies
+Maintenance and update dependencies
 
 Changes
 -------
@@ -550,7 +550,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 68: Maintenance and update dependencies
+Maintenance and update dependencies
 
 Changes
 -------
@@ -577,7 +577,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 67: Maintenance and update dependencies
+Maintenance and update dependencies
 
 Changes
 -------
@@ -606,7 +606,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 66: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -653,7 +653,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 65: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -703,7 +703,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 64: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -736,7 +736,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 63: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -769,7 +769,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 62: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -793,7 +793,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 61: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -817,7 +817,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 60: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -858,7 +858,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 59: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -897,7 +897,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 57: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -928,7 +928,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 57: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -978,7 +978,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 56: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -1007,7 +1007,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 55: Maintenance and update dependencies.
+Maintenance and update dependencies.
 
 Changes in this version include:
 
@@ -1051,7 +1051,7 @@ The Apache Commons Parent team is pleased to announce the release of Apache Comm
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
-Version 54: SBOMs, drop JDepend, replace FindBugs with SpotBugs, dependency bumps.
+SBOMs, drop JDepend, replace FindBugs with SpotBugs, dependency bumps.
 
 Changes in this version include:
 
