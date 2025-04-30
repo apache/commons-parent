@@ -57,6 +57,11 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
+      <release version="84" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
+        <!-- FIX -->
+        <!-- ADD -->
+        <!-- UPDATE -->
+      </release>
       <release version="83" date="2025-04-25" description="Version 82: This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
         <action type="fix" dev="ggregory" due-to="Gary Gregory">Freeze SpotBugs implementation (commons.spotbugs.impl.version) on Java 8, 9, and 10 to 4.8.6; SpotBugs version 4.9.0 requires Java 11.</action>
