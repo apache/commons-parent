@@ -61,6 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
+        <action type="update" dev="engelen" due-to="Arnout Engelen, Dependabot">Bump org.spdx:spdx-maven-plugin from 1.0.0 to 1.0.2 #620.</action>
       </release>
       <release version="83" date="2025-04-25" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
