@@ -61,7 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
-        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.junit:junit-bom from 5.13.1 to 5.13.2.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.junit:junit-bom from 5.13.1 to 5.13.2. Fixes discovery issue for cycle in inner class hierarchy without @Nested fails build since JUnit 5.13 https://github.com/junit-team/junit-framework/issues/4661 for Commons Collections.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.25.0 to 10.26.0 on Java 11 and up.</action>
       </release>
       <release version="85" date="2025-06-15" description="This is a feature and maintenance release. Java 8 or later is required.">
