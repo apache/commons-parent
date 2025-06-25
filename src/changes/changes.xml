@@ -61,6 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
+        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.junit:junit-bom from 5.13.1 to 5.13.2.</action>
       </release>
       <release version="85" date="2025-06-15" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
