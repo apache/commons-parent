@@ -59,6 +59,7 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
       <release version="86" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">Use -XX:+EnableDynamicAgentLoading on the argument line to avoid JVM warnings when tests use Mockito and ByteBuddy.</action>
         <!-- ADD -->
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.junit:junit-bom from 5.13.1 to 5.13.2. Fixes discovery issue for cycle in inner class hierarchy without @Nested fails build since JUnit 5.13 https://github.com/junit-team/junit-framework/issues/4661 for Commons Collections.</action>

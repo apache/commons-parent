@@ -1809,6 +1809,22 @@
       </properties>
     </profile>
     <profile>
+      <!-- Java 21 and up -->
+      <!-- Use -XX:+EnableDynamicAgentLoading on the argument line to avoid JVM warnings when tests use Mockito and ByteBuddy:
+           WARNING: A Java agent has been loaded dynamically (/Users/garygregory/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.6/byte-buddy-agent-1.17.6.jar)
+           WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+           WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+           WARNING: Dynamic loading of agents will be disallowed by default in a future release
+      -->
+      <id>java-21-up</id>
+      <activation>
+        <jdk>[21,)</jdk>
+	  </activation>
+      <properties>
+        <argLine>-XX:+EnableDynamicAgentLoading</argLine>
+      </properties>
+    </profile>
+    <profile>
       <!-- JMH benchmarking -->
       <id>benchmark</id>
       <properties>
