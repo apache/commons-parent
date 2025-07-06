@@ -328,7 +328,7 @@
     a release of the commons-parent POM.
   -->
   <scm>
-    <connection>scm:git:http://gitbox.apache.org/repos/asf/commons-parent.git</connection>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/commons-parent.git</connection>
     <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/commons-parent.git</developerConnection>
     <url>https://gitbox.apache.org/repos/asf?p=commons-parent.git</url>
   </scm>
