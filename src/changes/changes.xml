@@ -62,7 +62,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="fix" dev="ggregory" due-to="Gary Gregory">Use -XX:+EnableDynamicAgentLoading on the argument line to avoid JVM warnings when tests use Mockito and ByteBuddy.</action>
         <!-- ADD -->
         <!-- UPDATE -->
-        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.junit:junit-bom from 5.13.1 to 5.13.2. Fixes discovery issue for cycle in inner class hierarchy without @Nested fails build since JUnit 5.13 https://github.com/junit-team/junit-framework/issues/4661 for Commons Collections.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.junit:junit-bom from 5.13.1 to 5.13.3. Fixes discovery issue for cycle in inner class hierarchy without @Nested fails build since JUnit 5.13 https://github.com/junit-team/junit-framework/issues/4661 for Commons Collections, #640.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.25.0 to 10.26.1 on Java 11 and up.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump net.sourceforge.pmd:pmd-core from 7.14.0 to 7.15.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump net.sourceforge.pmd:pmd-java from 7.14.0 to 7.15.0.</action>
