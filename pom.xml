@@ -461,10 +461,11 @@
                 <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
               </manifest>
             </archive>
+            <!-- &#160; is non-breaking space -->
             <bottom>
               Copyright © {inceptionYear}-{currentYear} {organizationName}. All rights reserved.&lt;/br&gt;
-              &lt;a href="${project.url}">${project.name}&lt;/a&gt; |
-              &lt;a href="${project.issueManagement.url}">Issue management&lt;/a&gt; |
+              &lt;a href="${project.url}">${project.name}&lt;/a&gt; |&#160;
+              &lt;a href="${project.issueManagement.url}">Issue management&lt;/a&gt; |&#160;
               &lt;a href="${project.scm.url}">Source repository&lt;/a&gt;
             </bottom>
             <failOnWarnings>${commons.javadoc.failOnWarnings}</failOnWarnings>
