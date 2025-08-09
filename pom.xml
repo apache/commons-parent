@@ -121,8 +121,7 @@
     <commons.build-plugin.version>1.16.0</commons.build-plugin.version>
     <commons.changes.version>3.0.0-M3</commons.changes.version>
     <commons.checkstyle-plugin.version>3.6.0</commons.checkstyle-plugin.version>
-    <!-- Checkstyle 9.3 is the version compatible with Java 8 -->
-    <commons.checkstyle.version>9.3</commons.checkstyle.version>
+    <commons.checkstyle.version>11.0.0</commons.checkstyle.version>
     <commons.compiler.version>3.14.0</commons.compiler.version>
     <commons.cyclonedx.version>2.9.1</commons.cyclonedx.version>
     <commons.spdx.version>1.0.3</commons.spdx.version>
@@ -1708,6 +1707,7 @@
       <properties>
         <commons.spdx.version>0.6.3</commons.spdx.version>
         <commons.spotbugs.impl.version>4.8.6</commons.spotbugs.impl.version>
+        <commons.checkstyle.version>9.3</commons.checkstyle.version>
       </properties>
     </profile>
     <!-- allow simple creation of the site without any optional reports -->
@@ -1726,7 +1726,7 @@
     <profile>
       <id>java-9-up</id>
         <activation>
-	        <jdk>[9,)</jdk>
+	      <jdk>[9,)</jdk>
         </activation>
         <properties>
           <moditect.java.version>9</moditect.java.version>
@@ -1780,22 +1780,22 @@
       <!-- Java 8, 9, 10 -->
       <id>java-8-9-10</id>
       <activation>
-	      <jdk>[1.8,10]</jdk>
+	    <jdk>[1.8,10]</jdk>
       </activation>
       <properties>
         <!-- SpotBugs 4.9.0 requires Java 11 -->
         <commons.spotbugs.plugin.version>4.8.6.6</commons.spotbugs.plugin.version>
         <commons.spotbugs.impl.version>4.8.6</commons.spotbugs.impl.version>
+        <commons.checkstyle.version>9.3</commons.checkstyle.version>
       </properties>
     </profile>
     <profile>
       <!-- Java 11 and up -->
       <id>java-11-up</id>
       <activation>
-	      <jdk>[11,)</jdk>
+	    <jdk>[11,)</jdk>
       </activation>
       <properties>
-        <commons.checkstyle.version>10.26.1</commons.checkstyle.version>
       </properties>
     </profile>
     <profile>
