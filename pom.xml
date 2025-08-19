@@ -1710,19 +1710,6 @@
         <commons.checkstyle.version>9.3</commons.checkstyle.version>
       </properties>
     </profile>
-    <!-- allow simple creation of the site without any optional reports -->
-    <profile>
-      <id>site-basic</id>
-      <properties>
-        <skipTests>true</skipTests>
-        <maven.javadoc.skip>true</maven.javadoc.skip>
-        <spotbugs.skip>true</spotbugs.skip>
-        <checkstyle.skip>true</checkstyle.skip>
-        <rat.skip>true</rat.skip> <!-- from version 0.12 -->
-        <jacoco.skip>true</jacoco.skip>
-        <skipSurefireReport>true</skipSurefireReport>
-      </properties>
-    </profile>
     <profile>
       <id>java-9-up</id>
         <activation>
@@ -1823,6 +1810,19 @@
 	  </activation>
       <properties>
         <argLine>-XX:+EnableDynamicAgentLoading</argLine>
+      </properties>
+    </profile>
+    <!-- allow simple creation of the site without any optional reports -->
+    <profile>
+      <id>site-basic</id>
+      <properties>
+        <skipTests>true</skipTests>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
+        <spotbugs.skip>true</spotbugs.skip>
+        <checkstyle.skip>true</checkstyle.skip>
+        <rat.skip>true</rat.skip> <!-- from version 0.12 -->
+        <jacoco.skip>true</jacoco.skip>
+        <skipSurefireReport>true</skipSurefireReport>
       </properties>
     </profile>
     <profile>
