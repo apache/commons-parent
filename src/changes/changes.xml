@@ -57,6 +57,11 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
+      <release version="88" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
+        <!-- FIX -->
+        <!-- ADD -->
+        <!-- UPDATE -->
+      </release>
       <release version="87" date="2025-08-20" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
         <action type="fix" dev="ggregory" due-to="Gary Gregory">Use Checkstyle 10.x on Java 11-16, Checkstyle 11.x requires Java 17.</action>
