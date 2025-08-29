@@ -66,6 +66,10 @@
     mvn site -P!jacoco
   -->
   <properties>
+    <!-- TEMP HACK START -->
+    <!-- Something is broken in 3.11.3, see Maven user mailing list. -->
+    <commons.javadoc.version>3.11.2</commons.javadoc.version>
+    <!-- TEMP HACK END -->
     <!-- Minimum Maven version required by the plugins -->
     <minimalMavenBuildVersion>3.6.3</minimalMavenBuildVersion>
     <!-- Minimum Java version required by build -->
