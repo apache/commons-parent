@@ -1017,7 +1017,8 @@
             <exclude>.project</exclude>
             <exclude>.classpath</exclude>
             <exclude>.settings/**</exclude>
-            <exclude>bin/**</exclude>
+            <exclude>**/*.svg</exclude>
+            <exclude>**/*.xcf</exclude>
           </excludes>
         </configuration>
         <executions>
