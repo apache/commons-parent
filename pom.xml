@@ -125,7 +125,7 @@
     <commons.compiler.version>3.14.0</commons.compiler.version>
     <commons.cyclonedx.version>2.9.1</commons.cyclonedx.version>
     <commons.spdx.version>1.0.3</commons.spdx.version>
-    <commons.failsafe.version>3.5.3</commons.failsafe.version>
+    <commons.failsafe.version>3.5.4</commons.failsafe.version>
     <commons.felix.version>5.1.9</commons.felix.version>
     <commons.jacoco.version>0.8.13</commons.jacoco.version>
     <commons.japicmp.version>0.23.1</commons.japicmp.version>
@@ -154,8 +154,8 @@
     <commons.site-plugin.version>3.21.0</commons.site-plugin.version>
     <commons.spotbugs.plugin.version>4.9.4.2</commons.spotbugs.plugin.version>
     <commons.spotbugs.impl.version>4.9.4</commons.spotbugs.impl.version>
-    <commons.surefire-report.version>3.5.3</commons.surefire-report.version>
-    <commons.surefire.version>3.5.3</commons.surefire.version>
+    <commons.surefire-report.version>3.5.4</commons.surefire-report.version>
+    <commons.surefire.version>3.5.4</commons.surefire.version>
     <commons.wagon-ssh.version>3.5.3</commons.wagon-ssh.version>
     <commons.maven-remote-resources-plugin.version>3.3.0</commons.maven-remote-resources-plugin.version>
     <!-- Default values for the download-page generation by commons-build-plugin -->
