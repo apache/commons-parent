@@ -59,11 +59,17 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
       <release version="88" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
+        <action type="fix" dev="sebb">Drop feather reference</action>
         <!-- ADD -->
+        <action type="add" dev="ggregory" due-to="Gary Gregory">Apache RAT plugin now ignores SVG and Gimp XCF files.</action>
         <!-- UPDATE -->
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.9.3.2 to 4.9.4.1 #656.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.9.3.2 to 4.9.4.2 #656, #660.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:versions-maven-plugin from 2.18.0 to 2.19.0 #655.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 11.0.0 to 11.0.1 #657 #655.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump commons.pmd-impl.version from 7.16.0 to 7.17.0 #659.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-failsafe-plugin from 3.5.3 to 3.5.4.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-plugin from 3.5.3 to 3.5.4.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-report-plugin from 3.5.3 to 3.5.4.</action>
       </release>
       <release version="87" date="2025-08-20" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
