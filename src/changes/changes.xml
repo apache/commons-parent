@@ -57,10 +57,11 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
-      <release version="88" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
+      <release version="88" date="2025-09-16" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
-        <action type="fix" dev="sebb">Drop feather reference</action>
+        <action type="fix" dev="sebb">Drop reference to the old Apache "Feather".</action>
         <!-- ADD -->
+        <action type="add" dev="ggregory" due-to="Gary Gregory">Generated sites now use the new Apache "Oak" logo.</action>
         <action type="add" dev="ggregory" due-to="Gary Gregory">Apache RAT plugin now ignores SVG and Gimp XCF files.</action>
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.9.3.2 to 4.9.5.0 #656, #660.</action>

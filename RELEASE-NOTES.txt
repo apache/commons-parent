@@ -1,3 +1,45 @@
+Apache Commons Parent 88 Release Notes
+--------------------------------------
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 88.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+This is a feature and maintenance release. Java 8 or later is required.
+
+New features
+------------
+*                   Generated sites now use the new Apache "Oak" logo. Thanks to Gary Gregory.
+*                   Apache RAT plugin now ignores SVG and Gimp XCF files. Thanks to Gary Gregory.
+
+Fixed Bugs
+----------
+*                   Drop reference to the old Apache "Feather".
+
+Changes
+-------
+*                   Bump com.github.spotbugs:spotbugs-maven-plugin from 4.9.3.2 to 4.9.5.0 #656, #660. Thanks to Gary Gregory.
+*                   Bump org.codehaus.mojo:versions-maven-plugin from 2.18.0 to 2.19.0 #655. Thanks to Gary Gregory.
+*                   Bump com.puppycrawl.tools:checkstyle from 11.0.0 to 11.0.1 #657 #655. Thanks to Gary Gregory.
+*                   Bump commons.pmd-impl.version from 7.16.0 to 7.17.0 #659. Thanks to Gary Gregory.
+*                   Bump maven-failsafe-plugin from 3.5.3 to 3.5.4. Thanks to Gary Gregory.
+*                   Bump maven-surefire-plugin from 3.5.3 to 3.5.4. Thanks to Gary Gregory.
+*                   Bump maven-surefire-report-plugin from 3.5.3 to 3.5.4. Thanks to Gary Gregory.
+*                   Bump com.github.spotbugs:spotbugs from 4.9.4 to 4.9.5. Thanks to Gary Gregory.
+*                   Bump org.apache.commons:commons-skin from 5.0.0 to 5.1.0. Thanks to Gary Gregory.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+Enjoy!
+Apache Commons Team
+
+-----------------------------------------------------------------------------
 Apache Commons Parent 87 Release Notes
 --------------------------------------
 
