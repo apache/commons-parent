@@ -157,7 +157,7 @@
     <commons.taglist.version>3.2.1</commons.taglist.version>
     <commons.site-plugin.version>3.21.0</commons.site-plugin.version>
     <commons.spotbugs.plugin.version>4.9.5.0</commons.spotbugs.plugin.version>
-    <commons.spotbugs.impl.version>4.9.5</commons.spotbugs.impl.version>
+    <commons.spotbugs.impl.version>4.9.6</commons.spotbugs.impl.version>
     <commons.surefire-report.version>3.5.4</commons.surefire-report.version>
     <commons.surefire.version>3.5.4</commons.surefire.version>
     <commons.wagon-ssh.version>3.5.3</commons.wagon-ssh.version>
