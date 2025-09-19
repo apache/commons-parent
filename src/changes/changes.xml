@@ -57,6 +57,11 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
+      <release version="89" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
+        <!-- FIX -->
+        <!-- ADD -->
+        <!-- UPDATE -->
+      </release>
       <release version="88" date="2025-09-16" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
         <action type="fix" dev="sebb">Drop reference to the old Apache "Feather".</action>
