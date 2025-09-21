@@ -66,7 +66,6 @@
     mvn site -P!jacoco
   -->
   <properties>
-    <commons.javadoc.version>3.12.0</commons.javadoc.version>
     <!-- Minimum Maven version required by the plugins -->
     <minimalMavenBuildVersion>3.6.3</minimalMavenBuildVersion>
     <!-- Minimum Java version required by build -->
@@ -131,7 +130,7 @@
     <commons.jacoco.version>0.8.13</commons.jacoco.version>
     <commons.japicmp.version>0.23.1</commons.japicmp.version>
     <commons.jar-plugin.version>3.4.2</commons.jar-plugin.version>
-    <commons.javadoc.version>3.11.3</commons.javadoc.version>
+    <commons.javadoc.version>3.20.0</commons.javadoc.version>
     <commons.jxr.version>3.6.0</commons.jxr.version>
     <commons.pmd.version>3.27.0</commons.pmd.version>
     <commons.pmd-impl.version>7.17.0</commons.pmd-impl.version>
