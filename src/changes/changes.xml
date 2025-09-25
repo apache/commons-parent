@@ -63,7 +63,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.9.5.0 to 4.9.6.0 #662.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs from 4.9.5 to 4.9.6.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-javadoc-plugin from 3.11.3 to 3.12.0.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-javadoc-plugin from 3.11.3 to 3.12.0. Fixes "[WARNING] Javadoc 1.4+ doesn't support the -1.1 switch anymore. Ignore this option."</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-compiler-plugin from 3.14.0 to 3.14.1.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:versions-maven-plugin from 2.19.0 to 2.19.1.</action>
       </release>
