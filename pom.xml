@@ -211,7 +211,6 @@
       other protocols like scpexe, which some users prefer over scp.
     -->
     <commons.deployment.protocol>scp</commons.deployment.protocol>
-
     <!--
       Encoding of Java source files: ensures that the compiler and
       the javadoc generator use the right encoding. Subprojects may
