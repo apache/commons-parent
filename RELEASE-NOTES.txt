@@ -1,3 +1,37 @@
+Apache Commons Parent 89 Release Notes
+--------------------------------------
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 89.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+This is a feature and maintenance release. Java 8 or later is required.
+
+Changes
+-------
+*                   Bump com.github.spotbugs:spotbugs-maven-plugin from 4.9.5.0 to 4.9.6.0 #662. Thanks to Gary Gregory, Dependabot.
+*                   Bump com.github.spotbugs:spotbugs from 4.9.5 to 4.9.6. Thanks to Gary Gregory.
+*                   Bump maven-javadoc-plugin from 3.11.3 to 3.12.0. Fixes "[WARNING] Javadoc 1.4+ doesn't support the -1.1 switch anymore. Ignore this option." Thanks to Gary Gregory.
+*                   Bump maven-compiler-plugin from 3.14.0 to 3.14.1. Thanks to Gary Gregory.
+*                   Bump org.codehaus.mojo:versions-maven-plugin from 2.19.0 to 2.19.1. Thanks to Gary Gregory.
+*                   Bump com.puppycrawl.tools:checkstyle from 11.0.1 to 11.1.0. Thanks to Gary Gregory.
+*                   Bump org.codehaus.mojo:exec-maven-plugin from 3.5.1 to 3.6.0. Thanks to Gary Gregory.
+*                   Bump org.apache.maven.plugins:maven-artifact-plugin from 3.6.0 to 3.6.1 #668. Thanks to Gary Gregory, Dependabot.
+*                   Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.23.1 to 0.24.1. Thanks to Gary Gregory.
+*                   Bump org.ow2.asm:asm from 9.8 to 9.9. Thanks to Gary Gregory.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+Enjoy!
+Apache Commons Team
+
+-----------------------------------------------------------------------------
 Apache Commons Parent 88 Release Notes
 --------------------------------------
 
