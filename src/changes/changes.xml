@@ -61,6 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
+        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.codehaus.mojo:exec-maven-plugin from 3.6.0 to 3.6.1 #673.</action>
       </release>
       <release version="89" date="2025-10-05" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
