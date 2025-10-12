@@ -66,6 +66,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump com.puppycrawl.tools:checkstyle from 11.1.0 to 12.0.1 on Java 17 and up.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-pmd-plugin from 3.27.0 to 3.28.0. Discontinue using Rule name category/java/errorprone.xml/UselessOperationOnImmutable as it is scheduled for removal from PMD. PMD 8.0.0 will remove support for this Rule.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.24.1 to 0.24.2.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.jacoco:jacoco-maven-plugin from 0.8.13 to 0.8.14.</action>
       </release>
       <release version="89" date="2025-10-05" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
