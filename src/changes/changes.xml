@@ -61,6 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.commons:commons-skin from 5.1.0 to 5.2.0, new Apache Commons Oak logotype.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs from 4.9.7 to 4.9.8.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.9.7.0 to 4.9.8.1.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.rat:apache-rat-plugin from 0.16.1 to 0.17.</action>

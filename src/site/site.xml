@@ -50,7 +50,7 @@
   <skin>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-skin</artifactId>
-    <version>5.1.0</version>
+    <version>5.2.0</version>
   </skin>
   <!-- 
     Trying to use
