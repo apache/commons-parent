@@ -64,6 +64,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs from 4.9.7 to 4.9.8.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.9.7.0 to 4.9.8.1.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.rat:apache-rat-plugin from 0.16.1 to 0.17.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:exec-maven-plugin from 3.6.1 to 3.6.2.</action>
       </release>
       <release version="90" date="2025-10-17" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
