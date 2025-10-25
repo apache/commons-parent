@@ -1,3 +1,33 @@
+Apache Commons Parent 91 Release Notes
+--------------------------------------
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 91.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+This is a feature and maintenance release. Java 8 or later is required.
+
+Changes
+-------
+*                   Bump org.apache.commons:commons-skin from 5.1.0 to 5.2.0, new Apache Commons Oak logotype. Thanks to Gary Gregory.
+*                   Bump com.github.spotbugs:spotbugs from 4.9.7 to 4.9.8. Thanks to Gary Gregory.
+*                   Bump com.github.spotbugs:spotbugs-maven-plugin from 4.9.7.0 to 4.9.8.1. Thanks to Gary Gregory.
+*                   Bump org.apache.rat:apache-rat-plugin from 0.16.1 to 0.17. Thanks to Gary Gregory.
+*                   Bump org.codehaus.mojo:exec-maven-plugin from 3.6.1 to 3.6.2. Thanks to Gary Gregory.
+*                   Bump com.puppycrawl.tools:checkstyle from 12.1.0 on Java 17 and up. Thanks to Gary Gregory.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+Enjoy!
+Apache Commons Team
+
+-----------------------------------------------------------------------------
 Apache Commons Parent 90 Release Notes
 --------------------------------------
 
