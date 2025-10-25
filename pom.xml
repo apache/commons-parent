@@ -200,7 +200,7 @@
     <!-- Configuration properties for the OSGi maven-bundle-plugin -->
     <commons.osgi.symbolicName>org.apache.commons.${commons.packageId}</commons.osgi.symbolicName>
     <commons.osgi.export>org.apache.commons.*;version=${project.version};-noimport:=true</commons.osgi.export>
-    <commons.osgi.import>*</commons.osgi.import>
+    <commons.osgi.import>!java.*,*</commons.osgi.import>
     <commons.osgi.dynamicImport />
     <commons.osgi.private />
     <commons.osgi.excludeDependencies>true</commons.osgi.excludeDependencies>
