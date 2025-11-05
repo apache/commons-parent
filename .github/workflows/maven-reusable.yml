@@ -1,0 +1,76 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#      https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+name: Java CI (reusable)
+
+on:
+  workflow_call: { }
+
+# Explicitly drop all permissions inherited from the caller for security.
+permissions: { }
+
+jobs:
+  build:
+    #
+    # Name of the job to be used in .asf.yaml required CI checks.
+    #
+    name: build (${{ matrix.os }}, JDK ${{ matrix.java }})
+    runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, windows-latest, macos-latest ]
+        java: [ 8, 11, 17, 21, 25 ]
+        experimental: [ false ]
+        # Keep the same parameter order as the matrix above
+        #
+        # PMD does not yet support Java 26 (see https://github.com/pmd/pmd/issues/5871).
+        # It is therefore too soon to run tests with Java 26.
+        # Uncomment the following lines once the above issue has been resolved.
+        #
+        # include:
+        #   - os: ubuntu-latest
+        #     java: 26-ea
+        #     experimental: true
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          persist-credentials: false
+
+      - name: Set up JDK ${{ matrix.java }}
+        uses: actions/setup-java@dded0888837ed1f317902acf8a20df0ad188d165 # v5.0.0
+        with:
+          distribution: ${{ runner.os == 'macOS' && matrix.java == 8 && 'zulu' || 'temurin' }}
+          java-version: ${{ matrix.java }}
+          cache: maven
+
+      - name: Build with Maven
+        run: mvn --errors --show-version --batch-mode --no-transfer-progress -Ddoclint=all
+
+      # Always collect surefire/failsafe reports if they exist (esp. on failure)
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        with:
+          name: surefire-reports-${{ matrix.os }}-jdk${{ matrix.java }}
+          if-no-files-found: ignore
+          retention-days: 7
+          path: |
+            **/target/surefire-reports/*.xml
+            **/target/surefire-reports/*.txt
+            **/target/failsafe-reports/*.xml
+            **/target/failsafe-reports/*.txt
