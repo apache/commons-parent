@@ -195,6 +195,7 @@
          - and so on...
     -->
     <commons.packageId>${project.artifactId}</commons.packageId>
+    <commons.repo.name>commons-${commons.componentid}</commons.repo.name>
     <!-- JPMS -->
     <commons.module.name>org.apache.commons.${commons.packageId}</commons.module.name>
     <!-- Configuration properties for the OSGi maven-bundle-plugin -->
@@ -323,13 +324,14 @@
     </mailingList>
   </mailingLists>
   <!--
-    This section *must* be overwritten by subprojects. It is only to allow
+    This section *may* be overwritten by subprojects. It is only to allow
     a release of the commons-parent POM.
   -->
   <scm>
-    <connection>scm:git:https://gitbox.apache.org/repos/asf/commons-parent.git</connection>
-    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/commons-parent.git</developerConnection>
-    <url>https://gitbox.apache.org/repos/asf?p=commons-parent.git</url>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/${commons.repo.name}.git</connection>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/${commons.repo.name}.git</developerConnection>
+    <url>https://gitbox.apache.org/repos/asf?p=${commons.repo.name}.git</url>
+    <tag>rel/${commons.repo.name}-${commons.release.version}</tag>
   </scm>
   <issueManagement>
     <system>jira</system>
