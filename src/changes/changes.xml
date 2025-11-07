@@ -57,7 +57,7 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
-      <release version="92" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
+      <release version="92" date="2025-11-07" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
         <!-- ADD -->
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add POM property `commons.repo.name` as `commons-${commons.componentid}` and use in project/scm values.</action>
