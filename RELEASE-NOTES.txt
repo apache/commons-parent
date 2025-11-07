@@ -1,3 +1,34 @@
+Apache Commons Parent 92 Release Notes
+--------------------------------------
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 92.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+This is a feature and maintenance release. Java 8 or later is required.
+
+New features
+------------
+*                   Add POM property `commons.repo.name` as `commons-${commons.componentid}` and use in project/scm values. Thanks to Gary Gregory.
+*                   Add POM project/scm/tag element. Thanks to Gary Gregory.
+
+Changes
+-------
+*                   Bump com.puppycrawl.tools:checkstyle from 12.1.0 to 12.1.0 on Java 17 and up. Thanks to Gary Gregory.
+*                   Bump commons.pmd-impl.version from 7.17.0 to 7.18.0 #680. Thanks to Gary Gregory, Dependabot.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+Enjoy!
+Apache Commons Team
+
+-----------------------------------------------------------------------------
 Apache Commons Parent 91 Release Notes
 --------------------------------------
 
