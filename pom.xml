@@ -334,7 +334,7 @@
     <tag>rel/${commons.repo.name}-${commons.release.version}</tag>
   </scm>
   <issueManagement>
-    <system>jira</system>
+    <system>JIRA</system>
     <url>https://issues.apache.org/jira/browse/${commons.jira.id}</url>
   </issueManagement>
   <ciManagement>
