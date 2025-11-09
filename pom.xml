@@ -1105,7 +1105,8 @@
           <maxEntries>${commons.changes.maxEntries}</maxEntries>
           <runOnlyAtExecutionRoot>${commons.changes.runOnlyAtExecutionRoot}</runOnlyAtExecutionRoot>
           <issueLinkTemplatePerSystem>
-            <!-- TODO Why does the plugin use the default %URL%/browse/ViewIssue.jspa?key=%ISSUE% -->
+            <!-- https://github.com/apache/maven-changes-plugin/issues/619 -->
+            <!-- TODO The plugin uses the "default" key which give you %URL%/browse/ViewIssue.jspa?key=%ISSUE% -->
             <default>%URL%/%ISSUE%</default>
             <!-- Future: GitHub -->
           </issueLinkTemplatePerSystem>
