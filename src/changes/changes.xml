@@ -60,6 +60,7 @@ The <action> type attribute can be add,update,fix,remove.
       <release version="93" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
         <action type="fix" dev="ggregory" due-to="Gary Gregory">POM issueManagement/url now reuses the existing property `commons.jira.id`.</action>
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">Fix maven-changes-plugin template for Jira issues link.</action>
         <!-- ADD -->
         <!-- UPDATE -->
       </release>

@@ -1104,6 +1104,11 @@
           <onlyCurrentVersion>${commons.changes.onlyCurrentVersion}</onlyCurrentVersion>
           <maxEntries>${commons.changes.maxEntries}</maxEntries>
           <runOnlyAtExecutionRoot>${commons.changes.runOnlyAtExecutionRoot}</runOnlyAtExecutionRoot>
+          <issueLinkTemplatePerSystem>
+            <!-- TODO Why does the plugin use the default %URL%/browse/ViewIssue.jspa?key=%ISSUE% -->
+            <default>%URL%/%ISSUE%</default>
+            <!-- Future: GitHub -->
+          </issueLinkTemplatePerSystem>
         </configuration>
         <reportSets>
           <reportSet>
