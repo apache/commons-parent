@@ -335,7 +335,7 @@
   </scm>
   <issueManagement>
     <system>jira</system>
-    <url>https://issues.apache.org/jira/browse/COMMONSSITE</url>
+    <url>https://issues.apache.org/jira/browse/${commons.jira.id}</url>
   </issueManagement>
   <ciManagement>
     <system>GitHub</system>
