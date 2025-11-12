@@ -339,7 +339,7 @@
   </issueManagement>
   <ciManagement>
     <system>GitHub</system>
-    <url>https://github.com/apache/commons-parent/actions</url>
+    <url>https://github.com/apache/${commons.repo.name}/actions</url>
   </ciManagement>
   <dependencyManagement>
     <dependencies>
