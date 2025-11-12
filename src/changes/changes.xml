@@ -63,6 +63,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="fix" dev="ggregory" due-to="Gary Gregory">Fix maven-changes-plugin template for Jira issues link.</action>
         <!-- ADD -->
         <!-- UPDATE -->
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 12.1.1 to 12.1.2 on Java 17 and up.</action>
       </release>
       <release version="92" date="2025-11-07" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
@@ -70,7 +71,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add POM property `commons.repo.name` as `commons-${commons.componentid}` and use in project/scm values.</action>
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add POM project/scm/tag element.</action>
         <!-- UPDATE -->
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 12.1.0 to 12.1.0 on Java 17 and up.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 12.1.0 to 12.1.1 on Java 17 and up.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump commons.pmd-impl.version from 7.17.0 to 7.18.0 #680.</action>
       </release>
       <release version="91" date="2025-10-25" description="This is a feature and maintenance release. Java 8 or later is required.">

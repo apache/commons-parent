@@ -121,7 +121,7 @@
     <commons.build-plugin.version>1.16.0</commons.build-plugin.version>
     <commons.changes.version>3.0.0-M3</commons.changes.version>
     <commons.checkstyle-plugin.version>3.6.0</commons.checkstyle-plugin.version>
-    <commons.checkstyle.version>12.1.1</commons.checkstyle.version>
+    <commons.checkstyle.version>12.1.2</commons.checkstyle.version>
     <commons.compiler.version>3.14.1</commons.compiler.version>
     <commons.cyclonedx.version>2.9.1</commons.cyclonedx.version>
     <commons.spdx.version>1.0.3</commons.spdx.version>
