@@ -144,7 +144,7 @@
     <!-- bndlib 7 requires Java 17 -->
     <commons.biz.aQute.bndlib.version>6.4.1</commons.biz.aQute.bndlib.version>
     <!-- JUnit 6 requires Java 17 -->
-    <commons.junit.version>5.13.4</commons.junit.version>
+    <commons.junit.version>5.14.1</commons.junit.version>
     <!-- JUnit Pioneer 2 requires Java 11 -->
     <commons.junit-pioneer.version>1.9.1</commons.junit-pioneer.version>
     <!-- Mockito version 5 requires Java > 8 -->
