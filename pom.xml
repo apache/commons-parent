@@ -129,7 +129,7 @@
     <commons.felix.version>5.1.9</commons.felix.version>
     <commons.jacoco.version>0.8.14</commons.jacoco.version>
     <commons.japicmp.version>0.24.2</commons.japicmp.version>
-    <commons.jar-plugin.version>3.4.2</commons.jar-plugin.version>
+    <commons.jar-plugin.version>3.5.0</commons.jar-plugin.version>
     <commons.javadoc.version>3.12.0</commons.javadoc.version>
     <commons.jxr.version>3.6.0</commons.jxr.version>
     <commons.pmd.version>3.28.0</commons.pmd.version>
