@@ -138,7 +138,6 @@
     <commons.rat.version>0.17</commons.rat.version>
     <commons.release-plugin.version>1.9.1</commons.release-plugin.version>
     <commons.scm-publish.version>1.1</commons.scm-publish.version>
-    <commons.buildnumber-plugin.version>3.2.1</commons.buildnumber-plugin.version>
     <commons.moditect-maven-plugin.version>1.3.0.Final</commons.moditect-maven-plugin.version>
     <commons.moditect-maven-plugin.addServiceUses>true</commons.moditect-maven-plugin.addServiceUses>
     <!-- bndlib 7 requires Java 17 -->
@@ -609,11 +608,6 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>build-helper-maven-plugin</artifactId>
           <version>${commons.build-helper.version}</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>buildnumber-maven-plugin</artifactId>
-          <version>${commons.buildnumber-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -1656,42 +1650,6 @@
                 </goals>
               </execution>
             </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-    <!--
-      Automatically run the buildnumber plugin unless the buildNumber.skip property is defined as true
-    -->
-    <profile>
-      <id>svn-buildnumber</id>
-      <activation>
-        <property>
-          <name>!buildNumber.skip</name>
-          <value>!true</value>
-        </property>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>buildnumber-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <phase>generate-resources</phase>
-                <goals>
-                  <goal>create</goal>
-                </goals>
-              </execution>
-            </executions>
-            <configuration>
-              <!-- Use committed revision so it does not change every time svn update is run -->
-              <useLastCommittedRevision>true</useLastCommittedRevision>
-              <!-- default revision number if unavailable -->
-              <revisionOnScmFailure>??????</revisionOnScmFailure>
-              <doCheck>false</doCheck>
-              <doUpdate>false</doUpdate>
-            </configuration>
           </plugin>
         </plugins>
       </build>
