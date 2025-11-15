@@ -66,6 +66,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 12.1.1 to 12.1.2 on Java 17 and up.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump JUnit from 5.13.4 to 5.14.1.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.apache.maven.plugins:maven-jar-plugin from 3.4.2 to 3.5.0 #686.</action>
       </release>
       <release version="92" date="2025-11-07" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
