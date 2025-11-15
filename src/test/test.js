@@ -17,3 +17,6 @@
 //
 
 // This file exists because components use CodeQL in GitHub and we generate a CodeQL link in README.md files.
+function alwaysTrue() {
+  return true;
+}
