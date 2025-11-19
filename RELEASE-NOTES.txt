@@ -1,3 +1,40 @@
+Apache Commons Parent 93 Release Notes
+--------------------------------------
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 93.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+This is a feature and maintenance release. Java 8 or later is required.
+
+Fixed Bugs
+----------
+*                   POM issueManagement/url now reuses the property `commons.jira.id`. Thanks to Gary Gregory.
+*                   Fix maven-changes-plugin template for Jira issues link. Thanks to Gary Gregory.
+*                   POM /issueManagement/url now reuses the `commons.repo.name`. Thanks to Gary Gregory.
+*                   Fix the configuration for the Apache Maven RAT plugin to not use deprecated XML elements. Thanks to Gary Gregory.
+
+Changes
+-------
+*                   Bump com.puppycrawl.tools:checkstyle from 12.1.1 to 12.1.2 on Java 17 and up. Thanks to Gary Gregory.
+*                   Bump JUnit from 5.13.4 to 5.14.1. Thanks to Gary Gregory.
+*                   Bump org.apache.maven.plugins:maven-jar-plugin from 3.4.2 to 3.5.0 #686. Thanks to Gary Gregory, Dependabot.
+
+Removed
+-------
+*                   Remove buildnumber-maven-plugin #683. Thanks to Gary Gregory.
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+Enjoy!
+Apache Commons Team
+
+-----------------------------------------------------------------------------
 Apache Commons Parent 92 Release Notes
 --------------------------------------
 
