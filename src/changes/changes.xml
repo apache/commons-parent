@@ -61,6 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:taglist-maven-plugin from 3.2.1 to 3.2.2.</action>
       </release>
       <release version="93" date="2025-11-19" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
@@ -73,7 +74,6 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 12.1.1 to 12.1.2 on Java 17 and up.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump JUnit from 5.13.4 to 5.14.1.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.apache.maven.plugins:maven-jar-plugin from 3.4.2 to 3.5.0 #686.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:taglist-maven-plugin from 3.2.1 to 3.2.2.</action>
         <!-- UPDATE -->
         <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove buildnumber-maven-plugin #683.</action>
       </release>
