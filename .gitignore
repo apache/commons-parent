@@ -3,3 +3,7 @@
 /target/
 /commons-parent.iml
 /.idea/
+
+# NetBeans files
+nb-configuration.xml
+nbactions.xml
