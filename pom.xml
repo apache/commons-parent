@@ -149,7 +149,7 @@
     <!-- Mockito version 5 requires Java > 8 -->
     <commons.mockito.version>4.11.0</commons.mockito.version>
     <commons.jmh.version>1.37</commons.jmh.version>
-    <commons.asm.version>9.9</commons.asm.version>
+    <commons.asm.version>9.9.1</commons.asm.version>
     <commons.taglist.version>3.2.2</commons.taglist.version>
     <commons.site-plugin.version>3.21.0</commons.site-plugin.version>
     <commons.spotbugs.plugin.version>4.9.8.2</commons.spotbugs.plugin.version>
