@@ -66,7 +66,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:taglist-maven-plugin from 3.2.1 to 3.2.2.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.9.8.1 to 4.9.8.2.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:versions-maven-plugin from 2.19.1 to 2.20.1.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.24.2 to 0.25.0.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.24.2 to 0.25.1.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump net.sourceforge.pmd:pmd-* from 7.18.0 to 7.19.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-assembly-plugin from 3.7.1 to 3.8.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump com.puppycrawl.tools:checkstyle from 12.1.2 to 12.3.0 #687.</action>
