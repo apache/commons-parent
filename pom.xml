@@ -1731,8 +1731,8 @@
 	  </build>
     </profile>
     <profile>
-      <!-- Java 8, 9, 10 -->
-      <id>java-8-9-10</id>
+      <!-- Java 8-9 -->
+      <id>java-8-9</id>
       <activation>
 	    <jdk>[1.8,10]</jdk>
       </activation>
