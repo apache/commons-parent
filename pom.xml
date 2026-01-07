@@ -1751,6 +1751,8 @@
       </activation>
       <properties>
         <commons.checkstyle.version>10.26.1</commons.checkstyle.version>
+        <!-- spdx can require Java 17 depending on undocumented behavior which kicks in for us here on macOS (but not on Java 8 somehow). -->
+        <commons.spdx.version>0.5.5</commons.spdx.version>
       </properties>
     </profile>
     <profile>

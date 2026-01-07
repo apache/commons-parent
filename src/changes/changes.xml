@@ -59,6 +59,7 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
       <release version="95" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Use spdx 0.5.5 on Java 11, which can require Java 17 depending on undocumented behavior which kicks for us sometimes on macOS (but not on Java 8 somehow).</action>
         <!-- ADD -->
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump com.puppycrawl.tools:checkstyle from 12.3.0 to 12.3.1 #691.</action>
