@@ -1,3 +1,32 @@
+Apache Commons Parent 95 Release Notes
+--------------------------------------
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 95.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+This is a feature and maintenance release. Java 8 or later is required.
+
+Changes
+-------
+*                   Use spdx 0.5.5 on Java 11, spdx can require Java 17 depending on undocumented behavior which applies for us sometimes on macOS (but never on Java 8). Thanks to Gary Gregory.
+*                   Bump com.puppycrawl.tools:checkstyle from 12.3.0 to 12.3.1 #691. Thanks to Gary Gregory, Dependabot.
+*                   Bump commons.pmd-impl.version from 7.19.0 to 7.20.0 #689. Thanks to Gary Gregory, Dependabot.
+*                   Bump com.puppycrawl.tools:checkstyle from 12.3.1 to 13.0.0 on Java 21 and up. Thanks to Gary Gregory, Dependabot.
+*                   Bump org.apache:apache from 35 to 36. Thanks to Gary Gregory.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+Enjoy!
+Apache Commons Team
+
+-----------------------------------------------------------------------------
 Apache Commons Parent 94 Release Notes
 --------------------------------------
 
