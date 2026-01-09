@@ -62,10 +62,11 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Gary Gregory">Use spdx 0.5.5 on Java 11, spdx can require Java 17 depending on undocumented behavior which applies for us sometimes on macOS (but never on Java 8).</action>
         <!-- ADD -->
         <!-- UPDATE -->
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache:apache from 35 to 36.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump com.puppycrawl.tools:checkstyle from 12.3.0 to 12.3.1 #691.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump commons.pmd-impl.version from 7.19.0 to 7.20.0 #689.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump com.puppycrawl.tools:checkstyle from 12.3.1 to 13.0.0 on Java 21 and up.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache:apache from 35 to 36.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.25.1 to 0.25.2.</action>
       </release>
       <release version="94" date="2025-12-30" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
