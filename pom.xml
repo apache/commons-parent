@@ -1773,7 +1773,7 @@
 	  </activation>
       <properties>
         <commons.felix.version>6.0.0</commons.felix.version>
-        <commons.biz.aQute.bndlib.version>7.2.0</commons.biz.aQute.bndlib.version>
+        <commons.biz.aQute.bndlib.version>7.2.1</commons.biz.aQute.bndlib.version>
       </properties>
     </profile>
     <profile>
