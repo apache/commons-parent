@@ -45,7 +45,7 @@ Apache Commons Parent
 
 [![Java CI](https://github.com/apache/commons-parent/actions/workflows/maven.yml/badge.svg)](https://github.com/apache/commons-parent/actions/workflows/maven.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/org.apache.commons/commons-parent?label=Maven%20Central)](https://search.maven.org/artifact/org.apache.commons/commons-parent)
-[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/95.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/95)
+[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/96.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/96)
 [![CodeQL](https://github.com/apache/commons-parent/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/apache/commons-parent/actions/workflows/codeql-analysis.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent)
 
@@ -68,7 +68,7 @@ Alternatively, you can pull it from the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>95</version>
+  <version>96</version>
 </dependency>
 ```
 
@@ -111,7 +111,6 @@ Additional Resources
 + [Apache Commons Homepage](https://commons.apache.org/)
 + [Apache Issue Tracker (JIRA)](https://issues.apache.org/jira/browse/COMMONSSITE)
 + [Apache Commons Slack Channel](https://the-asf.slack.com/archives/C60NVB8AD)
-+ [Apache Commons Twitter Account](https://twitter.com/ApacheCommons)
 
 Apache Commons Components
 -------------------------

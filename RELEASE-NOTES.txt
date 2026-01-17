@@ -1,3 +1,31 @@
+Apache Commons Parent 96 Release Notes
+--------------------------------------
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 96.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+This is a feature and maintenance release. Java 8 or later is required.
+
+Changes
+-------
+*                   Bump org.apache:apache from 36 to 37. Thanks to Gary Gregory.
+*                   Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.25.1 to 0.25.4. Thanks to Gary Gregory.
+*                   Bump commons.junit.version from 5.14.1 to 5.14.2. Thanks to Gary Gregory.
+*                   Bump biz.aQute.bnd:biz.aQute.bndlib from 7.2.0 to 7.2.1 on Java 17 and up. Thanks to Gary Gregory.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+Enjoy!
+Apache Commons Team
+
+-----------------------------------------------------------------------------
 Apache Commons Parent 95 Release Notes
 --------------------------------------
 
