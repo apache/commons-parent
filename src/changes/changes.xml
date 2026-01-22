@@ -61,6 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.bcel:bcel from 6.11.0 to 6.12.0.</action>
       </release>
       <release version="96" date="2026-01-17" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
