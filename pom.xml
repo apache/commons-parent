@@ -76,13 +76,13 @@
     <project.build.outputTimestamp>2026-01-21T22:04:56Z</project.build.outputTimestamp>
     <commons.main.branch>master</commons.main.branch>
     <commons.release.branch>release</commons.release.branch>
-    <commons.release.version>96</commons.release.version>
-    <commons.release.next>97</commons.release.next>
+    <commons.release.version>97</commons.release.version>
+    <commons.release.next>98</commons.release.next>
     <commons.rc.version>RC1</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
     <!-- Commons Release Plugin -->
     <!-- Previous version of the component (used for reporting binary compatibility check)-->
-    <commons.bc.version>95</commons.bc.version>
+    <commons.bc.version>96</commons.bc.version>
     <commons.release.isDistModule>true</commons.release.isDistModule>
     <!--
       Define the following in ~/.m2/settings.xml in an active profile:
