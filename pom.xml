@@ -113,7 +113,7 @@
     <!-- https://issues.apache.org/jira/projects/MSOURCES/issues/MSOURCES-143 -->
     <version.maven-source-plugin>3.2.1</version.maven-source-plugin>
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
-    <commons.animal-sniffer.version>1.26</commons.animal-sniffer.version>
+    <commons.animal-sniffer.version>1.27</commons.animal-sniffer.version>
     <!-- Almost all signatures use version 1.0. Allow override just in case -->
     <commons.animal-sniffer.signature.version>1.0</commons.animal-sniffer.signature.version>
     <commons.assembly-plugin.version>3.8.0</commons.assembly-plugin.version>
