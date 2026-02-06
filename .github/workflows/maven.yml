@@ -27,6 +27,7 @@ jobs:
     # we want to try all Java versions here.
     continue-on-error: true
     strategy:
+      max-parallel: 20
       matrix:
         java: [ 8, 11, 17, 21, 25 ]
         include:
