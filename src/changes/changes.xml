@@ -61,6 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
 	    <!-- FIX -->
 	    <!-- ADD -->
 	    <!-- UPDATE -->
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump net.sourceforge.pmd:pmd-* from 7.21.0 to 7.22.0.</action>
 	  </release>
       <release version="97" date="2026-02-21" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
