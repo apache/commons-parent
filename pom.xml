@@ -1789,6 +1789,7 @@
         <jdk>[21,)</jdk>
 	  </activation>
       <properties>
+        <commons.checkstyle.version>13.3.0</commons.checkstyle.version>
         <argLine>-XX:+EnableDynamicAgentLoading</argLine>
       </properties>
     </profile>
