@@ -141,7 +141,7 @@
     <commons.moditect-maven-plugin.version>1.3.0.Final</commons.moditect-maven-plugin.version>
     <commons.moditect-maven-plugin.addServiceUses>true</commons.moditect-maven-plugin.addServiceUses>
     <!-- bndlib 7 requires Java 17 -->
-    <commons.biz.aQute.bndlib.version>6.4.1</commons.biz.aQute.bndlib.version>
+    <commons.biz.aQute.bndlib.version>7.2.1</commons.biz.aQute.bndlib.version>
     <!-- JUnit 6 requires Java 17 -->
     <commons.junit.version>5.14.2</commons.junit.version>
     <!-- JUnit Pioneer 2 requires Java 11 -->
