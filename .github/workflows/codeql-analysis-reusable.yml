@@ -21,7 +21,7 @@ on:
       languages:
         type: string
         description: Languages to analyze
-        default: "['actions', 'java']"
+        default: '["actions", "java"]'
         required: true
 
 # Explicitly drop all permissions inherited from the caller for security.

@@ -28,7 +28,7 @@ permissions: { }
 
 jobs:
   codeql-analysis:
-    # Differs from documentation, since this allows to test the workflow in PRs
+    # Differs from documentation, since this allows testing the workflow in PRs
     uses: ./.github/workflows/codeql-analysis-reusable.yml
     permissions:
       actions: read

@@ -37,7 +37,7 @@ ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
 
 | Input       | Type   | Default                 | Description                                                                                                                                                                          |
 |-------------|--------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `languages` | string | `"['actions', 'java']"` | JSON array of [CodeQL language identifiers](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/codeql-language-support) to analyze. |
+| `languages` | string | `"["actions", "java"]"` | JSON array of [CodeQL language identifiers](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/codeql-language-support) to analyze. |
 
 ### Required permissions
 
