@@ -61,7 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
-<!--         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.25.4 to 0.25.6.</action> -->
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.25.4 to 0.25.6, fixes https://github.com/siom79/japicmp/issues/504.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump minimalMavenBuildVersion from 3.8.1 to 3.9.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump commons.junit.version from 5.14.2 to 5.14.3.</action>
       </release>
