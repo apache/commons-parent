@@ -24,7 +24,8 @@ Central and the current status of the four GitHub Actions workflows we track acr
 + **Java CI**: the main Maven build, including unit tests and static analysis.
 + **CodeQL**: GitHub's semantic code scanning for security vulnerabilities.
 + **Scorecards**: the [OpenSSF Scorecard](https://securityscorecards.dev/) assessment of the repository's
-  supply-chain security posture.
+  supply-chain security posture. This workflow only runs against the default branch, so it is marked **N/A** for
+  secondary branches of components that support multiple lines of development.
 + **Dependency Review**: the pull-request check that flags vulnerable or incompatibly licensed dependency
   changes.
 
