@@ -59,6 +59,7 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
       <release version="99" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
+        <action type="fix" dev="ggregory" due-to="Alex Herbert">Migrate from deprecated XML tags in Apache RAT POM configuration.</action>
         <!-- ADD -->
         <action type="add" dev="ggregory" due-to="Piotr P. Karwasz, Gary Gregory, Alex Herbert">Add REPOSITORIES.md.</action>
         <!-- UPDATE -->
