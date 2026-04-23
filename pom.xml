@@ -358,7 +358,8 @@
         <groupId>org.mockito</groupId>
         <artifactId>mockito-bom</artifactId>
         <version>${commons.mockito.version}</version>
-        <scope>test</scope>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
