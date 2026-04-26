@@ -59,6 +59,7 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
       <release version="100" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
+		<action type="fix" dev="ggregory" due-to="Slawomir Jaranowski">Remove redundant manifest entries for javadoc and source plugins, now inherited from org.apache:parent:36 #703.</action>
         <!-- ADD -->
         <!-- UPDATE -->
       </release>
