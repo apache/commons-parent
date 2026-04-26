@@ -77,7 +77,7 @@
     <commons.main.branch>master</commons.main.branch>
     <commons.release.branch>release</commons.release.branch>
     <commons.release.version>99</commons.release.version>
-    <commons.release.next>100</commons.release.next>
+    <commons.release.next>101</commons.release.next>
     <commons.rc.version>RC1</commons.rc.version>
     <commons.jira.id>COMMONSSITE</commons.jira.id>
     <!-- Commons Release Plugin -->
