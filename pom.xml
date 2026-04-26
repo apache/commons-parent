@@ -110,8 +110,7 @@
     <commons.compiler.compilerVersion />
     <commons.compiler.javac />
     <commons.compiler.javadoc />
-    <!-- https://issues.apache.org/jira/projects/MSOURCES/issues/MSOURCES-143 -->
-    <version.maven-source-plugin>3.2.1</version.maven-source-plugin>
+    <version.maven-source-plugin>3.4.0</version.maven-source-plugin>
     <!-- plugin versions (allows same value in reporting and build sections; also allows easy override) -->
     <commons.animal-sniffer.version>1.27</commons.animal-sniffer.version>
     <!-- Almost all signatures use version 1.0. Allow override just in case -->
@@ -911,7 +910,7 @@
         <artifactId>maven-source-plugin</artifactId>
         <executions>
           <execution>
-            <id>create-source-jar</id>
+            <id>attach-sources</id>
             <goals>
               <goal>jar-no-fork</goal>
               <goal>test-jar-no-fork</goal>
@@ -1533,18 +1532,6 @@
             <configuration>
               <releaseProfiles>apache-release</releaseProfiles>
             </configuration>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-source-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>attach-test-sources</id>
-                <goals>
-                  <goal>test-jar</goal>
-                </goals>
-              </execution>
-            </executions>
           </plugin>
           <plugin>
             <artifactId>maven-install-plugin</artifactId>
