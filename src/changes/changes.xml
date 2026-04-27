@@ -59,9 +59,10 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
       <release version="100" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
-		<action type="fix" dev="ggregory" due-to="Slawomir Jaranowski">Remove redundant manifest entries for javadoc and source plugins, now inherited from org.apache:parent:36 #703.</action>
+        <action type="fix" dev="ggregory" due-to="Slawomir Jaranowski">Remove redundant manifest entries for javadoc and source plugins, now inherited from org.apache:parent:36 #703.</action>
         <!-- ADD -->
         <!-- UPDATE -->
+        <action type="update" dev="sjaranowski" due-to="Slawomir Jaranowski">Bump org.apache.maven.plugins:maven-source-plugin from 3.2.1 to 3.4.0.</action>
       </release>
       <release version="99" date="2026-04-19" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
