@@ -21,6 +21,60 @@ This directory contains
 [reusable GitHub Actions workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows)
 shared across Apache Commons projects. They provide a consistent and secure CI setup without duplicating configuration in each repository.
 
+## CodeQL (`codeql-analysis-reusable.yml`)
+
+Runs a [CodeQL](https://codeql.github.com/) security analysis and uploads the results to GitHub's
+code-scanning dashboard. A separate job is created for each analyzed language.
+
+To speed up the Java autobuild step, the workflow tries to restore a Maven dependency cache saved by
+a prior build job. For the cache to be found, the build workflow must store it under the key:
+
+```
+${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+```
+
+### Inputs
+
+| Input       | Type   | Default                 | Description                                                                                                                                                                          |
+|-------------|--------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `languages` | string | `"["actions", "java"]"` | JSON array of [CodeQL language identifiers](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/codeql-language-support) to analyze. |
+
+### Required permissions
+
+The caller job must grant:
+
+```yaml
+permissions:
+  actions: read
+  contents: read
+  security-events: write
+```
+
+### Usage example
+
+```yaml
+name: CodeQL
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request: { }
+  schedule:
+    - cron: '33 9 * * 4'   # Randomize this expression
+
+# Explicitly drop all permissions for security.
+permissions: { }
+
+jobs:
+  codeql:
+    # Intentionally not pinned: maintained by the same PMC.
+    uses: apache/commons-parent/.github/workflows/codeql-analysis-reusable.yml@master
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+```
+
 ## Scorecards (`scorecards-analysis-reusable.yml`)
 
 Runs an [OpenSSF Scorecard](https://securityscorecards.dev/) analysis and uploads the results to
@@ -69,3 +123,4 @@ jobs:
       security-events: write
       id-token: write
 ```
+
