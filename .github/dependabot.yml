@@ -19,6 +19,11 @@ updates:
     directory: "/"
     schedule:
       interval: "quarterly"
+    ignore:
+      # JUnit 6.x requires Java 17
+      - dependency-name: "org.junit:*"
+        versions: [ "[6,)" ]
+
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
