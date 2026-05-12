@@ -75,6 +75,56 @@ jobs:
       security-events: write
 ```
 
+## Scorecards (`scorecards-analysis-reusable.yml`)
+
+Runs an [OpenSSF Scorecard](https://securityscorecards.dev/) analysis and uploads the results to
+GitHub's code-scanning dashboard.
+For public repositories, the results are also published to the Scorecard API, enabling the
+Scorecard badge.
+
+This workflow has no inputs.
+
+### Required permissions
+
+In addition to uploading results to the code-scanning dashboard (`security-events: write`),
+the workflow authenticates with securityscorecards.dev using an OIDC token (`id-token: write`).
+The caller job must grant:
+
+```yaml
+permissions:
+  actions: read
+  contents: read
+  security-events: write
+  id-token: write
+```
+
+### Usage example
+
+```yaml
+name: Scorecards
+
+on:
+  branch_protection_rule:
+  schedule:
+    - cron: '30 1 * * 6'   # Randomize this expression
+  push:
+    branches: [ "master" ]
+
+# Explicitly drop all permissions for security.
+permissions: { }
+
+jobs:
+  scorecards:
+    # Intentionally not pinned: maintained by the same PMC.
+    uses: apache/commons-parent/.github/workflows/scorecards-analysis-reusable.yml@master
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+      id-token: write
+```
+
+
 ## SLSA Source Provenance (`slsa-provenance-reusable.yml`)
 
 Generates a [SLSA Source Provenance](https://slsa.dev/spec/v1.2/source-requirements) attestation
