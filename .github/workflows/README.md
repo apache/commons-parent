@@ -74,3 +74,54 @@ jobs:
       contents: read
       security-events: write
 ```
+
+## SLSA Source Provenance (`slsa-provenance-reusable.yml`)
+
+Generates a [SLSA Source Provenance](https://slsa.dev/spec/v1.2/source-requirements) attestation
+for the triggering commit using
+[`slsa-framework/source-actions`](https://github.com/slsa-framework/source-actions), signs it via
+Sigstore (OIDC), and stores the result in Git Notes. Merge commits are supported.
+
+Combined with the branch and tag protection rules configured in `.asf.yaml`, this workflow
+contributes to [SLSA Source L3](https://slsa.dev/spec/v1.2/source-requirements#source-l3)
+compliance.
+
+### Required permissions
+
+The caller job must grant:
+
+```yaml
+permissions:
+  # Store attestations in the repo
+  contents: write
+  # Get a Sigstore certificate via OIDC
+  id-token: write
+```
+
+### Usage example
+
+The workflow should run on every push to a protected branch or tag, so that the attestation
+covers the same refs whose history is being protected:
+
+```yaml
+name: SLSA Source Provenance
+
+on:
+  push:
+    branches:
+      - master
+      - release
+    tags:
+      - 'rel/*'
+
+# Explicitly drop all permissions for security.
+permissions: { }
+
+jobs:
+  slsa-source-provenance:
+    # Intentionally not pinned: maintained by the same PMC.
+    uses: apache/commons-parent/.github/workflows/slsa-provenance-reusable.yml@master
+    permissions:
+      contents: write
+      id-token: write
+```
