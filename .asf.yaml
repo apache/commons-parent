@@ -46,7 +46,6 @@ notifications:
         branches:
           includes:
             - "~DEFAULT_BRANCH"
-            - "release"
       # Use raw rules, until a convenience notation for `restrict_update` is introduced.
       # See: https://github.com/apache/infrastructure-asfyaml/issues/96
       #
