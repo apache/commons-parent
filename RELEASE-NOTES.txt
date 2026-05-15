@@ -1,5 +1,5 @@
 Apache Commons Parent 100 Release Notes
---------------------------------------
+---------------------------------------
 
 The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 100.
 
