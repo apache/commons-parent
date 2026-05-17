@@ -52,10 +52,14 @@ notifications:
       # The raw rules need to follow the syntax given in:
       # https://docs.github.com/en/rest/repos/rules?apiVersion=2026-03-10#update-a-repository-ruleset
       - name: "Tag protection"
-        type: tag
-        branches:
-          includes:
-            - "rel/*"
+        target: tag
+        enforcement: active
+        bypass_actors: []
+        conditions:
+          ref_name:
+            include:
+              - "refs/tags/rel/*"
+            exclude: []
         rules:
           - type: deletion
           - type: non_fast_forward
