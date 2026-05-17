@@ -729,6 +729,11 @@
           <version>${commons.pmd.version}</version>
           <dependencies>
             <dependency>
+              <groupId>org.ow2.asm</groupId>
+              <artifactId>asm</artifactId>
+              <version>${commons.asm.version}</version>
+            </dependency>
+            <dependency>
               <groupId>net.sourceforge.pmd</groupId>
               <artifactId>pmd-core</artifactId>
               <version>${commons.pmd-impl.version}</version>
