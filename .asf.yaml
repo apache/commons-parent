@@ -13,13 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#
-# Additional non-standard features
-#
-meta:
-  environments:
-    - github_rulesets
-
 github:
   description: "Apache Commons Parent"
   homepage: https://commons.apache.org/parent/
