@@ -176,10 +176,8 @@ GH Status badge function.
 	https://search.maven.org/artifact/commons-daemon/commons-daemon/]
 | image:https://javadoc.io/badge2/commons-daemon/commons-daemon/javadoc.svg[Javadocs,
 	link=https://javadoc.io/doc/commons-daemon/commons-daemon]
-| image:https://github.com/apache/commons-daemon/actions/workflows/codeql-analysis-cpp.yml/badge.svg[CodeQL,
-	link=https://github.com/apache/commons-daemon/actions/workflows/codeql-analysis-cpp.yml]
- image:https://github.com/apache/commons-daemon/actions/workflows/codeql-analysis-java.yml/badge.svg[CodeQL,
-	link=https://github.com/apache/commons-daemon/actions/workflows/codeql-analysis-java.yml]
+| image:https://github.com/apache/commons-daemon/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
+	link=https://github.com/apache/commons-daemon/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-daemon/badge[OpenSSF Scorecard,
 	link=https://scorecard.dev/viewer/?uri=github.com/apache/commons-daemon]
 
