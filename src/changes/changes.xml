@@ -60,6 +60,7 @@ The <action> type attribute can be add,update,fix,remove.
       <release version="101" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Allow maven-pmd-plugin to override org.ow2.asm:asm version (fixes Java 27-ea build: Unsupported class file major version 71).</action>
+        <action type="update" dev="ggregory" due-to="Jack Green, Gary Gregory">Fix broken Maven central badge in COMPONENTS.adoc (#709).</action>
         <!-- ADD -->
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump commons.asm.version from 9.1.1 to 9.10 (adds Java 27 opcode support, fixes SpotBugs Unsupported class file major version 71).</action>
