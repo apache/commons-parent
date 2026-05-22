@@ -34,8 +34,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-bcel]
 | image:https://img.shields.io/maven-central/v/org.apache.bcel/bcel?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.bcel/bcel]
-| image:https://javadoc.io/badge/org.apache.bcel/bcel/6.7.0.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.bcel/bcel/6.7.0]
+| image:https://javadoc.io/badge2/org.apache.bcel/bcel/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.bcel/bcel]
 | image:https://github.com/apache/commons-bcel/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-bcel/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-bcel/badge[OpenSSF Scorecard,
@@ -48,8 +48,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-beanutils/branch/master]
 | image:https://img.shields.io/maven-central/v/commons-beanutils/commons-beanutils?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-beanutils2]
-| image:https://javadoc.io/badge/org.apache.commons/commons-beanutils2/2.0.0.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-beanutils2/2.0.0]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-beanutils2/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-beanutils2]
 | image:https://github.com/apache/commons-beanutils/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-beanutils/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-beanutils/badge[OpenSSF Scorecard,
@@ -62,8 +62,8 @@ GH Status badge function.
 	link=https://codecov.io/r/apache/commons-bsf]
 | image:https://img.shields.io/maven-central/v/bsf/bsf?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/bsf/bsf/]
-| image:https://javadoc.io/badge/bsf/bsf/2.5.0.svg[Javadocs,
-	link=https://javadoc.io/doc/bsf/bsf/2.5.0]
+| image:https://javadoc.io/badge2/bsf/bsf/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/bsf/bsf]
 | image:https://github.com/apache/commons-bsf/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-bsf/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-bsf/badge[OpenSSF Scorecard,
@@ -76,8 +76,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-cli/branch/master]
 | image:https://img.shields.io/maven-central/v/commons-cli/commons-cli?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/commons-cli/commons-cli]
-| image:https://javadoc.io/badge/commons-cli/commons-cli/1.5.0.svg[Javadocs,
-	link=https://javadoc.io/doc/commons-cli/commons-cli/1.5.0]
+| image:https://javadoc.io/badge2/commons-cli/commons-cli/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/commons-cli/commons-cli]
 | image:https://github.com/apache/commons-cli/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-cli/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-cli/badge[OpenSSF Scorecard,
@@ -90,8 +90,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-codec]
 | image:https://img.shields.io/maven-central/v/commons-codec/commons-codec?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/commons-codec/commons-codec]
-| image:https://javadoc.io/badge/commons-codec/commons-codec/1.16.0.svg[Javadocs,
-	link=https://javadoc.io/doc/commons-codec/commons-codec/1.16.0]
+| image:https://javadoc.io/badge2/commons-codec/commons-codec/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/commons-codec/commons-codec]
 | image:https://github.com/apache/commons-codec/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-codec/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-codec/badge[OpenSSF Scorecard,
@@ -104,8 +104,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-collections/branch/master]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-collections4?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-collections4]
-| image:https://javadoc.io/badge/org.apache.commons/commons-collections4/4.4.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-collections4/4.4]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-collections4/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-collections4]
 | image:https://github.com/apache/commons-collections/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-collections/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-collections/badge[OpenSSF Scorecard,
@@ -118,8 +118,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-compress]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-compress?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-compress]
-| image:https://javadoc.io/badge/org.apache.commons/commons-compress/1.24.0.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-compress/1.24.0]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-compress/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-compress]
 | image:https://github.com/apache/commons-compress/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-compress/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-compress/badge[OpenSSF Scorecard,
@@ -132,8 +132,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-configuration]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-configuration2?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-configuration2]
-| image:https://javadoc.io/badge/org.apache.commons/commons-configuration2/2.9.0.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-configuration2/2.9.0]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-configuration2/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-configuration2]
 | image:https://github.com/apache/commons-configuration/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-configuration/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-configuration/badge[OpenSSF Scorecard,
@@ -146,8 +146,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-crypto]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-crypto?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-crypto]
-| image:https://javadoc.io/badge/org.apache.commons/commons-crypto/1.2.0.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-crypto/1.2.0]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-crypto/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-crypto]
 | image:https://github.com/apache/commons-crypto/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-crypto/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-crypto/badge[OpenSSF Scorecard,
@@ -160,8 +160,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-csv]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-csv?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-csv]
-| image:https://javadoc.io/badge/org.apache.commons/commons-csv/1.10.0.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-csv/1.10.0]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-csv/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-csv]
 | image:https://github.com/apache/commons-csv/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-csv/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-csv/badge[OpenSSF Scorecard,
@@ -174,8 +174,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-daemon]
 | image:https://img.shields.io/maven-central/v/commons-daemon/commons-daemon?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/commons-daemon/commons-daemon/]
-| image:https://javadoc.io/badge/commons-daemon/commons-daemon/1.3.3.svg[Javadocs,
-	link=https://javadoc.io/doc/commons-daemon/commons-daemon/1.3.3]
+| image:https://javadoc.io/badge2/commons-daemon/commons-daemon/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/commons-daemon/commons-daemon]
 | image:https://github.com/apache/commons-daemon/actions/workflows/codeql-analysis-cpp.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-daemon/actions/workflows/codeql-analysis-cpp.yml]
  image:https://github.com/apache/commons-daemon/actions/workflows/codeql-analysis-java.yml/badge.svg[CodeQL,
@@ -190,8 +190,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-dbcp]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-dbcp2?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-dbcp2]
-| image:https://javadoc.io/badge/org.apache.commons/commons-dbcp2/2.10.0.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-dbcp2/2.10.0]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-dbcp2/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-dbcp2]
 | image:https://github.com/apache/commons-dbcp/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-dbcp/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-dbcp/badge[OpenSSF Scorecard,
@@ -204,8 +204,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-dbutils]
 | image:https://img.shields.io/maven-central/v/commons-dbutils/commons-dbutils?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/commons-dbutils/commons-dbutils]
-| image:https://javadoc.io/badge/commons-dbutils/commons-dbutils/1.8.1.svg[Javadocs,
-	link=https://javadoc.io/doc/commons-dbutils/commons-dbutils/1.8.1]
+| image:https://javadoc.io/badge2/commons-dbutils/commons-dbutils/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/commons-dbutils/commons-dbutils]
 | image:https://github.com/apache/commons-dbutils/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-dbutils/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-dbutils/badge[OpenSSF Scorecard,
@@ -218,8 +218,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-digester]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-digester3?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-digester3]
-| image:https://javadoc.io/badge/org.apache.commons/commons-digester3-parent/3.3.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-digester3-parent/3.3]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-digester3-parent/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-digester3-parent]
 | image:https://github.com/apache/commons-digester/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-digester/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-digester/badge[OpenSSF Scorecard,
@@ -232,7 +232,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-email]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-email?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-email]
-| -
+| image:https://javadoc.io/badge2/org.apache.commons/commons-email/javadoc.svg[Javadocs,
+    link=https://javadoc.io/doc/org.apache.commons/commons-email]
 | image:https://github.com/apache/commons-email/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-email/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-email/badge[OpenSSF Scorecard,
@@ -245,7 +246,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-exec]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-exec?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-exec]
-| -
+| image:https://javadoc.io/badge2/org.apache.commons/commons-exec/javadoc.svg[Javadocs,
+    link=https://javadoc.io/doc/org.apache.commons/commons-exec]
 | image:https://github.com/apache/commons-exec/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-exec/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-exec/badge[OpenSSF Scorecard,
@@ -258,8 +260,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-fileupload]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-fileupload2?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-fileupload2]
-| image:https://javadoc.io/badge/org.apache.commons/commons-fileupload2/2.0.0-M1.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-fileupload2/2.0.0-M1]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-fileupload2/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-fileupload2]
 | image:https://github.com/apache/commons-fileupload/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-fileupload/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-fileupload/badge[OpenSSF Scorecard,
@@ -270,9 +272,10 @@ GH Status badge function.
 	link=https://github.com/apache/commons-geometry/actions/workflows/maven.yml]
 | image:https://codecov.io/gh/apache/commons-geometry/branch/master/graph/badge.svg[Coverage Status,
 	link=https://app.codecov.io/gh/apache/commons-geometry]
-| image:https://img.shields.io/maven-central/v/org.apache.commons/commons-geometry-spherical?label=Maven%20Central[Maven Central,
-	https://search.maven.org/artifact/org.apache.commons/commons-geometry-spherical/]
-| -
+| image:https://img.shields.io/maven-central/v/org.apache.commons/commons-geometry-core?label=Maven%20Central[Maven Central,
+	https://search.maven.org/artifact/org.apache.commons/commons-geometry-core/]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-geometry-core/javadoc.svg[Javadocs,
+    link=https://javadoc.io/doc/org.apache.commons/commons-geometry-core]
 | image:https://github.com/apache/commons-geometry/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-geometry/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-geometry/badge[OpenSSF Scorecard,
@@ -285,8 +288,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-imaging/branch/master]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-imaging?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-imaging]
-| image:https://javadoc.io/badge/org.apache.commons/commons-imaging/1.0-alpha3.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-imaging/1.0-alpha3]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-imaging/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-imaging]
 | image:https://github.com/apache/commons-imaging/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-imaging/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-imaging/badge[OpenSSF Scorecard,
@@ -299,8 +302,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-io]
 | image:https://img.shields.io/maven-central/v/commons-io/commons-io?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/commons-io/commons-io]
-| image:https://javadoc.io/badge/commons-io/commons-io/2.15.0.svg[Javadocs,
-	link=https://javadoc.io/doc/commons-io/commons-io/2.15.0]
+| image:https://javadoc.io/badge2/commons-io/commons-io/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/commons-io/commons-io]
 | image:https://github.com/apache/commons-io/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-io/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-io/badge[OpenSSF Scorecard,
@@ -313,8 +316,8 @@ GH Status badge function.
 	link=https://codecov.io/r/apache/commons-jci]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-jci?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-jci/]
-| image:https://javadoc.io/badge/org.apache.commons/commons-jci2/2.0.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-jci2/2.0]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-jci/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-jci]
 | image:https://github.com/apache/commons-jci/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-jci/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-jci/badge[OpenSSF Scorecard,
@@ -327,8 +330,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-jcs]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-jcs3?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-jcs3]
-| image:https://javadoc.io/badge/org.apache.commons/commons-jcs3/3.1.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-jcs3/3.1]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-jcs3/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-jcs3]
 | image:https://github.com/apache/commons-jcs/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-jcs/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-jcs/badge[OpenSSF Scorecard,
@@ -353,8 +356,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-jexl]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-jexl3?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-jexl3]
-| image:https://javadoc.io/badge/org.apache.commons/commons-jexl3/3.2.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-jexl3/3.2]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-jexl3/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-jexl3]
 | image:https://github.com/apache/commons-jexl/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-jexl/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-jelly/badge[OpenSSF Scorecard,
@@ -380,8 +383,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-lang]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-lang3?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-lang3]
-| image:https://javadoc.io/badge/org.apache.commons/commons-lang3/3.13.0.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-lang3/3.13.0]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-lang3/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-lang3]
 | image:https://github.com/apache/commons-lang/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-lang/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-lang/badge[OpenSSF Scorecard,
@@ -407,8 +410,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-math]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-math-parent?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-math-parent/]
-| image:https://javadoc.io/badge/org.apache.commons/commons-math4-parent/4.0.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-math4-parent/4.0]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-math4-legacy/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-math4-legacy]
 | image:https://github.com/apache/commons-math/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-math/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-math/badge[OpenSSF Scorecard,
@@ -421,8 +424,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-net]
 | image:https://img.shields.io/maven-central/v/commons-net/commons-net?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/commons-net/commons-net]
-| image:https://javadoc.io/badge/commons-net/commons-net/3.10.0.svg[Javadocs,
-	link=https://javadoc.io/doc/commons-net/commons-net/3.10.0]
+| image:https://javadoc.io/badge2/commons-net/commons-net/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/commons-net/commons-net]
 | image:https://github.com/apache/commons-net/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-net/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-net/badge[OpenSSF Scorecard,
@@ -435,7 +438,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-numbers]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-numbers-parent?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-numbers-parent/]
-| -
+| image:https://javadoc.io/badge2/org.apache.commons/commons-numbers-core/javadoc.svg[Javadocs,
+    link=https://commons.apache.org/proper/commons-numbers/commons-numbers-docs/apidocs]
 | image:https://github.com/apache/commons-numbers/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-numbers/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-numbers/badge[OpenSSF Scorecard,
@@ -460,8 +464,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-pool]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-pool2?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-pool2]
-| image:https://javadoc.io/badge/org.apache.commons/commons-pool2/2.12.0.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-pool2/2.12.0]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-pool2/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-pool2]
 | image:https://github.com/apache/commons-pool/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-pool/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-pool/badge[OpenSSF Scorecard,
@@ -474,7 +478,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-rdf]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-rdf-api?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-rdf-api]
-| -
+| image:https://javadoc.io/badge2/org.apache.commons/commons-rdf-rdf4j/javadoc.svg[Javadocs,
+    link=https://javadoc.io/doc/org.apache.commons/commons-rdf-rdf4j]
 | image:https://github.com/apache/commons-rdf/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-rdf/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-rdf/badge[OpenSSF Scorecard,
@@ -487,8 +492,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-rng]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-rng-simple?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-rng-simple/]
-| image:https://javadoc.io/badge/org.apache.commons/commons-rng-simple/1.5.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-rng-simple/1.5]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-rng-core/javadoc.svg[Javadocs,
+    link=https://commons.apache.org/proper/commons-numbers/commons-rng-docs/apidocs]
 | image:https://github.com/apache/commons-rng/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-rng/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-rng/badge[OpenSSF Scorecard,
@@ -501,8 +506,7 @@ GH Status badge function.
 	link=https://codecov.io/r/apache/commons-scxml2]
 | image:https://img.shields.io/maven-central/v/commons-scxml/commons-scxml?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/commons-scxml/commons-scxml/]
-| image:https://javadoc.io/badge/org.apache.commons/commons-scxml2/2.0-alpha-1.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-scxml2/2.0-alpha-1]
+| -
 | image:https://github.com/apache/commons-scxml/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-scxml/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-scxml/badge[OpenSSF Scorecard,
@@ -527,7 +531,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-statistics]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-statistics-distribution?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-statistics-distribution/]
-| -
+| image:https://javadoc.io/badge2/org.apache.commons/commons-statistics-distribution/javadoc.svg[Javadocs,
+    link=https://commons.apache.org/proper/commons-numbers/commons-statistics-docs/apidocs]
 | image:https://github.com/apache/commons-statistics/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-statistics/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-statistics/badge[OpenSSF Scorecard,
@@ -540,8 +545,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-text]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-text?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-text]
-| image:https://javadoc.io/badge/org.apache.commons/commons-text/1.10.0.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-text/1.10.0]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-text/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-text]
 | image:https://github.com/apache/commons-text/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-text/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-text/badge[OpenSSF Scorecard,
@@ -554,8 +559,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-validator]
 | image:https://img.shields.io/maven-central/v/commons-validator/commons-validator?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/commons-validator/commons-validator]
-| image:https://javadoc.io/badge/commons-validator/commons-validator/1.7.svg[Javadocs,
-	link=https://javadoc.io/doc/commons-validator/commons-validator/1.7]
+| image:https://javadoc.io/badge2/commons-validator/commons-validator/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/commons-validator/commons-validator]
 | image:https://github.com/apache/commons-validator/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-validator/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-validator/badge[OpenSSF Scorecard,
@@ -568,8 +573,8 @@ GH Status badge function.
 	link=https://app.codecov.io/gh/apache/commons-vfs]
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-vfs2?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-vfs2]
-| image:https://javadoc.io/badge/org.apache.commons/commons-vfs2/2.9.0.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-vfs2/2.9.0]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-vfs2/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-vfs2]
 | image:https://github.com/apache/commons-vfs/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-vfs/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-vfs/badge[OpenSSF Scorecard,
@@ -581,8 +586,8 @@ GH Status badge function.
 | -
 | image:https://img.shields.io/maven-central/v/org.apache.commons/commons-weaver-base?label=Maven%20Central[Maven Central,
 	https://search.maven.org/artifact/org.apache.commons/commons-weaver-base]
-| image:https://javadoc.io/badge/org.apache.commons/commons-weaver-base/2.0.svg[Javadocs,
-	link=https://javadoc.io/doc/org.apache.commons/commons-weaver-base/2.0]
+| image:https://javadoc.io/badge2/org.apache.commons/commons-weaver-base/javadoc.svg[Javadocs,
+	link=https://javadoc.io/doc/org.apache.commons/commons-weaver-base]
 | image:https://github.com/apache/commons-weaver/actions/workflows/codeql-analysis.yml/badge.svg[CodeQL,
 	link=https://github.com/apache/commons-weaver/actions/workflows/codeql-analysis.yml]
 | image:https://api.securityscorecards.dev/projects/github.com/apache/commons-weaver/badge[OpenSSF Scorecard,
