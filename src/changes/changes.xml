@@ -69,6 +69,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-failsafe-plugin from 3.5.5 to 3.5.6.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-plugin from 3.5.5 to 3.5.6.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-report-plugin from 3.5.5 to 3.5.6.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump net.sourceforge.pmd:pmd-* from 7.24.0 to 7.25.0.</action>
       </release>
       <release version="100" date="2026-05-11" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
