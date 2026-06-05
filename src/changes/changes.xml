@@ -59,7 +59,7 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
       <release version="102" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
-        <action type="fix" dev="ggregory" due-to="Gary Gregory">Configure JaCoCo to exclude the platform class loader such that it can prepare the agent when the embedded ASM version doesn't support the current byte code version.</action>
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">Configure JaCoCo to exclude the platform class loader such that it can prepare the agent when the embedded ASM version doesn't support the current byte code version. See https://github.com/jacoco/jacoco/issues/2152</action>
         <!-- ADD -->
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump biz.aQute.bnd:biz.aQute.bndlib from 7.2.3 to 7.3.0 on Java 17 and up.</action>        
