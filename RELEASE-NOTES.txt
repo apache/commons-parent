@@ -1,3 +1,34 @@
+Apache Commons Parent 102 Release Notes
+---------------------------------------
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 102.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+This is a feature and maintenance release. Java 8 or later is required.
+
+Fixed Bugs
+----------
+*                   Configure JaCoCo to exclude the platform class loader such that it can prepare the agent when the embedded ASM version doesn't support the current byte code version. See https://github.com/jacoco/jacoco/issues/2152 Thanks to Gary Gregory.
+
+Changes
+-------
+*                   Bump biz.aQute.bnd:biz.aQute.bndlib from 7.2.3 to 7.3.0 on Java 17 and up. Thanks to Gary Gregory.
+*                   Bump com.puppycrawl.tools:checkstyle from 13.4.2 to 13.5.0 on Java 21 and up. Thanks to Gary Gregory.
+*                   Bump org.jacoco:jacoco-maven-plugin from 0.8.14 to 0.8.15. Official Java 26 support. Experimental Java 27 support. Java 24-26 fixes. Thanks to Gary Gregory.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+Enjoy!
+Apache Commons Team
+
+-----------------------------------------------------------------------------
 Apache Commons Parent 101 Release Notes
 ---------------------------------------
 
