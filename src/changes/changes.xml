@@ -61,6 +61,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache:apache from 38 to 39.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.cyclonedx:cyclonedx-maven-plugin from 2.9.1 to 2.9.2.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 13.5.0 to 13.6.0 on Java 21 and up.</action>
       </release>
