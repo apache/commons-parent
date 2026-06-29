@@ -123,7 +123,7 @@
     <commons.checkstyle.version>13.2.0</commons.checkstyle.version>
     <commons.compiler.version>3.15.0</commons.compiler.version>
     <commons.cyclonedx.version>2.9.2</commons.cyclonedx.version>
-    <commons.spdx.version>1.0.3</commons.spdx.version>
+    <commons.spdx.version>1.0.4</commons.spdx.version>
     <commons.failsafe.version>3.5.6</commons.failsafe.version>
     <commons.felix.version>5.1.9</commons.felix.version>
     <commons.jacoco.version>0.8.15</commons.jacoco.version>
