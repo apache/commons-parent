@@ -146,7 +146,7 @@
     <!-- JUnit Pioneer 2 requires Java 11 -->
     <commons.junit-pioneer.version>1.9.1</commons.junit-pioneer.version>
     <!-- Mockito 5 requires Java 11 -->
-    <commons.mockito.version>4.11.0</commons.mockito.version>
+    <commons.mockito.version>5.23.0</commons.mockito.version>
     <commons.jmh.version>1.37</commons.jmh.version>
     <commons.asm.version>9.10.1</commons.asm.version>
     <commons.taglist.version>3.2.2</commons.taglist.version>
