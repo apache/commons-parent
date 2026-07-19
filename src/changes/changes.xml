@@ -57,13 +57,13 @@ The <action> type attribute can be add,update,fix,remove.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
-      <release version="103" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
+      <release version="103" date="2026-07-18" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache:apache from 38 to 39.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.cyclonedx:cyclonedx-maven-plugin from 2.9.1 to 2.9.2.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 13.5.0 to 13.7.0 on Java 21 and up.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 13.5.0 to 13.8.0 on Java 21 and up.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump net.sourceforge.pmd:pmd-* from 7.25.0 to 7.26.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.spdx:spdx-maven-plugin from 1.0.3 to 1.0.4 on Java 17 and up.</action>
       </release>
