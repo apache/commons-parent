@@ -1729,6 +1729,8 @@
         <commons.spotbugs.plugin.version>4.8.6.6</commons.spotbugs.plugin.version>
         <commons.spotbugs.impl.version>4.8.6</commons.spotbugs.impl.version>
         <commons.checkstyle.version>9.3</commons.checkstyle.version>
+        <!-- Java EE Javadoc has been republished with a Java > 8 and is no longer compatible with Javadoc 8 -->
+        <commons.javadoc.javaee.link></commons.javadoc.javaee.link>
       </properties>
     </profile>
     <profile>
