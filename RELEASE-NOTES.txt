@@ -9,7 +9,7 @@ This is a feature and maintenance release. Java 8 or later is required.
 
 Fixed Bugs
 ----------
-*                   Java EE Javadoc has been republished with a Java > 8 and is no longer compatible with Javadoc 8. Disable commons.javadoc.javaee.link on Java 8 and 9. Thanks to Gary Gregory.
+*                   Java EE Javadoc has been republished with Java > 8 and is no longer compatible with Javadoc 8. Disable commons.javadoc.javaee.link on Java 8 and 9. Thanks to Gary Gregory.
 
 Changes
 -------

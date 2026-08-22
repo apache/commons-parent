@@ -64,7 +64,7 @@ The <action> type attribute can be add,update,fix,remove.
       </release>
       <release version="104" date="2026-08-20" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
-        <action type="fix" dev="ggregory" due-to="Gary Gregory">Java EE Javadoc has been republished with a Java > 8 and is no longer compatible with Javadoc 8. Disable commons.javadoc.javaee.link on Java 8 and 9.</action>
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">Java EE Javadoc has been republished with Java > 8 and is no longer compatible with Javadoc 8. Disable commons.javadoc.javaee.link on Java 8 and 9.</action>
         <!-- ADD -->
         <!-- UPDATE -->
         <action type="update" dev="engelen" due-to="Arnout Engelen">Bump org.junit:junit-bom from 5.14.3 to 5.14.4.</action>
