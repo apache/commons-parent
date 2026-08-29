@@ -1328,6 +1328,12 @@
                 <artifactId>${animal-sniffer.signature}</artifactId>
                 <version>${commons.animal-sniffer.signature.version}</version>
               </signature>
+              <ignores>
+                <!-- MethodHandle's invokers are signature-polymorphic: javac records the ad-hoc call-site descriptor,
+                     which no signature database lists, so every invokeExact/invoke call site would be flagged as an
+                     undefined reference. The class and its invokers exist on all supported targets (Java 7+). -->
+                <ignore>java.lang.invoke.MethodHandle</ignore>
+              </ignores>
             </configuration>
           </plugin>
 
