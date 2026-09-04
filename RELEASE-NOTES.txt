@@ -1,3 +1,42 @@
+Apache Commons Parent 105 Release Notes
+---------------------------------------
+
+The Apache Commons Parent team is pleased to announce the release of Apache Commons Parent 105.
+
+The Apache Commons Parent POM provides common settings for all Apache Commons components.
+
+This is a feature and maintenance release. Java 8 or later is required.
+
+Fixed Bugs
+----------
+*                   Ignore references to the signature-polymorphic java.lang.invoke.MethodHandle in the Animal Sniffer check: javac records ad-hoc call-site descriptors that no signature database lists. Thanks to Piotr P. Karwasz.
+
+Changes
+-------
+*                   Bump org.cyclonedx:cyclonedx-maven-plugin from 2.9.2 to 2.9.3. Thanks to Gary Gregory.
+*                   Bump com.github.spotbugs:spotbugs-maven-plugin from 4.9.8.3 to 4.10.4.0 on Java 11 and up. Thanks to Gary Gregory.
+*                   Bump org.apache.felix:maven-bundle-plugin from 6.0.2 on 6.1.0 on Java 17 and up. Thanks to Gary Gregory.
+*                   Bump commons.pmd-impl.version from 7.26.0 to 7.27.0. Thanks to Gary Gregory.
+*                   Bump commons.compiler.version from 3.15.0 to 3.16.0. Thanks to Gary Gregory.
+*                   Bump commons.checkstyle.version from 14.0.0 to 14.1.0 on Java 21 and up. Thanks to Gary Gregory.
+*                   Bump maven-surefire-plugin to 3.5.6 to 3.6.0. Thanks to Gary Gregory.
+*                   Bump maven-surefire-report-plugin to 3.5.6 to 3.6.0. Thanks to Gary Gregory.
+*                   Bump org.apache.felix:maven-bundle-plugin from 6.1.0 to 6.1.2 on Java 17 and up. Thanks to Gary Gregory.
+*                   Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.26.1 to 0.26.2. Thanks to Gary Gregory.
+*                   Bump maven-failsafe-plugin from 3.5.6 to 3.6.0. Thanks to Gary Gregory.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-parent/changes.html
+
+For complete information on Apache Commons Parent, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons Parent website:
+
+https://commons.apache.org/proper/commons-parent/
+
+Enjoy!
+Apache Commons Team
+
+-----------------------------------------------------------------------------
 Apache Commons Parent 104 Release Notes
 ---------------------------------------
 
