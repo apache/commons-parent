@@ -154,7 +154,7 @@
     <commons.spotbugs.plugin.version>4.10.4.0</commons.spotbugs.plugin.version>
     <commons.spotbugs.impl.version>4.10.4</commons.spotbugs.impl.version>
     <commons.surefire-report.version>3.5.6</commons.surefire-report.version>
-    <commons.surefire.version>3.5.6</commons.surefire.version>
+    <commons.surefire.version>3.6.0</commons.surefire.version>
     <commons.wagon-ssh.version>3.5.3</commons.wagon-ssh.version>
     <commons.maven-remote-resources-plugin.version>3.3.0</commons.maven-remote-resources-plugin.version>
     <!-- Default values for the download-page generation by commons-build-plugin -->
@@ -929,7 +929,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>${commons.surefire.version}</version>
         <configuration>
           <!--
             commons.surefire.java is normally empty.
