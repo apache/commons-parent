@@ -28,3 +28,32 @@ notifications:
     pullrequests_bot_dependabot: dependabot@commons.apache.org
     issues_bot_codecov-commenter: notifications@commons.apache.org
     pullrequests_bot_codecov-commenter: notifications@commons.apache.org
+
+  # Clear Protected Branches configuration: it is replaced by GitHub Rulesets
+    protected_branches: ~
+
+    rulesets:
+      # Use minimum level of protection: restrict deletion and force pushes.
+      - name: "Branch protection"
+        type: branch
+        branches:
+          includes:
+            - "~DEFAULT_BRANCH"
+      # Use raw rules, until a convenience notation for `restrict_update` is introduced.
+      # See: https://github.com/apache/infrastructure-asfyaml/issues/96
+      #
+      # The raw rules need to follow the syntax given in:
+      # https://docs.github.com/en/rest/repos/rules?apiVersion=2026-03-10#update-a-repository-ruleset
+      - name: "Tag protection"
+        target: tag
+        enforcement: active
+        bypass_actors: []
+        conditions:
+          ref_name:
+            include:
+              - "refs/tags/rel/*"
+            exclude: []
+        rules:
+          - type: deletion
+          - type: non_fast_forward
+          - type: update
