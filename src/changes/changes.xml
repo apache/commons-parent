@@ -63,8 +63,9 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.bcel:bcel from 6.12.0 to 6.13.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.10.4.0 to 4.10.4.1.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">org.codehaus.mojo:animal-sniffer-maven-plugin from 1.27 to 1.28.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">org.codehaus.mojo:build-helper-maven-plugin from 3.6.1 to 3.6.2.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:animal-sniffer-maven-plugin from 1.27 to 1.28.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:build-helper-maven-plugin from 3.6.1 to 3.6.2.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:exec-maven-plugin from 3.6.3 to 3.6.4.</action>
       </release>
       <release version="105" date="2026-09-04" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
