@@ -33,9 +33,9 @@ jobs:
     strategy:
       max-parallel: 20
       matrix:
-        java: [ 8, 11, 17, 21, 25 ]
+        java: [ 8, 11, 17, 21, 25, 27 ]
         include:
-            - java: 26-ea
+            - java: 28-ea
               experimental: true
         
     steps:
