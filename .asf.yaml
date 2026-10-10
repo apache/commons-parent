@@ -16,6 +16,8 @@
 github:
   description: "Apache Commons Parent"
   homepage: https://commons.apache.org/parent/
+  autolink_jira:
+    - COMMONSSITE
   
   pull_requests:
     # allow auto-merge
