@@ -45,9 +45,9 @@ Apache Commons Parent
 
 [![Java CI](https://github.com/apache/commons-parent/actions/workflows/maven.yml/badge.svg)](https://github.com/apache/commons-parent/actions/workflows/maven.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/org.apache.commons/commons-parent?label=Maven%20Central)](https://search.maven.org/artifact/org.apache.commons/commons-parent)
-[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/105.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/105)
+[![Javadocs](https://javadoc.io/badge/org.apache.commons/commons-parent/106.svg)](https://javadoc.io/doc/org.apache.commons/commons-parent/106)
 [![CodeQL](https://github.com/apache/commons-parent/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/apache/commons-parent/actions/workflows/codeql-analysis.yml)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent/badge)](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/apache/commons-parent/badge)](https://scorecard.dev/viewer/?uri=github.com/apache/commons-parent)
 
 The Apache Commons Parent POM provides common settings for all Apache Commons components.
 
@@ -68,7 +68,7 @@ Alternatively, you can pull it from the central Maven repositories:
 <dependency>
   <groupId>org.apache.commons</groupId>
   <artifactId>commons-parent</artifactId>
-  <version>105</version>
+  <version>106</version>
 </dependency>
 ```
 
@@ -83,11 +83,11 @@ From a command shell, run `mvn` without arguments to invoke the default Maven go
 Contributing
 ------------
 
-We accept Pull Requests via GitHub. The [developer mailing list](https://commons.apache.org/mail-lists.html) is the main channel of communication for contributors.
+We accept pull requests via GitHub. The [developer mailing list](https://commons.apache.org/mail-lists.html) is the main channel of communication for contributors.
 There are some guidelines which will make applying PRs easier for us:
 + No tabs! Please use spaces for indentation.
 + Respect the existing code style for each file.
-+ Create minimal diffs - disable on save actions like reformat source code or organize imports. If you feel the source code should be reformatted create a separate PR for this change.
++ Create minimal diffs: disable on-save actions like reformatting source code or organizing imports. If you feel the source code should be reformatted, create a separate PR for this change.
 + Provide JUnit tests for your changes and make sure your changes don't break any existing tests by running `mvn`.
 + Before you push a PR, run `mvn` (without arguments). This runs the default goal which contains all build checks.
 + To see the code coverage report, regardless of coverage failures, run `mvn clean site -Dcommons.jacoco.haltOnFailure=false -Pjacoco`
