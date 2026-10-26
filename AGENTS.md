@@ -19,6 +19,14 @@ limitations under the License.
 
 Guidance for AI coding agents working in this repository.
 
+## Code Style Guidelines
+
+- Parent POM Reference: The latest development version of the Apache Commons parent POM is `https://raw.githubusercontent.com/apache/commons-parent/refs/heads/master/pom.xml`. Use this only as a reference; determine the effective configuration from the parent version declared by the component, including component overrides and active profiles.
+- Java Version Alignment: Inspect the effective compiler configuration, including inheritance, active profiles, and resolved properties. Use `maven.compiler.release` when configured; otherwise respect both `maven.compiler.source` and `maven.compiler.target`. Do not resolve conflicting settings by choosing the newer version.
+- Deprecated Features: Do not introduce new usages of deprecated Java APIs (classes or methods) from the JRE, JDK, code in this project, or its dependencies. When modifying code that uses deprecated APIs, replace those usages where a compatible alternative exists and the replacement is within the task’s scope.
+- Feature Restrictions: Only use syntax, language features, and APIs fully supported by the effective compiler configuration. Do not use features from newer Java versions.
+- Compiler Warnings: Ensure all generated code compiles cleanly without any `-Xlint:deprecation` warnings. Do not suppress deprecation warnings with `@SuppressWarnings("deprecation")`.
+
 ## Verification
 
 To run all checks including tests, run:
