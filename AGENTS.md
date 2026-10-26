@@ -73,9 +73,16 @@ mvn -B -DskipTests -DskipITs -ntp
   Use commas, colons, parentheses, or a new sentence instead. This applies to
   HTML entities too (`&mdash;`).
 
+
 ### Commits
 
 - Use the `Assisted-By:` trailer (not `Co-Authored-By:`).
+
+## Non-Code & Metadata Files
+
+When editing `src/changes/changes.xml`, add new `action` elements to the current unreleased `release` element. Actions are grouped into sections introduced by comments such as `<!-- FIX -->`, `<!-- ADD -->`, and `<!-- UPDATE -->`. Append each new action to the appropriate section, immediately before the next section comment or the closing `</release>` tag. Preserve the order of existing actions.
+
+Use spaces for indentation, never tabs. Indent XML by 2 spaces per nesting level.
 
 ## Security
 
