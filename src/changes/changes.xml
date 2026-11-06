@@ -64,6 +64,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 14.3.0 to 14.4.0 on Java 21 and up.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump commons.pmd-impl.version from 7.28.0 to 7.29.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.26.5 to 0.27.0.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:animal-sniffer-maven-plugin from 1.28 to 1.29.</action>
       </release>
       <release version="107" date="2026-10-28" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
