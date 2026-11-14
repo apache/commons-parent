@@ -1768,7 +1768,7 @@
 	  </activation>
       <properties>
         <commons.felix.version>6.2.0</commons.felix.version>
-        <commons.biz.aQute.bndlib.version>7.4.0</commons.biz.aQute.bndlib.version>
+        <commons.biz.aQute.bndlib.version>7.5.0</commons.biz.aQute.bndlib.version>
         <commons.rat.version>0.18</commons.rat.version>
       </properties>
     </profile>
