@@ -26,6 +26,8 @@ Guidance for AI coding agents working in this repository.
 - Deprecated Features: Do not introduce new usages of deprecated Java APIs (classes or methods) from the JRE, JDK, code in this project, or its dependencies. When modifying code that uses deprecated APIs, replace those usages where a compatible alternative exists and the replacement is within the task’s scope.
 - Feature Restrictions: Only use syntax, language features, and APIs fully supported by the effective compiler configuration. Do not use features from newer Java versions.
 - Compiler Warnings: Ensure all generated code compiles cleanly without any `-Xlint:deprecation` warnings. Do not suppress deprecation warnings with `@SuppressWarnings("deprecation")`.
+- Use JUnit and JUnit Pioneer only.
+- Don't use the JUnit assertAll methods.
 
 ## Verification
 
