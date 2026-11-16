@@ -1852,5 +1852,30 @@
         </plugins>
       </build>
     </profile>
+    <profile>
+      <id>java28-tests</id>
+      <activation>
+        <jdk>[28,)</jdk>
+      </activation>
+      <build>
+        <plugins>
+          <!-- Temporarily allow Mockito/Objenesis to construct test doubles on JDK 28 and later. -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <configuration>
+              <argLine>@{argLine} -Djdk.reflect.allowNonSerializableConstruction=true</argLine>
+            </configuration>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-failsafe-plugin</artifactId>
+            <configuration>
+              <argLine>@{argLine} -Djdk.reflect.allowNonSerializableConstruction=true</argLine>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
   </profiles>
 </project>
