@@ -957,6 +957,8 @@
           <excludeDependencies>${commons.osgi.excludeDependencies}</excludeDependencies>
           <manifestLocation>${project.build.directory}/osgi</manifestLocation>
           <instructions>
+		    <!-- Do not generate Import-Package for "java.*" to improve compatibility with older OSGi runtimes -->
+		    <_noimportjava>true</_noimportjava>
             <!-- Stop the JAVA_1_n_HOME variables from being treated as headers by Bnd -->
             <_removeheaders>JAVA_1_3_HOME,JAVA_1_4_HOME,JAVA_1_5_HOME,JAVA_1_6_HOME,JAVA_1_7_HOME,JAVA_1_8_HOME,JAVA_1_9_HOME</_removeheaders>
             <Bundle-SymbolicName>${commons.osgi.symbolicName}</Bundle-SymbolicName>
