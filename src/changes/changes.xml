@@ -59,6 +59,7 @@ The <action> type attribute can be add,update,fix,remove.
     <body>
       <release version="108" date="YYYY-MM-DD" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
+        <action type="fix" dev="aherbert" due-to="Alex Herbert">Document the use of @{argLine} (not ${argLine}) to preserve the JaCoCo agent when a component sets the maven-surefire-plugin argLine.</action>
         <!-- ADD -->
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add Maven profile `ava28-tests` to temporarily allow Mockito/Objenesis to construct test doubles on JDK 28 and later.</action>
         <!-- UPDATE -->

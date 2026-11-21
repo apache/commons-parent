@@ -615,9 +615,17 @@
           <!-- Note that since JaCoCo relies on an agent to perform tests,
             it changes the surefire arguments line. If a component also
             needs to change the argument line of maven-surefire-plugin,
-            then it must add ${argLine} property (which is set by JaCoCo)
+            then it must add the argLine property (which is set by JaCoCo)
             in the argLine configuration element of maven-surefire-plugin
-            to preserve JaCoCo settings. -->
+            to preserve JaCoCo settings, using Surefire's late property
+            evaluation syntax:
+              <argLine>@{argLine} -your -extra -arguments</argLine>
+            Do not use ${argLine}: the java-21-up profile defines argLine as a
+            property, so ${argLine} is resolved when the POM is read, before
+            JaCoCo sets it, and the JaCoCo agent is silently dropped (tests pass
+            but no coverage is recorded). If the build can run without the
+            jacoco profile, define an empty argLine property so that @{argLine}
+            always resolves. -->
           <executions>
             <execution>
               <id>prepare-agent</id>
