@@ -20,8 +20,6 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-  schedule:
-    - cron: '33 9 * * 4'
 
 # Explicitly drop all permissions for security.
 permissions: { }
