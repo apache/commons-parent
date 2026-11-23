@@ -26,38 +26,38 @@ $introduction.replaceAll("(?<!\015)\012", "
 ## The available variables are described here:
 ## http://maven.apache.org/plugins/maven-changes-plugin/examples/using-a-custom-announcement-template.html
 ##
-## Hack to improve layout: replace all pairs of spaces with a single new-line
+## Hack to improve layout: replace all pairs of spaces with a single newline.
 $release.description.replaceAll("  ", "
 ")
 
-## set up indent sizes. Only change indent1
+## Set up indentation sizes. Only change indent1.
 #set($props=${project.properties})
 #set($jiralen=$props.get("commons.jira.id").length())
 ## indent1 =   POOL-nnnn:
 #set($blanklen=$jiralen+6)## +6 for "-nnnn:"
-## must be at least as long as the longest JIRA id
+## The padding string must be at least as long as the longest JIRA ID.
 #set($blanks="                                  ")
 #set($indent1=$blanks.substring(0,$blanklen))
-## indent2 allows for issue wrapper
+## indent2 provides indentation for wrapped issue descriptions.
 #set($indent2="$indent1   ")
 ##
 #macro ( processaction )
 ## Use replaceAll to fix up LF-only line ends on Windows.
 #set($action=$actionItem.getAction().replaceAll("\n","
 "))
-## Replace &lt; with < so can embed tag markup
+## Replace &lt; with < so that tag markup can be embedded.
 #set($action=$action.replaceAll("&lt;","<"))
-## use an empty date to mean don't format the entry
-## TODO how to enable leading spaces without compromising html report
-## unfortunately leading spaces are trimmed even from CDATA sections
+## Use an empty date to indicate that the entry should not be formatted.
+## TODO: Enable leading spaces without compromising the HTML report.
+## Unfortunately, leading spaces are trimmed even from CDATA sections.
 #if ($actionItem.getDate() && $actionItem.getDate().length()==0)
 $action
 #else
-## Fix up indentation for multi-line action descriptions
+## Adjust indentation for multiline action descriptions.
 #set($action=$action.replaceAll("(?m)^  +",$indent2))
 #if ($actionItem.getIssue())
 #set($issue="$actionItem.getIssue():")
-## Pad shorter issue numbers
+## Pad shorter issue numbers.
 #if ($issue.length() < $indent1.length())#set ($issue="$issue ")#end
 #if ($issue.length() < $indent1.length())#set ($issue="$issue ")#end
 #if ($issue.length() < $indent1.length())#set ($issue="$issue ")#end

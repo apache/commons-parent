@@ -3,54 +3,54 @@ Notes on building/releasing Commons Parent
 
 These recipes should work.
 Other recipes may suit other tastes!
-This is the short form of "Releasing Commons Components"
+This is a short version of "Releasing Commons Components":
 https://commons.apache.org/releases/index.html
 
-To perform the license release audit, a.k.a. "RAT check", run.
+To perform the license release audit, also known as the "RAT check", run:
 
 mvn apache-rat:check
 
-Building for local repo:
------------------------
+Building for the local repository:
+----------------------------------
 
 mvn -N install
 
 Snapshot deployment:
--------------------
+--------------------
 
 mvn deploy
 
-Preparing for release candidate:
--------------------------------
+Preparing for a release candidate:
+----------------------------------
 - Check for updates to plugins and dependencies.
-- Ensure NOTICE has correct year.
-- Ensure changes.xml is up to date (Release notes are updated during tagging)
-- Ensure pom.xml header comment agrees with changes for this release
+- Ensure NOTICE has the correct year.
+- Ensure changes.xml is up to date. (Release notes are updated during tagging.)
+- Ensure the pom.xml header comment agrees with the changes for this release.
 - Regenerate files:
   mvn commons-build:all -Dproject.inceptionYear=2006
-  (The year is not defined in the pom to avoid propagation to components)
-- Check and commit all changes
+  (The year is not defined in the POM to avoid propagation to components.)
+- Check and commit all changes.
 
-Creating release candidate tag:
-------------------------------
-This is done in a separate release branch so that the default branch remains a SNAPSHOT version
+Creating a release candidate tag:
+---------------------------------
+This is done in a separate release branch so that the default branch remains a SNAPSHOT version.
 
-- Checkout default branch in clean workspace:
+- Check out the default branch in a clean workspace:
   git clone https://gitbox.apache.org/repos/asf/commons-parent.git commons-parent-<NN>-RC1
 - cd commons-parent-<NN>-RC1
 - Update the release branch:
   git checkout release
   git pull origin release
   git pull origin master
-- Edit version in pom.xml to remove SNAPSHOT suffix
+- Edit the version in pom.xml to remove the SNAPSHOT suffix:
   mvn versions:set -DnewVersion=NN -DgenerateBackupPoms=false
-  edit commons.rc.version to agree with the RC number
-- Update the release notes. These are cumulative, so the new notes must be generated in a temporary file
+  Edit commons.rc.version to agree with the RC number.
+- Update the release notes. These are cumulative, so the new notes must be generated in a temporary file.
   Generate a temporary file, for example:
   mvn changes:announcement-generate -Prelease-notes -Dchanges.version=NN -Dchanges.announcementFile=NN.tmp
-  Edit the file to tidy it up, and prepend it to RELEASE-NOTES.txt
-  Remove the temporary file
-- Create tag the from the updated workspace:
+  Edit the file to tidy it up and prepend it to RELEASE-NOTES.txt.
+  Remove the temporary file.
+- Create the tag from the updated workspace:
   git commit -am "Update version numbers for Commons Parent version NN"
 
   git tag -s commons-parent-NN-RC1 -m "Tag Commons Parent version NN-RC1" [-u keyid] # signed tag
@@ -60,72 +60,72 @@ This is done in a separate release branch so that the default branch remains a S
   git push --tags origin release
 
 Test build of tag:
------------------
+------------------
 - mvn deploy -Duser.name=ASF-login-name -Prelease -Ptest-deploy
-- Check the contents of target/deploy/org/apache/commons/commons-parent/<NN>
-  - should contain commons-parent-<NN>.pom, commons-parent-<NN>-site.xml and sigs/hashes
-  - also -src.tar.gz, -src.zip and sigs/hashes
+- Check the contents of target/deploy/org/apache/commons/commons-parent/<NN>:
+  - The directory should contain commons-parent-<NN>.pom, commons-parent-<NN>-site.xml, and their signatures and hashes.
+  - The directory should also contain -src.tar.gz, -src.zip, and their signatures and hashes.
 
 Deploy RC to Nexus:
-------------------
-- Set up passwords in settings.xml (https://wiki.apache.org/commons/UsingNexus)
-- Same command as above, but omitting -Ptest-deploy profile:
+-------------------
+- Set up passwords in settings.xml (see https://wiki.apache.org/commons/UsingNexus).
+- Use the same command as above, but omit the -Ptest-deploy profile:
 - mvn package deploy -Duser.name=ASF-login-name -Prelease
 
 Tidy and close Nexus staging area:
----------------------------------
-- Login to Nexus: https://repository.apache.org/index.html
-- Open "Staging Repositories", find the correct "Open" entry (check Summary tab in bottom panel)
-- The message "No CLM data recorded" appears to be benign
-- Open the bottom "Content" tab and navigate to the files
-- Delete *.asc.md5 and *.asc.sha1 if present
-- Checkout https://dist.apache.org/repos/dist/dev/commons/commons-parent
-- create and change to the appropriate subdir: <NN>-RCn
-- Download the -src archives, and their sigs, then delete them (and md5/sha1 hashes) from Nexus.
+----------------------------------
+- Log in to Nexus: https://repository.apache.org/index.html
+- Open "Staging Repositories" and find the correct "Open" entry (check the Summary tab in the bottom panel).
+- The message "No CLM data recorded" appears to be benign.
+- Open the bottom "Content" tab and navigate to the files.
+- Delete *.asc.md5 and *.asc.sha1 if present.
+- Check out https://dist.apache.org/repos/dist/dev/commons/commons-parent
+- Create and change to the appropriate subdirectory: <NN>-RCn
+- Download the -src archives and their signatures, then delete them (and their MD5/SHA-1 hashes) from Nexus.
   wget https://repository.apache.org/service/local/repositories/orgapachecommons-<NexusID>/content/org/apache/commons/commons-parent/<NN>/commons-parent-<NN>-src.zip
-  Likewise for .tar.gz and the corresponding .asc files
-  TODO: could/should these be fetched from target instead?
-- replace the md5 and sha1 hashes with sha512 hashes
-- copy RELEASE-NOTES.txt from the git release area
-- Commit the dist/dev/commons-parent/<NN>-RCn folder
+  Do the same for .tar.gz and the corresponding .asc files.
+  TODO: Determine whether these should be fetched from target instead.
+- Replace the MD5 and SHA-1 hashes with SHA-512 hashes.
+- Copy RELEASE-NOTES.txt from the Git release area.
+- Commit the dist/dev/commons-parent/<NN>-RCn folder.
 
-Close the staging area - Description: "Apache Commons Parent <NN> RC1"
-Screen does not auto-refresh - you need to press refresh
+Close the staging area with the description: "Apache Commons Parent <NN> RC1"
+The screen does not refresh automatically; you need to press Refresh.
 
-Send round the release vote(lazy)
+Send out the release vote (lazy)
 --------------------------------
 
 Promote the Nexus staging area
 ------------------------------
-Assuming the vote passes, login to Nexus and use the "Release" function
-[If there was a problem identified, Drop the repo instead and start again]
+Assuming the vote passes, log in to Nexus and use the "Release" function.
+[If a problem was identified, drop the repository instead and start again.]
 
-Copy the RC Tag to final tag:
-----------------------------
+Copy the RC tag to the final tag:
+---------------------------------
 - git co release
-- git pull origin release # synch with remote
+- git pull origin release # Sync with the remote.
 
-- git diff commons-parent-NN-RCn # check that the workspace agrees with the tag in the vote
+- git diff commons-parent-NN-RCn # Check that the workspace agrees with the tag in the vote.
 - git tag -s commons-parent-NN -m "Create Commons Parent NN release tag"
 - git push --tags
 
 - git checkout master
-- git merge release # This should update the RN
+- git merge release # This should update the release notes.
 - mvn versions:set -DnewVersion=52-SNAPSHOT -DgenerateBackupPoms=false
-- Add next release tag in src/changes/changes.xml
+- Add the next release tag in src/changes/changes.xml.
 - git commit -am "Bump to next development version"
 
 Publish the source files to
-------------------------
+---------------------------
 https://dist.apache.org/repos/dist/release/commons/commons-parent
 
 TBA
 
 Update site documentation
 -------------------------
-Please check that the site documentation is up to date 
+Please check that the site documentation is up to date.
 See:
 https://svn.apache.org/repos/asf/commons/cms-site/trunk/content/xdoc/commons-parent-pom.xml
-This will need updating if any new features / profiles etc are added.
+This will need updating if any new features, profiles, or other capabilities are added.
 It does not list plugin or dependency versions.
-However at the least please update the version details and URL at the start of the page.
+However, at least update the version details and URL at the start of the page.

@@ -20,14 +20,14 @@
 
 <site name="Apache Commons" xmlns="http://maven.apache.org/SITE/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SITE/2.0.0 https://maven.apache.org/xsd/site-2.0.0.xsd">
 
-  <!-- All non-body elements are automatically inherited -->
+  <!-- All non-body elements are automatically inherited. -->
 
   <!--
-   ! Similarly href entries are converted before they are passed to the template.
+   ! Similarly, href entries are converted before they are passed to the template.
    ! In this case, we want the URL to remain absolute.
-   ! The work-round is to use a dummy suffix that is removed by the template.
-   ! This is due to be fixed in version 2.3 of the site plugin - see MSITE-159, MSHARED-189
-   ! Or use site:stage which does not convert these links ...
+   ! The workaround is to use a dummy suffix that is removed by the template.
+   ! This is due to be fixed in version 2.3 of the site plugin; see MSITE-159 and MSHARED-189.
+   ! Or use site:stage, which does not convert these links.
    -->
   <bannerLeft name="Apache Commons" href="https://commons.apache.org.remove.invalid/">
     <!--
@@ -36,9 +36,9 @@
      ! Unfortunately, this means that the conversion is done in the context of commons-parent, which
      ! contains the site.xml, rather than in the context of the project being built.
      ! This means that relative URLs are created with an additional ../ prefix.
-     ! The work-round is to use a dummy absolute URL that can never be used, and then remove this
+     ! The workaround is to use a dummy absolute URL that can never be used and then remove it
      ! as part of the template processing.
-     ! See MSITE-559
+     ! See MSITE-559.
      -->
     <image src="http://dummy.invalid/$relativePath/images/commons-logo.png" alt="Apache Commons logo"/>
   </bannerLeft>
@@ -53,10 +53,10 @@
     <version>5.3.0</version>
   </skin>
   <!-- 
-    Trying to use
+    Using
       org.apache.maven.skins:maven-fluido-skin:2.0.0-M11 and 
       org.apache.maven.plugins:maven-site-plugin:3.20.0
-    builds but scrambles the HTML output for the Changes and Jira report pages.
+    allows the project to build but scrambles the HTML output for the Changes and Jira report pages.
     See also https://lists.apache.org/thread/pgj1gd75hx1dhq9spnl3c70xxt07corx
   <skin>
     <groupId>org.apache.maven.skins</groupId>
@@ -66,7 +66,7 @@
   -->
 
   <body>
-    <!-- Body links are automatically inherited -->
+    <!-- Body links are automatically inherited. -->
     <links>
       <item name="ApacheCon" href="https://www.apachecon.com/"/>
       <item name="Apache"  href="https://www.apache.org"/>
@@ -89,7 +89,7 @@
       </item>
     </menu>
 
-    <!-- Should agree with commons-site. Site-relative links don't work here -->
+    <!-- Should agree with commons-site. Site-relative links don't work here. -->
     <menu name="General Information" inherit="bottom">
       <item name="Security"               href="https://commons.apache.org/security.html"/>
       <item name="Volunteering"           href="https://commons.apache.org/volunteering.html" />
@@ -129,7 +129,7 @@
 
   <!-- inherited -->
   <custom>
-    <!-- @project.name@ will be replaced by the template; if we used ${project.name} it would pick up Commons Parent -->    
+    <!-- @project.name@ will be replaced by the template; if we used ${project.name}, it would pick up Commons Parent. -->
     <footer>
       <div class="center">
       Apache Commons, Apache @project.name@, Apache, the Apache logo, and the Apache Commons project logos are trademarks of The Apache Software Foundation.

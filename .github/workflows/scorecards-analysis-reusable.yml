@@ -30,7 +30,7 @@ jobs:
       contents: read
       # Needed to upload the results to the code-scanning dashboard.
       security-events: write
-      # Needed to sign the results using Fulcio
+      # Needed to sign the results using Fulcio.
       id-token: write
 
     steps:

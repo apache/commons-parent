@@ -46,7 +46,7 @@ jobs:
         with:
           persist-credentials: false
 
-      # If available, restore the cache created by a build job
+      # If available, restore the cache created by a build job.
       - name: Restore Maven cache
         uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 #v6.1.0
         with:
