@@ -64,8 +64,9 @@ mvn -B -DskipTests -DskipITs -ntp
    - Don't use the tags `@author`, `@version`.
    - Block tags appear in the order `@param`, `@return`, `@throws`, `@since`, `@see`, `@deprecated`. 
      No empty descriptions.
-   - Javadoc is present on every public class and every public or protected member,
+   - Add Javadoc for every new type declaration, method, and other member,
      with the standard exceptions (overrides, self-explanatory members, trivial `equals`/`hashCode`).
+   - Include an `@since` tag on every new public or protected type declaration, method, and other member.
 
 ### Prose
 
