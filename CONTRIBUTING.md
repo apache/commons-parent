@@ -61,7 +61,7 @@ Making Changes
 
 + Create a _topic branch_ for your isolated work.
   * Usually, you should base your branch on the `master` branch.
-  * A good topic branch name can be the JIRA bug ID plus a keyword, e.g., `COMMONSSITE-123-InputStream`.
+  * A good topic branch name can be the JIRA bug ID plus a keyword, for example, `COMMONSSITE-123-InputStream`.
   * If you have submitted multiple JIRA issues, try to maintain separate branches and pull requests.
 + Make commits of logical units.
   * Make sure your commit messages are meaningful and in the proper format. Your commit message should contain the key of the JIRA issue.
@@ -89,12 +89,12 @@ Submitting Changes
 ------------------
 
 + Sign and submit the Apache [Contributor License Agreement][cla] if you haven't already.
-  * Note that small patches & typical bug fixes do not require a CLA as
+  * Note that small patches and typical bug fixes do not require a CLA as
     clause 5 of the [Apache License](https://www.apache.org/licenses/LICENSE-2.0.html#contributions)
     covers them.
 + Push your changes to a topic branch in your fork of the repository.
 + Submit a _Pull Request_ to the corresponding repository in the `apache` organization.
-  * Verify _Files Changed_ shows only your intended changes and does not
+  * Verify that _Files Changed_ shows only your intended changes and does not
   include additional files like `target/*.class`.
 + Update your JIRA ticket and include a link to the pull request in the ticket.
 

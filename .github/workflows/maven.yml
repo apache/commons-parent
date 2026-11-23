@@ -28,7 +28,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    # we want to try all Java versions here.
+    # We want to try all Java versions here.
     continue-on-error: true
     strategy:
       max-parallel: 20

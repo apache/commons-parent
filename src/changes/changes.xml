@@ -32,10 +32,9 @@ SVN commits. TBA how to use this with SVN.
 To generate the release notes from this file:
 
 mvn changes:announcement-generate -Prelease-notes [-Dchanges.version=nn]
-then tweak the formatting if necessary
-and commit
+Then adjust the formatting if necessary and commit the changes.
 
-The <action> type attribute can be add,update,fix,remove.
+The <action> type attribute can be add, update, fix, or remove.
 -->
 <document xmlns="http://maven.apache.org/changes/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/changes/2.0.0 https://maven.apache.org/xsd/changes-2.0.0.xsd">
@@ -47,13 +46,13 @@ The <action> type attribute can be add,update,fix,remove.
     The description below is specially formatted so as to improve the layout of the generated release notes:
     The parsing process removes all line feeds, replacing them with a single space.
     The Velocity template in resources/templates has been enhanced to replace pairs of adjacent spaces
-    with a new-line in the release notes. (These spaces are ignored when displaying HTML).
+    with a newline in the release notes. (These spaces are ignored when displaying HTML.)
     If the output is not quite correct, check for invisible trailing spaces!
 
     To suppress formatting of an action entry when generating release notes, add an empty date.
-    This does not affect the HTML changes report (in any case dates are not displayed by default)
+    This does not affect the HTML changes report (in any case, dates are not displayed by default).
 
-    The release notes template groups actions by type, and only extracts data for the current release.
+    The release notes template groups actions by type and extracts data for the current release.
     The changes report outputs actions in the order they appear in this file.
      -->
     <body>
@@ -96,14 +95,14 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.bcel:bcel from 6.12.0 to 6.13.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.10.4.0 to 4.10.5.0.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump Bump com.github.spotbugs:spotbugs from 4.10.4 to 4.10.5.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs from 4.10.4 to 4.10.5.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:animal-sniffer-maven-plugin from 1.27 to 1.28.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:build-helper-maven-plugin from 3.6.1 to 3.6.2.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:exec-maven-plugin from 3.6.3 to 3.6.4.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:taglist-maven-plugin from 3.2.2 to 3.2.3.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:versions-maven-plugin from 2.21.0 to 2.23.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.maven.plugins:maven-artifact-plugin from 3.6.1 to 3.7.0.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.felix:maven-bundle-plugin from 6.1.2 on 6.2.0 on Java 17 and up.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.felix:maven-bundle-plugin from 6.1.2 to 6.2.0 on Java 17 and up.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache:apache from 39 to 40 (parent POM).</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump commons.pmd-impl.version from 7.27.0 to 7.28.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 14.1.0 to 14.3.0 on Java 21 and up.</action>
@@ -117,7 +116,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.cyclonedx:cyclonedx-maven-plugin from 2.9.2 to 2.9.3.</action>
         <action type="update" dev="engelen" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.9.8.3 to 4.10.4.0 on Java 11 and up.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.felix:maven-bundle-plugin from 6.0.2 on 6.1.0 on Java 17 and up.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.felix:maven-bundle-plugin from 6.0.2 to 6.1.0 on Java 17 and up.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump commons.pmd-impl.version from 7.26.0 to 7.27.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump commons.compiler.version from 3.15.0 to 3.16.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump commons.checkstyle.version from 14.0.0 to 14.1.0 on Java 21 and up.</action> 
@@ -151,7 +150,7 @@ The <action> type attribute can be add,update,fix,remove.
       </release>
       <release version="102" date="2026-06-07" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
-        <action type="fix" dev="ggregory" due-to="Gary Gregory">Configure JaCoCo to exclude the platform class loader such that it can prepare the agent when the embedded ASM version doesn't support the current byte code version. See https://github.com/jacoco/jacoco/issues/2152</action>
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">Configure JaCoCo to exclude the platform class loader such that it can prepare the agent when the embedded ASM version doesn't support the current bytecode version. See https://github.com/jacoco/jacoco/issues/2152</action>
         <!-- ADD -->
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump biz.aQute.bnd:biz.aQute.bndlib from 7.2.3 to 7.3.0 on Java 17 and up.</action>        
@@ -160,7 +159,7 @@ The <action> type attribute can be add,update,fix,remove.
       </release>
       <release version="101" date="2026-05-30" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
-        <action type="fix" dev="ggregory" due-to="Gary Gregory">Allow maven-pmd-plugin to override org.ow2.asm:asm version (fixes Java 27-ea build: Unsupported class file major version 71).</action>
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">Allow maven-pmd-plugin to override the org.ow2.asm:asm version (fixes Java 27-ea build: Unsupported class file major version 71).</action>
         <action type="fix" dev="ggregory" due-to="Jack Green, Gary Gregory">Fix broken Maven Central badges in COMPONENTS.adoc (#709).</action>
         <!-- ADD -->
         <!-- UPDATE -->
@@ -174,7 +173,7 @@ The <action> type attribute can be add,update,fix,remove.
       </release>
       <release version="100" date="2026-05-11" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
-        <action type="fix" dev="ggregory" due-to="Slawomir Jaranowski">Remove redundant manifest entries for javadoc and source plugins, now inherited from org.apache:parent:36 #703.</action>
+        <action type="fix" dev="ggregory" due-to="Slawomir Jaranowski">Remove redundant manifest entries for Javadoc and source plugins, now inherited from org.apache:parent:36 #703.</action>
         <!-- ADD -->
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache:apache from 37 to 38.</action>
@@ -198,7 +197,7 @@ The <action> type attribute can be add,update,fix,remove.
 	    <!-- ADD -->
 	    <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump net.sourceforge.pmd:pmd-* from 7.21.0 to 7.23.0.</action>
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.felix:maven-bundle-plugin from 6.0.0 on 6.0.2 on Java 17 and up.</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.felix:maven-bundle-plugin from 6.0.0 to 6.0.2 on Java 17 and up.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 12.3.1 to 13.3.0 on Java 21 and up.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump biz.aQute.bnd:biz.aQute.bndlib from 7.2.1 to 7.2.3 on Java 17 and up.</action>        
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.9.8.2 to 4.9.8.3.</action>
@@ -232,7 +231,7 @@ The <action> type attribute can be add,update,fix,remove.
       </release>
       <release version="95" date="2026-01-08" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
-        <action type="update" dev="ggregory" due-to="Gary Gregory">Use spdx 0.5.5 on Java 11, spdx can require Java 17 depending on undocumented behavior which applies for us sometimes on macOS (but never on Java 8).</action>
+        <action type="update" dev="ggregory" due-to="Gary Gregory">Use spdx 0.5.5 on Java 11; spdx can require Java 17 depending on undocumented behavior that sometimes applies to us on macOS (but never on Java 8).</action>
         <!-- ADD -->
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache:apache from 35 to 36.</action>
@@ -260,8 +259,8 @@ The <action> type attribute can be add,update,fix,remove.
       <release version="93" date="2025-11-19" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
         <action type="fix" dev="ggregory" due-to="Gary Gregory">POM issueManagement/url now reuses the property `commons.jira.id`.</action>
-        <action type="fix" dev="ggregory" due-to="Gary Gregory">Fix maven-changes-plugin template for Jira issues link.</action>
-        <action type="fix" dev="ggregory" due-to="Gary Gregory">POM /issueManagement/url now reuses the `commons.repo.name`.</action>
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">Fix the maven-changes-plugin template for Jira issue links.</action>
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">POM /issueManagement/url now reuses the `commons.repo.name` property.</action>
         <action type="fix" dev="ggregory" due-to="Gary Gregory">Fix the configuration for the Apache Maven RAT plugin to not use deprecated XML elements.</action>
         <!-- ADD -->
         <!-- UPDATE -->
@@ -274,8 +273,8 @@ The <action> type attribute can be add,update,fix,remove.
       <release version="92" date="2025-11-07" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
         <!-- ADD -->
-        <action type="add" dev="ggregory" due-to="Gary Gregory">Add POM property `commons.repo.name` as `commons-${commons.componentid}` and use in project/scm values.</action>
-        <action type="add" dev="ggregory" due-to="Gary Gregory">Add POM project/scm/tag element.</action>
+        <action type="add" dev="ggregory" due-to="Gary Gregory">Add POM property `commons.repo.name` as `commons-${commons.componentid}` and use it in project/scm values.</action>
+        <action type="add" dev="ggregory" due-to="Gary Gregory">Add the POM project/scm/tag element.</action>
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 12.1.0 to 12.1.1 on Java 17 and up.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump commons.pmd-impl.version from 7.17.0 to 7.18.0 #680.</action>
@@ -339,7 +338,7 @@ The <action> type attribute can be add,update,fix,remove.
       </release>
       <release version="87" date="2025-08-20" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
-        <action type="fix" dev="ggregory" due-to="Gary Gregory">Use Checkstyle 10.x on Java 11-16, Checkstyle 11.x requires Java 17.</action>
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">Use Checkstyle 10.x on Java 11-16; Checkstyle 11.x requires Java 17.</action>
         <!-- ADD -->
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-javadoc-plugin from 3.11.2 to 3.11.3.</action>
@@ -390,8 +389,8 @@ The <action> type attribute can be add,update,fix,remove.
       </release>
       <release version="83" date="2025-04-25" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
-        <action type="fix" dev="ggregory" due-to="Gary Gregory">Freeze SpotBugs implementation (commons.spotbugs.impl.version) on Java 8, 9, and 10 to 4.8.6; SpotBugs version 4.9.0 requires Java 11.</action>
-        <action type="fix" dev="ggregory" due-to="Gary Gregory">Freeze SpotBugs plugin (ommons.spotbugs.plugin.version) on Java 8, 9, and 10 to 4.8.6.6; SpotBugs version 4.9.0 requires Java 11.</action>
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">Freeze the SpotBugs implementation (commons.spotbugs.impl.version) on Java 8, 9, and 10 at 4.8.6; SpotBugs version 4.9.0 requires Java 11.</action>
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">Freeze the SpotBugs plugin (ommons.spotbugs.plugin.version) on Java 8, 9, and 10 at 4.8.6.6; SpotBugs version 4.9.0 requires Java 11.</action>
         <!-- ADD -->
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump commons.pmd-impl.version from 7.12.0 to 7.13.0 #617.</action>
@@ -425,8 +424,8 @@ The <action> type attribute can be add,update,fix,remove.
       <release version="80" date="2025-01-25" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
         <action type="fix" dev="ggregory" due-to="Gary Gregory">Fix broken Mockito dependency.</action>
-        <action type="fix" dev="ggregory" due-to="Gary Gregory, Sylwester Lachiewicz">Don't configure the Javadoc plugin to link to a fixed Java version, let the build pick up the matching version for that component.</action>
-        <action type="fix" dev="ggregory" due-to="Christoph Läubrich, Piotr P. Karwasz, Gary Gregory, Bernd">Remove -nouses directive from maven-bundle-plugin. OSGi package imports now state 'uses' definitions for package imports, this doesn't affect JPMS #581.</action>
+        <action type="fix" dev="ggregory" due-to="Gary Gregory, Sylwester Lachiewicz">Don't configure the Javadoc plugin to link to a fixed Java version; let the build pick up the matching version for that component.</action>
+        <action type="fix" dev="ggregory" due-to="Christoph Läubrich, Piotr P. Karwasz, Gary Gregory, Bernd">Remove -nouses directive from maven-bundle-plugin. OSGi package imports now state 'uses' definitions for package imports; this doesn't affect JPMS #581.</action>
         <!-- ADD -->
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add property commons.main.branch.</action>
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add property commons.release.branch.</action>
@@ -441,17 +440,17 @@ The <action> type attribute can be add,update,fix,remove.
       </release>
       <release version="79" date="2025-01-03" description="This is a feature and maintenance release. Java 8 or later is required. Updating changes.xml to use the version 2 XSD is also required. Some site XML files may also need updates.">
         <!-- FIX -->
-        <action type="fix" dev="ggregory" due-to="Gary Gregory">Disable annotation processing during compile.
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">Disable annotation processing during compilation.
         Background: https://www.oracle.com/java/technologies/javase/23-relnote-issues.html#JDK-8321314
         Background: https://xdev.software/en/news/detail/discovering-the-perfect-java-supply-chain-attack-vector-and-how-it-got-fixed</action>
-        <action type="fix" dev="ggregory" due-to="Gary Gregory">The property commons.encoding is now set to UTF-8, see also the Doxia 2 migration https://github.com/apache/commons-skin/pull/179.</action>
+        <action type="fix" dev="ggregory" due-to="Gary Gregory">The property commons.encoding is now set to UTF-8; see also the Doxia 2 migration https://github.com/apache/commons-skin/pull/179.</action>
         <!-- ADD -->
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add org.junit-pioneer:junit-pioneer to dependencyManagement.</action>
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add org.apache.maven.plugins:maven-changes-plugin to pluginManagement.</action>
         <action type="add" dev="ggregory" due-to="Arnout Engelen">Add mockito to dependencyManagement #568.</action> 
         <action type="add" dev="ggregory" due-to="Gary Gregory">Run maven-changes-plugin changes-validate on verify.</action>
         <!-- UPDATE -->
-        <action type="update" dev="sjaranowski" due-to="Slawomir Jaranowski">Update site skin and reports plugins with Doxia 2 stack.</action>
+        <action type="update" dev="sjaranowski" due-to="Slawomir Jaranowski">Update the site skin and report plugins with the Doxia 2 stack.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.8.6.4 to 4.8.6.6 #518, #544.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.junit:junit-bom from 5.11.2 to 5.11.4 #519, #558.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.apache.maven.plugins:maven-artifact-plugin from 3.5.1 to 3.5.3 #522, #538.</action>
@@ -468,7 +467,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache.maven.plugins:maven-jxr-plugin from 3.5.0 to 3.6.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.cyclonedx:cyclonedx-maven-plugin from 2.9.0 to 2.9.1 #550.</action> 
       </release>
-      <release version="78" date="2024-10-17" description="Maintenance and update dependencies.">
+      <release version="78" date="2024-10-17" description="Maintenance and dependency updates.">
         <!-- FIX -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Fix spotbugs:check on Java 24-ea.</action>
         <!-- ADD -->
@@ -482,9 +481,9 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump org.cyclonedx:cyclonedx-maven-plugin from 2.8.2 to 2.9.0 #511.</action>         
         <!-- REMOVE -->
       </release>
-      <release version="77" date="2024-10-05" description="Maintenance and update dependencies.">
+      <release version="77" date="2024-10-05" description="Maintenance and dependency updates.">
         <!-- FIX -->
-        <action type="fix" dev="ggregory" due-to="Dependabot, Gary Gregory">Pin maven-pmd-plugin to 3.24.0, site compatibility is broken in 3.25.0.</action>
+        <action type="fix" dev="ggregory" due-to="Dependabot, Gary Gregory">Pin maven-pmd-plugin to 3.24.0; site compatibility is broken in 3.25.0.</action>
         <!-- ADD -->
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.cyclonedx:cyclonedx-maven-plugin from 2.8.1 to 2.8.2 #498.</action>
@@ -493,9 +492,9 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.18.1 to 10.18.2 on Java 11 and up.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.junit:junit-bom from 5.11.1 to 5.11.2 #506.</action>
         <!-- REMOVE -->
-        <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove "cobertura" profile, we use JaCoco, Cobertura is unmaintained.</action>
+        <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove the "cobertura" profile; we use JaCoCo, and Cobertura is unmaintained.</action>
       </release>
-      <release version="76" date="2024-09-25" description="Maintenance and update dependencies.">
+      <release version="76" date="2024-09-25" description="Maintenance and dependency updates.">
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
@@ -503,7 +502,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.8.6.3 to 4.8.6.4 #496.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.junit:junit-bom from 5.11.0 to 5.11.1 #497.</action>
       </release>
-      <release version="75" date="2024-09-14" description="Maintenance and update dependencies.">
+      <release version="75" date="2024-09-14" description="Maintenance and dependency updates.">
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
@@ -517,7 +516,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.codehaus.mojo:buildnumber-maven-plugin from 3.2.0 to 3.2.1 #489.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.8.6.2 to 4.8.6.3 #491.</action> 
       </release>
-      <release version="74" date="2024-08-24" description="Maintenance and update dependencies.">
+      <release version="74" date="2024-08-24" description="Maintenance and dependency updates.">
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
@@ -530,7 +529,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.spdx:spdx-maven-plugin from 0.7.3 to 0.7.4 #476; fixes https://github.com/spdx/Spdx-Java-Library/issues/247 Warning message for License list version.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump commons.checkstyle.version from 10.17.0 to 10.18.0 on Java 11 and up.</action> 
       </release>
-      <release version="73" date="2024-08-15" description="Maintenance and update dependencies.">
+      <release version="73" date="2024-08-15" description="Maintenance and dependency updates.">
         <!-- FIX -->
         <!-- ADD -->
         <!-- UPDATE -->
@@ -543,7 +542,7 @@ The <action> type attribute can be add,update,fix,remove.
         <!-- REMOVE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Remove broken Maven profile for Java 11.</action>
       </release>
-      <release version="72" date="2024-07-21" description="Maintenance and update dependencies.">
+      <release version="72" date="2024-07-21" description="Maintenance and dependency updates.">
         <!-- FIX -->
         <!-- ADD -->
         <action type="add" dev="ggregory" due-to="Gary Gregory">Add org.codehaus.mojo:taglist-maven-plugin:3.1.0 to plugin management.</action>
@@ -563,7 +562,7 @@ The <action> type attribute can be add,update,fix,remove.
         <action type="update" dev="ggregory" due-to="Dependabot">Bump org.codehaus.mojo:animal-sniffer-maven-plugin from 1.23 to 1.24 #441.</action>
         <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-javadoc-plugin from 3.7.0 to 3.8.0 #452.</action>
       </release>
-      <release version="71" date="2024-06-07" description="Maintenance and update dependencies.">
+      <release version="71" date="2024-06-07" description="Maintenance and dependency updates.">
           <!-- FIX -->
           <!-- ADD -->
           <!-- UPDATE -->
@@ -576,13 +575,13 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="update" dev="ggregory" due-to="Dependabot">Bump org.apache.maven.plugins:maven-checkstyle-plugin from 3.3.1 to 3.4.0 #425.</action>
           <action type="update" dev="ggregory" due-to="Dependabot">Bump org.apache.maven.plugins:maven-checkstyle-plugin from 3.3.1 to 3.4.0 #425.</action>         
         </release>
-        <release version="70" date="2024-05-11" description="Maintenance and update dependencies.">
+        <release version="70" date="2024-05-11" description="Maintenance and dependency updates.">
            <!-- ADD -->
-           <action type="add" dev="ggregory" due-to="Gary Gregory">Add profile benchmark for JMH benchmarks.</action>
-           <action type="add" dev="ggregory" due-to="Gary Gregory">Add JMH to dependency management section.</action>
+           <action type="add" dev="ggregory" due-to="Gary Gregory">Add the benchmark profile for JMH benchmarks.</action>
+           <action type="add" dev="ggregory" due-to="Gary Gregory">Add JMH to the dependency management section.</action>
            <!-- FIX -->
-           <action type="fix" dev="ggregory" due-to="Gary Gregory">Set Javadoc link to latest Java API LTS version.</action>
-           <action type="fix" dev="ggregory" due-to="Gary Gregory">Set Jacoco defaults to 1.00.</action>
+           <action type="fix" dev="ggregory" due-to="Gary Gregory">Set the Javadoc link to the latest Java API LTS version.</action>
+           <action type="fix" dev="ggregory" due-to="Gary Gregory">Set JaCoCo defaults to 1.00.</action>
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.14.2 to 10.16.0 on Java 11 and up.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.jacoco:jacoco-maven-plugin from 0.8.11 to 0.8.12 #392.</action>
@@ -601,12 +600,12 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.junit.platform:junit-platform-* from 5.10.2 to 5.11.0-M1.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.junit.vintage:junit-vintage-engine from 5.10.2 to 5.11.0-M1.</action>
         </release>
-        <release version="69" date="2024-03-29" description="Maintenance and update dependencies">
+        <release version="69" date="2024-03-29" description="Maintenance and dependency updates.">
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.cyclonedx:cyclonedx-maven-plugin from 2.7.11 to 2.8.0 #389.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.moditect:moditect-maven-plugin from 1.2.0.Final to 1.2.1.Final #390.</action>
         </release>
-        <release version="68" date="2024-03-19" description="Maintenance and update dependencies">
+        <release version="68" date="2024-03-19" description="Maintenance and dependency updates.">
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.apache.maven.plugins:maven-assembly-plugin from 3.6.0 to 3.7.1 #378, #384.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump com.github.siom79.japicmp:japicmp-maven-plugin from 0.18.5 to 0.20.0 #376.</action>
@@ -614,7 +613,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.moditect:moditect-maven-plugin from 1.1.0 to 1.2.0.Final #379.</action>
            <action type="update" dev="ggregory" due-to="Dependabot, Gary Gregory">Bump org.apache.maven.plugins:maven-compiler-plugin from 3.12.1 to 3.13.0 #385.</action>
         </release>
-        <release version="67" date="2024-03-02" description="Maintenance and update dependencies">
+        <release version="67" date="2024-03-02" description="Maintenance and dependency updates.">
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.junit:junit-bom from 5.10.1 to 5.10.2.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.8.3.0 to 4.8.3.1 #366.</action>
@@ -624,7 +623,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.13.0 to 10.14.0 on Java 11 and up.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.spdx:spdx-maven-plugin from 0.7.2 to 0.7.3 #371.</action>
         </release>
-        <release version="66" date="2024-01-29" description="Maintenance and update dependencies.">
+        <release version="66" date="2024-01-29" description="Maintenance and dependency updates.">
            <!-- ADD -->
            <action type="add" dev="ggregory">Add property commons.javadoc21.java.link.</action>
            <action type="add" dev="ggregory">Add artifact:check-buildplan to the validate phase.</action>
@@ -650,9 +649,9 @@ The <action> type attribute can be add,update,fix,remove.
            <!-- REMOVE -->
            <action type="update" dev="ggregory" due-to="Gary Gregory">Drop Javadoc properties commons.javadocX.java.link for non-LTS Java versions.</action>
         </release>
-        <release version="65" date="2023-11-17" description="Maintenance and update dependencies.">
+        <release version="65" date="2023-11-17" description="Maintenance and dependency updates.">
            <!-- ADD -->
-           <action type="add" dev="ggregory">Add exec-maven-plugin to plugin management section.</action>
+           <action type="add" dev="ggregory">Add exec-maven-plugin to the plugin management section.</action>
            <!-- FIX -->
            <action type="fix" dev="sebb">s/commons.surefire-report.version/commons.surefire.version/ incorrectly added in 714c3a9</action>
            <!-- UPDATE -->
@@ -675,10 +674,10 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-plugin from 3.2.1 to 3.2.2.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump maven-surefire-report-plugin from 3.2.1 to 3.2.2.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.apache:apache from 30 to 31.</action>
-           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.12.4 on 10.12.5 when on Java 11 and up.</action>
+           <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 10.12.4 to 10.12.5 when on Java 11 and up.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:versions-maven-plugin from 2.16.1 to 2.16.2 #330.</action>
         </release>
-        <release version="64" date="2023-10-06" description="Maintenance and update dependencies.">
+        <release version="64" date="2023-10-06" description="Maintenance and dependency updates.">
            <!-- FIX -->
            <action type="add" dev="ggregory" due-to="Gary Gregory">Restore building on Java 8 (com.puppycrawl.tools:checkstyle 10.x requires Java 11).</action>
            <action type="add" dev="ggregory" due-to="Gary Gregory">Rename profile 'moditect' to 'java-9-up'.</action>
@@ -691,7 +690,7 @@ The <action> type attribute can be add,update,fix,remove.
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Gary Gregory">Use Checkstyle 9.x on Java less than 11 and Checkstyle 10.x on Java 11 and up.</action>
         </release>
-        <release version="63" date="2023-10-02" description="Maintenance and update dependencies.">
+        <release version="63" date="2023-10-02" description="Maintenance and dependency updates.">
            <!-- FIX -->
            <!-- ADD -->
            <action type="add" dev="ggregory" due-to="Dependabot">Add commons.conf.dir property defaulting to src/conf.</action>
@@ -704,23 +703,23 @@ The <action> type attribute can be add,update,fix,remove.
            <!--  REMOVE -->
            <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove obsolete Travis CI profiles.</action>
         </release>
-        <release version="62" date="2023-09-02" description="Maintenance and update dependencies.">
+        <release version="62" date="2023-09-02" description="Maintenance and dependency updates.">
            <!-- FIX -->
            <action type="fix" dev="ggregory" due-to="Gary Gregory">Use addServiceUses when generating JPMS module info.</action>
            <!-- ADD -->
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions.</action>
         </release>
-        <release version="61" date="2023-08-26" description="Maintenance and update dependencies.">
+        <release version="61" date="2023-08-26" description="Maintenance and dependency updates.">
            <!-- FIX -->
            <action type="fix" dev="ggregory" due-to="Gary Gregory">Always use version.maven-source-plugin 3.2.1 (workaround MSOURCES-143).</action>
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions.</action>
         </release>
-        <release version="60" date="2023-08-20" description="Maintenance and update dependencies.">
+        <release version="60" date="2023-08-20" description="Maintenance and dependency updates.">
            <!-- FIX -->
            <action type="fix" dev="sjaranowski" due-to="Slawomir Jaranowski">Reuse the parent POM's maven-enforcer-plugin configuration</action>
-           <action type="fix" dev="ggregory" due-to="Gary Gregory">Workaround MSOURCES-143 by using version.maven-source-plugin 3.2.1 on Java 8.</action>
+           <action type="fix" dev="ggregory" due-to="Gary Gregory">Work around MSOURCES-143 by using version.maven-source-plugin 3.2.1 on Java 8.</action>
            <action type="fix" dev="ggregory" due-to="Gary Gregory">Remove property commons.source-plugin.version and reuse the parent POM's version.maven-source-plugin.</action>
            <!-- ADD -->
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add SPDX SBOM in the package phase.</action>
@@ -737,7 +736,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump org.spdx:spdx-maven-plugin from 0.6.5 to 0.7.0.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions.</action>
         </release>
-        <release version="59" date="2023-07-22" description="Maintenance and update dependencies.">
+        <release version="59" date="2023-07-22" description="Maintenance and dependency updates.">
            <!-- ADD -->
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add moditect profile for JPMS on Java >= 9.</action>
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add POM property commons.javadoc.javaee8.link.</action>
@@ -745,7 +744,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add POM property commons.javadoc.javaee9.1.link.</action>
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add POM property commons.javadoc.javaee10.link.</action>
            <!-- FIX -->
-           <action type="add" dev="ggregory" due-to="Gary Gregory">Don't use the animal sniffer plugin on Java >=9, use the compiler release flag instead.</action>
+           <action type="add" dev="ggregory" due-to="Gary Gregory">Don't use the Animal Sniffer plugin on Java >=9; use the compiler release flag instead.</action>
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump GitHub actions in .github.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump versions-maven-plugin from 2.15.0 to 2.16.0 #276.</action>
@@ -756,7 +755,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump commons-release-plugin from 1.8.0 to 1.8.1.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump commons-build-plugin from 1.12 to 1.13.</action>
         </release>
-        <release version="58" date="2023-05-20" description="Maintenance and update dependencies.">
+        <release version="58" date="2023-05-20" description="Maintenance and dependency updates.">
            <!-- ADD -->
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add commons.javadoc20.java.link.</action>
            <!-- FIX -->
@@ -767,11 +766,11 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump build-helper-maven-plugin from 3.3.0 to 3.4.0 #270.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump buildnumber-maven-plugin from 3.0.0 to 3.1.0 #271.</action>
         </release>
-        <release version="57" date="2023-04-22" description="Maintenance and update dependencies.">
+        <release version="57" date="2023-04-22" description="Maintenance and dependency updates.">
            <!-- FIX -->
            <action type="fix" dev="ggregory" due-to="Hervé Boutemy">Fix cyclonedx-maven-plugin configuration for multi-module projects.</action>
            <action type="fix" dev="ggregory" due-to="Hervé Boutemy">Drop non-reproducible Implementation-Build in jar #242.</action>
-           <action type="fix" dev="ggregory" due-to="Gary Gregory">Use Java compiler release flag when compiling with Java >= 9.].</action>
+           <action type="fix" dev="ggregory" due-to="Gary Gregory">Use Java compiler release flag when compiling with Java >= 9.</action>
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump github/codeql-action from 2.1.37 to 2.1.38 #201.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump cyclonedx-maven-plugin from 2.7.3 to 2.7.7 #195, #220, #253, #262.</action>
@@ -796,15 +795,15 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump jacoco-maven-plugin from 0.8.8 to 0.8.9 #256.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump animal-sniffer-maven-plugin from 1.22 to 1.23 #251.</action>
         </release>
-        <release version="56" date="2022-12-30" description="Maintenance and update dependencies.">
+        <release version="56" date="2022-12-30" description="Maintenance and dependency updates.">
            <!-- FIX -->
-           <action type="fix" dev="sebb">Add Privacy link to site.xml</action>
+           <action type="fix" dev="sebb">Add a Privacy link to site.xml.</action>
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Dependabot">Bump apache from 28 to 29 #182.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump versions-maven-plugin from 2.13.0 to 2.14.2 #181, #187, #191.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump wagon-ssh from 3.5.2 to 3.5.3 #190.</action>
         </release>
-        <release version="55" date="2022-12-07" description="Maintenance and update dependencies.">
+        <release version="55" date="2022-12-07" description="Maintenance and dependency updates.">
            <action type="update" dev="ggregory" due-to="Gary Gregory">Make CycloneDX work better with multi-module projects.</action>
            <action type="update" dev="ggregory" due-to="Gary Gregory">New interface methods must be default methods to maintain BC.</action>
            <!--  ADD -->
@@ -838,7 +837,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="add" dev="ggregory" due-to="Gary Gregory">Add SPDX SBOM generation.</action>
            <!-- REMOVE -->
            <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove org.codehaus.mojo:jdepend-maven-plugin 2.0; it does not work with current versions of RAT and site plugins.</action>
-           <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove FindBugs properties, use SpotBugs instead.</action>
+           <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove FindBugs properties; use SpotBugs instead.</action>
            <action type="remove" dev="ggregory" due-to="Gary Gregory">Remove Maven Clirr plugin in favor of JApiCmp.</action>
            <!-- UPDATE -->
            <action type="update" dev="ggregory" due-to="Gary Gregory, Dependabot">Bump actions/cache from 3 to 3.0.8, #118.</action>
@@ -869,7 +868,7 @@ The <action> type attribute can be add,update,fix,remove.
            <action type="update" dev="ggregory" due-to="Dependabot">Bump versions-maven-plugin from 2.11.0 to 2.12.0 #144.</action>
            <action type="update" dev="ggregory" due-to="Dependabot">Bump maven-jar-plugin from 3.2.2 to 3.3.0 #147.</action>
         </release>
-        <release version="53" date="2022-03-31" description="WARNING: checkstyle version has been updated; there are breaking changes which may require updates to checkstyle.xml files">
+        <release version="53" date="2022-03-31" description="WARNING: The Checkstyle version has been updated; there are breaking changes that may require updates to checkstyle.xml files.">
           <!-- FIX -->
           <action type="fix" dev="ggregory">Use HTTPS for Javadoc links to Oracle.</action>
           <action type="fix" dev="ggregory">Use HTTPS for most links to Apache.</action>
@@ -878,10 +877,10 @@ The <action> type attribute can be add,update,fix,remove.
           <action type="add" dev="sebb">Add .asf.yaml to RAT excludes.</action>
           <action type="add" dev="ggregory">Add versions-maven-plugin run for this build.</action>
           <action type="add" dev="ggregory">Add maven-checkstyle-plugin to pluginManagement.</action>
-          <action type="add" dev="ggregory">Allow Maven PMD plugin to override PMD implementation jars with property "commons.pmd-impl.version".</action>
+          <action type="add" dev="ggregory">Allow the Maven PMD plugin to override PMD implementation JARs with the property "commons.pmd-impl.version".</action>
           <action type="add" dev="ggregory">Add property commons.javadoc16.java.link.</action>
           <action type="add" dev="ggregory">Add and use property commons.enforcer-plugin.version.</action>
-          <action type="add" dev="ggregory">Add SpotBugs to plugin management section.</action>
+          <action type="add" dev="ggregory">Add SpotBugs to the plugin management section.</action>
           <action type="add" dev="ggregory">Add and use property commons.buildnumber-plugin.version.</action>
           <action type="add" dev="ggregory">Add property commons.javadoc17.java.link.</action>
           <!-- UPDATES -->
@@ -916,14 +915,14 @@ The <action> type attribute can be add,update,fix,remove.
         </release>
         <release version="52" date="2020-07-30" description="Add support for Java 15.">
           <action type="update" dev="chtompki">Update maven-site-plugin version 3.8.2 -> 3.9.1.</action>
-          <action type="add" dev="sebb">Align Javadoc version with java override profile</action>
+          <action type="add" dev="sebb">Align the Javadoc version with the Java override profile.</action>
           <action type="update" dev="ggregory">Update biz.aQute.bndlib version 5.1.0 -> 5.1.2, Java 15 support.</action>
           <action type="update" dev="ggregory">Update maven-bundle-plugin from 4.2.1 to 5.1.1, Java 15 support.</action>
           <action type="update" dev="ggregory">Update animal-sniffer-maven-plugin from 1.18 to 1.19.</action>
           <action type="update" dev="ggregory">Update build-helper-maven-plugin from 3.1.0 to 3.2.0.</action>
           <action type="update" dev="ggregory">Update commons.checkstyle-plugin.version from 3.1.0 to 3.1.1.</action>
         </release>
-        <release version="51" date="2020-06-23" description="Fix incompatibilty issues with Java 7
+        <release version="51" date="2020-06-23" description="Fix incompatibility issues with Java 7.
  Add support for Java 13.
  Update various plugin versions.
         ">
@@ -936,22 +935,22 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update" dev="ggregory">commons.pmd.version 3.12.0 -> 3.13.0.</action>
             <action type="update" dev="ggregory">Fix https://github.com/bndtools/bnd/issues/3903 seen with Commons CSV.</action>
             <action type="fix" dev="sebb">Allow Java7 builds: commons.animal-sniffer.version=1.17; biz.aQute.bndlib.version=3.5.0</action>
-            <action type="fix" dev="sebb">PR#5: change &lt;docEncoding&gt; to &lt;docencoding&gt; for maven javadoc plugin.</action>
+            <action type="fix" dev="sebb">PR#5: Change &lt;docEncoding&gt; to &lt;docencoding&gt; for the Maven Javadoc plugin.</action>
             <action type="update" dev="sebb">commons.project-info.version 3.0.0 -> 3.1.0</action>
             <action type="update" dev="ggregory">Add support for Java 13</action>
             <action type="update" dev="erans">Support NOTICE and LICENSE alongside .txt versions</action>
             <action type="update" dev="sebb">commons.wagon-ssh.version 3.0.0 -> 3.1.0</action>
             <action type="update" dev="sebb">biz.aQute.bndlib.version 5.0.1 -> 5.1.0</action>
             <action type="update" dev="sebb">bcel version 6.4.1 -> 6.5.0</action>
-            <action type="update" dev="sebb">maven pre-requisite 3.0.5 -> 3.5.0</action>
+            <action type="update" dev="sebb">Maven prerequisite 3.0.5 -> 3.5.0</action>
             <action type="update" dev="sebb">commons.build-helper.version 3.0.0 -> 3.1.0</action>
             <action type="add" dev="sebb">Allow override of changes.announcementFile/announcementDirectory</action>
             <action type="update" dev="ggregory">maven-assembly-plugin 3.2.0 -> 3.3.0</action>
         </release>
         <release version="50" date="2019-12-17" description="Update site generation.
-        Updates to commons-skin:4.2, fixes custom footer copyright notice and removes redundant site.xml head element.
+        Updates to commons-skin:4.2, fixes the custom footer copyright notice, and removes the redundant site.xml head element.
         Removes jacoco aggregate reports and changes conditional japicmp plugin to require Java 8 and activate via opt-in behavior.
-        Includes some plugins updates.
+        Includes some plugin updates.
         ">
             <action type="update" dev="aherbert">site.xml: Removed custom head element. PrettyPrint functionality is loaded by commons-skin-4.2.</action>
             <action type="update" dev="aherbert">site.xml: commons-skin 4.1 -> 4.2</action>
@@ -971,13 +970,13 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update" dev="chtompki">commons-build-plugin 1.10 -> 1.11</action>
             <action type="update" dev="ggregory">commons-release-plugin 1.6 -> 1.7</action>
             <action type="update" dev="ggregory">jacoco-maven-plugin 0.8.3 -> 0.8.4</action>
-            <action type="fix" dev="sebb">Downdate felix plugin to work on Java 7</action>
+            <action type="fix" dev="sebb">Downgrade the Felix plugin to work on Java 7.</action>
             <action type="update" dev="ggregory">Update maven-project-info-reports-plugin's Apache Commons BCEL from 6.3 to 6.3.1.</action>
             <action type="update" dev="ggregory">japicmp-maven-plugin 0.13.0 -> 0.13.1</action>
             <action type="update" dev="ggregory">maven-bundle-plugin 4.1.0 -> 4.2.0</action>
-            <action type="fix" dev="ggregory">commons.scmPubUrl was not built properly, e.g. using 'pool' instead of 'commons-pool'</action>
+            <action type="fix" dev="ggregory">commons.scmPubUrl was not built properly, for example, using 'pool' instead of 'commons-pool'.</action>
             <action type="update" dev="ggregory">japicmp-maven-plugin 0.13.1 -> 0.14.0</action>
-            <action type="update" dev="ggregory">japicmp-maven-plugin should not break builds on source incompatible changes by default.</action>
+            <action type="update" dev="ggregory">japicmp-maven-plugin should not break builds on source-incompatible changes by default.</action>
             <action type="update" dev="ggregory">commons.compiler.version 3.8.0 ->3.8.1.</action>
             <action type="update" dev="ggregory">Add properties commons.javadoc6.java.link through commons.javadoc12.java.link</action>
             <action type="update" dev="ggregory">Add properties commons.javadoc.javaee5.link through commons.javadoc.javaee7.link</action>
@@ -988,8 +987,8 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update" dev="ggregory">maven-source-plugin 3.0.1 -> 3.1.0</action>
             <action type="update" dev="ggregory">japicmp-maven-plugin 0.14.0 -> 0.14.1</action>
             <action type="add" dev="ggregory">Add commons.checkstyle-plugin.version</action>
-            <action type="add" dev="ggregory">Add property commons.release.4.desc (see Apache Commons Pool.)</action>
-            <action type="add" dev="ggregory">Add property commons.release.4.binary.suffix (see Apache Commons Pool.)</action>
+            <action type="add" dev="ggregory">Add property commons.release.4.desc (see Apache Commons Pool).</action>
+            <action type="add" dev="ggregory">Add property commons.release.4.binary.suffix (see Apache Commons Pool).</action>
             <action type="update" dev="ggregory">commons.wagon-ssh.version 3.3.2 -> 3.3.3</action>
             <action type="update" dev="ggregory">commons.javadoc.version 3.1.0 -> 3.1.1</action>
             <action type="update" dev="ggregory">Add missing source config for Javadoc plugin.</action>
@@ -1001,15 +1000,15 @@ The <action> type attribute can be add,update,fix,remove.
         </release>
         <release version="48" date="2019-03-20" description="Release version 48">
             <action type="update" dev="chtompki">Run "apache-rat:check" as part of "mvn validate"</action>
-            <action type="fix" dev="chtompki">Revert revert change in commons.scmPubUrl in Parent 47, use commons.packageId for osgi</action>
+            <action type="fix" dev="chtompki">Revert the reversion of the change to commons.scmPubUrl in Parent 47; use commons.packageId for OSGi.</action>
             <action type="update">commons.build-plugin.version: 1.9 -> 1.10</action>
             <action type="update">commons.release-plugin.version: 1.5 -> 1.6</action>
             <action type="update">commons.spotbugs.version: 3.1.3 -> 3.1.6</action>
             <action type="update">japicmp-maven-plugin: 0.12.0 -> 0.13.0</action>
-            <action issue="COMMONSSITE-124" type="fix" dev="britter">Revert change in commons.scmPubUrl in Parent 47</action>
+            <action issue="COMMONSSITE-124" type="fix" dev="britter">Revert the change to commons.scmPubUrl in Parent 47.</action>
             <action type="update">Update parent from org.apache:apache 19 to 20.</action>
             <action type="update">maven-compiler-plugin 3.7.0 -> 3.8.0</action>
-            <action type="fix">re-enabled japicmp and introduced japicmp.skip property that
+            <action type="fix">Re-enabled japicmp and introduced the japicmp.skip property that
                 controls whether japicmp reports are run. It is disabled by
                 default and enabled via a special profile enabled by the
                 presence of the file src/site/resources/profile.japicmp
@@ -1036,7 +1035,7 @@ The <action> type attribute can be add,update,fix,remove.
         <release version="47" date="2018-07-02" description="Release version 47">
             <action type="update">Set the version of Apache Commons BCEL used by maven-project-info-reports-plugin to avoid
                 "org.apache.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19"</action>
-            <action type="update">Allows JApiCmp's ignoreMissingClasses parameter to be easily overridable with the property commons.japicmp.ignoreMissingClasses.</action>
+            <action type="update">Allows JApiCmp's ignoreMissingClasses parameter to be easily overridden with the property commons.japicmp.ignoreMissingClasses.</action>
             <action type="update">japicmp-maven-plugin 0.11.1 -> 0.12.0</action>
             <action type="add">New properties: commons.distSvnStagingUrl, commons.releaseManagerName, commons.releaseManagerKey</action>
             <action type="update">maven-javadoc-plugin 3.0.0 -> 3.0.1 (Java 10 compatibility)</action>
@@ -1066,31 +1065,31 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">commons-release-plugin 1.1 -> 1.2</action>
             <action type="update">japicmp-maven-plugin: oldVersionPattern=\d+\.\d+\.\d*</action>
             <action type="update">maven-assembly-plugin: 3.0.0 -> 3.1.0</action>
-            <action type="remove">Prerequisites tag; should only be used for maven-plugins, using maven-enforcer-plugin instead.</action>
+            <action type="remove">The prerequisites tag should only be used for maven-plugins; use maven-enforcer-plugin instead.</action>
         </release>
         <release version="45" date="2018-03-12" description="Changing location of commons-release-plugin">
             <action type="update">Rearranging plugin order in -Prelease, removing commons-release-plugin from build>pluginManagement</action>
         </release>
-        <release version="44" date="2018-03-08" description="Plugin Updates and add new commons-release-plugin
+        <release version="44" date="2018-03-08" description="Update plugins and add the new commons-release-plugin.
 
         Notes on Building version 44.
         -----------------------------
-        When building, because of an issue with japicmp, we have an erroneous non-failing stacktrace
-        that occurs. Specifically, we see:
+        When building, an issue with japicmp causes an erroneous stack trace
+        without causing the build to fail. Specifically, we see:
 
         [warn] No new version specified and file './commons-parent/pom.xml' of artifact could not be opened as
               jar archive: error in opening zip file
         java.util.zip.ZipException: error in opening zip file
 
-        mainly caused by an error in
+        This is mainly caused by an error in
         japicmp.maven.JApiCmpMojo.populateArchivesListsFromParameters(JApiCmpMojo.java:341).
 
-        We have asked for this to be addressed in the github issue: https://github.com/siom79/japicmp/issues/195
+        We have asked for this to be addressed in the GitHub issue: https://github.com/siom79/japicmp/issues/195
         ">
-            <action type="add">new profile module-name to add 'Automatic-Module-Name' entry to the manifest</action>
+            <action type="add">New profile module-name to add 'Automatic-Module-Name' entry to the manifest</action>
             <action type="update">felix:maven-bundle-plugin 3.4.0 -> 3.5.0.</action>
-            <action type="update">build artifacts -test.jar, -sources.jar and -test-sources.jar always, not only at release time</action>
-            <action type="update">maven-enforcer-plugin set version to 3.0.0-M1 and update Maven requirement from 3.0.0 to 3.0.5 (the latest 3.0.x.)</action>
+            <action type="update">Always build the -test.jar, -sources.jar, and -test-sources.jar artifacts.</action>
+            <action type="update">Set the maven-enforcer-plugin version to 3.0.0-M1 and update the Maven requirement from 3.0.0 to 3.0.5 (the latest 3.0.x).</action>
             <action type="update">jacoco-maven-plugin 0.7.9 -> 0.8.0.</action>
             <action type="update">Fix japicmp config: add to reporting section and define ignoreMissingNewVersion explicitly</action>
             <action type="update">org.apache:apache 18 -> 19</action>
@@ -1109,8 +1108,8 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">commons.findbugs.version 3.0.3 -> 3.0.5 (requires Java 7.)</action>
             <action type="update">commons.clirr.version 2.7 -> 2.8.</action>
             <action type="update">maven-surefire-plugin 2.19.1 -> 2.20.1.</action>
-            <action type="update">Add maven-failsafe-plugin 2.20.1 (to along with surefire.)</action>
-            <action type="update">felix:maven-bundle-plugin 3.0.1 -> 3.4.0 (requires Java 7.</action>
+            <action type="update">Add maven-failsafe-plugin 2.20.1 (to go along with surefire).</action>
+            <action type="update">felix:maven-bundle-plugin 3.0.1 -> 3.4.0 (requires Java 7).</action>
             <action type="update">versions-maven-plugin 2.3 -> 2.5.</action>
             <action type="update">japicmp-maven-plugin 0.10.0 -> 0.11.0.</action>
             <action type="update">build-helper-maven-plugin 1.10 -> 3.0.0 (requires Maven 3 and Java 7.)</action>
@@ -1124,10 +1123,10 @@ The <action> type attribute can be add,update,fix,remove.
             <action type="update">maven-changes-plugin : 2.12 -> 2.12.1</action>
             <action type="update">Update japicmp: 0.8.0 -> 0.9.1</action>
             <action type="update">maven-compiler-plugin : 3.5.1 -> 3.6.0</action>
-            <action type="update">japicmp plugin no longer fail on "mvn site" (it requires target/*jar), use "mvn package site -Pjapicmp" to include its report</action>
+            <action type="update">The japicmp plugin no longer fails on "mvn site" (it requires target/*jar); use "mvn package site -Pjapicmp" to include its report.</action>
             <action type="update">japicmp-maven-plugin : 0.8.0 -> 0.9.3</action>
-            <action type="add">new profiles to run coveralls coverage
-            reports via Travis using Jacoco or Cobertura respectively</action>
+            <action type="add">New profiles to run Coveralls coverage
+            reports through Travis using JaCoCo or Cobertura, respectively.</action>
             <action type="update">new property
             commons.japicmp.breakBuildOnBinaryIncompatibleModifications
             controls the breakBuildOnBinaryIncompatibleModifications
@@ -1145,13 +1144,13 @@ Clirr report must now be explicitly enabled using src/site/resources/profile.cli
         </release>
         <release version="40" date="2016-04-30" description="Updates plugins and parent; fixes COMMONSSITE-87 and COMMONSSITE-82.
  The assembly plugin now runs in the verify phase (it was previously run in the package phase). See COMMONSSITE-87.
- This allows child poms to create additional jars to be added to the assembly.
- This will affect child poms that rely on the assembly occurring in the package phase.
+ This allows child POMs to create additional JARs to be added to the assembly.
+ This will affect child POMs that rely on the assembly occurring in the package phase.
  They will need to be amended to use the verify phase instead.">
             <action type="update">Update Apache Parent POM : 16 -> 17</action>
             <action type="update">COMMONSSITE-87 - ensure assembly plugin runs after all package phase plugins</action>
             <action type="update">COMMONSSITE-82 - use Commons Skin 4.1 (site.xml)</action>
-            <action type="update">Require minimum of Maven 3.0.5</action>
+            <action type="update">Require a minimum of Maven 3.0.5.</action>
             <action type="update">maven-assembly-plugin : 2.5.5 -> 2.6</action>
             <action type="update">maven-changes-plugin : 2.11 -> 2.12</action>
             <action type="update">maven-clean-plugin : 2.6.1 -> 3.0.0</action>
@@ -1171,7 +1170,7 @@ Clirr report must now be explicitly enabled using src/site/resources/profile.cli
             <action type="update">jacoco-maven-plugin : 0.7.5.201505241946 -> 0.7.6.201602180812</action>
             <action type="update">wagon-ssh : 2.8 -> 2.10</action>
         </release>
-        <release version="39" date="2015-09-07" description="Uses a new location assembly location; updates plugins; allows Java 8 builds to use animal-sniffer.">
+        <release version="39" date="2015-09-07" description="Uses a new assembly location; updates plugins; allows Java 8 builds to use animal-sniffer.">
             <action type="update">Update Compiler Plugin : 3.2 -> 3.3</action>
             <action type="update">Update Build Helper Plugin : 1.8 -> 1.9.1</action>
             <action type="update">Update Release Plugin : 2.5.1 -> 2.5.2</action>
@@ -1183,7 +1182,7 @@ Clirr report must now be explicitly enabled using src/site/resources/profile.cli
             <action type="update">Update Jacoco Plugin : 0.7.4.201502262128 -> 0.7.5.201505241946</action>
         </release>
         <release version="38" date="2015-06-25" description="Fix bug in site Security link; update plugins">
-            <!-- List each change individually so the changes HTML report is easier to read -->
+            <!-- List each change individually so the changes HTML report is easier to read. -->
             <action type="update">Fix URL for Security link</action>
             <action type="update">Update Assembly Plugin : 2.5.3 -> 2.5.5</action>
             <action type="update">Update Cobertura Plugin : 2.6 -> 2.7</action>
@@ -1192,14 +1191,14 @@ Clirr report must now be explicitly enabled using src/site/resources/profile.cli
             <action type="update">Update Surefire Plugin : 2.18 -> 2.18.1</action>
         </release>
         <release version="37" date="2015-01-28" description="Update plugins, add Animal Sniffer and site-basic profile">
-            <!-- List each change individually so the changes HTML report is easier to read -->
+            <!-- List each change individually so the changes HTML report is easier to read. -->
             <action type="update">Update minimum Maven prerequisite (as defined by Findbugs) 3.0 -> 3.0.1</action>
             <action type="update">Update org.apache:apache 15 to 16 (nop for Commons: maven-compiler-plugin already contained source/target)</action>
             <action type="update">Update Maven Project Info Reports Plugin : 2.7 -> 2.8</action>
             <action type="update">merged maven-3 profile into main body (Maven 2 is no longer supported)</action>
             <action type="add">Added Animal Sniffer profile (active by default)</action>
             <action type="update">renamed the profile jdk7-findbugs to jdk7-plugin-fix-version</action>
-            <action type="add">Allow to configure dependency excludes of bundle-plugin with commons.osgi.excludeDependencies</action>
+            <action type="add">Allow users to configure dependency exclusions for bundle-plugin with commons.osgi.excludeDependencies.</action>
             <action type="add">Added property commons.changes.onlyCurrentVersion for changes plugin Jira report</action>
             <action type="update">Update GPG Plugin : 1.5 -> 1.6</action>
             <action type="update">Update Antrun Plugin : 1.7 -> 1.8</action>
@@ -1208,7 +1207,7 @@ Clirr report must now be explicitly enabled using src/site/resources/profile.cli
             <action type="add">Added site-basic profile to allow quick generation of the basic site docs</action>
         </release>
         <release version="36" date="2014-12-21" description="Update plugins, fix release-notes profile.">
-            <!-- List each change individually so the changes HTML report is easier to read -->
+            <!-- List each change individually so the changes HTML report is easier to read. -->
             <action type="update">Update maven-jxr-plugin 2.4 to 2.5</action>
             <action type="update">Update maven-surefire-plugin(s) 2.17 to 2.18</action>
             <action type="update">Update maven-assembly-plugin 2.5 to 2.5.1</action>
@@ -1217,7 +1216,7 @@ Clirr report must now be explicitly enabled using src/site/resources/profile.cli
             <action type="fix">Add announcementDirectory to release-notes profile.</action>
         </release>
         <release version="35" date="2014-10-22" description="Update plugins and maintenance">
-            <!-- List each change individually so the changes HTML report is easier to read -->
+            <!-- List each change individually so the changes HTML report is easier to read. -->
             <action type="add">Add link to security page in general navigation section</action>
             <action type="add">Added java-1.9 profile</action>
             <action type="update">Suppress test Javadocs when building site</action>
@@ -1250,7 +1249,7 @@ The main changes in this release are:
   - scm-publish 1.0-beta to 1.0
   - added java-1.8 profile
 ">
-            <!-- List each change individually so the changes HTML report is easier to read -->
+            <!-- List each change individually so the changes HTML report is easier to read. -->
             <action type="update">Added java-1.8 profile</action>
             <action type="update">maven-scm-publish-plugin      1.0-beta -> 1.0</action>
             <action type="update">maven-surefire-plugin(s)          2.16 -> 2.17</action>
@@ -1261,7 +1260,7 @@ The main changes in this release are:
   - Fixed Jacoco configuration syntax
   - updated some plugins
 ">
-            <!-- List each change individually so the changes HTML report is easier to read -->
+            <!-- List each change individually so the changes HTML report is easier to read. -->
             <action type="update">commons-skin                       3 -> 4</action>
             <action type="update">maven-deploy-plugin                2.7 -> 2.8.1</action>
             <action type="update">maven-jxr-plugin                   2.3 -> 2.4</action>
@@ -1274,8 +1273,8 @@ The main changes in this release are:
             <action type="update">cobertura-maven-plugin           2.5.2 -> 2.6</action>
             <action type="update">jacoco-maven-plugin 0.6.3.201306030806 -> 0.6.4.201312101107</action>
             <action type="update">Fixed JaCoCo configuration - syntax changed completely between 0.6.2.x and 0.6.3.x</action>
-            <!-- Note: the (major) syntax change is not documented AFAICT, and only the trunk docs are online for comparison. -->
-            <action type="update">Add commons.compiler.version property so compiler plugin version can be overridden if necessary</action>
+            <!-- Note: As far as I can tell, the major syntax change is not documented, and only the trunk documentation is online for comparison. -->
+            <action type="update">Add the commons.compiler.version property so that the compiler plugin version can be overridden if necessary.</action>
             <action type="update">Add source archive to Maven artifacts</action>
         </release>
         <release version="32" date="2013-07-01" description="
@@ -1283,7 +1282,7 @@ The main changes in this release are:
   - added fix for Javadoc vulnerability (CVE-2013-1571, VU#225657) MJAVADOC-370
   - updated some plugins
 ">
-            <!-- List each change individually so the changes html report is easier to read -->
+            <!-- List each change individually so the changes HTML report is easier to read. -->
             <action type="update">maven-javadoc-plugin          2.9 -> 2.9.1</action>
         </release>
         <release version="31" date="2013-06-24" description="
@@ -1292,7 +1291,7 @@ The main changes in this release are:
   - fixed the maven.compile[r] names
   - updated some plugins and the RAT excludes list
 ">
-            <!-- List each change individually so the changes html report is easier to read -->
+            <!-- List each change individually so the changes HTML report is easier to read. -->
             <action type="update">Dropped "rc" profile as no longer relevant</action>
             <action type="update">maven-bundle-plugin              2.3.7 -> 2.4.0</action>
             <action type="update">maven-surefire[-report]-plugin  2.14.1 -> 2.15</action>
@@ -1309,7 +1308,7 @@ Coverage tool:
  Made JaCoCo an optional profile
  Restored Cobertura as an optional profile
 ">
-            <!-- List updates separately so the changes html report is easier to read -->
+            <!-- List updates separately so the changes HTML report is easier to read. -->
             <action type="update">cobertura-maven-plugin           2.5.2 reinstated</action>
             <action type="update">jacoco-maven-plugin  0.6.2.201302030002 -> 0.6.3.201306030806</action>
             <action type="update">rat-maven-plugin                   0.8 -> 0.9</action>
@@ -1327,16 +1326,16 @@ Coverage tool:
             <action type="update" date="">
 The main change is the replacement of Cobertura with JaCoCo for test
 coverage analysis.  The former is not maintained anymore, has numerous
-bugs and is extremely slow in some situations (typically generating
+bugs, and is extremely slow in some situations (typically, generating
 coverage reports for [math] took about 9 hours whereas standard tests
 run in about 10 minutes). One important implication is that since
-JaCoCo relies on setting an agent, it is triggered only if JDK used to
+JaCoCo relies on setting up an agent, it is triggered only if the JDK used to
 run the tests is at least Java 1.5 (this is automatically detected),
-and it changes the argument line of surefire tests.  If a component
-also needs to adapt the surefire command line, it must add the
+and it changes the argument line of Surefire tests.  If a component
+also needs to adapt the Surefire command line, it must add the
 property ${argLine} to the argument line in order to preserve JaCoCo
-settings. An example for this is Apache Commons IO, where the
-maven-surefire-plugin setting must read as (note the use of the
+settings. An example of this is Apache Commons IO, where the
+maven-surefire-plugin configuration must read as follows (note the use of the
 ${argLine} property):
 
     &lt;plugins>
@@ -1345,8 +1344,8 @@ ${argLine} property):
         &lt;artifactId>maven-surefire-plugin&lt;/artifactId>
         &lt;configuration>
           &lt;forkMode>pertest&lt;/forkMode>
-          &lt;!-- limit memory size see IO-161 -->
-          &lt;!-- the ${argLine} preserves jacoco agent settings (see (see https://github.com/jacoco/jacoco/issues/44) -->
+          &lt;!-- Limit memory size; see IO-161. -->
+          &lt;!-- The ${argLine} property preserves JaCoCo agent settings (see https://github.com/jacoco/jacoco/issues/44). -->
           &lt;argLine>-Xmx25M ${argLine}&lt;/argLine>
           ...
         &lt;/configuration>
@@ -1368,10 +1367,10 @@ ${argLine} property):
             Also changed, but omitted from changes section in released version:
 
             Added maven-scm-publish-plugin  1.0-beta-2
-            Removed timestamp from Javadoc output
+            Removed the timestamp from Javadoc output
             Moved Cobertura from default to reporting profile
             Renamed module sanselan -> imaging
-            Added scm publishing properties
+            Added SCM publishing properties
             </action>
         </release>
         <release version="27" date="2012-09-24" description="Update plugins">
@@ -1387,8 +1386,8 @@ ${argLine} property):
         </release>
         <release version="26" date="2012-08-23" description="Update plugins">
             <action type="update">
-            FELIX-3037 has been fixed so the profile java-1.5-detected is no longer needed
-            (in fact it causes problems, because it reverts bndlib to a version that is missing some required new methods)
+            FELIX-3037 has been fixed, so the profile java-1.5-detected is no longer needed
+            (in fact, it causes problems because it reverts bndlib to a version that is missing some required new methods).
             </action>
             <action type="update">
             maven-changes-plugin: 2.6 -> 2.7.1
@@ -1408,7 +1407,7 @@ ${argLine} property):
             <action type="update">
             Updated various plugin versions:
             clirr-maven-plugin: 2.3 -> 2.4
-            clirr and RAT added to pluginManagement so can override the version from Apache POM
+            clirr and RAT added to pluginManagement so that components can override the versions from the Apache POM
             Add changes and jira reports
             </action>
         </release>
@@ -1421,7 +1420,7 @@ ${argLine} property):
             release: 2.2.1 -> 2.2.2
             remote-resources: override Apache pom 9 with 1.2.1
             commons-build: 1.3 -> 1.4
-            bundle: 2.3.5 -> 2.3.7; removed workround for Java 1.5 as no longer necessary
+            bundle: 2.3.5 -> 2.3.7; removed workaround for Java 1.5 as no longer necessary
             Added cobertura: 2.5.1 to reporting and buildManagement
             surefire: 2.9 -> 2.12
             surefire-report: 2.9 -> 2.12
@@ -1435,16 +1434,16 @@ ${argLine} property):
             </action>
         </release>
         <release version="23" date="2012-01-11" description="
-The Maven3 site plugin has been updated to support ssh/scp for deployment
+The Maven 3 site plugin has been updated to support ssh/scp for deployment
 
-  The buildNumber plugin now defaults to using SVN CLI, and does not run if buildNumber.skip=true
+  The buildNumber plugin now defaults to using the SVN CLI and does not run if buildNumber.skip=true
   To use javasvn instead, use the profile: javasvn
 ">
             <action dev="ggregory" type="add">
             added java-1.7 profile
             </action>
             <action dev="ggregory" type="add">
-            added ssh/scp support to maven-site-plugin in Maven3
+            added ssh/scp support to maven-site-plugin in Maven 3
             </action>
             <action dev="sebb" type="update" due-to="Olivier Lamy">
             moved buildNumber plugin to profile which is activated unless buildNumber.skip=true
@@ -1458,7 +1457,7 @@ The Maven3 site plugin has been updated to support ssh/scp for deployment
             </action>
         </release>
         <release version="22" date="2011-09-21" description="
-Starting with version 22, the RAT plugin has changed Maven group and id,
+Starting with version 22, the RAT plugin has changed its Maven group ID and artifact ID,
  so any existing configuration needs to be updated.
  To fix component POMs, please change any occurrences of:
   &lt;groupId>org.codehaus.mojo&lt;/groupId>
@@ -1468,17 +1467,17 @@ Starting with version 22, the RAT plugin has changed Maven group and id,
   &lt;artifactId>apache-rat-plugin&lt;/artifactId>
 ">
             <action dev="sebb" type="add">
-            Add commons.release.version and commons.rc.version for use in releasing commons parent
+            Add commons.release.version and commons.rc.version for use in releasing Commons Parent
             </action>
             <action dev="sebb" type="add">
             Add release-notes profile to generate RELEASE-NOTES.txt from changes.xml.
             Added changes.xml and template release-notes.vm
             </action>
             <action dev="sebb" type="add">
-            Add pom description
+            Add a POM description.
             </action>
             <action dev="sebb" type="fix">
-            Added workround for bundle plugin 2.3.5 on Java 1.5 - replace embedded bndlib with previous version
+            Added workaround for bundle plugin 2.3.5 on Java 1.5 - replace embedded bndlib with previous version
             </action>
             <action dev="sebb" type="add">
             Add buildnumber plugin and put build details into manifests.
