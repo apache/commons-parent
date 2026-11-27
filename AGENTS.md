@@ -66,7 +66,7 @@ mvn -B -DskipTests -DskipITs -ntp
      No empty descriptions.
    - Add Javadoc for every new type declaration, method, and other member,
      with the standard exceptions (overrides, self-explanatory members, trivial `equals`/`hashCode`).
-   - Include an `@since` tag on every new public or protected type declaration, method, and other member.
+   - Add an `@since` Javadoc tag to every new public or protected type, method, or other member, except in test code.
 
 ### Prose
 
