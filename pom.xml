@@ -1731,8 +1731,8 @@
         <commons.biz.aQute.bndlib.version>6.4.1</commons.biz.aQute.bndlib.version>
         <!-- Apache RAT 0.18 requires Java 17 -->
         <commons.rat.version>0.17</commons.rat.version>
-        <!-- spdx can require Java 17 depending on undocumented behavior which kicks in for us here on macOS (but not on Java 8 somehow). -->
-        <commons.spdx.version>0.5.5</commons.spdx.version>
+        <!-- spdx-maven-plugin 1.0 requires Java 17 -->
+        <commons.spdx.version>0.6.5</commons.spdx.version>
       </properties>
     </profile>
     <profile>
