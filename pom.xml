@@ -130,6 +130,7 @@
     <commons.japicmp.version>0.28.0</commons.japicmp.version>
     <commons.jar-plugin.version>3.5.1</commons.jar-plugin.version>
     <commons.javadoc.version>3.12.0</commons.javadoc.version>
+    <commons.invoker.version>3.10.1</commons.invoker.version>
     <commons.jxr.version>3.6.0</commons.jxr.version>
     <commons.pmd.version>3.28.0</commons.pmd.version>
     <commons.pmd-impl.version>7.30.0</commons.pmd-impl.version>
@@ -145,8 +146,7 @@
     <commons.junit.version>5.14.4</commons.junit.version>
     <!-- JUnit Pioneer 2 requires Java 11 -->
     <commons.junit-pioneer.version>1.9.1</commons.junit-pioneer.version>
-    <!-- Mockito 5 requires Java 11 -->
-    <commons.mockito.version>4.11.0</commons.mockito.version>
+    <commons.mockito.version>5.25.0</commons.mockito.version>
     <commons.jmh.version>1.37</commons.jmh.version>
     <commons.asm.version>9.11.1</commons.asm.version>
     <commons.taglist.version>3.3.0</commons.taglist.version>
@@ -1076,6 +1076,37 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-changes-plugin</artifactId>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-invoker-plugin</artifactId>
+        <version>${commons.invoker.version}</version>
+        <executions>
+          <execution>
+            <!--
+              Only for commons-parent itself, not inherited by components:
+              builds the projects in src/it against this POM, with the JDK running the build,
+              to check that the managed dependencies work on every JDK supported by this POM.
+            -->
+            <id>commons-parent-managed-dependencies-it</id>
+            <inherited>false</inherited>
+            <goals>
+              <goal>install</goal>
+              <goal>run</goal>
+              <goal>verify</goal>
+            </goals>
+            <configuration>
+              <cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
+              <localRepositoryPath>${project.build.directory}/it-repo</localRepositoryPath>
+              <settingsFile>src/it/settings.xml</settingsFile>
+              <pomIncludes>
+                <pomInclude>*/pom.xml</pomInclude>
+              </pomIncludes>
+              <showErrors>true</showErrors>
+              <streamLogsOnFailures>true</streamLogsOnFailures>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
   <reporting>
@@ -1744,6 +1775,8 @@
         <commons.checkstyle.version>9.3</commons.checkstyle.version>
         <!-- Java EE Javadoc has been republished with Java > 8 and is no longer compatible with Javadoc 8 -->
         <commons.javadoc.javaee.link></commons.javadoc.javaee.link>
+        <!-- Mockito 5+ requires Java 11 -->
+        <commons.mockito.version>4.11.0</commons.mockito.version>
       </properties>
     </profile>
     <profile>
@@ -1856,31 +1889,6 @@
                 </configuration>
               </execution>
             </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-    <profile>
-      <id>java28-tests</id>
-      <activation>
-        <jdk>[28,)</jdk>
-      </activation>
-      <build>
-        <plugins>
-          <!-- Temporarily allow Mockito/Objenesis to construct test doubles on JDK 28 and later. -->
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <configuration>
-              <argLine>@{argLine} -Djdk.reflect.allowNonSerializableConstruction=true</argLine>
-            </configuration>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-failsafe-plugin</artifactId>
-            <configuration>
-              <argLine>@{argLine} -Djdk.reflect.allowNonSerializableConstruction=true</argLine>
-            </configuration>
           </plugin>
         </plugins>
       </build>

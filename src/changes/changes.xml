@@ -60,7 +60,6 @@ The <action> type attribute can be add, update, fix, or remove.
         <!-- FIX -->
         <action type="fix" dev="aherbert" due-to="Alex Herbert">Document the use of @{argLine} (not ${argLine}) to preserve the JaCoCo agent when a component sets the maven-surefire-plugin argLine.</action>
         <!-- ADD -->
-        <action type="add" dev="ggregory" due-to="Gary Gregory">Add Maven profile `java28-tests` to temporarily allow Mockito/Objenesis to construct test doubles on JDK 28 and later.</action>
         <!-- UPDATE -->
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump com.puppycrawl.tools:checkstyle from 14.3.0 to 14.4.0 on Java 21 and up.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump commons.pmd-impl.version from 7.28.0 to 7.30.0.</action>
@@ -76,6 +75,7 @@ The <action> type attribute can be add, update, fix, or remove.
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:exec-maven-plugin from 3.6.4 to 3.7.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:taglist-maven-plugin from 3.2.3 to 3.3.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:versions-maven-plugin from 2.24.0 to 2.25.2.</action>
+        <action type="update" dev="pkarwasz" due-to="Piotr P. Karwasz">Bump org.mockito:mockito-bom from 4.11.0 to 5.25.0 on Java 11 and up; Mockito 4 fails on Java 28.</action>
       </release>
       <release version="107" date="2026-10-28" description="This is a feature and maintenance release. Java 8 or later is required.">
         <!-- FIX -->
