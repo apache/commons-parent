@@ -77,6 +77,7 @@ The <action> type attribute can be add, update, fix, or remove.
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:exec-maven-plugin from 3.6.4 to 3.7.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:taglist-maven-plugin from 3.2.3 to 3.3.0.</action>
         <action type="update" dev="ggregory" due-to="Gary Gregory">Bump org.codehaus.mojo:versions-maven-plugin from 2.24.0 to 2.25.2.</action>
+        <action type="update" dev="pkarwasz" due-to="Piotr P. Karwasz">Bump com.github.spotbugs:spotbugs-maven-plugin from 4.8.6.6 to 4.8.6.8 on Java 8 to 10.</action>
         <action type="update" dev="pkarwasz" due-to="Piotr P. Karwasz">Bump org.mockito:mockito-bom from 4.11.0 to 5.25.0 on Java 11 and up; Mockito 4 fails on Java 28.</action>
       </release>
       <release version="107" date="2026-10-28" description="This is a feature and maintenance release. Java 8 or later is required.">
