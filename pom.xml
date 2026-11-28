@@ -146,10 +146,6 @@
     <commons.junit.version>5.14.4</commons.junit.version>
     <!-- JUnit Pioneer 2 requires Java 11 -->
     <commons.junit-pioneer.version>1.9.1</commons.junit-pioneer.version>
-    <!--
-      Mockito 5 requires Java 11: the java-1.8-10 profile pins Mockito 4 on older JDKs.
-      Keep the Mockito 5 version here, so Dependabot updates this value and leaves the profile alone.
-    -->
     <commons.mockito.version>5.25.0</commons.mockito.version>
     <commons.jmh.version>1.37</commons.jmh.version>
     <commons.asm.version>9.11.1</commons.asm.version>
@@ -1779,6 +1775,8 @@
         <commons.checkstyle.version>9.3</commons.checkstyle.version>
         <!-- Java EE Javadoc has been republished with Java > 8 and is no longer compatible with Javadoc 8 -->
         <commons.javadoc.javaee.link></commons.javadoc.javaee.link>
+        <!-- Mockito 5+ requires Java 11 -->
+        <commons.mockito.version>4.11.0</commons.mockito.version>
       </properties>
     </profile>
     <profile>
@@ -1813,17 +1811,6 @@
         <commons.felix.version>6.2.0</commons.felix.version>
         <commons.biz.aQute.bndlib.version>7.5.0</commons.biz.aQute.bndlib.version>
         <commons.rat.version>0.18</commons.rat.version>
-      </properties>
-    </profile>
-    <profile>
-      <!-- Java 8 to 10 -->
-      <id>java-1.8-10</id>
-      <activation>
-        <jdk>(,11)</jdk>
-      </activation>
-      <properties>
-        <!-- Mockito 5 requires Java 11. Mockito 4.11.0 is the last 4.x release. -->
-        <commons.mockito.version>4.11.0</commons.mockito.version>
       </properties>
     </profile>
     <profile>
